@@ -8,14 +8,6 @@ env:
   - DB=pgsql
   - DB=sqlite
 
-matrix:
-  include:
-    - php: 5.4
-      env:
-        - PHPCS=1
-        - PHPMD=1
-        - PHPCPD=1
-
 before_script:
   - curl -s http://getcomposer.org/installer | php
   - php composer.phar install
@@ -117,8 +109,8 @@ before_script:
 
 script:
   - ./lib/Cake/Console/cake test app All --stderr
-  - phpcs -p --extensions=php --standard=CakePHP --ignore=./Vendor,./Plugin,./app/Config/database.php .
-  - phpmd app text ruleset/phpmd.xml --exclude=/home/travis/build/NetCommons3/NetCommons3/app/Config/database.php
+  - phpcs -p --extensions=php --standard=CakePHP --ignore=./app/Config/database.php app
+  - phpmd app text ruleset/phpmd.xml --exclude=$TRAVIS_BUILD_DIR/app/Config/database.php
   - phpcpd --exclude Test --exclude Config --exclude ./app/Config/database.php app
 
 notifications:
