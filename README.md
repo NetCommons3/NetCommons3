@@ -6,8 +6,7 @@ NetCommons
 
 [NetCommons公式サイト](http://www.netcommons.org/)
 
-
-[![Build Status](https://travis-ci.org/NetCommons3/NetCommons3.png?branch=master)](https://travis-ci.org/NetCommons3/NetCommons3)
+[![Build Status](https://travis-ci.org/NetCommons3/NetCommons3.png)](https://travis-ci.org/NetCommons3/NetCommons3)
 
 # 開発環境での起動
 
