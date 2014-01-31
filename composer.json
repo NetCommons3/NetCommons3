@@ -1,0 +1,35 @@
+{
+    "name": "NetCommons3",
+    "version": "3.0.0",
+    "description": "NetCommons3",
+    "type": "CMS",
+    "keywords": ["CMS"],
+    "homepage": "http://www.netcommons.org/",
+    "license": "NetCommons",
+    "authors": [
+        {
+            "name": "NetCommons Community",
+            "homepage": "https://github.com/NetCommons3/NetCommons3/graphs/contributors"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "pear",
+            "url": "http://pear.cakephp.org"
+        }
+    ],
+    "require": {
+        "pear-cakephp/cakephp": "~2.4.0",
+        "cakephp/debug_kit": "~2.2.0",
+        "ezyang/htmlpurifier": "~4.6.0",
+        "chronon/mobile_detect": "*",
+        "twbs/bootstrap": "~3.0.0",
+        "components/jquery": "~2.1.0"
+    },
+    "bin": [
+        "lib/Cake/Console/cake"
+    ],
+    "config": {
+        "vendor-dir": "Vendor/"
+    }
+}

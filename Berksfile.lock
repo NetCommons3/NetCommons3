@@ -1,0 +1,72 @@
+{
+  "sources": {
+    "apache2": {
+      "locked_version": "1.8.14"
+    },
+    "application": {
+      "locked_version": "3.0.0"
+    },
+    "application_php": {
+      "locked_version": "2.0.0"
+    },
+    "composer": {
+      "locked_version": "0.2.1",
+      "git": "https://github.com/Morphodo/chef-composer.git",
+      "ref": "27cb886029fc28e08ca80ab0b15408b412bb09b7"
+    },
+    "database": {
+      "locked_version": "1.5.2"
+    },
+    "mysql": {
+      "locked_version": "3.0.12"
+    },
+    "nginx": {
+      "locked_version": "2.2.0"
+    },
+    "php": {
+      "locked_version": "1.2.6"
+    },
+    "omusubi": {
+      "path": "./cookbooks/omusubi"
+    },
+    "postgresql": {
+      "locked_version": "3.3.4"
+    },
+    "apt": {
+      "locked_version": "2.3.0"
+    },
+    "build-essential": {
+      "locked_version": "1.4.2"
+    },
+    "openssl": {
+      "locked_version": "1.1.0"
+    },
+    "aws": {
+      "locked_version": "1.0.0"
+    },
+    "xfs": {
+      "locked_version": "1.1.0"
+    },
+    "bluepill": {
+      "locked_version": "2.3.0"
+    },
+    "rsyslog": {
+      "locked_version": "1.9.0"
+    },
+    "ohai": {
+      "locked_version": "1.1.12"
+    },
+    "runit": {
+      "locked_version": "1.5.1"
+    },
+    "yum": {
+      "locked_version": "3.0.2"
+    },
+    "yum-epel": {
+      "locked_version": "0.2.0"
+    },
+    "xml": {
+      "locked_version": "1.2.0"
+    }
+  }
+}

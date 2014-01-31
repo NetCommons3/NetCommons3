@@ -1,0 +1,27 @@
+<VirtualHost *:80>
+	ServerName www.netcommons.local
+	ServerAdmin webmaster@localhost
+
+	DocumentRoot /vagrant_data
+	<Directory />
+		Options FollowSymLinks
+		AllowOverride All
+	</Directory>
+
+	ErrorLog ${APACHE_LOG_DIR}/error.log
+	CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+
+<VirtualHost *:80>
+	ServerName docs.netcommons.local
+	ServerAdmin webmaster@localhost
+
+	DocumentRoot /vagrant_data/docs
+	<Directory />
+		AllowOverride None
+	</Directory>
+
+	ErrorLog ${APACHE_LOG_DIR}/error.log
+	CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+
