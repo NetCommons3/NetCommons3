@@ -14,6 +14,7 @@ Vagrant.configure("2") do |config|
   end
 
   config.vm.synced_folder "./", "/vagrant_data", :create => true, :owner=> 'www-data', :group=>'www-data', :mount_options => ['dmode=775','fmode=775']
+  config.vm.synced_folder "../NetCommons3Docs/", "/var/www/NetCommons3Docs", :create => true, :owner=> 'www-data', :group=>'www-data', :mount_options => ['dmode=775','fmode=775']
   doc_root = '/vagrant_data/app/webroot'
 
   config.berkshelf.enabled = true

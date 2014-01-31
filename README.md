@@ -25,7 +25,9 @@ VirtualBoxをセットアップしてください。
 このリポジトリをgitでクローンするか、ZIPなどでダウンロードしてください。
 gitでクローンする場合は、ソースを配置したいパスに移動して以下のコマンドを実行します。
 <pre>
-git clone https://github.com/ryu818/NetCommons3.git
+cd /usr/local/src
+git clone https://github.com/NetCommons3/NetCommons3.git
+git clone https://github.com/NetCommons3/NetCommons3Docs.git
 </pre>
 
 ### 依存ライブラリをインストール

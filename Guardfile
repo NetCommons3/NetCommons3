@@ -1,5 +1,4 @@
 ignore(/(min|dev)\.(js|css)$/)
-ignore(%r{^docs/build/*/.*\.(js|css)$})
 
 # Update bundle
 guard :bundler do
@@ -60,13 +59,6 @@ end
 # Installed by guard-phpmd
 guard 'phpmd', :rules => 'ruleset/phpmd.xml' do
   watch(%r{.*\.php$})
-end
-
-# Generate docs
-guard 'shell' do
-  watch(%r{.*\.rst$}) do |m|
-    `cd docs; make html; cd -`
-  end
 end
 
 # Installed by guard-jshint-node
