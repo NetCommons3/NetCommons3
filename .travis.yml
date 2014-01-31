@@ -117,9 +117,9 @@ before_script:
 
 script:
   - ./lib/Cake/Console/cake test app All --stderr
-  - phpcs -p --extensions=php --standard=CakePHP --ignore=Vendor .
-  - phpmd . text ruleset/phpmd.xml --exclude=Vendor
-  - phpcpd --exclude Test --exclude Config --exclude Vendor .
+  - phpcs -p --extensions=php --standard=CakePHP --ignore=./Vendor,./Plugin,./app/Config/database.php .
+  - phpmd app text ruleset/phpmd.xml --exclude=/home/travis/build/NetCommons3/NetCommons3/app/Config/database.php
+  - phpcpd --exclude Test --exclude Config --exclude ./app/Config/database.php app
 
 notifications:
   email:
