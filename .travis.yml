@@ -110,7 +110,7 @@ before_script:
 script:
   - ./lib/Cake/Console/cake test app All --stderr
   - phpcs -p --extensions=php --standard=CakePHP --ignore=./app/Config/database.php app
-  - phpmd app text ruleset/phpmd.xml --exclude=$TRAVIS_BUILD_DIR/app/Config/database.php
+  - phpmd app text ruleset/phpmd.xml
   - phpcpd --exclude Test --exclude Config --exclude ./app/Config/database.php app
 
 notifications:

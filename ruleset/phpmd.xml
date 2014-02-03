@@ -23,6 +23,8 @@
     <rule ref="rulesets/naming.xml">
         <!-- Exclude the rule for variable like $id, that baked by CakePHP. -->
         <exclude name="ShortVariable" />
+        <!-- Exclude the rule for supress strict error. -->
+        <exclude name="UnusedFormalParameter" />
     </rule>
     <rule ref="rulesets/naming.xml/ShortVariable">
         <properties>
