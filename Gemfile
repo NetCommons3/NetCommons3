@@ -23,4 +23,6 @@ group :development, :test do
   gem 'ruby-prof'
   gem 'test-kitchen'
   gem 'jekyll'
+  gem 'travis'
+  gem 'travis-lint'
 end
