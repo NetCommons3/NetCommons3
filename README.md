@@ -93,8 +93,6 @@ vagrant up
 デフォルトでは上記のポート番号を使用しますが、デフォルトのポートが使用中の場合は他のポート番号を使用する場合があります。
 値が異なる場合は適宜以下の説明を読み替えてください。
 
-
-http://127.0.0.1:8080 にアクセスしてください。IPアドレスやポート番号を任意に変更する場合はVagrantfileを編集します。
 また、サーバ内にSSHする場合はvagrantコマンドを使います。
 <pre>
 vagrant ssh
@@ -110,8 +108,13 @@ cd /vagrant_data/
 composer install
 </pre>
 
-
 NetCommonsのインストーラーで入力するデータベースのユーザ名は「root」、パスワードは無しです。
+
+guest には下記 vhosts が作成され、動作の確認ができます。
+
+|url                               |用途                                    |
+|http://www.netcommons.local:8080  |netcommons 本体                         |
+|http://docs.netcommons.local:8080 |ドキュメント管理                        |
 
 ### 終了
 vagrantコマンドで仮想マシンを終了、又は破棄出来ます。
