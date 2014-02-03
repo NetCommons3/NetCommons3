@@ -18,6 +18,7 @@ before_script:
   - sh -c "if [ '$DB' = 'pgsql' ]; then psql -c 'CREATE SCHEMA test2;' -U postgres -d cakephp_test; fi"
   - sh -c "if [ '$DB' = 'pgsql' ]; then psql -c 'CREATE SCHEMA test3;' -U postgres -d cakephp_test; fi"
   - chmod -R 777 ./app/tmp
+  - mkdir -p build/logs
   - pear channel-discover pear.cakephp.org
   - pear install --alldeps cakephp/CakePHP_CodeSniffer
   - pear channel-discover pear.phpmd.org
@@ -108,10 +109,14 @@ before_script:
     }" > app/Config/database.php
 
 script:
-  - ./lib/Cake/Console/cake test app All --stderr
+  - ./lib/Cake/Console/cake test app All --stderr --configuration phpunit.xml.dist
   - phpcs -p --extensions=php --standard=CakePHP --ignore=./app/Config/database.php app
   - phpmd app text ruleset/phpmd.xml
   - phpcpd --exclude Test --exclude Config --exclude ./app/Config/database.php app
+
+
+after_script:
+  - php Vendor/bin/coveralls
 
 notifications:
   email:
