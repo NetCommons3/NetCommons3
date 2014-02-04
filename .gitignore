@@ -3,8 +3,8 @@
 /app/Config/database.php
 /app/tmp
 /lib/Cake/Console/Templates/skel/tmp/
-/Plugin
-/Vendor
+/plugins
+/vendors
 /build
 /dist
 /tags
