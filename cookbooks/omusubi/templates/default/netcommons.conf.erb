@@ -13,10 +13,10 @@
 </VirtualHost>
 
 <VirtualHost *:80>
-	ServerName docs.netcommons.local
+	ServerName sphinx.netcommons.local
 	ServerAdmin webmaster@localhost
 
-	DocumentRoot /var/www/NetCommons3Docs/build/html
+	DocumentRoot /var/www/NetCommons3Docs/sphinx/build/html
 	<Directory />
 		AllowOverride None
 	</Directory>
@@ -25,3 +25,15 @@
 	CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
 
+<VirtualHost *:80>
+	ServerName phpdoc.netcommons.local
+	ServerAdmin webmaster@localhost
+
+	DocumentRoot /var/www/NetCommons3Docs/phpdoc
+	<Directory />
+		AllowOverride None
+	</Directory>
+
+	ErrorLog ${APACHE_LOG_DIR}/error.log
+	CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>

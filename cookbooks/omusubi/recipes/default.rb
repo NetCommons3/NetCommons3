@@ -33,11 +33,11 @@ end
 
 # Install packages necessary for this project
 packages = %w{
-  php5 php5-curl php5-cli php5-imagick php5-xdebug php5-mcrypt php-pear
+  php5 php5-curl php5-cli php5-imagick php5-xdebug php5-mcrypt php5-xsl php-pear
   openjdk-7-jdk nodejs
   git subversion apache2-utils apache2.2-bin apache2.2-common apache2-mpm-prefork libapache2-mod-php5
   libxml2-dev libxslt-dev
-  mysql-server postgresql curl imagemagick
+  mysql-server postgresql curl imagemagick graphviz
   lv zsh tree axel expect make g++
   global w3m aspell exuberant-ctags wamerican-huge stunnel4
   emacs24 emacs-goodies-el debian-el gettext-el
@@ -122,6 +122,11 @@ end
 execute "install phpcpd" do
   command "pear install pear.phpunit.de/phpcpd"
   not_if { ::File.exists?("/usr/bin/phpcpd")}
+end
+
+execute "install phpdoc" do
+  command "pear channel-discover pear.phpdoc.org; pear install phpdoc/phpDocumentor"
+  not_if { ::File.exists?("/usr/bin/phpdoc")}
 end
 
 # Install or update composer

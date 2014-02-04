@@ -114,10 +114,11 @@ NetCommonsのインストーラーで入力するデータベースのユーザ�
 
 guest には下記 vhosts が作成され、動作の確認ができます。
 
-| url                               | 用途                                   |
-| --------------------------------- | -------------------------------------- |
-| http://www.netcommons.local:8080  | netcommons 本体                        |
-| http://docs.netcommons.local:8080 | ドキュメント管理                       |
+| url                                 | 用途                                 |
+| ----------------------------------- | ------------------------------------ |
+| http://www.netcommons.local:8080    | netcommons 本体                      |
+| http://sphinx.netcommons.local:8080 | ドキュメント管理                     |
+| http://phpdoc.netcommons.local:8080 | phpdoc                               |
 
 ### 終了
 vagrantコマンドで仮想マシンを終了、又は破棄出来ます。
