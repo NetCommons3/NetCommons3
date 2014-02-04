@@ -110,13 +110,13 @@ before_script:
 
 script:
   - ./lib/Cake/Console/cake test app All --stderr --configuration phpunit.xml.dist
-  - phpcs -p --extensions=php --standard=CakePHP --ignore=./app/Config/database.php app
-  - phpmd app text ruleset/phpmd.xml
-  - phpcpd --exclude Test --exclude Config --exclude ./app/Config/database.php app
+  - phpcs -p --extensions=php --standard=CakePHP --ignore=app/Config/Migration/,app/Config/database.php,app/Plugin/DebugKit,app/Plugin/Migrations,app/Plugin/MobileDetect app
+  - phpmd app text ruleset/phpmd.xml --exclude $TRAVIS_BUILD_DIR/app/Config/Migration,$TRAVIS_BUILD_DIR/app/Plugin/DebugKit,$TRAVIS_BUILD_DIR/app/Plugin/Migrations,$TRAVIS_BUILD_DIR/app/Plugin/MobileDetect
+  - phpcpd --exclude Test --exclude Config --exclude app/Config/database.php --exclude app/Plugin/DebugKit --exclude app/Plugin/Migrations --exclude app/Plugin/MobileDetect app
 
 
 after_script:
-  - php Vendor/bin/coveralls
+  - php vendors/bin/coveralls
 
 notifications:
   email:
