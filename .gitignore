@@ -22,6 +22,9 @@ TAGS
 /app/webroot/js/*.dev.js
 /app/webroot/css/*.min.css
 /app/webroot/css/*.dev.css
+/app/Plugin/Migrations
+/app/Plugin/MobileDetect
+/app/Plugin/DebugKit
 
 # OS generated files #
 ######################

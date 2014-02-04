@@ -3,8 +3,45 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "63bcd6977b662b3c34ded37daa0f8bac",
+    "hash": "2a4bffee51aeb36ee9437031fe44fe74",
     "packages": [
+        {
+            "name": "cakedc/migrations",
+            "version": "2.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/CakeDC/migrations.git",
+                "reference": "94036a606089c7e14b349eba043b0f58a0947e29"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/CakeDC/migrations/zipball/94036a606089c7e14b349eba043b0f58a0947e29",
+                "reference": "94036a606089c7e14b349eba043b0f58a0947e29",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*"
+            },
+            "type": "cakephp-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cake Development Corporation",
+                    "email": "team@cakedc.com",
+                    "homepage": "http://cakedc.com"
+                }
+            ],
+            "description": "Migrations Plugin for CakePHP",
+            "homepage": "http://cakedc.com",
+            "keywords": [
+                "cakephp",
+                "migrations"
+            ],
+            "time": "2013-10-21 10:45:27"
+        },
         {
             "name": "cakephp/debug_kit",
             "version": "2.2.3",
@@ -145,16 +182,16 @@
         },
         {
             "name": "composer/installers",
-            "version": "v1.0.9",
+            "version": "v1.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "8e3e734c50b8f60228baf439d5ab16c57d67f6ce"
+                "reference": "35a07647186a910b725fca9290b13ca2e265491a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/8e3e734c50b8f60228baf439d5ab16c57d67f6ce",
-                "reference": "8e3e734c50b8f60228baf439d5ab16c57d67f6ce",
+                "url": "https://api.github.com/repos/composer/installers/zipball/35a07647186a910b725fca9290b13ca2e265491a",
+                "reference": "35a07647186a910b725fca9290b13ca2e265491a",
                 "shasum": ""
             },
             "replace": {
@@ -191,6 +228,7 @@
             "description": "A multi-framework Composer library installer",
             "homepage": "http://composer.github.com/installers/",
             "keywords": [
+                "Craft",
                 "Hurad",
                 "MODX Evo",
                 "OXID",
@@ -223,7 +261,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2014-01-27 03:45:57"
+            "time": "2014-01-31 16:53:31"
         },
         {
             "name": "ezyang/htmlpurifier",

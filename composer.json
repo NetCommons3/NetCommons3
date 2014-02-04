@@ -18,9 +18,17 @@
             "url": "http://pear.cakephp.org"
         }
     ],
+    "extra": {
+        "installer-paths": {
+            "app/Plugin/DebugKit": ["cakephp/debug_kit"],
+            "app/Plugin/Migrations": ["cakedc/migrations"],
+            "app/Plugin/MobileDetect": ["chronon/mobile_detect"]
+        }
+    },
     "require": {
         "pear-cakephp/cakephp": "~2.4.0",
         "cakephp/debug_kit": "~2.2.0",
+        "cakedc/migrations": "~2.2.0",
         "ezyang/htmlpurifier": "~4.6.0",
         "chronon/mobile_detect": "*",
         "twbs/bootstrap": "~3.0.0",
