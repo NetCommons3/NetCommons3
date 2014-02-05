@@ -7,8 +7,12 @@ NetCommons
 [NetCommons公式サイト](http://www.netcommons.org/)
 
 [![Build Status](https://travis-ci.org/NetCommons3/NetCommons3.png?branch=master)](https://travis-ci.org/NetCommons3/NetCommons3)
-[![Dependency Status](https://gemnasium.com/NetCommons3/NetCommons3.png)](https://gemnasium.com/NetCommons3/NetCommons3)
 [![Coverage Status](https://coveralls.io/repos/NetCommons3/NetCommons3/badge.png?branch=master)](https://coveralls.io/r/NetCommons3/NetCommons3?branch=master)
+
+| package | status |
+| ------- | ------ |
+| Gemfile | [![Dependency Status](https://www.versioneye.com/user/projects/52f1cc16ec13757904000127/badge.png)](https://www.versioneye.com/user/projects/52f1cc16ec13757904000127) |
+| composer.json | [![Dependency Status](https://www.versioneye.com/user/projects/52f1cc19ec13756b480000c4/badge.png)](https://www.versioneye.com/user/projects/52f1cc19ec13756b480000c4) |
 
 # 開発環境での起動
 

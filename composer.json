@@ -31,7 +31,7 @@
         "cakedc/migrations": "~2.2.0",
         "ezyang/htmlpurifier": "~4.6.0",
         "chronon/mobile_detect": "*",
-        "twbs/bootstrap": "~3.0.0",
+        "twbs/bootstrap": "~3.1.0",
         "components/jquery": "~2.1.0"
     },
     "require-dev": {
