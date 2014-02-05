@@ -12,12 +12,6 @@
             "homepage": "https://github.com/NetCommons3/NetCommons3/graphs/contributors"
         }
     ],
-    "repositories": [
-        {
-            "type": "pear",
-            "url": "http://pear.cakephp.org"
-        }
-    ],
     "extra": {
         "installer-paths": {
             "app/Plugin/DebugKit": ["cakephp/debug_kit"],
@@ -26,7 +20,7 @@
         }
     },
     "require": {
-        "pear-cakephp/cakephp": "~2.4.0",
+        "cakephp/cakephp": "~2.4.0",
         "cakephp/debug_kit": "~2.2.0",
         "cakedc/migrations": "~2.2.0",
         "ezyang/htmlpurifier": "~4.6.0",

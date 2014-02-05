@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "b3618aa1e3a2223e4336ea4171c9cc84",
+    "hash": "82aeb3d8e76783407719c40b052e3f08",
     "packages": [
         {
             "name": "cakedc/migrations",
@@ -41,6 +41,49 @@
                 "migrations"
             ],
             "time": "2013-10-21 10:45:27"
+        },
+        {
+            "name": "cakephp/cakephp",
+            "version": "2.4.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cakephp/cakephp.git",
+                "reference": "9b4c2f3c86db84e55e8a5f7a8f1325ed7c4715ad"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cakephp/cakephp/zipball/9b4c2f3c86db84e55e8a5f7a8f1325ed7c4715ad",
+                "reference": "9b4c2f3c86db84e55e8a5f7a8f1325ed7c4715ad",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mcrypt": "*",
+                "php": ">=5.2.8"
+            },
+            "require-dev": {
+                "cakephp/debug_kit": "2.2.*",
+                "phpunit/phpunit": "3.7.*"
+            },
+            "bin": [
+                "lib/Cake/Console/cake"
+            ],
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "CakePHP Community",
+                    "homepage": "https://github.com/cakephp/cakephp/graphs/contributors"
+                }
+            ],
+            "description": "The CakePHP framework",
+            "homepage": "http://cakephp.org",
+            "keywords": [
+                "framework"
+            ],
+            "time": "2014-01-26 20:06:00"
         },
         {
             "name": "cakephp/debug_kit",
@@ -430,32 +473,6 @@
                 "php mobile detect"
             ],
             "time": "2014-01-17 15:58:35"
-        },
-        {
-            "name": "pear-pear.cakephp.org/CakePHP",
-            "version": "2.4.5",
-            "dist": {
-                "type": "file",
-                "url": "http://pear.cakephp.org/get/CakePHP-2.4.5.tgz",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "php": ">=5.2.8.0"
-            },
-            "replace": {
-                "pear-cakephp/cakephp": "== 2.4.5.0"
-            },
-            "type": "pear-library",
-            "autoload": {
-                "classmap": [
-                    ""
-                ]
-            },
-            "include-path": [
-                "/"
-            ],
-            "description": "CakePHP is an application development framework for PHP 5.2+"
         },
         {
             "name": "robloach/component-installer",
