@@ -8,7 +8,7 @@ NetCommons
 
 [![Build Status](https://travis-ci.org/NetCommons3/NetCommons3.png?branch=master)](https://travis-ci.org/NetCommons3/NetCommons3)
 [![Dependency Status](https://gemnasium.com/NetCommons3/NetCommons3.png)](https://gemnasium.com/NetCommons3/NetCommons3)
-[![Coverage Status](https://coveralls.io/repos/NetCommons3/NetCommons3/badge.png)](https://coveralls.io/r/NetCommons3/NetCommons3)
+[![Coverage Status](https://coveralls.io/repos/NetCommons3/NetCommons3/badge.png?branch=master)](https://coveralls.io/r/NetCommons3/NetCommons3?branch=master)
 
 # 開発環境での起動
 

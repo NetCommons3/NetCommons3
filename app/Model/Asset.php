@@ -44,17 +44,16 @@ class Asset extends AppModel {
 		),
 	);
 
-	/**
-	 * description
-	 *
-	 * @param type arg
-	 *   description
-	 *
-	 * @return bool
-	 *   description
-	 */
-	public function test($test)
-	{
+/**
+ * description
+ *
+ * @param type arg
+ *   description
+ *
+ * @return bool
+ *   description
+ */
+	public function test($test) {
 		return true;
 	}
 }
