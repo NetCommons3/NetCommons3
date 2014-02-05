@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit bootstrap="vendors/autoload.php">
+    <filter>
+        <blacklist>
+            <directory suffix=".php">app/Config</directory>
+            <directory suffix=".php">app/Test</directory>
+        </blacklist>
+    </filter>
     <logging>
         <log type="coverage-clover" target="build/logs/clover.xml"/>
     </logging>
