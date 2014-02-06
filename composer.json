@@ -1,32 +1,32 @@
 {
-    "name": "NetCommons3",
-    "version": "3.0.0",
+    "name":        "netcommons",
+    "version":     "3.0.0",
     "description": "NetCommons3",
-    "type": "CMS",
-    "keywords": ["CMS"],
-    "homepage": "http://www.netcommons.org/",
-    "license": "NetCommons",
+    "type":        "CMS",
+    "keywords":    ["CMS"],
+    "homepage":    "http://www.netcommons.org/",
+    "license":     "NetCommons License",
     "authors": [
         {
-            "name": "NetCommons Community",
+            "name":     "NetCommons Community",
             "homepage": "https://github.com/NetCommons3/NetCommons3/graphs/contributors"
         }
     ],
     "extra": {
         "installer-paths": {
-            "app/Plugin/DebugKit": ["cakephp/debug_kit"],
-            "app/Plugin/Migrations": ["cakedc/migrations"],
+            "app/Plugin/DebugKit":     ["cakephp/debug_kit"],
+            "app/Plugin/Migrations":   ["cakedc/migrations"],
             "app/Plugin/MobileDetect": ["chronon/mobile_detect"]
         }
     },
     "require": {
-        "cakephp/cakephp": "~2.4.0",
-        "cakephp/debug_kit": "~2.2.0",
-        "cakedc/migrations": "~2.2.0",
-        "ezyang/htmlpurifier": "~4.6.0",
-        "chronon/mobile_detect": "*",
-        "twbs/bootstrap": "~3.1.0",
-        "components/jquery": "~2.1.0"
+        "cakephp/cakephp":        "~2.4.0",
+        "cakephp/debug_kit":      "~2.2.0",
+        "cakedc/migrations":      "~2.2.0",
+        "ezyang/htmlpurifier":    "~4.6.0",
+        "chronon/mobile_detect":  "*",
+        "twbs/bootstrap":         "~3.1.0",
+        "components/jquery":      "~2.1.0"
     },
     "require-dev": {
         "satooshi/php-coveralls": "dev-master"
