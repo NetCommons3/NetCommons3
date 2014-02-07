@@ -127,8 +127,9 @@ guest には下記 vhosts が作成され、動作の確認ができます。
 
 ### Workaround
 #### Windows ホストの場合
-composer が手動管理となっているため、<code>vagrant up</code>実行時にエラーが発生します。
-その場合は以下を実行してください。
+<code>vagrant up</code>実行時に、仮想化支援機構(VT-x/AMD-V)が有効化されていないメッセージが表示された場合は、BIOSの設定を見直してください。
+
+また、composer を手動管理にしている場合は、以下の手順を実施してください。
 
 guest で以下実行
 <pre>
