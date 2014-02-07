@@ -141,7 +141,7 @@ cd /usr/local/bin/
 sudo ln -s /vagrant_data/composer.phar composer
 </pre>
 
-上記実行後に host で以下実行
+上記実行後に ホスト の配置したソースのパスで以下実行
 <pre>
 vagrant provision
 </pre>
