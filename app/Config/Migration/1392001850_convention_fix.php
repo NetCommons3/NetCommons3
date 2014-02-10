@@ -1,5 +1,5 @@
 <?php
-class Init extends CakeMigration {
+class ConventionFix extends CakeMigration {
 
 /**
  * Migration description
@@ -18,7 +18,7 @@ class Init extends CakeMigration {
 	public $migration = array(
 		'up' => array(
 			'create_table' => array(
-				'nc3_announcement_edits' => array(
+				'announcement_edits' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary', 'comment' => 'お知らせ編集ID'),
 					'content_id' => array('type' => 'integer', 'null' => false, 'default' => '0'),
 					'post_hierarchy' => array('type' => 'integer', 'null' => false, 'default' => '301', 'comment' => '記事投稿権限
@@ -29,20 +29,20 @@ class Init extends CakeMigration {
 					'approved_mail_subject' => array('type' => 'string', 'null' => true, 'default' => NULL, 'collate' => 'utf8_general_ci', 'comment' => '承認後のメールで通知の件名', 'charset' => 'utf8'),
 					'approved_mail_body' => array('type' => 'text', 'null' => true, 'default' => NULL, 'collate' => 'utf8_general_ci', 'comment' => '承認後のメールで通知の内容', 'charset' => 'utf8'),
 					'created' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'created_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'created_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'created_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'modified' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'modified_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'modified_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'indexes' => array(
 						'PRIMARY' => array('column' => 'id', 'unique' => 1),
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_announcements' => array(
+				'announcements' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary', 'comment' => 'お知らせID'),
 					'content_id' => array('type' => 'integer', 'null' => false, 'default' => '0'),
-					'revision_group_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'revision_root' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => 'revison.revision_rootと同値のrevisionの大本となるrevision.id'),
 					'status' => array('type' => 'integer', 'null' => false, 'default' => '0', 'length' => 3, 'comment' => '0：公開中
 1：一時保存中
 2：一時保存中(新規投稿->一時保存の場合)	　　新規投稿記事メール送信用'),
@@ -50,24 +50,24 @@ class Init extends CakeMigration {
 					'pre_change_flag' => array('type' => 'boolean', 'null' => false, 'default' => '0', 'comment' => '変更前のコンテンツを表示するかどうか。'),
 					'pre_change_date' => array('type' => 'datetime', 'null' => true, 'default' => NULL, 'comment' => '公開日付（pre_change_flagがONの場合、指定することで、自動的にに最新の記事が公開される。）'),
 					'created' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'created_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'created_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'created_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'modified' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'modified_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'modified_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'indexes' => array(
 						'PRIMARY' => array('column' => 'id', 'unique' => 1),
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_archives' => array(
+				'archives' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary', 'comment' => 'アーカイブID。新着、検索用のデータを管理。記事投稿、編集、削除時に登録。新着、検索モジュールから表示させる。'),
 					'parent_model_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'comment' => '親記事のモデル名称', 'charset' => 'utf8'),
 					'parent_id' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => '親記事のID（根記事ID等。ブログならば親記事。）'),
 					'module_id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'index'),
 					'content_id' => array('type' => 'integer', 'null' => false, 'default' => NULL),
 					'model_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'comment' => '記事モデル名称', 'charset' => 'utf8'),
-					'unique_id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'comment' => '記事ID'),
+					'plugin_unique' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => 'plugin側で一意に識別できる番号'),
 					'status' => array('type' => 'integer', 'null' => false, 'default' => '0', 'length' => 3, 'comment' => '記事の状態
 0:公開中
 1: 一時保存中
@@ -82,18 +82,18 @@ class Init extends CakeMigration {
 					'search_content' => array('type' => 'text', 'null' => false, 'default' => NULL, 'collate' => 'utf8_general_ci', 'comment' => '検索詳細。', 'charset' => 'utf8'),
 					'url' => array('type' => 'text', 'null' => false, 'default' => NULL, 'collate' => 'utf8_general_ci', 'comment' => '新着（検索）リンク先URL。', 'charset' => 'utf8'),
 					'created' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'created_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'created_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'created_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'modified' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'modified_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'modified_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'indexes' => array(
 						'PRIMARY' => array('column' => 'id', 'unique' => 1),
-						'module_id' => array('column' => array('module_id', 'model_name', 'unique_id'), 'unique' => 0),
+						'module_id' => array('column' => array('module_id', 'model_name', 'plugin_unique'), 'unique' => 0),
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_assets' => array(
+				'assets' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary', 'comment' => 'AssetID(CSS,JSを連結して書き出した一覧)
 app\\webroot\\theme\\assets下に圧縮したものと、そうでないもののCSS,JSを保持。'),
 					'url' => array('type' => 'string', 'null' => false, 'default' => NULL, 'key' => 'unique', 'collate' => 'utf8_general_ci', 'comment' => 'ファイルパス', 'charset' => 'utf8'),
@@ -107,7 +107,7 @@ app\\webroot\\theme\\assets下に圧縮したものと、そうでないもの�
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_authorities' => array(
+				'authorities' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary', 'comment' => '権限ID（会員権限（ベース権限）毎の振る舞いと、ルーム権限における権限(hierarchy)を設定）'),
 					'default_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 64, 'collate' => 'utf8_general_ci', 'comment' => '権限名のデフォルトの項目名。新規追加か、langがenならば、default_nameを更新。該当言語の権限名がなければ、こちらを表示する。', 'charset' => 'utf8'),
 					'system_flag' => array('type' => 'boolean', 'null' => false, 'default' => '0', 'comment' => 'システムで使用するかどうか。ONの場合、権限管理から削除不可。'),
@@ -158,26 +158,26 @@ app\\webroot\\theme\\assets下に圧縮したものと、そうでないもの�
 					'allow_shortcut_operation' => array('type' => 'boolean', 'null' => false, 'default' => '0', 'comment' => 'ページ・ブロックのショートカット作成を許可するかどうか。'),
 					'allow_operation_of_shortcut' => array('type' => 'boolean', 'null' => false, 'default' => '0', 'comment' => 'ショートカットブロックのコピー・移動・ショートカット作成を許可するかどうか。'),
 					'created' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'created_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'created_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'created_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'modified' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'modified_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'modified_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'indexes' => array(
 						'PRIMARY' => array('column' => 'id', 'unique' => 1),
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_authority_langs' => array(
+				'authority_langs' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary', 'comment' => '権限言語ID'),
 					'authority_id' => array('type' => 'integer', 'null' => false, 'default' => '0', 'key' => 'index'),
 					'lang' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 10, 'collate' => 'utf8_general_ci', 'comment' => '言語(ja,en等)', 'charset' => 'utf8'),
 					'name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'collate' => 'utf8_general_ci', 'comment' => '権限名', 'charset' => 'utf8'),
 					'created' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'created_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'created_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'created_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'modified' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'modified_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'modified_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'indexes' => array(
 						'PRIMARY' => array('column' => 'id', 'unique' => 1),
@@ -185,10 +185,10 @@ app\\webroot\\theme\\assets下に圧縮したものと、そうでないもの�
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_backgrounds' => array(
+				'backgrounds' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary', 'comment' => 'バックグラウンドID
 「\\webroot\\img\\backgrounds\\patterns」、「\\webroot\\img\\backgrounds\\images」にあるファイルからページスタイル背景用のマスタを作成。'),
-					'group_id' => array('type' => 'integer', 'null' => false, 'default' => '0'),
+					'group_num' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => '背景画像のグループ番号（Leather（レザー）系）'),
 					'type' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 100, 'collate' => 'utf8_general_ci', 'comment' => 'Locale/(jang)/LC_MESSAGE/background.poの名称、「\\webroot\\img\\backgrounds\\patterns(images)」下フォルダ名称に対応する。フォルダでなければ、ファイル名のキャメル記法。', 'charset' => 'utf8'),
 					'category' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 100, 'collate' => 'utf8_general_ci', 'comment' => 'Plugin/page/Locale/(jang)/LC_MESSAGE/page.poの背景キーワード名称、「\\webroot\\img\\backgrounds\\patterns(images)」下のファイル名の「_」までの先頭文字列（キャメル記法）。', 'charset' => 'utf8'),
@@ -202,7 +202,7 @@ app\\webroot\\theme\\assets下に圧縮したものと、そうでないもの�
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_blocks' => array(
+				'blocks' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary', 'comment' => 'ブロックID（ページ内にモジュールを配置した際に割り振られるID）'),
 					'page_id' => array('type' => 'integer', 'null' => false, 'default' => '0', 'key' => 'index'),
 					'content_id' => array('type' => 'integer', 'null' => false, 'default' => '0'),
@@ -210,7 +210,7 @@ app\\webroot\\theme\\assets下に圧縮したものと、そうでないもの�
 					'title' => array('type' => 'string', 'null' => false, 'default' => NULL, 'collate' => 'utf8_general_ci', 'comment' => 'ブロックタイトル（{X-CONTENT}と記述されていればContent.titleをブロックタイトルとして表示）', 'charset' => 'utf8'),
 					'show_title' => array('type' => 'boolean', 'null' => false, 'default' => '1', 'comment' => 'タイトルを表示するかどうか。'),
 					'controller_action' => array('type' => 'string', 'null' => false, 'default' => NULL, 'collate' => 'utf8_general_ci', 'comment' => 'ページからブロックを表示する際のコントロール、アクション名', 'charset' => 'utf8'),
-					'root_id' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => 'ブロックルートID（ブロックはグループ化することにより、深さをもつため）'),
+					'root' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => 'ブロックルートID（ブロックはグループ化することにより、深さをもつため）'),
 					'parent_id' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => 'ブロック親ID（ブロックはグループ化することにより、深さをもつため）'),
 					'thread_num' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => 'ブロック深さ（ブロックはグループ化することにより、深さをもつため）'),
 					'col_num' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => 'ブロック列番号'),
@@ -226,12 +226,12 @@ app\\webroot\\theme\\assets下に圧縮したものと、そうでないもの�
 					'bottom_margin' => array('type' => 'integer', 'null' => true, 'default' => NULL, 'comment' => 'ブロックボトムマージン'),
 					'min_width_size' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => 'ブロック最小の広さ'),
 					'min_height_size' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => 'ブロック最小の高さ'),
-					'lock_authority_id' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => 'ロックされたブロックかどうか（現状、未使用）。ロックされるとブロックの削除、ブロック操作ができなくなる。'),
+					'lock_authority_num' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => 'ロックされたブロックかどうか（現状、未使用）。ロックされるとブロックの削除、ブロック操作ができなくなる。'),
 					'created' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'created_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'created_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'created_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'modified' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'modified_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'modified_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'indexes' => array(
 						'PRIMARY' => array('column' => 'id', 'unique' => 1),
@@ -239,7 +239,7 @@ app\\webroot\\theme\\assets下に圧縮したものと、そうでないもの�
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_blog_comments' => array(
+				'blog_comments' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary'),
 					'content_id' => array('type' => 'integer', 'null' => false, 'default' => '0', 'key' => 'index'),
 					'blog_post_id' => array('type' => 'integer', 'null' => false, 'default' => '0'),
@@ -258,10 +258,10 @@ app\\webroot\\theme\\assets下に圧縮したものと、そうでないもの�
 trackback：トラックバック
 comment：コメント', 'charset' => 'utf8'),
 					'created' => array('type' => 'datetime', 'null' => true, 'default' => NULL, 'key' => 'index'),
-					'created_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'created_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'created_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'modified' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'modified_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'modified_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'indexes' => array(
 						'PRIMARY' => array('column' => 'id', 'unique' => 1),
@@ -270,7 +270,7 @@ comment：コメント', 'charset' => 'utf8'),
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_blog_posts' => array(
+				'blog_posts' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary'),
 					'content_id' => array('type' => 'integer', 'null' => false, 'default' => '0', 'key' => 'index'),
 					'post_date' => array('type' => 'datetime', 'null' => true, 'default' => NULL, 'comment' => '記事投稿日'),
@@ -278,7 +278,7 @@ comment：コメント', 'charset' => 'utf8'),
 					'title' => array('type' => 'string', 'null' => false, 'default' => NULL, 'collate' => 'utf8_general_ci', 'comment' => '記事タイトル', 'charset' => 'utf8'),
 					'permalink' => array('type' => 'string', 'null' => false, 'default' => NULL, 'collate' => 'utf8_general_ci', 'comment' => '固定リンク', 'charset' => 'utf8'),
 					'icon_name' => array('type' => 'string', 'null' => true, 'default' => NULL, 'length' => 128, 'collate' => 'utf8_general_ci', 'comment' => 'タイトルの横につくアイコンファイル名', 'charset' => 'utf8'),
-					'revision_group_id' => array('type' => 'integer', 'null' => true, 'default' => NULL, 'comment' => 'revisionテーブルのgroup_id'),
+					'revision_root' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => 'revison.group_idと同値のrevisionの大本となるrevision.id'),
 					'vote' => array('type' => 'text', 'null' => true, 'default' => NULL, 'collate' => 'utf8_general_ci', 'comment' => '投票済みユーザのID', 'charset' => 'utf8'),
 					'status' => array('type' => 'integer', 'null' => false, 'default' => '0', 'length' => 3, 'comment' => '0：公開中
 1：一時保存中
@@ -295,19 +295,19 @@ comment：コメント', 'charset' => 'utf8'),
 					'trackback_count' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => 'トラックバック数'),
 					'vote_count' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => '投票数'),
 					'created' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'created_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'created_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'created_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'modified' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'modified_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'modified_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'indexes' => array(
 						'PRIMARY' => array('column' => 'id', 'unique' => 1),
-						'created_user_id' => array('column' => array('content_id', 'created_user_id'), 'unique' => 0),
+						'created_user' => array('column' => array('content_id', 'created_user'), 'unique' => 0),
 						'post_date' => array('column' => array('content_id', 'status', 'post_date', 'id'), 'unique' => 0),
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_blog_styles' => array(
+				'blog_styles' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary'),
 					'block_id' => array('type' => 'integer', 'null' => false, 'default' => '0', 'key' => 'index'),
 					'widget_type' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'length' => 3, 'comment' => 'ブログウィジットの種類
@@ -327,10 +327,10 @@ comment：コメント', 'charset' => 'utf8'),
 					'visible_item' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => '記事の表示件数'),
 					'options' => array('type' => 'text', 'null' => false, 'default' => NULL, 'collate' => 'utf8_general_ci', 'comment' => 'ブログウィジットごとの表示方法をシリアライズして設定', 'charset' => 'utf8'),
 					'created' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'created_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'created_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'created_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'modified' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'modified_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'modified_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'indexes' => array(
 						'PRIMARY' => array('column' => 'id', 'unique' => 1),
@@ -338,16 +338,16 @@ comment：コメント', 'charset' => 'utf8'),
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_blog_term_links' => array(
+				'blog_term_links' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary'),
 					'content_id' => array('type' => 'integer', 'null' => false, 'default' => '0'),
 					'blog_post_id' => array('type' => 'integer', 'null' => false, 'default' => '0', 'key' => 'index'),
 					'blog_term_id' => array('type' => 'integer', 'null' => false, 'default' => '0'),
 					'created' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'created_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'created_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'created_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'modified' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'modified_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'modified_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'indexes' => array(
 						'PRIMARY' => array('column' => 'id', 'unique' => 1),
@@ -355,7 +355,7 @@ comment：コメント', 'charset' => 'utf8'),
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_blog_terms' => array(
+				'blog_terms' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary'),
 					'content_id' => array('type' => 'integer', 'null' => false, 'default' => '0', 'key' => 'index'),
 					'name' => array('type' => 'string', 'null' => true, 'default' => NULL, 'collate' => 'utf8_general_ci', 'comment' => 'カテゴリーかタグの名称', 'charset' => 'utf8'),
@@ -366,10 +366,10 @@ comment：コメント', 'charset' => 'utf8'),
 					'parent' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => '種類がカテゴリーの場合に親子関係があればblog_termsのid'),
 					'count' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => '利用されている件数'),
 					'created' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'created_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'created_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'created_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'modified' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'modified_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'modified_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'indexes' => array(
 						'PRIMARY' => array('column' => 'id', 'unique' => 1),
@@ -379,7 +379,7 @@ comment：コメント', 'charset' => 'utf8'),
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_blogs' => array(
+				'blogs' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary'),
 					'content_id' => array('type' => 'integer', 'null' => false, 'default' => '0'),
 					'post_hierarchy' => array('type' => 'integer', 'null' => false, 'default' => '301', 'comment' => '記事投稿権限
@@ -419,19 +419,19 @@ comment：コメント', 'charset' => 'utf8'),
 					'comment_approved_mail_subject' => array('type' => 'string', 'null' => true, 'default' => NULL, 'collate' => 'utf8_general_ci', 'comment' => 'コメントとトラックバック承認完了通知メール件名', 'charset' => 'utf8'),
 					'comment_approved_mail_body' => array('type' => 'text', 'null' => true, 'default' => NULL, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'created' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'created_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'created_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'created_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'modified' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'modified_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'modified_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'indexes' => array(
 						'PRIMARY' => array('column' => 'id', 'unique' => 1),
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_communities' => array(
+				'communities' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary'),
-					'room_id' => array('type' => 'integer', 'null' => false, 'default' => '0', 'key' => 'index'),
+					'room_num' => array('type' => 'integer', 'null' => false, 'default' => '0', 'key' => 'index'),
 					'photo' => array('type' => 'string', 'null' => true, 'default' => NULL, 'collate' => 'utf8_general_ci', 'comment' => 'コミュニティーの写真(選択ファイル名 OR (Upload.id)_library.(extension))', 'charset' => 'utf8'),
 					'is_upload' => array('type' => 'boolean', 'null' => false, 'default' => '0', 'comment' => 'アップロードファイルを指定したかどうか。'),
 					'publication_range_flag' => array('type' => 'integer', 'null' => false, 'default' => '0', 'length' => 3, 'comment' => '公開範囲
@@ -452,64 +452,64 @@ comment：コメント', 'charset' => 'utf8'),
 					'resign_notice_hierarchy' => array('type' => 'integer', 'null' => false, 'default' => '301', 'comment' => '退会者をメール通知する権限。
 （0,101,201,301のみ）'),
 					'created' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'created_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'created_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'created_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'modified' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'modified_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'modified_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'indexes' => array(
 						'PRIMARY' => array('column' => 'id', 'unique' => 1),
-						'room_id' => array('column' => 'room_id', 'unique' => 0),
+						'room_num' => array('column' => 'room_num', 'unique' => 0),
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_community_invitations' => array(
+				'community_invitations' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary', 'comment' => 'コミュニティー招待ID'),
-					'room_id' => array('type' => 'integer', 'null' => false, 'default' => '0'),
+					'room_num' => array('type' => 'integer', 'null' => false, 'default' => '0'),
 					'user_id' => array('type' => 'integer', 'null' => false, 'default' => '0'),
 					'activate_key' => array('type' => 'string', 'null' => true, 'default' => NULL, 'length' => 40, 'collate' => 'utf8_general_ci', 'comment' => 'コミュニティー招待用承認用キー', 'charset' => 'utf8'),
 					'is_pending_approval_mail' => array('type' => 'boolean', 'null' => false, 'default' => '0', 'comment' => '承認待ちメールかどうか'),
 					'expires' => array('type' => 'integer', 'null' => true, 'default' => NULL, 'comment' => '有効期限'),
 					'created' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'created_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'created_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'created_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'modified' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'modified_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'modified_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'indexes' => array(
 						'PRIMARY' => array('column' => 'id', 'unique' => 1),
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_community_langs' => array(
+				'community_langs' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary'),
-					'room_id' => array('type' => 'integer', 'null' => false, 'default' => '0', 'key' => 'index'),
+					'room_num' => array('type' => 'integer', 'null' => false, 'default' => '0', 'key' => 'index'),
 					'lang' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 10, 'collate' => 'utf8_general_ci', 'comment' => '言語(ja,en等)', 'charset' => 'utf8'),
 					'community_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'collate' => 'utf8_general_ci', 'comment' => 'コミュニティー名称', 'charset' => 'utf8'),
 					'summary' => array('type' => 'text', 'null' => false, 'default' => NULL, 'collate' => 'utf8_general_ci', 'comment' => '概要', 'charset' => 'utf8'),
-					'revision_group_id' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => '活動の概要へのRevison.id'),
+					'revision_root' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => 'revison.group_idと同値のrevisionの大本となるrevision.id'),
 					'created' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'created_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'created_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'created_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'modified' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'modified_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'modified_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'indexes' => array(
 						'PRIMARY' => array('column' => 'id', 'unique' => 1),
-						'room_id' => array('column' => array('room_id', 'lang'), 'unique' => 0),
+						'room_num' => array('column' => array('room_num', 'lang'), 'unique' => 0),
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_community_sum_tags' => array(
+				'community_sum_tags' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary'),
 					'tag_value' => array('type' => 'string', 'null' => false, 'default' => NULL, 'key' => 'index', 'collate' => 'utf8_general_ci', 'comment' => 'タグ名称', 'charset' => 'utf8'),
 					'lang' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 10, 'collate' => 'utf8_general_ci', 'comment' => '言語(ja,en等)', 'charset' => 'utf8'),
 					'used_number' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => '該当タグ使用回数。'),
 					'created' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'created_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'created_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'created_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'modified' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'modified_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'modified_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'indexes' => array(
 						'PRIMARY' => array('column' => 'id', 'unique' => 1),
@@ -518,36 +518,36 @@ comment：コメント', 'charset' => 'utf8'),
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_community_tags' => array(
+				'community_tags' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary'),
-					'room_id' => array('type' => 'integer', 'null' => false, 'default' => '0', 'key' => 'index'),
+					'room_num' => array('type' => 'integer', 'null' => false, 'default' => '0', 'key' => 'index'),
 					'community_sum_tag_id' => array('type' => 'integer', 'null' => false, 'default' => '0'),
 					'tag_value' => array('type' => 'string', 'null' => false, 'default' => NULL, 'collate' => 'utf8_general_ci', 'comment' => 'タグ名称', 'charset' => 'utf8'),
 					'lang' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 10, 'collate' => 'utf8_general_ci', 'comment' => '言語(ja,en等)', 'charset' => 'utf8'),
-					'display_sequence' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => 'コミュニティー単位の表示順序(room_id毎の連番)'),
+					'display_sequence' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => 'コミュニティー単位の表示順序(room_num毎の連番)'),
 					'created' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'created_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'created_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'created_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'modified' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'modified_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'modified_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'indexes' => array(
 						'PRIMARY' => array('column' => 'id', 'unique' => 1),
-						'room_id' => array('column' => array('room_id', 'community_sum_tag_id', 'tag_value'), 'unique' => 0),
+						'room_num' => array('column' => array('room_num', 'community_sum_tag_id', 'tag_value'), 'unique' => 0),
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_config_langs' => array(
+				'config_langs' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary', 'comment' => 'Config言語ID'),
 					'module_id' => array('type' => 'integer', 'null' => false, 'default' => '0', 'key' => 'index', 'comment' => '現状、未使用'),
 					'config_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 64, 'collate' => 'utf8_general_ci', 'comment' => 'Configキー名称', 'charset' => 'utf8'),
 					'lang' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 10, 'collate' => 'utf8_general_ci', 'comment' => '言語(ja,en等)', 'charset' => 'utf8'),
 					'value' => array('type' => 'text', 'null' => false, 'default' => NULL, 'collate' => 'utf8_general_ci', 'comment' => 'Config値。', 'charset' => 'utf8'),
 					'created' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'created_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'created_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'created_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'modified' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'modified_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'modified_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'indexes' => array(
 						'PRIMARY' => array('column' => 'id', 'unique' => 1),
@@ -555,10 +555,10 @@ comment：コメント', 'charset' => 'utf8'),
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_configs' => array(
+				'configs' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary', 'comment' => 'ConfigID（システム管理のデータ一覧。今後、モジュール毎の設定値の保存用としても使用するかもしれないが、現状、未使用）'),
 					'module_id' => array('type' => 'integer', 'null' => false, 'default' => '0', 'key' => 'index', 'comment' => '現状、未使用'),
-					'cat_id' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => 'カテゴリーID
+					'category' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => '(未使用？)カテゴリーID
 0：一般設定
 1：ログインとログアウト、サイトの閉鎖
 2：サーバー設定
@@ -584,19 +584,19 @@ comment：コメント', 'charset' => 'utf8'),
 					'regexp' => array('type' => 'string', 'null' => false, 'default' => NULL, 'collate' => 'utf8_general_ci', 'comment' => '正規表現', 'charset' => 'utf8'),
 					'lang_flag' => array('type' => 'boolean', 'null' => false, 'default' => '0', 'comment' => 'ConfigLangモデルにデータを保持するかどうか。'),
 					'created' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'created_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'created_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'created_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'modified' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'modified_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'modified_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'indexes' => array(
 						'PRIMARY' => array('column' => 'id', 'unique' => 1),
 						'name' => array('column' => array('name', 'module_id'), 'unique' => 0),
-						'module_id' => array('column' => array('module_id', 'cat_id'), 'unique' => 0),
+						'module_id' => array('column' => array('module_id', 'category'), 'unique' => 0),
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_contents' => array(
+				'contents' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary', 'comment' => 'コンテンツID（ブロック内のコンテンツを管理）'),
 					'module_id' => array('type' => 'integer', 'null' => false, 'default' => '0'),
 					'title' => array('type' => 'string', 'null' => false, 'default' => NULL, 'collate' => 'utf8_general_ci', 'comment' => 'コンテンツ名', 'charset' => 'utf8'),
@@ -604,8 +604,8 @@ comment：コメント', 'charset' => 'utf8'),
 0：ショートカットではないコンテンツ
 1：閲覧のみ許可なショートカット
 2：表示中のルーム権限より閲覧・編集権限を付与するショートカット'),
-					'master_id' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => 'ショートカットでない場合、自分自身のContent.id。ショートカットの場合、コンテンツ元のContent.id'),
-					'room_id' => array('type' => 'integer', 'null' => false, 'default' => '0'),
+					'root' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => 'ショートカットでない場合、自分自身のContent.id。ショートカットの場合、コンテンツ元のContent.id'),
+					'room_num' => array('type' => 'integer', 'null' => false, 'default' => '0'),
 					'display_flag' => array('type' => 'integer', 'null' => false, 'default' => '1', 'length' => 2, 'comment' => 'コンテンツを公開するかどうか。
 0：非公開
 1：公開
@@ -613,17 +613,17 @@ comment：コメント', 'charset' => 'utf8'),
 					'is_approved' => array('type' => 'boolean', 'null' => false, 'default' => '1', 'comment' => '承認済かどうか。'),
 					'url' => array('type' => 'string', 'null' => false, 'default' => NULL, 'collate' => 'utf8_general_ci', 'comment' => '外部にコンテンツがあった場合にフルパスで指定（未使用）', 'charset' => 'utf8'),
 					'created' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'created_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'created_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'created_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'modified' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'modified_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'modified_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'indexes' => array(
 						'PRIMARY' => array('column' => 'id', 'unique' => 1),
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_languages' => array(
+				'languages' => array(
 					'language' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 8, 'key' => 'primary', 'collate' => 'utf8_general_ci', 'comment' => '言語(ja,en等)', 'charset' => 'utf8'),
 					'display_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'collate' => 'utf8_general_ci', 'comment' => '表示名(Japanese,English等。__関数で変換したものを表示させる。)', 'charset' => 'utf8'),
 					'display_sequence' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => '表示順序。'),
@@ -636,41 +636,41 @@ comment：コメント', 'charset' => 'utf8'),
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_module_links' => array(
+				'module_links' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary', 'comment' => 'モジュールリンクID（ルームごとの配置可能一般モジュールの設定）'),
 					'space_type' => array('type' => 'integer', 'null' => false, 'default' => '0', 'length' => 3),
 					'authority_id' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => 'マイポータル、マイルームで配置可能なモジュールのみ権限ID毎で設定可能（権限管理）'),
-					'room_id' => array('type' => 'integer', 'null' => false, 'default' => '0', 'key' => 'index', 'comment' => 'マイポータル、マイルームで配置可能なモジュールの設定、各スペースタイプのデフォルト値のみ0を設定。'),
+					'room_num' => array('type' => 'integer', 'null' => false, 'default' => '0', 'key' => 'index', 'comment' => 'マイポータル、マイルームで配置可能なモジュールの設定、各スペースタイプのデフォルト値のみ0を設定。'),
 					'module_id' => array('type' => 'integer', 'null' => false, 'default' => '0'),
 					'created' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'created_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'created_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'created_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'modified' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'modified_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'modified_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'indexes' => array(
 						'PRIMARY' => array('column' => 'id', 'unique' => 1),
-						'room_id' => array('column' => array('room_id', 'authority_id', 'space_type'), 'unique' => 0),
+						'room_num' => array('column' => array('room_num', 'authority_id', 'space_type'), 'unique' => 0),
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_module_system_links' => array(
+				'module_system_links' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary', 'comment' => 'モジュールシステムリンクID（表示する管理系モジュールを権限毎に設定）'),
 					'authority_id' => array('type' => 'integer', 'null' => false, 'default' => '0'),
 					'module_id' => array('type' => 'integer', 'null' => false, 'default' => '0'),
 					'hierarchy' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => '管理系のモジュールを表示した際の管理系モジュールの権限を設定。一部管理系モジュールにて使用（会員管理等）。'),
 					'created' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'created_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'created_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'created_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'modified' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'modified_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'modified_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'indexes' => array(
 						'PRIMARY' => array('column' => 'id', 'unique' => 1),
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_modules' => array(
+				'modules' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary', 'comment' => 'モジュールID'),
 					'dir_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'collate' => 'utf8_general_ci', 'comment' => 'モジュールディレクトリ名', 'charset' => 'utf8'),
 					'version' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 100, 'collate' => 'utf8_general_ci', 'comment' => 'モジュールVersion', 'charset' => 'utf8'),
@@ -697,17 +697,17 @@ enable：使用可能だがデフォルト使用不可(システム管理より�
 enabled ：使用可能
 disabled：使用不可', 'charset' => 'utf8'),
 					'created' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'created_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'created_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'created_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'modified' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'modified_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'modified_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'indexes' => array(
 						'PRIMARY' => array('column' => 'id', 'unique' => 1),
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_page_columns' => array(
+				'page_columns' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary', 'comment' => 'ページカラム情報ID（ページ設定->ページカラム設定）'),
 					'scope' => array('type' => 'integer', 'null' => false, 'default' => '0', 'length' => 3, 'comment' => '適用範囲
 1：サイト全体
@@ -719,22 +719,22 @@ disabled：使用不可', 'charset' => 'utf8'),
 					'lang' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 10, 'collate' => 'utf8_general_ci', 'comment' => '適用言語(ja,en等)', 'charset' => 'utf8'),
 					'space_type' => array('type' => 'integer', 'null' => false, 'default' => '0', 'length' => 2, 'comment' => 'scopeが2以上で設定。'),
 					'page_id' => array('type' => 'integer', 'null' => true, 'default' => '0', 'comment' => 'scopeが3以上で設定。'),
-					'header_page_id' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => 'ヘッダーカラムページID'),
-					'left_page_id' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => 'レフトカラムページID'),
-					'right_page_id' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => 'ライトカラムページID'),
-					'footer_page_id' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => 'フッターカラムページID'),
+					'header_page' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => 'ヘッダーカラムページID'),
+					'left_page' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => 'レフトカラムページID'),
+					'right_page' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => 'ライトカラムページID'),
+					'footer_page' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => 'フッターカラムページID'),
 					'created' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'created_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'created_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'created_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'modified' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'modified_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'modified_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'indexes' => array(
 						'PRIMARY' => array('column' => 'id', 'unique' => 1),
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_page_layouts' => array(
+				'page_layouts' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary', 'comment' => 'ページレイアウト情報ID（ページ設定->ページレイアウト）
 '),
 					'scope' => array('type' => 'integer', 'null' => false, 'default' => '0', 'length' => 3, 'comment' => '適用範囲
@@ -752,17 +752,17 @@ disabled：使用不可', 'charset' => 'utf8'),
 					'is_display_right' => array('type' => 'boolean', 'null' => false, 'default' => '0', 'comment' => 'ライトカラムを表示するかどうか。'),
 					'is_display_footer' => array('type' => 'boolean', 'null' => false, 'default' => '0', 'comment' => 'フッターカラムを表示するかどうか。'),
 					'created' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'created_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'created_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'created_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'modified' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'modified_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'modified_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'indexes' => array(
 						'PRIMARY' => array('column' => 'id', 'unique' => 1),
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_page_metas' => array(
+				'page_metas' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary', 'comment' => 'ページメタ情報ID（ページ設定->ページ情報）'),
 					'scope' => array('type' => 'integer', 'null' => false, 'default' => '0', 'length' => 3, 'comment' => '適用範囲
 1：サイト全体
@@ -778,17 +778,17 @@ disabled：使用不可', 'charset' => 'utf8'),
 					'meta_keywords' => array('type' => 'text', 'null' => true, 'default' => NULL, 'collate' => 'utf8_general_ci', 'comment' => 'キーワード名(metaタグ name="keywords")', 'charset' => 'utf8'),
 					'meta_description' => array('type' => 'text', 'null' => true, 'default' => NULL, 'collate' => 'utf8_general_ci', 'comment' => 'キーワード名(metaタグ name="description")', 'charset' => 'utf8'),
 					'created' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'created_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'created_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'created_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'modified' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'modified_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'modified_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'indexes' => array(
 						'PRIMARY' => array('column' => 'id', 'unique' => 1),
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_page_styles' => array(
+				'page_styles' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary', 'comment' => 'ページスタイル情報ID（ページ設定->ページスタイル）'),
 					'scope' => array('type' => 'integer', 'null' => false, 'default' => '0', 'length' => 3, 'comment' => '適用範囲
 1：サイト全体
@@ -816,33 +816,33 @@ right：右寄せ', 'charset' => 'utf8'),
 					'original_background_attachment' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'comment' => '背景画像を固定する(background-attachment)', 'charset' => 'utf8'),
 					'file' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 48, 'collate' => 'utf8_general_ci', 'comment' => '選択CSSファイル名', 'charset' => 'utf8'),
 					'created' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'created_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'created_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'created_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'modified' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'modified_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'modified_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'indexes' => array(
 						'PRIMARY' => array('column' => 'id', 'unique' => 1),
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_page_sum_views' => array(
+				'page_sum_views' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary', 'comment' => 'ページ集計ID（ページ設定->よく見るページ）'),
 					'user_id' => array('type' => 'integer', 'null' => false, 'default' => '0'),
 					'page_id' => array('type' => 'integer', 'null' => false, 'default' => '0'),
 					'sum' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => 'ページビュー数'),
 					'created' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'created_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'created_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'created_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'modified' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'modified_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'modified_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'indexes' => array(
 						'PRIMARY' => array('column' => 'id', 'unique' => 1),
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_page_themes' => array(
+				'page_themes' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary', 'comment' => 'ページテーマ情報ID（ページ設定->ページテーマ）'),
 					'scope' => array('type' => 'integer', 'null' => false, 'default' => '0', 'length' => 3, 'comment' => '適用範囲
 1：サイト全体
@@ -862,20 +862,20 @@ right：右寄せ', 'charset' => 'utf8'),
 					'right_theme' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'comment' => 'ライトカラムテーマ名', 'charset' => 'utf8'),
 					'footer_theme' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'comment' => 'フッターカラムテーマ名', 'charset' => 'utf8'),
 					'created' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'created_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'created_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'created_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'modified' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'modified_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'modified_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'indexes' => array(
 						'PRIMARY' => array('column' => 'id', 'unique' => 1),
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_page_trees' => array(
+				'page_trees' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary'),
 					'parent_id' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => '先祖のpage_id'),
-					'child_id' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => '子孫のpage_id'),
+					'child' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => '子孫のpage_id'),
 					'stratum_num' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => '先祖からみた子孫の階層'),
 					'created' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
 					'modified' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
@@ -884,26 +884,26 @@ right：右寄せ', 'charset' => 'utf8'),
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_page_user_links' => array(
+				'page_user_links' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary'),
-					'room_id' => array('type' => 'integer', 'null' => false, 'default' => '0', 'key' => 'index'),
+					'room_num' => array('type' => 'integer', 'null' => false, 'default' => '0', 'key' => 'index'),
 					'user_id' => array('type' => 'integer', 'null' => false, 'default' => '0'),
 					'authority_id' => array('type' => 'integer', 'null' => false, 'default' => '0'),
 					'created' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'created_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'created_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'created_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'modified' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'modified_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'modified_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'indexes' => array(
 						'PRIMARY' => array('column' => 'id', 'unique' => 1),
-						'room_id' => array('column' => array('room_id', 'user_id'), 'unique' => 1),
+						'room_num' => array('column' => array('room_num', 'user_id'), 'unique' => 1),
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_pages' => array(
+				'pages' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary', 'comment' => 'ページID（ページとルームの情報を保持）'),
-					'root_id' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => 'ルートページID（深さ１のページをルートとする。深さ0のものは0）'),
+					'root' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => 'ルートページID（深さ１のページをルートとする。深さ0のものは0）'),
 					'parent_id' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => '親ページID（深さ0のものは0）'),
 					'thread_num' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => '深さ（ルートノードは0）'),
 					'display_sequence' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => '深さ１のページ単位で1から連番を振る。深さ１より大きいものは、そのノード単位で1から連番を振る(レフト・ライト、ヘッダー、フッターカラムは0)。'),
@@ -916,7 +916,7 @@ right：右寄せ', 'charset' => 'utf8'),
 					'is_page_layout_node' => array('type' => 'boolean', 'null' => false, 'default' => '0', 'comment' => 'ページレイアウト情報が現ページID、またはノードに設定されているかどうか。'),
 					'is_page_theme_node' => array('type' => 'boolean', 'null' => false, 'default' => '0', 'comment' => 'ページテーマ情報が現ページID、またはノードに設定されているかどうか。'),
 					'is_page_column_node' => array('type' => 'boolean', 'null' => false, 'default' => '0', 'comment' => 'ページカラム情報が現ページID、またはノードに設定されているかどうか。'),
-					'room_id' => array('type' => 'integer', 'null' => false, 'default' => '0'),
+					'room_num' => array('type' => 'integer', 'null' => false, 'default' => '0'),
 					'space_type' => array('type' => 'integer', 'null' => false, 'default' => '0', 'length' => 2, 'comment' => 'スペースタイプ
 1：パブリックスペース
 2：マイポータル
@@ -929,19 +929,19 @@ right：右寄せ', 'charset' => 'utf8'),
 					'display_apply_subpage' => array('type' => 'boolean', 'null' => false, 'default' => '1', 'comment' => '公開日付Fromで公開になった場合に下位ページにも適用するかどうか。'),
 					'display_reverse_permalink' => array('type' => 'string', 'null' => true, 'default' => NULL, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'is_approved' => array('type' => 'boolean', 'null' => false, 'default' => '1', 'comment' => '承認済ページかどうか（現状、未使用）'),
-					'lock_authority_id' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => 'ロックされたページかどうか（現状、未使用）。ロックされるとページのブロックの追加等の操作ができなくなる。'),
+					'lock_authority_num' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => 'ロックされたページかどうか（現状、未使用）。ロックされるとページのブロックの追加等の操作ができなくなる。'),
 					'created' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'created_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'created_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'created_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'modified' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'modified_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'modified_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'indexes' => array(
 						'PRIMARY' => array('column' => 'id', 'unique' => 1),
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_passports' => array(
+				'passports' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary', 'comment' => 'パスポートID（自動ログインパスポート保存用）'),
 					'user_id' => array('type' => 'integer', 'null' => false, 'default' => '0'),
 					'passport' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 60, 'collate' => 'utf8_general_ci', 'comment' => '自動ログイン用パスポート（クッキーに記録）', 'charset' => 'utf8'),
@@ -951,9 +951,9 @@ right：右寄せ', 'charset' => 'utf8'),
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_revisions' => array(
+				'revisions' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary', 'comment' => 'リビジョンID。WYSIWYGの情報を履歴管理。'),
-					'group_id' => array('type' => 'integer', 'null' => false, 'default' => '0', 'key' => 'index', 'comment' => '１つの記事毎のリビジョン一覧のグループID。記事(WYSIWYG)の新規登録時のRevision.idをセット。'),
+					'revision_root' => array('type' => 'integer', 'null' => false, 'default' => '0', 'key' => 'index', 'comment' => 'revison.revision_rootと同値のrevisionの大本となるrevision.id'),
 					'pointer' => array('type' => 'boolean', 'null' => false, 'default' => '0', 'comment' => '現在、表示位置（group_id毎に１つONとなる）。記事追加、編集時に該当記事をONにする(そのほかのリビジョンがOFFに戻す)。但し、revision_nameが\'auto-draft\'の編集時は、ONにしない。'),
 					'is_approved_pointer' => array('type' => 'boolean', 'null' => false, 'default' => '0', 'comment' => '承認済表示位置（承認済の記事すべてがONとなる）。承認前の記事にpointerがついていた場合、以前の履歴から最新の承認済記事を表示させるため。'),
 					'revision_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 100, 'collate' => 'utf8_general_ci', 'comment' => '\'publish\'(公開中)、\'draft\'(一時保存中)、\'pending\'(承認待ち)、
@@ -961,18 +961,18 @@ right：右寄せ', 'charset' => 'utf8'),
 					'content_id' => array('type' => 'integer', 'null' => false, 'default' => NULL),
 					'content' => array('type' => 'text', 'null' => false, 'default' => NULL, 'collate' => 'utf8_general_ci', 'comment' => 'WYSIWYGの記事コンテンツ。', 'charset' => 'utf8'),
 					'created' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'created_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'created_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'created_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'modified' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'modified_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'modified_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'indexes' => array(
 						'PRIMARY' => array('column' => 'id', 'unique' => 1),
-						'group_id' => array('column' => array('group_id', 'pointer'), 'unique' => 0),
+						'revision_root' => array('column' => array('revision_root', 'pointer'), 'unique' => 0),
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_sessions' => array(
+				'sessions' => array(
 					'id' => array('type' => 'string', 'null' => false, 'default' => NULL, 'key' => 'primary', 'collate' => 'utf8_general_ci', 'comment' => 'sessionID', 'charset' => 'utf8'),
 					'data' => array('type' => 'text', 'null' => false, 'default' => NULL, 'collate' => 'utf8_general_ci', 'comment' => 'sessionデータ', 'charset' => 'utf8'),
 					'expires' => array('type' => 'integer', 'null' => true, 'default' => NULL, 'comment' => '有効期限'),
@@ -981,7 +981,7 @@ right：右寄せ', 'charset' => 'utf8'),
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_temp_datas' => array(
+				'temp_datas' => array(
 					'id' => array('type' => 'string', 'null' => false, 'default' => NULL, 'key' => 'primary', 'collate' => 'utf8_general_ci', 'comment' => '一時保存用ID（現状、コピー元、先ページIDで使用）。SessionID単位ではなく、一時的にデータを保持する場合に使用する。', 'charset' => 'utf8'),
 					'data' => array('type' => 'text', 'null' => false, 'default' => NULL, 'collate' => 'utf8_general_ci', 'comment' => '一時保存データ', 'charset' => 'utf8'),
 					'expires' => array('type' => 'integer', 'null' => true, 'default' => NULL, 'comment' => '有効期限'),
@@ -990,12 +990,12 @@ right：右寄せ', 'charset' => 'utf8'),
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_upload_links' => array(
+				'upload_links' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary', 'comment' => 'アップロードリンクID'),
 					'upload_id' => array('type' => 'integer', 'null' => false, 'default' => '0', 'key' => 'index'),
 					'plugin' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'comment' => 'アップロードを行ったモジュールディレクトリ名', 'charset' => 'utf8'),
 					'content_id' => array('type' => 'integer', 'null' => false, 'default' => '0'),
-					'unique_id' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => 'アップロードを行った記事等のユニークID'),
+					'plugin_unique' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => 'plugin側で一意に識別できる番号'),
 					'model_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'comment' => 'アップロードを行った記事等（WYSIWYGならばRevision）のモデル名', 'charset' => 'utf8'),
 					'field_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'comment' => 'アップロードを行った記事等（WYSIWYGならばcontent）のフィールド名', 'charset' => 'utf8'),
 					'access_hierarchy' => array('type' => 'integer', 'null' => false, 'default' => '0', 'length' => 3, 'comment' => '表示可能権限
@@ -1006,10 +1006,10 @@ Revisionから復元処理があるため、一度、記事として登録され
 					'check_component_action' => array('type' => 'string', 'null' => false, 'default' => NULL, 'collate' => 'utf8_general_ci', 'comment' => '表示チェック用コンポーネント、アクション名をカンマ区切りで設定。記述コンポーネント、アクション名がすべてtrueならば閲覧可能（アクション名のdefaultはcheckメソッド）。
 [プラグイン名].[コンポーネント名].[アクション名]（Camel形式）の形式で登録。', 'charset' => 'utf8'),
 					'created' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'created_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'created_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'created_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'modified' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'modified_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'modified_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'indexes' => array(
 						'PRIMARY' => array('column' => 'id', 'unique' => 1),
@@ -1017,7 +1017,7 @@ Revisionから復元処理があるため、一度、記事として登録され
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_uploads' => array(
+				'uploads' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary', 'comment' => 'アップロードID'),
 					'user_id' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => '所有者会員ID'),
 					'file_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'collate' => 'utf8_general_ci', 'comment' => 'ファイル名', 'charset' => 'utf8'),
@@ -1040,48 +1040,48 @@ UploadLinkの対応するレコードが１件もない場合は「0」となる
 					'month' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'length' => 2, 'comment' => 'アップロード月'),
 					'day' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'length' => 2, 'comment' => 'アップロード日付'),
 					'created' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'created_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'created_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'created_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'modified' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'modified_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'modified_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'indexes' => array(
 						'PRIMARY' => array('column' => 'id', 'unique' => 1),
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_user_group_links' => array(
+				'user_group_links' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary', 'comment' => 'グループリンクID（グループに誰が所属しているかを指定）'),
 					'user_group_id' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => 'Group.id'),
 					'user_id' => array('type' => 'integer', 'null' => false, 'default' => '0'),
 					'created' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'created_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'created_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'created_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'modified' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'modified_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'modified_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'indexes' => array(
 						'PRIMARY' => array('column' => 'id', 'unique' => 1),
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_user_groups' => array(
+				'user_groups' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary', 'comment' => 'グループID（回覧板モジュールのようにグループ単位で新着、検索情報の表示可否を行いたい場合に使用）'),
 					'module_id' => array('type' => 'integer', 'null' => false, 'default' => '0'),
 					'content_id' => array('type' => 'integer', 'null' => false, 'default' => NULL),
 					'name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'collate' => 'utf8_general_ci', 'comment' => 'グループ名', 'charset' => 'utf8'),
 					'created' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'created_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'created_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'created_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'modified' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'modified_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'modified_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'indexes' => array(
 						'PRIMARY' => array('column' => 'id', 'unique' => 1),
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_user_invitations' => array(
+				'user_invitations' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary', 'comment' => '会員招待ID'),
 					'user_name' => array('type' => 'string', 'null' => false, 'collate' => 'utf8_general_ci', 'comment' => '招待する会員名称', 'charset' => 'utf8'),
 					'email' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 100, 'collate' => 'utf8_general_ci', 'comment' => '招待する会員のeメール', 'charset' => 'utf8'),
@@ -1089,20 +1089,20 @@ UploadLinkの対応するレコードが１件もない場合は「0」となる
 					'is_pending_approval_mail' => array('type' => 'boolean', 'null' => false, 'default' => '0', 'comment' => '承認待ちメールかどうか'),
 					'expires' => array('type' => 'integer', 'null' => true, 'default' => NULL, 'comment' => '有効期限'),
 					'created' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'created_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'created_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'created_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'modified' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'modified_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'modified_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'indexes' => array(
 						'PRIMARY' => array('column' => 'id', 'unique' => 1),
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_user_item_authority_links' => array(
+				'user_item_authority_links' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary', 'comment' => '会員項目のベース権限毎の編集・閲覧権限ID'),
 					'user_item_id' => array('type' => 'integer', 'null' => false, 'default' => '0', 'key' => 'index'),
-					'user_authority_id' => array('type' => 'integer', 'null' => false, 'default' => '0', 'length' => 3, 'comment' => '会員権限（ベース権限）
+					'user_authority' => array('type' => 'integer', 'null' => false, 'default' => '0', 'length' => 3, 'comment' => '会員権限（ベース権限）
 1:管理者
 2:主担
 3:モデレーター
@@ -1113,18 +1113,18 @@ UploadLinkの対応するレコードが１件もない場合は「0」となる
 					'show_lower_hierarchy' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => '閲覧権限
 （0,1,101,201,301,401のみ）'),
 					'created' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'created_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'created_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'created_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'modified' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'modified_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'modified_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'indexes' => array(
 						'PRIMARY' => array('column' => 'id', 'unique' => 1),
-						'item_id' => array('column' => array('user_item_id', 'user_authority_id'), 'unique' => 0),
+						'item_id' => array('column' => array('user_item_id', 'user_authority'), 'unique' => 0),
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_user_item_langs' => array(
+				'user_item_langs' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary', 'comment' => '会員項目言語毎のID'),
 					'user_item_id' => array('type' => 'integer', 'null' => false, 'default' => '0', 'key' => 'index'),
 					'lang' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 10, 'collate' => 'utf8_general_ci', 'comment' => '言語(ja,en等)', 'charset' => 'utf8'),
@@ -1132,18 +1132,18 @@ UploadLinkの対応するレコードが１件もない場合は「0」となる
 					'description' => array('type' => 'text', 'null' => false, 'default' => NULL, 'collate' => 'utf8_general_ci', 'comment' => '項目説明', 'charset' => 'utf8'),
 					'options' => array('type' => 'text', 'null' => false, 'default' => NULL, 'collate' => 'utf8_general_ci', 'comment' => '項目オプション値をシリアライズしたデータとしてセット。', 'charset' => 'utf8'),
 					'created' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'created_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'created_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'created_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'modified' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'modified_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'modified_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'indexes' => array(
 						'PRIMARY' => array('column' => 'id', 'unique' => 1),
-						'room_id' => array('column' => array('user_item_id', 'lang'), 'unique' => 0),
+						'room_num' => array('column' => array('user_item_id', 'lang'), 'unique' => 0),
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_user_item_links' => array(
+				'user_item_links' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary', 'comment' => '会員と会員項目リンクID（会員の項目コンテンツをセット）'),
 					'user_id' => array('type' => 'integer', 'null' => false, 'default' => '0', 'key' => 'index'),
 					'lang' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 10, 'collate' => 'utf8_general_ci', 'comment' => '言語(ja,en等)', 'charset' => 'utf8'),
@@ -1157,7 +1157,7 @@ UploadLinkの対応するレコードが１件もない場合は「0」となる
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_user_items' => array(
+				'user_items' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary', 'comment' => '会員項目ID(会員のログインID、パスワード等の項目を保持)'),
 					'default_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'collate' => 'utf8_general_ci', 'comment' => '会員項目のデフォルトの項目名。新規追加か、langがenならば、更新。該当言語の項目名がなければ、こちらを表示する。', 'charset' => 'utf8'),
 					'default_description' => array('type' => 'text', 'null' => false, 'default' => NULL, 'collate' => 'utf8_general_ci', 'comment' => '会員項目のデフォルトの項目説明。新規追加か、langがenならば、更新。該当言語の項目説明がなければ、こちらを表示する。', 'charset' => 'utf8'),
@@ -1194,19 +1194,19 @@ UploadLinkの対応するレコードが１件もない場合は「0」となる
 					'autoregist_use' => array('type' => 'string', 'null' => false, 'default' => 'hide', 'length' => 16, 'collate' => 'utf8_general_ci', 'comment' => '自動登録時に使用するかどうか。', 'charset' => 'utf8'),
 					'autoregist_sendmail' => array('type' => 'boolean', 'null' => false, 'default' => '1', 'comment' => '自動登録時に管理者にメール通知する項目かどうか。'),
 					'created' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'created_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'created_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'created_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'modified' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'modified_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'modified_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'indexes' => array(
 						'PRIMARY' => array('column' => 'id', 'unique' => 1),
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_users' => array(
+				'users' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary', 'comment' => '会員ID'),
-					'login_id' => array('type' => 'string', 'null' => true, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'comment' => 'ログインID', 'charset' => 'utf8'),
+					'login' => array('type' => 'string', 'null' => true, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'comment' => 'ログインID', 'charset' => 'utf8'),
 					'password' => array('type' => 'string', 'null' => true, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'comment' => 'パスワード', 'charset' => 'utf8'),
 					'handle' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 100, 'collate' => 'utf8_general_ci', 'comment' => 'ハンドル名', 'charset' => 'utf8'),
 					'authority_id' => array('type' => 'integer', 'null' => false, 'default' => '0'),
@@ -1216,8 +1216,8 @@ UploadLinkの対応するレコードが１件もない場合は「0」となる
 2：承認待ち
 3：承認済み'),
 					'permalink' => array('type' => 'string', 'null' => false, 'default' => NULL, 'collate' => 'utf8_general_ci', 'comment' => 'マイポータル、マイルーム固定リンク名', 'charset' => 'utf8'),
-					'myportal_page_id' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => 'マイポータル直下のページID'),
-					'private_page_id' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => 'マイルーム直下のページID'),
+					'myportal_page' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => 'マイポータル直下のページID'),
+					'private_page' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => 'マイルーム直下のページID'),
 					'avatar' => array('type' => 'string', 'null' => true, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'comment' => 'アバターファイル名', 'charset' => 'utf8'),
 					'activate_key' => array('type' => 'string', 'null' => true, 'default' => NULL, 'length' => 40, 'collate' => 'utf8_general_ci', 'comment' => '自動登録用承認用キー', 'charset' => 'utf8'),
 					'lang' => array('type' => 'string', 'null' => false, 'default' => 'ja', 'length' => 50, 'collate' => 'utf8_general_ci', 'comment' => 'ログイン後のデフォルト言語(ja,en等)　', 'charset' => 'utf8'),
@@ -1228,26 +1228,26 @@ UploadLinkの対応するレコードが１件もない場合は「0」となる
 					'last_login' => array('type' => 'datetime', 'null' => true, 'default' => NULL, 'comment' => 'Lastログイン日時'),
 					'previous_login' => array('type' => 'datetime', 'null' => true, 'default' => NULL, 'comment' => '１つ前のLastログイン日時'),
 					'created' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'created_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'created_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'created_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'modified' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'modified_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'modified_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'indexes' => array(
 						'PRIMARY' => array('column' => 'id', 'unique' => 1),
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_whatsnew_select_rooms' => array(
+				'whatsnew_select_rooms' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary', 'comment' => '新着選択ルームID（指定したルームのみの新着を表示する場合に指定）'),
 					'block_id' => array('type' => 'integer', 'null' => false, 'default' => '0'),
-					'room_id' => array('type' => 'integer', 'null' => false, 'default' => '0'),
+					'room_num' => array('type' => 'integer', 'null' => false, 'default' => '0'),
 					'indexes' => array(
 						'PRIMARY' => array('column' => 'id', 'unique' => 1),
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_whatsnew_select_users' => array(
+				'whatsnew_select_users' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary', 'comment' => '新着選択会員ID（指定した会員のマイポータルのみの新着を表示する場合に指定）'),
 					'block_id' => array('type' => 'integer', 'null' => false, 'default' => '0'),
 					'user_id' => array('type' => 'integer', 'null' => false, 'default' => '0'),
@@ -1256,7 +1256,7 @@ UploadLinkの対応するレコードが１件もない場合は「0」となる
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
-				'nc3_whatsnew_styles' => array(
+				'whatsnew_styles' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary', 'comment' => '新着スタイルID（新着のスタイルの設定）'),
 					'block_id' => array('type' => 'integer', 'null' => false, 'default' => '0'),
 					'display_type' => array('type' => 'integer', 'null' => false, 'default' => '0', 'length' => 3, 'comment' => '表示タイプ
@@ -1281,10 +1281,10 @@ UploadLinkの対応するレコードが１件もない場合は「0」となる
 					'myroom_flag' => array('type' => 'boolean', 'null' => false, 'default' => '0', 'comment' => 'マイルームの新着を表示するかどうか。'),
 					'select_myportal_users' => array('type' => 'boolean', 'null' => false, 'default' => '0', 'comment' => 'マイポータルの新着を表示する場合、会員の絞り込みをしているかどうか。'),
 					'created' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'created_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'created_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'created_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'modified' => array('type' => 'datetime', 'null' => true, 'default' => NULL),
-					'modified_user_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'modified_user' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => NULL, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'indexes' => array(
 						'PRIMARY' => array('column' => 'id', 'unique' => 1),
@@ -1295,7 +1295,7 @@ UploadLinkの対応するレコードが１件もない場合は「0」となる
 		),
 		'down' => array(
 			'drop_table' => array(
-				'nc3_announcement_edits', 'nc3_announcements', 'nc3_archives', 'nc3_assets', 'nc3_authorities', 'nc3_authority_langs', 'nc3_backgrounds', 'nc3_blocks', 'nc3_blog_comments', 'nc3_blog_posts', 'nc3_blog_styles', 'nc3_blog_term_links', 'nc3_blog_terms', 'nc3_blogs', 'nc3_communities', 'nc3_community_invitations', 'nc3_community_langs', 'nc3_community_sum_tags', 'nc3_community_tags', 'nc3_config_langs', 'nc3_configs', 'nc3_contents', 'nc3_languages', 'nc3_module_links', 'nc3_module_system_links', 'nc3_modules', 'nc3_page_columns', 'nc3_page_layouts', 'nc3_page_metas', 'nc3_page_styles', 'nc3_page_sum_views', 'nc3_page_themes', 'nc3_page_trees', 'nc3_page_user_links', 'nc3_pages', 'nc3_passports', 'nc3_revisions', 'nc3_sessions', 'nc3_temp_datas', 'nc3_upload_links', 'nc3_uploads', 'nc3_user_group_links', 'nc3_user_groups', 'nc3_user_invitations', 'nc3_user_item_authority_links', 'nc3_user_item_langs', 'nc3_user_item_links', 'nc3_user_items', 'nc3_users', 'nc3_whatsnew_select_rooms', 'nc3_whatsnew_select_users', 'nc3_whatsnew_styles'
+				'announcement_edits', 'announcements', 'archives', 'assets', 'authorities', 'authority_langs', 'backgrounds', 'blocks', 'blog_comments', 'blog_posts', 'blog_styles', 'blog_term_links', 'blog_terms', 'blogs', 'communities', 'community_invitations', 'community_langs', 'community_sum_tags', 'community_tags', 'config_langs', 'configs', 'contents', 'languages', 'module_links', 'module_system_links', 'modules', 'page_columns', 'page_layouts', 'page_metas', 'page_styles', 'page_sum_views', 'page_themes', 'page_trees', 'page_user_links', 'pages', 'passports', 'revisions', 'sessions', 'temp_datas', 'upload_links', 'uploads', 'user_group_links', 'user_groups', 'user_invitations', 'user_item_authority_links', 'user_item_langs', 'user_item_links', 'user_items', 'users', 'whatsnew_select_rooms', 'whatsnew_select_users', 'whatsnew_styles'
 			),
 		),
 	);
