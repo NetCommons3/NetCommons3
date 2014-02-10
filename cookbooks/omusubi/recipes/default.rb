@@ -136,7 +136,7 @@ end
 
 # Update composer packages
 execute "update composer packages" do
-  command "cd /vagrant_data; hhvm `which composer` update"
+  command "cd /vagrant_data; COMPOSER_PROCESS_TIMEOUT=3000 hhvm `which composer` update"
 end
 
 # Deploy configuration files
