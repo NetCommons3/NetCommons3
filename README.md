@@ -78,6 +78,7 @@ emacs cookbooks/omusubi/recipes/default.rb
 ```
 
 変更後 composer が手動管理となります。
+変更後に[vagrant plugin](https://github.com/NetCommons3/NetCommons3/blob/master/README.md#vagrant-plugin)を実施してください。
 
 ## 起動
 
@@ -123,6 +124,27 @@ guest には下記 vhosts が作成され、動作の確認ができます。
 | http://www.netcommons.local:8080    | netcommons 本体                      |
 | http://sphinx.netcommons.local:8080 | ドキュメント管理                     |
 | http://phpdoc.netcommons.local:8080 | phpdoc                               |
+
+### Workaround
+#### Windows ホストの場合
+<code>vagrant up</code>実行時に、仮想化支援機構(VT-x/AMD-V)が有効化されていないメッセージが表示された場合は、BIOSの設定を見直してください。
+
+また、composer を手動管理にしている場合は、以下の手順を実施してください。
+
+guest で以下実行
+<pre>
+sudo adduser vagrant www-data
+cd /vagrant_data/
+curl -s http://getcomposer.org/installer | php
+php composer.phar install
+cd /usr/local/bin/
+sudo ln -s /vagrant_data/composer.phar composer
+</pre>
+
+上記実行後に ホスト の配置したソースのパスで以下実行
+<pre>
+vagrant provision
+</pre>
 
 ### 終了
 vagrantコマンドで仮想マシンを終了、又は破棄出来ます。
