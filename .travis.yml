@@ -121,7 +121,6 @@ after_script:
 notifications:
   email:
     recipients:
-      - ryu818@gmail.com
-      - nii@m0n0m0n0.com
+      - netcommons3@googlegroups.com
     on_success: never  # default: change
     on_failure: always # default: always
