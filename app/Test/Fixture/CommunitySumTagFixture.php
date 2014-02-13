@@ -45,7 +45,7 @@ class CommunitySumTagFixture extends CakeTestFixture {
 		array(
 			'id' => 1,
 			'tag_value' => 'Lorem ipsum dolor sit amet',
-			'lang' => 'Lorem ip',
+			'lang' => 'en_US',
 			'used_number' => 1,
 			'created' => '2014-02-13 08:54:05',
 			'created_user' => 1,
@@ -57,7 +57,7 @@ class CommunitySumTagFixture extends CakeTestFixture {
 		array(
 			'id' => 2,
 			'tag_value' => 'Lorem ipsum dolor sit amet',
-			'lang' => 'Lorem ip',
+			'lang' => 'en_GB',
 			'used_number' => 2,
 			'created' => '2014-02-13 08:54:05',
 			'created_user' => 2,
@@ -69,7 +69,7 @@ class CommunitySumTagFixture extends CakeTestFixture {
 		array(
 			'id' => 3,
 			'tag_value' => 'Lorem ipsum dolor sit amet',
-			'lang' => 'Lorem ip',
+			'lang' => 'en_FR',
 			'used_number' => 3,
 			'created' => '2014-02-13 08:54:05',
 			'created_user' => 3,
@@ -81,7 +81,7 @@ class CommunitySumTagFixture extends CakeTestFixture {
 		array(
 			'id' => 4,
 			'tag_value' => 'Lorem ipsum dolor sit amet',
-			'lang' => 'Lorem ip',
+			'lang' => 'en_CA',
 			'used_number' => 4,
 			'created' => '2014-02-13 08:54:05',
 			'created_user' => 4,
@@ -93,7 +93,7 @@ class CommunitySumTagFixture extends CakeTestFixture {
 		array(
 			'id' => 5,
 			'tag_value' => 'Lorem ipsum dolor sit amet',
-			'lang' => 'Lorem ip',
+			'lang' => 'en_NZ',
 			'used_number' => 5,
 			'created' => '2014-02-13 08:54:05',
 			'created_user' => 5,
@@ -105,7 +105,7 @@ class CommunitySumTagFixture extends CakeTestFixture {
 		array(
 			'id' => 6,
 			'tag_value' => 'Lorem ipsum dolor sit amet',
-			'lang' => 'Lorem ip',
+			'lang' => 'en_SG',
 			'used_number' => 6,
 			'created' => '2014-02-13 08:54:05',
 			'created_user' => 6,
@@ -117,7 +117,7 @@ class CommunitySumTagFixture extends CakeTestFixture {
 		array(
 			'id' => 7,
 			'tag_value' => 'Lorem ipsum dolor sit amet',
-			'lang' => 'Lorem ip',
+			'lang' => 'en_ES',
 			'used_number' => 7,
 			'created' => '2014-02-13 08:54:05',
 			'created_user' => 7,
@@ -129,7 +129,7 @@ class CommunitySumTagFixture extends CakeTestFixture {
 		array(
 			'id' => 8,
 			'tag_value' => 'Lorem ipsum dolor sit amet',
-			'lang' => 'Lorem ip',
+			'lang' => 'fr_FR',
 			'used_number' => 8,
 			'created' => '2014-02-13 08:54:05',
 			'created_user' => 8,
@@ -141,7 +141,7 @@ class CommunitySumTagFixture extends CakeTestFixture {
 		array(
 			'id' => 9,
 			'tag_value' => 'Lorem ipsum dolor sit amet',
-			'lang' => 'Lorem ip',
+			'lang' => 'ja_JP',
 			'used_number' => 9,
 			'created' => '2014-02-13 08:54:05',
 			'created_user' => 9,
@@ -153,7 +153,7 @@ class CommunitySumTagFixture extends CakeTestFixture {
 		array(
 			'id' => 10,
 			'tag_value' => 'Lorem ipsum dolor sit amet',
-			'lang' => 'Lorem ip',
+			'lang' => 'ko_KR',
 			'used_number' => 10,
 			'created' => '2014-02-13 08:54:05',
 			'created_user' => 10,
