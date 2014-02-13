@@ -1,0 +1,102 @@
+<?php
+/**
+ * LanguageFixture
+ *
+ * @author   Jun Nishikawa <topaz2@m0n0m0n0.com>
+ * @link     http://www.netcommons.org NetCommons Project
+ * @license  http://www.netcommons.org/license.txt NetCommons License
+ */
+
+/**
+ * Summary for LanguageFixture
+ */
+class LanguageFixture extends CakeTestFixture {
+
+/**
+ * Fields
+ *
+ * @var array
+ */
+	public $fields = array(
+		'language' => array('type' => 'string', 'null' => false, 'default' => null, 'length' => 8, 'key' => 'primary', 'collate' => 'utf8_general_ci', 'comment' => '言語(ja,en等)', 'charset' => 'utf8'),
+		'display_name' => array('type' => 'string', 'null' => false, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '表示名(Japanese,English等。__関数で変換したものを表示させる。)', 'charset' => 'utf8'),
+		'display_sequence' => array('type' => 'integer', 'null' => false, 'default' => '0', 'comment' => '表示順序。'),
+		'display_flag' => array('type' => 'integer', 'null' => false, 'default' => '1', 'length' => 3, 'key' => 'index', 'comment' => '公開フラグ
+1:公開
+0:非公開'),
+		'indexes' => array(
+			'PRIMARY' => array('column' => 'language', 'unique' => 1),
+			'display_flag' => array('column' => array('display_flag', 'display_sequence'), 'unique' => 0)
+		),
+		'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB')
+	);
+
+/**
+ * Records
+ *
+ * @var array
+ */
+	public $records = array(
+		array(
+			'language' => 'Lorem ',
+			'display_name' => 'Lorem ipsum dolor sit amet',
+			'display_sequence' => 1,
+			'display_flag' => 1
+		),
+		array(
+			'language' => 'Lorem ',
+			'display_name' => 'Lorem ipsum dolor sit amet',
+			'display_sequence' => 2,
+			'display_flag' => 2
+		),
+		array(
+			'language' => 'Lorem ',
+			'display_name' => 'Lorem ipsum dolor sit amet',
+			'display_sequence' => 3,
+			'display_flag' => 3
+		),
+		array(
+			'language' => 'Lorem ',
+			'display_name' => 'Lorem ipsum dolor sit amet',
+			'display_sequence' => 4,
+			'display_flag' => 4
+		),
+		array(
+			'language' => 'Lorem ',
+			'display_name' => 'Lorem ipsum dolor sit amet',
+			'display_sequence' => 5,
+			'display_flag' => 5
+		),
+		array(
+			'language' => 'Lorem ',
+			'display_name' => 'Lorem ipsum dolor sit amet',
+			'display_sequence' => 6,
+			'display_flag' => 6
+		),
+		array(
+			'language' => 'Lorem ',
+			'display_name' => 'Lorem ipsum dolor sit amet',
+			'display_sequence' => 7,
+			'display_flag' => 7
+		),
+		array(
+			'language' => 'Lorem ',
+			'display_name' => 'Lorem ipsum dolor sit amet',
+			'display_sequence' => 8,
+			'display_flag' => 8
+		),
+		array(
+			'language' => 'Lorem ',
+			'display_name' => 'Lorem ipsum dolor sit amet',
+			'display_sequence' => 9,
+			'display_flag' => 9
+		),
+		array(
+			'language' => 'Lorem ',
+			'display_name' => 'Lorem ipsum dolor sit amet',
+			'display_sequence' => 10,
+			'display_flag' => 10
+		),
+	);
+
+}

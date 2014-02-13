@@ -104,4 +104,5 @@ class ModulesController extends AppController {
 			$this->Session->setFlash(__('The module could not be deleted. Please, try again.'));
 		}
 		return $this->redirect(array('action' => 'index'));
-	}}
+	}
+}

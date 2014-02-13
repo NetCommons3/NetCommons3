@@ -108,4 +108,5 @@ class PageLayoutsController extends AppController {
 			$this->Session->setFlash(__('The page layout could not be deleted. Please, try again.'));
 		}
 		return $this->redirect(array('action' => 'index'));
-	}}
+	}
+}

@@ -108,4 +108,5 @@ class PageColumnsController extends AppController {
 			$this->Session->setFlash(__('The page column could not be deleted. Please, try again.'));
 		}
 		return $this->redirect(array('action' => 'index'));
-	}}
+	}
+}

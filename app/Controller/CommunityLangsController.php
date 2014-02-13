@@ -104,4 +104,5 @@ class CommunityLangsController extends AppController {
 			$this->Session->setFlash(__('The community lang could not be deleted. Please, try again.'));
 		}
 		return $this->redirect(array('action' => 'index'));
-	}}
+	}
+}

@@ -104,4 +104,5 @@ class UserItemsController extends AppController {
 			$this->Session->setFlash(__('The user item could not be deleted. Please, try again.'));
 		}
 		return $this->redirect(array('action' => 'index'));
-	}}
+	}
+}

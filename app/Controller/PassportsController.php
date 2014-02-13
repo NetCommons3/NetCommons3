@@ -108,4 +108,5 @@ class PassportsController extends AppController {
 			$this->Session->setFlash(__('The passport could not be deleted. Please, try again.'));
 		}
 		return $this->redirect(array('action' => 'index'));
-	}}
+	}
+}

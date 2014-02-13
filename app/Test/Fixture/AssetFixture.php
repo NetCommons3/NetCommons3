@@ -2,6 +2,13 @@
 /**
  * AssetFixture
  *
+ * @author   Jun Nishikawa <topaz2@m0n0m0n0.com>
+ * @link     http://www.netcommons.org NetCommons Project
+ * @license  http://www.netcommons.org/license.txt NetCommons License
+ */
+
+/**
+ * Summary for AssetFixture
  */
 class AssetFixture extends CakeTestFixture {
 
@@ -36,8 +43,80 @@ app\\webroot\\theme\\assets下に圧縮したものと、そうでないもの�
 			'url' => 'Lorem ipsum dolor sit amet',
 			'hash_content' => 'Lorem ipsum dolor sit amet',
 			'plugin' => 'Lorem ipsum dolor sit amet',
-			'created' => '2014-02-05 02:44:16',
-			'modified' => '2014-02-05 02:44:16'
+			'created' => '2014-02-13 08:53:37',
+			'modified' => '2014-02-13 08:53:37'
+		),
+		array(
+			'id' => 2,
+			'url' => 'Lorem ipsum dolor sit amet',
+			'hash_content' => 'Lorem ipsum dolor sit amet',
+			'plugin' => 'Lorem ipsum dolor sit amet',
+			'created' => '2014-02-13 08:53:37',
+			'modified' => '2014-02-13 08:53:37'
+		),
+		array(
+			'id' => 3,
+			'url' => 'Lorem ipsum dolor sit amet',
+			'hash_content' => 'Lorem ipsum dolor sit amet',
+			'plugin' => 'Lorem ipsum dolor sit amet',
+			'created' => '2014-02-13 08:53:37',
+			'modified' => '2014-02-13 08:53:37'
+		),
+		array(
+			'id' => 4,
+			'url' => 'Lorem ipsum dolor sit amet',
+			'hash_content' => 'Lorem ipsum dolor sit amet',
+			'plugin' => 'Lorem ipsum dolor sit amet',
+			'created' => '2014-02-13 08:53:37',
+			'modified' => '2014-02-13 08:53:37'
+		),
+		array(
+			'id' => 5,
+			'url' => 'Lorem ipsum dolor sit amet',
+			'hash_content' => 'Lorem ipsum dolor sit amet',
+			'plugin' => 'Lorem ipsum dolor sit amet',
+			'created' => '2014-02-13 08:53:37',
+			'modified' => '2014-02-13 08:53:37'
+		),
+		array(
+			'id' => 6,
+			'url' => 'Lorem ipsum dolor sit amet',
+			'hash_content' => 'Lorem ipsum dolor sit amet',
+			'plugin' => 'Lorem ipsum dolor sit amet',
+			'created' => '2014-02-13 08:53:37',
+			'modified' => '2014-02-13 08:53:37'
+		),
+		array(
+			'id' => 7,
+			'url' => 'Lorem ipsum dolor sit amet',
+			'hash_content' => 'Lorem ipsum dolor sit amet',
+			'plugin' => 'Lorem ipsum dolor sit amet',
+			'created' => '2014-02-13 08:53:37',
+			'modified' => '2014-02-13 08:53:37'
+		),
+		array(
+			'id' => 8,
+			'url' => 'Lorem ipsum dolor sit amet',
+			'hash_content' => 'Lorem ipsum dolor sit amet',
+			'plugin' => 'Lorem ipsum dolor sit amet',
+			'created' => '2014-02-13 08:53:37',
+			'modified' => '2014-02-13 08:53:37'
+		),
+		array(
+			'id' => 9,
+			'url' => 'Lorem ipsum dolor sit amet',
+			'hash_content' => 'Lorem ipsum dolor sit amet',
+			'plugin' => 'Lorem ipsum dolor sit amet',
+			'created' => '2014-02-13 08:53:37',
+			'modified' => '2014-02-13 08:53:37'
+		),
+		array(
+			'id' => 10,
+			'url' => 'Lorem ipsum dolor sit amet',
+			'hash_content' => 'Lorem ipsum dolor sit amet',
+			'plugin' => 'Lorem ipsum dolor sit amet',
+			'created' => '2014-02-13 08:53:37',
+			'modified' => '2014-02-13 08:53:37'
 		),
 	);
 

@@ -108,4 +108,5 @@ class BlogStylesController extends AppController {
 			$this->Session->setFlash(__('The blog style could not be deleted. Please, try again.'));
 		}
 		return $this->redirect(array('action' => 'index'));
-	}}
+	}
+}

@@ -28,6 +28,7 @@ App::uses('Model', 'Model');
  * will inherit them.
  *
  * @package       app.Model
+ * @SuppressWarnings(PHPMD.NumberOfChildren)
  */
 class AppModel extends Model {
 }
