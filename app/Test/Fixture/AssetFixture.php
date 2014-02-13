@@ -40,7 +40,7 @@ app\\webroot\\theme\\assets下に圧縮したものと、そうでないもの�
 	public $records = array(
 		array(
 			'id' => 1,
-			'url' => 'Lorem ipsum dolor sit amet',
+			'url' => 'Lorem ipsum dolor sit amet1',
 			'hash_content' => 'Lorem ipsum dolor sit amet',
 			'plugin' => 'Lorem ipsum dolor sit amet',
 			'created' => '2014-02-13 08:53:37',
@@ -48,7 +48,7 @@ app\\webroot\\theme\\assets下に圧縮したものと、そうでないもの�
 		),
 		array(
 			'id' => 2,
-			'url' => 'Lorem ipsum dolor sit amet',
+			'url' => 'Lorem ipsum dolor sit amet2',
 			'hash_content' => 'Lorem ipsum dolor sit amet',
 			'plugin' => 'Lorem ipsum dolor sit amet',
 			'created' => '2014-02-13 08:53:37',
@@ -56,7 +56,7 @@ app\\webroot\\theme\\assets下に圧縮したものと、そうでないもの�
 		),
 		array(
 			'id' => 3,
-			'url' => 'Lorem ipsum dolor sit amet',
+			'url' => 'Lorem ipsum dolor sit amet3',
 			'hash_content' => 'Lorem ipsum dolor sit amet',
 			'plugin' => 'Lorem ipsum dolor sit amet',
 			'created' => '2014-02-13 08:53:37',
@@ -64,7 +64,7 @@ app\\webroot\\theme\\assets下に圧縮したものと、そうでないもの�
 		),
 		array(
 			'id' => 4,
-			'url' => 'Lorem ipsum dolor sit amet',
+			'url' => 'Lorem ipsum dolor sit amet4',
 			'hash_content' => 'Lorem ipsum dolor sit amet',
 			'plugin' => 'Lorem ipsum dolor sit amet',
 			'created' => '2014-02-13 08:53:37',
@@ -72,7 +72,7 @@ app\\webroot\\theme\\assets下に圧縮したものと、そうでないもの�
 		),
 		array(
 			'id' => 5,
-			'url' => 'Lorem ipsum dolor sit amet',
+			'url' => 'Lorem ipsum dolor sit amet5',
 			'hash_content' => 'Lorem ipsum dolor sit amet',
 			'plugin' => 'Lorem ipsum dolor sit amet',
 			'created' => '2014-02-13 08:53:37',
@@ -80,7 +80,7 @@ app\\webroot\\theme\\assets下に圧縮したものと、そうでないもの�
 		),
 		array(
 			'id' => 6,
-			'url' => 'Lorem ipsum dolor sit amet',
+			'url' => 'Lorem ipsum dolor sit amet6',
 			'hash_content' => 'Lorem ipsum dolor sit amet',
 			'plugin' => 'Lorem ipsum dolor sit amet',
 			'created' => '2014-02-13 08:53:37',
@@ -88,7 +88,7 @@ app\\webroot\\theme\\assets下に圧縮したものと、そうでないもの�
 		),
 		array(
 			'id' => 7,
-			'url' => 'Lorem ipsum dolor sit amet',
+			'url' => 'Lorem ipsum dolor sit amet7',
 			'hash_content' => 'Lorem ipsum dolor sit amet',
 			'plugin' => 'Lorem ipsum dolor sit amet',
 			'created' => '2014-02-13 08:53:37',
@@ -96,7 +96,7 @@ app\\webroot\\theme\\assets下に圧縮したものと、そうでないもの�
 		),
 		array(
 			'id' => 8,
-			'url' => 'Lorem ipsum dolor sit amet',
+			'url' => 'Lorem ipsum dolor sit amet8',
 			'hash_content' => 'Lorem ipsum dolor sit amet',
 			'plugin' => 'Lorem ipsum dolor sit amet',
 			'created' => '2014-02-13 08:53:37',
@@ -104,7 +104,7 @@ app\\webroot\\theme\\assets下に圧縮したものと、そうでないもの�
 		),
 		array(
 			'id' => 9,
-			'url' => 'Lorem ipsum dolor sit amet',
+			'url' => 'Lorem ipsum dolor sit amet9',
 			'hash_content' => 'Lorem ipsum dolor sit amet',
 			'plugin' => 'Lorem ipsum dolor sit amet',
 			'created' => '2014-02-13 08:53:37',
@@ -112,7 +112,7 @@ app\\webroot\\theme\\assets下に圧縮したものと、そうでないもの�
 		),
 		array(
 			'id' => 10,
-			'url' => 'Lorem ipsum dolor sit amet',
+			'url' => 'Lorem ipsum dolor sit amet10',
 			'hash_content' => 'Lorem ipsum dolor sit amet',
 			'plugin' => 'Lorem ipsum dolor sit amet',
 			'created' => '2014-02-13 08:53:37',

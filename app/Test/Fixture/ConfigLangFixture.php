@@ -45,7 +45,7 @@ class ConfigLangFixture extends CakeTestFixture {
 		array(
 			'id' => 1,
 			'module_id' => 1,
-			'config_name' => 'Lorem ipsum dolor sit amet',
+			'config_name' => 'Lorem ipsum dolor sit amet1',
 			'lang' => 'Lorem ip',
 			'value' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
 			'created' => '2014-02-13 08:54:08',
@@ -58,7 +58,7 @@ class ConfigLangFixture extends CakeTestFixture {
 		array(
 			'id' => 2,
 			'module_id' => 2,
-			'config_name' => 'Lorem ipsum dolor sit amet',
+			'config_name' => 'Lorem ipsum dolor sit amet2',
 			'lang' => 'Lorem ip',
 			'value' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
 			'created' => '2014-02-13 08:54:08',
@@ -71,12 +71,12 @@ class ConfigLangFixture extends CakeTestFixture {
 		array(
 			'id' => 3,
 			'module_id' => 3,
-			'config_name' => 'Lorem ipsum dolor sit amet',
+			'config_name' => 'Lorem ipsum dolor sit amet3',
 			'lang' => 'Lorem ip',
 			'value' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
 			'created' => '2014-02-13 08:54:08',
 			'created_user' => 3,
-			'created_user_name' => 'Lorem ipsum dolor sit amet',
+			'created_user_name' => 'Lorem ipsum dolor sit amet4',
 			'modified' => '2014-02-13 08:54:08',
 			'modified_user' => 3,
 			'modified_user_name' => 'Lorem ipsum dolor sit amet'
@@ -84,7 +84,7 @@ class ConfigLangFixture extends CakeTestFixture {
 		array(
 			'id' => 4,
 			'module_id' => 4,
-			'config_name' => 'Lorem ipsum dolor sit amet',
+			'config_name' => 'Lorem ipsum dolor sit amet5',
 			'lang' => 'Lorem ip',
 			'value' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
 			'created' => '2014-02-13 08:54:08',
@@ -97,7 +97,7 @@ class ConfigLangFixture extends CakeTestFixture {
 		array(
 			'id' => 5,
 			'module_id' => 5,
-			'config_name' => 'Lorem ipsum dolor sit amet',
+			'config_name' => 'Lorem ipsum dolor sit amet6',
 			'lang' => 'Lorem ip',
 			'value' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
 			'created' => '2014-02-13 08:54:08',
@@ -123,7 +123,7 @@ class ConfigLangFixture extends CakeTestFixture {
 		array(
 			'id' => 7,
 			'module_id' => 7,
-			'config_name' => 'Lorem ipsum dolor sit amet',
+			'config_name' => 'Lorem ipsum dolor sit amet7',
 			'lang' => 'Lorem ip',
 			'value' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
 			'created' => '2014-02-13 08:54:08',
@@ -136,7 +136,7 @@ class ConfigLangFixture extends CakeTestFixture {
 		array(
 			'id' => 8,
 			'module_id' => 8,
-			'config_name' => 'Lorem ipsum dolor sit amet',
+			'config_name' => 'Lorem ipsum dolor sit amet8',
 			'lang' => 'Lorem ip',
 			'value' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
 			'created' => '2014-02-13 08:54:08',
@@ -149,7 +149,7 @@ class ConfigLangFixture extends CakeTestFixture {
 		array(
 			'id' => 9,
 			'module_id' => 9,
-			'config_name' => 'Lorem ipsum dolor sit amet',
+			'config_name' => 'Lorem ipsum dolor sit amet9',
 			'lang' => 'Lorem ip',
 			'value' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
 			'created' => '2014-02-13 08:54:08',
@@ -162,7 +162,7 @@ class ConfigLangFixture extends CakeTestFixture {
 		array(
 			'id' => 10,
 			'module_id' => 10,
-			'config_name' => 'Lorem ipsum dolor sit amet',
+			'config_name' => 'Lorem ipsum dolor sit amet10',
 			'lang' => 'Lorem ip',
 			'value' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
 			'created' => '2014-02-13 08:54:08',
