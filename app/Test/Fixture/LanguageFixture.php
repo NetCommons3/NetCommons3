@@ -38,64 +38,22 @@ class LanguageFixture extends CakeTestFixture {
  */
 	public $records = array(
 		array(
-			'language' => 'Lorem ',
+			'language' => 'en_US',
 			'display_name' => 'Lorem ipsum dolor sit amet',
 			'display_sequence' => 1,
 			'display_flag' => 1
 		),
 		array(
-			'language' => 'Lorem ',
+			'language' => 'en_GB',
 			'display_name' => 'Lorem ipsum dolor sit amet',
 			'display_sequence' => 2,
 			'display_flag' => 2
 		),
 		array(
-			'language' => 'Lorem ',
+			'language' => 'ja_JP',
 			'display_name' => 'Lorem ipsum dolor sit amet',
 			'display_sequence' => 3,
 			'display_flag' => 3
-		),
-		array(
-			'language' => 'Lorem ',
-			'display_name' => 'Lorem ipsum dolor sit amet',
-			'display_sequence' => 4,
-			'display_flag' => 4
-		),
-		array(
-			'language' => 'Lorem ',
-			'display_name' => 'Lorem ipsum dolor sit amet',
-			'display_sequence' => 5,
-			'display_flag' => 5
-		),
-		array(
-			'language' => 'Lorem ',
-			'display_name' => 'Lorem ipsum dolor sit amet',
-			'display_sequence' => 6,
-			'display_flag' => 6
-		),
-		array(
-			'language' => 'Lorem ',
-			'display_name' => 'Lorem ipsum dolor sit amet',
-			'display_sequence' => 7,
-			'display_flag' => 7
-		),
-		array(
-			'language' => 'Lorem ',
-			'display_name' => 'Lorem ipsum dolor sit amet',
-			'display_sequence' => 8,
-			'display_flag' => 8
-		),
-		array(
-			'language' => 'Lorem ',
-			'display_name' => 'Lorem ipsum dolor sit amet',
-			'display_sequence' => 9,
-			'display_flag' => 9
-		),
-		array(
-			'language' => 'Lorem ',
-			'display_name' => 'Lorem ipsum dolor sit amet',
-			'display_sequence' => 10,
-			'display_flag' => 10
 		),
 	);
 
