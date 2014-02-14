@@ -5,6 +5,8 @@ gem 'bundler'
 gem 'berkshelf'
 gem 'nokogiri'
 gem 'rake'
+gem 'mysql'
+gem 'pg'
 
 group :development, :test do
   gem 'guard'

@@ -25,8 +25,19 @@ Vagrant.configure("2") do |config|
   end
 
   config.vm.provision :chef_solo do |chef|
-    chef.cookbooks_path = "./cookbooks"
+    chef.cookbooks_path = "cookbooks"
     chef.add_recipe "omusubi"
-    chef.json = { doc_root: doc_root}
+    chef.json = { 
+      :mysql => {
+        :server_root_password   => "",
+        :server_repl_password   => "",
+        :server_debian_password => ""
+      },
+      :postgresql => {
+        :password   => {
+          :postgres => "postgres"
+        }
+      }
+    }
   end
 end

@@ -38,7 +38,7 @@ git clone https://github.com/NetCommons3/NetCommons3Docs.git
 ### 依存ライブラリをインストール
 #### ubuntu 12.10
 <pre>
-sudo aptitude install zlib1g-dev ruby ruby-dev lsb-core libxml2-dev libxslt-dev nodejs
+sudo aptitude install zlib1g-dev ruby ruby-dev lsb-core libxml2-dev libxslt-dev nodejs libmysql++-dev postgresql-server-dev-all
 sudo npm install -g gfms grunt-cli
 sudo easy_install -U sphinx sphinxcontrib-phpdomain
 cd NetCommons3

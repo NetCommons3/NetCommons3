@@ -26,26 +26,26 @@
     "php": {
       "locked_version": "1.2.6"
     },
-    "omusubi": {
-      "path": "./cookbooks/omusubi"
-    },
     "postgresql": {
       "locked_version": "3.3.4"
     },
-    "apt": {
-      "locked_version": "2.3.0"
-    },
-    "build-essential": {
-      "locked_version": "1.4.2"
-    },
-    "openssl": {
-      "locked_version": "1.1.0"
+    "omusubi": {
+      "path": "./cookbooks/omusubi"
     },
     "aws": {
       "locked_version": "1.0.0"
     },
     "xfs": {
       "locked_version": "1.1.0"
+    },
+    "openssl": {
+      "locked_version": "1.1.0"
+    },
+    "build-essential": {
+      "locked_version": "1.4.2"
+    },
+    "apt": {
+      "locked_version": "2.3.0"
     },
     "bluepill": {
       "locked_version": "2.3.0"

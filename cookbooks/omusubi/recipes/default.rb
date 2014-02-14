@@ -37,7 +37,8 @@ packages = %w{
   openjdk-7-jdk nodejs
   git subversion apache2-utils apache2.2-bin apache2.2-common apache2-mpm-prefork libapache2-mod-php5
   libxml2-dev libxslt-dev
-  mysql-server postgresql curl imagemagick graphviz
+  mysql-server libmysql++-dev postgresql postgresql-server-dev-all
+  curl imagemagick graphviz
   lv zsh tree axel expect make g++
   global w3m aspell exuberant-ctags wamerican-huge stunnel4
   emacs24 emacs-goodies-el debian-el gettext-el
@@ -165,6 +166,22 @@ end
 
 apache_site "netcommons.conf" do
   enable true
+end
+
+## Setup mysql
+include_recipe "mysql::server"
+
+template "/etc/mysql/conf.d/my.cnf" do
+  source "mysql/my.cnf"
+  notifies :restart, 'service[mysql]'
+end
+
+## Setup postgresql
+include_recipe "postgresql::server"
+
+template "#{node[:postgresql][:dir]}/pg_hba.conf" do
+  source "postgresql/pg_hba.conf"
+  notifies :restart, 'service[postgresql]'
 end
 
 # Add custom permissions
