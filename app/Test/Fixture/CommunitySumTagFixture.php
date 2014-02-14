@@ -30,8 +30,8 @@ class CommunitySumTagFixture extends CakeTestFixture {
 		'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => null, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 		'indexes' => array(
 			'PRIMARY' => array('column' => 'id', 'unique' => 1),
-			'tag_value_lang' => array('column' => array('tag_value', 'lang'), 'unique' => 1),
-			'tag_value' => array('column' => 'tag_value', 'unique' => 0)
+			'cst_tag_value_lang_unique' => array('column' => array('tag_value', 'lang'), 'unique' => 1),
+			'cst_tag_value_idx' => array('column' => 'tag_value', 'unique' => 0)
 		),
 		'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB')
 	);

@@ -38,7 +38,7 @@ class UserItemAuthorityLinkFixture extends CakeTestFixture {
 		'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => null, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 		'indexes' => array(
 			'PRIMARY' => array('column' => 'id', 'unique' => 1),
-			'item_id' => array('column' => array('user_item_id', 'user_authority'), 'unique' => 0)
+			'uial_item_id_idx' => array('column' => array('user_item_id', 'user_authority'), 'unique' => 0)
 		),
 		'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB')
 	);

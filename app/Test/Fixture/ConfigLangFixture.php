@@ -31,7 +31,7 @@ class ConfigLangFixture extends CakeTestFixture {
 		'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => null, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 		'indexes' => array(
 			'PRIMARY' => array('column' => 'id', 'unique' => 1),
-			'module_id' => array('column' => array('module_id', 'config_name', 'lang'), 'unique' => 1)
+			'module_id_unique' => array('column' => array('module_id', 'config_name', 'lang'), 'unique' => 1)
 		),
 		'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB')
 	);

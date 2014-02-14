@@ -32,7 +32,7 @@ class CommunityTagFixture extends CakeTestFixture {
 		'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => null, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 		'indexes' => array(
 			'PRIMARY' => array('column' => 'id', 'unique' => 1),
-			'room_num' => array('column' => array('room_num', 'community_sum_tag_id', 'tag_value'), 'unique' => 0)
+			'ct_room_num_idx' => array('column' => array('room_num', 'community_sum_tag_id', 'tag_value'), 'unique' => 0)
 		),
 		'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB')
 	);

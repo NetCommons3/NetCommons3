@@ -44,7 +44,7 @@ class BlogStyleFixture extends CakeTestFixture {
 		'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => null, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 		'indexes' => array(
 			'PRIMARY' => array('column' => 'id', 'unique' => 1),
-			'block_id' => array('column' => 'block_id', 'unique' => 0)
+			'bs_block_id_idx' => array('column' => 'block_id', 'unique' => 0)
 		),
 		'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB')
 	);

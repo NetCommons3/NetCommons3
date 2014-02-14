@@ -53,8 +53,8 @@ class ConfigFixture extends CakeTestFixture {
 		'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => null, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 		'indexes' => array(
 			'PRIMARY' => array('column' => 'id', 'unique' => 1),
-			'name' => array('column' => array('name', 'module_id'), 'unique' => 0),
-			'module_id' => array('column' => array('module_id', 'category'), 'unique' => 0)
+			'c_name_idx' => array('column' => array('name', 'module_id'), 'unique' => 0),
+			'c_module_id_idx' => array('column' => array('module_id', 'category'), 'unique' => 0)
 		),
 		'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB')
 	);

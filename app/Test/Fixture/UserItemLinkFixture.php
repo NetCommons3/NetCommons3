@@ -27,7 +27,7 @@ class UserItemLinkFixture extends CakeTestFixture {
 		'content' => array('type' => 'text', 'null' => false, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '会員項目のコンテンツ。', 'charset' => 'utf8'),
 		'indexes' => array(
 			'PRIMARY' => array('column' => 'id', 'unique' => 1),
-			'user_id' => array('column' => array('user_id', 'lang', 'user_item_id'), 'unique' => 1)
+			'user_id_unique' => array('column' => array('user_id', 'lang', 'user_item_id'), 'unique' => 1)
 		),
 		'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB')
 	);

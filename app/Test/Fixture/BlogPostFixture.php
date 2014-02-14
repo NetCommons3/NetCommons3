@@ -49,8 +49,8 @@ class BlogPostFixture extends CakeTestFixture {
 		'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => null, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 		'indexes' => array(
 			'PRIMARY' => array('column' => 'id', 'unique' => 1),
-			'created_user' => array('column' => array('content_id', 'created_user'), 'unique' => 0),
-			'post_date' => array('column' => array('content_id', 'status', 'post_date', 'id'), 'unique' => 0)
+			'bp_created_user_idx' => array('column' => array('content_id', 'created_user'), 'unique' => 0),
+			'bp_post_date_idx' => array('column' => array('content_id', 'status', 'post_date', 'id'), 'unique' => 0)
 		),
 		'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB')
 	);

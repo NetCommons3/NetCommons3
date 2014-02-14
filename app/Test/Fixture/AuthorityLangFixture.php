@@ -30,7 +30,7 @@ class AuthorityLangFixture extends CakeTestFixture {
 		'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => null, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 		'indexes' => array(
 			'PRIMARY' => array('column' => 'id', 'unique' => 1),
-			'authority_id' => array('column' => array('authority_id', 'lang'), 'unique' => 0)
+			'al_authority_id_idx' => array('column' => array('authority_id', 'lang'), 'unique' => 0)
 		),
 		'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB')
 	);

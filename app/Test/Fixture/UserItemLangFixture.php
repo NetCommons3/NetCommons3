@@ -32,7 +32,7 @@ class UserItemLangFixture extends CakeTestFixture {
 		'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => null, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 		'indexes' => array(
 			'PRIMARY' => array('column' => 'id', 'unique' => 1),
-			'room_num' => array('column' => array('user_item_id', 'lang'), 'unique' => 0)
+			'uil_room_num_idx' => array('column' => array('user_item_id', 'lang'), 'unique' => 0)
 		),
 		'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB')
 	);

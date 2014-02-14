@@ -31,7 +31,7 @@ class ModuleLinkFixture extends CakeTestFixture {
 		'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => null, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 		'indexes' => array(
 			'PRIMARY' => array('column' => 'id', 'unique' => 1),
-			'room_num' => array('column' => array('room_num', 'authority_id', 'space_type'), 'unique' => 0)
+			'ml_room_num_idx' => array('column' => array('room_num', 'authority_id', 'space_type'), 'unique' => 0)
 		),
 		'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB')
 	);

@@ -40,7 +40,7 @@ Revisionから復元処理があるため、一度、記事として登録され
 		'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => null, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 		'indexes' => array(
 			'PRIMARY' => array('column' => 'id', 'unique' => 1),
-			'upload_id' => array('column' => array('upload_id', 'id'), 'unique' => 1)
+			'upload_id_unique' => array('column' => array('upload_id', 'id'), 'unique' => 1)
 		),
 		'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB')
 	);

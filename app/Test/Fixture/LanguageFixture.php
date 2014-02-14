@@ -26,7 +26,7 @@ class LanguageFixture extends CakeTestFixture {
 0:非公開'),
 		'indexes' => array(
 			'PRIMARY' => array('column' => 'language', 'unique' => 1),
-			'display_flag' => array('column' => array('display_flag', 'display_sequence'), 'unique' => 0)
+			'l_display_flag_idx' => array('column' => array('display_flag', 'display_sequence'), 'unique' => 0)
 		),
 		'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB')
 	);

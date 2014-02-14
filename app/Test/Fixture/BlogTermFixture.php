@@ -35,9 +35,9 @@ class BlogTermFixture extends CakeTestFixture {
 		'modified_user_name' => array('type' => 'string', 'null' => false, 'default' => null, 'length' => 50, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 		'indexes' => array(
 			'PRIMARY' => array('column' => 'id', 'unique' => 1),
-			'slug' => array('column' => array('content_id', 'taxonomy', 'slug'), 'unique' => 1),
-			'taxonomy' => array('column' => array('content_id', 'taxonomy'), 'unique' => 0),
-			'name' => array('column' => array('content_id', 'name', 'taxonomy'), 'unique' => 0)
+			'bt_slug_unique' => array('column' => array('content_id', 'taxonomy', 'slug'), 'unique' => 1),
+			'bt_taxonomy_idx' => array('column' => array('content_id', 'taxonomy'), 'unique' => 0),
+			'bt_name_idx' => array('column' => array('content_id', 'name', 'taxonomy'), 'unique' => 0)
 		),
 		'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB')
 	);
