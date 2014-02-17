@@ -116,7 +116,7 @@ script:
 
 
 after_script:
-  - php vendors/bin/coveralls
+  - php vendors/bin/coveralls -vvv
 
 notifications:
   email:
