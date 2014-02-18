@@ -36,5 +36,6 @@
     ],
     "config": {
         "vendor-dir": "vendors"
-    }
+    },
+    "process-timeout" : 3000
 }

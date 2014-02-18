@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "8cdc643c4ceee5e6e386deaf4826584f",
+    "hash": "ab33a93b66b2527c296b46c11a3b6f80",
     "packages": [
         {
             "name": "cakedc/migrations",
@@ -569,16 +569,16 @@
         },
         {
             "name": "twbs/bootstrap",
-            "version": "v3.1.0",
+            "version": "v3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "1409cde7e800ca83fd761f87e5ad8f0d259e38d1"
+                "reference": "a365d8689c3f3cee7f1acf86b61270ecca8e106d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/1409cde7e800ca83fd761f87e5ad8f0d259e38d1",
-                "reference": "1409cde7e800ca83fd761f87e5ad8f0d259e38d1",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/a365d8689c3f3cee7f1acf86b61270ecca8e106d",
+                "reference": "a365d8689c3f3cee7f1acf86b61270ecca8e106d",
                 "shasum": ""
             },
             "type": "library",
@@ -607,7 +607,7 @@
                 "bootstrap",
                 "css"
             ],
-            "time": "2014-01-30 16:30:37"
+            "time": "2014-02-13 17:24:59"
         }
     ],
     "packages-dev": [
