@@ -33,9 +33,11 @@ end
 
 # Install packages necessary for this project
 packages = %w{
-  php5 php5-curl php5-cli php5-imagick php5-xdebug php5-mcrypt php5-xsl php-pear
+  php5 php5-curl php5-cli php5-imagick php5-xdebug php5-mcrypt php5-xsl php5-ldap php-pear
   openjdk-7-jdk nodejs
-  git subversion apache2-utils apache2.2-bin apache2.2-common apache2-mpm-prefork libapache2-mod-php5
+  git subversion
+  apache2-utils apache2.2-bin apache2.2-common apache2-mpm-prefork libapache2-mod-php5
+  slapd ldap-utils
   libxml2-dev libxslt-dev
   mysql-server libmysql++-dev postgresql postgresql-server-dev-all
   curl imagemagick graphviz
@@ -137,7 +139,7 @@ end
 
 # Update composer packages
 execute "update composer packages" do
-  command "cd /vagrant_data; COMPOSER_PROCESS_TIMEOUT=3000 hhvm `which composer` update"
+  command "cd /vagrant_data; `which composer` update"
 end
 
 # Deploy configuration files
