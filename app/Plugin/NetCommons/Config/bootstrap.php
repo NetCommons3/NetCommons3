@@ -1,7 +1,7 @@
 <?php
 
 // phpDocumentor Settings
-// TODO: Put author name to netcommons.php or netcommons.yaml
+// Put author name to netcommons.php or netcommons.yaml
 /* $author = 'Noriko Arai, Ryuji Masukawa'; */
 $author = 'Jun Nishikawa <topaz2@m0n0m0n0.com>';
 $header = <<<EOF
@@ -32,5 +32,5 @@ if (Configure::read('NetCommons.installed')) {
 // Load Install plugin
 if (Configure::read('Security.salt') === 'f78b12a5c38e9e5c6ae6fbd0ff1f46c77a1e3' ||
 	Configure::read('Security.cipherSeed') === '60170779348589376') {
-	// TODO: Redirect to install plugin
+	// Redirect to install plugin
 }
