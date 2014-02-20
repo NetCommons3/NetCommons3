@@ -20,13 +20,13 @@
         }
     },
     "require": {
-        "cakephp/cakephp":        "~2.4.0",
-        "cakephp/debug_kit":      "~2.2.0",
-        "cakedc/migrations":      "~2.2.0",
-        "ezyang/htmlpurifier":    "~4.6.0",
+        "cakephp/cakephp":        "~2.4",
+        "cakephp/debug_kit":      "~2.2",
+        "cakedc/migrations":      "~2.2",
+        "ezyang/htmlpurifier":    "~4.6",
         "chronon/mobile_detect":  "*",
-        "twbs/bootstrap":         "~3.1.0",
-        "components/jquery":      "~2.1.0"
+        "twbs/bootstrap":         "~3.1",
+        "components/jquery":      "~2.1"
     },
     "require-dev": {
         "satooshi/php-coveralls": "dev-master"
@@ -35,7 +35,7 @@
         "lib/Cake/Console/cake"
     ],
     "config": {
-        "vendor-dir": "vendors"
-    },
-    "process-timeout" : 3000
+        "vendor-dir": "vendors",
+        "process-timeout": 3000
+    }
 }
