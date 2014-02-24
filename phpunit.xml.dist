@@ -4,6 +4,7 @@
         <blacklist>
             <directory suffix=".php">app/Config</directory>
             <directory suffix=".php">app/Test</directory>
+            <directory suffix="Test.php">Plugin</directory>
         </blacklist>
     </filter>
     <logging>
