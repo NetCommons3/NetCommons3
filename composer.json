@@ -29,7 +29,11 @@
         "components/jquery":      "~2.1"
     },
     "require-dev": {
-        "satooshi/php-coveralls": "dev-master"
+        "satooshi/php-coveralls": "dev-master",
+        "netcommons/auth-general": "dev-master",
+        "netcommons/users": "dev-master",
+        "netcommons/auth": "dev-master",
+        "netcommons/pages": "dev-master"
     },
     "bin": [
         "lib/Cake/Console/cake"
