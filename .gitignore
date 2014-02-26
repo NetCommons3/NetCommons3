@@ -25,6 +25,7 @@ TAGS
 /app/Plugin/Migrations
 /app/Plugin/MobileDetect
 /app/Plugin/DebugKit
+/app/Plugin/BoostCake
 
 # OS generated files #
 ######################
@@ -36,3 +37,4 @@ TAGS
 Icon?
 ehthumbs.db
 Thumbs.db
+
