@@ -35,23 +35,6 @@ git clone https://github.com/NetCommons3/NetCommons3.git
 git clone https://github.com/NetCommons3/NetCommons3Docs.git
 </pre>
 
-### 依存ライブラリをインストール
-#### ubuntu 12.10
-<pre>
-sudo aptitude install zlib1g-dev ruby ruby-dev lsb-core libxml2-dev libxslt-dev nodejs libmysql++-dev postgresql-server-dev-all
-sudo npm install -g gfms grunt-cli
-sudo easy_install -U sphinx sphinxcontrib-phpdomain
-cd NetCommons3
-bundle
-</pre>
-
-#### vagrant plugin
-<pre>
-vagrant plugin install vagrant-berkshelf
-vagrant plugin install vagrant-vbguest
-vagrant plugin install vagrant-hostmanager
-</pre>
-
 ### Workaround
 #### Windows ホストの場合
 vagrant 1.4.x 利用時、下記エラーが発生します。(1.4.3 で確認)
@@ -78,7 +61,23 @@ emacs cookbooks/omusubi/recipes/default.rb
 ```
 
 変更後 composer が手動管理となります。
-変更後に[vagrant plugin](https://github.com/NetCommons3/NetCommons3/blob/master/README.md#vagrant-plugin)を実施してください。
+
+### 依存ライブラリをインストール
+#### ubuntu 12.10
+<pre>
+sudo aptitude install zlib1g-dev ruby ruby-dev lsb-core libxml2-dev libxslt-dev nodejs libmysql++-dev postgresql-server-dev-all
+sudo npm install -g gfms grunt-cli
+sudo easy_install -U sphinx sphinxcontrib-phpdomain
+cd NetCommons3
+bundle
+</pre>
+
+#### vagrant plugin
+<pre>
+vagrant plugin install vagrant-berkshelf
+vagrant plugin install vagrant-vbguest
+vagrant plugin install vagrant-hostmanager
+</pre>
 
 ## 起動
 
