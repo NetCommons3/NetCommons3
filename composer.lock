@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "e143e3dcf12c08a8d33354331ae1149e",
+    "hash": "c863a34e76ad4e5d6f537ea9fd873f7f",
     "packages": [
         {
             "name": "cakedc/migrations",
@@ -704,6 +704,53 @@
             "time": "2014-01-28 22:29:15"
         },
         {
+            "name": "mustangostang/spyc",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mustangostang/spyc.git",
+                "reference": "eba310c26819a4fe519a60309e5d3994588c7840"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mustangostang/spyc/zipball/eba310c26819a4fe519a60309e5d3994588c7840",
+                "reference": "eba310c26819a4fe519a60309e5d3994588c7840",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.5.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "Spyc.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "mustangostang",
+                    "email": "vlad.andersen@gmail.com"
+                }
+            ],
+            "description": "A simple YAML loader/dumper class for PHP",
+            "homepage": "https://github.com/mustangostang/spyc/",
+            "keywords": [
+                "spyc",
+                "yaml",
+                "yml"
+            ],
+            "time": "2014-01-25 14:00:52"
+        },
+        {
             "name": "netcommons/auth",
             "version": "dev-master",
             "source": {
@@ -797,12 +844,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Pages.git",
-                "reference": "520aae4674faa05e8752dc26f938fd08b85be996"
+                "reference": "324016d4629e9ba7861e50b1d946b08b663b12d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Pages/zipball/520aae4674faa05e8752dc26f938fd08b85be996",
-                "reference": "520aae4674faa05e8752dc26f938fd08b85be996",
+                "url": "https://api.github.com/repos/NetCommons3/Pages/zipball/324016d4629e9ba7861e50b1d946b08b663b12d9",
+                "reference": "324016d4629e9ba7861e50b1d946b08b663b12d9",
                 "shasum": ""
             },
             "require": {
@@ -832,7 +879,7 @@
                 "cakephp",
                 "pages"
             ],
-            "time": "2014-02-24 07:33:17"
+            "time": "2014-02-25 08:00:58"
         },
         {
             "name": "netcommons/users",
@@ -1301,6 +1348,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "satooshi/php-coveralls": 20,
+        "mustangostang/spyc": 20,
         "netcommons/auth-general": 20,
         "netcommons/users": 20,
         "netcommons/auth": 20,

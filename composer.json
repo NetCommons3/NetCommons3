@@ -14,9 +14,13 @@
     ],
     "extra": {
         "installer-paths": {
-            "app/Plugin/DebugKit":     ["cakephp/debug_kit"],
-            "app/Plugin/Migrations":   ["cakedc/migrations"],
-            "app/Plugin/MobileDetect": ["chronon/mobile_detect"]
+            "app/Plugin/{$name}": [
+                "cakephp/debug_kit",
+                "cakedc/migrations",
+                "mustangostang/spyc",
+                "slywalker/boost_cake",
+                "chronon/mobile_detect"
+            ]
         }
     },
     "require": {
@@ -25,11 +29,13 @@
         "cakedc/migrations":      "~2.2",
         "ezyang/htmlpurifier":    "~4.6",
         "chronon/mobile_detect":  "*",
+        "slywalker/boost_cake":   "*",
         "twbs/bootstrap":         "~3.1",
         "components/jquery":      "~2.1"
     },
     "require-dev": {
         "satooshi/php-coveralls": "dev-master",
+        "mustangostang/spyc": "dev-master",
         "netcommons/auth-general": "dev-master",
         "netcommons/users": "dev-master",
         "netcommons/auth": "dev-master",
