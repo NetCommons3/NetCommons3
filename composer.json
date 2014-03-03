@@ -35,7 +35,7 @@
     },
     "require-dev": {
         "satooshi/php-coveralls": "dev-master",
-        "mustangostang/spyc": "dev-master",
+        "mustangostang/spyc": "dev-master"
     },
     "bin": [
         "lib/Cake/Console/cake"
