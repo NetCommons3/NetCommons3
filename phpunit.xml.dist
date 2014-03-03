@@ -4,7 +4,10 @@
         <blacklist>
             <directory suffix=".php">app/Config</directory>
             <directory suffix=".php">app/Test</directory>
-            <directory suffix="Test.php">Plugin</directory>
+            <directory suffix=".php">app/Plugin</directory>
+            <directory suffix=".php">lib/Cake</directory>
+            <directory suffix=".php">vendors</directory>
+            <directory suffix="Test.php">plugins</directory>
         </blacklist>
     </filter>
     <logging>
