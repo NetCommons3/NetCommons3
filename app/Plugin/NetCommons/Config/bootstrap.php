@@ -12,18 +12,24 @@ EOF;
 
 Configure::write('PhpDocumentor.classHeader', $header);
 
-// Load all NetCommons plugins
-$plugins = array(
-//	'Users',
-	'Auth',
-);
+// Load all plugins
+$plugins = App::objects('plugins');
 foreach ($plugins as $plugin) {
-	CakePlugin::load($plugin);
+	$options = array();
+	is_readable(ROOT . DS . 'plugins' . DS . $plugin . DS . 'Config' . DS . 'bootstrap.php') &&
+		$options['bootstrap'] = true;
+	is_readable(ROOT . DS . 'plugins' . DS . $plugin . DS . 'Config' . DS . 'routes.php') &&
+		$options['routes'] = true;
+	CakePlugin::load($plugin, $options);
 }
 
 if (file_exists(APP . 'Config' . DS . 'netcommons.php')) {
 	Configure::load('netcommons.php');
 }
+
+/* Spyc::YAMLLoad('netcommons.yaml'); */
+Configure::write('Security.salt', 'f78b12a5c38e9e5c6ae6fbd0ff1f46c77aaaa');
+Configure::write('Security.cipherSeed', 1234567);
 
 if (Configure::read('NetCommons.installed')) {
 	return;
