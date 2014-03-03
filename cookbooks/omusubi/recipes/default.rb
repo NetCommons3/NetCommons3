@@ -200,7 +200,7 @@ postgresql_connection_info = {
   :password => node['postgresql']['password']['postgres']
 }
 
-mysql_database_user 'test' do
+porstresql_database_user 'test' do
   connection postgresql_connection_info
   password   'test'
   action     :grant
