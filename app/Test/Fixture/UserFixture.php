@@ -19,8 +19,8 @@ class UserFixture extends CakeTestFixture {
  */
 	public $fields = array(
 		'id' => array('type' => 'integer', 'null' => false, 'default' => null, 'key' => 'primary', 'comment' => '会員ID'),
-		'login' => array('type' => 'string', 'null' => true, 'default' => null, 'length' => 50, 'collate' => 'utf8_general_ci', 'comment' => 'ログインID', 'charset' => 'utf8'),
-		'password' => array('type' => 'string', 'null' => true, 'default' => null, 'length' => 50, 'collate' => 'utf8_general_ci', 'comment' => 'パスワード', 'charset' => 'utf8'),
+		'username' => array('type' => 'string', 'null' => true, 'default' => null, 'length' => 50, 'collate' => 'utf8_general_ci', 'comment' => 'ログインID', 'charset' => 'utf8'),
+		'password' => array('type' => 'string', 'null' => true, 'default' => null, 'length' => 255, 'collate' => 'utf8_general_ci', 'comment' => 'パスワード', 'charset' => 'utf8'),
 		'handle' => array('type' => 'string', 'null' => false, 'default' => null, 'length' => 100, 'collate' => 'utf8_general_ci', 'comment' => 'ハンドル名', 'charset' => 'utf8'),
 		'authority_id' => array('type' => 'integer', 'null' => false, 'default' => '0'),
 		'is_active' => array('type' => 'integer', 'null' => false, 'default' => '1', 'length' => 3, 'comment' => '利用可能かどうか
@@ -60,7 +60,7 @@ class UserFixture extends CakeTestFixture {
 	public $records = array(
 		array(
 			'id' => 1,
-			'login' => 'Lorem ipsum dolor sit amet',
+			'username' => 'Lorem ipsum dolor sit amet',
 			'password' => 'Lorem ipsum dolor sit amet',
 			'handle' => 'Lorem ipsum dolor sit amet',
 			'authority_id' => 1,
@@ -86,7 +86,7 @@ class UserFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => 2,
-			'login' => 'Lorem ipsum dolor sit amet',
+			'username' => 'Lorem ipsum dolor sit amet',
 			'password' => 'Lorem ipsum dolor sit amet',
 			'handle' => 'Lorem ipsum dolor sit amet',
 			'authority_id' => 2,
@@ -112,7 +112,7 @@ class UserFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => 3,
-			'login' => 'Lorem ipsum dolor sit amet',
+			'username' => 'Lorem ipsum dolor sit amet',
 			'password' => 'Lorem ipsum dolor sit amet',
 			'handle' => 'Lorem ipsum dolor sit amet',
 			'authority_id' => 3,
@@ -138,7 +138,7 @@ class UserFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => 4,
-			'login' => 'Lorem ipsum dolor sit amet',
+			'username' => 'Lorem ipsum dolor sit amet',
 			'password' => 'Lorem ipsum dolor sit amet',
 			'handle' => 'Lorem ipsum dolor sit amet',
 			'authority_id' => 4,
@@ -164,7 +164,7 @@ class UserFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => 5,
-			'login' => 'Lorem ipsum dolor sit amet',
+			'username' => 'Lorem ipsum dolor sit amet',
 			'password' => 'Lorem ipsum dolor sit amet',
 			'handle' => 'Lorem ipsum dolor sit amet',
 			'authority_id' => 5,
@@ -190,7 +190,7 @@ class UserFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => 6,
-			'login' => 'Lorem ipsum dolor sit amet',
+			'username' => 'Lorem ipsum dolor sit amet',
 			'password' => 'Lorem ipsum dolor sit amet',
 			'handle' => 'Lorem ipsum dolor sit amet',
 			'authority_id' => 6,
@@ -216,7 +216,7 @@ class UserFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => 7,
-			'login' => 'Lorem ipsum dolor sit amet',
+			'username' => 'Lorem ipsum dolor sit amet',
 			'password' => 'Lorem ipsum dolor sit amet',
 			'handle' => 'Lorem ipsum dolor sit amet',
 			'authority_id' => 7,
@@ -242,7 +242,7 @@ class UserFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => 8,
-			'login' => 'Lorem ipsum dolor sit amet',
+			'username' => 'Lorem ipsum dolor sit amet',
 			'password' => 'Lorem ipsum dolor sit amet',
 			'handle' => 'Lorem ipsum dolor sit amet',
 			'authority_id' => 8,
@@ -268,7 +268,7 @@ class UserFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => 9,
-			'login' => 'Lorem ipsum dolor sit amet',
+			'username' => 'Lorem ipsum dolor sit amet',
 			'password' => 'Lorem ipsum dolor sit amet',
 			'handle' => 'Lorem ipsum dolor sit amet',
 			'authority_id' => 9,
@@ -294,7 +294,7 @@ class UserFixture extends CakeTestFixture {
 		),
 		array(
 			'id' => 10,
-			'login' => 'Lorem ipsum dolor sit amet',
+			'username' => 'Lorem ipsum dolor sit amet',
 			'password' => 'Lorem ipsum dolor sit amet',
 			'handle' => 'Lorem ipsum dolor sit amet',
 			'authority_id' => 10,
