@@ -173,6 +173,18 @@ end
 ## Setup mysql
 include_recipe "mysql::server"
 
+mysql_connection_info = {
+  :host     => 'localhost',
+  :username => 'root',
+  :password => node['mysql']['server_root_password']
+}
+
+mysql_database_user 'test' do
+  connection mysql_connection_info
+  password   'test'
+  action     :grant
+end
+
 template "/etc/mysql/conf.d/my.cnf" do
   source "mysql/my.cnf"
   notifies :restart, 'service[mysql]'
@@ -180,6 +192,19 @@ end
 
 ## Setup postgresql
 include_recipe "postgresql::server"
+
+postgresql_connection_info = {
+  :host     => 'localhost',
+  :port     => node['postgresql']['config']['port'],
+  :username => 'postgres',
+  :password => node['postgresql']['password']['postgres']
+}
+
+porstresql_database_user 'test' do
+  connection postgresql_connection_info
+  password   'test'
+  action     :grant
+end
 
 template "#{node[:postgresql][:dir]}/pg_hba.conf" do
   source "postgresql/pg_hba.conf"

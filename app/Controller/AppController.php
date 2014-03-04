@@ -34,6 +34,29 @@ App::uses('Controller', 'Controller');
 class AppController extends Controller {
 
 	public $components = array(
-		'DebugKit.Toolbar'
+		'DebugKit.Toolbar',
+		'Session',
+		'Auth' => array(
+			'loginAction' => array(
+				'plugin' => 'auth',
+				'controller' => 'auth',
+				'action' => 'login',
+			),
+			'loginRedirect' => array(
+				'plugin' => 'pages',
+				'controller' => 'pages',
+				'action' => 'index',
+			),
+			'logoutRedirect' => array(
+				'plugin' => 'pages',
+				'controller' => 'pages',
+				'action' => 'index',
+			)
+		)
 	);
+
+	public function beforeFilter() {
+		$this->Auth->allow('index', 'view');
+		Security::setHash('sha512');
+	}
 }
