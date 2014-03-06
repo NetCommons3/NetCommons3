@@ -193,19 +193,6 @@ end
 ## Setup postgresql
 include_recipe "postgresql::server"
 
-postgresql_connection_info = {
-  :host     => 'localhost',
-  :port     => node['postgresql']['config']['port'],
-  :username => 'postgres',
-  :password => node['postgresql']['password']['postgres']
-}
-
-porstresql_database_user 'test' do
-  connection postgresql_connection_info
-  password   'test'
-  action     :grant
-end
-
 template "#{node[:postgresql][:dir]}/pg_hba.conf" do
   source "postgresql/pg_hba.conf"
   notifies :restart, 'service[postgresql]'
