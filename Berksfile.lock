@@ -29,8 +29,8 @@
     "postgresql": {
       "locked_version": "3.3.4"
     },
-    "omusubi": {
-      "path": "./cookbooks/omusubi"
+    "vagrant": {
+      "path": "./site-cookbooks/vagrant"
     },
     "aws": {
       "locked_version": "1.0.0"
