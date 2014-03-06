@@ -1,10 +1,12 @@
 {
+  "sha": "14cfce19a0063ed20d1739d8f31b12373f25ef50",
   "sources": {
     "apache2": {
       "locked_version": "1.8.14"
     },
     "application": {
-      "locked_version": "3.0.0"
+      "locked_version": "3.0.0",
+      "constraint": "~> 3.0"
     },
     "application_php": {
       "locked_version": "2.0.0"
@@ -30,6 +32,7 @@
       "locked_version": "3.3.4"
     },
     "vagrant": {
+      "locked_version": "0.1.0",
       "path": "./site-cookbooks/vagrant"
     },
     "aws": {
@@ -39,28 +42,35 @@
       "locked_version": "1.1.0"
     },
     "openssl": {
-      "locked_version": "1.1.0"
+      "locked_version": "1.1.0",
+      "constraint": "~> 1.1"
     },
     "build-essential": {
-      "locked_version": "1.4.2"
+      "locked_version": "1.4.2",
+      "constraint": "~> 1.4"
     },
     "apt": {
-      "locked_version": "2.3.0"
+      "locked_version": "2.3.0",
+      "constraint": "~> 2.2"
     },
     "bluepill": {
-      "locked_version": "2.3.0"
+      "locked_version": "2.3.0",
+      "constraint": "~> 2.3"
     },
     "rsyslog": {
       "locked_version": "1.9.0"
     },
     "ohai": {
-      "locked_version": "1.1.12"
+      "locked_version": "1.1.12",
+      "constraint": "~> 1.1"
     },
     "runit": {
-      "locked_version": "1.5.1"
+      "locked_version": "1.5.1",
+      "constraint": "~> 1.2"
     },
     "yum": {
-      "locked_version": "3.0.2"
+      "locked_version": "3.0.2",
+      "constraint": "~> 3.0"
     },
     "yum-epel": {
       "locked_version": "0.2.0"
