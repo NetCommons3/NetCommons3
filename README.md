@@ -51,7 +51,7 @@ emacs Berksfile
 - cookbook 'composer', git: "https://github.com/Morphodo/chef-composer.git"
 + #cookbook 'composer', git: "https://github.com/Morphodo/chef-composer.git"
 
-emacs cookbooks/omusubi/recipes/default.rb
+emacs cookbooks/vagrant/recipes/default.rb
 - composer "/vagrant_data" do
 -   action [:install, :update]
 - end
@@ -65,7 +65,7 @@ emacs cookbooks/omusubi/recipes/default.rb
 ### 依存ライブラリをインストール
 #### ubuntu 12.10
 <pre>
-sudo aptitude install zlib1g-dev ruby ruby-dev lsb-core libxml2-dev libxslt-dev nodejs libmysql++-dev postgresql-server-dev-all
+sudo aptitude install zlib1g-dev ruby ruby-dev lsb-core libxml2-dev libxslt-dev libcurl4-gnutls-dev nodejs libmysql++-dev postgresql-server-dev-all
 sudo npm install -g gfms grunt-cli
 sudo easy_install -U sphinx sphinxcontrib-phpdomain
 cd NetCommons3
