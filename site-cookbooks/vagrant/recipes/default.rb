@@ -38,7 +38,7 @@ packages = %w{
   git subversion
   apache2-utils apache2.2-bin apache2.2-common apache2-mpm-prefork libapache2-mod-php5
   slapd ldap-utils
-  libxml2-dev libxslt-dev
+  libxml2-dev libxslt-dev libcurl4-gnutls-dev
   mysql-server libmysql++-dev postgresql postgresql-server-dev-all
   curl imagemagick graphviz
   lv zsh tree axel expect make g++
@@ -94,13 +94,7 @@ end
 
 execute "install npm packages" do
   command "npm -g install jshint grunt-cli gfms"
-  # command "npm -g install jshint grunt-cli gfms bower"
 end
-
-# execute "install bower packages" do
-#   command "su vagrant -l -c 'cd /vagrant_data; bower install bootstrap'"
-#   not_if { ::File.exists?("/vagrant_data/bower_components/bootstrap")}
-# end
 
 execute "install easy_install packages" do
   command "easy_install -U sphinx sphinxcontrib-phpdomain"
@@ -193,18 +187,24 @@ end
 ## Setup postgresql
 include_recipe "postgresql::server"
 
-postgresql_connection_info = {
-  :host     => 'localhost',
-  :port     => node['postgresql']['config']['port'],
-  :username => 'postgres',
-  :password => node['postgresql']['password']['postgres']
-}
+# postgresql_connection_info = {
+#   :host     => 'localhost',
+#   :port     => node['postgresql']['config']['port'],
+#   :username => 'postgres',
+#   :password => node['postgresql']['password']['postgres']
+# }
 
-porstresql_database_user 'test' do
-  connection postgresql_connection_info
-  password   'test'
-  action     :grant
-end
+# execute "create role test" do
+#   user "postgres"
+#   command "psql -c 'DROP ROLE IF EXISTS test; CREATE ROLE test;' -U postgres;"
+# end
+
+# postgresql_database_user 'test' do
+#   connection postgresql_connection_info
+#   database_name 'test_nc3'
+#   password   'test'
+#   action     :grant
+# end
 
 template "#{node[:postgresql][:dir]}/pg_hba.conf" do
   source "postgresql/pg_hba.conf"

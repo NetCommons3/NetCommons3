@@ -1,0 +1,13 @@
+{
+    "mysql": {
+        "server_root_password":   "",
+        "server_repl_password":   "",
+        "server_debian_password": ""
+    },
+    "postgresql": {
+        "password": {
+            "postgres": "postgres"
+        }
+    },
+    "run_list": ["dev"]
+}
