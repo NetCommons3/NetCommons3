@@ -211,6 +211,10 @@ template "#{node[:postgresql][:dir]}/pg_hba.conf" do
   notifies :restart, 'service[postgresql]'
 end
 
+template "/vagrant_data/.git/hooks/pre-commit" do
+  source "git/pre-commit"
+end
+
 # Add custom permissions
 %w{ www-data }.each do |group|
   group group do
