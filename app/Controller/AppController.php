@@ -20,6 +20,7 @@
  */
 
 App::uses('Controller', 'Controller');
+echo
 
 /**
  * Application Controller
