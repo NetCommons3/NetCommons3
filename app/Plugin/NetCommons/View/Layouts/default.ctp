@@ -29,9 +29,9 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
     <?php echo $this->Html->css("style"); ?>
 
     <?php
-    	echo $this->fetch('meta');
-        echo $this->fetch('css');
-	echo $this->fetch('script');
+		echo $this->fetch('meta');
+		echo $this->fetch('css');
+		echo $this->fetch('script');
     ?>
 
     

@@ -33,6 +33,12 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
 
+/**
+ * layoutファイルの指定
+ * @var string
+ */
+	public $layout = "NetCommons.default";
+
 	public $components = array(
 		'DebugKit.Toolbar',
 		'Session',
