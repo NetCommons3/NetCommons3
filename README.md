@@ -35,6 +35,10 @@ git clone https://github.com/NetCommons3/NetCommons3.git
 git clone https://github.com/NetCommons3/NetCommons3Docs.git
 </pre>
 
+#### Windows ホストの場合
+git の pre commit hook で phpcs, phpmd, phpunit, php -l が通らないものを commit できないようにしていますが、windows 用の git client には pre commit hook を無視する client があるようなので、guest 側 の git command をご利用下さい。
+windows ホスト側で git コマンドを使うのは、初回 git clone 時のみとして下さい。
+
 ### Workaround
 #### Windows ホストの場合
 vagrant 1.4.x 利用時、下記エラーが発生します。(1.4.3 で確認)
