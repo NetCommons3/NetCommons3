@@ -213,6 +213,7 @@ end
 
 template "/vagrant_data/.git/hooks/pre-commit" do
   source "git/pre-commit"
+  mode 0755
 end
 
 # Add custom permissions
