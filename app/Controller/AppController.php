@@ -73,6 +73,7 @@ class AppController extends Controller {
 		Security::setHash('sha512');
 	}
 
+
 	public function beforeRender() {
 		//theme css指定
 		$this->set('bootstrapMinCss', $this->Asset->isThemeBootstrapMinCss($this));
