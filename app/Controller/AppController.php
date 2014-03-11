@@ -39,9 +39,16 @@ class AppController extends Controller {
  */
 	public $layout = "NetCommons.default";
 
+/**
+ * themeの指定
+ * @var string
+ */
+	public $theme = "default";
+
 	public $components = array(
 		'DebugKit.Toolbar',
 		'Session',
+		'Asset',
 		'Auth' => array(
 			'loginAction' => array(
 				'plugin' => 'auth',
@@ -64,5 +71,10 @@ class AppController extends Controller {
 	public function beforeFilter() {
 		$this->Auth->allow('index', 'view');
 		Security::setHash('sha512');
+	}
+
+	public function beforeRender() {
+		//theme css指定
+		$this->set('bootstrapMinCss', $this->Asset->isThemeBootstrapMinCss($this));
 	}
 }

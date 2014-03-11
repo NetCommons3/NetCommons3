@@ -15,7 +15,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 	if(isset($bootstrapMinCss) && $bootstrapMinCss) {
 		echo $this->Html->css('bootstrap.min.css');
 	} else {
-		?><link href="/net_commons/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"><?php		
+		?><link href="/net_commons/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"><?php
 	}
     ?>
     
