@@ -1,28 +1,22 @@
-/* base/style.css  */
+/**
+ * base/css/style.css
+ *
+ * @author   Takako Miyagawa <nekoget@gmail.com>
+ * @link     http://www.netcommons.org NetCommons Project
+ * @license  http://www.netcommons.org/license.txt NetCommons License
+ */
 
-#nc-area-rap{
-    margin-top:60px;
+#nc-area-rap {
+  margin-top: 60px;
 }
 
-#area-major-sub , #area-main , #area-minor-sub{
-
-}
-
-#area-main{
-
-    
-}
-#area-minor-sub {
-
-
-}
 #area-footer {
-    border-top:1px solid #CCC;
-    padding-top:30px;
-    margin-top:30px;
+  border-top: 1px solid #ccc;
+  padding-top: 30px;
+  margin-top: 30px;
 }
 
-#area-footer .copyright{
-    text-align:center;
+#area-footer .copyright {
+  text-align: center;
 }
 
