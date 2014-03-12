@@ -26,6 +26,9 @@ TAGS
 /app/Plugin/MobileDetect
 /app/Plugin/DebugKit
 /app/Plugin/BoostCake
+/.settings
+/.buildpath
+/.project
 
 # OS generated files #
 ######################

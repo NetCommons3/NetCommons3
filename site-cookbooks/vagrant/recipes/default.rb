@@ -33,7 +33,7 @@ end
 
 # Install packages necessary for this project
 packages = %w{
-  php5 php5-curl php5-cli php5-imagick php5-xdebug php5-mcrypt php5-xsl php5-ldap php-pear
+  php5 php5-mysql php5-pgsql php5-curl php5-cli php5-imagick php5-xdebug php5-mcrypt php5-xsl php5-ldap php-pear
   openjdk-7-jdk nodejs
   git subversion
   apache2-utils apache2.2-bin apache2.2-common apache2-mpm-prefork libapache2-mod-php5
@@ -213,6 +213,7 @@ end
 
 template "/vagrant_data/.git/hooks/pre-commit" do
   source "git/pre-commit"
+  mode 0755
 end
 
 # Add custom permissions
