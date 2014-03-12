@@ -23,3 +23,4 @@ class AssetComponent extends Component {
 		return false;
 	}
 }
+
