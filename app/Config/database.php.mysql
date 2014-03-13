@@ -14,6 +14,7 @@
  * @package       app.Config
  * @since         CakePHP(tm) v 0.2.9
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
+ * @codingStandardsIgnoreFile
  */
 
 /**
@@ -59,6 +60,7 @@
  * For Postgres : http://www.postgresql.org/docs/9.2/static/sql-set.html
  * For Sql Server : http://msdn.microsoft.com/en-us/library/ms190356.aspx
  */
+
 class DATABASE_CONFIG {
 
 	public $default = array(
@@ -66,7 +68,7 @@ class DATABASE_CONFIG {
 		'persistent' => false,
 		'host' => 'localhost',
 		'login' => 'root',
-		'password' => '',
+		'password' => 'root',
 		'database' => 'nc3',
 		'prefix' => '',
 		'encoding' => 'utf8',
