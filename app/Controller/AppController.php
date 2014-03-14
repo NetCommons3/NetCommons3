@@ -61,9 +61,9 @@ class AppController extends Controller {
 				'action' => 'index',
 			),
 			'logoutRedirect' => array(
-				'plugin' => 'pages',
-				'controller' => 'pages',
-				'action' => 'index',
+				'plugin' => 'auth',
+				'controller' => 'auth',
+				'action' => 'login',
 			)
 		)
 	);

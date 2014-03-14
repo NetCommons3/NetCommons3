@@ -60,8 +60,8 @@ class UserFixture extends CakeTestFixture {
 	public $records = array(
 		array(
 			'id' => 1,
-			'username' => 'Lorem ipsum dolor sit amet',
-			'password' => 'Lorem ipsum dolor sit amet',
+			'username' => 'admin',
+			'password' => '6e7bb07b6ad6ec1b13b8337957b86fdd84889aed883fa067699738fd8c4625b63d31c2d790a2a73e0b072d5b2319f91fd13f4131642f70f6fbe719fb5b3f12f3',
 			'handle' => 'Lorem ipsum dolor sit amet',
 			'authority_id' => 1,
 			'is_active' => 1,
