@@ -29,7 +29,7 @@ Vagrant.configure("2") do |config|
     chef.add_recipe "vagrant"
     chef.json = {
       :mysql => {
-        :server_root_password   => "",
+        :server_root_password   => "root",
         :server_repl_password   => "",
         :server_debian_password => ""
       },
