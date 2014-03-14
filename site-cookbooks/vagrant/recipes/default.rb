@@ -59,14 +59,14 @@ packages.each do |pkg|
 end
 
 execute "apt-get install" do
-  command "DEBIAN_FRONTEND=noninteractive apt-get -q -y install #{dependencies.join(' ')}"
+  command "export DEBIAN_FRONTEND=noninteractive && apt-get -q -y install #{dependencies.join(' ')}"
 end
 
 # Install hhvm separately since it's yet authenticated
-execute "install hhvm" do
-  command "apt-get -q -y --force-yes install hhvm"
-  not_if { ::File.exists?("/usr/bin/hhvm")}
-end
+# execute "install hhvm" do
+#   command "apt-get -q -y --force-yes install hhvm"
+#   not_if { ::File.exists?("/usr/bin/hhvm")}
+# end
 
 # Disabled default package resource because it cannot pass
 # multiple package at once to apt command, which leads to huge performance kill.
