@@ -7,6 +7,7 @@
             <directory suffix=".php">app/Plugin</directory>
             <directory suffix=".php">lib/Cake</directory>
             <directory suffix=".php">vendors</directory>
+            <directory suffix="Test.php">plugins</directory>
         </blacklist>
     </filter>
     <logging>
