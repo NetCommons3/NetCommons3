@@ -40,12 +40,12 @@ guard 'shell' do
     `mysql -uroot -proot -e 'CREATE DATABASE cakephp_test2;'`
     `mysql -uroot -proot -e 'CREATE DATABASE cakephp_test3;'`
     `cp app/Config/database.php app/Config/database.php.orig`
-    `cp app/Config/database.php.test app/Config/database.php`
+    `cp app/Config/database.php.mysql app/Config/database.php`
 
     # Invoke tests
-    target = m[0].gsub(/app\/Test\/Case\/([\w\/]+)Test\.php$/, '\1')
-    n "app/Console/cake test app #{target} --stderr"
-    `app/Console/cake test app #{target} --stderr`
+    target = /^plugins/ =~ m[0] ? m[0] : m[0].gsub(/app\/Test\/Case\/([\w\/]+)Test\.php$/, '\1')
+    n "app/Console/cake test #{target} --stderr --configuration phpunit.xml.dist"
+    `app/Console/cake test #{target} --stderr --configuration phpunit.xml.dist`
     `cp app/Config/database.php.orig app/Config/database.php`
     `rm -f app/Config/database.php.orig`
   end
@@ -53,7 +53,7 @@ end
 
 # Installed by guard-phpcs
 guard 'phpcs', :standard => 'CakePHP' do
-  watch(%r{.*\.php$})
+  watch(%r{.*\.(php|ctp)$})
 end
 
 # Installed by guard-phpmd
