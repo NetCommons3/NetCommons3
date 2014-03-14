@@ -33,7 +33,7 @@ before_script:
 
 script:
   - ./lib/Cake/Console/cake test app All --stderr --configuration phpunit.xml.dist
-  - phpcs -p --extensions=php --standard=CakePHP --ignore=app/Config/Migration/,app/Config/database.php,$IGNORE_PLUGINS app
+  - phpcs -p --extensions=php,ctp --standard=CakePHP --ignore=app/Config/Migration/,app/Config/database.php,$IGNORE_PLUGINS app
   - phpmd app text ruleset/phpmd.xml --exclude $TRAVIS_BUILD_DIR/app/Config/Migration,$IGNORE_PLUGINS
   - phpcpd --exclude Test --exclude Config --exclude app/Config/database.php $IGNORE_PLUGINS_OPTS app
 
