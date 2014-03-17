@@ -31,12 +31,25 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 	?>
 </head>
 	<body>
-		<?php echo $this->fetch('content'); ?>
+	<div id="container">
+		<div id="header">
+			<h1><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
+<?php if ($User = AuthComponent::user()): ?>
+			<?php echo h($User['handle']) ?>
+			<?php echo $this->Html->link(__('Logout'), '/auth/logout') ?>
+<?php else: ?>
+			<?php echo $this->Html->link(__('Login'), '/auth/login') ?>
+<?php endif; ?>
+		</div>
+		<div id="content">
+			<?php echo $this->fetch('content'); ?>
+		</div>
 		<!-- /container -->
 		<?php echo $this->element('sql_dump'); ?>
 
 		<script src="/net_commons/jquery/jquery.js"></script>
 		<script src="/net_commons/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
 		<script src="/net_commons/twbs/bootstrap/assets/js/docs.min.js"></script>
+	</div>
 	</body>
 </html>
