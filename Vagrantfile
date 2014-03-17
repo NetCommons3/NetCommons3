@@ -10,7 +10,7 @@ Vagrant.configure("2") do |config|
   config.hostmanager.manage_host = true
   config.vm.define 'default' do |node|
     node.vm.hostname = "www.netcommons.local"
-    node.hostmanager.aliases = %w(sphinx.netcommons.local phpdoc.netcommons.local)
+    node.hostmanager.aliases = %w(sphinx.netcommons.local phpdoc.netcommons.local phpldapadmin.netcommons.local)
   end
 
   config.vm.synced_folder "./", "/vagrant_data", :create => true, :owner=> 'www-data', :group=>'www-data', :mount_options => ['dmode=775','fmode=775']

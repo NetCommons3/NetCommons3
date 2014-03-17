@@ -37,7 +37,7 @@ packages = %w{
   openjdk-7-jdk nodejs
   git subversion
   apache2-utils apache2.2-bin apache2.2-common apache2-mpm-prefork libapache2-mod-php5
-  slapd ldap-utils
+  slapd ldap-utils phpldapadmin
   libxml2-dev libxslt-dev libcurl4-gnutls-dev
   mysql-server libmysql++-dev postgresql postgresql-server-dev-all
   curl imagemagick graphviz
