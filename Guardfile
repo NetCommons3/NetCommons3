@@ -53,7 +53,7 @@ end
 
 # Installed by guard-phpcs
 guard 'phpcs', :standard => 'CakePHP' do
-  watch(%r{.*\.(php|ctp)$})
+  watch(%r{.*\.(php)$})
 end
 
 # Installed by guard-phpmd
