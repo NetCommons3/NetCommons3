@@ -19,7 +19,7 @@ FILES_CSV=`echo $FILES | sed 's/\s/,/g'`
 if [ "$FILES" != "" ]
 then
 	echo "Running phpcs..."
-	phpcs --standard=CakePHP --encoding=utf-8 $FILES
+	phpcs --extensions=php --standard=CakePHP --encoding=utf-8 $FILES
 	if [ $? != 0 ]
 	then
 		echo "Fix the coding standard violations before commit."
