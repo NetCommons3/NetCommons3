@@ -19,7 +19,10 @@
  * @since         CakePHP(tm) v 0.2.9
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
+
 	Router::connect('/', array('controller' => 'pages', 'action' => 'index', 'plugin' => 'pages'));
+	Router::connect('/sandbox', array('controller' => 'sandbox', 'action' => 'index', 'plugin' => 'Sandbox'));
+
 
 /**
  * Load all plugin routes. See the CakePlugin documentation on
