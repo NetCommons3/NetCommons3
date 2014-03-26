@@ -28,14 +28,14 @@ Vagrant.configure("2") do |config|
     chef.cookbooks_path = "site-cookbooks"
     chef.add_recipe "vagrant"
     chef.json = {
-      :mysql => {
-        :server_root_password   => "root",
-        :server_repl_password   => "",
-        :server_debian_password => ""
+      "mysql" => {
+        "server_root_password"   => "root",
+        "server_repl_password"   => "",
+        "server_debian_password" => ""
       },
-      :postgresql => {
-        :password   => {
-          :postgres => "postgres"
+      "postgresql" => {
+        "password"   => {
+          "postgres" => "postgres"
         }
       }
     }
