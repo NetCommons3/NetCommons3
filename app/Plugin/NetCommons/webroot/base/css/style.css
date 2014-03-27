@@ -6,8 +6,8 @@
  * @license  http://www.netcommons.org/license.txt NetCommons License
  */
 
-#nc-area-rap {
-  margin-top: 60px;
+body{
+	padding-top: 60px;
 }
 
 #area-footer {
