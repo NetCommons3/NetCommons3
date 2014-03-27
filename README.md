@@ -39,6 +39,32 @@ git clone https://github.com/NetCommons3/NetCommons3Docs.git
 git の pre commit hook で phpcs, phpmd, phpunit, php -l が通らないものを commit できないようにしていますが、windows 用の git client には pre commit hook を無視する client があるようなので、guest 側 の git command をご利用下さい。
 windows ホスト側で git コマンドを使うのは、初回 git clone 時のみとして下さい。
 
+### 依存ライブラリをインストール
+#### ubuntu 12.10
+<pre>
+sudo aptitude install zlib1g-dev ruby ruby-dev lsb-core libxml2-dev libxslt-dev libcurl4-gnutls-dev nodejs libmysql++-dev postgresql-server-dev-all
+sudo npm install -g gfms grunt-cli
+sudo easy_install -U sphinx sphinxcontrib-phpdomain
+cd NetCommons3
+bundle
+</pre>
+
+#### OSX Maverick
+<pre>
+brew install libffi mysql postgresql
+sudo npm install -g gfms grunt-cli
+sudo easy_install -U sphinx sphinxcontrib-phpdomain
+cd NetCommons3
+bundle
+</pre>
+
+#### vagrant plugin
+<pre>
+vagrant plugin install vagrant-berkshelf
+vagrant plugin install vagrant-vbguest
+vagrant plugin install vagrant-hostmanager
+</pre>
+
 ### Workaround
 #### Windows ホストの場合
 vagrant 1.4.x 利用時、下記エラーが発生します。(1.4.3 で確認)
@@ -65,23 +91,6 @@ emacs cookbooks/vagrant/recipes/default.rb
 ```
 
 変更後 composer が手動管理となります。
-
-### 依存ライブラリをインストール
-#### ubuntu 12.10
-<pre>
-sudo aptitude install zlib1g-dev ruby ruby-dev lsb-core libxml2-dev libxslt-dev libcurl4-gnutls-dev nodejs libmysql++-dev postgresql-server-dev-all
-sudo npm install -g gfms grunt-cli
-sudo easy_install -U sphinx sphinxcontrib-phpdomain
-cd NetCommons3
-bundle
-</pre>
-
-#### vagrant plugin
-<pre>
-vagrant plugin install vagrant-berkshelf
-vagrant plugin install vagrant-vbguest
-vagrant plugin install vagrant-hostmanager
-</pre>
 
 ## 起動
 
