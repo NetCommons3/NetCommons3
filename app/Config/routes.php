@@ -21,7 +21,6 @@
  */
 
 	Router::connect('/', array('controller' => 'pages', 'action' => 'index', 'plugin' => 'pages'));
-	Router::connect('/sandbox', array('controller' => 'sandbox', 'action' => 'index', 'plugin' => 'Sandbox'));
 
 
 /**
