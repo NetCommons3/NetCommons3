@@ -6,7 +6,7 @@ gem 'berkshelf'
 gem 'nokogiri'
 gem 'rake'
 gem 'mysql'
-gem 'pg'
+gem 'gemrat'
 
 # Some of the cookbooks in use still failing due to the breaking changes made in 11.x.
 # So we'll stick on 10.x till those cookbooks get ready.
@@ -25,9 +25,6 @@ group :development, :test do
   gem 'guard-jshint-node'
   gem 'guard-kitchen'
   gem 'guard-livereload'
-  gem 'guard-phpcs'
-  gem 'guard-phpmd'
-  gem 'guard-phpunit2'
   gem 'guard-shell'
   gem 'jasmine'
   gem 'juicer'
