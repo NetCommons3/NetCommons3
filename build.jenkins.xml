@@ -43,7 +43,7 @@
   <apply executable="php" failonerror="true">
    <arg value="-l" />
 
-   <fileset dir="${basedir}/lib/Cake">
+   <fileset dir="${basedir}/app">
     <include name="**/*.php" />
     <modified />
    </fileset>
@@ -141,6 +141,7 @@
  <target name="phpdoc"
          description="Generate API documentation using PHPDocumentor">
   <exec executable="phpdoc">
+   <arg value="-q" />
    <arg value="--directory" />
    <arg path="${basedir}/app" />
    <arg value="--target" />
