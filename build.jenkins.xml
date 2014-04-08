@@ -6,11 +6,13 @@
    depends="prepare,lint,phploc,pdepend,phpmd-ci,phpcs-ci,phpcpd,phpdoc,cake,phpcb"/>
 
  <target name="build-parallel"
-   depends="prepare,lint,tools-parallel,cake,phpcb"/>
+   depends="prepare,tools-parallel,phpcb"/>
 
  <target name="tools-parallel"
          description="Run tools in parallel">
   <parallel threadCount="8">
+   <antcall target="lint"/>
+   <antcall target="cake"/>
    <sequential>
     <antcall target="pdepend"/>
     <antcall target="phpmd-ci"/>
