@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <project name="CakePHP" default="build">
+ <property environment="env"/>
  <target name="build"
    depends="prepare,lint,phploc,pdepend,phpmd-ci,phpcs-ci,phpcpd,phpdoc,cake,phpcb"/>
 
@@ -9,7 +10,7 @@
 
  <target name="tools-parallel"
          description="Run tools in parallel">
-  <parallel threadCount="2">
+  <parallel threadCount="8">
    <sequential>
     <antcall target="pdepend"/>
     <antcall target="phpmd-ci"/>
@@ -58,46 +59,44 @@
    <arg value="${basedir}/lib/Cake/Templates" />
    <arg value="--log-csv" />
    <arg value="${basedir}/build/logs/phploc.csv" />
-   <arg path="${basedir}/lib/Cake" />
+   <arg path="${basedir}/app" />
   </exec>
  </target>
 
  <target name="pdepend"
          description="Calculate software metrics using PHP_Depend">
   <exec executable="pdepend">
-   <arg value="--ignore=${basedir}/lib/Cake/Test,${basedir}/lib/Cake/Console/Templates" />
+   <arg value="--ignore=${basedir}/lib/Cake" />
    <arg value="--jdepend-xml=${basedir}/build/logs/jdepend.xml" />
    <arg value="--jdepend-chart=${basedir}/build/pdepend/dependencies.svg" />
    <arg value="--overview-pyramid=${basedir}/build/pdepend/overview-pyramid.svg" />
-   <arg path="${basedir}/lib/Cake" />
+   <arg path="${basedir}/app" />
   </exec>
  </target>
 
  <target name="phpmd"
          description="Perform project mess detection using PHPMD and print human readable output. Intended for usage on the command line before committing.">
   <exec executable="phpmd">
-   <arg path="${basedir}/lib/Cake" />
+   <arg path="${basedir}/app" />
    <arg value="text" />
-   <arg value="codesize,design,naming,unusedcode" />
+   <arg value="ruleset/phpmd.xml" />
    <arg value="--exclude" />
    <arg value="${basedir}/lib/Cake/Test" />
    <arg value="--exclude" />
-   <arg value="${basedir}/lib/Cake/Console/Templates" />
+   <arg value="${basedir}/app/Config/Migration,$IGNORE_PLUGINS" />
   </exec>
  </target>
 
  <target name="phpmd-ci"
          description="Perform project mess detection using PHPMD creating a log file for the continuous integration server">
   <exec executable="phpmd">
-   <arg path="${basedir}" />
+   <arg path="${basedir}/app" />
    <arg value="xml" />
-   <arg value="codesize,design,naming,unusedcode" />
+   <arg value="ruleset/phpmd.xml" />
    <arg value="--reportfile" />
    <arg value="${basedir}/build/logs/pmd.xml" />
    <arg value="--exclude" />
-   <arg value="${basedir}/lib/Cake/Test" />
-   <arg value="--exclude" />
-   <arg value="${basedir}/lib/Cake/Console/Templates" />
+   <arg value="${basedir}/app/Config/Migration,$IGNORE_PLUGINS" />
   </exec>
  </target>
 
@@ -106,8 +105,9 @@
   <exec executable="phpcs">
    <arg value="--standard=CakePHP" />
    <arg value="--encoding=utf-8" />
-   <arg value="--ignore=${basedir}/lib/Cake/Console/Templates,${basedir}/lib/Cake/Test,*.txt,*.bat,*js" />
-   <arg path="${basedir}/lib/Cake" />
+   <arg value="--extensions=php" />
+   <arg value="--ignore=app/Config/Migration/,app/Config/database.php,$IGNORE_PLUGINS" />
+   <arg path="${basedir}/app" />
   </exec>
  </target>
 
@@ -118,8 +118,9 @@
    <arg value="--report-file=${basedir}/build/logs/checkstyle.xml" />
    <arg value="--standard=CakePHP" />
    <arg value="--encoding=utf-8" />
-   <arg value="--ignore=${basedir}/lib/Cake/Console/Templates,${basedir}/lib/Cake/Test,*.txt,*.bat,*js" /> 
-   <arg path="${basedir}/lib/Cake" />
+   <arg value="--extensions=php" />
+   <arg value="--ignore=app/Config/Migration/,app/Config/database.php,$IGNORE_PLUGINS" />
+   <arg path="${basedir}/app" />
   </exec>
  </target>
 
@@ -128,10 +129,12 @@
    <arg value="--log-pmd" />
    <arg value="${basedir}/build/logs/pmd-cpd.xml" />
    <arg value="--exclude" />
-   <arg value="${basedir}/lib/Cake/Test" />
+   <arg value="Test" />
    <arg value="--exclude" />
-   <arg value="${basedir}/lib/Cake/Console/Templates" />
-   <arg path="${basedir}/lib/Cake" />
+   <arg value="Config" />
+   <arg value="--exclude" />
+   <arg value="${basedir}/lib/Cake ${env.IGNORE_PLUGINS_OPTS}" />
+   <arg path="${basedir}/app" />
   </exec>
  </target>
 
@@ -139,26 +142,24 @@
          description="Generate API documentation using PHPDocumentor">
   <exec executable="phpdoc">
    <arg value="--directory" />
-   <arg path="${basedir}/lib/Cake" />
+   <arg path="${basedir}/app" />
    <arg value="--target" />
    <arg path="${basedir}/build/api" />
    <arg value="--ignore" />
-   <arg value="Console/cake.php,Test/,Console/Templates/skel/,Config/unicode/" />
+   <arg value="lib/Cake/,Console/cake.php,Test/,Console/Templates/skel/,Config/unicode/${env.IGNORE_PLUGINS_OPTS}" />
    </exec>
  </target>
 
  <target name="cake" description="Run unit tests">
   <exec executable="app/Console/cake">
    <arg value="test" />
-   <arg value="core" />
-   <arg value="AllTests" />
+   <arg value="app" />
+   <arg value="All" />
    <arg value="--stderr" />
    <arg value="--log-junit" />
    <arg path="build/logs/junit.xml" />
-   <arg value="--coverage-clover" />
-   <arg path="build/logs/clover.xml" />
-   <arg value="--coverage-html" />
-   <arg path="build/coverage/" />
+   <arg value="--configuration" />
+   <arg path="phpunit.xml.dist" />
   </exec>
  </target>
 
