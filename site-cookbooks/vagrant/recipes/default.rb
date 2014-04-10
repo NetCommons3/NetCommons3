@@ -100,11 +100,6 @@ execute "install easy_install packages" do
   command "easy_install -U sphinx sphinxcontrib-phpdomain"
 end
 
-# Change Git protocol
-execute "change git protocol" do
-  command "git config --global url.'https://'.insteadOf git://"
-end
-
 # Install Bower packages
 execute "install bower packages" do
   command "bower install --allow-root "
