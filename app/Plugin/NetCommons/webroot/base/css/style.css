@@ -10,13 +10,13 @@ body{
 	padding-top: 60px;
 }
 
-#area-footer {
+#container-footer {
   border-top: 1px solid #ccc;
   padding-top: 30px;
   margin-top: 30px;
 }
 
-#area-footer .copyright {
+#container-footer .copyright {
   text-align: center;
 }
 
