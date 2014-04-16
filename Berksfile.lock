@@ -1,10 +1,10 @@
 {
   "sources": {
     "apache2": {
-      "locked_version": "1.8.14"
+      "locked_version": "1.10.2"
     },
     "application": {
-      "locked_version": "3.0.0"
+      "locked_version": "4.1.4"
     },
     "application_php": {
       "locked_version": "2.0.0"
@@ -15,58 +15,110 @@
       "ref": "27cb886029fc28e08ca80ab0b15408b412bb09b7"
     },
     "database": {
-      "locked_version": "1.5.2"
+      "locked_version": "2.1.6"
+    },
+    "jenkins": {
+      "locked_version": "2.0.2"
     },
     "mysql": {
-      "locked_version": "3.0.12"
+      "locked_version": "5.1.8"
     },
     "nginx": {
-      "locked_version": "2.2.0"
+      "locked_version": "2.6.2"
+    },
+    "node": {
+      "locked_version": "1.1.0"
+    },
+    "nodejs": {
+      "locked_version": "1.3.0"
     },
     "php": {
-      "locked_version": "1.2.6"
+      "locked_version": "1.4.6"
     },
     "postgresql": {
       "locked_version": "3.3.4"
     },
-    "vagrant": {
-      "path": "./site-cookbooks/vagrant"
+    "boilerplate": {
+      "locked_version": "0.1.0",
+      "git": "https://github.com/topaz2/chef_boilerplate.git",
+      "ref": "f9023e749f675873d2f6b7e6354d99b03d998763"
+    },
+    "boilerplate_php": {
+      "locked_version": "0.1.0",
+      "git": "https://github.com/topaz2/chef_boilerplate_php.git",
+      "ref": "e850bf208c0d58cb4a555927a5fd2ee1649176d6"
+    },
+    "netcommons": {
+      "path": "./tools/chef/site-cookbooks/netcommons"
+    },
+    "iptables": {
+      "locked_version": "0.13.2"
+    },
+    "logrotate": {
+      "locked_version": "1.5.0"
+    },
+    "pacman": {
+      "locked_version": "1.1.1"
     },
     "aws": {
-      "locked_version": "1.0.0"
+      "locked_version": "2.1.1"
     },
     "xfs": {
       "locked_version": "1.1.0"
     },
-    "openssl": {
-      "locked_version": "1.1.0"
+    "mysql-chef_gem": {
+      "locked_version": "0.0.2"
     },
     "build-essential": {
-      "locked_version": "1.4.2"
+      "locked_version": "2.0.0"
     },
     "apt": {
-      "locked_version": "2.3.0"
+      "locked_version": "2.3.8"
+    },
+    "runit": {
+      "locked_version": "1.5.10"
+    },
+    "yum": {
+      "locked_version": "3.2.0"
+    },
+    "yum-epel": {
+      "locked_version": "0.3.6"
     },
     "bluepill": {
-      "locked_version": "2.3.0"
+      "locked_version": "2.3.1"
     },
     "rsyslog": {
-      "locked_version": "1.9.0"
+      "locked_version": "1.12.2"
     },
     "ohai": {
       "locked_version": "1.1.12"
     },
-    "runit": {
-      "locked_version": "1.5.1"
+    "git": {
+      "locked_version": "4.0.0"
     },
-    "yum": {
-      "locked_version": "3.0.2"
+    "dmg": {
+      "locked_version": "2.2.0"
     },
-    "yum-epel": {
-      "locked_version": "0.2.0"
+    "windows": {
+      "locked_version": "1.30.2"
+    },
+    "chef_handler": {
+      "locked_version": "1.1.6"
     },
     "xml": {
-      "locked_version": "1.2.0"
+      "locked_version": "1.2.4"
+    },
+    "iis": {
+      "locked_version": "2.1.0"
+    },
+    "openssl": {
+      "locked_version": "1.1.0"
+    },
+    "apt-repo": {
+      "locked_version": "0.1.1"
+    },
+    "python": {
+      "locked_version": "1.4.6"
     }
   }
 }
