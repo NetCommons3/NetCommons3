@@ -1,0 +1,13 @@
+<VirtualHost *:80>
+  ServerName <%= node[:boilerplate][:app][:host] %>
+  ServerAdmin webmaster@localhost
+
+  DocumentRoot <%= node[:boilerplate][:app_root] %>
+  <Directory />
+    Options FollowSymLinks
+    AllowOverride All
+  </Directory>
+
+  ErrorLog ${APACHE_LOG_DIR}/error.log
+  CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>

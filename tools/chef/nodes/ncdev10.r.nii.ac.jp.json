@@ -1,0 +1,40 @@
+{
+    "mysql": {
+        "bind_address":           "0.0.0.0",
+        "server_root_password":   "root",
+        "server_repl_password":   "",
+        "server_debian_password": ""
+    },
+    "postgresql": {
+        "password": {
+            "postgres": "postgres"
+        }
+    },
+    "boilerplate": {
+        "git": {
+            "uri": "https://github.com/NetCommons3/NetCommons3"
+        },
+        "redmine": false,
+        "jenkins": {
+            "host": "ncdev10.r.nii.ac.jp",
+            "path": "/jenkins"
+        }
+    },
+    "boilerplate_php": {
+        "sphinx": {
+            "host": "nc3dev.netcommons.jp",
+            "path": "/sphinx"
+        },
+        "phpdoc": {
+            "host": "nc3dev.netcommons.jp",
+            "path": "/phpdoc"
+        }
+    },
+    "netcommons": {
+        "app": {
+            "host": "nc3dev.netcommons.jp",
+            "path": "/NetCommons3"
+        }
+    },
+    "run_list": ["dev"]
+}

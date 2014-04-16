@@ -1,5 +1,6 @@
 {
     "mysql": {
+        "bind_address":           "0.0.0.0",
         "server_root_password":   "root",
         "server_repl_password":   "",
         "server_debian_password": ""
@@ -8,6 +9,11 @@
         "password": {
             "postgres": "postgres"
         }
+    },
+    "boilerplate": {
+        "document_root": "/vagrant_data",
+        "jenkins": false,
+        "redmine": false
     },
     "run_list": ["vagrant"]
 }
