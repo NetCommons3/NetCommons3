@@ -1,0 +1,15 @@
+{
+  "name": "NetCommons3",
+  "version": "3.0.0",
+  "homepage": "http://www.netcommons.org/",
+  "moduleType": [
+    "node"
+  ],
+  "authors": [
+    "NetCommons Community"
+  ],
+  "license": "NetCommons License",
+  "dependencies": {
+    "angular": "~1.2.16"
+  }
+}
