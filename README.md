@@ -63,6 +63,7 @@ bundle
 vagrant plugin install vagrant-berkshelf
 vagrant plugin install vagrant-vbguest
 vagrant plugin install vagrant-hostmanager
+vagrant plugin install vagrant-omnibus
 </pre>
 
 ### Workaround
@@ -105,7 +106,7 @@ vagrant up
 <pre>
 ----省略--------
 [default]-- 22 => 2222 (adapter 1)
-[default]-- 80 => 8081 (adapter 1)
+[default]-- 80 => 9090 (adapter 1)
 ----省略--------
 </pre>
 それぞれ SSHとHTTPに使用するポート番号です。
@@ -133,9 +134,9 @@ guest には下記 vhosts が作成され、動作の確認ができます。
 
 | url                                 | 用途                                 |
 | ----------------------------------- | ------------------------------------ |
-| http://www.netcommons.local:8081    | netcommons 本体                      |
-| http://sphinx.netcommons.local:8081 | ドキュメント管理                     |
-| http://phpdoc.netcommons.local:8081 | phpdoc                               |
+| http://app.local:9090    | netcommons 本体                      |
+| http://sphinx.local:9090 | ドキュメント管理                     |
+| http://phpdoc.local:9090 | phpdoc                               |
 
 ### Workaround
 #### Windows ホストの場合
