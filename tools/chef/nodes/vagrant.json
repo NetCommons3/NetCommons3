@@ -29,5 +29,10 @@
         "redmine": false,
         "jenkins": false
     },
+    "boilerplate_php": {
+        "cakephp": {
+            "version": "2.x"
+        }
+    },
     "run_list": ["netcommons"]
 }
