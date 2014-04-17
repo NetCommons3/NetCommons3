@@ -32,3 +32,12 @@ template "#{node[:postgresql][:dir]}/pg_hba.conf" do
   notifies :restart, 'service[postgresql]'
 end
 
+## Setup samba
+package 'samba'
+template "/etc/samba/smb.conf" do
+  source 'samba/smb.conf'
+end
+
+service 'smbd' do
+  action :restart
+end
