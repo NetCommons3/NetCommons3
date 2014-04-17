@@ -45,6 +45,10 @@ class AppController extends Controller {
  */
 	public $theme = "default";
 
+/**
+ * ccomponents
+ * @var array
+ */
 	public $components = array(
 		'DebugKit.Toolbar',
 		'Session',
@@ -68,7 +72,22 @@ class AppController extends Controller {
 		)
 	);
 
+/**
+ * 利用Model
+ * @var array
+ */
+	public $uses = array("SiteSetting");
+
+/**
+ * アクションの前に実行
+ * @return void
+ */
 	public function beforeFilter() {
+		//現在のテーマを取得
+		$theme = $this->Asset->getSiteTheme($this);
+		if ($theme) {
+			$this->theme = $theme;
+		}
 		$this->Auth->allow('index', 'view');
 		Security::setHash('sha512');
 	}
