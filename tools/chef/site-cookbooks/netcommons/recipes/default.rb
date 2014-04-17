@@ -3,13 +3,13 @@
 # Recipe:: default
 #
 
+include_recipe 'boilerplate_php'
+
 %w( postgresql-server-dev-all ).each do |pkg|
   package pkg do
     action [:install]
   end
 end
-
-include_recipe 'boilerplate_php'
 
 # Install gem packages
 execute 'install netcommons related gem packages' do
