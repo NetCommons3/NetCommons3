@@ -16,28 +16,22 @@ NetCommons
 
 # 開発環境での起動
 
+### 動作実績
+
+| application | version |
+| ------------ | ------ |
+| virtualbox | 4.3.10 |
+| vagrant | 1.3.5 |
+
 ## 事前準備
 
-### VirtualBoxをダウンロードしてインストール
-VirtualBoxをセットアップしてください。
-[https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads)
+### インストール
+下記アプリケーションをインストールして下さい。
 
-### Vagrantをダウンロードしてインストール
-最新版をインストールしてください。
-[http://downloads.vagrantup.com/](http://downloads.vagrantup.com/)
-
-### ソースを配置
-このリポジトリをgitでクローンするか、ZIPなどでダウンロードしてください。
-gitでクローンする場合は、ソースを配置したいパスに移動して以下のコマンドを実行します。
-<pre>
-cd /usr/local/src
-git clone https://github.com/NetCommons3/NetCommons3.git
-git clone https://github.com/NetCommons3/NetCommons3Docs.git
-</pre>
-
-#### Windows ホストの場合
-git の pre commit hook で phpcs, phpmd, phpunit, php -l が通らないものを commit できないようにしていますが、windows 用の git client には pre commit hook を無視する client があるようなので、guest 側 の git command をご利用下さい。
-windows ホスト側で git コマンドを使うのは、初回 git clone 時のみとして下さい。
+* virtualbox
+  * [https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads)
+* vagrant
+  * [http://downloads.vagrantup.com/](http://downloads.vagrantup.com/)
 
 ### 依存ライブラリをインストール
 #### ubuntu 12.10
@@ -58,6 +52,18 @@ cd NetCommons3
 bundle
 </pre>
 
+#### Windows
+* msysgit
+  * [http://msysgit.github.io/](http://msysgit.github.io/)
+
+git コマンドのパスが通っていないと下記エラーが発生します。
+その場合 msysgit を再度インストールするなど試して下さい。
+
+```
+[Berkshelf] Failed to download 'composer' from git: 'https://github.com/Morphodo
+/chef-composer.git' with branch: 'master'
+```
+
 #### vagrant plugin
 <pre>
 vagrant plugin install vagrant-berkshelf
@@ -66,32 +72,17 @@ vagrant plugin install vagrant-hostmanager
 vagrant plugin install vagrant-omnibus
 </pre>
 
-### Workaround
+### ソースを配置
+このリポジトリをgitでクローンするか、ZIPなどでダウンロードしてください。
+gitでクローンする場合は、ソースを配置したいパスに移動して以下のコマンドを実行します。
+<pre>
+cd /usr/local/src
+git clone https://github.com/NetCommons3/NetCommons3.git
+</pre>
+
 #### Windows ホストの場合
-vagrant 1.4.x 利用時、下記エラーが発生します。(1.4.3 で確認)
-```
-[Berkshelf] Failed to download 'composer' from git: 'https://github.com/Morphodo
-/chef-composer.git' with branch: 'master'
-```
-
-その場合下記2ファイルを以下の通り書き変える必要があります。
-```
-cd NetCommons3
-
-emacs Berksfile
-- cookbook 'composer', git: "https://github.com/Morphodo/chef-composer.git"
-+ #cookbook 'composer', git: "https://github.com/Morphodo/chef-composer.git"
-
-emacs cookbooks/vagrant/recipes/default.rb
-- composer "/vagrant_data" do
--   action [:install, :update]
-- end
-+ #composer "/vagrant_data" do
-+ #  action [:install, :update]
-+ #end
-```
-
-変更後 composer が手動管理となります。
+git の pre commit hook で phpcs, phpmd, phpunit, php -l が通らないものを commit できないようにしていますが、windows 用の git client には pre commit hook を無視する client があるようなので、guest 側 の git command をご利用下さい。
+windows ホスト側で git コマンドを使うのは、初回 git clone 時のみとして下さい。
 
 ## 起動
 
