@@ -17,7 +17,9 @@
     },
     "boilerplate": {
         "country": "jp",
-        // "document_root": "/vagrant_data",
+        "git": {
+            "use_git_protocol": false
+        },
         "app": {
             "type": "git",
             "uri": "https://github.com/NetCommons3/NetCommons3.git"
