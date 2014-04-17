@@ -6,6 +6,7 @@ Vagrant.configure('2') do |config|
   config.vm.box_url = 'http://files.vagrantup.com/precise64.box'
 
   config.vm.network :forwarded_port, guest: 80, host: 9090
+  config.vm.network :private_network, ip: '10.0.0.10'
   config.hostmanager.enabled = true
   config.hostmanager.manage_host = true
   config.vm.define 'default' do |node|
@@ -27,9 +28,11 @@ Vagrant.configure('2') do |config|
 
   config.berkshelf.enabled = true
   config.omnibus.chef_version = :latest
-  json = JSON.parse(Pathname(__FILE__).dirname.join('tools/chef/nodes', 'vagrant.json').read)
+  CHEF_ROOT = 'tools/chef'.freeze
+  json = JSON.parse(Pathname(__FILE__).dirname.join(CHEF_ROOT + '/nodes', 'vagrant.json').read)
   config.vm.provision :chef_solo do |chef|
     chef.cookbooks_path = ['site-cookbooks', 'cookbooks']
+    chef.data_bags_path = CHEF_ROOT + '/data_bags'
     chef.run_list = json.delete('run_list')
     chef.json = json
   end
