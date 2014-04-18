@@ -39,14 +39,14 @@
       "locked_version": "3.3.4"
     },
     "boilerplate": {
-      "locked_version": "0.1.0",
+      "locked_version": "0.2.0",
       "git": "https://github.com/topaz2/chef_boilerplate.git",
-      "ref": "f9023e749f675873d2f6b7e6354d99b03d998763"
+      "ref": "95dec5ee8d353428abd99dcff7d05a47a27f0679"
     },
     "boilerplate_php": {
-      "locked_version": "0.1.0",
+      "locked_version": "0.2.0",
       "git": "https://github.com/topaz2/chef_boilerplate_php.git",
-      "ref": "e850bf208c0d58cb4a555927a5fd2ee1649176d6"
+      "ref": "17e0430a80ba90aaadc593e174a83b8137d2d831"
     },
     "netcommons": {
       "path": "./tools/chef/site-cookbooks/netcommons"
@@ -116,6 +116,36 @@
     },
     "apt-repo": {
       "locked_version": "0.1.1"
+    },
+    "ruby": {
+      "locked_version": "0.9.2"
+    },
+    "gitlab": {
+      "locked_version": "6.4.6"
+    },
+    "zlib": {
+      "locked_version": "2.0.0"
+    },
+    "readline": {
+      "locked_version": "0.0.4"
+    },
+    "ncurses": {
+      "locked_version": "0.0.3"
+    },
+    "openssh": {
+      "locked_version": "1.3.2"
+    },
+    "redisio": {
+      "locked_version": "1.7.1"
+    },
+    "ulimit": {
+      "locked_version": "0.3.2"
+    },
+    "ruby_build": {
+      "locked_version": "0.8.0"
+    },
+    "certificate": {
+      "locked_version": "0.5.0"
     },
     "python": {
       "locked_version": "1.4.6"
