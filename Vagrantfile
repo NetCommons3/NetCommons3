@@ -32,6 +32,7 @@ Vagrant.configure('2') do |config|
   json = JSON.parse(Pathname(__FILE__).dirname.join(CHEF_ROOT + '/nodes', 'vagrant.json').read)
   config.vm.provision :chef_solo do |chef|
     chef.cookbooks_path = ['site-cookbooks', 'cookbooks']
+    chef.custom_config_path = "tools/chef/Vagrantfile.chef"
     chef.data_bags_path = CHEF_ROOT + '/data_bags'
     chef.run_list = json.delete('run_list')
     chef.json = json
