@@ -11,15 +11,15 @@ Vagrant.configure('2') do |config|
   config.hostmanager.manage_host = true
   config.vm.define 'default' do |node|
     node.vm.hostname = 'app.local'
-    node.hostmanager.aliases = %w(sphinx.local phpdoc.local phpldapadmin.local redmine.local jenkins.local)
+    node.hostmanager.aliases = %w(
+      sphinx.local phpdoc.local phpldapadmin.local redmine.local jenkins.local
+    )
   end
+  config.vm.provision :hostmanager
 
-  # config.vm.synced_folder './', '/vagrant_data', :create => true, :owner=> 'www-data', :group=>'www-data', :mount_options => ['dmode=775','fmode=775']
-  # doc_root = '/vagrant_data/app/webroot'
   config.vm.synced_folder '.', '/var/www/app',
     :create => true, :owner=> 'www-data', :group=>'www-data',
     :mount_options => ['dmode=775','fmode=775']
-  doc_root = '/var/www/app/app/webroot'
 
   config.vm.provider :virtualbox do |vb|
     vb.gui = false
