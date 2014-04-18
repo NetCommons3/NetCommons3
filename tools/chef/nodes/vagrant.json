@@ -28,6 +28,7 @@
             "type": "git",
             "uri": "https://github.com/NetCommons3/NetCommons3Docs.git"
         },
+        "gitlab": false,
         "redmine": false,
         "jenkins": false
     },
