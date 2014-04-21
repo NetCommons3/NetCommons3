@@ -134,7 +134,9 @@ Vagrant:
 ```
 
 その場合は下記 mingw から vagrant up を実行して下さい。
+```
 C:\HashiCorp\Vagrant\embedded\mingw\mingw32env.cmd
+```
 
 ### 動作確認
 起動後、netcommons 用のプラグインを追加。(インストーラが出来た時点で下記作業は必要無くなる予定です。)
