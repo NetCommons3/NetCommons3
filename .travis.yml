@@ -10,6 +10,7 @@ env:
   - DB=sqlite
 
 before_script:
+  - exit 1
   - composer install
   - sh -c "if [ '$DB' = 'mysql' ]; then mysql -e 'CREATE DATABASE cakephp_test;'; fi"
   - sh -c "if [ '$DB' = 'mysql' ]; then mysql -e 'CREATE DATABASE cakephp_test2;'; fi"
