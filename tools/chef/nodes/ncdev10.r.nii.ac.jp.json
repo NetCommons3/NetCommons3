@@ -15,7 +15,7 @@
             "timeout": 240
         },
         "master": {
-            "endpoint": "http://ncdev10.r.nii.ac.jp/jenkins/"
+            "endpoint": "http://ncdev10.r.nii.ac.jp/"
         }
     },
     "boilerplate": {
@@ -24,29 +24,26 @@
             "use_git_protocol": false
         },
         "app": {
-            "type": "git",
-            "uri": "https://github.com/NetCommons3/NetCommons3.git"
+            "repo": {
+                "type": "git",
+                "uri": "https://github.com/NetCommons3/NetCommons3.git"
+            }
         },
         "docs": {
-            "type": "git",
-            "uri": "https://github.com/NetCommons3/NetCommons3Docs.git"
+            "repo": {
+                "type": "git",
+                "uri": "https://github.com/NetCommons3/NetCommons3Docs.git"
+            }
         },
         "gitlab": false,
         "redmine": false,
         "jenkins": {
-            "host": "ncdev10.r.nii.ac.jp",
-            "path": "/jenkins"
+            "host": "jenkins.ncdev10.r.nii.ac.jp"
         }
     },
     "boilerplate_php": {
         "cakephp": {
             "version": "2.x"
-        }
-    },
-    "netcommons": {
-        "app": {
-            "host": "nc3dev.netcommons.jp",
-            "path": "/NetCommons3"
         }
     },
     "run_list": ["netcommons"]

@@ -11,13 +11,21 @@
         }
     },
     "boilerplate": {
+        "country": "jp",
         "git": {
-            "uri": "https://github.com/NetCommons3/NetCommons3"
+            "use_git_protocol": false
+        },
+        "app": {
+            "repo": {
+                "type": "git",
+                "uri": "https://github.com/NetCommons3/NetCommons3.git"
+            }
         },
         "redmine": {
             "host": "nc3dev.netcommons.jp",
             "path": "/redmine"
         },
+        "gitlab": false,
         "jenkins": false
     },
     "boilerplate_php": {
@@ -30,11 +38,5 @@
             "path": "/phpdoc"
         }
     },
-    "netcommons": {
-        "app": {
-            "host": "nc3dev.netcommons.jp",
-            "path": "/NetCommons3"
-        }
-    },
-    "run_list": ["dev"]
+    "run_list": ["netcommons"]
 }

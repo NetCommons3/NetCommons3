@@ -15,7 +15,7 @@
             "timeout": 240
         },
         "master": {
-            "endpoint": "http://ncdev10.r.nii.ac.jp/jenkins/"
+            "endpoint": "http://ncdev10.r.nii.ac.jp/"
         }
     },
     "boilerplate": {
@@ -26,8 +26,7 @@
         "app": {
             "type": "git",
             "uri": "https://github.com/NetCommons3/NetCommons3.git",
-            "host": "ncdev10.r.nii.ac.jp",
-            "path": "/NetCommons3"
+            "host": "app.ncdev10.r.nii.ac.jp",
         },
         "docs": {
             "type": "git",
@@ -40,12 +39,6 @@
     "boilerplate_php": {
         "cakephp": {
             "version": "2.x"
-        }
-    },
-    "netcommons": {
-        "app": {
-            "host": "ncdev10.r.nii.ac.jp",
-            "path": "/NetCommons3"
         }
     },
     "run_list": ["netcommons"]
