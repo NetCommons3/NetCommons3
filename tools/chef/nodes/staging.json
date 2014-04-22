@@ -26,7 +26,7 @@
         "app": {
             "type": "git",
             "uri": "https://github.com/NetCommons3/NetCommons3.git",
-            "host": "app.ncdev10.r.nii.ac.jp",
+            "host": "app.ncdev10.r.nii.ac.jp"
         },
         "docs": {
             "type": "git",
