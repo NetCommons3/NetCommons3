@@ -1,6 +1,5 @@
 #!/bin/bash -x
 
-bundle exec knife solo cook localhost -N staging
 mysql -utest -ptest -e 'DROP DATABASE IF EXISTS test_nc3; CREATE DATABASE test_nc3';
 composer install
 chmod -R 777 ./app/tmp
