@@ -7,6 +7,9 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="/net_commons/jquery/jquery.js"></script>
+	<script src="/net_commons/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="/net_commons/twbs/bootstrap/assets/js/docs.min.js"></script>
 	<title>title</title>
 
 	<!-- Bootstrap -->
@@ -31,25 +34,54 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 	?>
 </head>
 	<body>
-	<div id="container">
-		<div id="header">
-			<h1><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
-<?php if ($User = AuthComponent::user()): ?>
-			<?php echo h($User['handle']) ?>
-			<?php echo $this->Html->link(__('Logout'), '/auth/logout') ?>
-<?php else: ?>
-			<?php echo $this->Html->link(__('Login'), '/auth/login') ?>
-<?php endif; ?>
+	<!-- container-header -->
+	<header id="container-header">
+		<div class="box-site box-id-6">
+			<!-- navbar -->
+			<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="/">NetCommons3</a>
+					</div>
+					<div class="navbar-collapse collapse">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="/"><?php echo _("ホーム"); ?></a></li>
+							<li class="active">
+								<?php if ($User = AuthComponent::user()): ?>
+									<?php echo h($User['handle']) ?>
+									<?php echo $this->Html->link(__('Logout'), '/auth/logout') ?>
+								<?php else: ?>
+									<?php echo $this->Html->link(__('Login'), '/auth/login') ?>
+								<?php endif; ?>
+							</li>
+						</ul>
+					</div><!--/.nav-collapse -->
+				</div>
+			</div>
 		</div>
-		<div id="content">
+	</header>
+
+
+
+	<div class="container">
 			<?php echo $this->fetch('content'); ?>
+	</div>
+
+	<!-- container-footer  -->
+	<footer id="container-footer" role="contentinfo">
+		<div class="box-footer box-id-5">
+			<div class="row copyright">Powered by NetCommons</div>
 		</div>
+	</footer>
+
 		<!-- /container -->
 		<?php echo $this->element('sql_dump'); ?>
 
-		<script src="/net_commons/jquery/jquery.js"></script>
-		<script src="/net_commons/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
-		<script src="/net_commons/twbs/bootstrap/assets/js/docs.min.js"></script>
-	</div>
 	</body>
 </html>
