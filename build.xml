@@ -85,7 +85,7 @@
    <arg value="--exclude" />
    <arg value="${basedir}/lib/Cake/Test" />
    <arg value="--exclude" />
-   <arg value="${basedir}/app/Config/Migration,$IGNORE_PLUGINS" />
+   <arg value="${basedir}/app/Config/Migration,${env.IGNORE_PLUGINS}" />
   </exec>
  </target>
 
@@ -98,7 +98,7 @@
    <arg value="--reportfile" />
    <arg value="${basedir}/build/logs/pmd.xml" />
    <arg value="--exclude" />
-   <arg value="${basedir}/app/Config/Migration,$IGNORE_PLUGINS" />
+   <arg value="${basedir}/app/Config/Migration,${env.IGNORE_PLUGINS}" />
   </exec>
  </target>
 
@@ -108,7 +108,7 @@
    <arg value="--standard=CakePHP" />
    <arg value="--encoding=utf-8" />
    <arg value="--extensions=php" />
-   <arg value="--ignore=app/Config/Migration/,app/Config/database.php,$IGNORE_PLUGINS" />
+   <arg value="--ignore=app/Config/Migration/,app/Config/database.php,${env.IGNORE_PLUGINS}" />
    <arg path="${basedir}/app" />
   </exec>
  </target>
@@ -121,7 +121,7 @@
    <arg value="--standard=CakePHP" />
    <arg value="--encoding=utf-8" />
    <arg value="--extensions=php" />
-   <arg value="--ignore=app/Config/Migration/,app/Config/database.php,$IGNORE_PLUGINS" />
+   <arg value="--ignore=app/Config/Migration/,app/Config/database.php,${env.IGNORE_PLUGINS}" />
    <arg path="${basedir}/app" />
   </exec>
  </target>
