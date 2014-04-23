@@ -51,7 +51,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 					</div>
 					<div class="navbar-collapse collapse">
 						<ul class="nav navbar-nav">
-							<li class="active"><a href="/"><?php echo _("ホーム"); ?></a></li>
+							<li class="active"><a href="/"><?php echo __("ホーム"); ?></a></li>
 							<li class="active">
 								<?php if ($User = AuthComponent::user()): ?>
 									<?php echo h($User['handle']) ?>
