@@ -14,30 +14,30 @@ NetCommons
 | Gemfile | [![Dependency Status](https://www.versioneye.com/user/projects/52f1cc16ec13757904000127/badge.png)](https://www.versioneye.com/user/projects/52f1cc16ec13757904000127) |
 | composer.json | [![Dependency Status](https://www.versioneye.com/user/projects/52f1cc19ec13756b480000c4/badge.png)](https://www.versioneye.com/user/projects/52f1cc19ec13756b480000c4) |
 
-# 開発環境での起動
+## 動作実績
 
-## 事前準備
+以下の組み合わせで動作することを確認しています。
 
-### VirtualBoxをダウンロードしてインストール
-VirtualBoxをセットアップしてください。
-[https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads)
+* OS
+  * Ubuntu 12.10
+  * OSX Maverick
+  * Windows 8.1
 
-### Vagrantをダウンロードしてインストール
-最新版をインストールしてください。
-[http://downloads.vagrantup.com/](http://downloads.vagrantup.com/)
+| application | version |
+| ------------ | ------ |
+| virtualbox | 4.3.10 |
+| vagrant | 1.4.3 |
 
-### ソースを配置
-このリポジトリをgitでクローンするか、ZIPなどでダウンロードしてください。
-gitでクローンする場合は、ソースを配置したいパスに移動して以下のコマンドを実行します。
-<pre>
-cd /usr/local/src
-git clone https://github.com/NetCommons3/NetCommons3.git
-git clone https://github.com/NetCommons3/NetCommons3Docs.git
-</pre>
+※依存しているプラグインの関係で vagrant 1.5.x はまだ動作しません。
 
-#### Windows ホストの場合
-git の pre commit hook で phpcs, phpmd, phpunit, php -l が通らないものを commit できないようにしていますが、windows 用の git client には pre commit hook を無視する client があるようなので、guest 側 の git command をご利用下さい。
-windows ホスト側で git コマンドを使うのは、初回 git clone 時のみとして下さい。
+## インストール
+### 共通
+下記アプリケーションをインストールして下さい。
+
+* virtualbox
+  * [https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads)
+* vagrant
+  * [http://downloads.vagrantup.com/](http://downloads.vagrantup.com/)
 
 ### 依存ライブラリをインストール
 #### ubuntu 12.10
@@ -58,39 +58,60 @@ cd NetCommons3
 bundle
 </pre>
 
-#### vagrant plugin
-<pre>
-vagrant plugin install vagrant-berkshelf
-vagrant plugin install vagrant-vbguest
-vagrant plugin install vagrant-hostmanager
-</pre>
+#### Windows
+* msysgit
+  * [http://msysgit.github.io/](http://msysgit.github.io/)
 
-### Workaround
-#### Windows ホストの場合
-vagrant 1.4.x 利用時、下記エラーが発生します。(1.4.3 で確認)
+git コマンドのパスが通っていないと下記エラーが発生します。
+その場合 msysgit を再度インストールするなど試して下さい。
+
 ```
 [Berkshelf] Failed to download 'composer' from git: 'https://github.com/Morphodo
 /chef-composer.git' with branch: 'master'
 ```
 
-その場合下記2ファイルを以下の通り書き変える必要があります。
-```
-cd NetCommons3
+#### vagrant plugin
+<pre>
+vagrant plugin install vagrant-berkshelf
+vagrant plugin install vagrant-vbguest
+vagrant plugin install vagrant-hostmanager
+vagrant plugin install vagrant-omnibus
+</pre>
 
-emacs Berksfile
-- cookbook 'composer', git: "https://github.com/Morphodo/chef-composer.git"
-+ #cookbook 'composer', git: "https://github.com/Morphodo/chef-composer.git"
+※vagrant 1.5 対応された vagrant-berkshelf 2.0.0 が stable に昇格していますが現時点(2014/4/17)ではまだ動作していません。
+暫くの間は vagrant-berkshelf のみ version 指定してインストールすることをオススメします。
+<pre>
+vagrant plugin install vagrant-berkshelf --plugin-version 1.3.7
+</pre>
 
-emacs cookbooks/vagrant/recipes/default.rb
-- composer "/vagrant_data" do
--   action [:install, :update]
-- end
-+ #composer "/vagrant_data" do
-+ #  action [:install, :update]
-+ #end
-```
+### ソースを配置
+このリポジトリをgitでクローンするか、ZIPなどでダウンロードしてください。
+gitでクローンする場合は、ソースを配置したいパスに移動して以下のコマンドを実行します。
+<pre>
+cd /usr/local/src
+git clone https://github.com/NetCommons3/NetCommons3.git
+</pre>
 
-変更後 composer が手動管理となります。
+#### Windows ホストの場合
+* git について
+git の pre commit hook で phpcs, phpmd, phpunit, php -l が通らないものを commit できないようにしていますが、windows 用の git client には pre commit hook を無視する client があるようなので、guest 側 の git command をご利用下さい。
+windows ホスト側で git コマンドを使うのは、初回 git clone 時のみとして下さい。
+
+* synced_folder 無効化
+virtualbox のある時点から windows では synced_folder 上で symlink が貼れなくなっています。
+synced_folder を有効にしたままで vagrant up すると symlink が破壊されるので、下記の通り Vagrantfile に 『disabled: true』 を指定して下さい。
+<pre>
+$ emacs Vagrantfile
+  config.vm.synced_folder '.', '/var/www/app',
+    :create => true, :owner=> 'www-data', :group=>'www-data',
+    :mount_options => ['dmode=775','fmode=775']
+</pre>
+↓
+<pre>
+  config.vm.synced_folder '.', '/var/www/app', disabled: true,
+    :create => true, :owner=> 'www-data', :group=>'www-data',
+    :mount_options => ['dmode=775','fmode=775']
+</pre>
 
 ## 起動
 
@@ -100,12 +121,35 @@ emacs cookbooks/vagrant/recipes/default.rb
 vagrant up
 </pre>
 
+※windows だと以下のようなエラーが出るようです。
+
+```
+Failed to load the "vagrant-berkshelf" plugin. View logs for more details.
+Bringing machine 'default' up with 'virtualbox' provider...
+There are errors in the configuration of this machine. Please fix
+the following errors and try again:
+
+Vagrant:
+* Unknown configuration section 'berkshelf'.
+```
+
+その場合は下記 mingw から vagrant up を実行して下さい。
+```
+C:\HashiCorp\Vagrant\embedded\mingw\mingw32env.cmd
+```
+
 ### 動作確認
+起動後、netcommons 用のプラグインを追加。(インストーラが出来た時点で下記作業は必要無くなる予定です。)
+<pre>
+cd /var/www/app
+sudo composer require netcommons/auth:dev-master netcommons/auth-general:dev-master netcommons/users:dev-master netcommons/pages:dev-master --dev
+</pre>
+
 <code>vagrant up</code>を実行すると、以下のようなコマンドラインが表示されます。
 <pre>
 ----省略--------
 [default]-- 22 => 2222 (adapter 1)
-[default]-- 80 => 8080 (adapter 1)
+[default]-- 80 => 9090 (adapter 1)
 ----省略--------
 </pre>
 それぞれ SSHとHTTPに使用するポート番号です。
@@ -121,42 +165,27 @@ vagrant ssh
 
 SSH認証のユーザ名とパスフレーズはともに「vagrant」です。
 
-developブランチからソースを取得した場合は、CakePHP本体のソースが存在しないため、サーバ内にSSHしcomposerコマンドを実行する必要があります。
-<pre>
-cd /vagrant_data/
-composer install
-</pre>
-
-NetCommonsのインストーラーで入力するデータベースのユーザ名は「root」、パスワードは無しです。
-
 guest には下記 vhosts が作成され、動作の確認ができます。
 
 | url                                 | 用途                                 |
 | ----------------------------------- | ------------------------------------ |
-| http://www.netcommons.local:8080    | netcommons 本体                      |
-| http://sphinx.netcommons.local:8080 | ドキュメント管理                     |
-| http://phpdoc.netcommons.local:8080 | phpdoc                               |
+| http://app.local:9090    | netcommons 本体                      |
+| http://sphinx.local:9090 | ドキュメント管理                     |
+| http://phpdoc.local:9090 | phpdoc                               |
+
+※ windowsは hosts が設定されない事があります。その場合は hosts に下記設定を直接指定して下さい。
+```
+127.0.0.1 app.local sphinx.local phpdoc.local phpldapadmin.local redmine.local jenkins.local
+```
 
 ### Workaround
-#### Windows ホストの場合
 <code>vagrant up</code>実行時に、仮想化支援機構(VT-x/AMD-V)が有効化されていないメッセージが表示された場合は、BIOSの設定を見直してください。
 
-また、composer を手動管理にしている場合は、以下の手順を実施してください。
+### 開発
+virtualbox の最新版, vagrant 1.4.x の組み合わせで Windows のホスト側にてファイルを編集する場合は、下記 samba をマウントし作業をする必要があります。
+\\10.0.0.10\shared\app
 
-guest で以下実行
-<pre>
-sudo adduser vagrant www-data
-cd /vagrant_data/
-curl -s http://getcomposer.org/installer | php
-php composer.phar install
-cd /usr/local/bin/
-sudo ln -s /vagrant_data/composer.phar composer
-</pre>
-
-上記実行後に ホスト の配置したソースのパスで以下実行
-<pre>
-vagrant provision
-</pre>
+その他の OS は vagrant up したディレクトリ直下のファイルを直接編集するだけで host <=> guest 間でファイルが同期できます。
 
 ### 終了
 vagrantコマンドで仮想マシンを終了、又は破棄出来ます。

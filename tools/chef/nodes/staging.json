@@ -1,0 +1,45 @@
+{
+    "mysql": {
+        "bind_address":           "0.0.0.0",
+        "server_root_password":   "root",
+        "server_repl_password":   "",
+        "server_debian_password": ""
+    },
+    "postgresql": {
+        "password": {
+            "postgres": "postgres"
+        }
+    },
+    "jenkins": {
+        "executor": {
+            "timeout": 240
+        },
+        "master": {
+            "endpoint": "http://ncdev10.r.nii.ac.jp/"
+        }
+    },
+    "boilerplate": {
+        "country": "jp",
+        "git": {
+            "use_git_protocol": false
+        },
+        "app": {
+            "type": "git",
+            "uri": "https://github.com/NetCommons3/NetCommons3.git",
+            "host": "app.ncdev10.r.nii.ac.jp"
+        },
+        "docs": {
+            "type": "git",
+            "uri": "https://github.com/NetCommons3/NetCommons3Docs.git"
+        },
+        "gitlab": false,
+        "redmine": false,
+        "jenkins": false
+    },
+    "boilerplate_php": {
+        "cakephp": {
+            "version": "2.x"
+        }
+    },
+    "run_list": ["netcommons"]
+}

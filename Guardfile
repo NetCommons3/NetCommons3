@@ -66,6 +66,17 @@ end
 #   watch(%r{.*\.js$})
 # end
 
+guard 'jasmine', :server => :jasmine_gem, :port => 8888 do
+  # watch(%r{plugins/.*\.js$}) do |m|
+  #   n "#{m[0]} Changed"
+  #   'echo 1'
+  # end
+  watch(%r{spec/javascripts/spec\.(js\.coffee|js|coffee)$}) { 'spec/javascripts' }
+  watch(%r{spec/javascripts/.+_spec\.(js\.coffee|js|coffee)$})
+  watch(%r{spec/javascripts/fixtures/.+$})
+  watch(%r{app/assets/javascripts/(.+?)\.(js\.coffee|js|coffee)(?:\.\w+)*$}) { |m| "spec/javascripts/#{ m[1] }_spec.#{ m[2] }" }
+end
+
 guard 'livereload' do
   watch(%r{.*\.(php|ctp|css|js|rst)$})
 end

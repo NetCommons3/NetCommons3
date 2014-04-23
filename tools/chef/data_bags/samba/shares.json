@@ -1,0 +1,14 @@
+{
+  "id": "shares",
+  "shares": {
+    "export": {
+      "comment": "Exported Share",
+      "path": "/srv/export",
+      "guest ok": "no",
+      "printable": "no",
+      "write list": ["netcommons"],
+      "create mask": "0664",
+      "directory mask": "0775"
+    }
+  }
+}

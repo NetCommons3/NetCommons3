@@ -7,16 +7,8 @@ gem 'nokogiri'
 gem 'rake'
 gem 'mysql'
 gem 'gemrat'
-
-# Some of the cookbooks in use still failing due to the breaking changes made in 11.x.
-# So we'll stick on 10.x till those cookbooks get ready.
-# @see http://docs.opscode.com/breaking_changes_chef_11.html
-gem 'chef', '~> 10.14'
-
-# Workaround for error below
-# FATAL: LoadError: template[/etc/php5/cli/php.ini] (vagrant::default line 147) had an error: LoadError: cannot load such file -- moneta/basic_file]
-# @see http://stackoverflow.com/questions/14616051/chef-cannot-load-such-file-moneta-basic-file
-gem 'moneta', '~> 0.6.0'
+gem 'chef'
+gem 'i18n'
 
 group :development, :test do
   gem 'guard'
