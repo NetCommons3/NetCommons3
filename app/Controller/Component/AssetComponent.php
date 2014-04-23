@@ -22,5 +22,18 @@ class AssetComponent extends Component {
 		}
 		return false;
 	}
+
+/**
+ * サイトテーマの取得
+ * @param Controller $controller
+ * @return null
+ */
+	public function getSiteTheme(Controller $controller) {
+		$theme = $controller->SiteSetting->getSiteTheme();
+		if ($theme) {
+			return $theme;
+		}
+		return null;
+	}
 }
 
