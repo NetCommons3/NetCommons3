@@ -1,11 +1,11 @@
 {
     "name": "amelia",
-    "description": "bootstrap テーマ MITライセンス 情報をあとで修正する。",
-    "homepage" : "http://www.netcommons.org",
+    "description": "Bootswatch v3.1.1+1  Copyright 2012-2014 Thomas Park",
+    "homepage" : "http://bootswatch.com",
     "authors": [
         {
-            "name":     "NetCommons Community",
-            "homepage": "https://github.com/NetCommons3/Auth/graphs/contributors"
+            "name":     "Thomas Park",
+            "homepage": "http://bootswatch.com"
         }
     ],
     "dependencies": {
@@ -13,12 +13,12 @@
         "jquery":      "~2.1",
         "NetCommons" : "3.0"
     },
-    "version": "0.1",
+    "version": "v3.1.1+1",
     "licenses" : [
         {
-          "type" : "NetCommons3 LICENSE",
-          "url" : "https://github.com/NetCommons3/NetCommons3/blob/master/license.txt"
+          "type" : "under MIT",
+            "url" : ""
         }
     ]
-
 }
+
