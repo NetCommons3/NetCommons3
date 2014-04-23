@@ -66,25 +66,17 @@ class DATABASE_CONFIG {
 		'datasource' => 'Database/Postgres',
 		'host' => '127.0.0.1',
 		'login' => 'postgres',
+		'password' => 'postgres',
 		'database' => 'nc3',
-		'schema' => array(
-			'default' => 'public',
-			'test' => 'public',
-			'test2' => 'test2',
-			'test_database_three' => 'test3'
-		)
+		'schema' => 'public',
 	);
 
 	public $test = array(
 		'datasource' => 'Database/Postgres',
 		'host' => '127.0.0.1',
 		'login' => 'postgres',
+		'password' => 'postgres',
 		'database' => 'test_nc3',
-		'schema' => array(
-			'default' => 'public',
-			'test' => 'public',
-			'test2' => 'test2',
-			'test_database_three' => 'test3'
-		)
+		'schema' => 'public',
 	);
 }
