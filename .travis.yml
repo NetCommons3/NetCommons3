@@ -11,6 +11,7 @@ env:
 
 before_script:
   - phpunit --version
+  - pear channel-discover pear.phpunit.de
   - pear config-set auto_discover 1; pear install --alldeps phpunit/PHPUnit-3.7.32
   - phpunit --version
   - composer install
