@@ -39,14 +39,14 @@
       "locked_version": "3.3.4"
     },
     "boilerplate": {
-      "locked_version": "0.3.0",
+      "locked_version": "0.3.2",
       "git": "https://github.com/topaz2/chef_boilerplate.git",
-      "ref": "5a667ce646d061434b2713e4294744401f436666"
+      "ref": "62be912bea0bd5640116be08c8e3838c96fbe3af"
     },
     "boilerplate_php": {
-      "locked_version": "0.2.2",
+      "locked_version": "0.3.0",
       "git": "https://github.com/topaz2/chef_boilerplate_php.git",
-      "ref": "b70d6ff669657da5025b28323b0ca4f48a63c791"
+      "ref": "4984f7ded073451aa4689b9a01ed21204ca9d7bb"
     },
     "netcommons": {
       "path": "./tools/chef/site-cookbooks/netcommons"
