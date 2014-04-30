@@ -93,13 +93,13 @@ git clone https://github.com/NetCommons3/NetCommons3.git
 </pre>
 
 #### Windows ホストの場合
-* git について
+##### git について
 git の pre commit hook で phpcs, phpmd, phpunit, php -l が通らないものを commit できないようにしていますが、windows 用の git client には pre commit hook を無視する client があるようなので、guest 側 の git command をご利用下さい。
 windows ホスト側で git コマンドを使うのは、初回 git clone 時のみとして下さい。
 
-* synced_folder 無効化
+##### synced_folder 無効化
 virtualbox のある時点から windows では synced_folder 上で symlink が貼れなくなっています。
-synced_folder を有効にしたままで vagrant up すると symlink が破壊されるので、下記の通り Vagrantfile に 『disabled: true』 を指定して下さい。
+synced_folder を有効にしたままで vagrant up すると symlink が破壊されます。下記の通り Vagrantfile に 『disabled: true』 を指定して下さい。
 <pre>
 $ emacs Vagrantfile
   config.vm.synced_folder '.', '/var/www/app',
