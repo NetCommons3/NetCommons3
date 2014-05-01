@@ -73,7 +73,6 @@ git コマンドのパスが通っていないと下記エラーが発生しま�
 #### vagrant plugin
 <pre>
 vagrant plugin install vagrant-berkshelf
-vagrant plugin install vagrant-vbguest
 vagrant plugin install vagrant-hostmanager
 vagrant plugin install vagrant-omnibus
 </pre>
