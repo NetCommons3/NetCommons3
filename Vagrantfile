@@ -19,8 +19,8 @@ Vagrant.configure('2') do |config|
   config.vm.provision :hostmanager
 
   config.vm.synced_folder '.', '/var/www/app',
-    :create => true, :owner=> 'www-data', :group=>'www-data',
-    :mount_options => ['dmode=775','fmode=775']
+    :create => true, :owner=> 'www-data', :group => 'www-data',
+    :mount_options => ['dmode=775', 'fmode=775']
 
   config.vm.provider :virtualbox do |vb|
     vb.gui = false
