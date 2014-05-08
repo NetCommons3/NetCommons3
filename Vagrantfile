@@ -9,6 +9,7 @@ Vagrant.configure('2') do |config|
   config.vm.network :private_network, ip: '10.0.0.10'
   config.hostmanager.enabled = true
   config.hostmanager.manage_host = true
+  config.hostmanager.ignore_private_ip = true
   config.vm.define 'default' do |node|
     node.vm.hostname = 'app.local'
     node.hostmanager.aliases = %w(
@@ -18,8 +19,8 @@ Vagrant.configure('2') do |config|
   config.vm.provision :hostmanager
 
   config.vm.synced_folder '.', '/var/www/app',
-    :create => true, :owner=> 'www-data', :group=>'www-data',
-    :mount_options => ['dmode=775','fmode=775']
+    :create => true, :owner=> 'www-data', :group => 'www-data',
+    :mount_options => ['dmode=775', 'fmode=775']
 
   config.vm.provider :virtualbox do |vb|
     vb.gui = false
