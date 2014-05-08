@@ -1,12 +1,15 @@
 {
-    "name": "default",
-    "description": "NetCommons3 デェフォルトのテーマです。NetCommons3 デェフォルトのテーマです。NetCommons3 デェフォルトのテーマです。 ",
+    "name": "Default",
+    "description": "NetCommons3 Defaultテーマです",
     "homepage" : "http://www.netcommons.org",
     "authors": [
         {
             "name":     "NetCommons Community",
             "homepage": "https://github.com/NetCommons3/Auth/graphs/contributors"
         }
+    ],
+    "keywords" : [
+
     ],
     "dependencies": {
         "bootstrap":         "~3.1",
