@@ -57,9 +57,14 @@ class SiteSettingTest extends CakeTestCase {
 		//データがある場合
 		$ck = $this->SiteSetting->getSiteTheme();
 		$this->assertTextEquals("UnitTestTheme", $ck);
-		//データが無い場合を作る
-		$ck = $this->SiteSettingValue->delete(2);
-		$this->assertTrue($ck);
+		//該当のレコード削除  //データが無い場合を作る
+		$ck = $this->SiteSetting->find('first', array(
+			'conditions' => array('SiteSetting.name' => 'Theme'),
+		));
+		$ck1 = $this->SiteSetting->delete($ck['SiteSetting']['id']);
+		$this->assertTrue($ck1);
+		$ck2 = $this->SiteSettingValue->delete($ck['SiteSettingValue'][0]['id']);
+		$this->assertTrue($ck2);
 		//問い合わせた結果データは無いのでnullが戻る
 		$ck = $this->SiteSetting->getSiteTheme();
 		$this->assertEquals(null, $ck);
