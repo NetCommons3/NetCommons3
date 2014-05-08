@@ -16,13 +16,6 @@ App::uses('AppModel', 'Model');
 class Language extends AppModel {
 
 /**
- * Primary key field
- *
- * @var string
- */
-	public $primaryKey = 'language';
-
-/**
  * Validation rules
  *
  * @var array
