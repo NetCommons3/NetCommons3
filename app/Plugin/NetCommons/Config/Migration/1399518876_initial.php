@@ -31,7 +31,7 @@ class Initial extends CakeMigration {
 				),
 				'boxes' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => NULL, 'key' => 'primary'),
-					'boxes_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
+					'container_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'type' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'space_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
 					'room_id' => array('type' => 'integer', 'null' => true, 'default' => NULL),
