@@ -1,154 +1,179 @@
-{
-  "sources": {
-    "apache2": {
-      "locked_version": "1.10.2"
-    },
-    "application": {
-      "locked_version": "4.1.4"
-    },
-    "application_php": {
-      "locked_version": "2.0.0"
-    },
-    "composer": {
-      "locked_version": "0.2.1",
-      "git": "https://github.com/Morphodo/chef-composer.git",
-      "ref": "27cb886029fc28e08ca80ab0b15408b412bb09b7"
-    },
-    "database": {
-      "locked_version": "2.1.6"
-    },
-    "jenkins": {
-      "locked_version": "2.0.2"
-    },
-    "mysql": {
-      "locked_version": "5.1.8"
-    },
-    "nginx": {
-      "locked_version": "2.6.2"
-    },
-    "node": {
-      "locked_version": "1.1.0"
-    },
-    "nodejs": {
-      "locked_version": "1.3.0"
-    },
-    "php": {
-      "locked_version": "1.4.6"
-    },
-    "postgresql": {
-      "locked_version": "3.3.4"
-    },
-    "boilerplate": {
-      "locked_version": "0.3.2",
-      "git": "https://github.com/topaz2/chef_boilerplate.git",
-      "ref": "62be912bea0bd5640116be08c8e3838c96fbe3af"
-    },
-    "boilerplate_php": {
-      "locked_version": "0.3.0",
-      "git": "https://github.com/topaz2/chef_boilerplate_php.git",
-      "ref": "4984f7ded073451aa4689b9a01ed21204ca9d7bb"
-    },
-    "netcommons": {
-      "path": "./tools/chef/site-cookbooks/netcommons"
-    },
-    "iptables": {
-      "locked_version": "0.13.2"
-    },
-    "logrotate": {
-      "locked_version": "1.5.0"
-    },
-    "pacman": {
-      "locked_version": "1.1.1"
-    },
-    "aws": {
-      "locked_version": "2.1.1"
-    },
-    "xfs": {
-      "locked_version": "1.1.0"
-    },
-    "mysql-chef_gem": {
-      "locked_version": "0.0.2"
-    },
-    "build-essential": {
-      "locked_version": "2.0.0"
-    },
-    "apt": {
-      "locked_version": "2.3.8"
-    },
-    "runit": {
-      "locked_version": "1.5.10"
-    },
-    "yum": {
-      "locked_version": "3.2.0"
-    },
-    "yum-epel": {
-      "locked_version": "0.3.6"
-    },
-    "bluepill": {
-      "locked_version": "2.3.1"
-    },
-    "rsyslog": {
-      "locked_version": "1.12.2"
-    },
-    "ohai": {
-      "locked_version": "1.1.12"
-    },
-    "git": {
-      "locked_version": "4.0.0"
-    },
-    "dmg": {
-      "locked_version": "2.2.0"
-    },
-    "windows": {
-      "locked_version": "1.30.2"
-    },
-    "chef_handler": {
-      "locked_version": "1.1.6"
-    },
-    "xml": {
-      "locked_version": "1.2.4"
-    },
-    "iis": {
-      "locked_version": "2.1.0"
-    },
-    "openssl": {
-      "locked_version": "1.1.0"
-    },
-    "apt-repo": {
-      "locked_version": "0.1.1"
-    },
-    "ruby": {
-      "locked_version": "0.9.2"
-    },
-    "gitlab": {
-      "locked_version": "6.4.6"
-    },
-    "zlib": {
-      "locked_version": "2.0.0"
-    },
-    "readline": {
-      "locked_version": "0.0.4"
-    },
-    "ncurses": {
-      "locked_version": "0.0.3"
-    },
-    "openssh": {
-      "locked_version": "1.3.2"
-    },
-    "redisio": {
-      "locked_version": "1.7.1"
-    },
-    "ulimit": {
-      "locked_version": "0.3.2"
-    },
-    "ruby_build": {
-      "locked_version": "0.8.0"
-    },
-    "certificate": {
-      "locked_version": "0.5.0"
-    },
-    "python": {
-      "locked_version": "1.4.6"
-    }
-  }
-}
+DEPENDENCIES
+  apache2
+  application
+  application_php
+  boilerplate
+    git: https://github.com/topaz2/chef_boilerplate.git
+    revision: ffad94f83704569fff61c48a53fcfb46980aeee6
+  boilerplate_php
+    git: https://github.com/topaz2/chef_boilerplate_php.git
+    revision: d99edc0e63b165a2a0a251c427877a00fb69c417
+  composer
+    git: https://github.com/Morphodo/chef-composer.git
+    revision: 27cb886029fc28e08ca80ab0b15408b412bb09b7
+  database
+  jenkins
+  mysql
+  netcommons
+    path: tools/chef/site-cookbooks/netcommons
+  nginx
+  node
+  nodejs
+  php
+  postgresql
+
+GRAPH
+  apache2 (1.10.4)
+    iptables (>= 0.0.0)
+    logrotate (>= 0.0.0)
+    pacman (>= 0.0.0)
+  application (3.0.0)
+  application_php (2.0.0)
+    apache2 (>= 0.0.0)
+    application (~> 3.0)
+    php (>= 0.0.0)
+  apt (2.3.10)
+  apt-repo (0.1.1)
+  aws (2.2.0)
+  bluepill (2.3.1)
+    rsyslog (>= 0.0.0)
+  boilerplate (0.3.4)
+    apache2 (>= 0.0.0)
+    apt-repo (>= 0.0.0)
+    database (>= 0.0.0)
+    gitlab (>= 0.0.0)
+    jenkins (>= 0.0.0)
+    mysql (>= 0.0.0)
+    node (>= 0.0.0)
+    nodejs (>= 0.0.0)
+    phantomjs (>= 0.0.0)
+    ruby (>= 0.0.0)
+  boilerplate_php (0.3.1)
+    apache2 (>= 0.0.0)
+    application (>= 0.0.0)
+    boilerplate (>= 0.0.0)
+    composer (>= 0.0.0)
+    jenkins (>= 0.0.0)
+    php (>= 0.0.0)
+    python (>= 0.0.0)
+  build-essential (2.0.2)
+  certificate (0.5.2)
+  chef_handler (1.1.6)
+  chocolatey (0.1.0)
+    powershell (>= 0.0.0)
+  composer (0.2.1)
+  database (2.2.0)
+    aws (>= 0.0.0)
+    mysql (>= 5.0.0)
+    mysql-chef_gem (>= 0.0.0)
+    postgresql (>= 1.0.0)
+    xfs (>= 0.0.0)
+  dmg (2.2.0)
+  git (4.0.2)
+    build-essential (>= 0.0.0)
+    dmg (>= 0.0.0)
+    runit (>= 1.0.0)
+    windows (>= 0.0.0)
+    yum (~> 3.0)
+    yum-epel (>= 0.0.0)
+  gitlab (6.4.6)
+    apt (>= 0.0.0)
+    build-essential (>= 0.0.0)
+    certificate (>= 0.0.0)
+    database (>= 0.0.0)
+    git (>= 0.0.0)
+    logrotate (>= 0.0.0)
+    mysql (>= 0.0.0)
+    ncurses (>= 0.0.0)
+    nginx (>= 0.0.0)
+    openssh (>= 0.0.0)
+    postgresql (>= 0.0.0)
+    readline (>= 0.0.0)
+    redisio (>= 0.0.0)
+    ruby_build (>= 0.0.0)
+    xml (>= 0.0.0)
+    yum-epel (>= 0.0.0)
+    zlib (>= 0.0.0)
+  iis (2.1.2)
+    windows (>= 1.2.6)
+  iptables (0.13.2)
+  jenkins (2.0.2)
+    apt (~> 2.0)
+    runit (~> 1.5)
+    yum (~> 3.0)
+  logrotate (1.5.0)
+  ms_dotnet2 (1.0.0)
+    windows (>= 0.0.0)
+  ms_dotnet4 (1.0.2)
+    windows (>= 0.0.0)
+  ms_dotnet45 (1.1.2)
+    windows (>= 0.0.0)
+  mysql (5.2.6)
+  mysql-chef_gem (0.0.2)
+    build-essential (>= 0.0.0)
+    mysql (>= 0.0.0)
+  ncurses (0.0.3)
+  netcommons (0.1.0)
+    boilerplate_php (>= 0.0.0)
+  nginx (2.6.2)
+    apt (~> 2.2)
+    bluepill (~> 2.3)
+    build-essential (~> 2.0)
+    ohai (~> 1.1)
+    runit (~> 1.2)
+    yum-epel (~> 0.3)
+  node (1.1.3)
+    build-essential (>= 0.0.0)
+    git (>= 0.0.0)
+    runit (>= 0.0.0)
+  nodejs (1.3.0)
+    apt (>= 0.0.0)
+    build-essential (>= 0.0.0)
+    yum (>= 0.0.0)
+  ohai (1.1.12)
+  openssh (1.3.4)
+    iptables (>= 0.0.0)
+  openssl (1.1.0)
+  pacman (1.1.1)
+  phantomjs (1.0.3)
+    build-essential (>= 0.0.0)
+    chocolatey (>= 0.0.0)
+  php (1.4.6)
+    build-essential (>= 0.0.0)
+    iis (>= 0.0.0)
+    mysql (>= 0.0.0)
+    windows (>= 0.0.0)
+    xml (>= 0.0.0)
+    yum-epel (>= 0.0.0)
+  postgresql (3.4.0)
+    apt (>= 1.9.0)
+    build-essential (>= 0.0.0)
+    openssl (>= 0.0.0)
+  powershell (3.0.2)
+    ms_dotnet2 (>= 0.0.0)
+    ms_dotnet4 (>= 0.0.0)
+    ms_dotnet45 (>= 0.0.0)
+    windows (>= 1.2.8)
+  python (1.4.6)
+    build-essential (>= 0.0.0)
+    yum-epel (>= 0.0.0)
+  readline (0.0.4)
+  redisio (1.7.1)
+    ulimit (>= 0.1.2)
+  rsyslog (1.12.2)
+  ruby (0.9.2)
+  ruby_build (0.8.0)
+  runit (1.5.10)
+    build-essential (>= 0.0.0)
+    yum (~> 3.0)
+    yum-epel (>= 0.0.0)
+  ulimit (0.3.2)
+  windows (1.31.0)
+    chef_handler (>= 0.0.0)
+  xfs (1.1.0)
+  xml (1.2.4)
+    build-essential (>= 0.0.0)
+  yum (3.2.0)
+  yum-epel (0.3.6)
+    yum (~> 3.0)
+  zlib (2.0.0)

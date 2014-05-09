@@ -1,8 +1,7 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
 gem 'activesupport'
-gem 'bundler'
-gem 'berkshelf'
+gem 'berkshelf', '>= 3.1' # vagrant-berkshelf depends on 3.1+
 gem 'nokogiri'
 gem 'rake'
 gem 'mysql'
