@@ -3,6 +3,9 @@
 vagrant --version
 
 mkdir -p build/logs
+bundle
+bundle update
+
 # vagrant plugin install vagrant-berkshelf
 vagrant plugin uninstall vagrant-berkshelf
 vagrant plugin install vagrant-berkshelf --plugin-version=1.3.7
