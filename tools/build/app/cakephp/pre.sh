@@ -2,6 +2,7 @@
 
 bundle
 bundle update
+bundle ex berks update
 
 if [ "$DB" = 'mysql' ]; then mysql -utest -ptest -e 'DROP DATABASE IF EXISTS test_nc3; CREATE DATABASE test_nc3;'; fi
 if [ "$DB" = 'postgresql' ]; then
