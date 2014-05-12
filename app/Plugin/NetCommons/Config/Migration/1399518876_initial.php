@@ -9,6 +9,278 @@ class Initial extends CakeMigration {
  */
 	public $description = '';
 
+	/**
+	 * Records keyed by model name.
+	 *
+	 * @var array $records
+	 */
+	public $records = array(
+				'Page' => array(
+					array(
+						'id' => '1',
+						'room_id' => '1',
+						'parent_id' => NULL,
+						'lft' => NULL,
+						'rght' => NULL,
+						'permalink' => '',
+						'slug' => NULL,
+						'is_published' => true,
+						'from' => NULL,
+						'to' => NULL,
+					),
+				),
+
+				'Container' => array(
+					array(
+						'id' => '1',
+						'type' => '1',
+					),
+					array(
+						'id' => '2',
+						'type' => '2',
+					),
+					array (
+						'id' => '3',
+						'type' => '3',
+					),
+					array(
+						'id' => '4',
+						'type' => '4',
+					),
+					array(
+						'id' => '5',
+						'type' => '5',
+					),
+				),
+
+				'ContainersPage' => array(
+					array(
+						'id' => '1',
+						'page_id' => '1',
+						'container_id' => '1',
+						'is_visible' => true,
+					),
+					array(
+						'id' => '2',
+						'page_id' => '1',
+						'container_id' => '2',
+						'is_visible' => true,
+					),
+					array(
+						'id' => '3',
+						'page_id' => '1',
+						'container_id' => '3',
+						'is_visible' => true,
+					),
+					array(
+						'id' => '4',
+						'page_id' => '1',
+						'container_id' => '4',
+						'is_visible' => true,
+					),
+					array(
+						'id' => '5',
+						'page_id' => '1',
+						'container_id' => '5',
+						'is_visible' => true,
+					),
+				),
+
+				'Box' => 	array(
+					array(
+						'id' => '1',
+						'container_id' => '1',
+						'type' => '1',
+						'space_id' => '1',
+						'room_id' => NULL,
+						'page_id' => NULL,
+						'weight' => '1',
+					),
+					array(
+						'id' => '2',
+						'container_id' => '2',
+						'type' => '1',
+						'space_id' => '1',
+						'room_id' => NULL,
+						'page_id' => NULL,
+						'weight' => '1',
+					),
+					array(
+						'id' => '3',
+						'container_id' => '3',
+						'type' => '3',
+						'space_id' => NULL,
+						'room_id' => NULL,
+						'page_id' => '1',
+						'weight' => '1',
+					),
+					array(
+						'id' => '4',
+						'container_id' => '4',
+						'type' => '1',
+						'space_id' => 1,
+						'room_id' => NULL,
+						'page_id' => NULL,
+						'weight' => '1',
+					),
+					array(
+						'id' => '5',
+						'container_id' => '5',
+						'type' => '1',
+						'space_id' => 1,
+						'room_id' => NULL,
+						'page_id' => NULL,
+						'weight' => '1',
+					),
+				),
+
+				'Frame' => array(
+					array(
+						'id' => '1',
+						'box_id' => '1',
+						'parent_id' => '0',
+						'lft' => NULL,
+						'rght' => NULL,
+						'plugin_id' => '1',
+						'block_id' => '1',
+						'weight' => '1',
+						'is_published' => true,
+						'from' => NULL,
+						'to' => NULL,
+					),
+					array(
+						'id' => '2',
+						'box_id' => '2',
+						'parent_id' => '0',
+						'lft' => NULL,
+						'rght' => NULL,
+						'plugin_id' => '1',
+						'block_id' => '1',
+						'weight' => '1',
+						'is_published' => true,
+						'from' => NULL,
+						'to' => NULL,
+					),
+					array(
+						'id' => '3',
+						'box_id' => '3',
+						'parent_id' => '0',
+						'lft' => NULL,
+						'rght' => NULL,
+						'plugin_id' => '1',
+						'block_id' => '1',
+						'weight' => '1',
+						'is_published' => true,
+						'from' => NULL,
+						'to' => NULL,
+					),
+					array(
+						'id' => '4',
+						'box_id' => '4',
+						'parent_id' => '0',
+						'lft' => NULL,
+						'rght' => NULL,
+						'plugin_id' => '1',
+						'block_id' => '1',
+						'weight' => '1',
+						'is_published' => true,
+						'from' => NULL,
+						'to' => NULL,
+					),
+					array(
+						'id' => '5',
+						'box_id' => '5',
+						'parent_id' => '0',
+						'lft' => NULL,
+						'rght' => NULL,
+						'plugin_id' => '1',
+						'block_id' => '1',
+						'weight' => '1',
+						'is_published' => true,
+						'from' => NULL,
+						'to' => NULL,
+					),
+				),
+
+				'Language' => array(
+					array(
+						'id' => '1',
+						'code' => 'rng',
+						'weight' => '1',
+						'is_active' => 'true',
+					),
+					array(
+						'id' => '2',
+						'code' => 'jpn',
+						'weight' => '2',
+						'is_active' => 'true',
+					),
+				),
+
+				'FramesLanguage' => array(
+					array(
+						'id' => '1',
+						'frame_id' => '1',
+						'language_id' => '1',
+						'name' => 'Test001',
+					),
+					array(
+						'id' => '2',
+						'frame_id' => '1',
+						'language_id' => '2',
+						'name' => 'テスト001',
+					),
+					array(
+						'id' => '3',
+						'frame_id' => '2',
+						'language_id' => '1',
+						'name' => 'Test002',
+					),
+					array(
+						'id' => '4',
+						'frame_id' => '2',
+						'language_id' => '2',
+						'name' => 'テスト002',
+					),
+					array(
+						'id' => '5',
+						'frame_id' => '3',
+						'language_id' => '1',
+						'name' => 'Test003',
+					),
+					array(
+						'id' => '6',
+						'frame_id' => '3',
+						'language_id' => '2',
+						'name' => 'テスト003',
+					),
+					array(
+						'id' => '7',
+						'frame_id' => '4',
+						'language_id' => '1',
+						'name' => 'Test004',
+					),
+					array(
+						'id' => '8',
+						'frame_id' => '4',
+						'language_id' => '2',
+						'name' => 'テスト004',
+					),
+					array(
+						'id' => '9',
+						'frame_id' => '5',
+						'language_id' => '1',
+						'name' => 'Test005',
+					),
+					array(
+						'id' => '10',
+						'frame_id' => '5',
+						'language_id' => '2',
+						'name' => 'テスト005',
+					),
+				),
+			);
+
 /**
  * Actions to be performed
  *
@@ -589,6 +861,35 @@ class Initial extends CakeMigration {
  * @access public
  */
 	public function after($direction) {
+		if ($direction === 'down') {
+			return true;
+		}
+
+		foreach ($this->records as $model => $records) {
+			if (!$this->updateRecords($model, $records)) {
+				return false;
+			}
+		}
+
+		return true;
+	}
+
+/**
+ * Update model records
+ *
+ * @param string $model model name to update
+ * @param string $records records to be stored
+ * @return boolean Should process continue
+ */
+	public function updateRecords($model, $records, $scope = null) {
+		$Model = $this->generateModel($model);
+		foreach ($records as $record) {
+			$Model->create();
+			if (!$Model->save($record, false)) {
+				return false;
+			}
+		}
+
 		return true;
 	}
 }
