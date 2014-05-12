@@ -1,4 +1,4 @@
-site :opscode
+source 'https://api.berkshelf.com'
 
 cookbook 'apache2'
 cookbook 'application'
@@ -16,4 +16,4 @@ cookbook 'postgresql'
 # cookbook 'boilerplate_php', path: '../topaz2/cookbooks/boilerplate_php'
 cookbook 'boilerplate', git: 'https://github.com/topaz2/chef_boilerplate.git'
 cookbook 'boilerplate_php', git: 'https://github.com/topaz2/chef_boilerplate_php.git'
-cookbook 'netcommons', path: 'tools/chef/site-cookbooks/netcommons'
+cookbook 'netcommons', git: 'https://github.com/NetCommons3/chef_netcommons.git'
