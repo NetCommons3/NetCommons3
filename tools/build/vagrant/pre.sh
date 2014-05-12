@@ -8,7 +8,7 @@ bundle update
 bundle ex berks update
 
 # vagrant plugin install vagrant-berkshelf
-vagrant plugin uninstall vagrant-berkshelf
+# vagrant plugin uninstall vagrant-berkshelf
 # vagrant plugin install vagrant-berkshelf --plugin-version=1.3.7
 vagrant plugin install vagrant-berkshelf --plugin-version '>= 2.0.1'
 # vagrant plugin install vagrant-vbguest
