@@ -4,7 +4,7 @@ DEPENDENCIES
   application_php
   boilerplate
     git: https://github.com/topaz2/chef_boilerplate.git
-    revision: 315aaa2a1f3faabbc36c65d1c338e05df081158b
+    revision: 87e0ee37ed557ebc18610f6eba075dfa618b13c7
   boilerplate_php
     git: https://github.com/topaz2/chef_boilerplate_php.git
     revision: d99edc0e63b165a2a0a251c427877a00fb69c417
@@ -16,7 +16,7 @@ DEPENDENCIES
   mysql
   netcommons
     git: https://github.com/NetCommons3/chef_netcommons.git
-    revision: 324f089fe18759494f4777adabae27803a5eafd8
+    revision: 08f915556760f5fd104c036f3cdda44213a097fa
   nginx
   node
   nodejs
