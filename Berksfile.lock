@@ -4,7 +4,7 @@ DEPENDENCIES
   application_php
   boilerplate
     git: https://github.com/topaz2/chef_boilerplate.git
-    revision: 00a55fc8a6a53889c69676e7811fb5871d40c151
+    revision: 8930bdc54625f9989ac06b1e3ddfa6caaf032f26
   boilerplate_php
     git: https://github.com/topaz2/chef_boilerplate_php.git
     revision: d99edc0e63b165a2a0a251c427877a00fb69c417
