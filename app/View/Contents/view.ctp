@@ -87,10 +87,6 @@
 		<li><?php echo $this->Html->link(__('New Content'), array('action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Modules'), array('controller' => 'modules', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Module'), array('controller' => 'modules', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Announcement Edits'), array('controller' => 'announcement_edits', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Announcement Edit'), array('controller' => 'announcement_edits', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Announcements'), array('controller' => 'announcements', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Announcement'), array('controller' => 'announcements', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Archives'), array('controller' => 'archives', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Archive'), array('controller' => 'archives', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Blocks'), array('controller' => 'blocks', 'action' => 'index')); ?> </li>
@@ -105,117 +101,11 @@
 		<li><?php echo $this->Html->link(__('New Blog Term'), array('controller' => 'blog_terms', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Blogs'), array('controller' => 'blogs', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Blog'), array('controller' => 'blogs', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Revisions'), array('controller' => 'revisions', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Revision'), array('controller' => 'revisions', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Upload Links'), array('controller' => 'upload_links', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Upload Link'), array('controller' => 'upload_links', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List User Groups'), array('controller' => 'user_groups', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New User Group'), array('controller' => 'user_groups', 'action' => 'add')); ?> </li>
 	</ul>
-</div>
-<div class="related">
-	<h3><?php echo __('Related Announcement Edits'); ?></h3>
-	<?php if (!empty($content['AnnouncementEdit'])): ?>
-	<table cellpadding = "0" cellspacing = "0">
-	<tr>
-		<th><?php echo __('Id'); ?></th>
-		<th><?php echo __('Content Id'); ?></th>
-		<th><?php echo __('Post Hierarchy'); ?></th>
-		<th><?php echo __('Approved Flag'); ?></th>
-		<th><?php echo __('Approved Pre Change Flag'); ?></th>
-		<th><?php echo __('Approved Mail Flag'); ?></th>
-		<th><?php echo __('Approved Mail Subject'); ?></th>
-		<th><?php echo __('Approved Mail Body'); ?></th>
-		<th><?php echo __('Created'); ?></th>
-		<th><?php echo __('Created User'); ?></th>
-		<th><?php echo __('Created User Name'); ?></th>
-		<th><?php echo __('Modified'); ?></th>
-		<th><?php echo __('Modified User'); ?></th>
-		<th><?php echo __('Modified User Name'); ?></th>
-		<th class="actions"><?php echo __('Actions'); ?></th>
-	</tr>
-	<?php foreach ($content['AnnouncementEdit'] as $announcementEdit): ?>
-		<tr>
-			<td><?php echo $announcementEdit['id']; ?></td>
-			<td><?php echo $announcementEdit['content_id']; ?></td>
-			<td><?php echo $announcementEdit['post_hierarchy']; ?></td>
-			<td><?php echo $announcementEdit['approved_flag']; ?></td>
-			<td><?php echo $announcementEdit['approved_pre_change_flag']; ?></td>
-			<td><?php echo $announcementEdit['approved_mail_flag']; ?></td>
-			<td><?php echo $announcementEdit['approved_mail_subject']; ?></td>
-			<td><?php echo $announcementEdit['approved_mail_body']; ?></td>
-			<td><?php echo $announcementEdit['created']; ?></td>
-			<td><?php echo $announcementEdit['created_user']; ?></td>
-			<td><?php echo $announcementEdit['created_user_name']; ?></td>
-			<td><?php echo $announcementEdit['modified']; ?></td>
-			<td><?php echo $announcementEdit['modified_user']; ?></td>
-			<td><?php echo $announcementEdit['modified_user_name']; ?></td>
-			<td class="actions">
-				<?php echo $this->Html->link(__('View'), array('controller' => 'announcement_edits', 'action' => 'view', $announcementEdit['id'])); ?>
-				<?php echo $this->Html->link(__('Edit'), array('controller' => 'announcement_edits', 'action' => 'edit', $announcementEdit['id'])); ?>
-				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'announcement_edits', 'action' => 'delete', $announcementEdit['id']), null, __('Are you sure you want to delete # %s?', $announcementEdit['id'])); ?>
-			</td>
-		</tr>
-	<?php endforeach; ?>
-	</table>
-<?php endif; ?>
-
-	<div class="actions">
-		<ul>
-			<li><?php echo $this->Html->link(__('New Announcement Edit'), array('controller' => 'announcement_edits', 'action' => 'add')); ?> </li>
-		</ul>
-	</div>
-</div>
-<div class="related">
-	<h3><?php echo __('Related Announcements'); ?></h3>
-	<?php if (!empty($content['Announcement'])): ?>
-	<table cellpadding = "0" cellspacing = "0">
-	<tr>
-		<th><?php echo __('Id'); ?></th>
-		<th><?php echo __('Content Id'); ?></th>
-		<th><?php echo __('Revision Root'); ?></th>
-		<th><?php echo __('Status'); ?></th>
-		<th><?php echo __('Is Approved'); ?></th>
-		<th><?php echo __('Pre Change Flag'); ?></th>
-		<th><?php echo __('Pre Change Date'); ?></th>
-		<th><?php echo __('Created'); ?></th>
-		<th><?php echo __('Created User'); ?></th>
-		<th><?php echo __('Created User Name'); ?></th>
-		<th><?php echo __('Modified'); ?></th>
-		<th><?php echo __('Modified User'); ?></th>
-		<th><?php echo __('Modified User Name'); ?></th>
-		<th class="actions"><?php echo __('Actions'); ?></th>
-	</tr>
-	<?php foreach ($content['Announcement'] as $announcement): ?>
-		<tr>
-			<td><?php echo $announcement['id']; ?></td>
-			<td><?php echo $announcement['content_id']; ?></td>
-			<td><?php echo $announcement['revision_root']; ?></td>
-			<td><?php echo $announcement['status']; ?></td>
-			<td><?php echo $announcement['is_approved']; ?></td>
-			<td><?php echo $announcement['pre_change_flag']; ?></td>
-			<td><?php echo $announcement['pre_change_date']; ?></td>
-			<td><?php echo $announcement['created']; ?></td>
-			<td><?php echo $announcement['created_user']; ?></td>
-			<td><?php echo $announcement['created_user_name']; ?></td>
-			<td><?php echo $announcement['modified']; ?></td>
-			<td><?php echo $announcement['modified_user']; ?></td>
-			<td><?php echo $announcement['modified_user_name']; ?></td>
-			<td class="actions">
-				<?php echo $this->Html->link(__('View'), array('controller' => 'announcements', 'action' => 'view', $announcement['id'])); ?>
-				<?php echo $this->Html->link(__('Edit'), array('controller' => 'announcements', 'action' => 'edit', $announcement['id'])); ?>
-				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'announcements', 'action' => 'delete', $announcement['id']), null, __('Are you sure you want to delete # %s?', $announcement['id'])); ?>
-			</td>
-		</tr>
-	<?php endforeach; ?>
-	</table>
-<?php endif; ?>
-
-	<div class="actions">
-		<ul>
-			<li><?php echo $this->Html->link(__('New Announcement'), array('controller' => 'announcements', 'action' => 'add')); ?> </li>
-		</ul>
-	</div>
 </div>
 <div class="related">
 	<h3><?php echo __('Related Archives'); ?></h3>
@@ -713,57 +603,6 @@
 	<div class="actions">
 		<ul>
 			<li><?php echo $this->Html->link(__('New Blog'), array('controller' => 'blogs', 'action' => 'add')); ?> </li>
-		</ul>
-	</div>
-</div>
-<div class="related">
-	<h3><?php echo __('Related Revisions'); ?></h3>
-	<?php if (!empty($content['Revision'])): ?>
-	<table cellpadding = "0" cellspacing = "0">
-	<tr>
-		<th><?php echo __('Id'); ?></th>
-		<th><?php echo __('Revision Root'); ?></th>
-		<th><?php echo __('Pointer'); ?></th>
-		<th><?php echo __('Is Approved Pointer'); ?></th>
-		<th><?php echo __('Revision Name'); ?></th>
-		<th><?php echo __('Content Id'); ?></th>
-		<th><?php echo __('Content'); ?></th>
-		<th><?php echo __('Created'); ?></th>
-		<th><?php echo __('Created User'); ?></th>
-		<th><?php echo __('Created User Name'); ?></th>
-		<th><?php echo __('Modified'); ?></th>
-		<th><?php echo __('Modified User'); ?></th>
-		<th><?php echo __('Modified User Name'); ?></th>
-		<th class="actions"><?php echo __('Actions'); ?></th>
-	</tr>
-	<?php foreach ($content['Revision'] as $revision): ?>
-		<tr>
-			<td><?php echo $revision['id']; ?></td>
-			<td><?php echo $revision['revision_root']; ?></td>
-			<td><?php echo $revision['pointer']; ?></td>
-			<td><?php echo $revision['is_approved_pointer']; ?></td>
-			<td><?php echo $revision['revision_name']; ?></td>
-			<td><?php echo $revision['content_id']; ?></td>
-			<td><?php echo $revision['content']; ?></td>
-			<td><?php echo $revision['created']; ?></td>
-			<td><?php echo $revision['created_user']; ?></td>
-			<td><?php echo $revision['created_user_name']; ?></td>
-			<td><?php echo $revision['modified']; ?></td>
-			<td><?php echo $revision['modified_user']; ?></td>
-			<td><?php echo $revision['modified_user_name']; ?></td>
-			<td class="actions">
-				<?php echo $this->Html->link(__('View'), array('controller' => 'revisions', 'action' => 'view', $revision['id'])); ?>
-				<?php echo $this->Html->link(__('Edit'), array('controller' => 'revisions', 'action' => 'edit', $revision['id'])); ?>
-				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'revisions', 'action' => 'delete', $revision['id']), null, __('Are you sure you want to delete # %s?', $revision['id'])); ?>
-			</td>
-		</tr>
-	<?php endforeach; ?>
-	</table>
-<?php endif; ?>
-
-	<div class="actions">
-		<ul>
-			<li><?php echo $this->Html->link(__('New Revision'), array('controller' => 'revisions', 'action' => 'add')); ?> </li>
 		</ul>
 	</div>
 </div>

@@ -3,8 +3,6 @@
  * Content Model
  *
  * @property Module $Module
- * @property AnnouncementEdit $AnnouncementEdit
- * @property Announcement $Announcement
  * @property Archive $Archive
  * @property Block $Block
  * @property BlogComment $BlogComment
@@ -12,7 +10,6 @@
  * @property BlogTermLink $BlogTermLink
  * @property BlogTerm $BlogTerm
  * @property Blog $Blog
- * @property Revision $Revision
  * @property UploadLink $UploadLink
  * @property UserGroup $UserGroup
  *
@@ -159,32 +156,6 @@ class Content extends AppModel {
  * @var array
  */
 	public $hasMany = array(
-		'AnnouncementEdit' => array(
-			'className' => 'AnnouncementEdit',
-			'foreignKey' => 'content_id',
-			'dependent' => false,
-			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'limit' => '',
-			'offset' => '',
-			'exclusive' => '',
-			'finderQuery' => '',
-			'counterQuery' => ''
-		),
-		'Announcement' => array(
-			'className' => 'Announcement',
-			'foreignKey' => 'content_id',
-			'dependent' => false,
-			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'limit' => '',
-			'offset' => '',
-			'exclusive' => '',
-			'finderQuery' => '',
-			'counterQuery' => ''
-		),
 		'Archive' => array(
 			'className' => 'Archive',
 			'foreignKey' => 'content_id',
@@ -265,19 +236,6 @@ class Content extends AppModel {
 		),
 		'Blog' => array(
 			'className' => 'Blog',
-			'foreignKey' => 'content_id',
-			'dependent' => false,
-			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'limit' => '',
-			'offset' => '',
-			'exclusive' => '',
-			'finderQuery' => '',
-			'counterQuery' => ''
-		),
-		'Revision' => array(
-			'className' => 'Revision',
 			'foreignKey' => 'content_id',
 			'dependent' => false,
 			'conditions' => '',

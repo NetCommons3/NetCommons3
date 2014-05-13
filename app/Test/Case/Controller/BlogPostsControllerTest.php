@@ -54,13 +54,10 @@ class BlogPostsControllerTest extends ControllerTestCase {
 		'app.user_item_lang',
 		'app.config_lang',
 		'app.config',
-		'app.announcement_edit',
-		'app.announcement',
 		'app.blog_comment',
 		'app.blog_term_link',
 		'app.blog_term',
-		'app.blog',
-		'app.revision'
+		'app.blog'
 	);
 
 /**

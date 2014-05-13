@@ -24,8 +24,6 @@ class ConfigLangsControllerTest extends ControllerTestCase {
 		'app.module',
 		'app.archive',
 		'app.content',
-		'app.announcement_edit',
-		'app.announcement',
 		'app.block',
 		'app.page',
 		'app.page_column',
@@ -59,7 +57,6 @@ class ConfigLangsControllerTest extends ControllerTestCase {
 		'app.blog_term_link',
 		'app.blog_term',
 		'app.blog',
-		'app.revision',
 		'app.config'
 	);
 

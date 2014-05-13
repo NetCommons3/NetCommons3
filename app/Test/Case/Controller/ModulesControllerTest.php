@@ -23,8 +23,6 @@ class ModulesControllerTest extends ControllerTestCase {
 		'app.module',
 		'app.archive',
 		'app.content',
-		'app.announcement_edit',
-		'app.announcement',
 		'app.block',
 		'app.page',
 		'app.page_column',
@@ -58,7 +56,6 @@ class ModulesControllerTest extends ControllerTestCase {
 		'app.blog_term_link',
 		'app.blog_term',
 		'app.blog',
-		'app.revision',
 		'app.config_lang',
 		'app.config'
 	);
