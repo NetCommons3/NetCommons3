@@ -16,7 +16,7 @@ DEPENDENCIES
   mysql
   netcommons
     git: https://github.com/NetCommons3/chef_netcommons.git
-    revision: 08f915556760f5fd104c036f3cdda44213a097fa
+    revision: ebb4a28f7c8c5c940a3375aaf71423fd1148a8fe
   nginx
   node
   nodejs
