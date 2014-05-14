@@ -7,7 +7,7 @@ DEPENDENCIES
     revision: 87e0ee37ed557ebc18610f6eba075dfa618b13c7
   boilerplate_php
     git: https://github.com/topaz2/chef_boilerplate_php.git
-    revision: d99edc0e63b165a2a0a251c427877a00fb69c417
+    revision: 6bfcdbe521509f17158f916753d60b032b60b7d5
   composer
     git: https://github.com/Morphodo/chef-composer.git
     revision: 27cb886029fc28e08ca80ab0b15408b412bb09b7
