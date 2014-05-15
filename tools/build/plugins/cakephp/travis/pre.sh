@@ -1,14 +1,14 @@
 #!/bin/bash -ex
 
-if [ '$DB' = 'mysql' ]; then mysql -e 'CREATE DATABASE cakephp_test;'; fi
-if [ '$DB' = 'pgsql' ]; then psql -c 'CREATE DATABASE cakephp_test;' -U postgres; fi
+echo $DB
+if [ $DB = 'mysql' ]; then mysql -e 'CREATE DATABASE cakephp_test;'; fi
+if [ $DB = 'pgsql' ]; then psql -c 'CREATE DATABASE cakephp_test;' -U postgres; fi
 
 export PLUGIN_NAME=`basename $TRAVIS_BUILD_DIR`
 
 cp $TRAVIS_BUILD_DIR/composer.json .
 rm composer.lock
 cp -r ../$PLUGIN_NAME plugins
-cat composer.json
 composer install
 chmod -R 777 app/tmp
 mkdir -p build/logs
