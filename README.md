@@ -18,17 +18,13 @@ NetCommons
 
 以下の組み合わせで動作することを確認しています。
 
-* OS
-  * Ubuntu 12.10
-  * OSX Maverick
-  * Windows 8.1
-
-| application | version |
+| OS           | matrix |
 | ------------ | ------ |
-| virtualbox | 4.3.10 |
-| vagrant | 1.4.3 |
-
-※依存しているプラグインの関係で vagrant 1.5.x はまだ動作しません。
+| Windows 8.1  | virtualbox 4.3.10, vagrant 1.4.3 |
+| OSX Maverick | virtualbox 4.3.8, vagrant 1.4.3 |
+| OSX Maverick | virtualbox 4.3.8, vagrant 1.6.0 |
+| Ubuntu 12.10 | virtualbox 4.3.10, vagrant 1.4.3 |
+| Ubuntu 12.04 | virtualbox 4.3.10, vagrant 1.6.1 |
 
 ## インストール
 ### 共通
@@ -72,15 +68,18 @@ git コマンドのパスが通っていないと下記エラーが発生しま�
 
 #### vagrant plugin
 <pre>
-vagrant plugin install vagrant-berkshelf
 vagrant plugin install vagrant-hostmanager
 vagrant plugin install vagrant-omnibus
 </pre>
 
-※vagrant 1.5 対応された vagrant-berkshelf 2.0.0 が stable に昇格していますが現時点(2014/4/17)ではまだ動作していません。
-暫くの間は vagrant-berkshelf のみ version 指定してインストールすることをオススメします。
+#### vagrant plugin (vagrant 1.4.x)
 <pre>
 vagrant plugin install vagrant-berkshelf --plugin-version 1.3.7
+</pre>
+
+#### vagrant plugin (vagrant 1.5+)
+<pre>
+vagrant plugin install vagrant-berkshelf --plugin-version '>= 2.0.1'
 </pre>
 
 ### ソースを配置
