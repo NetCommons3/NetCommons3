@@ -3,7 +3,6 @@
 if [ '$DB' = 'mysql' ]; then mysql -e 'CREATE DATABASE cakephp_test;'; fi
 if [ '$DB' = 'pgsql' ]; then psql -c 'CREATE DATABASE cakephp_test;' -U postgres; fi
 
-export NETCOMMONS_BUILD_DIR=`dirname $TRAVIS_BUILD_DIR`/NetCommons3
 export PLUGIN_NAME=`basename $TRAVIS_BUILD_DIR`
 
 cp $TRAVIS_BUILD_DIR/composer.json .
