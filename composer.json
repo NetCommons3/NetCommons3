@@ -31,7 +31,9 @@
         "chronon/mobile_detect":  "*",
         "slywalker/boost_cake":   "*",
         "twbs/bootstrap":         "~3.1",
-        "components/jquery":      "~2.1"
+        "components/jquery":      "~2.1",
+        "ryu818/html-purifier":   "@dev",
+        "ryu818/tiny-mce":        "@dev"
     },
     "require-dev": {
         "satooshi/php-coveralls": "dev-master",
