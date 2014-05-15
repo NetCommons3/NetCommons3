@@ -20,8 +20,8 @@ pear channel-discover pear.phpmd.org
 pear channel-discover pear.pdepend.org
 pear install --alldeps phpunit/PHPUnit-3.7.32
 pear install --alldeps cakephp/CakePHP_CodeSniffer
-pear install --alldeps phpmd/PHP_PMD
-pear install --alldeps phpunit/phpcpd
+pear install phpmd/PHP_PMD
+pear install phpunit/phpcpd
 
 phpenv rehash
 set +H
