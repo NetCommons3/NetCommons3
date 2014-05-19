@@ -18,7 +18,6 @@
                 "cakephp/debug_kit",
                 "cakedc/migrations",
                 "mustangostang/spyc",
-                "slywalker/boost_cake",
                 "chronon/mobile_detect"
             ]
         }
