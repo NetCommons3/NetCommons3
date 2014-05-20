@@ -20,11 +20,12 @@ foreach ($plugins as $plugin) {
 		$options['bootstrap'] = true;
 	is_readable(ROOT . DS . 'plugins' . DS . $plugin . DS . 'Config' . DS . 'routes.php') &&
 		$options['routes'] = true;
-	CakePlugin::load($plugin, $options);
+	if (!CakePlugin::loaded($plugin)) {
+		CakePlugin::load($plugin, $options);
+	}
 }
 
 // Load application configurations
-App::import('vendor', 'mustangostang/spyc/spyc');
 $conf = array();
 $files = array('application.yml', 'application.local.yml');
 foreach ($files as $file) {
