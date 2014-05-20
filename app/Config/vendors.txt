@@ -1,4 +1,3 @@
 DebugKit
 Migrations
 MobileDetect
-BoostCake
