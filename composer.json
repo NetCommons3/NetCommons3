@@ -28,7 +28,6 @@
         "cakedc/migrations":      "~2.2",
         "ezyang/htmlpurifier":    "~4.6",
         "chronon/mobile_detect":  "*",
-        "slywalker/boost_cake":   "*",
         "twbs/bootstrap":         "~3.1",
         "components/jquery":      "~2.1",
         "ryu818/html-purifier":   "@dev",
@@ -36,7 +35,8 @@
     },
     "require-dev": {
         "satooshi/php-coveralls": "dev-master",
-        "mustangostang/spyc": "dev-master"
+        "mustangostang/spyc": "dev-master",
+        "netcommons/install": "dev-master"
     },
     "bin": [
         "lib/Cake/Console/cake"

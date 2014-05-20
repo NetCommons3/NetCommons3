@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "f34735c21162c47db004eeddf1cef611",
+    "hash": "2a72bc693ed61fec7588ba6ec713a38a",
     "packages": [
         {
             "name": "cakedc/migrations",
@@ -44,16 +44,16 @@
         },
         {
             "name": "cakephp/cakephp",
-            "version": "2.5.0",
+            "version": "2.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/cakephp.git",
-                "reference": "780132f892da7d533d067ec3792636a30b48b3be"
+                "reference": "0fd12c7a684417026bd56ac6d1fc4047a563c96d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/cakephp/zipball/780132f892da7d533d067ec3792636a30b48b3be",
-                "reference": "780132f892da7d533d067ec3792636a30b48b3be",
+                "url": "https://api.github.com/repos/cakephp/cakephp/zipball/0fd12c7a684417026bd56ac6d1fc4047a563c96d",
+                "reference": "0fd12c7a684417026bd56ac6d1fc4047a563c96d",
                 "shasum": ""
             },
             "require": {
@@ -83,7 +83,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2014-05-13 02:17:12"
+            "time": "2014-05-18 02:39:27"
         },
         {
             "name": "cakephp/debug_kit",
@@ -264,7 +264,7 @@
                 {
                     "name": "Kyle Robinson Young",
                     "email": "kyle@dontkry.com",
-                    "homepage": "https://github.com/shama",
+                    "homepage": "http://dontkry.com",
                     "role": "Developer"
                 }
             ],
@@ -460,7 +460,7 @@
                 {
                     "name": "Serban Ghita",
                     "email": "serbanghita@gmail.com",
-                    "homepage": "http://mobiledetect.net",
+                    "homepage": "http://ghita.org",
                     "role": "Developer"
                 }
             ],
@@ -594,48 +594,6 @@
                 "wysiwyg"
             ],
             "time": "2014-05-15 06:54:51"
-        },
-        {
-            "name": "slywalker/boost_cake",
-            "version": "1.0.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/slywalker/cakephp-plugin-boost_cake.git",
-                "reference": "a5551800a0ce83a0b7ec0c9f0351f8f218be3771"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/slywalker/cakephp-plugin-boost_cake/zipball/a5551800a0ce83a0b7ec0c9f0351f8f218be3771",
-                "reference": "a5551800a0ce83a0b7ec0c9f0351f8f218be3771",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": "*",
-                "php": ">=5.3.0"
-            },
-            "suggest": {
-                "twitter/bootstrap": "Bootstrap for Twitter"
-            },
-            "type": "cakephp-plugin",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Yasuo Harada",
-                    "email": "slywalker.net@gmail.com",
-                    "homepage": "https://github.com/slywalker"
-                }
-            ],
-            "description": "BoostCake is a plugin for CakePHP using Bootstrap",
-            "homepage": "http://slywalker.github.io/cakephp-plugin-boost_cake/",
-            "keywords": [
-                "bootstrap",
-                "cakephp",
-                "twitter"
-            ],
-            "time": "2014-01-09 03:56:57"
         },
         {
             "name": "symfony/process",
@@ -870,6 +828,57 @@
             "time": "2014-05-08 14:11:16"
         },
         {
+            "name": "netcommons/install",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/NetCommons3/Install.git",
+                "reference": "d3e459b7d156896874b70da4049eb58f4810fb2a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/NetCommons3/Install/zipball/d3e459b7d156896874b70da4049eb58f4810fb2a",
+                "reference": "d3e459b7d156896874b70da4049eb58f4810fb2a",
+                "shasum": ""
+            },
+            "require": {
+                "cakedc/migrations": "~2.2",
+                "cakephp/cakephp": "~2.4",
+                "cakephp/debug_kit": "~2.2",
+                "chronon/mobile_detect": "*",
+                "components/jquery": "~2.1",
+                "slywalker/boost_cake": "*",
+                "twbs/bootstrap": "~3.1"
+            },
+            "require-dev": {
+                "netcommons/users": "dev-master",
+                "satooshi/php-coveralls": "dev-master"
+            },
+            "type": "cakephp-plugin",
+            "extra": {
+                "installer-paths": {
+                    "app/Plugin/{$name}": [
+                        "cakephp/debug_kit",
+                        "cakedc/migrations",
+                        "mustangostang/spyc",
+                        "slywalker/boost_cake",
+                        "chronon/mobile_detect"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "NetCommons License"
+            ],
+            "description": "Install Plugin for NetCommons3",
+            "homepage": "http://www.netcommons.org/",
+            "keywords": [
+                "cakephp",
+                "install"
+            ],
+            "time": "2014-05-20 01:54:17"
+        },
+        {
             "name": "psr/log",
             "version": "1.0.0",
             "source": {
@@ -981,6 +990,48 @@
                 "test"
             ],
             "time": "2014-05-14 13:09:37"
+        },
+        {
+            "name": "slywalker/boost_cake",
+            "version": "1.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/slywalker/cakephp-plugin-boost_cake.git",
+                "reference": "a5551800a0ce83a0b7ec0c9f0351f8f218be3771"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/slywalker/cakephp-plugin-boost_cake/zipball/a5551800a0ce83a0b7ec0c9f0351f8f218be3771",
+                "reference": "a5551800a0ce83a0b7ec0c9f0351f8f218be3771",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*",
+                "php": ">=5.3.0"
+            },
+            "suggest": {
+                "twitter/bootstrap": "Bootstrap for Twitter"
+            },
+            "type": "cakephp-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Yasuo Harada",
+                    "email": "slywalker.net@gmail.com",
+                    "homepage": "https://github.com/slywalker"
+                }
+            ],
+            "description": "BoostCake is a plugin for CakePHP using Bootstrap",
+            "homepage": "http://slywalker.github.io/cakephp-plugin-boost_cake/",
+            "keywords": [
+                "bootstrap",
+                "cakephp",
+                "twitter"
+            ],
+            "time": "2014-01-09 03:56:57"
         },
         {
             "name": "symfony/config",
@@ -1299,7 +1350,8 @@
         "ryu818/html-purifier": 20,
         "ryu818/tiny-mce": 20,
         "satooshi/php-coveralls": 20,
-        "mustangostang/spyc": 20
+        "mustangostang/spyc": 20,
+        "netcommons/install": 20
     },
     "platform": [
 
