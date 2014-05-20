@@ -31,3 +31,10 @@ do
   export IGNORE_PLUGINS=$IGNORE_PLUGINS,$TRAVIS_BUILD_DIR/app/Plugin/$p
   export IGNORE_PLUGINS_OPTS="$IGNORE_PLUGINS_OPTS --exclude app/Plugin/$p"
 done
+
+sudo apt-get install nodejs
+sudo apt-get install npm
+npm install -g bower
+bower install
+npm install jasmine-node karma karma-coverage karma-jasmine karma-firefox-launcher karma-phantomjs-launcher
+
