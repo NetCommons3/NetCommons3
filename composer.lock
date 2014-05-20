@@ -3,24 +3,68 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "6cccfdf5795e68f3fc807f4e9570c832",
+    "hash": "1820dae6c99c62308b3054914430625d",
     "packages": [
         {
-            "name": "cakedc/migrations",
-            "version": "2.2.3",
+            "name": "burzum/cakephp-html-purifier",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/CakeDC/migrations.git",
-                "reference": "94036a606089c7e14b349eba043b0f58a0947e29"
+                "url": "https://github.com/ryu818/cakephp-html-purifier.git",
+                "reference": "4035d738ffc69446659ce241a693a445ee633b82"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CakeDC/migrations/zipball/94036a606089c7e14b349eba043b0f58a0947e29",
-                "reference": "94036a606089c7e14b349eba043b0f58a0947e29",
+                "url": "https://api.github.com/repos/ryu818/cakephp-html-purifier/zipball/4035d738ffc69446659ce241a693a445ee633b82",
+                "reference": "4035d738ffc69446659ce241a693a445ee633b82",
                 "shasum": ""
             },
             "require": {
-                "composer/installers": "*"
+                "ezyang/htmlpurifier": "*",
+                "php": ">=5.3.2"
+            },
+            "type": "cakephp-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Florian Krämer",
+                    "email": "florian.kraemer@kreative-design.net",
+                    "homepage": "http://florian-kraemer.net",
+                    "role": "Author"
+                }
+            ],
+            "description": "HtmlPurifier plugin for CakePHP",
+            "homepage": "http://github.com/burzum/cakephp-html-purifier",
+            "keywords": [
+                "Purifier",
+                "html",
+                "markup",
+                "sensitization",
+                "tidy",
+                "validation"
+            ],
+            "time": "2014-04-04 01:44:44"
+        },
+        {
+            "name": "cakedc/migrations",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/CakeDC/migrations.git",
+                "reference": "46cdcac5639fecfbcdc888ebac5a831058a91ec2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/CakeDC/migrations/zipball/46cdcac5639fecfbcdc888ebac5a831058a91ec2",
+                "reference": "46cdcac5639fecfbcdc888ebac5a831058a91ec2",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*",
+                "php": ">=5.2.8"
             },
             "type": "cakephp-plugin",
             "notification-url": "https://packagist.org/downloads/",
@@ -40,7 +84,7 @@
                 "cakephp",
                 "migrations"
             ],
-            "time": "2013-10-21 10:45:27"
+            "time": "2014-05-19 20:20:40"
         },
         {
             "name": "cakephp/cakephp",
@@ -477,16 +521,16 @@
         },
         {
             "name": "netcommons/install",
-            "version": "0.0.2",
+            "version": "0.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Install.git",
-                "reference": "5e9f054061a25ff3259201ac502649d572036efc"
+                "reference": "1ebd75fe496b8825659c45eb6bbbf0a596aabe2c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Install/zipball/5e9f054061a25ff3259201ac502649d572036efc",
-                "reference": "5e9f054061a25ff3259201ac502649d572036efc",
+                "url": "https://api.github.com/repos/NetCommons3/Install/zipball/1ebd75fe496b8825659c45eb6bbbf0a596aabe2c",
+                "reference": "1ebd75fe496b8825659c45eb6bbbf0a596aabe2c",
                 "shasum": ""
             },
             "require": {
@@ -522,20 +566,20 @@
                 "cakephp",
                 "install"
             ],
-            "time": "2014-05-20 03:31:49"
+            "time": "2014-05-20 05:25:44"
         },
         {
             "name": "netcommons/users",
-            "version": "0.0.1",
+            "version": "0.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Users.git",
-                "reference": "f8ad30d24b6225c98550b2d0ce0f6e9a72f3a2d2"
+                "reference": "6d426a943f1b16bc09d6f6e210b50418cdd22148"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Users/zipball/f8ad30d24b6225c98550b2d0ce0f6e9a72f3a2d2",
-                "reference": "f8ad30d24b6225c98550b2d0ce0f6e9a72f3a2d2",
+                "url": "https://api.github.com/repos/NetCommons3/Users/zipball/6d426a943f1b16bc09d6f6e210b50418cdd22148",
+                "reference": "6d426a943f1b16bc09d6f6e210b50418cdd22148",
                 "shasum": ""
             },
             "require": {
@@ -566,7 +610,7 @@
                 "cakephp",
                 "user"
             ],
-            "time": "2014-05-20 03:20:50"
+            "time": "2014-05-20 05:08:04"
         },
         {
             "name": "robloach/component-installer",
@@ -611,49 +655,6 @@
             ],
             "description": "Allows installation of Components via Composer.",
             "time": "2013-08-31 23:46:48"
-        },
-        {
-            "name": "ryu818/html-purifier",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ryu818/HtmlPurifier.git",
-                "reference": "59d3b8f2ba5a66764929ac0e3aaa4844152525bf"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ryu818/HtmlPurifier/zipball/59d3b8f2ba5a66764929ac0e3aaa4844152525bf",
-                "reference": "59d3b8f2ba5a66764929ac0e3aaa4844152525bf",
-                "shasum": ""
-            },
-            "require": {
-                "ezyang/htmlpurifier": "*",
-                "php": ">=5.3.2"
-            },
-            "type": "cakephp-plugin",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Florian Krämer",
-                    "email": "florian.kraemer@kreative-design.net",
-                    "homepage": "http://florian-kraemer.net",
-                    "role": "Author"
-                }
-            ],
-            "description": "HtmlPurifier plugin for CakePHP",
-            "homepage": "http://github.com/burzum/cakephp-html-purifier",
-            "keywords": [
-                "Purifier",
-                "html",
-                "markup",
-                "sensitization",
-                "tidy",
-                "validation"
-            ],
-            "time": "2014-05-13 11:25:45"
         },
         {
             "name": "ryu818/tiny-mce",
@@ -1347,7 +1348,7 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "ryu818/html-purifier": 20,
+        "burzum/cakephp-html-purifier": 20,
         "ryu818/tiny-mce": 20,
         "satooshi/php-coveralls": 20,
         "mustangostang/spyc": 20
