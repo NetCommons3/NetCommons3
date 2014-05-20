@@ -20,8 +20,11 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
+if (!Configure::read('NetCommons.installed')) {
+	Router::connect('/', array('controller' => 'install', 'action' => 'index', 'plugin' => 'install'));
+} else {
 	Router::connect('/', array('controller' => 'pages', 'action' => 'index', 'plugin' => 'pages'));
-
+}
 
 /**
  * Load all plugin routes. See the CakePlugin documentation on

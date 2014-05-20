@@ -23,20 +23,23 @@ foreach ($plugins as $plugin) {
 	CakePlugin::load($plugin, $options);
 }
 
-if (file_exists(APP . 'Config' . DS . 'netcommons.php')) {
-	Configure::load('netcommons.php');
+// Load application configurations
+App::import('vendor', 'mustangostang/spyc/spyc');
+$conf = array();
+$files = array('application.yml', 'application.local.yml');
+foreach ($files as $file) {
+	if (file_exists(APP . 'Config' . DS . $file)) {
+		$conf = array_merge($conf, Spyc::YAMLLoad(APP . 'Config' . DS . $file));
+		Configure::write($conf);
+	}
 }
-
-/* Spyc::YAMLLoad('netcommons.yaml'); */
-Configure::write('Security.salt', 'f78b12a5c38e9e5c6ae6fbd0ff1f46c77aaaa');
-Configure::write('Security.cipherSeed', 1234567);
 
 if (Configure::read('NetCommons.installed')) {
 	return;
 }
 
 // Load Install plugin
-if (Configure::read('Security.salt') === 'f78b12a5c38e9e5c6ae6fbd0ff1f46c77a1e3' ||
-	Configure::read('Security.cipherSeed') === '60170779348589376') {
+if (Configure::read('Security.salt') === 'DYhG93b0qyJfIxfs2guVoUubWwvniR2G0FgaC9mi' ||
+	Configure::read('Security.cipherSeed') === '76859309657453542496749683645') {
 	// Redirect to install plugin
 }

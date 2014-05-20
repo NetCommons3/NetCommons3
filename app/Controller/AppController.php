@@ -83,10 +83,12 @@ class AppController extends Controller {
  * @return void
  */
 	public function beforeFilter() {
-		//現在のテーマを取得
-		$theme = $this->Asset->getSiteTheme($this);
-		if ($theme) {
-			$this->theme = $theme;
+		if (Configure::read('NetCommons.installed')) {
+			//現在のテーマを取得
+			$theme = $this->Asset->getSiteTheme($this);
+			if ($theme) {
+				$this->theme = $theme;
+			}
 		}
 		$this->Auth->allow('index', 'view');
 		Security::setHash('sha512');

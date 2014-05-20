@@ -1,6 +1,5 @@
 #!/bin/bash -ex
 
-echo $DB
 if [ $DB = 'mysql' ]; then mysql -e 'CREATE DATABASE cakephp_test;'; fi
 if [ $DB = 'pgsql' ]; then psql -c 'CREATE DATABASE cakephp_test;' -U postgres; fi
 
@@ -25,7 +24,7 @@ pear install phpunit/phpcpd
 
 phpenv rehash
 set +H
-cp app/Config/database.php.test app/Config/database.php
+cp app/Config/database.php.travis app/Config/database.php
 
 for p in `cat app/Config/vendors.txt`
 do
