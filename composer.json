@@ -30,13 +30,13 @@
         "chronon/mobile_detect":  "*",
         "twbs/bootstrap":         "~3.1",
         "components/jquery":      "~2.1",
+        "netcommons/install":     "~0.0",
         "ryu818/html-purifier":   "@dev",
         "ryu818/tiny-mce":        "@dev"
     },
     "require-dev": {
         "satooshi/php-coveralls": "dev-master",
-        "mustangostang/spyc": "dev-master",
-        "netcommons/install": "dev-master"
+        "mustangostang/spyc": "dev-master"
     },
     "bin": [
         "lib/Cake/Console/cake"

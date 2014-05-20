@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "2a72bc693ed61fec7588ba6ec713a38a",
+    "hash": "6cccfdf5795e68f3fc807f4e9570c832",
     "packages": [
         {
             "name": "cakedc/migrations",
@@ -264,7 +264,7 @@
                 {
                     "name": "Kyle Robinson Young",
                     "email": "kyle@dontkry.com",
-                    "homepage": "http://dontkry.com",
+                    "homepage": "https://github.com/shama",
                     "role": "Developer"
                 }
             ],
@@ -460,7 +460,7 @@
                 {
                     "name": "Serban Ghita",
                     "email": "serbanghita@gmail.com",
-                    "homepage": "http://ghita.org",
+                    "homepage": "http://mobiledetect.net",
                     "role": "Developer"
                 }
             ],
@@ -474,6 +474,99 @@
                 "php mobile detect"
             ],
             "time": "2014-03-07 13:33:54"
+        },
+        {
+            "name": "netcommons/install",
+            "version": "0.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/NetCommons3/Install.git",
+                "reference": "5e9f054061a25ff3259201ac502649d572036efc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/NetCommons3/Install/zipball/5e9f054061a25ff3259201ac502649d572036efc",
+                "reference": "5e9f054061a25ff3259201ac502649d572036efc",
+                "shasum": ""
+            },
+            "require": {
+                "cakedc/migrations": "~2.2",
+                "cakephp/cakephp": "~2.4",
+                "cakephp/debug_kit": "~2.2",
+                "chronon/mobile_detect": "*",
+                "components/jquery": "~2.1",
+                "netcommons/users": "~0.0",
+                "twbs/bootstrap": "~3.1"
+            },
+            "require-dev": {
+                "satooshi/php-coveralls": "dev-master"
+            },
+            "type": "cakephp-plugin",
+            "extra": {
+                "installer-paths": {
+                    "app/Plugin/{$name}": [
+                        "cakephp/debug_kit",
+                        "cakedc/migrations",
+                        "mustangostang/spyc",
+                        "chronon/mobile_detect"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "NetCommons License"
+            ],
+            "description": "Install Plugin for NetCommons3",
+            "homepage": "http://www.netcommons.org/",
+            "keywords": [
+                "cakephp",
+                "install"
+            ],
+            "time": "2014-05-20 03:31:49"
+        },
+        {
+            "name": "netcommons/users",
+            "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/NetCommons3/Users.git",
+                "reference": "f8ad30d24b6225c98550b2d0ce0f6e9a72f3a2d2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/NetCommons3/Users/zipball/f8ad30d24b6225c98550b2d0ce0f6e9a72f3a2d2",
+                "reference": "f8ad30d24b6225c98550b2d0ce0f6e9a72f3a2d2",
+                "shasum": ""
+            },
+            "require": {
+                "cakedc/migrations": "~2.2",
+                "cakephp/cakephp": "~2.4",
+                "cakephp/debug_kit": "~2.2",
+                "components/jquery": "~2.1",
+                "twbs/bootstrap": "~3.1"
+            },
+            "require-dev": {
+                "netcommons/auth": "dev-master",
+                "satooshi/php-coveralls": "dev-master"
+            },
+            "type": "cakephp-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "NetCommons License"
+            ],
+            "authors": [
+                {
+                    "name": "NetCommons Community",
+                    "homepage": "https://github.com/NetCommons3/Users/graphs/contributors"
+                }
+            ],
+            "description": "Users Plugin for CakePHP",
+            "homepage": "http://www.netcommons.org/",
+            "keywords": [
+                "cakephp",
+                "user"
+            ],
+            "time": "2014-05-20 03:20:50"
         },
         {
             "name": "robloach/component-installer",
@@ -828,57 +921,6 @@
             "time": "2014-05-08 14:11:16"
         },
         {
-            "name": "netcommons/install",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/NetCommons3/Install.git",
-                "reference": "d3e459b7d156896874b70da4049eb58f4810fb2a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Install/zipball/d3e459b7d156896874b70da4049eb58f4810fb2a",
-                "reference": "d3e459b7d156896874b70da4049eb58f4810fb2a",
-                "shasum": ""
-            },
-            "require": {
-                "cakedc/migrations": "~2.2",
-                "cakephp/cakephp": "~2.4",
-                "cakephp/debug_kit": "~2.2",
-                "chronon/mobile_detect": "*",
-                "components/jquery": "~2.1",
-                "slywalker/boost_cake": "*",
-                "twbs/bootstrap": "~3.1"
-            },
-            "require-dev": {
-                "netcommons/users": "dev-master",
-                "satooshi/php-coveralls": "dev-master"
-            },
-            "type": "cakephp-plugin",
-            "extra": {
-                "installer-paths": {
-                    "app/Plugin/{$name}": [
-                        "cakephp/debug_kit",
-                        "cakedc/migrations",
-                        "mustangostang/spyc",
-                        "slywalker/boost_cake",
-                        "chronon/mobile_detect"
-                    ]
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "NetCommons License"
-            ],
-            "description": "Install Plugin for NetCommons3",
-            "homepage": "http://www.netcommons.org/",
-            "keywords": [
-                "cakephp",
-                "install"
-            ],
-            "time": "2014-05-20 01:54:17"
-        },
-        {
             "name": "psr/log",
             "version": "1.0.0",
             "source": {
@@ -990,48 +1032,6 @@
                 "test"
             ],
             "time": "2014-05-14 13:09:37"
-        },
-        {
-            "name": "slywalker/boost_cake",
-            "version": "1.0.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/slywalker/cakephp-plugin-boost_cake.git",
-                "reference": "a5551800a0ce83a0b7ec0c9f0351f8f218be3771"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/slywalker/cakephp-plugin-boost_cake/zipball/a5551800a0ce83a0b7ec0c9f0351f8f218be3771",
-                "reference": "a5551800a0ce83a0b7ec0c9f0351f8f218be3771",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": "*",
-                "php": ">=5.3.0"
-            },
-            "suggest": {
-                "twitter/bootstrap": "Bootstrap for Twitter"
-            },
-            "type": "cakephp-plugin",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Yasuo Harada",
-                    "email": "slywalker.net@gmail.com",
-                    "homepage": "https://github.com/slywalker"
-                }
-            ],
-            "description": "BoostCake is a plugin for CakePHP using Bootstrap",
-            "homepage": "http://slywalker.github.io/cakephp-plugin-boost_cake/",
-            "keywords": [
-                "bootstrap",
-                "cakephp",
-                "twitter"
-            ],
-            "time": "2014-01-09 03:56:57"
         },
         {
             "name": "symfony/config",
@@ -1350,8 +1350,7 @@
         "ryu818/html-purifier": 20,
         "ryu818/tiny-mce": 20,
         "satooshi/php-coveralls": 20,
-        "mustangostang/spyc": 20,
-        "netcommons/install": 20
+        "mustangostang/spyc": 20
     },
     "platform": [
 
