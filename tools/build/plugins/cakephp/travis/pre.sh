@@ -32,6 +32,9 @@ do
   export IGNORE_PLUGINS_OPTS="$IGNORE_PLUGINS_OPTS --exclude app/Plugin/$p"
 done
 
+echo "Configure::write('Security.salt', 'ForTravis');" >> ./app/Config/core.php
+echo "Configure::write('Security.cipherSeed', '999');" >> ./app/Config/core.php
+
 sudo apt-get install nodejs
 sudo apt-get install npm
 npm install -g bower
