@@ -8,7 +8,7 @@
             <directory suffix=".php">lib/Cake</directory>
             <directory suffix=".php">vendors</directory>
             <directory suffix=".php">plugins/HtmlPurifier</directory>
-            <directory suffix=".php">plugins/TinyMce</directory>
+            <directory suffix=".php">plugins/TinyMCE</directory>
             <directory suffix=".php">plugins/DebugKit/</directory>
             <directory suffix="Test.php">plugins</directory>
         </blacklist>

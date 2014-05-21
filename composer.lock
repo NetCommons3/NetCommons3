@@ -3,11 +3,11 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "5c76ab46e368fd12b8488960edae1c10",
+    "hash": "caeec3ec7bce066591f40f5931f6f4b9",
     "packages": [
         {
             "name": "burzum/cakephp-html-purifier",
-            "version": "dev-master",
+            "version": "dev-myFeature",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ryu818/cakephp-html-purifier.git",
@@ -15,15 +15,19 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ryu818/cakephp-html-purifier/zipball/4035d738ffc69446659ce241a693a445ee633b82",
+                "url": "https://api.github.com/repos/ryu818/cakephp-html-purifier/zipball/b1c54652e8ed4760a232f945e1bd160cc887a275",
                 "reference": "4035d738ffc69446659ce241a693a445ee633b82",
                 "shasum": ""
             },
             "require": {
+                "composer/installers": "*",
                 "ezyang/htmlpurifier": "*",
                 "php": ">=5.3.2"
             },
             "type": "cakephp-plugin",
+            "extra": {
+                "installer-name": "HtmlPurifier"
+            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
