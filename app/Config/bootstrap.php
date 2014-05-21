@@ -23,6 +23,7 @@
  */
 
 // Load composer autoload.
+// See http://mark-story.com/posts/view/installing-cakephp-with-composer
 require ROOT . '/vendors/autoload.php';
 
 // Remove and re-prepend CakePHP's autoloader as composer thinks it is the most important.
