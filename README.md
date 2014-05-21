@@ -137,12 +137,6 @@ C:\HashiCorp\Vagrant\embedded\mingw\mingw32env.cmd
 ```
 
 ### 動作確認
-起動後、netcommons 用のプラグインを追加。(インストーラが出来た時点で下記作業は必要無くなる予定です。)
-<pre>
-cd /var/www/app
-sudo composer require netcommons/auth:dev-master netcommons/auth-general:dev-master netcommons/users:dev-master netcommons/pages:dev-master netcommons/revision:dev-master netcommons/announcements:dev-master netcommons/boxes:dev-master netcommons/containers:dev-master netcommons/frames:dev-master netcommons/public-space:dev-master netcommons/theme-settings:dev-master --dev
-</pre>
-
 <code>vagrant up</code>を実行すると、以下のようなコマンドラインが表示されます。
 <pre>
 ----省略--------
