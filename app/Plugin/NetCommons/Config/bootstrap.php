@@ -39,8 +39,14 @@ if (Configure::read('NetCommons.installed')) {
 	return;
 }
 
-// Load Install plugin
+// Initialize application configurations
 if (Configure::read('Security.salt') === 'DYhG93b0qyJfIxfs2guVoUubWwvniR2G0FgaC9mi' ||
 	Configure::read('Security.cipherSeed') === '76859309657453542496749683645') {
-	// Redirect to install plugin
+	App::uses('File', 'Utility');
+	App::uses('Security', 'Utility');
+	Configure::write('Security.salt', Security::generateAuthKey());
+	Configure::write('Security.cipherSeed', mt_rand() . mt_rand() . mt_rand() . mt_rand());
+
+	$file = new File(APP . 'Config' . DS . 'application.yml', true);
+	$file->write(Spyc::YAMLDump(Configure::read()));
 }
