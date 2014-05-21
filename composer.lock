@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "caeec3ec7bce066591f40f5931f6f4b9",
+    "hash": "b8b9e7bb85eba180e116a9a90c4ad63f",
     "packages": [
         {
             "name": "burzum/cakephp-html-purifier",
@@ -525,16 +525,16 @@
         },
         {
             "name": "netcommons/install",
-            "version": "dev-master",
+            "version": "0.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Install.git",
-                "reference": "1ebd75fe496b8825659c45eb6bbbf0a596aabe2c"
+                "reference": "a7b5f4a35fa839a4dec40b959ba9097d655db57e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Install/zipball/1ebd75fe496b8825659c45eb6bbbf0a596aabe2c",
-                "reference": "1ebd75fe496b8825659c45eb6bbbf0a596aabe2c",
+                "url": "https://api.github.com/repos/NetCommons3/Install/zipball/a7b5f4a35fa839a4dec40b959ba9097d655db57e",
+                "reference": "a7b5f4a35fa839a4dec40b959ba9097d655db57e",
                 "shasum": ""
             },
             "require": {
@@ -570,7 +570,7 @@
                 "cakephp",
                 "install"
             ],
-            "time": "2014-05-20 05:25:44"
+            "time": "2014-05-21 07:08:53"
         },
         {
             "name": "netcommons/users",
@@ -1352,7 +1352,6 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "netcommons/install": 20,
         "burzum/cakephp-html-purifier": 20,
         "ryu818/tiny-mce": 20,
         "satooshi/php-coveralls": 20,
