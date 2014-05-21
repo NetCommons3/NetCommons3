@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "1820dae6c99c62308b3054914430625d",
+    "hash": "5c76ab46e368fd12b8488960edae1c10",
     "packages": [
         {
             "name": "burzum/cakephp-html-purifier",
@@ -521,7 +521,7 @@
         },
         {
             "name": "netcommons/install",
-            "version": "0.0.4",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Install.git",
@@ -662,12 +662,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ryu818/TinyMCE.git",
-                "reference": "bda632be0f7005796806c749d0caf774c1ae805e"
+                "reference": "dce0bf9cdec71b83168c8f55d94efb33499322bb"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/ryu818/TinyMCE/zipball/bda632be0f7005796806c749d0caf774c1ae805e",
-                "reference": "bda632be0f7005796806c749d0caf774c1ae805e",
+                "reference": "dce0bf9cdec71b83168c8f55d94efb33499322bb",
                 "shasum": ""
             },
             "type": "cakephp-plugin",
@@ -687,7 +687,7 @@
                 "html",
                 "wysiwyg"
             ],
-            "time": "2014-05-15 06:54:51"
+            "time": "2013-11-17 22:11:30"
         },
         {
             "name": "symfony/process",
@@ -1348,6 +1348,7 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
+        "netcommons/install": 20,
         "burzum/cakephp-html-purifier": 20,
         "ryu818/tiny-mce": 20,
         "satooshi/php-coveralls": 20,

@@ -30,7 +30,7 @@
         "chronon/mobile_detect":        "*",
         "twbs/bootstrap":               "~3.1",
         "components/jquery":            "~2.1",
-        "netcommons/install":           "~0.0",
+        "netcommons/install":           "@dev",
         "burzum/cakephp-html-purifier": "@dev",
         "ryu818/tiny-mce":              "@dev"
     },
