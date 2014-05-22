@@ -12,7 +12,6 @@ fi
 if [ "$DB" = 'postgresql' ]; then psql -c 'CREATE SCHEMA test2;' -U postgres -d test_nc3; fi
 if [ "$DB" = 'postgresql' ]; then psql -c 'CREATE SCHEMA test3;' -U postgres -d test_nc3; fi
 
-composer self-update
 composer update
 chmod -R 777 ./app/tmp
 mkdir -p build/logs
