@@ -12,8 +12,8 @@ fi
 if [ "$DB" = 'postgresql' ]; then psql -c 'CREATE SCHEMA test2;' -U postgres -d test_nc3; fi
 if [ "$DB" = 'postgresql' ]; then psql -c 'CREATE SCHEMA test3;' -U postgres -d test_nc3; fi
 
-rm -rf plugins/*
-rm -rf vendors/*
+sudo rm -rf plugins/*
+sudo rm -rf vendors/*
 chmod -R 777 app/tmp
 mkdir -p build/logs
 
