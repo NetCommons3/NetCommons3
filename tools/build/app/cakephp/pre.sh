@@ -12,13 +12,14 @@ fi
 if [ "$DB" = 'postgresql' ]; then psql -c 'CREATE SCHEMA test2;' -U postgres -d test_nc3; fi
 if [ "$DB" = 'postgresql' ]; then psql -c 'CREATE SCHEMA test3;' -U postgres -d test_nc3; fi
 
-sudo composer self-update
-sudo composer update
-
 rm -rf plugins/*
 rm -rf vendors/*
 chmod -R 777 app/tmp
 mkdir -p build/logs
+
+sudo composer self-update
+sudo composer update
+
 cp app/Config/database.php.$DB app/Config/database.php
 
 for p in `cat app/Config/vendors.txt`
