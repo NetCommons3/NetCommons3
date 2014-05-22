@@ -3,20 +3,20 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "b8b9e7bb85eba180e116a9a90c4ad63f",
+    "hash": "ce203b7fd8a759e397575226a7916396",
     "packages": [
         {
             "name": "burzum/cakephp-html-purifier",
-            "version": "dev-myFeature",
+            "version": "0.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ryu818/cakephp-html-purifier.git",
-                "reference": "4035d738ffc69446659ce241a693a445ee633b82"
+                "reference": "bb3c231657f3d84880bfd4d62d36c3724630bdf4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ryu818/cakephp-html-purifier/zipball/b1c54652e8ed4760a232f945e1bd160cc887a275",
-                "reference": "4035d738ffc69446659ce241a693a445ee633b82",
+                "url": "https://api.github.com/repos/ryu818/cakephp-html-purifier/zipball/bb3c231657f3d84880bfd4d62d36c3724630bdf4",
+                "reference": "bb3c231657f3d84880bfd4d62d36c3724630bdf4",
                 "shasum": ""
             },
             "require": {
@@ -50,7 +50,7 @@
                 "tidy",
                 "validation"
             ],
-            "time": "2014-04-04 01:44:44"
+            "time": "2014-05-20 09:29:26"
         },
         {
             "name": "cakedc/migrations",
@@ -659,39 +659,6 @@
             ],
             "description": "Allows installation of Components via Composer.",
             "time": "2013-08-31 23:46:48"
-        },
-        {
-            "name": "ryu818/tiny-mce",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ryu818/TinyMCE.git",
-                "reference": "dce0bf9cdec71b83168c8f55d94efb33499322bb"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ryu818/TinyMCE/zipball/bda632be0f7005796806c749d0caf774c1ae805e",
-                "reference": "dce0bf9cdec71b83168c8f55d94efb33499322bb",
-                "shasum": ""
-            },
-            "type": "cakephp-plugin",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "NetCommons Community",
-                    "homepage": "https://github.com/ryu818/TinyMCE/graphs/contributors"
-                }
-            ],
-            "description": "TinyMCE plugin for CakePHP",
-            "homepage": "http://github.com/ryu818/TinyMCE",
-            "keywords": [
-                "html",
-                "wysiwyg"
-            ],
-            "time": "2013-11-17 22:11:30"
         },
         {
             "name": "symfony/process",
@@ -1352,8 +1319,6 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "burzum/cakephp-html-purifier": 20,
-        "ryu818/tiny-mce": 20,
         "satooshi/php-coveralls": 20,
         "mustangostang/spyc": 20
     },
