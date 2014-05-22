@@ -33,7 +33,7 @@ NetCommons
 * virtualbox
   * [https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads)
 * vagrant
-  * [http://downloads.vagrantup.com/](http://downloads.vagrantup.com/)
+  * [http://www.vagrantup.com/downloads.html](http://www.vagrantup.com/downloads.html)
 
 ### 依存ライブラリをインストール
 #### ubuntu 12.10
