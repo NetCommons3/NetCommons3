@@ -35,6 +35,12 @@
                 "uri": "https://github.com/NetCommons3/NetCommons3Docs.git"
             }
         },
+        "cookbook": {
+            "repo": {
+                "type": "git",
+                "uri": "https://github.com/NetCommons3/chef_netcommons.git"
+            }
+        },
         "gitlab": false,
         "redmine": false,
         "jenkins": {
