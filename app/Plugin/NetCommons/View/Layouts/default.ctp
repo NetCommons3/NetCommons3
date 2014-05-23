@@ -89,7 +89,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 	<!-- container-footer  -->
 	<footer id="container-footer" role="contentinfo">
 		<div class="box-footer box-id-5">
-			<div class="row copyright">Powered by NetCommons</div>
+			<div class="copyright">Powered by NetCommons</div>
 		</div>
 	</footer>
 
