@@ -93,7 +93,7 @@ class AppController extends Controller {
 		if (isset($this->request->query['language'])) {
 			Configure::write('Config.language', $this->request->query['language']);
 			$this->Session->write('Config.language', $this->request->query['language']);
-		} else if ($this->Session->check('Config.language')) {
+		} elseif ($this->Session->check('Config.language')) {
 			Configure::write('Config.language', $this->Session->read('Config.language'));
 		}
 		$this->Auth->allow('index', 'view');
