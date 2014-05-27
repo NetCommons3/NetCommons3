@@ -1,0 +1,248 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2014-05-27 10:08+0900\n"
+"PO-Revision-Date: 2014-05-27 10:28+0900\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Controller/InstallController.php:54
+msgid "Failed to write %s. Please check permission."
+msgstr "%s に書き込みができません。パーミッションを確認して下さい。"
+
+#: Controller/InstallController.php:76;82
+msgid "OK: %s"
+msgstr "OK: %s"
+
+#: Controller/InstallController.php:160
+msgid "The user could not be saved. Please try again."
+msgstr "ユーザを保存できませんでした。暫くしてから再度お試し下さい。"
+
+#: View/Install/finish.ctp:4
+msgid "Home"
+msgstr "ホーム"
+
+#: View/Install/index.ctp:9
+msgid "Term"
+msgstr "利用規約"
+
+msgid "Language"
+msgstr "言語"
+
+msgid "Japanese"
+msgstr "日本語"
+
+msgid "English"
+msgstr "英語"
+
+msgid "Chinese"
+msgstr "中国語"
+
+#: View/Install/index.ctp:17
+msgid "The terms & conditions for using the contents of this site is governed\nby this agreement. Please read carefully the following conditions, and\nregister only if you agree to them.\n\nBy using this site, I agree to refrain from the following actions, or\nbehavior that may lead to the following actions.\n\nactions that are against public order or morals\nactions that are against the laws or ordinances\ncriminal acts or actions connected to criminal acts\nactions that violate rights of other users, third party, or this site\nactions that slander, defame, or cause the loss of prestige or\ncredibility of other users, third party, or this site\nactions that result in liability to other users, third party, or this site\nactions that hinder the operation of this site\nactions that disseminate information that are not true\npostings of personal information that may lead to invasion of privacy\nother actions that are deemed unsuitable by this site\n\nDisclaimer\n\nThis site is not responsible for damage (direct or indirect) to user\nthat is caused by, is resulted from the connection of, the usage of\nthis site, contents related to this site, services from links stemming\nfrom this site, etc."
+msgstr ""
+"本規約は、当サイトにより提供されるコンテンツの利用条件を定めるものです。以下の利用条件をよくお読みになり、これに同意される場合にのみご登録いただきますようお願いいたします。\n"
+"\n"
+"当サイトを利用するにあたり、以下に該当する又はその恐れのある行為を行ってはならないものとします。 \n"
+"\n"
+"・公序良俗に反する行為 \n"
+"・法令に違反する行為 \n"
+"・犯罪行為及び犯罪行為に結びつく行為 \n"
+"・他の利用者、第三者、当サイトの権利を侵害する行為 \n"
+"・他の利用者、第三者、当サイトを誹謗、中傷する行為及び名誉・信用を傷つける行為 \n"
+"・他の利用者、第三者、当サイトに不利益を与える行為 \n"
+"・当サイトの運営を妨害する行為 \n"
+"・事実でない情報を発信する行為 \n"
+"・プライバシー侵害の恐れのある個人情報の投稿 \n"
+"・その他、当サイトが不適当と判断する行為 \n"
+"\n"
+"【免責】\n"
+"\n"
+"利用者が当サイト及び当サイトに関連するコンテンツ、リンク先サイトにおける一切のサービス等をご利用されたことに起因または関連して生じた一切の損害（間接的であると直接的であるとを問わない）について、当サイトは責任を負いません。"
+
+#: View/Install/index.ctp:45
+msgid "By clicking the button, you agree to the terms above"
+msgstr "ボタンをクリックすることで、上記利用規約に同意したものとします。"
+
+#: View/Install/index.ctp:46
+#: View/Install/init_db.ctp:35
+#: View/Install/init_permission.ctp:13
+msgid "Next"
+msgstr "次へ"
+
+#: View/Install/init_db.ctp:8
+msgid "Database Settings"
+msgstr "データベース設定"
+
+msgid "Host"
+msgstr "ホスト名"
+
+msgid "Port"
+msgstr "ポート番号"
+
+msgid "Database"
+msgstr "データベース"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Prefix"
+msgstr "プレフィックス"
+
+msgid "Datasource"
+msgstr "データベース種別"
+
+#: View/Install/init_db.ctp:27
+msgid "Username"
+msgstr "ログインID"
+
+msgid "Handle Name"
+msgstr "ハンドル名"
+
+#: View/Install/init_db.ctp:31
+msgid "Password"
+msgstr "パスワード"
+
+msgid "Password Again"
+msgstr "パスワード確認"
+
+msgid "Create an Administrator"
+msgstr "管理者ユーザ作成"
+
+#: View/Install/init_permission.ctp:8
+msgid "Permissions"
+msgstr "パーミッション"
+
+#: Model/Archive.php:validation for field parent_model_name;validation for field model_name;validation for field title;validation for field content;validation for field search_content;validation for field url;validation for field created_user_name;validation for field modified_user_name
+#: Model/Asset.php:validation for field url;validation for field hash_content;validation for field plugin
+#: Model/Authority.php:validation for field default_name;validation for field created_user_name;validation for field modified_user_name
+#: Model/AuthorityLang.php:validation for field lang;validation for field name;validation for field created_user_name;validation for field modified_user_name
+#: Model/Background.php:validation for field type;validation for field name;validation for field category;validation for field color;validation for field file_path
+#: Model/Block.php:validation for field title;validation for field controller_action;validation for field theme_name;validation for field temp_name;validation for field created_user_name;validation for field modified_user_name
+#: Model/Blog.php:validation for field comment_mail_subject;validation for field comment_mail_body;validation for field created_user_name;validation for field modified_user_name
+#: Model/BlogComment.php:validation for field title;validation for field author_email;validation for field author_url;validation for field author_ip;validation for field blog_name;validation for field comment_type;validation for field created_user_name;validation for field modified_user_name
+#: Model/BlogPost.php:validation for field title;validation for field permalink;validation for field post_password;validation for field to_ping;validation for field pinged;validation for field created_user_name;validation for field modified_user_name
+#: Model/BlogStyle.php:validation for field options;validation for field created_user_name;validation for field modified_user_name
+#: Model/BlogTerm.php:validation for field taxonomy;validation for field created_user_name;validation for field modified_user_name
+#: Model/BlogTermLink.php:validation for field created_user_name;validation for field modified_user_name
+#: Model/Community.php:validation for field created_user_name;validation for field modified_user_name
+#: Model/CommunityInvitation.php:validation for field created_user_name;validation for field modified_user_name
+#: Model/CommunityLang.php:validation for field lang;validation for field community_name;validation for field summary;validation for field created_user_name;validation for field modified_user_name
+#: Model/CommunitySumTag.php:validation for field tag_value;validation for field lang;validation for field created_user_name;validation for field modified_user_name
+#: Model/CommunityTag.php:validation for field tag_value;validation for field lang;validation for field created_user_name;validation for field modified_user_name
+#: Model/Config.php:validation for field name;validation for field type;validation for field title;validation for field value;validation for field description;validation for field options;validation for field domain;validation for field attribute;validation for field regexp;validation for field created_user_name;validation for field modified_user_name
+#: Model/ConfigLang.php:validation for field config_name;validation for field lang;validation for field value;validation for field created_user_name;validation for field modified_user_name
+#: Model/Content.php:validation for field title;validation for field url;validation for field created_user_name;validation for field modified_user_name
+#: Model/Language.php:validation for field display_name
+#: Model/Module.php:validation for field dir_name;validation for field version;validation for field controller_action;validation for field edit_controller_action;validation for field style_controller_action;validation for field module_icon;validation for field temp_name;validation for field copy_operation;validation for field shortcut_operation;validation for field move_operation;validation for field created_user_name;validation for field modified_user_name
+#: Model/ModuleLink.php:validation for field created_user_name;validation for field modified_user_name
+#: Model/ModuleSystemLink.php:validation for field created_user_name;validation for field modified_user_name
+#: Model/PageColumn.php:validation for field lang;validation for field created_user_name;validation for field modified_user_name
+#: Model/PageLayout.php:validation for field lang;validation for field created_user_name;validation for field modified_user_name
+#: Model/PageMeta.php:validation for field lang;validation for field created_user_name;validation for field modified_user_name
+#: Model/PageStyle.php:validation for field lang;validation for field align;validation for field width;validation for field height;validation for field original_background_image;validation for field original_background_repeat;validation for field original_background_position;validation for field original_background_attachment;validation for field file;validation for field created_user_name;validation for field modified_user_name
+#: Model/PageSumView.php:validation for field created_user_name;validation for field modified_user_name
+#: Model/PageTheme.php:validation for field lang;validation for field theme_name;validation for field temp_name;validation for field center_theme;validation for field header_theme;validation for field left_theme;validation for field right_theme;validation for field footer_theme;validation for field created_user_name;validation for field modified_user_name
+#: Model/PageUserLink.php:validation for field created_user_name;validation for field modified_user_name
+#: Model/Passport.php:validation for field passport
+#: Model/SchemaMigration.php:validation for field class;validation for field type
+#: Model/Session.php:validation for field data
+#: Model/TempData.php:validation for field data
+#: Model/Upload.php:validation for field file_name;validation for field alt;validation for field caption;validation for field description;validation for field file_path;validation for field mimetype;validation for field extension;validation for field plugin;validation for field upload_model_name;validation for field created_user_name;validation for field modified_user_name
+#: Model/UploadLink.php:validation for field plugin;validation for field model_name;validation for field field_name;validation for field download_password;validation for field check_component_action;validation for field created_user_name;validation for field modified_user_name
+#: Model/UserGroup.php:validation for field name;validation for field created_user_name;validation for field modified_user_name
+#: Model/UserGroupLink.php:validation for field created_user_name;validation for field modified_user_name
+#: Model/UserInvitation.php:validation for field user_name;validation for field created_user_name;validation for field modified_user_name
+#: Model/UserItem.php:validation for field default_name;validation for field default_description;validation for field default_options;validation for field type;validation for field tag_name;validation for field regexp;validation for field attribute;validation for field default_selected;validation for field autoregist_use;validation for field created_user_name;validation for field modified_user_name
+#: Model/UserItemAuthorityLink.php:validation for field created_user_name;validation for field modified_user_name
+#: Model/UserItemLang.php:validation for field lang;validation for field name;validation for field description;validation for field options;validation for field created_user_name;validation for field modified_user_name
+#: Model/UserItemLink.php:validation for field lang;validation for field content
+#: Model/WhatsnewStyle.php:validation for field created_user_name;validation for field modified_user_name
+#: /home/netcommons/usr/local/src/NetCommons3/plugins/Users/Model/User.php:validation for field handle;validation for field permalink;validation for field lang;validation for field mobile_email;validation for field created_user_name;validation for field modified_user_name
+msgid "notEmpty"
+msgstr ""
+
+#: Model/Archive.php:validation for field parent_id;validation for field module_id;validation for field content_id;validation for field plugin_unique;validation for field status;validation for field user_group_id;validation for field access_hierarchy;validation for field count
+#: Model/Authority.php:validation for field hierarchy;validation for field allow_creating_community;validation for field myportal_use_flag;validation for field allow_myportal_viewing_hierarchy;validation for field private_use_flag;validation for field allow_style_flag;validation for field allow_attachment;validation for field max_size
+#: Model/AuthorityLang.php:validation for field authority_id
+#: Model/Background.php:validation for field group_num;validation for field file_width;validation for field file_height;validation for field file_size
+#: Model/Block.php:validation for field page_id;validation for field content_id;validation for field module_id;validation for field root;validation for field parent_id;validation for field thread_num;validation for field col_num;validation for field row_num;validation for field min_width_size;validation for field min_height_size;validation for field lock_authority_num
+#: Model/Blog.php:validation for field content_id;validation for field post_hierarchy;validation for field term_hierarchy;validation for field new_period;validation for field mail_hierarchy;validation for field comment_flag;validation for field comment_hierarchy;validation for field comment_mail_hierarchy
+#: Model/BlogComment.php:validation for field content_id;validation for field blog_post_id
+#: Model/BlogPost.php:validation for field content_id;validation for field revision_root;validation for field status;validation for field approved_comment_count;validation for field comment_count;validation for field approved_trackback_count;validation for field trackback_count;validation for field vote_count
+#: Model/BlogStyle.php:validation for field block_id;validation for field widget_type;validation for field col_num;validation for field row_num;validation for field visible_item
+#: Model/BlogTerm.php:validation for field content_id;validation for field parent;validation for field count
+#: Model/BlogTermLink.php:validation for field content_id;validation for field blog_post_id;validation for field blog_term_id
+#: Model/Community.php:validation for field room_num;validation for field publication_range_flag;validation for field participate_flag;validation for field invite_hierarchy;validation for field participate_notice_hierarchy;validation for field resign_notice_hierarchy
+#: Model/CommunityInvitation.php:validation for field room_num;validation for field user_id
+#: Model/CommunityLang.php:validation for field room_num;validation for field revision_root
+#: Model/CommunitySumTag.php:validation for field used_number
+#: Model/CommunityTag.php:validation for field room_num;validation for field community_sum_tag_id;validation for field display_sequence
+#: Model/Config.php:validation for field module_id;validation for field category;validation for field minlength;validation for field maxlength
+#: Model/ConfigLang.php:validation for field module_id
+#: Model/Content.php:validation for field module_id;validation for field shortcut_type;validation for field root;validation for field room_num;validation for field display_flag
+#: Model/Language.php:validation for field display_sequence;validation for field display_flag
+#: Model/Module.php:validation for field display_sequence;validation for field content_has_one
+#: Model/ModuleLink.php:validation for field space_type;validation for field authority_id;validation for field room_num;validation for field module_id
+#: Model/ModuleSystemLink.php:validation for field authority_id;validation for field module_id;validation for field hierarchy
+#: Model/PageColumn.php:validation for field scope;validation for field type;validation for field space_type;validation for field header_page;validation for field left_page;validation for field right_page;validation for field footer_page
+#: Model/PageLayout.php:validation for field scope;validation for field type;validation for field space_type
+#: Model/PageMeta.php:validation for field scope;validation for field type;validation for field space_type
+#: Model/PageStyle.php:validation for field scope;validation for field type;validation for field space_type
+#: Model/PageSumView.php:validation for field user_id;validation for field page_id;validation for field sum
+#: Model/PageTheme.php:validation for field scope;validation for field type;validation for field space_type
+#: Model/PageTree.php:validation for field parent_id;validation for field child;validation for field stratum_num
+#: Model/PageUserLink.php:validation for field room_num;validation for field user_id;validation for field authority_id
+#: Model/Passport.php:validation for field user_id
+#: Model/SiteSettingValue.php:validation for field site_setting_id
+#: Model/Upload.php:validation for field user_id;validation for field file_size;validation for field download_count;validation for field year;validation for field month;validation for field day
+#: Model/UploadLink.php:validation for field upload_id;validation for field content_id;validation for field plugin_unique;validation for field access_hierarchy;validation for field is_use
+#: Model/UserGroup.php:validation for field module_id;validation for field content_id
+#: Model/UserGroupLink.php:validation for field user_group_id;validation for field user_id
+#: Model/UserItem.php:validation for field minlength;validation for field maxlength;validation for field list_num;validation for field col_num;validation for field row_num
+#: Model/UserItemAuthorityLink.php:validation for field user_item_id;validation for field user_authority;validation for field edit_lower_hierarchy;validation for field show_lower_hierarchy
+#: Model/UserItemLang.php:validation for field user_item_id
+#: Model/UserItemLink.php:validation for field user_id;validation for field user_item_id
+#: Model/WhatsnewSelectRoom.php:validation for field block_id;validation for field room_num
+#: Model/WhatsnewSelectUser.php:validation for field block_id;validation for field user_id
+#: Model/WhatsnewStyle.php:validation for field block_id;validation for field display_type;validation for field display_days;validation for field display_number;validation for field title_truncate_num;validation for field description_truncate_num
+#: /home/netcommons/usr/local/src/NetCommons3/plugins/ThemeSettings/Model/ThemeSettingsSiteValue.php:validation for field site_setting_id
+#: /home/netcommons/usr/local/src/NetCommons3/plugins/Users/Model/User.php:validation for field authority_id;validation for field is_active;validation for field myportal_page;validation for field private_page;validation for field timezone_offset
+msgid "numeric"
+msgstr "数値"
+
+#: Model/Archive.php:validation for field is_approved
+#: Model/Authority.php:validation for field system_flag;validation for field allow_new_participant;validation for field public_createroom_flag;validation for field group_createroom_flag;validation for field myportal_createroom_flag;validation for field private_createroom_flag;validation for field allow_htmltag_flag;validation for field allow_meta_flag;validation for field allow_theme_flag;validation for field allow_layout_flag;validation for field allow_column_flag;validation for field allow_video;validation for field change_leftcolumn_flag;validation for field change_rightcolumn_flag;validation for field change_headercolumn_flag;validation for field change_footercolumn_flag;validation for field display_participants_editing;validation for field allow_move_operation;validation for field allow_copy_operation;validation for field allow_shortcut_operation;validation for field allow_operation_of_shortcut
+#: Model/Block.php:validation for field show_title;validation for field display_flag
+#: Model/Blog.php:validation for field vote_flag;validation for field sns_flag;validation for field mail_flag;validation for field comment_required_name;validation for field comment_image_auth;validation for field comment_mail_flag;validation for field trackback_transmit_flag;validation for field trackback_receive_flag;validation for field approved_flag;validation for field approved_pre_change_flag;validation for field approved_mail_flag;validation for field comment_approved_flag;validation for field trackback_approved_flag;validation for field comment_approved_mail_flag
+#: Model/BlogComment.php:validation for field is_approved
+#: Model/BlogPost.php:validation for field is_future;validation for field is_approved;validation for field pre_change_flag
+#: Model/BlogStyle.php:validation for field display_flag
+#: Model/BlogTerm.php:validation for field checked
+#: Model/Community.php:validation for field is_upload;validation for field participate_force_all_users;validation for field is_participate_notice;validation for field is_resign_notice
+#: Model/CommunityInvitation.php:validation for field is_pending_approval_mail
+#: Model/Config.php:validation for field required;validation for field lang_flag
+#: Model/Content.php:validation for field is_approved
+#: Model/Module.php:validation for field system_flag;validation for field disposition_flag
+#: Model/PageLayout.php:validation for field is_display_header;validation for field is_display_left;validation for field is_display_right;validation for field is_display_footer
+#: Model/Upload.php:validation for field is_delete_from_library;validation for field is_use;validation for field is_wysiwyg
+#: Model/UserInvitation.php:validation for field is_pending_approval_mail
+#: Model/UserItem.php:validation for field is_system;validation for field allow_self_edit;validation for field required;validation for field allow_duplicate;validation for field display_flag;validation for field allow_public_flag;validation for field allow_email_reception_flag;validation for field display_title;validation for field is_lang;validation for field autoregist_sendmail
+#: Model/UserItemLink.php:validation for field public_flag;validation for field email_reception_flag
+#: Model/WhatsnewStyle.php:validation for field display_period_type;validation for field is_display_title;validation for field is_display_description;validation for field is_display_room_name;validation for field is_display_module_name;validation for field is_display_user_name;validation for field is_display_created;validation for field allow_rss_feed;validation for field myportal_flag;validation for field myroom_flag;validation for field select_myportal_users
+msgid "boolean"
+msgstr "真偽値"
+
+#: Model/UserInvitation.php:validation for field email
+#: /home/netcommons/usr/local/src/NetCommons3/plugins/Users/Model/User.php:validation for field email
+msgid "email"
+msgstr "メール"
+
