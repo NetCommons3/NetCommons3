@@ -1,0 +1,85 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2014-05-27 11:06+0900\n"
+"PO-Revision-Date: 2014-05-27 14:18+0900\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Plugin/NetCommons/View/Layouts/default.ctp:2
+#: View/Layouts/default.ctp:19
+#: View/Layouts/error.ctp:19
+msgid "CakePHP: the rapid development php framework"
+msgstr ""
+
+#: webroot/test.php:93
+msgid "Debug setting does not allow access to this url."
+msgstr ""
+
+msgid "Controller class %s could not be found."
+msgstr ""
+
+msgid "Action %s::%s() could not be found."
+msgstr ""
+
+msgid "Private Action %s::%s() is not directly accessible."
+msgstr ""
+
+msgid "Component class %s could not be found."
+msgstr ""
+
+msgid "Behavior class %s could not be found."
+msgstr ""
+
+msgid "View file \"%s\" is missing."
+msgstr ""
+
+msgid "Layout file \"%s\" is missing."
+msgstr ""
+
+msgid "Helper class %s could not be found."
+msgstr ""
+
+msgid "Database connection \"%s\" could not be found."
+msgstr "%s の設定が見つかりませんでした。"
+
+msgid "Database connection \"%s\" is missing, or could not be created."
+msgstr "%s の設定が見つからない、または接続できませんでした。"
+
+msgid "Task class %s could not be found."
+msgstr ""
+
+msgid "Shell class %s could not be found."
+msgstr ""
+
+msgid "The datasource configuration \"%s\" was not found in database.php"
+msgstr ""
+
+msgid "Datasource class %s could not be found. %s"
+msgstr ""
+
+msgid "Table %s for model %s was not found in datasource %s."
+msgstr ""
+
+msgid "Model %s could not be found."
+msgstr ""
+
+msgid "Test loader %s could not be found."
+msgstr ""
+
+msgid "Plugin %s could not be found."
+msgstr ""
+
+msgid "Dispatcher filter %s could not be found."
+msgstr ""
+
+msgid "%s is not implemented."
+msgstr ""
