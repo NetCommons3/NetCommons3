@@ -67,7 +67,7 @@ class DATABASE_CONFIG {
 		'datasource' => '{datasource}',
 		'persistent' => {persistent},
 		'host' => '{host}',
-		'port' => {port},
+		'port' => '{port}',
 		'login' => '{login}',
 		'password' => '{password}',
 		'database' => '{database}',
