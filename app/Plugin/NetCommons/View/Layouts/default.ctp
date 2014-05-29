@@ -32,6 +32,8 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 	<?php echo $this->Html->css("style"); ?>
 
 	<?php
+		echo $this->Html->script('/net_commons/angular/angular.min.js');
+		echo $this->Html->script('/net_commons/angular-bootstrap/ui-bootstrap-tpls.min.js');
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
@@ -58,7 +60,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 							<li><a href="/"><?php echo __("ホーム"); ?></a></li>
 							<li>
 								<?php if ($User = AuthComponent::user()): ?>
-									<?php echo h($User['handle']) ?>
+									<?php /*echo h($User['handle'])*/ ?>
 									<?php echo $this->Html->link(__('Logout'), '/auth/logout') ?>
 								<?php else: ?>
 									<?php echo $this->Html->link(__('Login'), '/auth/login') ?>
