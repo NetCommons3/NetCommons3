@@ -155,7 +155,7 @@ class Initial extends CakeMigration {
 						'lft' => null,
 						'rght' => null,
 						'plugin_id' => '1',
-						'block_id' => '1',
+						'block_id' => '2',
 						'weight' => '1',
 						'is_published' => true,
 						'from' => null,
@@ -168,7 +168,7 @@ class Initial extends CakeMigration {
 						'lft' => null,
 						'rght' => null,
 						'plugin_id' => '1',
-						'block_id' => '1',
+						'block_id' => '3',
 						'weight' => '1',
 						'is_published' => true,
 						'from' => null,
@@ -181,7 +181,7 @@ class Initial extends CakeMigration {
 						'lft' => null,
 						'rght' => null,
 						'plugin_id' => '1',
-						'block_id' => '1',
+						'block_id' => '4',
 						'weight' => '1',
 						'is_published' => true,
 						'from' => null,
@@ -194,11 +194,34 @@ class Initial extends CakeMigration {
 						'lft' => null,
 						'rght' => null,
 						'plugin_id' => '1',
-						'block_id' => '1',
+						'block_id' => '5',
 						'weight' => '1',
 						'is_published' => true,
 						'from' => null,
 						'to' => null,
+					),
+				),
+
+				'Block' => array(
+					array(
+						'id' => '1',
+						'room_id' => '1',
+					),
+					array(
+						'id' => '2',
+						'room_id' => '1',
+					),
+					array(
+						'id' => '3',
+						'room_id' => '1',
+					),
+					array(
+						'id' => '4',
+						'room_id' => '1',
+					),
+					array(
+						'id' => '5',
+						'room_id' => '1',
 					),
 				),
 
@@ -207,13 +230,13 @@ class Initial extends CakeMigration {
 						'id' => '1',
 						'code' => 'rng',
 						'weight' => '1',
-						'is_active' => 'true',
+						'is_active' => true,
 					),
 					array(
 						'id' => '2',
 						'code' => 'jpn',
 						'weight' => '2',
-						'is_active' => 'true',
+						'is_active' => true,
 					),
 				),
 
@@ -279,6 +302,191 @@ class Initial extends CakeMigration {
 						'name' => 'テスト005',
 					),
 				),
+
+				'BlocksLanguage' => array(
+					array(
+						'id' => '1',
+						'block_id' => '1',
+						'language_id' => '1',
+						'name' => 'Test001',
+					),
+					array(
+						'id' => '2',
+						'block_id' => '1',
+						'language_id' => '2',
+						'name' => 'テスト001',
+					),
+					array(
+						'id' => '3',
+						'block_id' => '2',
+						'language_id' => '1',
+						'name' => 'Test002',
+					),
+					array(
+						'id' => '4',
+						'block_id' => '2',
+						'language_id' => '2',
+						'name' => 'テスト002',
+					),
+					array(
+						'id' => '5',
+						'block_id' => '3',
+						'language_id' => '1',
+						'name' => 'Test003',
+					),
+					array(
+						'id' => '6',
+						'block_id' => '3',
+						'language_id' => '2',
+						'name' => 'テスト003',
+					),
+					array(
+						'id' => '7',
+						'block_id' => '4',
+						'language_id' => '1',
+						'name' => 'Test004',
+					),
+					array(
+						'id' => '8',
+						'block_id' => '4',
+						'language_id' => '2',
+						'name' => 'テスト004',
+					),
+					array(
+						'id' => '9',
+						'block_id' => '5',
+						'language_id' => '1',
+						'name' => 'Test005',
+					),
+					array(
+						'id' => '10',
+						'block_id' => '5',
+						'language_id' => '2',
+						'name' => 'テスト005',
+					),
+				),
+
+				'Plugin' => array(
+					array(
+						'id' => '1',
+						'folder' => 'announcements',
+					),
+				),
+
+				'Part' => array(
+					array(
+						'id' => '1',
+						'type' => '2',
+					),
+					array(
+						'id' => '2',
+						'type' => '2',
+					),
+					array(
+						'id' => '3',
+						'type' => '2',
+					),
+					array(
+						'id' => '4',
+						'type' => '2',
+					),
+					array(
+						'id' => '5',
+						'type' => '2',
+					),
+				),
+
+				'PartsRoomsUser' => array(
+					array(
+						'id' => '1',
+						'room_id' => '1',
+						'user_id' => '1',
+						'part_id' => '1',
+					),
+				),
+
+				'RoomPart' => array(
+					array(
+						'id' => '1',
+						'part_id' => '1',
+						'can_read_page' => true,
+						'can_edit_page' => true,
+						'can_create_page' => true,
+						'can_publish_page' => true,
+						'can_read_block' => true,
+						'can_edit_block' => true,
+						'can_create_block' => true,
+						'can_publish_block' => true,
+						'can_read_content' => true,
+						'can_edit_content' => true,
+						'can_create_content' => true,
+						'can_publish_content' => true,
+					),
+					array(
+						'id' => '2',
+						'part_id' => '2',
+						'can_read_page' => true,
+						'can_edit_page' => true,
+						'can_create_page' => true,
+						'can_publish_page' => false,
+						'can_read_block' => true,
+						'can_edit_block' => true,
+						'can_create_block' => true,
+						'can_publish_block' => false,
+						'can_read_content' => true,
+						'can_edit_content' => true,
+						'can_create_content' => true,
+						'can_publish_content' => false,
+					),
+					array(
+						'id' => '3',
+						'part_id' => '3',
+						'can_read_page' => true,
+						'can_edit_page' => false,
+						'can_create_page' => false,
+						'can_publish_page' => false,
+						'can_read_block' => true,
+						'can_edit_block' => false,
+						'can_create_block' => false,
+						'can_publish_block' => false,
+						'can_read_content' => true,
+						'can_edit_content' => true,
+						'can_create_content' => true,
+						'can_publish_content' => false,
+					),
+					array(
+						'id' => '4',
+						'part_id' => '4',
+						'can_read_page' => true,
+						'can_edit_page' => false,
+						'can_create_page' => false,
+						'can_publish_page' => false,
+						'can_read_block' => true,
+						'can_edit_block' => false,
+						'can_create_block' => false,
+						'can_publish_block' => false,
+						'can_read_content' => true,
+						'can_edit_content' => false,
+						'can_create_content' => true,
+						'can_publish_content' => false,
+					),
+					array(
+						'id' => '5',
+						'part_id' => '5',
+						'can_read_page' => true,
+						'can_edit_page' => false,
+						'can_create_page' => false,
+						'can_publish_page' => false,
+						'can_read_block' => true,
+						'can_edit_block' => false,
+						'can_create_block' => false,
+						'can_publish_block' => false,
+						'can_read_content' => true,
+						'can_edit_content' => false,
+						'can_create_content' => false,
+						'can_publish_content' => false,
+					),
+				),
 			);
 
 /**
@@ -292,6 +500,21 @@ class Initial extends CakeMigration {
 			'create_table' => array(
 				'blocks' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => null, 'key' => 'primary'),
+					'room_id' => array('type' => 'integer', 'null' => true, 'default' => null),
+					'created_user_id' => array('type' => 'integer', 'null' => true, 'default' => null),
+					'created' => array('type' => 'datetime', 'null' => true, 'default' => null),
+					'modified_user_id' => array('type' => 'integer', 'null' => true, 'default' => null),
+					'modified' => array('type' => 'datetime', 'null' => true, 'default' => null),
+					'indexes' => array(
+						'PRIMARY' => array('column' => 'id', 'unique' => 1),
+					),
+					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
+				),
+				'blocks_languages' => array(
+					'id' => array('type' => 'integer', 'null' => false, 'default' => null, 'key' => 'primary'),
+					'block_id' => array('type' => 'integer', 'null' => false, 'default' => null),
+					'language_id' => array('type' => 'integer', 'null' => false, 'default' => null),
+					'name' => array('type' => 'string', 'null' => true, 'default' => null, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 					'created_user_id' => array('type' => 'integer', 'null' => true, 'default' => null),
 					'created' => array('type' => 'datetime', 'null' => true, 'default' => null),
 					'modified_user_id' => array('type' => 'integer', 'null' => true, 'default' => null),
@@ -837,7 +1060,7 @@ class Initial extends CakeMigration {
 		),
 		'down' => array(
 			'drop_table' => array(
-				'blocks', 'boxes', 'boxes_pages', 'containers', 'containers_pages', 'frames', 'frames_languages', 'group_parts', 'groups', 'groups_languages', 'groups_parts_users', 'groups_users', 'languages', 'languages_pages', 'languages_parts', 'languages_roles', 'languages_site_settings', 'languages_user_attributes', 'languages_user_attributes_users', 'languages_user_select_attributes', 'pages', 'parts', 'parts_rooms_users', 'plugins', 'roles', 'roles_plugins', 'roles_user_attributes', 'room_parts', 'rooms', 'site_setting_values', 'site_settings', 'spaces', 'user_attributes', 'user_attributes_users', 'user_select_attributes', 'user_select_attributes_users', 'users'
+				'blocks', 'blocks_languages', 'boxes', 'boxes_pages', 'containers', 'containers_pages', 'frames', 'frames_languages', 'group_parts', 'groups', 'groups_languages', 'groups_parts_users', 'groups_users', 'languages', 'languages_pages', 'languages_parts', 'languages_roles', 'languages_site_settings', 'languages_user_attributes', 'languages_user_attributes_users', 'languages_user_select_attributes', 'pages', 'parts', 'parts_rooms_users', 'plugins', 'roles', 'roles_plugins', 'roles_user_attributes', 'room_parts', 'rooms', 'site_setting_values', 'site_settings', 'spaces', 'user_attributes', 'user_attributes_users', 'user_select_attributes', 'user_select_attributes_users', 'users'
 			),
 		),
 	);
