@@ -17,7 +17,7 @@ sudo rm -rf vendors/*
 chmod -R 777 app/tmp
 mkdir -p build/logs
 
-composer self-update
+sudo composer self-update
 composer update
 
 cp app/Config/database.php.$DB app/Config/database.php
