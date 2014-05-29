@@ -1,0 +1,57 @@
+{
+    "name":        "netcommons/netcommons",
+    "version":     "3.0.0",
+    "description": "NetCommons3",
+    "type":        "CMS",
+    "keywords":    ["CMS"],
+    "homepage":    "http://www.netcommons.org/",
+    "license":     "NetCommons License",
+    "authors": [
+        {
+            "name":     "NetCommons Community",
+            "homepage": "https://github.com/NetCommons3/NetCommons3/graphs/contributors"
+        }
+    ],
+    "extra": {
+        "installer-paths": {
+            "app/Plugin/{$name}": [
+                "cakephp/debug_kit",
+                "cakedc/migrations",
+                "mustangostang/spyc",
+                "chronon/mobile_detect"
+            ]
+        }
+    },
+    "require": {
+        "cakephp/cakephp":              "~2.4",
+        "cakephp/debug_kit":            "~2.2",
+        "cakedc/migrations":            "~2.2",
+        "ezyang/htmlpurifier":          "~4.6",
+        "chronon/mobile_detect":        "*",
+        "twbs/bootstrap":               "~3.1",
+        "components/jquery":            "~2.1",
+        "netcommons/install":           "*",
+        "burzum/cakephp-html-purifier": "0.0.0"
+    },
+    "require-dev": {
+        "satooshi/php-coveralls": "dev-master",
+        "mustangostang/spyc": "dev-master",
+        "netcommons/auth": "dev-master",
+        "netcommons/auth-general": "dev-master",
+        "netcommons/pages": "dev-master",
+        "netcommons/announcements": "dev-master",
+        "netcommons/boxes": "dev-master",
+        "netcommons/containers": "dev-master",
+        "netcommons/frames": "dev-master",
+        "netcommons/public-space": "dev-master",
+        "netcommons/theme-settings": "dev-master",
+        "netcommons/sandbox": "dev-master"
+    },
+    "bin": [
+        "lib/Cake/Console/cake"
+    ],
+    "config": {
+        "vendor-dir": "vendors",
+        "process-timeout": 3000
+    }
+}
