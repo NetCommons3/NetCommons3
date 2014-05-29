@@ -14,6 +14,7 @@ if [ "$DB" = 'postgresql' ]; then psql -c 'CREATE SCHEMA test3;' -U postgres -d 
 
 sudo rm -rf plugins/*
 sudo rm -rf vendors/*
+sudo rm -rf app/Plugin/*
 chmod -R 777 app/tmp
 mkdir -p build/logs
 
