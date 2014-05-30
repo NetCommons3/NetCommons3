@@ -1,9 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
     ],
-    "hash": "ce203b7fd8a759e397575226a7916396",
+    "hash": "dc94388d2c5b696ae2791c0f5ad92645",
     "packages": [
         {
             "name": "burzum/cakephp-html-purifier",
@@ -525,16 +526,16 @@
         },
         {
             "name": "netcommons/install",
-            "version": "0.0.8",
+            "version": "0.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Install.git",
-                "reference": "7f61309533abd60253c49856a38ce76d6dd9f21f"
+                "reference": "cfd29d50ddb6139c674ef11b3e275fb09cc78d7a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Install/zipball/7f61309533abd60253c49856a38ce76d6dd9f21f",
-                "reference": "7f61309533abd60253c49856a38ce76d6dd9f21f",
+                "url": "https://api.github.com/repos/NetCommons3/Install/zipball/cfd29d50ddb6139c674ef11b3e275fb09cc78d7a",
+                "reference": "cfd29d50ddb6139c674ef11b3e275fb09cc78d7a",
                 "shasum": ""
             },
             "require": {
@@ -570,7 +571,64 @@
                 "cakephp",
                 "install"
             ],
-            "time": "2014-05-30 05:18:01"
+            "time": "2014-05-30 05:46:49"
+        },
+        {
+            "name": "netcommons/m17n",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/NetCommons3/M17n.git",
+                "reference": "1442cbb453752f88016ed1331fe40b20a093490c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/NetCommons3/M17n/zipball/1442cbb453752f88016ed1331fe40b20a093490c",
+                "reference": "1442cbb453752f88016ed1331fe40b20a093490c",
+                "shasum": ""
+            },
+            "require": {
+                "cakedc/migrations": "~2.2",
+                "cakephp/cakephp": "~2.4",
+                "cakephp/debug_kit": "~2.2",
+                "chronon/mobile_detect": "*",
+                "components/jquery": "~2.1",
+                "twbs/bootstrap": "~3.1"
+            },
+            "require-dev": {
+                "satooshi/php-coveralls": "dev-master"
+            },
+            "bin": [
+                "lib/Cake/Console/cake"
+            ],
+            "type": "cakephp-plugin",
+            "extra": {
+                "installer-paths": {
+                    "app/Plugin/{$name}": [
+                        "cakephp/debug_kit",
+                        "cakedc/migrations",
+                        "mustangostang/spyc",
+                        "chronon/mobile_detect"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "NetCommons License"
+            ],
+            "authors": [
+                {
+                    "name": "NetCommons Community",
+                    "homepage": "https://github.com/NetCommons3/M17n/graphs/contributors"
+                }
+            ],
+            "description": "M17n Plugin for CakePHP",
+            "homepage": "http://www.netcommons.org/",
+            "keywords": [
+                "cakephp",
+                "m17n"
+            ],
+            "time": "2014-05-26 09:56:18"
         },
         {
             "name": "netcommons/users",
@@ -1319,6 +1377,7 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
+        "netcommons/m17n": 20,
         "satooshi/php-coveralls": 20,
         "mustangostang/spyc": 20
     },
