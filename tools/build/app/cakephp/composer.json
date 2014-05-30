@@ -23,29 +23,28 @@
         }
     },
     "require": {
+        "burzum/cakephp-html-purifier": "0.0.0",
+        "cakedc/migrations":            "~2.2",
         "cakephp/cakephp":              "~2.4",
         "cakephp/debug_kit":            "~2.2",
-        "cakedc/migrations":            "~2.2",
-        "ezyang/htmlpurifier":          "~4.6",
         "chronon/mobile_detect":        "*",
-        "twbs/bootstrap":               "~3.1",
         "components/jquery":            "~2.1",
+        "ezyang/htmlpurifier":          "~4.6",
+        "mustangostang/spyc":           "@dev",
+        "netcommons/auth":              "@dev",
+        "netcommons/auth-general":      "@dev",
+        "netcommons/announcements":     "@dev",
+        "netcommons/boxes":             "@dev",
+        "netcommons/containers":        "@dev",
+        "netcommons/frames":            "@dev",
         "netcommons/install":           "*",
-        "burzum/cakephp-html-purifier": "0.0.0"
-    },
-    "require-dev": {
-        "satooshi/php-coveralls": "dev-master",
-        "mustangostang/spyc": "dev-master",
-        "netcommons/auth": "dev-master",
-        "netcommons/auth-general": "dev-master",
-        "netcommons/pages": "dev-master",
-        "netcommons/announcements": "dev-master",
-        "netcommons/boxes": "dev-master",
-        "netcommons/containers": "dev-master",
-        "netcommons/frames": "dev-master",
-        "netcommons/public-space": "dev-master",
-        "netcommons/theme-settings": "dev-master",
-        "netcommons/sandbox": "dev-master"
+        "netcommons/m17n":              "@dev",
+        "netcommons/pages":             "@dev",
+        "netcommons/public-space":      "@dev",
+        "netcommons/sandbox":           "@dev",
+        "netcommons/theme-settings":    "@dev",
+        "satooshi/php-coveralls":       "@dev",
+        "twbs/bootstrap":               "~3.1"
     },
     "bin": [
         "lib/Cake/Console/cake"
