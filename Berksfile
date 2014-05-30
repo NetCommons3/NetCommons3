@@ -3,7 +3,7 @@ source 'https://api.berkshelf.com'
 cookbook 'apache2'
 cookbook 'application'
 cookbook 'application_php'
-cookbook 'composer', git: "https://github.com/Morphodo/chef-composer.git"
+cookbook 'composer', git: 'https://github.com/Morphodo/chef-composer.git'
 cookbook 'database'
 cookbook 'jenkins'
 cookbook 'mysql'
