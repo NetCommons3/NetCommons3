@@ -31,13 +31,13 @@ before_script:
   - phpenv rehash
   - set +H
   - cp app/Config/database.php.travis app/Config/database.php
-  - for p in `cat app/Config/vendors.txt`; do export IGNORE_PLUGINS=$IGNORE_PLUGINS,$TRAVIS_BUILD_DIR/app/Plugin/$p; export IGNORE_PLUGINS_OPTS="$IGNORE_PLUGINS_OPTS --exclude app/Plugin/$p"; done
+  - for p in `cat app/Config/vendors.txt`; do export IGNORE_PLUGINS=$IGNORE_PLUGINS,$TRAVIS_BUILD_DIR/app/Plugin/$p; export IGNORE_PLUGINS_OPTS="$IGNORE_PLUGINS_OPTS --exclude Plugin/$p"; done
 
 script:
   - ./lib/Cake/Console/cake test app All --stderr --configuration phpunit.xml.dist
   - phpcs -p --extensions=php --standard=CakePHP --ignore=app/Config/Migration/,app/Config/database.php,$IGNORE_PLUGINS app
   - phpmd app text ruleset/phpmd.xml --exclude $TRAVIS_BUILD_DIR/app/Config/Migration,$IGNORE_PLUGINS
-  - phpcpd --exclude Test --exclude Config --exclude app/Config/database.php $IGNORE_PLUGINS_OPTS app
+  - phpcpd --exclude Test --exclude Config $IGNORE_PLUGINS_OPTS app
 
 after_script:
   - php vendors/bin/coveralls -vvv

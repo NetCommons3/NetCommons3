@@ -29,7 +29,7 @@ cp app/Config/database.php.travis app/Config/database.php
 for p in `cat app/Config/vendors.txt`
 do
   export IGNORE_PLUGINS=$IGNORE_PLUGINS,$TRAVIS_BUILD_DIR/app/Plugin/$p
-  export IGNORE_PLUGINS_OPTS="$IGNORE_PLUGINS_OPTS --exclude app/Plugin/$p"
+  export IGNORE_PLUGINS_OPTS="$IGNORE_PLUGINS_OPTS --exclude Plugin/$p"
 done
 
 echo "Configure::write('Security.salt', 'ForTravis');" >> ./app/Config/core.php
