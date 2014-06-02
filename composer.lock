@@ -718,12 +718,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/M17n.git",
-                "reference": "1442cbb453752f88016ed1331fe40b20a093490c"
+                "reference": "7a5b6f1e8b8db14330c9e7558586cb9235491332"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/M17n/zipball/1442cbb453752f88016ed1331fe40b20a093490c",
-                "reference": "1442cbb453752f88016ed1331fe40b20a093490c",
+                "url": "https://api.github.com/repos/NetCommons3/M17n/zipball/7a5b6f1e8b8db14330c9e7558586cb9235491332",
+                "reference": "7a5b6f1e8b8db14330c9e7558586cb9235491332",
                 "shasum": ""
             },
             "require": {
@@ -735,6 +735,7 @@
                 "twbs/bootstrap": "~3.1"
             },
             "require-dev": {
+                "mustangostang/spyc": "dev-master",
                 "satooshi/php-coveralls": "dev-master"
             },
             "bin": [
@@ -744,10 +745,7 @@
             "extra": {
                 "installer-paths": {
                     "app/Plugin/{$name}": [
-                        "cakephp/debug_kit",
-                        "cakedc/migrations",
-                        "mustangostang/spyc",
-                        "chronon/mobile_detect"
+                        "type:cakephp-plugin"
                     ]
                 }
             },
@@ -767,7 +765,7 @@
                 "cakephp",
                 "m17n"
             ],
-            "time": "2014-05-26 09:56:18"
+            "time": "2014-06-02 05:56:23"
         },
         {
             "name": "netcommons/users",
