@@ -1,9 +1,11 @@
 <?php
 /**
- * UserGroupLink Model
+ * LanguagesUserSelectAttribute Model
  *
- * @property UserGroup $UserGroup
- * @property User $User
+ * @property UserSelectAttribute $UserSelectAttribute
+ * @property Language $Language
+ * @property CreatedUser $CreatedUser
+ * @property ModifiedUser $ModifiedUser
  *
  * @author   Jun Nishikawa <topaz2@m0n0m0n0.com>
  * @link     http://www.netcommons.org NetCommons Project
@@ -13,9 +15,9 @@
 App::uses('AppModel', 'Model');
 
 /**
- * Summary for UserGroupLink Model
+ * Summary for LanguagesUserSelectAttribute Model
  */
-class UserGroupLink extends AppModel {
+class LanguagesUserSelectAttribute extends AppModel {
 
 /**
  * Validation rules
@@ -23,7 +25,7 @@ class UserGroupLink extends AppModel {
  * @var array
  */
 	public $validate = array(
-		'user_group_id' => array(
+		'user_select_attribute_id' => array(
 			'numeric' => array(
 				'rule' => array('numeric'),
 				//'message' => 'Your custom message here',
@@ -33,29 +35,9 @@ class UserGroupLink extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-		'user_id' => array(
+		'language_id' => array(
 			'numeric' => array(
 				'rule' => array('numeric'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'created_user_name' => array(
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'modified_user_name' => array(
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -73,16 +55,30 @@ class UserGroupLink extends AppModel {
  * @var array
  */
 	public $belongsTo = array(
-		'UserGroup' => array(
-			'className' => 'UserGroup',
-			'foreignKey' => 'user_group_id',
+		'UserSelectAttribute' => array(
+			'className' => 'UserSelectAttribute',
+			'foreignKey' => 'user_select_attribute_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
 		),
-		'User' => array(
-			'className' => 'User',
-			'foreignKey' => 'user_id',
+		'Language' => array(
+			'className' => 'Language',
+			'foreignKey' => 'language_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		),
+		'CreatedUser' => array(
+			'className' => 'CreatedUser',
+			'foreignKey' => 'created_user_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		),
+		'ModifiedUser' => array(
+			'className' => 'ModifiedUser',
+			'foreignKey' => 'modified_user_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''

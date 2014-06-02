@@ -1,9 +1,12 @@
 <?php
 /**
- * UserItemLink Model
+ * GroupsPartsUser Model
  *
+ * @property Group $Group
  * @property User $User
- * @property UserItem $UserItem
+ * @property Part $Part
+ * @property CreatedUser $CreatedUser
+ * @property ModifiedUser $ModifiedUser
  *
  * @author   Jun Nishikawa <topaz2@m0n0m0n0.com>
  * @link     http://www.netcommons.org NetCommons Project
@@ -13,9 +16,9 @@
 App::uses('AppModel', 'Model');
 
 /**
- * Summary for UserItemLink Model
+ * Summary for GroupsPartsUser Model
  */
-class UserItemLink extends AppModel {
+class GroupsPartsUser extends AppModel {
 
 /**
  * Validation rules
@@ -23,6 +26,16 @@ class UserItemLink extends AppModel {
  * @var array
  */
 	public $validate = array(
+		'group_id' => array(
+			'numeric' => array(
+				'rule' => array('numeric'),
+				//'message' => 'Your custom message here',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
+		),
 		'user_id' => array(
 			'numeric' => array(
 				'rule' => array('numeric'),
@@ -33,49 +46,9 @@ class UserItemLink extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-		'lang' => array(
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'user_item_id' => array(
+		'part_id' => array(
 			'numeric' => array(
 				'rule' => array('numeric'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'public_flag' => array(
-			'boolean' => array(
-				'rule' => array('boolean'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'email_reception_flag' => array(
-			'boolean' => array(
-				'rule' => array('boolean'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'content' => array(
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -93,6 +66,13 @@ class UserItemLink extends AppModel {
  * @var array
  */
 	public $belongsTo = array(
+		'Group' => array(
+			'className' => 'Group',
+			'foreignKey' => 'group_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		),
 		'User' => array(
 			'className' => 'User',
 			'foreignKey' => 'user_id',
@@ -100,9 +80,23 @@ class UserItemLink extends AppModel {
 			'fields' => '',
 			'order' => ''
 		),
-		'UserItem' => array(
-			'className' => 'UserItem',
-			'foreignKey' => 'user_item_id',
+		'Part' => array(
+			'className' => 'Part',
+			'foreignKey' => 'part_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		),
+		'CreatedUser' => array(
+			'className' => 'CreatedUser',
+			'foreignKey' => 'created_user_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		),
+		'ModifiedUser' => array(
+			'className' => 'ModifiedUser',
+			'foreignKey' => 'modified_user_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''

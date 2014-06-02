@@ -1,11 +1,15 @@
 <?php
 /**
- * UserGroup Model
+ * Frame Model
  *
- * @property Module $Module
- * @property Content $Content
- * @property Archive $Archive
- * @property UserGroupLink $UserGroupLink
+ * @property Box $Box
+ * @property Frame $ParentFrame
+ * @property Plugin $Plugin
+ * @property Block $Block
+ * @property CreatedUser $CreatedUser
+ * @property ModifiedUser $ModifiedUser
+ * @property Frame $ChildFrame
+ * @property Language $Language
  *
  * @author   Jun Nishikawa <topaz2@m0n0m0n0.com>
  * @link     http://www.netcommons.org NetCommons Project
@@ -15,9 +19,18 @@
 App::uses('AppModel', 'Model');
 
 /**
- * Summary for UserGroup Model
+ * Summary for Frame Model
  */
-class UserGroup extends AppModel {
+class Frame extends AppModel {
+
+/**
+ * Behaviors
+ *
+ * @var array
+ */
+	public $actsAs = array(
+		'Tree',
+	);
 
 /**
  * Validation rules
@@ -25,7 +38,7 @@ class UserGroup extends AppModel {
  * @var array
  */
 	public $validate = array(
-		'module_id' => array(
+		'box_id' => array(
 			'numeric' => array(
 				'rule' => array('numeric'),
 				//'message' => 'Your custom message here',
@@ -35,7 +48,7 @@ class UserGroup extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-		'content_id' => array(
+		'parent_id' => array(
 			'numeric' => array(
 				'rule' => array('numeric'),
 				//'message' => 'Your custom message here',
@@ -45,29 +58,9 @@ class UserGroup extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-		'name' => array(
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'created_user_name' => array(
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'modified_user_name' => array(
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
+		'plugin_id' => array(
+			'numeric' => array(
+				'rule' => array('numeric'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -85,16 +78,44 @@ class UserGroup extends AppModel {
  * @var array
  */
 	public $belongsTo = array(
-		'Module' => array(
-			'className' => 'Module',
-			'foreignKey' => 'module_id',
+		'Box' => array(
+			'className' => 'Box',
+			'foreignKey' => 'box_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
 		),
-		'Content' => array(
-			'className' => 'Content',
-			'foreignKey' => 'content_id',
+		'ParentFrame' => array(
+			'className' => 'Frame',
+			'foreignKey' => 'parent_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		),
+		'Plugin' => array(
+			'className' => 'Plugin',
+			'foreignKey' => 'plugin_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		),
+		'Block' => array(
+			'className' => 'Block',
+			'foreignKey' => 'block_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		),
+		'CreatedUser' => array(
+			'className' => 'CreatedUser',
+			'foreignKey' => 'created_user_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		),
+		'ModifiedUser' => array(
+			'className' => 'ModifiedUser',
+			'foreignKey' => 'modified_user_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
@@ -107,9 +128,9 @@ class UserGroup extends AppModel {
  * @var array
  */
 	public $hasMany = array(
-		'Archive' => array(
-			'className' => 'Archive',
-			'foreignKey' => 'user_group_id',
+		'ChildFrame' => array(
+			'className' => 'Frame',
+			'foreignKey' => 'parent_id',
 			'dependent' => false,
 			'conditions' => '',
 			'fields' => '',
@@ -119,19 +140,27 @@ class UserGroup extends AppModel {
 			'exclusive' => '',
 			'finderQuery' => '',
 			'counterQuery' => ''
-		),
-		'UserGroupLink' => array(
-			'className' => 'UserGroupLink',
-			'foreignKey' => 'user_group_id',
-			'dependent' => false,
+		)
+	);
+
+/**
+ * hasAndBelongsToMany associations
+ *
+ * @var array
+ */
+	public $hasAndBelongsToMany = array(
+		'Language' => array(
+			'className' => 'Language',
+			'joinTable' => 'frames_languages',
+			'foreignKey' => 'frame_id',
+			'associationForeignKey' => 'language_id',
+			'unique' => 'keepExisting',
 			'conditions' => '',
 			'fields' => '',
 			'order' => '',
 			'limit' => '',
 			'offset' => '',
-			'exclusive' => '',
 			'finderQuery' => '',
-			'counterQuery' => ''
 		)
 	);
 
