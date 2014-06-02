@@ -769,16 +769,16 @@
         },
         {
             "name": "netcommons/users",
-            "version": "0.0.2",
+            "version": "0.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Users.git",
-                "reference": "6d426a943f1b16bc09d6f6e210b50418cdd22148"
+                "reference": "f4bda0c3a0f1229a735bb535e96f251b8c4f176c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Users/zipball/6d426a943f1b16bc09d6f6e210b50418cdd22148",
-                "reference": "6d426a943f1b16bc09d6f6e210b50418cdd22148",
+                "url": "https://api.github.com/repos/NetCommons3/Users/zipball/f4bda0c3a0f1229a735bb535e96f251b8c4f176c",
+                "reference": "f4bda0c3a0f1229a735bb535e96f251b8c4f176c",
                 "shasum": ""
             },
             "require": {
@@ -809,7 +809,7 @@
                 "cakephp",
                 "user"
             ],
-            "time": "2014-05-20 05:08:04"
+            "time": "2014-06-02 07:47:27"
         },
         {
             "name": "psr/log",
