@@ -7,7 +7,7 @@ export PLUGIN_NAME=`basename $TRAVIS_BUILD_DIR`
 
 cp $TRAVIS_BUILD_DIR/composer.json .
 rm composer.lock
-cp -r ../$PLUGIN_NAME plugins
+cp -r ../$PLUGIN_NAME app/Plugin
 composer install
 chmod -R 777 app/tmp
 mkdir -p build/logs

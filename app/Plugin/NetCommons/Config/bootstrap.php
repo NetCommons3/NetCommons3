@@ -16,9 +16,9 @@ Configure::write('PhpDocumentor.classHeader', $header);
 $plugins = App::objects('plugins');
 foreach ($plugins as $plugin) {
 	$options = array();
-	is_readable(ROOT . DS . 'plugins' . DS . $plugin . DS . 'Config' . DS . 'bootstrap.php') &&
+	is_readable(ROOT . DS . 'app' . DS . 'Plugin' . DS . $plugin . DS . 'Config' . DS . 'bootstrap.php') &&
 		$options['bootstrap'] = true;
-	is_readable(ROOT . DS . 'plugins' . DS . $plugin . DS . 'Config' . DS . 'routes.php') &&
+	is_readable(ROOT . DS . 'app' . DS . 'Plugin' . DS . $plugin . DS . 'Config' . DS . 'routes.php') &&
 		$options['routes'] = true;
 	if (!CakePlugin::loaded($plugin)) {
 		CakePlugin::load($plugin, $options);

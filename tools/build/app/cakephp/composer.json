@@ -14,12 +14,7 @@
     ],
     "extra": {
         "installer-paths": {
-            "app/Plugin/{$name}": [
-                "cakephp/debug_kit",
-                "cakedc/migrations",
-                "mustangostang/spyc",
-                "chronon/mobile_detect"
-            ]
+            "app/Plugin/{$name}": ["type:cakephp-plugin"]
         }
     },
     "require": {
