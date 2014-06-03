@@ -80,6 +80,7 @@ class AppController extends Controller {
 
 /**
  * アクションの前に実行
+ *
  * @return void
  */
 	public function beforeFilter() {
@@ -102,6 +103,7 @@ class AppController extends Controller {
 
 /**
  * 表示前処理
+ *
  * @return void
  */
 	public function beforeRender() {
