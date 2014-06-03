@@ -28,16 +28,15 @@ cp app/Config/database.php.travis app/Config/database.php
 
 for p in `cat app/Config/vendors.txt`
 do
-  export IGNORE_PLUGINS=$IGNORE_PLUGINS,$TRAVIS_BUILD_DIR/app/Plugin/$p
+  export IGNORE_PLUGINS="$IGNORE_PLUGINS,$TRAVIS_BUILD_DIR/app/Plugin/$p"
   export IGNORE_PLUGINS_OPTS="$IGNORE_PLUGINS_OPTS --exclude Plugin/$p"
 done
+export IGNORE_PLUGINS=`echo $IGNORE_PLUGINS | cut -c 2-`
 
 echo "Configure::write('Security.salt', 'ForTravis');" >> ./app/Config/core.php
 echo "Configure::write('Security.cipherSeed', '999');" >> ./app/Config/core.php
 
-sudo apt-get install nodejs
-sudo apt-get install npm
+sudo apt-get install nodejs npm
 npm install -g bower
 bower install
 npm install jasmine-node karma karma-coverage karma-jasmine karma-firefox-launcher karma-phantomjs-launcher
-
