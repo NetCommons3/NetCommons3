@@ -76,13 +76,14 @@ class DATABASE_CONFIG {
 	);
 
 	public $test = array(
-		'datasource' => 'Database/Mysql',
-		'persistent' => false,
-		'host' => 'localhost',
-		'login' => 'test',
-		'password' => 'test',
-		'database' => 'test_nc3',
-		'prefix' => '',
-		'encoding' => 'utf8',
+		'datasource' => '{datasource}',
+		'persistent' => {persistent},
+		'host' => '{host}',
+		'port' => '{port}',
+		'login' => '{login}',
+		'password' => '{password}',
+		'database' => '{database}',
+		'prefix' => '{prefix}',
+		'encoding' => '{encoding}',
 	);
 }
