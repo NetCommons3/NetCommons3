@@ -33,7 +33,7 @@ class BlogStylesController extends AppController {
  * view method
  *
  * @throws NotFoundException
- * @param string $id
+ * @param string $id id
  * @return void
  */
 	public function view($id = null) {
@@ -67,7 +67,7 @@ class BlogStylesController extends AppController {
  * edit method
  *
  * @throws NotFoundException
- * @param string $id
+ * @param string $id id
  * @return void
  */
 	public function edit($id = null) {
@@ -93,7 +93,7 @@ class BlogStylesController extends AppController {
  * delete method
  *
  * @throws NotFoundException
- * @param string $id
+ * @param string $id id
  * @return void
  */
 	public function delete($id = null) {

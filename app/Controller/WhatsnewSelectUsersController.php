@@ -33,7 +33,7 @@ class WhatsnewSelectUsersController extends AppController {
  * view method
  *
  * @throws NotFoundException
- * @param string $id
+ * @param string $id id
  * @return void
  */
 	public function view($id = null) {
@@ -68,7 +68,7 @@ class WhatsnewSelectUsersController extends AppController {
  * edit method
  *
  * @throws NotFoundException
- * @param string $id
+ * @param string $id id
  * @return void
  */
 	public function edit($id = null) {
@@ -95,7 +95,7 @@ class WhatsnewSelectUsersController extends AppController {
  * delete method
  *
  * @throws NotFoundException
- * @param string $id
+ * @param string $id id
  * @return void
  */
 	public function delete($id = null) {
