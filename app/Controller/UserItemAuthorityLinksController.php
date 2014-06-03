@@ -32,8 +32,8 @@ class UserItemAuthorityLinksController extends AppController {
 /**
  * view method
  *
- * @throws NotFoundException
  * @param string $id id
+ * @throws NotFoundException
  * @return void
  */
 	public function view($id = null) {
@@ -66,8 +66,8 @@ class UserItemAuthorityLinksController extends AppController {
 /**
  * edit method
  *
- * @throws NotFoundException
  * @param string $id id
+ * @throws NotFoundException
  * @return void
  */
 	public function edit($id = null) {
@@ -92,8 +92,8 @@ class UserItemAuthorityLinksController extends AppController {
 /**
  * delete method
  *
- * @throws NotFoundException
  * @param string $id id
+ * @throws NotFoundException
  * @return void
  */
 	public function delete($id = null) {
