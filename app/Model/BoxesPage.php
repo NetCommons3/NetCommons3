@@ -4,8 +4,6 @@
  *
  * @property Page $Page
  * @property Box $Box
- * @property CreatedUser $CreatedUser
- * @property ModifiedUser $ModifiedUser
  *
  * @author   Jun Nishikawa <topaz2@m0n0m0n0.com>
  * @link     http://www.netcommons.org NetCommons Project
@@ -37,20 +35,6 @@ class BoxesPage extends AppModel {
 		'Box' => array(
 			'className' => 'Box',
 			'foreignKey' => 'box_id',
-			'conditions' => '',
-			'fields' => '',
-			'order' => ''
-		),
-		'CreatedUser' => array(
-			'className' => 'CreatedUser',
-			'foreignKey' => 'created_user_id',
-			'conditions' => '',
-			'fields' => '',
-			'order' => ''
-		),
-		'ModifiedUser' => array(
-			'className' => 'ModifiedUser',
-			'foreignKey' => 'modified_user_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''

@@ -4,8 +4,6 @@
  *
  * @property Group $Group
  * @property User $User
- * @property CreatedUser $CreatedUser
- * @property ModifiedUser $ModifiedUser
  *
  * @author   Jun Nishikawa <topaz2@m0n0m0n0.com>
  * @link     http://www.netcommons.org NetCommons Project
@@ -65,20 +63,6 @@ class GroupsUser extends AppModel {
 		'User' => array(
 			'className' => 'User',
 			'foreignKey' => 'user_id',
-			'conditions' => '',
-			'fields' => '',
-			'order' => ''
-		),
-		'CreatedUser' => array(
-			'className' => 'CreatedUser',
-			'foreignKey' => 'created_user_id',
-			'conditions' => '',
-			'fields' => '',
-			'order' => ''
-		),
-		'ModifiedUser' => array(
-			'className' => 'ModifiedUser',
-			'foreignKey' => 'modified_user_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''

@@ -4,8 +4,6 @@
  *
  * @property Block $Block
  * @property Language $Language
- * @property CreatedUser $CreatedUser
- * @property ModifiedUser $ModifiedUser
  *
  * @author   Jun Nishikawa <topaz2@m0n0m0n0.com>
  * @link     http://www.netcommons.org NetCommons Project
@@ -45,6 +43,14 @@ class BlocksLanguage extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
+		'name' => array(
+			'notEmpty' => array(
+				'rule' => array('notEmpty'),
+				'last' => true,
+				'required' => true,
+				'message' => 'Please be sure to input.'
+			)
+		),
 	);
 
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
@@ -68,20 +74,7 @@ class BlocksLanguage extends AppModel {
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
-		),
-		'CreatedUser' => array(
-			'className' => 'CreatedUser',
-			'foreignKey' => 'created_user_id',
-			'conditions' => '',
-			'fields' => '',
-			'order' => ''
-		),
-		'ModifiedUser' => array(
-			'className' => 'ModifiedUser',
-			'foreignKey' => 'modified_user_id',
-			'conditions' => '',
-			'fields' => '',
-			'order' => ''
 		)
 	);
+
 }

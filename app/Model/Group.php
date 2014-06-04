@@ -3,8 +3,6 @@
  * Group Model
  *
  * @property Group $ParentGroup
- * @property CreatedUser $CreatedUser
- * @property ModifiedUser $ModifiedUser
  * @property Group $ChildGroup
  * @property Room $Room
  * @property Language $Language
@@ -42,20 +40,6 @@ class Group extends AppModel {
 		'ParentGroup' => array(
 			'className' => 'Group',
 			'foreignKey' => 'parent_id',
-			'conditions' => '',
-			'fields' => '',
-			'order' => ''
-		),
-		'CreatedUser' => array(
-			'className' => 'CreatedUser',
-			'foreignKey' => 'created_user_id',
-			'conditions' => '',
-			'fields' => '',
-			'order' => ''
-		),
-		'ModifiedUser' => array(
-			'className' => 'ModifiedUser',
-			'foreignKey' => 'modified_user_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''

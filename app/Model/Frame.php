@@ -6,8 +6,6 @@
  * @property Frame $ParentFrame
  * @property Plugin $Plugin
  * @property Block $Block
- * @property CreatedUser $CreatedUser
- * @property ModifiedUser $ModifiedUser
  * @property Frame $ChildFrame
  * @property Language $Language
  *
@@ -102,20 +100,6 @@ class Frame extends AppModel {
 		'Block' => array(
 			'className' => 'Block',
 			'foreignKey' => 'block_id',
-			'conditions' => '',
-			'fields' => '',
-			'order' => ''
-		),
-		'CreatedUser' => array(
-			'className' => 'CreatedUser',
-			'foreignKey' => 'created_user_id',
-			'conditions' => '',
-			'fields' => '',
-			'order' => ''
-		),
-		'ModifiedUser' => array(
-			'className' => 'ModifiedUser',
-			'foreignKey' => 'modified_user_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''

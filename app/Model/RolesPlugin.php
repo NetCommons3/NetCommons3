@@ -4,8 +4,6 @@
  *
  * @property Role $Role
  * @property Plugin $Plugin
- * @property CreatedUser $CreatedUser
- * @property ModifiedUser $ModifiedUser
  *
  * @author   Jun Nishikawa <topaz2@m0n0m0n0.com>
  * @link     http://www.netcommons.org NetCommons Project
@@ -65,20 +63,6 @@ class RolesPlugin extends AppModel {
 		'Plugin' => array(
 			'className' => 'Plugin',
 			'foreignKey' => 'plugin_id',
-			'conditions' => '',
-			'fields' => '',
-			'order' => ''
-		),
-		'CreatedUser' => array(
-			'className' => 'CreatedUser',
-			'foreignKey' => 'created_user_id',
-			'conditions' => '',
-			'fields' => '',
-			'order' => ''
-		),
-		'ModifiedUser' => array(
-			'className' => 'ModifiedUser',
-			'foreignKey' => 'modified_user_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''

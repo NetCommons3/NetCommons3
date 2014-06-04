@@ -5,8 +5,6 @@
  * @property Group $Group
  * @property Space $Space
  * @property TopPage $TopPage
- * @property CreatedUser $CreatedUser
- * @property ModifiedUser $ModifiedUser
  * @property Block $Block
  * @property Box $Box
  * @property Page $Page
@@ -66,20 +64,6 @@ class Room extends AppModel {
 		'TopPage' => array(
 			'className' => 'TopPage',
 			'foreignKey' => 'top_page_id',
-			'conditions' => '',
-			'fields' => '',
-			'order' => ''
-		),
-		'CreatedUser' => array(
-			'className' => 'CreatedUser',
-			'foreignKey' => 'created_user_id',
-			'conditions' => '',
-			'fields' => '',
-			'order' => ''
-		),
-		'ModifiedUser' => array(
-			'className' => 'ModifiedUser',
-			'foreignKey' => 'modified_user_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''

@@ -3,8 +3,6 @@
  * Space Model
  *
  * @property Space $ParentSpace
- * @property CreatedUser $CreatedUser
- * @property ModifiedUser $ModifiedUser
  * @property Box $Box
  * @property Room $Room
  * @property Space $ChildSpace
@@ -30,7 +28,6 @@ class Space extends AppModel {
 		'Tree',
 	);
 
-
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
 
 /**
@@ -42,20 +39,6 @@ class Space extends AppModel {
 		'ParentSpace' => array(
 			'className' => 'Space',
 			'foreignKey' => 'parent_id',
-			'conditions' => '',
-			'fields' => '',
-			'order' => ''
-		),
-		'CreatedUser' => array(
-			'className' => 'CreatedUser',
-			'foreignKey' => 'created_user_id',
-			'conditions' => '',
-			'fields' => '',
-			'order' => ''
-		),
-		'ModifiedUser' => array(
-			'className' => 'ModifiedUser',
-			'foreignKey' => 'modified_user_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''

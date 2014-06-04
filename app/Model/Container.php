@@ -2,8 +2,6 @@
 /**
  * Container Model
  *
- * @property CreatedUser $CreatedUser
- * @property ModifiedUser $ModifiedUser
  * @property Box $Box
  * @property Page $Page
  *
@@ -20,28 +18,6 @@ App::uses('AppModel', 'Model');
 class Container extends AppModel {
 
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
-
-/**
- * belongsTo associations
- *
- * @var array
- */
-	public $belongsTo = array(
-		'CreatedUser' => array(
-			'className' => 'CreatedUser',
-			'foreignKey' => 'created_user_id',
-			'conditions' => '',
-			'fields' => '',
-			'order' => ''
-		),
-		'ModifiedUser' => array(
-			'className' => 'ModifiedUser',
-			'foreignKey' => 'modified_user_id',
-			'conditions' => '',
-			'fields' => '',
-			'order' => ''
-		)
-	);
 
 /**
  * hasMany associations

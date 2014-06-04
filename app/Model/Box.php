@@ -6,8 +6,6 @@
  * @property Space $Space
  * @property Room $Room
  * @property Page $Page
- * @property CreatedUser $CreatedUser
- * @property ModifiedUser $ModifiedUser
  * @property Frame $Frame
  * @property Page $Page
  *
@@ -55,20 +53,6 @@ class Box extends AppModel {
 		'Page' => array(
 			'className' => 'Page',
 			'foreignKey' => 'page_id',
-			'conditions' => '',
-			'fields' => '',
-			'order' => ''
-		),
-		'CreatedUser' => array(
-			'className' => 'CreatedUser',
-			'foreignKey' => 'created_user_id',
-			'conditions' => '',
-			'fields' => '',
-			'order' => ''
-		),
-		'ModifiedUser' => array(
-			'className' => 'ModifiedUser',
-			'foreignKey' => 'modified_user_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''

@@ -4,8 +4,6 @@
  *
  * @property UserAttribute $UserAttribute
  * @property Language $Language
- * @property CreatedUser $CreatedUser
- * @property ModifiedUser $ModifiedUser
  * @property User $User
  *
  * @author   Jun Nishikawa <topaz2@m0n0m0n0.com>
@@ -66,20 +64,6 @@ class LanguagesUserAttribute extends AppModel {
 		'Language' => array(
 			'className' => 'Language',
 			'foreignKey' => 'language_id',
-			'conditions' => '',
-			'fields' => '',
-			'order' => ''
-		),
-		'CreatedUser' => array(
-			'className' => 'CreatedUser',
-			'foreignKey' => 'created_user_id',
-			'conditions' => '',
-			'fields' => '',
-			'order' => ''
-		),
-		'ModifiedUser' => array(
-			'className' => 'ModifiedUser',
-			'foreignKey' => 'modified_user_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
