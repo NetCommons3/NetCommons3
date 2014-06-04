@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "POT-Creation-Date: 2014-05-27 10:08+0900\n"
-"PO-Revision-Date: 2014-06-04 16:27+0900\n"
+"PO-Revision-Date: 2014-06-04 16:46+0900\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -26,13 +26,21 @@ msgstr "%s 書き込み可"
 msgid "The user could not be saved. Please try again."
 msgstr "ユーザを保存できませんでした。暫くしてから再度お試し下さい。"
 
+#: View/Install/finish.ctp:2
+msgid "Installed"
+msgstr "インストール完了"
+
+#: View/Install/finish.ctp:4
+msgid "Install Failed"
+msgstr "インストール失敗"
+
 #: View/Install/finish.ctp:4
 msgid "Home"
 msgstr "ホーム"
 
 #: View/Install/finish.ctp:8
-msgid "By clicking the button, you can jump to the home"
-msgstr "下記ボタンをクリックすると、ホーム画面へ移動します"
+msgid "By clicking the button, you can jump to the home."
+msgstr "下記ボタンをクリックすると、ホーム画面へ移動します。"
 
 #: View/Install/index.ctp:9
 msgid "Term"
@@ -73,8 +81,8 @@ msgstr ""
 "利用者が当サイト及び当サイトに関連するコンテンツ、リンク先サイトにおける一切のサービス等をご利用されたことに起因または関連して生じた一切の損害（間接的であると直接的であるとを問わない）について、当サイトは責任を負いません。"
 
 #: View/Install/index.ctp:45
-msgid "By clicking the button, you agree to the terms above"
-msgstr "ボタンをクリックすることで、上記利用規約に同意したものとします"
+msgid "By clicking the button, you agree to the terms above."
+msgstr "ボタンをクリックすることで、上記利用規約に同意したものとします。"
 
 #: View/Install/index.ctp:46
 #: View/Install/init_db.ctp:35
