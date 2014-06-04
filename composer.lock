@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1ceca4a125be85354b42728f3b2f3ddd",
+    "hash": "9b2203a539a330addd987690eff14d12",
     "packages": [
         {
             "name": "burzum/cakephp-html-purifier",
@@ -665,16 +665,16 @@
         },
         {
             "name": "netcommons/install",
-            "version": "0.0.12",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Install.git",
-                "reference": "2e414f49dd78ebb44beabd50d83dbde6fd0e3b01"
+                "reference": "80eb81279d8688dec1e541a429640d7fa4353deb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Install/zipball/2e414f49dd78ebb44beabd50d83dbde6fd0e3b01",
-                "reference": "2e414f49dd78ebb44beabd50d83dbde6fd0e3b01",
+                "url": "https://api.github.com/repos/NetCommons3/Install/zipball/80eb81279d8688dec1e541a429640d7fa4353deb",
+                "reference": "80eb81279d8688dec1e541a429640d7fa4353deb",
                 "shasum": ""
             },
             "require": {
@@ -708,7 +708,7 @@
                 "cakephp",
                 "install"
             ],
-            "time": "2014-06-04 02:44:24"
+            "time": "2014-06-04 05:56:52"
         },
         {
             "name": "netcommons/m17n",
@@ -761,6 +761,58 @@
                 "m17n"
             ],
             "time": "2014-06-04 02:41:03"
+        },
+        {
+            "name": "netcommons/net-commons",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/NetCommons3/NetCommons.git",
+                "reference": "0afc3155d31a240d250d540c46d5e055a3c70862"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/NetCommons3/NetCommons/zipball/0afc3155d31a240d250d540c46d5e055a3c70862",
+                "reference": "0afc3155d31a240d250d540c46d5e055a3c70862",
+                "shasum": ""
+            },
+            "require": {
+                "cakedc/migrations": "~2.2",
+                "cakephp/cakephp": "~2.4",
+                "cakephp/debug_kit": "~2.2",
+                "chronon/mobile_detect": "*",
+                "components/jquery": "~2.1",
+                "twbs/bootstrap": "~3.1"
+            },
+            "require-dev": {
+                "mustangostang/spyc": "dev-master",
+                "satooshi/php-coveralls": "dev-master"
+            },
+            "type": "cakephp-plugin",
+            "extra": {
+                "installer-paths": {
+                    "app/Plugin/{$name}": [
+                        "type:cakephp-plugin"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "NetCommons License"
+            ],
+            "authors": [
+                {
+                    "name": "NetCommons Community",
+                    "homepage": "https://github.com/NetCommons3/NetCommons/graphs/contributors"
+                }
+            ],
+            "description": "NetCommons Plugin",
+            "homepage": "http://www.netcommons.org/",
+            "keywords": [
+                "cakephp",
+                "netcommons"
+            ],
+            "time": "2014-06-04 05:31:53"
         },
         {
             "name": "netcommons/users",
@@ -1384,7 +1436,10 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
+        "netcommons/install": 20,
         "netcommons/m17n": 20,
+        "netcommons/net-commons": 20,
+        "netcommons/users": 20,
         "satooshi/php-coveralls": 20,
         "mustangostang/spyc": 20
     },
