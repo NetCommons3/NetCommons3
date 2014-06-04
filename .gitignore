@@ -4,7 +4,6 @@
 /app/Config/application.yml
 /app/tmp
 /lib/Cake/Console/Templates/skel/tmp/
-/plugins
 /vendors
 /build
 /dist
@@ -23,10 +22,7 @@ TAGS
 /app/webroot/js/*.dev.js
 /app/webroot/css/*.min.css
 /app/webroot/css/*.dev.css
-/app/Plugin/Migrations
-/app/Plugin/MobileDetect
-/app/Plugin/DebugKit
-/app/Plugin/BoostCake
+/app/Plugin/
 /.settings
 /.buildpath
 /.project
