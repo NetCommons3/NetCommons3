@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "POT-Creation-Date: 2014-05-27 10:08+0900\n"
-"PO-Revision-Date: 2014-05-27 10:28+0900\n"
+"PO-Revision-Date: 2014-06-04 16:27+0900\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -18,9 +18,9 @@ msgstr ""
 msgid "Failed to write %s. Please check permission."
 msgstr "%s に書き込みができません。パーミッションを確認して下さい。"
 
-#: Controller/InstallController.php:76;82
-msgid "OK: %s"
-msgstr "OK: %s"
+#: Controller/InstallController.php:120;132
+msgid "%s is writable"
+msgstr "%s 書き込み可"
 
 #: Controller/InstallController.php:160
 msgid "The user could not be saved. Please try again."
@@ -29,6 +29,10 @@ msgstr "ユーザを保存できませんでした。暫くしてから再度お
 #: View/Install/finish.ctp:4
 msgid "Home"
 msgstr "ホーム"
+
+#: View/Install/finish.ctp:8
+msgid "By clicking the button, you can jump to the home"
+msgstr "下記ボタンをクリックすると、ホーム画面へ移動します"
 
 #: View/Install/index.ctp:9
 msgid "Term"
@@ -70,7 +74,7 @@ msgstr ""
 
 #: View/Install/index.ctp:45
 msgid "By clicking the button, you agree to the terms above"
-msgstr "ボタンをクリックすることで、上記利用規約に同意したものとします。"
+msgstr "ボタンをクリックすることで、上記利用規約に同意したものとします"
 
 #: View/Install/index.ctp:46
 #: View/Install/init_db.ctp:35
