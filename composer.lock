@@ -665,16 +665,16 @@
         },
         {
             "name": "netcommons/install",
-            "version": "0.0.10",
+            "version": "0.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Install.git",
-                "reference": "ee4a892be5fc93fac9bf78e2bfb9dc230692daf6"
+                "reference": "eaaaddc56b8695bef0ebc1a4d84927c6ca8f0b13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Install/zipball/ee4a892be5fc93fac9bf78e2bfb9dc230692daf6",
-                "reference": "ee4a892be5fc93fac9bf78e2bfb9dc230692daf6",
+                "url": "https://api.github.com/repos/NetCommons3/Install/zipball/eaaaddc56b8695bef0ebc1a4d84927c6ca8f0b13",
+                "reference": "eaaaddc56b8695bef0ebc1a4d84927c6ca8f0b13",
                 "shasum": ""
             },
             "require": {
@@ -687,16 +687,14 @@
                 "twbs/bootstrap": "~3.1"
             },
             "require-dev": {
+                "mustangostang/spyc": "dev-master",
                 "satooshi/php-coveralls": "dev-master"
             },
             "type": "cakephp-plugin",
             "extra": {
                 "installer-paths": {
                     "app/Plugin/{$name}": [
-                        "cakephp/debug_kit",
-                        "cakedc/migrations",
-                        "mustangostang/spyc",
-                        "chronon/mobile_detect"
+                        "type:cakephp-plugin"
                     ]
                 }
             },
@@ -710,7 +708,7 @@
                 "cakephp",
                 "install"
             ],
-            "time": "2014-05-30 06:19:08"
+            "time": "2014-06-04 01:54:26"
         },
         {
             "name": "netcommons/m17n",
@@ -718,12 +716,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/M17n.git",
-                "reference": "7a5b6f1e8b8db14330c9e7558586cb9235491332"
+                "reference": "a3d7d5f1e35dfc10e73dfd4e3b2b5ffc8e8fb9c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/M17n/zipball/7a5b6f1e8b8db14330c9e7558586cb9235491332",
-                "reference": "7a5b6f1e8b8db14330c9e7558586cb9235491332",
+                "url": "https://api.github.com/repos/NetCommons3/M17n/zipball/a3d7d5f1e35dfc10e73dfd4e3b2b5ffc8e8fb9c5",
+                "reference": "a3d7d5f1e35dfc10e73dfd4e3b2b5ffc8e8fb9c5",
                 "shasum": ""
             },
             "require": {
@@ -765,20 +763,20 @@
                 "cakephp",
                 "m17n"
             ],
-            "time": "2014-06-02 05:56:23"
+            "time": "2014-06-04 01:48:34"
         },
         {
             "name": "netcommons/users",
-            "version": "0.0.3",
+            "version": "0.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Users.git",
-                "reference": "f4bda0c3a0f1229a735bb535e96f251b8c4f176c"
+                "reference": "42bfe76a276d76033d31d784582b2428c342f9e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Users/zipball/f4bda0c3a0f1229a735bb535e96f251b8c4f176c",
-                "reference": "f4bda0c3a0f1229a735bb535e96f251b8c4f176c",
+                "url": "https://api.github.com/repos/NetCommons3/Users/zipball/42bfe76a276d76033d31d784582b2428c342f9e6",
+                "reference": "42bfe76a276d76033d31d784582b2428c342f9e6",
                 "shasum": ""
             },
             "require": {
@@ -789,10 +787,18 @@
                 "twbs/bootstrap": "~3.1"
             },
             "require-dev": {
+                "mustangostang/spyc": "dev-master",
                 "netcommons/auth": "dev-master",
                 "satooshi/php-coveralls": "dev-master"
             },
             "type": "cakephp-plugin",
+            "extra": {
+                "installer-paths": {
+                    "app/Plugin/{$name}": [
+                        "type:cakephp-plugin"
+                    ]
+                }
+            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "NetCommons License"
@@ -809,7 +815,7 @@
                 "cakephp",
                 "user"
             ],
-            "time": "2014-06-02 07:47:27"
+            "time": "2014-06-04 01:40:44"
         },
         {
             "name": "psr/log",
