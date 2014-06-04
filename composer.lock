@@ -665,16 +665,16 @@
         },
         {
             "name": "netcommons/install",
-            "version": "0.0.11",
+            "version": "0.0.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Install.git",
-                "reference": "eaaaddc56b8695bef0ebc1a4d84927c6ca8f0b13"
+                "reference": "2e414f49dd78ebb44beabd50d83dbde6fd0e3b01"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Install/zipball/eaaaddc56b8695bef0ebc1a4d84927c6ca8f0b13",
-                "reference": "eaaaddc56b8695bef0ebc1a4d84927c6ca8f0b13",
+                "url": "https://api.github.com/repos/NetCommons3/Install/zipball/2e414f49dd78ebb44beabd50d83dbde6fd0e3b01",
+                "reference": "2e414f49dd78ebb44beabd50d83dbde6fd0e3b01",
                 "shasum": ""
             },
             "require": {
@@ -708,7 +708,7 @@
                 "cakephp",
                 "install"
             ],
-            "time": "2014-06-04 01:54:26"
+            "time": "2014-06-04 02:44:24"
         },
         {
             "name": "netcommons/m17n",
@@ -716,12 +716,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/M17n.git",
-                "reference": "a3d7d5f1e35dfc10e73dfd4e3b2b5ffc8e8fb9c5"
+                "reference": "2b8c53dfcf2bd164e2fb626508c7bb594250cb07"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/M17n/zipball/a3d7d5f1e35dfc10e73dfd4e3b2b5ffc8e8fb9c5",
-                "reference": "a3d7d5f1e35dfc10e73dfd4e3b2b5ffc8e8fb9c5",
+                "url": "https://api.github.com/repos/NetCommons3/M17n/zipball/2b8c53dfcf2bd164e2fb626508c7bb594250cb07",
+                "reference": "2b8c53dfcf2bd164e2fb626508c7bb594250cb07",
                 "shasum": ""
             },
             "require": {
@@ -736,9 +736,6 @@
                 "mustangostang/spyc": "dev-master",
                 "satooshi/php-coveralls": "dev-master"
             },
-            "bin": [
-                "lib/Cake/Console/cake"
-            ],
             "type": "cakephp-plugin",
             "extra": {
                 "installer-paths": {
@@ -763,7 +760,7 @@
                 "cakephp",
                 "m17n"
             ],
-            "time": "2014-06-04 01:48:34"
+            "time": "2014-06-04 02:41:03"
         },
         {
             "name": "netcommons/users",
