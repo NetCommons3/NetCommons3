@@ -29,308 +29,127 @@ class Block extends AppModel {
  *
  * @var array
  */
-	public $validate = array(
-		'page_id' => array(
-			'numeric' => array(
-				'rule' => array('numeric'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'content_id' => array(
-			'numeric' => array(
-				'rule' => array('numeric'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'module_id' => array(
-			'numeric' => array(
-				'rule' => array('numeric'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'title' => array(
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'show_title' => array(
-			'boolean' => array(
-				'rule' => array('boolean'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'controller_action' => array(
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'root' => array(
-			'numeric' => array(
-				'rule' => array('numeric'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'parent_id' => array(
-			'numeric' => array(
-				'rule' => array('numeric'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'thread_num' => array(
-			'numeric' => array(
-				'rule' => array('numeric'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'col_num' => array(
-			'numeric' => array(
-				'rule' => array('numeric'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'row_num' => array(
-			'numeric' => array(
-				'rule' => array('numeric'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'display_flag' => array(
-			'boolean' => array(
-				'rule' => array('boolean'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'theme_name' => array(
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'temp_name' => array(
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'min_width_size' => array(
-			'numeric' => array(
-				'rule' => array('numeric'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'min_height_size' => array(
-			'numeric' => array(
-				'rule' => array('numeric'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'lock_authority_num' => array(
-			'numeric' => array(
-				'rule' => array('numeric'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'created_user_name' => array(
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'modified_user_name' => array(
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-	);
+	public $validate = array();
 
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
 
 /**
- * belongsTo associations
+ * hasAndBelongsToMany associations
  *
  * @var array
  */
-	public $belongsTo = array(
-		'Page' => array(
-			'className' => 'Page',
-			'foreignKey' => 'page_id',
+	public $hasAndBelongsToMany = array(
+		'Language' => array(
+			'className' => 'Language',
+			'joinTable' => 'blocks_languages',
+			'with' => 'BlocksLanguage',
+			'foreignKey' => 'block_id',
+			'associationForeignKey' => 'language_id',
+			'unique' => 'keepExisting',
 			'conditions' => '',
 			'fields' => '',
-			'order' => ''
-		),
-		'Content' => array(
-			'className' => 'Content',
-			'foreignKey' => 'content_id',
-			'conditions' => '',
-			'fields' => '',
-			'order' => ''
-		),
-		'Module' => array(
-			'className' => 'Module',
-			'foreignKey' => 'module_id',
-			'conditions' => '',
-			'fields' => '',
-			'order' => ''
-		),
-		'ParentBlock' => array(
-			'className' => 'Block',
-			'foreignKey' => 'parent_id',
-			'conditions' => '',
-			'fields' => '',
-			'order' => ''
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'finderQuery' => '',
 		)
 	);
 
 /**
- * hasMany associations
+ * findRoomPartByBlockId
+ * 共通のModelの処理へ移動するべき。
+ * 現在のuser_idにおけるブロックのPartテーブルの編集権限を取得
+ * block_idからroom_idを求め、user_id,room_idからpart_idを求め
+ * room_parts.can_xxxx(can_edit_block等)を見て判断。
  *
- * @var array
+ * @param   integer $blockId
+ * @param   integer $userId
+ * @return  mixed array $roomPart or boolean false
  */
-	public $hasMany = array(
-		'ChildBlock' => array(
-			'className' => 'Block',
-			'foreignKey' => 'parent_id',
-			'dependent' => false,
-			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'limit' => '',
-			'offset' => '',
-			'exclusive' => '',
-			'finderQuery' => '',
-			'counterQuery' => ''
-		),
-		'BlogStyle' => array(
-			'className' => 'BlogStyle',
-			'foreignKey' => 'block_id',
-			'dependent' => false,
-			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'limit' => '',
-			'offset' => '',
-			'exclusive' => '',
-			'finderQuery' => '',
-			'counterQuery' => ''
-		),
-		'WhatsnewSelectRoom' => array(
-			'className' => 'WhatsnewSelectRoom',
-			'foreignKey' => 'block_id',
-			'dependent' => false,
-			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'limit' => '',
-			'offset' => '',
-			'exclusive' => '',
-			'finderQuery' => '',
-			'counterQuery' => ''
-		),
-		'WhatsnewSelectUser' => array(
-			'className' => 'WhatsnewSelectUser',
-			'foreignKey' => 'block_id',
-			'dependent' => false,
-			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'limit' => '',
-			'offset' => '',
-			'exclusive' => '',
-			'finderQuery' => '',
-			'counterQuery' => ''
-		),
-		'WhatsnewStyle' => array(
-			'className' => 'WhatsnewStyle',
-			'foreignKey' => 'block_id',
-			'dependent' => false,
-			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'limit' => '',
-			'offset' => '',
-			'exclusive' => '',
-			'finderQuery' => '',
-			'counterQuery' => ''
-		)
-	);
+	public function findRoomPartByBlockId($blockId, $userId) {
+		$roomPart = $this->find('first', array(
+			'fields' => array(
+				'RoomPart.id',
+				'RoomPart.part_id',
+				'RoomPart.can_read_page',
+				'RoomPart.can_edit_page',
+				'RoomPart.can_create_page',
+				'RoomPart.can_publish_page',
+				'RoomPart.can_read_block',
+				'RoomPart.can_edit_block',
+				'RoomPart.can_create_block',
+				'RoomPart.can_publish_block',
+				'RoomPart.can_read_content',
+				'RoomPart.can_edit_content',
+				'RoomPart.can_create_content',
+				'RoomPart.can_publish_content',
+			),
+			'recursive' => -1,
+			'conditions' => array('Block.id' => $blockId),
+			'joins' => array(
+				array(
+					"type" => "INNER",
+					"table" => "parts_rooms_users",
+					"alias" => "PartsRoomsUser",
+					"conditions" => array(
+						'PartsRoomsUser.room_id = Block.room_id',
+						'PartsRoomsUser.user_id' => $userId
+					)
+				),
+				array(
+					"type" => "INNER",
+					"table" => "room_parts",
+					"alias" => "RoomPart",
+					"conditions" => array(
+						'RoomPart.part_id = PartsRoomsUser.part_id'
+					)
+				),
+			),
+		));
+
+		if (!isset($roomPart['RoomPart'])) {
+			return false;
+		}
+		return $roomPart;
+	}
+
+/**
+ * ブロック追加
+ *
+ *
+ * @param   integer $frameId
+ * @return  mixed $blockId or false
+ */
+	public function addBlock($frameId) {
+		// テスト用データ
+		// frameIDから権限チェックが必要
+
+		$data['Block'] = array(
+			'id' => 0,
+			'room_id' => 1,	// 固定値
+		);
+		$data['Language'] = array(
+			array(
+				'id' => 1,
+				'BlocksLanguage' => array(
+					'language_id' => 1,
+					'name' => 'Test' . date('Y/m/d H:i:s'),
+				),
+			),
+			array(
+				'id' => 2,
+				'BlocksLanguage' => array(
+					'language_id' => 2,
+					'name' => 'テスト' . date('Y/m/d H:i:s'),
+				),
+			),
+		);
+		$this->create();
+		if (!$this->save($data)) {
+			return false;
+		}
+
+		return $this->id;
+	}
 
 }
