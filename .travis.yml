@@ -10,37 +10,13 @@ env:
   - DB=sqlite
 
 before_script:
-  - composer install
-  - sh -c "if [ '$DB' = 'mysql' ]; then mysql -e 'CREATE DATABASE cakephp_test;'; fi"
-  - sh -c "if [ '$DB' = 'mysql' ]; then mysql -e 'CREATE DATABASE cakephp_test2;'; fi"
-  - sh -c "if [ '$DB' = 'mysql' ]; then mysql -e 'CREATE DATABASE cakephp_test3;'; fi"
-  - sh -c "if [ '$DB' = 'pgsql' ]; then psql -c 'CREATE DATABASE cakephp_test;' -U postgres; fi"
-  - sh -c "if [ '$DB' = 'pgsql' ]; then psql -c 'CREATE SCHEMA test2;' -U postgres -d cakephp_test; fi"
-  - sh -c "if [ '$DB' = 'pgsql' ]; then psql -c 'CREATE SCHEMA test3;' -U postgres -d cakephp_test; fi"
-  - chmod -R 777 ./app/tmp
-  - mkdir -p build/logs
-  - pear channel-discover pear.phpunit.de
-  - pear config-set auto_discover 1; pear install --alldeps phpunit/PHPUnit-3.7.32
-  - pear channel-discover pear.cakephp.org
-  - pear install --alldeps cakephp/CakePHP_CodeSniffer
-  - pear channel-discover pear.phpmd.org
-  - pear channel-discover pear.pdepend.org
-  - pear install phpmd/PHP_PMD
-  - pear config-set auto_discover 1
-  - pear install pear.phpunit.de/phpcpd
-  - phpenv rehash
-  - set +H
-  - cp app/Config/database.php.travis app/Config/database.php
-  - for p in `cat app/Config/vendors.txt`; do export IGNORE_PLUGINS=$IGNORE_PLUGINS,$TRAVIS_BUILD_DIR/app/Plugin/$p; export IGNORE_PLUGINS_OPTS="$IGNORE_PLUGINS_OPTS --exclude Plugin/$p"; done
+  - . tools/build/app/cakephp/travis/pre.sh
 
 script:
-  - ./lib/Cake/Console/cake test app All --stderr --configuration phpunit.xml.dist
-  - phpcs -p --extensions=php --standard=CakePHP --ignore=app/Config/Migration/,app/Config/database.php,$IGNORE_PLUGINS app
-  - phpmd app text ruleset/phpmd.xml --exclude $TRAVIS_BUILD_DIR/app/Config/Migration,$IGNORE_PLUGINS
-  - phpcpd --exclude Test --exclude Config $IGNORE_PLUGINS_OPTS app
+  - . tools/build/app/cakephp/travis/main.sh
 
 after_script:
-  - php vendors/bin/coveralls -vvv
+  - . tools/build/app/cakephp/travis/post.sh
 
 notifications:
   email:
