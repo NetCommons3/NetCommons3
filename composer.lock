@@ -669,12 +669,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Install.git",
-                "reference": "c381c00584fee45c1d280a6afdcce3a17b5fcef2"
+                "reference": "615d854bc3d5e7bf0fa99bcaf5f9c237efb3e89d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Install/zipball/c381c00584fee45c1d280a6afdcce3a17b5fcef2",
-                "reference": "c381c00584fee45c1d280a6afdcce3a17b5fcef2",
+                "url": "https://api.github.com/repos/NetCommons3/Install/zipball/615d854bc3d5e7bf0fa99bcaf5f9c237efb3e89d",
+                "reference": "615d854bc3d5e7bf0fa99bcaf5f9c237efb3e89d",
                 "shasum": ""
             },
             "require": {
@@ -708,7 +708,7 @@
                 "cakephp",
                 "install"
             ],
-            "time": "2014-06-09 08:57:21"
+            "time": "2014-06-09 09:42:01"
         },
         {
             "name": "netcommons/m17n",
@@ -816,16 +816,16 @@
         },
         {
             "name": "netcommons/users",
-            "version": "0.0.6",
+            "version": "0.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Users.git",
-                "reference": "1c2274e104a6f38c2a4e47f1d87cca32755a1e54"
+                "reference": "767d175cc0c3798994e62de93c3cd0d26f5f4c67"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Users/zipball/1c2274e104a6f38c2a4e47f1d87cca32755a1e54",
-                "reference": "1c2274e104a6f38c2a4e47f1d87cca32755a1e54",
+                "url": "https://api.github.com/repos/NetCommons3/Users/zipball/767d175cc0c3798994e62de93c3cd0d26f5f4c67",
+                "reference": "767d175cc0c3798994e62de93c3cd0d26f5f4c67",
                 "shasum": ""
             },
             "require": {
@@ -864,7 +864,7 @@
                 "cakephp",
                 "user"
             ],
-            "time": "2014-06-09 08:37:20"
+            "time": "2014-06-09 09:20:51"
         },
         {
             "name": "psr/log",
