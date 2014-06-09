@@ -985,6 +985,20 @@ class Initial extends CakeMigration {
 					),
 					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB'),
 				),
+				'users' => array(
+					'id' => array('type' => 'integer', 'null' => false, 'default' => null, 'key' => 'primary'),
+					'username' => array('type' => 'string', 'null' => true, 'default' => null, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
+					'password' => array('type' => 'string', 'null' => true, 'default' => null, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
+					'role_id' => array('type' => 'integer', 'null' => false, 'default' => null),
+					'created_user_id' => array('type' => 'integer', 'null' => true, 'default' => null),
+					'created' => array('type' => 'datetime', 'null' => true, 'default' => null),
+					'modified_user_id' => array('type' => 'integer', 'null' => true, 'default' => null),
+					'modified' => array('type' => 'datetime', 'null' => true, 'default' => null),
+					'indexes' => array(
+						'PRIMARY' => array('column' => 'id', 'unique' => 1)
+					),
+					'tableParameters' => array('charset' => 'utf8', 'collate' => 'utf8_general_ci', 'engine' => 'InnoDB')
+				),
 				'user_attributes' => array(
 					'id' => array('type' => 'integer', 'null' => false, 'default' => null, 'key' => 'primary'),
 					'type' => array('type' => 'integer', 'null' => true, 'default' => null),
@@ -1068,7 +1082,7 @@ class Initial extends CakeMigration {
 /**
  * Before migration callback
  *
- * @param string $direction, up or down direction of migration process
+ * @param string $direction up or down direction of migration process
  * @return boolean Should process continue
  * @access public
  */
@@ -1079,7 +1093,7 @@ class Initial extends CakeMigration {
 /**
  * After migration callback
  *
- * @param string $direction, up or down direction of migration process
+ * @param string $direction up or down direction of migration process
  * @return boolean Should process continue
  * @access public
  */
@@ -1102,6 +1116,7 @@ class Initial extends CakeMigration {
  *
  * @param string $model model name to update
  * @param string $records records to be stored
+ * @param string $scope ?
  * @return boolean Should process continue
  */
 	public function updateRecords($model, $records, $scope = null) {
