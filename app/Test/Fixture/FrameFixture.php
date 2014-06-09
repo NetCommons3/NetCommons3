@@ -46,7 +46,7 @@ class FrameFixture extends CakeTestFixture {
  */
 	public $records = array(
 		array(
-			'id' => 1,
+			'id' => NULL,
 			'box_id' => 1,
 			'parent_id' => 1,
 			'lft' => 1,
