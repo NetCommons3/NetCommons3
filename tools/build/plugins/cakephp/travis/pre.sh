@@ -11,6 +11,7 @@ cp -r ../$PLUGIN_NAME app/Plugin
 composer install
 chmod -R 777 app/tmp
 mkdir -p build/logs
+mkdir -p build/cov
 
 pear config-set auto_discover 1
 pear channel-discover pear.phpunit.de
@@ -24,7 +25,9 @@ pear install phpunit/phpcpd
 
 phpenv rehash
 set +H
-cp app/Config/database.php.travis app/Config/database.php
+if [ $PLUGIN_NAME != "Install" ]; then
+  cp app/Config/database.php.travis app/Config/database.php
+fi
 
 for p in `cat app/Config/vendors.txt`
 do
