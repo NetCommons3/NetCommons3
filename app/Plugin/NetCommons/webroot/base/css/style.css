@@ -20,3 +20,9 @@ body{
   text-align: center;
 }
 
+input[type="radio"] ,
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+
