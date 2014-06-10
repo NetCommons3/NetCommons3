@@ -25,4 +25,5 @@ input[type="checkbox"] {
     margin-right: 5px;
 }
 
+.ace_editor { height: 150px; }
 
