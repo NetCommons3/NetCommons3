@@ -669,12 +669,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Install.git",
-                "reference": "615d854bc3d5e7bf0fa99bcaf5f9c237efb3e89d"
+                "reference": "6913b437538917215f350d25a2c5603538b6835c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Install/zipball/615d854bc3d5e7bf0fa99bcaf5f9c237efb3e89d",
-                "reference": "615d854bc3d5e7bf0fa99bcaf5f9c237efb3e89d",
+                "url": "https://api.github.com/repos/NetCommons3/Install/zipball/6913b437538917215f350d25a2c5603538b6835c",
+                "reference": "6913b437538917215f350d25a2c5603538b6835c",
                 "shasum": ""
             },
             "require": {
@@ -708,7 +708,7 @@
                 "cakephp",
                 "install"
             ],
-            "time": "2014-06-09 09:42:01"
+            "time": "2014-06-10 08:29:39"
         },
         {
             "name": "netcommons/m17n",
@@ -768,12 +768,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/NetCommons.git",
-                "reference": "861994d5fbfa2043dc3b3a37b57900fae33ae195"
+                "reference": "b898f61a71677326982a85752e1e3db2d0636c91"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/NetCommons/zipball/861994d5fbfa2043dc3b3a37b57900fae33ae195",
-                "reference": "861994d5fbfa2043dc3b3a37b57900fae33ae195",
+                "url": "https://api.github.com/repos/NetCommons3/NetCommons/zipball/b898f61a71677326982a85752e1e3db2d0636c91",
+                "reference": "b898f61a71677326982a85752e1e3db2d0636c91",
                 "shasum": ""
             },
             "require": {
@@ -812,7 +812,7 @@
                 "cakephp",
                 "netcommons"
             ],
-            "time": "2014-06-09 08:01:53"
+            "time": "2014-06-10 04:07:05"
         },
         {
             "name": "netcommons/users",
