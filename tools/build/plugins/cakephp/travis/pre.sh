@@ -28,6 +28,7 @@ set +H
 if [ "$PLUGIN_NAME" != "Install" ]; then
   cp app/Config/database.php.travis app/Config/database.php
 fi
+cp tools/build/app/cakephp/phpunit.xml.dist .
 
 for p in `cat app/Config/vendors.txt`
 do

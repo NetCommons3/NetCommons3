@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<phpunit bootstrap="../../../../vendors/autoload.php">
+<phpunit bootstrap="vendors/autoload.php">
     <filter>
         <blacklist>
             <directory suffix=".php">app/Config</directory>
@@ -23,7 +23,7 @@
         </blacklist>
     </filter>
     <logging>
-        <log type="coverage-clover" target="../../../../build/logs/clover.xml"/>
-        <log type="coverage-html" target="../../../../build/logs/clover"/>
+        <log type="coverage-clover" target="build/logs/clover.xml"/>
+        <log type="coverage-html" target="build/logs/clover"/>
     </logging>
 </phpunit>
