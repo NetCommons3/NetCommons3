@@ -10,4 +10,4 @@ phpcpd --exclude Test --exclude Config $IGNORE_PLUGINS_OPTS app/Plugin/$PLUGIN_N
 
 echo 'test'
 
-exit 0
+# exit 0
