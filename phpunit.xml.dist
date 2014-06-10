@@ -4,12 +4,13 @@
         <blacklist>
             <directory suffix=".php">app/Config</directory>
             <directory suffix=".php">app/Test</directory>
-            <directory suffix=".php">app/Plugin</directory>
+            <directory suffix=".php">app/Plugin/DebugKit</directory>
+            <directory suffix=".php">app/Plugin/Migration</directory>
+            <directory suffix=".php">app/Plugin/MobileDetect</directory>
+            <directory suffix=".php">app/Plugin/HtmlPurifier</directory>
+            <directory suffix=".php">app/Plugin/TinyMCE</directory>
             <directory suffix=".php">lib/Cake</directory>
             <directory suffix=".php">vendors</directory>
-            <directory suffix=".php">plugins/HtmlPurifier</directory>
-            <directory suffix=".php">plugins/TinyMCE</directory>
-            <directory suffix=".php">plugins/DebugKit/</directory>
             <directory suffix="Test.php">plugins</directory>
         </blacklist>
     </filter>
