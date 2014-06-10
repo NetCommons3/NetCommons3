@@ -1,6 +1,6 @@
 #!/bin/bash -ex
 
-./lib/Cake/Console/cake test $PLUGIN_NAME All$PLUGIN_NAME --stderr || exit $?
+./lib/Cake/Console/cake test $PLUGIN_NAME All$PLUGIN_NAME --stderr --configuration tools/build/app/cakephp/phpunit.xml.dist || exit $?
 phpcs -p --extensions=php --standard=CakePHP --ignore=app/Config/Migration/,app/Config/database.php,$IGNORE_PLUGINS app/Plugin/$PLUGIN_NAME || exit $?
 phpmd app/Plugin/$PLUGIN_NAME text ruleset/phpmd.xml --exclude $NETCOMMONS_BUILD_DIR/app/Config/Migration,$IGNORE_PLUGINS || exit $?
 phpcpd --exclude Test --exclude Config $IGNORE_PLUGINS_OPTS app/Plugin/$PLUGIN_NAME
