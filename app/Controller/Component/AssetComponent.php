@@ -1,8 +1,6 @@
 <?php
 /**
- * Class AssetComponent
- *
- * @property AssetComponent $Asset
+ * AssetComponent Component
  *
  * @author   Takako Miyagawa <nekoget@gmail.com>
  * @link     http://www.netcommons.org NetCommons Project
@@ -12,7 +10,8 @@ class AssetComponent extends Component {
 
 /**
  * cssの存在チェック
- * @param Controller $controller
+ *
+ * @param Controller $controller controller object
  * @return bool
  */
 	public function isThemeBootstrapMinCss(Controller $controller) {
@@ -25,8 +24,9 @@ class AssetComponent extends Component {
 
 /**
  * サイトテーマの取得
- * @param Controller $controller
- * @return null
+ *
+ * @param Controller $controller controller object
+ * @return mix null or array
  */
 	public function getSiteTheme(Controller $controller) {
 		$theme = $controller->SiteSetting->getSiteTheme();
