@@ -40,6 +40,7 @@ class AssetComponentTest extends CakeTestCase {
 
 /**
  *  isThemeBootstrapMinCss
+ *
  * @return void
  */
 	public function testIsThemeBootstrapMinCss() {
@@ -54,6 +55,7 @@ class AssetComponentTest extends CakeTestCase {
 
 /**
  * テーマを取得し設定する
+ *
  * @return void
  */
 	public function testGetSiteTheme() {

@@ -51,6 +51,7 @@ class SiteSettingTest extends CakeTestCase {
 	}
 /**
  * getSiteTheme サイト用テーマ名の取得
+ *
  * @return void
  */
 	public function testGetSiteTheme() {
