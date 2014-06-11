@@ -47,6 +47,7 @@ class SiteSetting extends AppModel {
  * @param string $ds DataSource connection name.
  * @return  void
  * @since   v 3.0.0.0
+ * @SuppressWarnings(PHPMD)
  */
 	public function __construct($id = false, $table = null, $ds = null) {
 		parent::__construct($id, $table, $ds);
