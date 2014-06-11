@@ -48,6 +48,8 @@ class SiteSettingValueTest extends CakeTestCase {
 
 /**
  * testFind
+ *
+ * @return void
  */
 	public function testFind() {
 		$ck = $this->SiteSettingValue->find('first', array(
@@ -55,5 +57,4 @@ class SiteSettingValueTest extends CakeTestCase {
 		));
 		$this->assertTextEquals("UnitTestTheme", $ck["SiteSettingValue"]['value']);
 	}
-
 }
