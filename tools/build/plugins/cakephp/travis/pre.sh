@@ -8,6 +8,7 @@ export PLUGIN_NAME=`basename $TRAVIS_BUILD_DIR`
 cp $TRAVIS_BUILD_DIR/composer.json .
 rm composer.lock
 cp -r ../$PLUGIN_NAME app/Plugin
+composer require netcommons/net-commons:"@dev"
 composer install
 chmod -R 777 app/tmp
 mkdir -p build/logs
@@ -25,9 +26,10 @@ pear install phpunit/phpcpd
 
 phpenv rehash
 set +H
-if [ $PLUGIN_NAME != "Install" ]; then
+if [ "$PLUGIN_NAME" != "Install" ]; then
   cp app/Config/database.php.travis app/Config/database.php
 fi
+cp tools/build/app/cakephp/phpunit.xml.dist .
 
 for p in `cat app/Config/vendors.txt`
 do
