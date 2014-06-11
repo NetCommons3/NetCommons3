@@ -669,12 +669,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Install.git",
-                "reference": "6913b437538917215f350d25a2c5603538b6835c"
+                "reference": "805faba4b25679056ef0da7b6f3f913fdf755ef2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Install/zipball/6913b437538917215f350d25a2c5603538b6835c",
-                "reference": "6913b437538917215f350d25a2c5603538b6835c",
+                "url": "https://api.github.com/repos/NetCommons3/Install/zipball/805faba4b25679056ef0da7b6f3f913fdf755ef2",
+                "reference": "805faba4b25679056ef0da7b6f3f913fdf755ef2",
                 "shasum": ""
             },
             "require": {
@@ -708,7 +708,7 @@
                 "cakephp",
                 "install"
             ],
-            "time": "2014-06-10 08:29:39"
+            "time": "2014-06-11 02:46:47"
         },
         {
             "name": "netcommons/m17n",

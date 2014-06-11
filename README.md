@@ -11,8 +11,8 @@ NetCommons
 
 | dependencies | status |
 | ------------ | ------ |
-| Gemfile | [![Dependency Status](https://www.versioneye.com/user/projects/52f1cc16ec13757904000127/badge.png)](https://www.versioneye.com/user/projects/52f1cc16ec13757904000127) |
-| composer.json | [![Dependency Status](https://www.versioneye.com/user/projects/52f1cc19ec13756b480000c4/badge.png)](https://www.versioneye.com/user/projects/52f1cc19ec13756b480000c4) |
+| Gemfile | [![Dependency Status](https://www.versioneye.com/user/projects/5397f04283add7765e000017/badge.svg?style=flat)](https://www.versioneye.com/user/projects/5397f04283add7765e000017) |
+| composer.json | [![Dependency Status](https://www.versioneye.com/user/projects/538ea72a46c4738e2d00000b/badge.svg?style=flat)](https://www.versioneye.com/user/projects/538ea72a46c4738e2d00000b) |
 
 ## 動作実績
 

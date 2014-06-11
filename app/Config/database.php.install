@@ -65,26 +65,26 @@
 class DATABASE_CONFIG {
 
 	public $default = array(
-		'datasource' => '{datasource}',
-		'persistent' => {persistent},
-		'host' => '{host}',
-		'port' => '{port}',
-		'login' => '{login}',
-		'password' => '{password}',
-		'database' => '{database}',
-		'prefix' => '{prefix}',
-		'encoding' => '{encoding}',
+		'datasource' => '{default_datasource}',
+		'persistent' => {default_persistent},
+		'host' => '{default_host}',
+		'port' => '{default_port}',
+		'login' => '{default_login}',
+		'password' => '{default_password}',
+		'database' => '{default_database}',
+		'prefix' => '{default_prefix}',
+		'encoding' => '{default_encoding}',
 	);
 
 	public $test = array(
-		'datasource' => '{datasource}',
-		'persistent' => {persistent},
-		'host' => '{host}',
-		'port' => '{port}',
-		'login' => '{login}',
-		'password' => '{password}',
-		'database' => '{database}',
-		'prefix' => '{prefix}',
-		'encoding' => '{encoding}',
+		'datasource' => '{test_datasource}',
+		'persistent' => {test_persistent},
+		'host' => '{test_host}',
+		'port' => '{test_port}',
+		'login' => '{test_login}',
+		'password' => '{test_password}',
+		'database' => '{test_database}',
+		'prefix' => '{test_prefix}',
+		'encoding' => '{test_encoding}',
 	);
 }
