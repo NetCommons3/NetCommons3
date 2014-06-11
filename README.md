@@ -21,6 +21,8 @@ NetCommons
 | OS           | matrix |
 | ------------ | ------ |
 | Windows 8.1  | virtualbox 4.3.10, vagrant 1.4.3 |
+| Windows 7    | virtualbox 4.3.12, vagrant 1.4.3 |
+| Windows 7    | virtualbox 4.3.12, vagrant 1.6.3 |
 | OSX Maverick | virtualbox 4.3.8, vagrant 1.4.3 |
 | OSX Maverick | virtualbox 4.3.8, vagrant 1.6.0 |
 | Ubuntu 12.10 | virtualbox 4.3.10, vagrant 1.4.3 |
@@ -81,6 +83,8 @@ vagrant plugin install vagrant-berkshelf --plugin-version 1.3.7
 <pre>
 vagrant plugin install vagrant-berkshelf --plugin-version '>= 2.0.1'
 </pre>
+windowsの場合、dep-selector-libgecodeで失敗します。
+[Tar for Windows](http://gnuwin32.sourceforge.net/packages/gtar.htm)からBinaries(Zip):[tar-1.13-1-bin.zip](http://gnuwin32.sourceforge.net/downlinks/tar-bin-zip.php)とDependencies(Zip):[tar-1.13-1-dep.zip](http://gnuwin32.sourceforge.net/downlinks/tar-dep-zip.php)をダウンロードし、解凍した中身のファイルを、C:\HashiCorp\Vagrant\embedded\mingwにコピーしてください。
 
 ### ソースを配置
 このリポジトリをgitでクローンするか、ZIPなどでダウンロードしてください。
@@ -109,6 +113,16 @@ $ emacs Vagrantfile
   config.vm.synced_folder '.', '/var/www/app', disabled: true,
     :create => true, :owner=> 'www-data', :group=>'www-data',
     :mount_options => ['dmode=775','fmode=775']
+</pre>
+
+##### Berksfileの修正（vagrant1.4.xのバージョンのみ）
+vagrant-berkshelfの古いバージョンでは、sourceが使えないため下記の修正を行い、Berksfile.lockファイルを削除してから、vagrant upを実行しないとエラーになる。
+<pre>
+source 'https://api.berkshelf.com'
+</pre>
+↓
+<pre>
+site :opscode
 </pre>
 
 ## 起動
