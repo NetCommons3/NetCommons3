@@ -115,8 +115,8 @@ $ emacs Vagrantfile
     :mount_options => ['dmode=775','fmode=775']
 </pre>
 
-##### Berkselfファイルの修正（vagrant1.4.xのバージョンのみ）
-vagrant1.4.xのバージョンでは、sourceが使えないため下記の修正を行い、Berkself.lockファイルを削除してから、vagrant upを実行しないとエラーになる。
+##### Berksfileファイルの修正（vagrant1.4.xのバージョンのみ）
+vagrant-berkshelfの古いバージョンでは、sourceが使えないため下記の修正を行い、Berksfile.lockファイルを削除してから、vagrant upを実行しないとエラーになる。
 <pre>
 source 'https://api.berkshelf.com'
 </pre>
