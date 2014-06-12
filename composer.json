@@ -29,7 +29,7 @@
         "netcommons/m17n":              "@dev",
         "netcommons/net-commons":       "@dev",
         "netcommons/users":             "@dev",
-        "netcommons/announcements":             "@dev",
+        "netcommons/announcements":     "@dev",
         "burzum/cakephp-html-purifier": "0.0.0",
         "satooshi/php-coveralls":       "@dev",
         "mustangostang/spyc":           "@dev"
