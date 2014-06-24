@@ -25,11 +25,11 @@
         "chronon/mobile_detect":        "*",
         "twbs/bootstrap":               "~3.1",
         "components/jquery":            "~2.1",
+        "components/jqueryui":          "~1.10",
         "netcommons/install":           "@dev",
         "netcommons/m17n":              "@dev",
         "netcommons/net-commons":       "@dev",
         "netcommons/users":             "@dev",
-        "netcommons/announcements":     "@dev",
         "burzum/cakephp-html-purifier": "0.0.0",
         "satooshi/php-coveralls":       "@dev",
         "mustangostang/spyc":           "@dev"

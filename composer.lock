@@ -1,9 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
     ],
-    "hash": "2af3f432770747c8b4f9b971c9fdf2ec",
+    "hash": "5b1b261afa6cd4c09f3191f8be1619c0",
     "packages": [
         {
             "name": "burzum/cakephp-html-purifier",
@@ -92,16 +93,16 @@
         },
         {
             "name": "cakephp/cakephp",
-            "version": "2.5.1",
+            "version": "2.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/cakephp.git",
-                "reference": "0fd12c7a684417026bd56ac6d1fc4047a563c96d"
+                "reference": "96df2c4b683b105d64bfc78bbccb4184950034e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/cakephp/zipball/0fd12c7a684417026bd56ac6d1fc4047a563c96d",
-                "reference": "0fd12c7a684417026bd56ac6d1fc4047a563c96d",
+                "url": "https://api.github.com/repos/cakephp/cakephp/zipball/96df2c4b683b105d64bfc78bbccb4184950034e7",
+                "reference": "96df2c4b683b105d64bfc78bbccb4184950034e7",
                 "shasum": ""
             },
             "require": {
@@ -131,7 +132,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2014-05-18 02:39:27"
+            "time": "2014-06-15 01:36:39"
         },
         {
             "name": "cakephp/debug_kit",
@@ -272,25 +273,106 @@
             "time": "2014-01-24 19:52:32"
         },
         {
-            "name": "composer/installers",
-            "version": "v1.0.13",
+            "name": "components/jqueryui",
+            "version": "1.10.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/composer/installers.git",
-                "reference": "26d37e307f9aa6e2e81806a6525666f8ab5ba0ff"
+                "url": "https://github.com/components/jqueryui.git",
+                "reference": "b68f1ee8749c90b2dfc5f2cb33c76fd0308bd356"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/26d37e307f9aa6e2e81806a6525666f8ab5ba0ff",
-                "reference": "26d37e307f9aa6e2e81806a6525666f8ab5ba0ff",
+                "url": "https://api.github.com/repos/components/jqueryui/zipball/b68f1ee8749c90b2dfc5f2cb33c76fd0308bd356",
+                "reference": "b68f1ee8749c90b2dfc5f2cb33c76fd0308bd356",
+                "shasum": ""
+            },
+            "require": {
+                "components/jquery": ">=1.8"
+            },
+            "type": "component",
+            "extra": {
+                "component": {
+                    "name": "jquery-ui",
+                    "scripts": [
+                        "ui/jquery-ui.js"
+                    ],
+                    "files": [
+                        "ui/**",
+                        "themes/**"
+                    ],
+                    "shim": {
+                        "deps": [
+                            "jquery"
+                        ],
+                        "exports": "jQuery"
+                    }
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "jQuery UI Team",
+                    "homepage": "http://jqueryui.com/about"
+                },
+                {
+                    "name": "Joern Zaefferer",
+                    "email": "joern.zaefferer@gmail.com",
+                    "homepage": "http://bassistance.de"
+                },
+                {
+                    "name": "Scott Gonzalez",
+                    "email": "scott.gonzalez@gmail.com",
+                    "homepage": "http://scottgonzalez.com"
+                },
+                {
+                    "name": "Kris Borchers",
+                    "email": "kris.borchers@gmail.com",
+                    "homepage": "http://krisborchers.com"
+                },
+                {
+                    "name": "Corey Frang",
+                    "email": "gnarf37@gmail.com",
+                    "homepage": "http://gnarf.net",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Mike Sherov",
+                    "email": "mike.sherov@gmail.com",
+                    "homepage": "http://mike.sherov.com"
+                },
+                {
+                    "name": "TJ VanToll",
+                    "email": "tj.vantoll@gmail.com",
+                    "homepage": "http://tjvantoll.com"
+                }
+            ],
+            "description": "jQuery UI is a curated set of user interface interactions, effects, widgets, and themes built on top of the jQuery JavaScript Library. Whether you're building highly interactive web applications or you just need to add a date picker to a form control, jQuery UI is the perfect choice.",
+            "time": "2014-04-22 12:57:43"
+        },
+        {
+            "name": "composer/installers",
+            "version": "v1.0.14",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/installers.git",
+                "reference": "8281faa96186b18db9d53e8dbeb2d549c66d9cdc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/installers/zipball/8281faa96186b18db9d53e8dbeb2d549c66d9cdc",
+                "reference": "8281faa96186b18db9d53e8dbeb2d549c66d9cdc",
                 "shasum": ""
             },
             "replace": {
+                "roundcube/plugin-installer": "*",
                 "shama/baton": "*"
             },
             "require-dev": {
                 "composer/composer": "1.0.*@dev",
-                "phpunit/phpunit": "3.7.*"
+                "phpunit/phpunit": "4.1.*"
             },
             "type": "composer-installer",
             "extra": {
@@ -320,12 +402,14 @@
             "homepage": "http://composer.github.com/installers/",
             "keywords": [
                 "Craft",
+                "Dolibarr",
                 "Hurad",
                 "MODX Evo",
                 "OXID",
                 "WolfCMS",
                 "agl",
                 "annotatecms",
+                "bitrix",
                 "cakephp",
                 "codeigniter",
                 "concrete5",
@@ -342,9 +426,11 @@
                 "mako",
                 "mediawiki",
                 "modulework",
+                "moodle",
                 "phpbb",
                 "piwik",
                 "ppi",
+                "roundcube",
                 "shopware",
                 "silverstripe",
                 "symfony",
@@ -353,7 +439,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2014-04-09 16:12:43"
+            "time": "2014-06-18 15:29:19"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -663,69 +749,17 @@
             "time": "2014-05-08 14:11:16"
         },
         {
-            "name": "netcommons/announcements",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/NetCommons3/Announcements.git",
-                "reference": "12a7818724662ba179599ef4c4576a58f9fc51c3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Announcements/zipball/12a7818724662ba179599ef4c4576a58f9fc51c3",
-                "reference": "12a7818724662ba179599ef4c4576a58f9fc51c3",
-                "shasum": ""
-            },
-            "require": {
-                "cakedc/migrations": "~2.2",
-                "cakephp/cakephp": "~2.4",
-                "cakephp/debug_kit": "~2.2",
-                "components/jquery": "~2.1",
-                "twbs/bootstrap": "~3.1"
-            },
-            "require-dev": {
-                "mustangostang/spyc": "dev-master",
-                "netcommons/frames": "dev-master",
-                "satooshi/php-coveralls": "dev-master"
-            },
-            "type": "cakephp-plugin",
-            "extra": {
-                "installer-paths": {
-                    "app/Plugin/{$name}": [
-                        "type:cakephp-plugin"
-                    ]
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "NetCommons License"
-            ],
-            "authors": [
-                {
-                    "name": "NetCommons Community",
-                    "homepage": "https://github.com/NetCommons3/Announcements/graphs/contributors"
-                }
-            ],
-            "description": "AnnouncementsPlugin for Cakephp",
-            "homepage": "http://www.netcommons.org/",
-            "keywords": [
-                "Announcement",
-                "cakephp"
-            ],
-            "time": "2014-06-12 05:31:32"
-        },
-        {
             "name": "netcommons/install",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Install.git",
-                "reference": "80dd3cd58bf0989ab9987e682184001d078e513a"
+                "reference": "f2a999dbc3df6746abbd8d9c2acc148356d69293"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Install/zipball/80dd3cd58bf0989ab9987e682184001d078e513a",
-                "reference": "80dd3cd58bf0989ab9987e682184001d078e513a",
+                "url": "https://api.github.com/repos/NetCommons3/Install/zipball/f2a999dbc3df6746abbd8d9c2acc148356d69293",
+                "reference": "f2a999dbc3df6746abbd8d9c2acc148356d69293",
                 "shasum": ""
             },
             "require": {
@@ -759,7 +793,7 @@
                 "cakephp",
                 "install"
             ],
-            "time": "2014-06-11 19:22:16"
+            "time": "2014-06-24 01:10:47"
         },
         {
             "name": "netcommons/m17n",
@@ -819,12 +853,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/NetCommons.git",
-                "reference": "e3590d7fd83dddae17e1bb3246cd6d2c58e9750a"
+                "reference": "c82b7ec6e021704f05d44140ee66b55dc92e40d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/NetCommons/zipball/e3590d7fd83dddae17e1bb3246cd6d2c58e9750a",
-                "reference": "e3590d7fd83dddae17e1bb3246cd6d2c58e9750a",
+                "url": "https://api.github.com/repos/NetCommons3/NetCommons/zipball/c82b7ec6e021704f05d44140ee66b55dc92e40d9",
+                "reference": "c82b7ec6e021704f05d44140ee66b55dc92e40d9",
                 "shasum": ""
             },
             "require": {
@@ -863,7 +897,7 @@
                 "cakephp",
                 "netcommons"
             ],
-            "time": "2014-06-11 19:13:50"
+            "time": "2014-06-24 01:26:29"
         },
         {
             "name": "netcommons/users",
@@ -1005,12 +1039,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/satooshi/php-coveralls.git",
-                "reference": "b7271847c84d160f5b0aae83e45c225e8ffc96f4"
+                "reference": "d05254e48ac5031a16418f42b11ccb0fc6daacd2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/satooshi/php-coveralls/zipball/b7271847c84d160f5b0aae83e45c225e8ffc96f4",
-                "reference": "b7271847c84d160f5b0aae83e45c225e8ffc96f4",
+                "url": "https://api.github.com/repos/satooshi/php-coveralls/zipball/d05254e48ac5031a16418f42b11ccb0fc6daacd2",
+                "reference": "d05254e48ac5031a16418f42b11ccb0fc6daacd2",
                 "shasum": ""
             },
             "require": {
@@ -1072,7 +1106,7 @@
                 "github",
                 "test"
             ],
-            "time": "2014-05-14 13:09:37"
+            "time": "2014-06-12 15:19:16"
         },
         {
             "name": "symfony/config",
@@ -1479,18 +1513,25 @@
             "time": "2014-02-13 17:24:59"
         }
     ],
-    "packages-dev": [],
-    "aliases": [],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
     "minimum-stability": "stable",
     "stability-flags": {
         "netcommons/install": 20,
         "netcommons/m17n": 20,
         "netcommons/net-commons": 20,
         "netcommons/users": 20,
-        "netcommons/announcements": 20,
         "satooshi/php-coveralls": 20,
         "mustangostang/spyc": 20
     },
-    "platform": [],
-    "platform-dev": []
+    "platform": [
+
+    ],
+    "platform-dev": [
+
+    ]
 }
