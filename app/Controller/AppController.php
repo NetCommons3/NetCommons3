@@ -69,7 +69,8 @@ class AppController extends Controller {
 				'controller' => 'auth',
 				'action' => 'login',
 			)
-		)
+		),
+		'RequestHandler',
 	);
 
 /**
@@ -109,5 +110,16 @@ class AppController extends Controller {
 	public function beforeRender() {
 		//theme css指定
 		$this->set('bootstrapMinCss', $this->Asset->isThemeBootstrapMinCss($this));
+	}
+
+/**
+ * Return null json to keep connection alive
+ *
+ * @author Jun Nishikawa <topaz2@m0n0m0n0.com>
+ * @return void
+ **/
+	public function ping() {
+		$this->set('result', array('message' => 'OK'));
+		$this->set('_serialize', array('result'));
 	}
 }
