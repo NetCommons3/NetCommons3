@@ -36,6 +36,16 @@ class DatabaseConfiguration extends AppModel {
 				/* 'message' => 'Invalid value', */
 			)
 		),
+		'persistent' => array(
+			'boolean' => array(
+				'rule' => array('boolean'),
+				'message' => 'Invalid value',
+				//'allowEmpty' => false,
+				//'required' => true,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
+		),
 		'host' => array(
 			'regex' => array(
 				'rule' => array('custom', '/[\w\.]+/'),
