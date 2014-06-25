@@ -18,21 +18,21 @@
         }
     },
     "require": {
+        "burzum/cakephp-html-purifier": "0.0.0",
+        "cakedc/migrations":            "~2.2",
         "cakephp/cakephp":              "~2.4",
         "cakephp/debug_kit":            "~2.2",
-        "cakedc/migrations":            "~2.2",
-        "ezyang/htmlpurifier":          "~4.6",
         "chronon/mobile_detect":        "*",
-        "twbs/bootstrap":               "~3.1",
         "components/jquery":            "~2.1",
         "components/jqueryui":          "~1.10",
+        "ezyang/htmlpurifier":          "~4.6",
+        "mustangostang/spyc":           "@dev",
         "netcommons/install":           "@dev",
         "netcommons/m17n":              "@dev",
         "netcommons/net-commons":       "@dev",
         "netcommons/users":             "@dev",
-        "burzum/cakephp-html-purifier": "0.0.0",
         "satooshi/php-coveralls":       "@dev",
-        "mustangostang/spyc":           "@dev"
+        "twbs/bootstrap":               "~3.1"
     },
     "bin": [
         "lib/Cake/Console/cake"

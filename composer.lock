@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5b1b261afa6cd4c09f3191f8be1619c0",
+    "hash": "c9bd3c650e3289496462d9e55fcdae27",
     "packages": [
         {
             "name": "burzum/cakephp-html-purifier",
@@ -354,16 +354,16 @@
         },
         {
             "name": "composer/installers",
-            "version": "v1.0.14",
+            "version": "v1.0.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "8281faa96186b18db9d53e8dbeb2d549c66d9cdc"
+                "reference": "8e6a72a78f6cfd537fde3350720dfdc9ae3c5621"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/8281faa96186b18db9d53e8dbeb2d549c66d9cdc",
-                "reference": "8281faa96186b18db9d53e8dbeb2d549c66d9cdc",
+                "url": "https://api.github.com/repos/composer/installers/zipball/8e6a72a78f6cfd537fde3350720dfdc9ae3c5621",
+                "reference": "8e6a72a78f6cfd537fde3350720dfdc9ae3c5621",
                 "shasum": ""
             },
             "replace": {
@@ -439,7 +439,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2014-06-18 15:29:19"
+            "time": "2014-06-23 16:25:28"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -754,12 +754,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Install.git",
-                "reference": "f2a999dbc3df6746abbd8d9c2acc148356d69293"
+                "reference": "ec64c510d7cd7b366a09495ea125c09ff26c78be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Install/zipball/f2a999dbc3df6746abbd8d9c2acc148356d69293",
-                "reference": "f2a999dbc3df6746abbd8d9c2acc148356d69293",
+                "url": "https://api.github.com/repos/NetCommons3/Install/zipball/ec64c510d7cd7b366a09495ea125c09ff26c78be",
+                "reference": "ec64c510d7cd7b366a09495ea125c09ff26c78be",
                 "shasum": ""
             },
             "require": {
@@ -793,7 +793,7 @@
                 "cakephp",
                 "install"
             ],
-            "time": "2014-06-24 01:10:47"
+            "time": "2014-06-24 08:18:42"
         },
         {
             "name": "netcommons/m17n",
@@ -1039,18 +1039,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/satooshi/php-coveralls.git",
-                "reference": "d05254e48ac5031a16418f42b11ccb0fc6daacd2"
+                "reference": "cad73f9122027d15a43968f862cf2958e2ac5f7a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/satooshi/php-coveralls/zipball/d05254e48ac5031a16418f42b11ccb0fc6daacd2",
-                "reference": "d05254e48ac5031a16418f42b11ccb0fc6daacd2",
+                "url": "https://api.github.com/repos/satooshi/php-coveralls/zipball/cad73f9122027d15a43968f862cf2958e2ac5f7a",
+                "reference": "cad73f9122027d15a43968f862cf2958e2ac5f7a",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "ext-simplexml": "*",
-                "guzzle/guzzle": ">=3.0",
+                "guzzle/guzzle": ">=2.7",
                 "php": ">=5.3",
                 "psr/log": "1.0.0",
                 "symfony/config": ">=2.0",
@@ -1060,7 +1060,7 @@
             },
             "require-dev": {
                 "apigen/apigen": "2.8.*@stable",
-                "pdepend/pdepend": "dev-master",
+                "pdepend/pdepend": "dev-master as 2.0.0",
                 "phpmd/phpmd": "dev-master",
                 "phpunit/php-invoker": ">=1.1.0,<1.2.0",
                 "phpunit/phpunit": "3.7.*@stable",
@@ -1106,7 +1106,7 @@
                 "github",
                 "test"
             ],
-            "time": "2014-06-12 15:19:16"
+            "time": "2014-06-24 23:45:40"
         },
         {
             "name": "symfony/config",
@@ -1521,12 +1521,12 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
+        "mustangostang/spyc": 20,
         "netcommons/install": 20,
         "netcommons/m17n": 20,
         "netcommons/net-commons": 20,
         "netcommons/users": 20,
-        "satooshi/php-coveralls": 20,
-        "mustangostang/spyc": 20
+        "satooshi/php-coveralls": 20
     },
     "platform": [
 
