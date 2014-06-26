@@ -62,9 +62,9 @@ class Block extends AppModel {
  * block_idからroom_idを求め、user_id,room_idからpart_idを求め
  * room_parts.can_xxxx(can_edit_block等)を見て判断。
  *
- * @param   integer $blockId blocks.id
- * @param   integer $userId  users.id
- * @return  mixed array $roomPart or boolean false
+ * @param integer $blockId blocks.id
+ * @param integer $userId  users.id
+ * @return mixed array $roomPart or boolean false
  */
 	public function findRoomPartByBlockId($blockId, $userId) {
 		$roomPart = $this->find('first', array(
@@ -116,8 +116,8 @@ class Block extends AppModel {
 /**
  * ブロック追加
  *
- * @param   integer $frameId frames.id
- * @return  mixed $blockId or false
+ * @param integer $frameId frames.id
+ * @return mixed $blockId or false
  */
 	public function addBlock($frameId) {
 		// テスト用データ
