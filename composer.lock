@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c9bd3c650e3289496462d9e55fcdae27",
+    "hash": "4b8d4993052b06872e890f1a6f9f363c",
     "packages": [
         {
             "name": "burzum/cakephp-html-purifier",
@@ -754,12 +754,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Install.git",
-                "reference": "1be73ab3234c9bdd7811a30d7ac3c37dc6457468"
+                "reference": "02433dd7d4655244c7d7adaadbf952cd7f25d093"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Install/zipball/1be73ab3234c9bdd7811a30d7ac3c37dc6457468",
-                "reference": "1be73ab3234c9bdd7811a30d7ac3c37dc6457468",
+                "url": "https://api.github.com/repos/NetCommons3/Install/zipball/02433dd7d4655244c7d7adaadbf952cd7f25d093",
+                "reference": "02433dd7d4655244c7d7adaadbf952cd7f25d093",
                 "shasum": ""
             },
             "require": {
@@ -770,7 +770,7 @@
                 "components/jquery": "~2.1",
                 "netcommons/m17n": "@dev",
                 "netcommons/net-commons": "@dev",
-                "netcommons/users": "~0.0",
+                "netcommons/users": "@dev",
                 "twbs/bootstrap": "~3.1"
             },
             "require-dev": {
@@ -795,7 +795,7 @@
                 "cakephp",
                 "install"
             ],
-            "time": "2014-06-26 02:27:55"
+            "time": "2014-06-26 05:40:45"
         },
         {
             "name": "netcommons/m17n",
@@ -903,16 +903,16 @@
         },
         {
             "name": "netcommons/users",
-            "version": "0.0.9",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Users.git",
-                "reference": "a1c737fd9b7423ac9e998773f4015097af010c49"
+                "reference": "de2d76eb6777d7e93d9ee744260e9d11ef43a804"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Users/zipball/a1c737fd9b7423ac9e998773f4015097af010c49",
-                "reference": "a1c737fd9b7423ac9e998773f4015097af010c49",
+                "url": "https://api.github.com/repos/NetCommons3/Users/zipball/de2d76eb6777d7e93d9ee744260e9d11ef43a804",
+                "reference": "de2d76eb6777d7e93d9ee744260e9d11ef43a804",
                 "shasum": ""
             },
             "require": {
@@ -951,7 +951,7 @@
                 "cakephp",
                 "user"
             ],
-            "time": "2014-06-26 02:08:29"
+            "time": "2014-06-26 07:12:10"
         },
         {
             "name": "psr/log",
