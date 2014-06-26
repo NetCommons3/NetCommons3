@@ -21,7 +21,7 @@ class PageSumViewsControllerTest extends ControllerTestCase {
  */
 	public $fixtures = array(
 		'app.page_sum_view',
-		'app.user',
+		'plugin.users.user',
 		'app.authority',
 		'app.authority_lang',
 		'app.module_link',
@@ -46,18 +46,18 @@ class PageSumViewsControllerTest extends ControllerTestCase {
 		'app.blog',
 		'app.upload_link',
 		'app.upload',
-		'app.user_group',
-		'app.user_group_link',
+		'plugin.users.user_group',
+		'plugin.users.user_group_link',
 		'app.config_lang',
 		'app.config',
 		'app.module_system_link',
 		'app.page_user_link',
 		'app.community_invitation',
 		'app.passport',
-		'app.user_item_link',
-		'app.user_item',
-		'app.user_item_authority_link',
-		'app.user_item_lang'
+		'plugin.users.user_item_link',
+		'plugin.users.user_item',
+		'plugin.users.user_item_authority_link',
+		'plugin.users.user_item_lang'
 	);
 
 /**

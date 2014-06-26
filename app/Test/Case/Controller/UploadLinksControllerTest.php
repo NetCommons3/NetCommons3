@@ -22,7 +22,7 @@ class UploadLinksControllerTest extends ControllerTestCase {
 	public $fixtures = array(
 		'app.upload_link',
 		'app.upload',
-		'app.user',
+		'plugin.users.user',
 		'app.authority',
 		'app.authority_lang',
 		'app.module_link',
@@ -46,18 +46,18 @@ class UploadLinksControllerTest extends ControllerTestCase {
 		'app.blog_term_link',
 		'app.blog_term',
 		'app.blog',
-		'app.user_group',
-		'app.user_group_link',
+		'plugin.users.user_group',
+		'plugin.users.user_group_link',
 		'app.config_lang',
 		'app.config',
 		'app.module_system_link',
 		'app.page_user_link',
 		'app.community_invitation',
 		'app.passport',
-		'app.user_item_link',
-		'app.user_item',
-		'app.user_item_authority_link',
-		'app.user_item_lang'
+		'plugin.users.user_item_link',
+		'plugin.users.user_item',
+		'plugin.users.user_item_authority_link',
+		'plugin.users.user_item_lang'
 	);
 
 /**
