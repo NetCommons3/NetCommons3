@@ -173,6 +173,14 @@ SSH認証のユーザ名とパスフレーズはともに「vagrant」です。
 
 guest には下記 vhosts が作成され、動作の確認ができます。
 
+※windowsは vagrant に ssh 接続した後、下記のコマンドを実行する
+
+<pre>
+sudo -s
+cd /var/www/app
+chown -R www-data:www-data ./*
+</pre>
+
 | url                                 | 用途                                 |
 | ----------------------------------- | ------------------------------------ |
 | http://app.local:9090    | netcommons 本体                      |
