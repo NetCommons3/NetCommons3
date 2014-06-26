@@ -49,6 +49,7 @@
     ],
     "config": {
         "vendor-dir": "vendors",
+        "preferred-install": "source",
         "process-timeout": 3000
     }
 }
