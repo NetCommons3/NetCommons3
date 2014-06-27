@@ -23,8 +23,8 @@ NetCommons
 | Windows 8.1  | virtualbox 4.3.10, vagrant 1.4.3 |
 | Windows 7    | virtualbox 4.3.12, vagrant 1.4.3 |
 | Windows 7    | virtualbox 4.3.12, vagrant 1.6.3 |
-| OSX Maverick | virtualbox 4.3.8, vagrant 1.4.3 |
-| OSX Maverick | virtualbox 4.3.8, vagrant 1.6.0 |
+| OSX Mavericks | virtualbox 4.3.8, vagrant 1.4.3 |
+| OSX Mavericks | virtualbox 4.3.8, vagrant 1.6.0 |
 | Ubuntu 12.10 | virtualbox 4.3.10, vagrant 1.4.3 |
 | Ubuntu 12.04 | virtualbox 4.3.10, vagrant 1.6.1 |
 
@@ -47,7 +47,7 @@ cd NetCommons3
 bundle
 </pre>
 
-#### OSX Maverick
+#### OSX Mavericks
 <pre>
 brew install libffi mysql postgresql
 sudo npm install -g gfms grunt-cli
