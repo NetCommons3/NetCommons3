@@ -1,5 +1,6 @@
 #!/bin/bash -ex
 
+./lib/Cake/Console/cake Migrations.migration run all -p $PLUGIN_NAME -c test -i test
 ./lib/Cake/Console/cake test $PLUGIN_NAME All$PLUGIN_NAME --stderr || exit $?
 phpcs -p --extensions=php --standard=CakePHP --ignore=app/Config/Migration/,app/Config/database.php,$IGNORE_PLUGINS app/Plugin/$PLUGIN_NAME || exit $?
 phpmd app/Plugin/$PLUGIN_NAME text ruleset/phpmd.xml --exclude $NETCOMMONS_BUILD_DIR/app/Config/Migration,$IGNORE_PLUGINS || exit $?
