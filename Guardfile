@@ -57,7 +57,7 @@ guard 'phpcs', :standard => 'CakePHP' do
 end
 
 # Installed by guard-phpmd
-guard 'phpmd', :rules => 'ruleset/phpmd.xml' do
+guard 'phpmd', :rules => '/etc/phpmd.xml' do
   watch(%r{.*\.php$})
 end
 
