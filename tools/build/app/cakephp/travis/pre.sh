@@ -25,6 +25,7 @@ pear install phpunit/phpcpd
 phpenv rehash
 set +H
 cp app/Config/database.php.travis app/Config/database.php
+wget https://raw.githubusercontent.com/topaz2/chef_boilerplate_php/master/files/default/build/cakephp/phpmd.xml -O /etc/phpmd.xml
 
 for p in `cat app/Config/vendors.txt`
 do

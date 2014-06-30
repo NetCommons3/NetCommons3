@@ -20,6 +20,9 @@
         "jenkins": false
     },
     "boilerplate_php": {
+        "framework": {
+            "type": "cakephp"
+        },
         "cakephp": {
             "version": "2.x"
         }
