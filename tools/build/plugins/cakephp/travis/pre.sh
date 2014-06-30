@@ -30,7 +30,7 @@ if [ "$PLUGIN_NAME" != "Install" ]; then
   cp app/Config/database.php.travis app/Config/database.php
 fi
 cp tools/build/app/cakephp/phpunit.xml.dist .
-wget https://raw.githubusercontent.com/topaz2/chef_boilerplate_php/master/files/default/build/cakephp/phpmd.xml -O /etc/phpmd.xml
+sudo wget https://raw.githubusercontent.com/topaz2/chef_boilerplate_php/master/files/default/build/cakephp/phpmd.xml -O /etc/phpmd.xml
 
 for p in `cat app/Config/vendors.txt`
 do
