@@ -177,8 +177,9 @@ guest には下記 vhosts が作成され、動作の確認ができます。
 
 <pre>
 sudo -s
-cd /var/www/app
-chown -R www-data:www-data ./*
+cd /var/www
+chown -R www-data:www-data app
+chmod -R 775 app
 </pre>
 
 | url                                 | 用途                                 |
