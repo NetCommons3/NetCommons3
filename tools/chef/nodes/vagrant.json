@@ -1,8 +1,9 @@
 {
+    "environment": "development",
     "mysql": {
         "bind_address":           "0.0.0.0",
         "server_root_password":   "root",
-        "server_repl_password":   "",
+        "server_repl_password":   "repl",
         "server_debian_password": ""
     },
     "postgresql": {
