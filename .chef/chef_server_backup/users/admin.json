@@ -1,0 +1,5 @@
+{
+  "name": "admin",
+  "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvEh+sbftitRqGqWI8JbD\nB9u/SR3KZS3bhgHq7zsszbKJDkFQe4o3lMW+CThvsgR5WG5pqabtBl+Txe4ocxhL\ndhrdJ0iOTnwwp2yhK/6ECOGSTgAUwYJdGmytCXeaWKea3KJKL9r9OWVcBwEH7rqO\nkYsFCna/gD7uSa5J4s3BiS5vv+Q8sJ/9ddwV2W8hSQ1/KQ2VHnWFK0JNG2qY7D1K\nbsr09goThegi0JTzelyHHomoDT+frGHxlyFrKn6KorwjiI9j5lQsIJ9y8WpFDQbj\ndJLHrcvUmVo/rZFIJbyb4NBH9+dMqR/z+AugMvlU25S7erU9vg+vMQRpJ1TUWVRW\nDQIDAQAB\n-----END PUBLIC KEY-----\n",
+  "admin": true
+}

@@ -1,0 +1,5 @@
+{
+  "name": "vagrant",
+  "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqg181/8TTM0UKwtpzzI+\nLmOuSAb4XvXB5qxKpor3j2CubCxrGQspDMTIuHcq09DlDcY5BwyAbZkrT+/DV5ys\n4+7LiOM6Ni7AFhoPT+7OCwjTCm1YSUhsQCbwBLmc+75GkwvuNlLbDcMFgD4qhkzQ\nw6YE0J6Zgr3zh+JY5l0my/2CNn8h/hY+V7PjBaXxB6pmkSe740RLjMOc9KkZ7pjI\nBiHBBYGYkwm8iI/+1dYYpPQfuc7eeOXYjrUsVQgaS2go/j6KaEFxKp/ghBt1ISYl\nEg6oh/4HVgVG6Xt/Mo+RKIK4NjbCAIqneoLzacc4HNqoWJ8O6P/banj089mpaVKZ\n2wIDAQAB\n-----END PUBLIC KEY-----\n",
+  "admin": true
+}
