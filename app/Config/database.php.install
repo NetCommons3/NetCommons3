@@ -64,17 +64,30 @@
 
 class DATABASE_CONFIG {
 
-	public $default = array(
-		'datasource' => '{default_datasource}',
-		'persistent' => {default_persistent},
-		'host' => '{default_host}',
-		'port' => '{default_port}',
-		'login' => '{default_login}',
-		'password' => '{default_password}',
-		'database' => '{default_database}',
-		'prefix' => '{default_prefix}',
-		'schema' => '{default_schema}',
-		'encoding' => '{default_encoding}',
+	public $master = array(
+		'datasource' => '{master_datasource}',
+		'persistent' => {master_persistent},
+		'host' => '{master_host}',
+		'port' => '{master_port}',
+		'login' => '{master_login}',
+		'password' => '{master_password}',
+		'database' => '{master_database}',
+		'prefix' => '{master_prefix}',
+		'schema' => '{master_schema}',
+		'encoding' => '{master_encoding}',
+	);
+
+	public $slave1 = array(
+		'datasource' => '{master_datasource}',
+		'persistent' => {master_persistent},
+		'host' => '{master_host}',
+		'port' => '{master_port}',
+		'login' => '{master_login}',
+		'password' => '{master_password}',
+		'database' => '{master_database}',
+		'prefix' => '{master_prefix}',
+		'schema' => '{master_schema}',
+		'encoding' => '{master_encoding}',
 	);
 
 	public $test = array(

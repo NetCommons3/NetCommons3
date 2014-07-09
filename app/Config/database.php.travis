@@ -39,7 +39,16 @@ class DATABASE_CONFIG {
 		)
 	);
 
-	public $default = array(
+	public $master = array(
+		'persistent' => false,
+		'host' => '',
+		'login' => '',
+		'password' => '',
+		'database' => 'cakephp_test',
+		'prefix' => ''
+	);
+
+	public $slave1 = array(
 		'persistent' => false,
 		'host' => '',
 		'login' => '',
@@ -80,7 +89,7 @@ class DATABASE_CONFIG {
 		if (!empty($_SERVER['DB'])) {
 			$db = $_SERVER['DB'];
 		}
-		foreach (array('default', 'test', 'test2', 'test_database_three') as $source) {
+		foreach (array('master', 'slave1', 'test', 'test2', 'test_database_three') as $source) {
 			$config = array_merge($this->{$source}, $this->identities[$db]);
 			if (is_array($config['database'])) {
 				$config['database'] = $config['database'][$source];

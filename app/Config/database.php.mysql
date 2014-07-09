@@ -63,7 +63,18 @@
 
 class DATABASE_CONFIG {
 
-	public $default = array(
+	public $master = array(
+		'datasource' => 'Database/Mysql',
+		'persistent' => false,
+		'host' => 'localhost',
+		'login' => 'root',
+		'password' => 'root',
+		'database' => 'nc3',
+		'prefix' => '',
+		'encoding' => 'utf8',
+	);
+
+	public $slave1 = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => 'localhost',

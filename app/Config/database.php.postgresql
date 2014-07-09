@@ -62,7 +62,16 @@
  */
 class DATABASE_CONFIG {
 
-	public $default = array(
+	public $master = array(
+		'datasource' => 'Database/Postgres',
+		'host' => '127.0.0.1',
+		'login' => 'postgres',
+		'password' => 'postgres',
+		'database' => 'nc3',
+		'schema' => 'public',
+	);
+
+	public $slave1 = array(
 		'datasource' => 'Database/Postgres',
 		'host' => '127.0.0.1',
 		'login' => 'postgres',
