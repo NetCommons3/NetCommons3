@@ -7,7 +7,6 @@ php:
 env:
   - DB=mysql
   - DB=pgsql
-  - DB=sqlite
 
 before_script:
   - . tools/build/app/cakephp/travis/pre.sh
