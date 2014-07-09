@@ -2,12 +2,13 @@ source 'https://rubygems.org'
 
 gem 'activesupport'
 gem 'berkshelf', '>= 3.1' # vagrant-berkshelf depends on 3.1+
+gem 'chef'
+gem 'gemrat'
+gem 'i18n'
+gem 'knife-backup'
+gem 'mysql'
 gem 'nokogiri'
 gem 'rake'
-gem 'mysql'
-gem 'gemrat'
-gem 'chef'
-gem 'i18n'
 
 group :development, :test do
   gem 'guard'
@@ -18,14 +19,24 @@ group :development, :test do
   gem 'guard-livereload'
   gem 'guard-shell'
   gem 'jasmine'
+  gem 'jekyll'
   gem 'juicer'
   gem 'kitchen-vagrant'
+  gem 'knife-solo'
   gem 'libnotify'
   gem 'rcodetools'
   gem 'ruby-prof'
   gem 'test-kitchen'
-  gem 'jekyll'
   gem 'travis'
   gem 'travis-lint'
-  gem 'knife-solo'
+
+  group :php do
+    gem 'guard-phpcs'
+    gem 'guard-phpmd'
+    gem 'guard-phpunit2'
+  end
+end
+
+group :pg do
+  gem 'pg'
 end
