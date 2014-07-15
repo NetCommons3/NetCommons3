@@ -41,13 +41,53 @@ class LanguagesPartFixture extends CakeTestFixture {
 		array(
 			'id' => 1,
 			'part_id' => 1,
-			'language_id' => 1,
-			'name' => 'Lorem ipsum dolor sit amet',
+			'language_id' => 2,
+			'name' => 'ルーム管理者',
 			'created_user_id' => 1,
-			'created' => '2014-06-02 16:17:59',
-			'modified_user_id' => 1,
-			'modified' => '2014-06-02 16:17:59'
+			'created' => false,
+			'modified_user_id' => false,
+			'modified' => false,
 		),
+		array(
+			'id' => 2,
+			'part_id' => 2,
+			'language_id' => 2,
+			'name' => '編集長',
+			'created_user_id' => 1,
+			'created' => false,
+			'modified_user_id' => false,
+			'modified' => false,
+		),
+		array(
+			'id' => 3,
+			'part_id' => 3,
+			'language_id' => 2,
+			'name' => '編集者',
+			'created_user_id' => 1,
+			'created' => false,
+			'modified_user_id' => false,
+			'modified' => false,
+		),
+		array(
+			'id' => 4,
+			'part_id' => 4,
+			'language_id' => 2,
+			'name' => '一般',
+			'created_user_id' => 1,
+			'created' => false,
+			'modified_user_id' => false,
+			'modified' => false,
+		),
+		array(
+			'id' => 5,
+			'part_id' => 5,
+			'language_id' => 2,
+			'name' => '参観者',
+			'created_user_id' => 1,
+			'created' => false,
+			'modified_user_id' => false,
+			'modified' => false,
+		)
 	);
 
 }
