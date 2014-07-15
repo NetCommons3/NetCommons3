@@ -22,21 +22,13 @@ class DATABASE_CONFIG {
 			'login' => 'postgres',
 			'database' => 'cakephp_test',
 			'schema' => array(
-				'default' => 'public',
+				'master' => 'public',
+				'slave1' => 'public',
 				'test' => 'public',
 				'test2' => 'test2',
 				'test_database_three' => 'test3'
 			)
 		),
-		'sqlite' => array(
-			'datasource' => 'Database/Sqlite',
-			'database' => array(
-				'default' => ':memory:',
-				'test' => ':memory:',
-				'test2' => '/tmp/cakephp_test2.db',
-				'test_database_three' => '/tmp/cakephp_test3.db'
-			),
-		)
 	);
 
 	public $master = array(
