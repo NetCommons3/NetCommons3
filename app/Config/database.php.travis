@@ -24,7 +24,6 @@ class DATABASE_CONFIG {
 			'schema' => array(
 				'master' => 'public',
 				'slave1' => 'public',
-				'default' => 'public',
 				'test' => 'public',
 				'test2' => 'test2',
 				'test_database_three' => 'test3'
