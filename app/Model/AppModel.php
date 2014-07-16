@@ -128,4 +128,15 @@ class AppModel extends Model {
 	public function afterDelete() {
 		$this->useDbConfig = self::$__useDbConfigPrevious;
 	}
+
+/**
+ * Sets the DataSource to which this model is bound.
+ *
+ * @param string $dataSource The name of the DataSource, as defined in app/Config/database.php
+ * @return void
+ * @throws MissingConnectionException
+ */
+	public function setDataSource($dataSource = null) {
+		$this->useDbConfig !== 'test' && parent::setDataSource($dataSource);
+	}
 }
