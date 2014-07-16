@@ -34,7 +34,7 @@ do
 done
 for d in `find app/Plugin/*/Config/Migration app/Plugin/*/Config/Schema -type d`
 do
-  export IGNORE_PLUGINS="$IGNORE_PLUGINS,$d"
+  export IGNORE_PLUGINS="$IGNORE_PLUGINS,$TRAVIS_BUILD_DIR/$d"
   export IGNORE_PLUGINS_OPTS="$IGNORE_PLUGINS_OPTS --exclude $d"
 done
 export IGNORE_PLUGINS=`echo $IGNORE_PLUGINS | cut -c 2-`
