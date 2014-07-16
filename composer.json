@@ -32,6 +32,7 @@
         "netcommons/net-commons":       "@dev",
         "netcommons/users":             "@dev",
         "satooshi/php-coveralls":       "@dev",
+	"netcommons/announcements":     "@dev",
         "twbs/bootstrap":               "~3.1"
     },
     "bin": [
