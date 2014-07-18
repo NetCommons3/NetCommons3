@@ -113,7 +113,7 @@ class AppController extends Controller {
 	}
 
 /**
- * Return null json to keep connection alive
+ * Keep connection alive
  *
  * @author Jun Nishikawa <topaz2@m0n0m0n0.com>
  * @return void
