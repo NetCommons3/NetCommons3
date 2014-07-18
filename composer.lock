@@ -856,12 +856,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/NetCommons.git",
-                "reference": "b117f5e9e1a1387e398f728752bf7986e32e3453"
+                "reference": "84a33fdc8687d57eeb6d3e4de216c93596d7ceeb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/NetCommons/zipball/b117f5e9e1a1387e398f728752bf7986e32e3453",
-                "reference": "b117f5e9e1a1387e398f728752bf7986e32e3453",
+                "url": "https://api.github.com/repos/NetCommons3/NetCommons/zipball/84a33fdc8687d57eeb6d3e4de216c93596d7ceeb",
+                "reference": "84a33fdc8687d57eeb6d3e4de216c93596d7ceeb",
                 "shasum": ""
             },
             "require": {
@@ -900,7 +900,7 @@
                 "cakephp",
                 "netcommons"
             ],
-            "time": "2014-07-16 01:58:31"
+            "time": "2014-07-17 06:10:41"
         },
         {
             "name": "netcommons/users",
@@ -908,12 +908,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Users.git",
-                "reference": "90085de5c4b0f1ac95aaf622025aafd492bf49aa"
+                "reference": "d32d278ab702cfdac8f31c037871f0ccd9693d81"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Users/zipball/90085de5c4b0f1ac95aaf622025aafd492bf49aa",
-                "reference": "90085de5c4b0f1ac95aaf622025aafd492bf49aa",
+                "url": "https://api.github.com/repos/NetCommons3/Users/zipball/d32d278ab702cfdac8f31c037871f0ccd9693d81",
+                "reference": "d32d278ab702cfdac8f31c037871f0ccd9693d81",
                 "shasum": ""
             },
             "require": {
@@ -952,7 +952,7 @@
                 "cakephp",
                 "user"
             ],
-            "time": "2014-07-09 09:22:37"
+            "time": "2014-07-18 06:59:10"
         },
         {
             "name": "psr/log",
