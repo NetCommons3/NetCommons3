@@ -4,10 +4,10 @@ DEPENDENCIES
   application_php
   boilerplate
     git: https://github.com/topaz2/chef_boilerplate.git
-    revision: 940ad65b0b7453a9c76ee0b2f3b67b29f3fbc1c9
+    revision: e69d2e766684177ceb92cc6c7f8cf558e910f6b6
   boilerplate_php
     git: https://github.com/topaz2/chef_boilerplate_php.git
-    revision: 4cdefd8db882019e95fca7c42d54957e38d4497c
+    revision: c7b3d433cbbec6fd9228669ef178d6c49534cd71
   composer
     git: https://github.com/Morphodo/chef-composer.git
     revision: 27cb886029fc28e08ca80ab0b15408b412bb09b7
@@ -16,7 +16,7 @@ DEPENDENCIES
   mysql
   netcommons
     git: https://github.com/NetCommons3/chef_netcommons.git
-    revision: ebb4a28f7c8c5c940a3375aaf71423fd1148a8fe
+    revision: db95733774f9c6e3c686f04a2f61885f46faa2e8
   nginx
   node
   nodejs
@@ -35,12 +35,13 @@ GRAPH
     php (>= 0.0.0)
   apt (2.4.0)
   apt-repo (0.1.1)
-  aws (2.2.2)
+  aws (2.3.0)
   bluepill (2.3.1)
     rsyslog (>= 0.0.0)
   boilerplate (0.3.9)
     apache2 (>= 0.0.0)
     apt-repo (>= 0.0.0)
+    chef-server (>= 0.0.0)
     database (>= 0.0.0)
     gitlab (>= 0.0.0)
     jenkins (>= 0.0.0)
@@ -60,6 +61,7 @@ GRAPH
     python (>= 0.0.0)
   build-essential (2.0.4)
   certificate (0.5.2)
+  chef-server (2.1.6)
   chef-sugar (2.0.0)
   chef_handler (1.1.6)
   chocolatey (0.1.0)
@@ -103,7 +105,7 @@ GRAPH
   iis (2.1.2)
     windows (>= 1.2.6)
   iptables (0.13.2)
-  jenkins (2.1.0)
+  jenkins (2.1.2)
     apt (~> 2.0)
     runit (~> 1.5)
     yum (~> 3.0)
@@ -114,7 +116,8 @@ GRAPH
     windows (>= 0.0.0)
   ms_dotnet45 (1.1.2)
     windows (>= 0.0.0)
-  mysql (5.2.12)
+  mysql (5.3.6)
+    yum-mysql-community (>= 0.0.0)
   mysql-chef_gem (0.0.2)
     build-essential (>= 0.0.0)
     mysql (>= 0.0.0)
@@ -156,7 +159,7 @@ GRAPH
     apt (>= 1.9.0)
     build-essential (>= 0.0.0)
     openssl (>= 0.0.0)
-  powershell (3.0.4)
+  powershell (3.0.7)
     ms_dotnet2 (>= 0.0.0)
     ms_dotnet4 (>= 0.0.0)
     ms_dotnet45 (>= 0.0.0)
@@ -175,7 +178,7 @@ GRAPH
     yum (~> 3.0)
     yum-epel (>= 0.0.0)
   ulimit (0.3.2)
-  windows (1.31.0)
+  windows (1.32.3)
     chef_handler (>= 0.0.0)
   xfs (1.1.0)
   xml (1.2.6)
@@ -184,4 +187,6 @@ GRAPH
   yum (3.2.2)
   yum-epel (0.3.6)
     yum (~> 3.0)
+  yum-mysql-community (0.1.8)
+    yum (>= 3.0.0)
   zlib (2.0.0)
