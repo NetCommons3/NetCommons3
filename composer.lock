@@ -93,16 +93,16 @@
         },
         {
             "name": "cakephp/cakephp",
-            "version": "2.5.2",
+            "version": "2.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/cakephp.git",
-                "reference": "96df2c4b683b105d64bfc78bbccb4184950034e7"
+                "reference": "ac9af7e3269f956b5a030a1bb6e6b95325af8b9c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/cakephp/zipball/96df2c4b683b105d64bfc78bbccb4184950034e7",
-                "reference": "96df2c4b683b105d64bfc78bbccb4184950034e7",
+                "url": "https://api.github.com/repos/cakephp/cakephp/zipball/ac9af7e3269f956b5a030a1bb6e6b95325af8b9c",
+                "reference": "ac9af7e3269f956b5a030a1bb6e6b95325af8b9c",
                 "shasum": ""
             },
             "require": {
@@ -132,7 +132,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2014-06-15 01:36:39"
+            "time": "2014-07-21 02:20:47"
         },
         {
             "name": "cakephp/debug_kit",
@@ -355,16 +355,16 @@
         },
         {
             "name": "composer/installers",
-            "version": "v1.0.15",
+            "version": "v1.0.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "8e6a72a78f6cfd537fde3350720dfdc9ae3c5621"
+                "reference": "033679ad3cfc5ab759f9ed2a58881aeef13c342b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/8e6a72a78f6cfd537fde3350720dfdc9ae3c5621",
-                "reference": "8e6a72a78f6cfd537fde3350720dfdc9ae3c5621",
+                "url": "https://api.github.com/repos/composer/installers/zipball/033679ad3cfc5ab759f9ed2a58881aeef13c342b",
+                "reference": "033679ad3cfc5ab759f9ed2a58881aeef13c342b",
                 "shasum": ""
             },
             "replace": {
@@ -395,8 +395,7 @@
                 {
                     "name": "Kyle Robinson Young",
                     "email": "kyle@dontkry.com",
-                    "homepage": "https://github.com/shama",
-                    "role": "Developer"
+                    "homepage": "https://github.com/shama"
                 }
             ],
             "description": "A multi-framework Composer library installer",
@@ -431,6 +430,7 @@
                 "phpbb",
                 "piwik",
                 "ppi",
+                "puppet",
                 "roundcube",
                 "shopware",
                 "silverstripe",
@@ -440,7 +440,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2014-06-23 16:25:28"
+            "time": "2014-07-21 15:54:34"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -755,12 +755,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Install.git",
-                "reference": "2fe0d2e5d6c0120cc10d54f29e7c60dbdf8ea68d"
+                "reference": "58fb2068b45355f63b1d06a8c47abd8d0ab808f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Install/zipball/2fe0d2e5d6c0120cc10d54f29e7c60dbdf8ea68d",
-                "reference": "2fe0d2e5d6c0120cc10d54f29e7c60dbdf8ea68d",
+                "url": "https://api.github.com/repos/NetCommons3/Install/zipball/58fb2068b45355f63b1d06a8c47abd8d0ab808f3",
+                "reference": "58fb2068b45355f63b1d06a8c47abd8d0ab808f3",
                 "shasum": ""
             },
             "require": {
@@ -796,7 +796,7 @@
                 "cakephp",
                 "install"
             ],
-            "time": "2014-07-17 01:58:15"
+            "time": "2014-07-18 07:00:36"
         },
         {
             "name": "netcommons/m17n",
@@ -856,12 +856,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/NetCommons.git",
-                "reference": "84a33fdc8687d57eeb6d3e4de216c93596d7ceeb"
+                "reference": "c7519dc7748a45f2d1099089807898f30b9389af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/NetCommons/zipball/84a33fdc8687d57eeb6d3e4de216c93596d7ceeb",
-                "reference": "84a33fdc8687d57eeb6d3e4de216c93596d7ceeb",
+                "url": "https://api.github.com/repos/NetCommons3/NetCommons/zipball/c7519dc7748a45f2d1099089807898f30b9389af",
+                "reference": "c7519dc7748a45f2d1099089807898f30b9389af",
                 "shasum": ""
             },
             "require": {
@@ -900,7 +900,7 @@
                 "cakephp",
                 "netcommons"
             ],
-            "time": "2014-07-17 06:10:41"
+            "time": "2014-07-22 10:24:35"
         },
         {
             "name": "netcommons/users",

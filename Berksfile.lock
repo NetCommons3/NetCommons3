@@ -1,38 +1,19 @@
 DEPENDENCIES
-  apache2
-  application
-  application_php
   boilerplate
-    git: https://github.com/topaz2/chef_boilerplate.git
-    revision: 912abe4be340f74c26173dec84771eb4d02f3275
   boilerplate_php
-    git: https://github.com/topaz2/chef_boilerplate_php.git
-    revision: 3f1cb68df104e0d8e603d62c571c0a93e96b2a73
   composer
     git: https://github.com/Morphodo/chef-composer.git
     revision: 27cb886029fc28e08ca80ab0b15408b412bb09b7
-  database
-  jenkins
-  mysql
   netcommons
     git: https://github.com/NetCommons3/chef_netcommons.git
     revision: db95733774f9c6e3c686f04a2f61885f46faa2e8
-  nginx
-  node
-  nodejs
-  php
-  postgresql
 
 GRAPH
   apache2 (1.10.4)
     iptables (>= 0.0.0)
     logrotate (>= 0.0.0)
     pacman (>= 0.0.0)
-  application (3.0.0)
-  application_php (2.0.0)
-    apache2 (>= 0.0.0)
-    application (~> 3.0)
-    php (>= 0.0.0)
+  application (4.1.4)
   apt (2.4.0)
   apt-repo (0.1.1)
   aws (2.3.0)
