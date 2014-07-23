@@ -4,10 +4,10 @@ DEPENDENCIES
   application_php
   boilerplate
     git: https://github.com/topaz2/chef_boilerplate.git
-    revision: e69d2e766684177ceb92cc6c7f8cf558e910f6b6
+    revision: 912abe4be340f74c26173dec84771eb4d02f3275
   boilerplate_php
     git: https://github.com/topaz2/chef_boilerplate_php.git
-    revision: c7b3d433cbbec6fd9228669ef178d6c49534cd71
+    revision: 3f1cb68df104e0d8e603d62c571c0a93e96b2a73
   composer
     git: https://github.com/Morphodo/chef-composer.git
     revision: 27cb886029fc28e08ca80ab0b15408b412bb09b7
@@ -38,7 +38,7 @@ GRAPH
   aws (2.3.0)
   bluepill (2.3.1)
     rsyslog (>= 0.0.0)
-  boilerplate (0.3.9)
+  boilerplate (0.4.2)
     apache2 (>= 0.0.0)
     apt-repo (>= 0.0.0)
     chef-server (>= 0.0.0)
@@ -50,7 +50,7 @@ GRAPH
     nodejs (>= 0.0.0)
     phantomjs (>= 0.0.0)
     ruby (>= 0.0.0)
-  boilerplate_php (0.3.2)
+  boilerplate_php (0.4.1)
     apache2 (>= 0.0.0)
     application (>= 0.0.0)
     boilerplate (>= 0.0.0)
@@ -60,7 +60,7 @@ GRAPH
     php (>= 0.0.0)
     python (>= 0.0.0)
   build-essential (2.0.4)
-  certificate (0.5.2)
+  certificate (0.6.0)
   chef-server (2.1.6)
   chef-sugar (2.0.0)
   chef_handler (1.1.6)
@@ -178,7 +178,7 @@ GRAPH
     yum (~> 3.0)
     yum-epel (>= 0.0.0)
   ulimit (0.3.2)
-  windows (1.32.3)
+  windows (1.33.1)
     chef_handler (>= 0.0.0)
   xfs (1.1.0)
   xml (1.2.6)
@@ -187,6 +187,6 @@ GRAPH
   yum (3.2.2)
   yum-epel (0.3.6)
     yum (~> 3.0)
-  yum-mysql-community (0.1.8)
-    yum (>= 3.0.0)
+  yum-mysql-community (0.1.10)
+    yum (>= 3.0)
   zlib (2.0.0)
