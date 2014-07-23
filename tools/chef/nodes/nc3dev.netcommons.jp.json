@@ -15,15 +15,20 @@
         "git": {
             "use_git_protocol": false
         },
-        "app": {
+        "docs": {
             "repo": {
                 "type": "git",
-                "uri": "https://github.com/NetCommons3/NetCommons3.git"
+                "uri": "https://github.com/NetCommons3/NetCommons3Docs.git"
             }
         },
         "redmine": {
             "host": "nc3dev.netcommons.jp",
             "path": "/redmine"
+        },
+        "backup": {
+            "schedule": {
+                "archive_remote": false
+            }
         },
         "gitlab": false,
         "jenkins": false
