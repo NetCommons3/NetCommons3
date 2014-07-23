@@ -20,7 +20,7 @@ class LanguagesUserAttributesUserFixture extends CakeTestFixture {
 	public $fields = array(
 		'id' => array('type' => 'integer', 'null' => false, 'default' => null, 'key' => 'primary'),
 		'user_id' => array('type' => 'integer', 'null' => false, 'default' => null),
-		'user_attributes_id' => array('type' => 'integer', 'null' => false, 'default' => null),
+		'user_attribute_id' => array('type' => 'integer', 'null' => false, 'default' => null),
 		'language_id' => array('type' => 'integer', 'null' => false, 'default' => null),
 		'value' => array('type' => 'text', 'null' => true, 'default' => null, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
 		'created_user_id' => array('type' => 'integer', 'null' => true, 'default' => null),
@@ -42,7 +42,7 @@ class LanguagesUserAttributesUserFixture extends CakeTestFixture {
 		array(
 			'id' => 1,
 			'user_id' => 1,
-			'user_attributes_id' => 1,
+			'user_attribute_id' => 1,
 			'language_id' => 1,
 			'value' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
 			'created_user_id' => 1,

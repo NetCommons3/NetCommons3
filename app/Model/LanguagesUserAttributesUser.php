@@ -34,7 +34,7 @@ class LanguagesUserAttributesUser extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-		'user_attributes_id' => array(
+		'user_attribute_id' => array(
 			'numeric' => array(
 				'rule' => array('numeric'),
 				//'message' => 'Your custom message here',
@@ -73,7 +73,7 @@ class LanguagesUserAttributesUser extends AppModel {
 		),
 		'UserAttributes' => array(
 			'className' => 'UserAttributes',
-			'foreignKey' => 'user_attributes_id',
+			'foreignKey' => 'user_attribute_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
