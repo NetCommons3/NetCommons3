@@ -45,7 +45,7 @@ class LanguagesPartFixture extends CakeTestFixture {
 			'name' => 'ルーム管理者',
 			'created_user_id' => 1,
 			'created' => false,
-			'modified_user_id' => false,
+			'modified_user_id' => 1,
 			'modified' => false,
 		),
 		array(
@@ -55,7 +55,7 @@ class LanguagesPartFixture extends CakeTestFixture {
 			'name' => '編集長',
 			'created_user_id' => 1,
 			'created' => false,
-			'modified_user_id' => false,
+			'modified_user_id' => 1,
 			'modified' => false,
 		),
 		array(
@@ -65,7 +65,7 @@ class LanguagesPartFixture extends CakeTestFixture {
 			'name' => '編集者',
 			'created_user_id' => 1,
 			'created' => false,
-			'modified_user_id' => false,
+			'modified_user_id' => 1,
 			'modified' => false,
 		),
 		array(
@@ -75,7 +75,7 @@ class LanguagesPartFixture extends CakeTestFixture {
 			'name' => '一般',
 			'created_user_id' => 1,
 			'created' => false,
-			'modified_user_id' => false,
+			'modified_user_id' => 1,
 			'modified' => false,
 		),
 		array(
@@ -85,7 +85,7 @@ class LanguagesPartFixture extends CakeTestFixture {
 			'name' => '参観者',
 			'created_user_id' => 1,
 			'created' => false,
-			'modified_user_id' => false,
+			'modified_user_id' => 1,
 			'modified' => false,
 		)
 	);
