@@ -33,8 +33,6 @@ App::uses('Model', 'Model');
  */
 class AppModel extends Model {
 
-	static private $__useDbConfigPrevious;
-
 /**
  * Constructor. Binds the model's database table to the object.
  *
@@ -49,7 +47,6 @@ class AppModel extends Model {
 		// If a datasource is set via params, use it and return
 		if ((is_array($id) && isset($id['ds'])) || $ds) {
 			parent::__construct($id, $table, $ds);
-
 			return;
 		}
 
@@ -75,58 +72,6 @@ class AppModel extends Model {
 		$this->useDbConfig = $_useDbConfig;
 
 		parent::__construct($id, $table, $ds);
-	}
-
-/**
- * Called before each save operation, after validation. Return a non-true result
- * to halt the save.
- *
- * @param array $options Options passed from Model::save().
- * @return boolean True if the operation should continue, false if it should abort
- * @link http://book.cakephp.org/2.0/en/models/callback-methods.html#beforesave
- * @see Model::save()
- */
-	public function beforeSave($options = array()) {
-		self::$__useDbConfigPrevious = $this->useDbConfig;
-		$this->useDbConfig = 'master';
-		return true;
-	}
-
-/**
- * Called after each successful save operation.
- *
- * @param boolean $created True if this save created a new record
- * @param array $options Options passed from Model::save().
- * @return void
- * @link http://book.cakephp.org/2.0/en/models/callback-methods.html#aftersave
- * @see Model::save()
- */
-	public function afterSave($created, $options = array()) {
-		$this->useDbConfig = self::$__useDbConfigPrevious;
-	}
-
-/**
- * Called before every deletion operation.
- *
- * @param boolean $cascade If true records that depend on this record will also be deleted
- * @return boolean True if the operation should continue, false if it should abort
- * @link http://book.cakephp.org/2.0/en/models/callback-methods.html#beforedelete
- * @SuppressWarnings(PHPMD.BooleanArgumentFlag)
- */
-	public function beforeDelete($cascade = true) {
-		self::$__useDbConfigPrevious = $this->useDbConfig;
-		$this->useDbConfig = 'master';
-		return true;
-	}
-
-/**
- * Called after every deletion operation.
- *
- * @return void
- * @link http://book.cakephp.org/2.0/en/models/callback-methods.html#afterdelete
- */
-	public function afterDelete() {
-		$this->useDbConfig = self::$__useDbConfigPrevious;
 	}
 
 /**
