@@ -1,8 +1,12 @@
 #!/bin/bash -ex
 
 bundle
-bundle update
-bundle ex berks update
+if [ "$UPGRADE_DEPENDENCIES" = "true" ]
+then
+  bundle update
+  bundle ex berks update
+  exit 0
+fi
 
 if [ "$DB" = 'mysql' ]; then mysql -utest -ptest -e 'DROP DATABASE IF EXISTS test_nc3; CREATE DATABASE test_nc3;'; fi
 if [ "$DB" = 'postgresql' ]; then
@@ -27,5 +31,3 @@ do
   export IGNORE_PLUGINS=$IGNORE_PLUGINS,$WORKSPACE/app/Plugin/$p
   export IGNORE_PLUGINS_OPTS="$IGNORE_PLUGINS_OPTS --exclude app/Plugin/$p"
 done
-
-ant build-parallel
