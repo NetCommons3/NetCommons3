@@ -81,7 +81,7 @@ vagrant plugin install vagrant-berkshelf --plugin-version 1.3.7
 
 #### vagrant plugin (vagrant 1.5+)
 <pre>
-vagrant plugin install vagrant-berkshelf --plugin-version ">= 2.0.1"
+vagrant plugin install vagrant-berkshelf --plugin-version 2.0.1
 </pre>
 windowsの場合、dep-selector-libgecodeで失敗します。
 [Tar for Windows](http://gnuwin32.sourceforge.net/packages/gtar.htm)からBinaries(Zip):[tar-1.13-1-bin.zip](http://gnuwin32.sourceforge.net/downlinks/tar-bin-zip.php)とDependencies(Zip):[tar-1.13-1-dep.zip](http://gnuwin32.sourceforge.net/downlinks/tar-dep-zip.php)をダウンロードし、解凍した中身のファイルを、C:\HashiCorp\Vagrant\embedded\mingwにコピーしてください。
