@@ -31,6 +31,7 @@
         "netcommons/m17n":              "@dev",
         "netcommons/net-commons":       "@dev",
         "netcommons/users":             "@dev",
+        "rlerdorf/opcache-status":      "@dev",
         "satooshi/php-coveralls":       "@dev",
         "twbs/bootstrap":               "~3.1"
     },
