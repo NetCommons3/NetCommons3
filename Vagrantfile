@@ -10,7 +10,6 @@ Vagrant.configure('2') do |config|
   config.hostmanager.ignore_private_ip = true
 
   CHEF_ROOT = 'tools/chef'.freeze
-  json = JSON.parse(Pathname(__FILE__).dirname.join(CHEF_ROOT + '/nodes', 'vagrant.json').read)
 
   # Setup default vm
   config.vm.define 'default', primary: true do |node|
@@ -31,12 +30,6 @@ Vagrant.configure('2') do |config|
       json = JSON.parse(Pathname(__FILE__).dirname.join(CHEF_ROOT + '/nodes', 'vagrant.json').read)
       chef.run_list = json.delete('run_list')
       chef.json = json
-      chef.json.deep_merge!({
-          'mysql' => {
-            'role' => 'master',
-            'server_id' => 1
-          }
-        })
     end
     node.vm.provider :virtualbox do |vb|
       vb.gui = false
@@ -58,13 +51,7 @@ Vagrant.configure('2') do |config|
       chef.environments_path = CHEF_ROOT + '/environments'
       chef.environment = 'development'
       chef.add_role('sdb')
-      json = JSON.parse(Pathname(__FILE__).dirname.join(CHEF_ROOT + '/nodes', 'vagrant.json').read)
-      chef.json = json
-      chef.json.deep_merge!({
-          'mysql' => {
-            'server_id' => 2
-          }
-        })
+      chef.json = JSON.parse(Pathname(__FILE__).dirname.join(CHEF_ROOT + '/nodes', 'sdb.json').read)
     end
     # node.vm.provision :chef_client do |chef|
     #   # chef.cookbooks_path = ['site-cookbooks', 'cookbooks']
