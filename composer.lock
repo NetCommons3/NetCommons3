@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "10d69da101f9ee22bdf7aadb7faa5b96",
+    "hash": "4b8d4993052b06872e890f1a6f9f363c",
     "packages": [
         {
             "name": "burzum/cakephp-html-purifier",
@@ -993,37 +993,6 @@
             "time": "2012-12-21 11:40:51"
         },
         {
-            "name": "rlerdorf/opcache-status",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/rlerdorf/opcache-status.git",
-                "reference": "a978692a58214fd87a9cf644bb7a5a21c2c461cb"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/rlerdorf/opcache-status/zipball/a978692a58214fd87a9cf644bb7a5a21c2c461cb",
-                "reference": "a978692a58214fd87a9cf644bb7a5a21c2c461cb",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.5.0"
-            },
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "PHP-3.0"
-            ],
-            "authors": [
-                {
-                    "name": "The contributors",
-                    "homepage": "https://github.com/rlerdorf/opcache-status/graphs/contributors"
-                }
-            ],
-            "description": "A one-page opcache status page",
-            "time": "2014-03-22 05:48:27"
-        },
-        {
             "name": "robloach/component-installer",
             "version": "0.0.12",
             "source": {
@@ -1551,7 +1520,6 @@
         "netcommons/m17n": 20,
         "netcommons/net-commons": 20,
         "netcommons/users": 20,
-        "rlerdorf/opcache-status": 20,
         "satooshi/php-coveralls": 20
     },
     "platform": [],
