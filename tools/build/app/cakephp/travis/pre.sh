@@ -39,4 +39,3 @@ do
   export IGNORE_PLUGINS_OPTS="$IGNORE_PLUGINS_OPTS --exclude $d"
 done
 export IGNORE_PLUGINS=`echo $IGNORE_PLUGINS | cut -c 2-`
-echo $IGNORE_PLUGINS
