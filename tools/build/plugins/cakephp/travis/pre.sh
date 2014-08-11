@@ -23,7 +23,7 @@ pear install --alldeps phpunit/PHPUnit-3.7.32
 pear install --alldeps cakephp/CakePHP_CodeSniffer
 pear install phpmd/PHP_PMD
 pear install phpunit/phpcpd
-pip install http://closure-linter.googlecode.com/files/closure_linter-latest.tar.gz
+sudo pip install http://closure-linter.googlecode.com/files/closure_linter-latest.tar.gz
 
 phpenv rehash
 set +H
