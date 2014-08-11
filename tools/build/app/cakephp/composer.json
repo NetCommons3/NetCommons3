@@ -41,7 +41,6 @@
         "netcommons/sandbox":           "@dev",
         "netcommons/theme-settings":    "@dev",
         "netcommons/users":             "@dev",
-        "rlerdorf/opcache-status":      "@dev",
         "satooshi/php-coveralls":       "@dev",
         "twbs/bootstrap":               "~3.1"
     },
