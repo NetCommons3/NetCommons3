@@ -5,6 +5,6 @@ then
   bundle update
   bundle ex berks update
 else
-  bundle --without development
-  bundle ex berks -e development
+  bundle update --without development
+  bundle ex berks update -e development
 fi

@@ -5,8 +5,8 @@ then
   bundle update
   bundle ex berks update
 else
-  bundle --without development
-  bundle ex berks -e development
+  bundle update --without development
+  bundle ex berks update -e development
 fi
 
 if [ "$DB" = 'mysql' ]; then mysql -utest -ptest -e 'DROP DATABASE IF EXISTS test_nc3; CREATE DATABASE test_nc3;'; fi
