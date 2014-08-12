@@ -3,12 +3,13 @@
 vagrant --version
 
 mkdir -p build/logs
-bundle
-if [ "$UPGRADE_DEPENDENCIES" = "true" ]
+if [ "$ENVIRONMENT" = "development" ]
 then
   bundle update
   bundle ex berks update
-  exit 0
+else
+  bundle
+  bundle ex berks
 fi
 
 vagrant plugin install vagrant-berkshelf --plugin-version '2.0.1'

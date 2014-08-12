@@ -1,6 +1,4 @@
 DEPENDENCIES
-  boilerplate
-  boilerplate_php
   composer
     git: https://github.com/Morphodo/chef-composer.git
     revision: 27cb886029fc28e08ca80ab0b15408b412bb09b7
@@ -50,7 +48,7 @@ GRAPH
     jenkins (>= 0.0.0)
     php (>= 0.0.0)
     python (>= 0.0.0)
-  build-essential (2.0.4)
+  build-essential (2.0.6)
   certificate (0.6.0)
   chef-server (2.1.6)
   chef-sugar (2.0.0)
