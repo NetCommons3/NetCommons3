@@ -1,9 +1,10 @@
 #!/bin/bash -ex
 
-bundle
-if [ "$UPGRADE_DEPENDENCIES" = "true" ]
+if [ "$ENVIRONMENT" = "development" ]
 then
   bundle update
   bundle ex berks update
-  exit 0
+else
+  bundle --without development
+  bundle ex berks -e development
 fi
