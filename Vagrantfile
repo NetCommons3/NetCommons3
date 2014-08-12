@@ -13,7 +13,7 @@ Vagrant.configure('2') do |config|
 
   # Setup default vm
   config.vm.define 'default', primary: true do |node|
-    node.vm.network :forwarded_port, guest: 80, host: 9090
+    node.vm.network :forwarded_port, guest: 80, host: 9090, auto_correct: true
     node.vm.network :private_network, ip: '10.0.0.10'
     node.vm.hostname = 'app.local'
     node.hostmanager.aliases = %w(
