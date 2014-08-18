@@ -25,7 +25,6 @@
         "chronon/mobile_detect":        "*",
         "components/jquery":            "~2.1",
         "components/jqueryui":          "~1.10",
-        "ezyang/htmlpurifier":          "~4.6",
         "mustangostang/spyc":           "@dev",
         "netcommons/install":           "@dev",
         "netcommons/m17n":              "@dev",
