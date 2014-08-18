@@ -1,5 +1,4 @@
 DebugKit
 Migrations
 MobileDetect
-HtmlPurifier
 TinyMCE
