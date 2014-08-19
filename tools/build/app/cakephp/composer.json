@@ -25,7 +25,6 @@
         "chronon/mobile_detect":        "*",
         "components/jquery":            "~2.1",
         "components/jqueryui":          "~1.10",
-        "ezyang/htmlpurifier":          "~4.6",
         "mustangostang/spyc":           "@dev",
         "netcommons/auth":              "@dev",
         "netcommons/auth-general":      "@dev",
@@ -41,6 +40,8 @@
         "netcommons/sandbox":           "@dev",
         "netcommons/theme-settings":    "@dev",
         "netcommons/users":             "@dev",
+        "netcommons/access-counters":   "@dev",
+        "netcommons/menus":             "@dev",
         "satooshi/php-coveralls":       "@dev",
         "twbs/bootstrap":               "~3.1"
     },
