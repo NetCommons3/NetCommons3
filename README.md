@@ -21,6 +21,7 @@ NetCommons
 | OS           | matrix |
 | ------------ | ------ |
 | Windows 8.1  | virtualbox 4.3.10, vagrant 1.4.3 |
+| Windows 8.1  | virtualbox 4.3.12, vagrant 1.6.3 |
 | Windows 7    | virtualbox 4.3.12, vagrant 1.4.3 |
 | Windows 7    | virtualbox 4.3.12, vagrant 1.6.3 |
 | OSX Mavericks | virtualbox 4.3.8, vagrant 1.4.3 |
