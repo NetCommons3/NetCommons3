@@ -42,6 +42,8 @@
         "netcommons/users":             "@dev",
         "netcommons/access-counters":   "@dev",
         "netcommons/menus":             "@dev",
+        "netcommons/rooms":             "@dev",
+        "netcommons/roles":             "@dev",
         "satooshi/php-coveralls":       "@dev",
         "twbs/bootstrap":               "~3.1"
     },
