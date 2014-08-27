@@ -1,4 +1,6 @@
 DEPENDENCIES
+  boilerplate
+  boilerplate_php
   composer
     git: https://github.com/Morphodo/chef-composer.git
     revision: 27cb886029fc28e08ca80ab0b15408b412bb09b7
@@ -38,7 +40,7 @@ GRAPH
     phantomjs (>= 0.0.0)
     python (>= 0.0.0)
     ruby (>= 0.0.0)
-  boilerplate_php (0.4.4)
+  boilerplate_php (0.4.5)
     apache2 (>= 0.0.0)
     application (>= 0.0.0)
     boilerplate (>= 0.0.0)
@@ -56,7 +58,7 @@ GRAPH
   chocolatey (0.1.0)
     powershell (>= 0.0.0)
   composer (0.2.1)
-  database (2.2.0)
+  database (2.3.0)
     aws (>= 0.0.0)
     mysql (>= 5.0.0)
     mysql-chef_gem (>= 0.0.0)
@@ -144,7 +146,7 @@ GRAPH
     windows (>= 0.0.0)
     xml (>= 0.0.0)
     yum-epel (>= 0.0.0)
-  postgresql (3.4.1)
+  postgresql (3.4.2)
     apt (>= 1.9.0)
     build-essential (>= 0.0.0)
     openssl (>= 0.0.0)
@@ -157,7 +159,8 @@ GRAPH
     build-essential (>= 0.0.0)
     yum-epel (>= 0.0.0)
   readline (0.0.4)
-  redisio (1.7.1)
+  redisio (2.2.3)
+    build-essential (>= 0.0.0)
     ulimit (>= 0.1.2)
   rsyslog (1.12.2)
   ruby (0.9.2)
