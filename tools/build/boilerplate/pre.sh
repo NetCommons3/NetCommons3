@@ -1,5 +1,8 @@
 #!/bin/bash -ex
 
+# Clear previous build files
+rm -rf boilerplate-master master.zip
+
 sudo apt-get -y -q install ruby1.9.1 ruby1.9.1-dev
 sudo gem i bundle
 wget https://github.com/topaz2/boilerplate/archive/master.zip
