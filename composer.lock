@@ -1,10 +1,9 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
-        "This file is @generated automatically"
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "4b8d4993052b06872e890f1a6f9f363c",
+    "hash": "18b16556c4f8a7e10dcd6d5cddbe9f28",
     "packages": [
         {
             "name": "burzum/cakephp-html-purifier",
@@ -274,16 +273,16 @@
         },
         {
             "name": "components/jqueryui",
-            "version": "1.11.0",
+            "version": "1.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/components/jqueryui.git",
-                "reference": "f0e274383abd24a72ab2582c64671f3d54426090"
+                "reference": "39890e8599bdd79c423ea21b967195106800b87d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/components/jqueryui/zipball/f0e274383abd24a72ab2582c64671f3d54426090",
-                "reference": "f0e274383abd24a72ab2582c64671f3d54426090",
+                "url": "https://api.github.com/repos/components/jqueryui/zipball/39890e8599bdd79c423ea21b967195106800b87d",
+                "reference": "39890e8599bdd79c423ea21b967195106800b87d",
                 "shasum": ""
             },
             "require": {
@@ -294,7 +293,7 @@
                 "component": {
                     "name": "jquery-ui",
                     "scripts": [
-                        "./jquery-ui.js"
+                        "jquery-ui.js"
                     ],
                     "files": [
                         "ui/**",
@@ -334,12 +333,6 @@
                     "homepage": "http://krisborchers.com"
                 },
                 {
-                    "name": "Corey Frang",
-                    "email": "gnarf37@gmail.com",
-                    "homepage": "http://gnarf.net",
-                    "role": "Developer"
-                },
-                {
                     "name": "Mike Sherov",
                     "email": "mike.sherov@gmail.com",
                     "homepage": "http://mike.sherov.com"
@@ -348,23 +341,28 @@
                     "name": "TJ VanToll",
                     "email": "tj.vantoll@gmail.com",
                     "homepage": "http://tjvantoll.com"
+                },
+                {
+                    "name": "Corey Frang",
+                    "email": "gnarf37@gmail.com",
+                    "homepage": "http://gnarf.net"
                 }
             ],
             "description": "jQuery UI is a curated set of user interface interactions, effects, widgets, and themes built on top of the jQuery JavaScript Library. Whether you're building highly interactive web applications or you just need to add a date picker to a form control, jQuery UI is the perfect choice.",
-            "time": "2014-07-02 12:49:25"
+            "time": "2014-08-13 21:01:50"
         },
         {
             "name": "composer/installers",
-            "version": "v1.0.16",
+            "version": "v1.0.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "033679ad3cfc5ab759f9ed2a58881aeef13c342b"
+                "reference": "74fb0a7a1a23696d9c8cc2fba5903f6711cdd067"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/033679ad3cfc5ab759f9ed2a58881aeef13c342b",
-                "reference": "033679ad3cfc5ab759f9ed2a58881aeef13c342b",
+                "url": "https://api.github.com/repos/composer/installers/zipball/74fb0a7a1a23696d9c8cc2fba5903f6711cdd067",
+                "reference": "74fb0a7a1a23696d9c8cc2fba5903f6711cdd067",
                 "shasum": ""
             },
             "replace": {
@@ -411,6 +409,7 @@
                 "annotatecms",
                 "bitrix",
                 "cakephp",
+                "chef",
                 "codeigniter",
                 "concrete5",
                 "croogo",
@@ -440,7 +439,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2014-07-21 15:54:34"
+            "time": "2014-08-18 20:00:12"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -652,16 +651,16 @@
         },
         {
             "name": "mobiledetect/mobiledetectlib",
-            "version": "2.8.3",
+            "version": "2.8.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/serbanghita/Mobile-Detect.git",
-                "reference": "f5753e4b90daffe50c902e99df5ce3c58fca3fee"
+                "reference": "58754ad5562d730e9ff64654494165a3dafe10cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/serbanghita/Mobile-Detect/zipball/f5753e4b90daffe50c902e99df5ce3c58fca3fee",
-                "reference": "f5753e4b90daffe50c902e99df5ce3c58fca3fee",
+                "url": "https://api.github.com/repos/serbanghita/Mobile-Detect/zipball/58754ad5562d730e9ff64654494165a3dafe10cb",
+                "reference": "58754ad5562d730e9ff64654494165a3dafe10cb",
                 "shasum": ""
             },
             "require": {
@@ -687,7 +686,7 @@
                 {
                     "name": "Serban Ghita",
                     "email": "serbanghita@gmail.com",
-                    "homepage": "http://ghita.org",
+                    "homepage": "http://mobiledetect.net",
                     "role": "Developer"
                 }
             ],
@@ -700,7 +699,7 @@
                 "mobile detector",
                 "php mobile detect"
             ],
-            "time": "2014-07-10 20:00:25"
+            "time": "2014-08-25 07:57:48"
         },
         {
             "name": "mustangostang/spyc",
@@ -708,12 +707,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mustangostang/spyc.git",
-                "reference": "4e2a585391c46adb1ea060f8f26a2a60fd559d5b"
+                "reference": "eeb9f7c47e1457770d64c7fb1f3d4aabff52de4b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mustangostang/spyc/zipball/4e2a585391c46adb1ea060f8f26a2a60fd559d5b",
-                "reference": "4e2a585391c46adb1ea060f8f26a2a60fd559d5b",
+                "url": "https://api.github.com/repos/mustangostang/spyc/zipball/eeb9f7c47e1457770d64c7fb1f3d4aabff52de4b",
+                "reference": "eeb9f7c47e1457770d64c7fb1f3d4aabff52de4b",
                 "shasum": ""
             },
             "require": {
@@ -747,7 +746,7 @@
                 "yaml",
                 "yml"
             ],
-            "time": "2014-05-08 14:11:16"
+            "time": "2014-08-21 09:14:01"
         },
         {
             "name": "netcommons/install",
@@ -856,12 +855,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/NetCommons.git",
-                "reference": "f9ded3549d1fdaa006a5e76731608f2b29b39b8c"
+                "reference": "bf3014e753599e8182187fd6d9090e2c75454489"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/NetCommons/zipball/f9ded3549d1fdaa006a5e76731608f2b29b39b8c",
-                "reference": "f9ded3549d1fdaa006a5e76731608f2b29b39b8c",
+                "url": "https://api.github.com/repos/NetCommons3/NetCommons/zipball/bf3014e753599e8182187fd6d9090e2c75454489",
+                "reference": "bf3014e753599e8182187fd6d9090e2c75454489",
                 "shasum": ""
             },
             "require": {
@@ -900,7 +899,7 @@
                 "cakephp",
                 "netcommons"
             ],
-            "time": "2014-08-07 01:28:15"
+            "time": "2014-08-28 05:46:21"
         },
         {
             "name": "netcommons/users",
