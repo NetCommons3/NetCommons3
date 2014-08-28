@@ -6,5 +6,5 @@ then
   bundle ex berks update
 else
   bundle install --without development
-  bundle ex berks update -e development
+  bundle ex berks install -e development
 fi
