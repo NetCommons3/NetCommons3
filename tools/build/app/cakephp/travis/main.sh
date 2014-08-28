@@ -7,4 +7,4 @@ phpmd app text /etc/phpmd.xml --exclude $TRAVIS_BUILD_DIR/app/Config/Migration,$
 phpcpd --exclude Test --exclude Config --exclude Vendor $IGNORE_PLUGINS_OPTS app
 
 # js
-gjslint --strict -x jquery.js,jquery.cookie.js,js_debug_toolbar.js,travis.karma.conf.js,my.karma.conf.js -e jasmine_examples -r app || exit $?
+gjslint --strict -x jquery.js,jquery.cookie.js,js_debug_toolbar.js,travis.karma.conf.js,my.karma.conf.js -e jasmine_examples,HtmlPurifier -r app || exit $?
