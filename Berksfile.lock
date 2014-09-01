@@ -1,12 +1,10 @@
 DEPENDENCIES
-  boilerplate
-  boilerplate_php
   composer
     git: https://github.com/Morphodo/chef-composer.git
     revision: 27cb886029fc28e08ca80ab0b15408b412bb09b7
   netcommons
     git: https://github.com/NetCommons3/chef_netcommons.git
-    revision: 9fc9a4849213cf304f955cd616bdc79a5223be18
+    revision: 4c7187ffb9a016d56b18cc95df83635389eb507c
   php
     git: https://github.com/trinitronx/php.git
     revision: 6fc40c007d7c4b73a1859283459ca4f7fa1c1513
@@ -20,7 +18,7 @@ GRAPH
     logrotate (>= 0.0.0)
     pacman (>= 0.0.0)
   application (4.1.4)
-  apt (2.4.0)
+  apt (2.5.3)
   apt-repo (0.1.1)
   ark (0.9.0)
     7-zip (>= 0.0.0)
@@ -53,7 +51,7 @@ GRAPH
   build-essential (2.0.6)
   certificate (0.6.0)
   chef-server (2.1.6)
-  chef-sugar (2.0.0)
+  chef-sugar (2.2.0)
   chef_handler (1.1.6)
   chocolatey (0.1.0)
     powershell (>= 0.0.0)
@@ -97,7 +95,7 @@ GRAPH
     yum (>= 0.0.0)
   iis (2.1.2)
     windows (>= 1.2.6)
-  iptables (0.13.2)
+  iptables (0.14.0)
   jenkins (2.1.2)
     apt (~> 2.0)
     runit (~> 1.5)
@@ -109,7 +107,7 @@ GRAPH
     windows (>= 0.0.0)
   ms_dotnet45 (1.1.2)
     windows (>= 0.0.0)
-  mysql (5.3.6)
+  mysql (5.4.4)
     yum-mysql-community (>= 0.0.0)
   mysql-chef_gem (0.0.2)
     build-essential (>= 0.0.0)
@@ -170,13 +168,13 @@ GRAPH
     yum (~> 3.0)
     yum-epel (>= 0.0.0)
   ulimit (0.3.2)
-  windows (1.34.0)
+  windows (1.34.2)
     chef_handler (>= 0.0.0)
   xfs (1.1.0)
   xml (1.2.6)
     build-essential (>= 0.0.0)
     chef-sugar (>= 0.0.0)
-  yum (3.2.2)
+  yum (3.2.4)
   yum-epel (0.4.0)
     yum (~> 3.0)
   yum-mysql-community (0.1.10)
