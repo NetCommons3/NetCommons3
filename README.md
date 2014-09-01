@@ -105,15 +105,13 @@ virtualbox のある時点から windows では synced_folder 上で symlink が
 synced_folder を有効にしたままで vagrant up すると symlink が破壊されます。下記の通り Vagrantfile に 『disabled: true』 を指定して下さい。
 <pre>
 $ emacs Vagrantfile
-  config.vm.synced_folder '.', '/var/www/app',
-    :create => true, :owner=> 'www-data', :group=>'www-data',
-    :mount_options => ['dmode=775','fmode=775']
+    node.vm.synced_folder '.', '/var/www/app',
+    :create => true, :owner=> 'www-data', :group => 'www-data'
 </pre>
 ↓
 <pre>
-  config.vm.synced_folder '.', '/var/www/app', disabled: true,
-    :create => true, :owner=> 'www-data', :group=>'www-data',
-    :mount_options => ['dmode=775','fmode=775']
+    node.vm.synced_folder '.', '/var/www/app', disabled: true,
+    :create => true, :owner=> 'www-data', :group => 'www-data'
 </pre>
 
 ##### Berksfileの修正（vagrant1.4.xのバージョンのみ）
@@ -131,7 +129,7 @@ site :opscode
 ### vagrantを起動
 配置したソースのパスでvagrantを起動します。初回のみOSのダウンロードに時間がかかります。
 <pre>
-vagrant up
+vagrant up default
 </pre>
 
 ※windows だと以下のようなエラーが出るようです。
@@ -174,14 +172,34 @@ SSH認証のユーザ名とパスフレーズはともに「vagrant」です。
 
 guest には下記 vhosts が作成され、動作の確認ができます。
 
-※windowsは vagrant に ssh 接続した後、下記のコマンドを実行する
+※windowsは vagrant に ssh 接続した後、下記のコマンドを実行してください。
 
 <pre>
 sudo -s
 cd /var/www
-chown -R www-data:www-data app
-chmod -R 775 app
+rm -rf /var/www/app
+git clone https://github.com/NetCommons3/NetCommons3.git app
+chown -R www-data:www-data /var/www/app
+chmod -R 775 /var/www/app
+cd /var/www
+git clone https://github.com/NetCommons3/NetCommons3Docs.git docs
+chown -R www-data:www-data /var/www/docs
+chmod -R 775 /var/www/docs
 </pre>
+
+その後、ホスト側で下記コマンド実行
+
+<pre>
+vagrant provision default
+</pre>
+
+再度vagrant に ssh 接続した後、下記のコマンドを実行してください。
+
+<pre>
+sudo -s
+chown -R www-data:www-data /var/www/app
+</pre>
+
 
 | url                                 | 用途                                 |
 | ----------------------------------- | ------------------------------------ |
@@ -216,4 +234,9 @@ vagrant halt
 データを破棄する場合。次回、<code>vagrant up</code>の際にはまっさらなマシンから新規インストールが行われます。
 <pre>
 vagrant destroy
+</pre>
+
+provisionする場合。 default オプションをつける必要が有ります。
+<pre>
+vagrant provision default
 </pre>
