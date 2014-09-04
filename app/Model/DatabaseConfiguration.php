@@ -14,6 +14,11 @@ App::uses('AppModel', 'Model');
  */
 class DatabaseConfiguration extends AppModel {
 
+/**
+ * useTable
+ *
+ * @var boolean
+ */
 	public $useTable = false;
 
 /**
