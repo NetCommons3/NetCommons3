@@ -75,6 +75,7 @@ Vagrant.configure('2') do |config|
     node.vm.network :private_network, ip: '10.0.0.12'
     node.vm.hostname = 'chef.local'
     node.vm.provision :chef_solo do |chef|
+      chef.custom_config_path = CHEF_ROOT + '/Vagrantfile.chef'
       chef.json = {
         'chef-server' => {
           'version' => :latest
