@@ -14,6 +14,7 @@ composer install
 chmod -R 777 app/tmp
 mkdir -p build/logs
 mkdir -p build/cov
+sudo mkdir -p /etc/phpmd
 
 pear config-set auto_discover 1
 pear channel-discover pear.phpunit.de
