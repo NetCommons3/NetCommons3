@@ -11,6 +11,7 @@ sh -c "if [ '$DB' = 'pgsql' ]; then psql -c 'CREATE SCHEMA test3;' -U postgres -
 
 chmod -R 777 ./app/tmp
 mkdir -p build/logs
+sudo mkdir -p /etc/phpmd
 
 pear config-set auto_discover 1
 pear channel-discover pear.phpunit.de
@@ -26,7 +27,7 @@ sudo pip install http://closure-linter.googlecode.com/files/closure_linter-lates
 phpenv rehash
 set +H
 cp app/Config/database.php.travis app/Config/database.php
-sudo wget https://raw.githubusercontent.com/topaz2/chef_boilerplate_php/master/files/default/build/cakephp/phpmd.xml -O /etc/phpmd.xml
+sudo wget https://raw.githubusercontent.com/topaz2/chef_boilerplate_php/master/files/default/build/cakephp/phpmd/rules.xml -O /etc/phpmd/rules.xml
 
 for p in `cat app/Config/vendors.txt`
 do
