@@ -10,4 +10,7 @@ else
 fi
 
 export DIR=/var/local/backup/archives
-sudo mkdir -p $DIR
+for env in development staging production
+do
+  sudo mkdir -p $DIR/$env
+done
