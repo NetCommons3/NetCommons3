@@ -9,7 +9,7 @@ else
   bundle ex berks install -e development
 fi
 
-export DIR=/var/local/backup/archives
+DIR=/var/local/backup/archives
 for env in development staging production
 do
   sudo mkdir -p $DIR/$env
