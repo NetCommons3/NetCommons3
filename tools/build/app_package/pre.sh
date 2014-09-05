@@ -10,4 +10,4 @@ else
 fi
 
 export DIR=/var/local/backup/archives
-mkdir -p $DIR
+sudo mkdir -p $DIR
