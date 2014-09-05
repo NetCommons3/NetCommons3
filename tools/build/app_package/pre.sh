@@ -14,3 +14,4 @@ for env in development staging production
 do
   sudo mkdir -p $DIR/$env
 done
+sudo chmod 777 -R $DIR
