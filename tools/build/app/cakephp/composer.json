@@ -18,7 +18,6 @@
         }
     },
     "require": {
-        "burzum/cakephp-html-purifier": "0.0.0",
         "cakedc/migrations":            "~2.2",
         "cakephp/cakephp":              "~2.4",
         "cakephp/debug_kit":            "~2.2",
