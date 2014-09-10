@@ -1,4 +1,7 @@
 <?php
+/**
+ * All test suite
+ */
 class AllTest extends CakeTestSuite {
 
 /**
