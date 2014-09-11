@@ -25,6 +25,10 @@
         "components/jquery":            "~2.1",
         "components/jqueryui":          "~1.10",
         "mustangostang/spyc":           "@dev",
+        "satooshi/php-coveralls":       "@dev",
+        "twbs/bootstrap":               "~3.1"
+    },
+    "require-dev": {
         "netcommons/auth":              "@dev",
         "netcommons/auth-general":      "@dev",
         "netcommons/announcements":     "@dev",
@@ -42,16 +46,13 @@
         "netcommons/access-counters":   "@dev",
         "netcommons/menus":             "@dev",
         "netcommons/rooms":             "@dev",
-        "netcommons/roles":             "@dev",
-        "satooshi/php-coveralls":       "@dev",
-        "twbs/bootstrap":               "~3.1"
+        "netcommons/roles":             "@dev"
     },
     "bin": [
         "lib/Cake/Console/cake"
     ],
     "config": {
         "vendor-dir": "vendors",
-        "preferred-install": "source",
         "process-timeout": 3000
     }
 }
