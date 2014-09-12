@@ -1270,12 +1270,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/M17n.git",
-                "reference": "c004fd1c8ffe1b0b23536f5ad324dc77ff3553b7"
+                "reference": "202ce0f9b8eb8583a8dbcecb19a2786119bbaddd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/M17n/zipball/c004fd1c8ffe1b0b23536f5ad324dc77ff3553b7",
-                "reference": "c004fd1c8ffe1b0b23536f5ad324dc77ff3553b7",
+                "url": "https://api.github.com/repos/NetCommons3/M17n/zipball/202ce0f9b8eb8583a8dbcecb19a2786119bbaddd",
+                "reference": "202ce0f9b8eb8583a8dbcecb19a2786119bbaddd",
                 "shasum": ""
             },
             "require": {
@@ -1314,7 +1314,7 @@
                 "cakephp",
                 "m17n"
             ],
-            "time": "2014-09-11 07:20:20"
+            "time": "2014-09-11 09:52:56"
         },
         {
             "name": "netcommons/net-commons",
