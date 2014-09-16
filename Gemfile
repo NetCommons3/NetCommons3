@@ -8,6 +8,7 @@ gem 'i18n'
 gem 'knife-backup'
 gem 'mysql'
 gem 'nokogiri'
+gem 'psych'
 gem 'rake'
 
 group :development, :test do

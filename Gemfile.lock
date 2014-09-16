@@ -248,6 +248,7 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
+    psych (2.0.3)
     pusher-client (0.6.0)
       json
       websocket (~> 1.0)
@@ -360,6 +361,7 @@ DEPENDENCIES
   mysql
   nokogiri
   pg
+  psych
   rake
   rcodetools
   ruby-prof
