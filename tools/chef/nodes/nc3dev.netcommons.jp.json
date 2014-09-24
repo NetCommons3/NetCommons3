@@ -1,4 +1,7 @@
 {
+    "apache": {
+        "version": "2.4"
+    },
     "mysql": {
         "bind_address":           "0.0.0.0",
         "server_root_password":   "root",
@@ -26,8 +29,8 @@
             "path": "/redmine"
         },
         "backup": {
-            "schedule": {
-                "archive_remote": false
+            "to": {
+                "path": "/srv/nfs"
             }
         },
         "gitlab": false,
