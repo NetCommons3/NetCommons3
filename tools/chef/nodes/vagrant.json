@@ -50,5 +50,5 @@
             "version": "2.x"
         }
     },
-    "run_list": ["netcommons"]
+    "run_list": ["chef-dk", "netcommons"]
 }
