@@ -1,22 +1,19 @@
 language: php
-
 php:
   - 5.4
   - 5.5
   - 5.6
-
 env:
   - DB=mysql
-
+cache:
+  - bundler
+  - apt
 before_script:
   - . tools/build/app/cakephp/travis/pre.sh
-
 script:
   - . tools/build/app/cakephp/travis/main.sh
-
 after_script:
   - . tools/build/app/cakephp/travis/post.sh
-
 notifications:
   email:
     recipients:
