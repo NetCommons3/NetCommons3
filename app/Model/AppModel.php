@@ -36,7 +36,7 @@ class AppModel extends Model {
 /**
  * Constructor. Binds the model's database table to the object.
  *
- * @param boolean|integer|string|array $id Set this ID for this model on startup,
+ * @param bool|integer|string|array $id Set this ID for this model on startup,
  * can also be an array of options, see above.
  * @param string $table Name of database table to use.
  * @param string $ds DataSource connection name.
