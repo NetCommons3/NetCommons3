@@ -9,6 +9,14 @@ Vagrant.configure('2') do |config|
   config.hostmanager.manage_host = true
   config.hostmanager.ignore_private_ip = true
 
+  if Vagrant.has_plugin?('vagrant-cachier')
+    config.cache.scope = :box
+    config.cache.synced_folder_opts = {
+      type: :nfs,
+      mount_options: ['rw', 'vers=4', 'tcp', 'nolock']
+    }
+  end
+  
   CHEF_ROOT = 'tools/chef'.freeze
 
   # Setup default vm
