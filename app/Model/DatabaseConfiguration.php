@@ -17,7 +17,7 @@ class DatabaseConfiguration extends AppModel {
 /**
  * useTable
  *
- * @var boolean
+ * @var bool
  */
 	public $useTable = false;
 

@@ -558,7 +558,7 @@ class LanguageFix extends CakeMigration {
  * Before migration callback
  *
  * @param string $direction, up or down direction of migration process
- * @return boolean Should process continue
+ * @return bool Should process continue
  */
 	public function before($direction) {
 		return true;
@@ -568,7 +568,7 @@ class LanguageFix extends CakeMigration {
  * After migration callback
  *
  * @param string $direction, up or down direction of migration process
- * @return boolean Should process continue
+ * @return bool Should process continue
  */
 	public function after($direction) {
 		return true;
