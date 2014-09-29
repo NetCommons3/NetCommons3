@@ -816,17 +816,17 @@
         },
         {
             "name": "symfony/config",
-            "version": "v2.5.4",
+            "version": "v2.5.5",
             "target-dir": "Symfony/Component/Config",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Config.git",
-                "reference": "080eabdc256c1d7a3a7cf6296271edb68eb1ab2b"
+                "reference": "0316364bfebc8b080077c731a99f189341476bd7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Config/zipball/080eabdc256c1d7a3a7cf6296271edb68eb1ab2b",
-                "reference": "080eabdc256c1d7a3a7cf6296271edb68eb1ab2b",
+                "url": "https://api.github.com/repos/symfony/Config/zipball/0316364bfebc8b080077c731a99f189341476bd7",
+                "reference": "0316364bfebc8b080077c731a99f189341476bd7",
                 "shasum": ""
             },
             "require": {
@@ -860,21 +860,21 @@
             ],
             "description": "Symfony Config Component",
             "homepage": "http://symfony.com",
-            "time": "2014-08-31 03:22:04"
+            "time": "2014-09-23 05:25:11"
         },
         {
             "name": "symfony/console",
-            "version": "v2.5.4",
+            "version": "v2.5.5",
             "target-dir": "Symfony/Component/Console",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "748beed2a1e73179c3f5154d33fe6ae100c1aeb1"
+                "reference": "ca053eaa031c93afb68a71e4eb1f4168dfd4a661"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/748beed2a1e73179c3f5154d33fe6ae100c1aeb1",
-                "reference": "748beed2a1e73179c3f5154d33fe6ae100c1aeb1",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/ca053eaa031c93afb68a71e4eb1f4168dfd4a661",
+                "reference": "ca053eaa031c93afb68a71e4eb1f4168dfd4a661",
                 "shasum": ""
             },
             "require": {
@@ -915,21 +915,21 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "http://symfony.com",
-            "time": "2014-08-14 16:10:54"
+            "time": "2014-09-25 09:53:56"
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v2.5.4",
+            "version": "v2.5.5",
             "target-dir": "Symfony/Component/EventDispatcher",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/EventDispatcher.git",
-                "reference": "8faf5cc7e80fde74a650a36e60d32ce3c3e0457b"
+                "reference": "f6281337bf5f985f585d1db6a83adb05ce531f46"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/8faf5cc7e80fde74a650a36e60d32ce3c3e0457b",
-                "reference": "8faf5cc7e80fde74a650a36e60d32ce3c3e0457b",
+                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/f6281337bf5f985f585d1db6a83adb05ce531f46",
+                "reference": "f6281337bf5f985f585d1db6a83adb05ce531f46",
                 "shasum": ""
             },
             "require": {
@@ -938,7 +938,7 @@
             "require-dev": {
                 "psr/log": "~1.0",
                 "symfony/config": "~2.0",
-                "symfony/dependency-injection": "~2.0",
+                "symfony/dependency-injection": "~2.0,<2.6.0",
                 "symfony/stopwatch": "~2.2"
             },
             "suggest": {
@@ -972,21 +972,21 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "http://symfony.com",
-            "time": "2014-07-28 13:20:46"
+            "time": "2014-09-28 15:56:11"
         },
         {
             "name": "symfony/filesystem",
-            "version": "v2.5.4",
+            "version": "v2.5.5",
             "target-dir": "Symfony/Component/Filesystem",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Filesystem.git",
-                "reference": "a765efd199e02ff4001c115c318e219030be9364"
+                "reference": "4e62fab0060a826561c78b665925b37c870c45f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/a765efd199e02ff4001c115c318e219030be9364",
-                "reference": "a765efd199e02ff4001c115c318e219030be9364",
+                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/4e62fab0060a826561c78b665925b37c870c45f5",
+                "reference": "4e62fab0060a826561c78b665925b37c870c45f5",
                 "shasum": ""
             },
             "require": {
@@ -1019,21 +1019,21 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "http://symfony.com",
-            "time": "2014-09-03 09:00:14"
+            "time": "2014-09-22 09:14:18"
         },
         {
             "name": "symfony/process",
-            "version": "v2.5.4",
+            "version": "v2.5.5",
             "target-dir": "Symfony/Component/Process",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Process.git",
-                "reference": "136cf0bdaacea81f779583376d47dd8aef4fc6ba"
+                "reference": "8a1ec96c4e519cee0fb971ea48a1eb7369dda54b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Process/zipball/136cf0bdaacea81f779583376d47dd8aef4fc6ba",
-                "reference": "136cf0bdaacea81f779583376d47dd8aef4fc6ba",
+                "url": "https://api.github.com/repos/symfony/Process/zipball/8a1ec96c4e519cee0fb971ea48a1eb7369dda54b",
+                "reference": "8a1ec96c4e519cee0fb971ea48a1eb7369dda54b",
                 "shasum": ""
             },
             "require": {
@@ -1066,21 +1066,21 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "http://symfony.com",
-            "time": "2014-08-31 03:22:04"
+            "time": "2014-09-23 05:25:11"
         },
         {
             "name": "symfony/stopwatch",
-            "version": "v2.5.4",
+            "version": "v2.5.5",
             "target-dir": "Symfony/Component/Stopwatch",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Stopwatch.git",
-                "reference": "22ab4f76cdeefd38b00022a6be5709190a2fd046"
+                "reference": "9f8a33a24f2378c0ec5f372a8d50b2d43069c050"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Stopwatch/zipball/22ab4f76cdeefd38b00022a6be5709190a2fd046",
-                "reference": "22ab4f76cdeefd38b00022a6be5709190a2fd046",
+                "url": "https://api.github.com/repos/symfony/Stopwatch/zipball/9f8a33a24f2378c0ec5f372a8d50b2d43069c050",
+                "reference": "9f8a33a24f2378c0ec5f372a8d50b2d43069c050",
                 "shasum": ""
             },
             "require": {
@@ -1113,21 +1113,21 @@
             ],
             "description": "Symfony Stopwatch Component",
             "homepage": "http://symfony.com",
-            "time": "2014-08-14 16:10:54"
+            "time": "2014-09-22 09:14:18"
         },
         {
             "name": "symfony/yaml",
-            "version": "v2.5.4",
+            "version": "v2.5.5",
             "target-dir": "Symfony/Component/Yaml",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "01a7695bcfb013d0a15c6757e15aae120342986f"
+                "reference": "b1dbc53593b98c2d694ebf383660ac9134d30b96"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/01a7695bcfb013d0a15c6757e15aae120342986f",
-                "reference": "01a7695bcfb013d0a15c6757e15aae120342986f",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/b1dbc53593b98c2d694ebf383660ac9134d30b96",
+                "reference": "b1dbc53593b98c2d694ebf383660ac9134d30b96",
                 "shasum": ""
             },
             "require": {
@@ -1160,7 +1160,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "http://symfony.com",
-            "time": "2014-08-31 03:22:04"
+            "time": "2014-09-22 09:14:18"
         },
         {
             "name": "twbs/bootstrap",
@@ -1221,12 +1221,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Install.git",
-                "reference": "bf8444e3a02be907d14084989c0afce7a5227055"
+                "reference": "6e2ef453bdc28d7f8ee28edc0b2a857825eaf678"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Install/zipball/bf8444e3a02be907d14084989c0afce7a5227055",
-                "reference": "bf8444e3a02be907d14084989c0afce7a5227055",
+                "url": "https://api.github.com/repos/NetCommons3/Install/zipball/6e2ef453bdc28d7f8ee28edc0b2a857825eaf678",
+                "reference": "6e2ef453bdc28d7f8ee28edc0b2a857825eaf678",
                 "shasum": ""
             },
             "require": {
@@ -1262,7 +1262,7 @@
                 "cakephp",
                 "install"
             ],
-            "time": "2014-09-10 07:55:50"
+            "time": "2014-09-29 01:56:44"
         },
         {
             "name": "netcommons/m17n",
@@ -1270,12 +1270,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/M17n.git",
-                "reference": "202ce0f9b8eb8583a8dbcecb19a2786119bbaddd"
+                "reference": "00ee71a56cd9868eb26ebdd5b5001cfba685c2ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/M17n/zipball/202ce0f9b8eb8583a8dbcecb19a2786119bbaddd",
-                "reference": "202ce0f9b8eb8583a8dbcecb19a2786119bbaddd",
+                "url": "https://api.github.com/repos/NetCommons3/M17n/zipball/00ee71a56cd9868eb26ebdd5b5001cfba685c2ec",
+                "reference": "00ee71a56cd9868eb26ebdd5b5001cfba685c2ec",
                 "shasum": ""
             },
             "require": {
@@ -1314,7 +1314,7 @@
                 "cakephp",
                 "m17n"
             ],
-            "time": "2014-09-11 09:52:56"
+            "time": "2014-09-26 09:51:56"
         },
         {
             "name": "netcommons/net-commons",
@@ -1322,12 +1322,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/NetCommons.git",
-                "reference": "4042de4a6d3ed68ef256f616b5ff1910532c1bfd"
+                "reference": "2afd7bcffacbde0dd70e5b06d49b55d1f093b8a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/NetCommons/zipball/4042de4a6d3ed68ef256f616b5ff1910532c1bfd",
-                "reference": "4042de4a6d3ed68ef256f616b5ff1910532c1bfd",
+                "url": "https://api.github.com/repos/NetCommons3/NetCommons/zipball/2afd7bcffacbde0dd70e5b06d49b55d1f093b8a4",
+                "reference": "2afd7bcffacbde0dd70e5b06d49b55d1f093b8a4",
                 "shasum": ""
             },
             "require": {
@@ -1366,7 +1366,7 @@
                 "cakephp",
                 "netcommons"
             ],
-            "time": "2014-09-08 13:39:05"
+            "time": "2014-09-26 09:52:17"
         },
         {
             "name": "netcommons/users",
@@ -1374,12 +1374,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Users.git",
-                "reference": "2bda78820fe5f918e0511fcca43628d99d24b885"
+                "reference": "e8df292995e586174cc93e621cd864a3e48dd062"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Users/zipball/2bda78820fe5f918e0511fcca43628d99d24b885",
-                "reference": "2bda78820fe5f918e0511fcca43628d99d24b885",
+                "url": "https://api.github.com/repos/NetCommons3/Users/zipball/e8df292995e586174cc93e621cd864a3e48dd062",
+                "reference": "e8df292995e586174cc93e621cd864a3e48dd062",
                 "shasum": ""
             },
             "require": {
@@ -1418,7 +1418,7 @@
                 "cakephp",
                 "user"
             ],
-            "time": "2014-07-24 03:38:21"
+            "time": "2014-09-17 09:07:13"
         }
     ],
     "aliases": [],
