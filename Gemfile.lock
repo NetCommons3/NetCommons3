@@ -206,7 +206,6 @@ GEM
       wmi-lite (~> 1.0)
     parslet (1.5.0)
       blankslate (~> 2.0)
-    pg (0.17.1)
     phantomjs (1.9.7.1)
     plist (3.1.0)
     posix-spawn (0.3.9)
@@ -296,7 +295,6 @@ DEPENDENCIES
   libnotify
   mysql
   nokogiri
-  pg
   psych
   rake
   rcodetools

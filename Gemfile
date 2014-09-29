@@ -37,7 +37,3 @@ group :development, :test do
     gem 'guard-phpunit2'
   end
 end
-
-group :pg do
-  gem 'pg'
-end
