@@ -37,7 +37,9 @@ NetCommons
   * [https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads)
 * vagrant
   * [http://www.vagrantup.com/downloads.html](http://www.vagrantup.com/downloads.html)
-
+* chef-dk
+  * [https://downloads.getchef.com/chef-dk](https://downloads.getchef.com/chef-dk)
+ 
 ### 依存ライブラリをインストール
 #### ubuntu 12.10
 <pre>
