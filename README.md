@@ -75,6 +75,7 @@ git コマンドのパスが通っていないと下記エラーが発生しま�
 <pre>
 vagrant plugin install vagrant-hostmanager
 vagrant plugin install vagrant-omnibus
+vagrant plugin install vagrant-cachier
 </pre>
 
 #### vagrant plugin (vagrant 1.4.x)
