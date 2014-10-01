@@ -11,11 +11,6 @@
         "server_repl_password":   "repl",
         "server_debian_password": ""
     },
-    "postgresql": {
-        "password": {
-            "postgres": "postgres"
-        }
-    },
     "jenkins": {
         "executor": {
             "timeout": 240
