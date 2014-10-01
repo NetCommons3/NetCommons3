@@ -34,9 +34,9 @@ class RoomPartFixture extends CakeTestFixture {
 		'edit_content' => array('type' => 'integer', 'length' => 2, 'null' => true, 'default' => null),
 		'create_content' => array('type' => 'integer', 'length' => 2, 'null' => true, 'default' => null),
 		'publish_content' => array('type' => 'integer', 'length' => 2, 'null' => true, 'default' => null),
-		'created_user_id' => array('type' => 'integer', 'null' => true, 'default' => null),
+		'created_user' => array('type' => 'integer', 'null' => true, 'default' => null),
 		'created' => array('type' => 'datetime', 'null' => true, 'default' => null),
-		'modified_user_id' => array('type' => 'integer', 'null' => true, 'default' => null),
+		'modified_user' => array('type' => 'integer', 'null' => true, 'default' => null),
 		'modified' => array('type' => 'datetime', 'null' => true, 'default' => null),
 		'indexes' => array(
 			'PRIMARY' => array('column' => 'id', 'unique' => 1),
