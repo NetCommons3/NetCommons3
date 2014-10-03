@@ -42,9 +42,8 @@ class SiteSetting extends AppModel {
 			'conditions' => array('key' => 'theme'),
 		));
 		if ($row && isset($row['SiteSetting'])
-			&& isset($row['SiteSetting'][0])
-			&& isset($row['SiteSetting'][0]['value'])) {
-			return $row['SiteSetting'][0]['value'];
+			&& isset($row['SiteSetting']['value'])) {
+			return $row['SiteSetting']['value'];
 		}
 		return null;
 	}
