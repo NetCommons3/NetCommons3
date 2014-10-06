@@ -9,6 +9,558 @@ class LanguageFix extends CakeMigration {
 	public $description = '';
 
 /**
+ * Records keyed by model name.
+ *
+ * @var array $records
+ */
+	public $records = array(
+				'Page' => array(
+					array(
+						'id' => '1',
+						'room_id' => '1',
+						'parent_id' => null,
+						'lft' => '1',
+						'rght' => '2',
+						'permalink' => '',
+						'slug' => null,
+						'is_published' => true,
+						'from' => null,
+						'to' => null,
+					),
+				),
+
+				'Container' => array(
+					array(
+						'id' => '1',
+						'type' => '1',
+					),
+					array(
+						'id' => '2',
+						'type' => '2',
+					),
+					array (
+						'id' => '3',
+						'type' => '3',
+					),
+					array(
+						'id' => '4',
+						'type' => '4',
+					),
+					array(
+						'id' => '5',
+						'type' => '5',
+					),
+				),
+
+				'ContainersPage' => array(
+					array(
+						'id' => '1',
+						'page_id' => '1',
+						'container_id' => '1',
+						'is_visible' => true,
+					),
+					array(
+						'id' => '2',
+						'page_id' => '1',
+						'container_id' => '2',
+						'is_visible' => true,
+					),
+					array(
+						'id' => '3',
+						'page_id' => '1',
+						'container_id' => '3',
+						'is_visible' => true,
+					),
+					array(
+						'id' => '4',
+						'page_id' => '1',
+						'container_id' => '4',
+						'is_visible' => true,
+					),
+					array(
+						'id' => '5',
+						'page_id' => '1',
+						'container_id' => '5',
+						'is_visible' => true,
+					),
+				),
+
+				'Box' => array(
+					array(
+						'id' => '1',
+						'container_id' => '1',
+						'type' => '1',
+						'space_id' => '1',
+						'room_id' => null,
+						'page_id' => null,
+						'weight' => '1',
+					),
+					array(
+						'id' => '2',
+						'container_id' => '2',
+						'type' => '1',
+						'space_id' => '1',
+						'room_id' => null,
+						'page_id' => null,
+						'weight' => '1',
+					),
+					array(
+						'id' => '3',
+						'container_id' => '3',
+						'type' => '4',
+						'space_id' => null,
+						'room_id' => 1,
+						'page_id' => '1',
+						'weight' => '1',
+					),
+					array(
+						'id' => '4',
+						'container_id' => '4',
+						'type' => '1',
+						'space_id' => 1,
+						'room_id' => null,
+						'page_id' => null,
+						'weight' => '1',
+					),
+					array(
+						'id' => '5',
+						'container_id' => '5',
+						'type' => '1',
+						'space_id' => 1,
+						'room_id' => null,
+						'page_id' => null,
+						'weight' => '1',
+					),
+				),
+
+				'BoxesPage' => array(
+					array(
+						'id' => '1',
+						'page_id' => '1',
+						'box_id' => '1',
+						'is_visible' => true,
+					),
+					array(
+						'id' => '2',
+						'page_id' => '1',
+						'box_id' => '2',
+						'is_visible' => true,
+					),
+					array(
+						'id' => '3',
+						'page_id' => '1',
+						'box_id' => '3',
+						'is_visible' => true,
+					),
+					array(
+						'id' => '4',
+						'page_id' => '1',
+						'box_id' => '4',
+						'is_visible' => true,
+					),
+					array(
+						'id' => '5',
+						'page_id' => '1',
+						'box_id' => '5',
+						'is_visible' => true,
+					),
+				),
+
+				'Frame' => array(
+					array(
+						'id' => '1',
+						'room_id' => '1',
+						'box_id' => '1',
+						'plugin_id' => '1',
+						'block_id' => '1',
+						'weight' => '1',
+						'is_published' => true,
+						'from' => null,
+						'to' => null,
+					),
+					array(
+						'id' => '2',
+						'room_id' => '1',
+						'box_id' => '2',
+						'plugin_id' => '2',
+						'block_id' => '2',
+						'weight' => '1',
+						'is_published' => true,
+						'from' => null,
+						'to' => null,
+					),
+					array(
+						'id' => '3',
+						'room_id' => '1',
+						'box_id' => '3',
+						'plugin_id' => '1',
+						'block_id' => '3',
+						'weight' => '1',
+						'is_published' => true,
+						'from' => null,
+						'to' => null,
+					),
+					array(
+						'id' => '4',
+						'room_id' => '1',
+						'box_id' => '4',
+						'plugin_id' => '1',
+						'block_id' => '4',
+						'weight' => '1',
+						'is_published' => true,
+						'from' => null,
+						'to' => null,
+					),
+					array(
+						'id' => '5',
+						'room_id' => '1',
+						'box_id' => '5',
+						'plugin_id' => '1',
+						'block_id' => '5',
+						'weight' => '1',
+						'is_published' => true,
+						'from' => null,
+						'to' => null,
+					),
+				),
+
+				'Block' => array(
+					array(
+						'id' => '1',
+						'room_id' => '1',
+					),
+					array(
+						'id' => '2',
+						'room_id' => '1',
+					),
+					array(
+						'id' => '3',
+						'room_id' => '1',
+					),
+					array(
+						'id' => '4',
+						'room_id' => '1',
+					),
+					array(
+						'id' => '5',
+						'room_id' => '1',
+					),
+				),
+
+				'Language' => array(
+					array(
+						'id' => '1',
+						'code' => 'en',
+						'weight' => '1',
+						'is_active' => true,
+					),
+					array(
+						'id' => '2',
+						'code' => 'jp',
+						'weight' => '2',
+						'is_active' => true,
+					),
+					array(
+						'id' => '3',
+						'code' => 'zh',
+						'weight' => '3',
+						'is_active' => true,
+					),
+				),
+
+				'LanguagesPage' => array(
+					array(
+						'id' => '1',
+						'page_id' => '1',
+						'language_id' => '1',
+						'name' => 'TestPage001',
+					),
+					array(
+						'id' => '2',
+						'page_id' => '1',
+						'language_id' => '2',
+						'name' => 'テストページ001',
+					),
+				),
+
+				'Plugin' => array(
+					array(
+						'id' => '1',
+						'folder' => 'announcements',
+						'type' => '1',
+						'version' => '3.0.0'
+					),
+					array(
+						'id' => '2',
+						'folder' => 'menus',
+						'type' => '1',
+						'version' => '3.0.0'
+					),
+					array(
+						'id' => '3',
+						'folder' => 'plugin_manager',
+						'type' => '2',
+						'version' => '3.0.0'
+					),
+				),
+
+
+				'Part' => array(
+					array(
+						'id' => '1',
+						'type' => '2',
+					),
+					array(
+						'id' => '2',
+						'type' => '2',
+					),
+					array(
+						'id' => '3',
+						'type' => '2',
+					),
+					array(
+						'id' => '4',
+						'type' => '2',
+					),
+					array(
+						'id' => '5',
+						'type' => '2',
+					),
+				),
+
+				'PartsRoomsUser' => array(
+					array(
+						'id' => '1',
+						'room_id' => '1',
+						'user_id' => '1',
+						'part_id' => '1',
+					),
+				),
+
+				'RoomPart' => array(
+					array(
+						'id' => '1',
+						'part_id' => '1',
+						'weight' => '1',
+						'hierarchy' => '2147483647',
+						'read_page' => 1,
+						'edit_page' => 1,
+						'create_page' => 1,
+						'publish_page' => 1,
+						'read_block' => 1,
+						'edit_block' => 1,
+						'create_block' => 1,
+						'publish_block' => 1,
+						'read_content' => 1,
+						'edit_content' => 1,
+						'create_content' => 1,
+						'publish_content' => 1,
+					),
+					array(
+						'id' => '2',
+						'part_id' => '2',
+						'weight' => '2',
+						'hierarchy' => '8000',
+						'read_page' => 1,
+						'edit_page' => 1,
+						'create_page' => 1,
+						'publish_page' => 2,
+						'read_block' => 1,
+						'edit_block' => 1,
+						'create_block' => 1,
+						'publish_block' => 2,
+						'read_content' => 1,
+						'edit_content' => 2,
+						'create_content' => 1,
+						'publish_content' => 2,
+					),
+					array(
+						'id' => '3',
+						'part_id' => '3',
+						'weight' => '3',
+						'hierarchy' => '7000',
+						'read_page' => 1,
+						'edit_page' => 0,
+						'create_page' => 0,
+						'publish_page' => 0,
+						'read_block' => 1,
+						'edit_block' => 0,
+						'create_block' => 0,
+						'publish_block' => 0,
+						'read_content' => 1,
+						'edit_content' => 2,
+						'create_content' => 1,
+						'publish_content' => 2,
+					),
+					array(
+						'id' => '4',
+						'part_id' => '4',
+						'weight' => '4',
+						'hierarchy' => '6000',
+						'read_page' => 1,
+						'edit_page' => 0,
+						'create_page' => 0,
+						'publish_page' => 0,
+						'read_block' => 1,
+						'edit_block' => 0,
+						'create_block' => 0,
+						'publish_block' => 0,
+						'read_content' => 1,
+						'edit_content' => 0,
+						'create_content' => 1,
+						'publish_content' => 2,
+					),
+					array(
+						'id' => '5',
+						'part_id' => '5',
+						'weight' => '5',
+						'hierarchy' => '1000',
+						'read_page' => 1,
+						'edit_page' => 0,
+						'create_page' => 0,
+						'publish_page' => 0,
+						'read_block' => 1,
+						'edit_block' => 0,
+						'create_block' => 0,
+						'publish_block' => 0,
+						'read_content' => 1,
+						'edit_content' => 0,
+						'create_content' => 0,
+						'publish_content' => 0,
+					),
+				),
+				'LanguagesRoles' => array(
+					array(
+					'id' => 1,
+					'role_id' => 1,
+					'language_id' => 2,
+					'name' => 'ルーム管理者',
+					'created_user' => 1,
+					'created' => false,
+					'modified_user' => 1,
+					'modified' => false,
+					),
+					array(
+						'id' => 2,
+						'role_id' => 2,
+						'language_id' => 2,
+						'name' => '編集長',
+						'created_user' => 1,
+						'created' => false,
+						'modified_user' => 1,
+						'modified' => false,
+					),
+					array(
+						'id' => 3,
+						'role_id' => 3,
+						'language_id' => 2,
+						'name' => '編集者',
+						'created_user' => 1,
+						'created' => false,
+						'modified_user' => 1,
+						'modified' => false,
+					),
+					array(
+						'id' => 4,
+						'role_id' => 4,
+						'language_id' => 2,
+						'name' => '一般',
+						'created_user' => 1,
+						'created' => false,
+						'modified_user' => 1,
+						'modified' => false,
+					),
+					array(
+						'id' => 5,
+						'role_id' => 5,
+						'language_id' => 2,
+						'name' => '参観者',
+						'created_user' => 1,
+						'created' => false,
+						'modified_user' => 1,
+						'modified' => false,
+					)
+				),
+
+				'Role' => array(
+					array(
+						'id' => '1',
+					),
+				),
+
+				'LanguagesPlugin' => array(
+					array(
+						'id' => '1',
+						'plugin_id' => 1,
+						'language_id' => 2,
+						'name' => 'お知らせ',
+						'created_user' => 1,
+						'created' => false,
+						'modified_user' => 1,
+						'modified' => false,
+					),
+					array(
+						'id' => '2',
+						'plugin_id' => 2,
+						'language_id' => 2,
+						'name' => 'メニュー',
+						'created_user' => 1,
+						'created' => false,
+						'modified_user' => 1,
+						'modified' => false,
+					),
+					array(
+						'id' => '3',
+						'plugin_id' => 3,
+						'language_id' => 2,
+						'name' => 'プラグイン管理',
+						'created_user' => 1,
+						'created' => false,
+						'modified_user' => 1,
+						'modified' => false,
+					),
+				),
+
+				'PluginsRole' => array(
+					array(
+						'id' => '1',
+						'role_id' => '1',
+						'plugin_id' => '1'
+					),
+					array(
+						'id' => '2',
+						'role_id' => '1',
+						'plugin_id' => '2'
+					),
+					array(
+						'id' => '3',
+						'role_id' => '1',
+						'plugin_id' => '3'
+					),
+				),
+
+				'PluginsRoom' => array(
+					array(
+						'id' => '1',
+						'room_id' => '1',
+						'plugin_id' => '1'
+					),
+					array(
+						'id' => '2',
+						'room_id' => '1',
+						'plugin_id' => '2'
+					),
+				),
+
+				'Room' => array(
+					array(
+						'id' => '1',
+						'space_id' => '1'
+					),
+				),
+			);
+
+/**
  * Actions to be performed
  *
  * @var array $migration
@@ -571,6 +1123,35 @@ class LanguageFix extends CakeMigration {
  * @return bool Should process continue
  */
 	public function after($direction) {
+		if ($direction === 'down') {
+			return true;
+		}
+
+		foreach ($this->records as $model => $records) {
+			if (!$this->updateRecords($model, $records)) {
+				return false;
+			}
+		}
+
+		return true;
+	}
+
+/**
+ * Update model records
+ *
+ * @param string $model model name to update
+ * @param string $records records to be stored
+ * @return boolean Should process continue
+ */
+	public function updateRecords($model, $records) {
+		$Model = $this->generateModel($model);
+		foreach ($records as $record) {
+			$Model->create();
+			if (!$Model->save($record, false)) {
+				return false;
+			}
+		}
+
 		return true;
 	}
 }
