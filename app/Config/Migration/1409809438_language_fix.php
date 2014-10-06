@@ -488,11 +488,13 @@ class LanguageFix extends CakeMigration {
 					),
 				),
 
-				'LanguagesPlugin' => array(
+				'Plugin' => array(
 					array(
 						'id' => '1',
 						'plugin_id' => 1,
 						'language_id' => 2,
+						'key' => 'announcements',
+						'namespace' => 'netcommons/announcements',
 						'name' => 'お知らせ',
 						'created_user' => 1,
 						'created' => false,
@@ -503,6 +505,8 @@ class LanguageFix extends CakeMigration {
 						'id' => '2',
 						'plugin_id' => 2,
 						'language_id' => 2,
+						'key' => 'menus',
+						'namespace' => 'netcommons/menus',
 						'name' => 'メニュー',
 						'created_user' => 1,
 						'created' => false,
@@ -513,6 +517,8 @@ class LanguageFix extends CakeMigration {
 						'id' => '3',
 						'plugin_id' => 3,
 						'language_id' => 2,
+						'key' => 'plugin_manager',
+						'namespace' => 'netcommons/plugin_manager',
 						'name' => 'プラグイン管理',
 						'created_user' => 1,
 						'created' => false,
