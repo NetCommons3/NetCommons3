@@ -22,6 +22,21 @@ class Role extends AppModel {
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
 
 /**
+ * belongsTo associations
+ *
+ * @var array
+ */
+	public $belongsTo = array(
+		'Language' => array(
+			'className' => 'Language',
+			'foreignKey' => 'language_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		),
+	);
+
+/**
  * hasMany associations
  *
  * @var array
@@ -48,22 +63,9 @@ class Role extends AppModel {
  * @var array
  */
 	public $hasAndBelongsToMany = array(
-		'Language' => array(
-			'className' => 'Language',
-			'joinTable' => 'languages_roles',
-			'foreignKey' => 'role_id',
-			'associationForeignKey' => 'language_id',
-			'unique' => 'keepExisting',
-			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'limit' => '',
-			'offset' => '',
-			'finderQuery' => '',
-		),
 		'Plugin' => array(
 			'className' => 'Plugin',
-			'joinTable' => 'roles_plugins',
+			'joinTable' => 'plugins_roles',
 			'foreignKey' => 'role_id',
 			'associationForeignKey' => 'plugin_id',
 			'unique' => 'keepExisting',
