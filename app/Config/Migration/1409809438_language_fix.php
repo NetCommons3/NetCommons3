@@ -434,11 +434,12 @@ class LanguageFix extends CakeMigration {
 						'publish_content' => 0,
 					),
 				),
-				'LanguagesRoles' => array(
+				'Role' => array(
 					array(
 					'id' => 1,
 					'role_id' => 1,
 					'language_id' => 2,
+					'key' => 'room_administrator',
 					'name' => 'ルーム管理者',
 					'created_user' => 1,
 					'created' => false,
@@ -449,6 +450,7 @@ class LanguageFix extends CakeMigration {
 						'id' => 2,
 						'role_id' => 2,
 						'language_id' => 2,
+						'key' => 'chief_editor',
 						'name' => '編集長',
 						'created_user' => 1,
 						'created' => false,
@@ -459,6 +461,7 @@ class LanguageFix extends CakeMigration {
 						'id' => 3,
 						'role_id' => 3,
 						'language_id' => 2,
+						'key' => 'editor',
 						'name' => '編集者',
 						'created_user' => 1,
 						'created' => false,
@@ -469,6 +472,7 @@ class LanguageFix extends CakeMigration {
 						'id' => 4,
 						'role_id' => 4,
 						'language_id' => 2,
+						'key' => 'general_user',
 						'name' => '一般',
 						'created_user' => 1,
 						'created' => false,
@@ -479,18 +483,13 @@ class LanguageFix extends CakeMigration {
 						'id' => 5,
 						'role_id' => 5,
 						'language_id' => 2,
+						'key' => 'visitor',
 						'name' => '参観者',
 						'created_user' => 1,
 						'created' => false,
 						'modified_user' => 1,
 						'modified' => false,
 					)
-				),
-
-				'Role' => array(
-					array(
-						'id' => '1',
-					),
 				),
 
 				'Plugin' => array(
