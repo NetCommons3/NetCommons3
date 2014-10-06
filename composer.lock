@@ -46,16 +46,16 @@
         },
         {
             "name": "cakephp/cakephp",
-            "version": "2.5.4",
+            "version": "2.5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/cakephp.git",
-                "reference": "9c2a25d4c055c93dd809574a484e7077f815c236"
+                "reference": "ce98a1ff5738af6db0f42a3647aaaaa5c3773d24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/cakephp/zipball/9c2a25d4c055c93dd809574a484e7077f815c236",
-                "reference": "9c2a25d4c055c93dd809574a484e7077f815c236",
+                "url": "https://api.github.com/repos/cakephp/cakephp/zipball/ce98a1ff5738af6db0f42a3647aaaaa5c3773d24",
+                "reference": "ce98a1ff5738af6db0f42a3647aaaaa5c3773d24",
                 "shasum": ""
             },
             "require": {
@@ -85,7 +85,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2014-09-02 02:05:27"
+            "time": "2014-10-05 02:59:03"
         },
         {
             "name": "cakephp/debug_kit",
@@ -1221,12 +1221,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Install.git",
-                "reference": "6e2ef453bdc28d7f8ee28edc0b2a857825eaf678"
+                "reference": "b5b49a7e4b684277d42de0c44fff4ba3ec74fa15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Install/zipball/6e2ef453bdc28d7f8ee28edc0b2a857825eaf678",
-                "reference": "6e2ef453bdc28d7f8ee28edc0b2a857825eaf678",
+                "url": "https://api.github.com/repos/NetCommons3/Install/zipball/b5b49a7e4b684277d42de0c44fff4ba3ec74fa15",
+                "reference": "b5b49a7e4b684277d42de0c44fff4ba3ec74fa15",
                 "shasum": ""
             },
             "require": {
@@ -1262,7 +1262,7 @@
                 "cakephp",
                 "install"
             ],
-            "time": "2014-09-29 01:56:44"
+            "time": "2014-10-06 02:30:36"
         },
         {
             "name": "netcommons/m17n",
