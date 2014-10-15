@@ -46,7 +46,8 @@
         "netcommons/access-counters":   "@dev",
         "netcommons/menus":             "@dev",
         "netcommons/rooms":             "@dev",
-        "netcommons/roles":             "@dev"
+        "netcommons/roles":             "@dev",
+        "netcommons/blocks":            "@dev"
     },
     "bin": [
         "lib/Cake/Console/cake"
