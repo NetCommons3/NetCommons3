@@ -13,10 +13,10 @@ Vagrant.configure('2') do |config|
     config.cache.scope = :box
     config.cache.synced_folder_opts = {
       type: :nfs,
-      mount_options: ['rw', 'vers=4', 'tcp', 'nolock']
+      mount_options: ['rw', 'vers=3', 'tcp', 'nolock']
     }
   end
-  
+
   CHEF_ROOT = 'tools/chef'.freeze
 
   # Setup default vm
