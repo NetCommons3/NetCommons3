@@ -1,21 +1,27 @@
 DEPENDENCIES
+  apt-repo
+    git: https://github.com/topaz2/chef-apt-repo
+    revision: fd7d3a4f749065010764698e4b5b77c81443df9b
+    branch: firewall_workaround
   boilerplate
     git: https://github.com/topaz2/chef_boilerplate.git
-    revision: f76f5edef02ab7d65391c62d1dc35f84537c9006
+    revision: 0b38ea7e5f324033047e03519558337a9a0f12cf
   boilerplate_php
     git: https://github.com/topaz2/chef_boilerplate_php.git
-    revision: de76c04ed5b31bb3125af3256ec0649a7ba62cc0
+    revision: da84a3a2792a664476123fb8b8d007209329431b
   chef-dk
   composer
     git: https://github.com/Morphodo/chef-composer.git
     revision: 27cb886029fc28e08ca80ab0b15408b412bb09b7
+  mroonga
   netcommons
     git: https://github.com/NetCommons3/chef_netcommons.git
-    revision: 77a8626be1fc31ef13333276c59b57093f8a5643
+    revision: 5660caf1bdc9b759f4c114f63289bf80aaef363d
   php
     git: https://github.com/trinitronx/php.git
     revision: 6fc40c007d7c4b73a1859283459ca4f7fa1c1513
     branch: COOK-4439-add-php-5.5.9-support-on-ubuntu-12.04
+  virtualbox
 
 GRAPH
   7-zip (1.0.2)
@@ -44,7 +50,6 @@ GRAPH
     nodejs (>= 0.0.0)
     phantomjs (>= 0.0.0)
     python (>= 0.0.0)
-    redisio (>= 0.0.0)
     ruby (>= 0.0.0)
   boilerplate_php (0.4.6)
     apache2 (>= 0.0.0)
@@ -56,12 +61,12 @@ GRAPH
     jenkins (>= 0.0.0)
     php (>= 0.0.0)
     python (>= 0.0.0)
-  build-essential (2.0.6)
+  build-essential (2.1.0)
   certificate (0.6.3)
   chef-dk (2.0.1)
     dmg (~> 2.2)
   chef-server (2.1.6)
-  chef-sugar (2.3.0)
+  chef-sugar (2.4.1)
   chef_handler (1.1.6)
   chocolatey (0.2.0)
     windows (~> 1.31)
@@ -111,7 +116,10 @@ GRAPH
     runit (~> 1.5)
     yum (~> 3.0)
   logrotate (1.7.0)
-  mysql (5.5.3)
+  mroonga (0.0.1)
+    apt (>= 0.0.0)
+    apt-repo (>= 0.0.0)
+  mysql (5.5.4)
     yum-mysql-community (>= 0.0.0)
   mysql-chef_gem (0.0.5)
     build-essential (>= 0.0.0)
@@ -148,7 +156,7 @@ GRAPH
     windows (>= 0.0.0)
     xml (>= 0.0.0)
     yum-epel (>= 0.0.0)
-  postgresql (3.4.6)
+  postgresql (3.4.10)
     apt (>= 1.9.0)
     build-essential (>= 0.0.0)
     openssl (>= 0.0.0)
@@ -156,7 +164,7 @@ GRAPH
     build-essential (>= 0.0.0)
     yum-epel (>= 0.0.0)
   readline (0.0.4)
-  redisio (2.2.3)
+  redisio (2.2.4)
     build-essential (>= 0.0.0)
     ulimit (>= 0.1.2)
   rsyslog (1.12.2)
@@ -167,13 +175,19 @@ GRAPH
     yum (~> 3.0)
     yum-epel (>= 0.0.0)
   ulimit (0.3.2)
+  virtualbox (1.0.3)
+    apache2 (>= 0.0.0)
+    apt (>= 0.0.0)
+    dmg (>= 0.0.0)
+    windows (>= 0.0.0)
+    yum (~> 3.1)
   windows (1.34.6)
     chef_handler (>= 0.0.0)
   xfs (1.1.0)
   xml (1.2.6)
     build-essential (>= 0.0.0)
     chef-sugar (>= 0.0.0)
-  yum (3.3.2)
+  yum (3.4.0)
   yum-epel (0.5.1)
     yum (~> 3.0)
   yum-mysql-community (0.1.10)
