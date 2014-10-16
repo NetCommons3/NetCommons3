@@ -1,14 +1,14 @@
 DEPENDENCIES
   apt-repo
     git: https://github.com/topaz2/chef-apt-repo
-    revision: fd7d3a4f749065010764698e4b5b77c81443df9b
+    revision: e1a4cf84e8701138f85bad139cf351c38b0586c5
     branch: firewall_workaround
   boilerplate
     git: https://github.com/topaz2/chef_boilerplate.git
-    revision: 0b38ea7e5f324033047e03519558337a9a0f12cf
+    revision: 79715425f33df40e7c2f0d60bb491c6347bdf69a
   boilerplate_php
     git: https://github.com/topaz2/chef_boilerplate_php.git
-    revision: da84a3a2792a664476123fb8b8d007209329431b
+    revision: d6ba8908b7c64a26db8a4b337340f5cad171a239
   chef-dk
   composer
     git: https://github.com/Morphodo/chef-composer.git
