@@ -1,19 +1,27 @@
 {
-    "environment": "development",
+    "ssl": {
+        "verify": false
+    },
     "apache": {
         "version": "2.4"
     },
     "mysql": {
-        "role":                   "master",
-        "server_id":               1,
         "bind_address":           "0.0.0.0",
         "server_root_password":   "root",
         "server_repl_password":   "repl",
         "server_debian_password": ""
     },
+    "postgresql": {
+        "password": {
+            "postgres": "postgres"
+        }
+    },
     "jenkins": {
         "executor": {
             "timeout": 240
+        },
+        "master": {
+            "endpoint": "http://nc3dev2.netcommons.org/"
         }
     },
     "boilerplate": {
@@ -33,9 +41,20 @@
                 "uri": "https://github.com/NetCommons3/NetCommons3Docs.git"
             }
         },
+        "cookbook": {
+            "repo": {
+                "type": "git",
+                "uri": "https://github.com/NetCommons3/chef_netcommons.git"
+            }
+        },
         "gitlab": false,
         "redmine": false,
-        "jenkins": false
+        "jenkins": {
+            "host": "nc3dev2.netcommons.org",
+            "mail": {
+                "recipients": "netcommons3@googlegroups.com"
+            }
+        }
     },
     "boilerplate_php": {
         "framework": {
@@ -47,6 +66,7 @@
     },
     "run_list": [
         "chef-dk",
+        "virtualbox",
         "boilerplate_php::php55",
         "boilerplate",
         "boilerplate_php",
