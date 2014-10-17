@@ -489,16 +489,16 @@
         },
         {
             "name": "kriswallsmith/assetic",
-            "version": "v1.1.2",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kriswallsmith/assetic.git",
-                "reference": "735cffd3982c6e8cdebe292d5db39d077f65890f"
+                "reference": "df991c124a2212371443b586a1be767500036dee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/735cffd3982c6e8cdebe292d5db39d077f65890f",
-                "reference": "735cffd3982c6e8cdebe292d5db39d077f65890f",
+                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/df991c124a2212371443b586a1be767500036dee",
+                "reference": "df991c124a2212371443b586a1be767500036dee",
                 "shasum": ""
             },
             "require": {
@@ -513,7 +513,9 @@
                 "leafo/scssphp": "*",
                 "leafo/scssphp-compass": "*",
                 "mrclay/minify": "*",
-                "phpunit/phpunit": "~3.7",
+                "patchwork/jsqueeze": "~1.0",
+                "phpunit/phpunit": "~4",
+                "psr/log": "~1.0",
                 "ptachoire/cssembed": "*",
                 "twig/twig": "~1.6"
             },
@@ -521,13 +523,14 @@
                 "leafo/lessphp": "Assetic provides the integration with the lessphp LESS compiler",
                 "leafo/scssphp": "Assetic provides the integration with the scssphp SCSS compiler",
                 "leafo/scssphp-compass": "Assetic provides the integration with the SCSS compass plugin",
+                "patchwork/jsqueeze": "Assetic provides the integration with the JSqueeze JavaScript compressor",
                 "ptachoire/cssembed": "Assetic provides the integration with phpcssembed to embed data uris",
                 "twig/twig": "Assetic provides the integration with the Twig templating engine"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1-dev"
+                    "dev-master": "1.2-dev"
                 }
             },
             "autoload": {
@@ -556,7 +559,7 @@
                 "compression",
                 "minification"
             ],
-            "time": "2013-07-19 00:03:27"
+            "time": "2014-10-14 14:45:32"
         },
         {
             "name": "mobiledetect/mobiledetectlib",
@@ -1221,12 +1224,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Install.git",
-                "reference": "b5b49a7e4b684277d42de0c44fff4ba3ec74fa15"
+                "reference": "b31f43ce1d15b67c8f7ada27a54ca4452d3d41a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Install/zipball/b5b49a7e4b684277d42de0c44fff4ba3ec74fa15",
-                "reference": "b5b49a7e4b684277d42de0c44fff4ba3ec74fa15",
+                "url": "https://api.github.com/repos/NetCommons3/Install/zipball/b31f43ce1d15b67c8f7ada27a54ca4452d3d41a8",
+                "reference": "b31f43ce1d15b67c8f7ada27a54ca4452d3d41a8",
                 "shasum": ""
             },
             "require": {
@@ -1262,7 +1265,7 @@
                 "cakephp",
                 "install"
             ],
-            "time": "2014-10-06 02:30:36"
+            "time": "2014-10-16 03:26:22"
         },
         {
             "name": "netcommons/m17n",
@@ -1322,12 +1325,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/NetCommons.git",
-                "reference": "2afd7bcffacbde0dd70e5b06d49b55d1f093b8a4"
+                "reference": "5f33abbff43a9dd6e5540e61d942fef7485ce6f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/NetCommons/zipball/2afd7bcffacbde0dd70e5b06d49b55d1f093b8a4",
-                "reference": "2afd7bcffacbde0dd70e5b06d49b55d1f093b8a4",
+                "url": "https://api.github.com/repos/NetCommons3/NetCommons/zipball/5f33abbff43a9dd6e5540e61d942fef7485ce6f2",
+                "reference": "5f33abbff43a9dd6e5540e61d942fef7485ce6f2",
                 "shasum": ""
             },
             "require": {
@@ -1340,6 +1343,11 @@
             },
             "require-dev": {
                 "mustangostang/spyc": "dev-master",
+                "netcommons/blocks": "dev-master",
+                "netcommons/boxes": "dev-master",
+                "netcommons/frames": "dev-master",
+                "netcommons/roles": "dev-master",
+                "netcommons/rooms": "dev-master",
                 "satooshi/php-coveralls": "dev-master"
             },
             "type": "cakephp-plugin",
@@ -1366,7 +1374,7 @@
                 "cakephp",
                 "netcommons"
             ],
-            "time": "2014-09-26 09:52:17"
+            "time": "2014-10-16 07:36:19"
         },
         {
             "name": "netcommons/users",
@@ -1374,12 +1382,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Users.git",
-                "reference": "a2c0fe4ed24b540cfd3243569923d123b4832660"
+                "reference": "4a8899ebfccf6d85f0a5574ce047989996554587"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Users/zipball/a2c0fe4ed24b540cfd3243569923d123b4832660",
-                "reference": "a2c0fe4ed24b540cfd3243569923d123b4832660",
+                "url": "https://api.github.com/repos/NetCommons3/Users/zipball/4a8899ebfccf6d85f0a5574ce047989996554587",
+                "reference": "4a8899ebfccf6d85f0a5574ce047989996554587",
                 "shasum": ""
             },
             "require": {
@@ -1418,7 +1426,7 @@
                 "cakephp",
                 "user"
             ],
-            "time": "2014-09-29 04:46:18"
+            "time": "2014-10-08 12:18:17"
         }
     ],
     "aliases": [],
