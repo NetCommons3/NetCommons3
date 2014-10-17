@@ -4,7 +4,7 @@
         "version": "2.4"
     },
     "apt": {
-        "key_proxy": "http://localhost"
+        "keyserver_port": 80
     },
     "mysql": {
         "role":                   "master",
