@@ -3,6 +3,9 @@
     "apache": {
         "version": "2.4"
     },
+    "apt": {
+        "key_proxy": "http://localhost"
+    },
     "mysql": {
         "role":                   "master",
         "server_id":               1,
