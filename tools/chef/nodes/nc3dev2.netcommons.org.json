@@ -5,6 +5,9 @@
     "apache": {
         "version": "2.4"
     },
+    "apt": {
+        "keyserver_port": 80
+    },
     "mysql": {
         "bind_address":           "0.0.0.0",
         "server_root_password":   "root",
@@ -65,9 +68,17 @@
         }
     },
     "run_list": [
+        "boilerplate_php::php55",
         "chef-dk",
         "virtualbox",
         "boilerplate_php::php55",
+        "nodejs::nodejs_from_package",
+        "phantomjs",
+        "python",
+        "apache2",
+        "database::mysql",
+        "mysql::server",
+        "jenkins::master",
         "boilerplate",
         "boilerplate_php",
         "netcommons",
