@@ -49,6 +49,9 @@
         }
     },
     "run_list": [
+        "apt",
+        "apt-repo",
+        "boilerplate::apt_fast",
         "boilerplate_php::php55",
         "chef-dk",
         "nodejs::nodejs_from_package",
