@@ -49,8 +49,15 @@
         }
     },
     "run_list": [
-        "chef-dk",
         "boilerplate_php::php55",
+        "chef-dk",
+        "nodejs::nodejs_from_package",
+        "phantomjs",
+        "python",
+        "apache2",
+        "database::mysql",
+        "mysql::server",
+        "jenkins::master",
         "boilerplate",
         "boilerplate_php",
         "netcommons",
