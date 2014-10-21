@@ -20,6 +20,7 @@
         }
     },
     "jenkins": {
+        "executors": 12,
         "executor": {
             "timeout": 240
         },
