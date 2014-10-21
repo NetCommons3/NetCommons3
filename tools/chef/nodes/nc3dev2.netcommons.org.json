@@ -69,7 +69,9 @@
         }
     },
     "run_list": [
-        "boilerplate_php::php55",
+        "apt",
+        "apt-repo",
+        "boilerplate::apt_fast",
         "chef-dk",
         "virtualbox",
         "boilerplate_php::php55",
@@ -81,6 +83,7 @@
         "mysql::server",
         "jenkins::master",
         "boilerplate",
+        "boilerplate_jenkins",
         "boilerplate_php",
         "netcommons",
         "mroonga"
