@@ -12,6 +12,7 @@
             <directory suffix=".php">app/Vendor</directory>
             <directory suffix=".php">app/View</directory>
             <directory suffix=".php">app/Plugin/DebugKit</directory>
+            <directory suffix=".ctp">app/Plugin/DebugKit</directory>
             <directory suffix=".php">app/Plugin/Migration</directory>
             <directory suffix=".php">app/Plugin/MobileDetect</directory>
             <directory suffix=".php">app/Plugin/TinyMCE</directory>
