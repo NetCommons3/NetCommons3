@@ -36,9 +36,7 @@
                 "uri": "https://github.com/NetCommons3/NetCommons3Docs.git"
             }
         },
-        "gitlab": false,
-        "redmine": false,
-        "jenkins": false
+        "redmine": false
     },
     "boilerplate_php": {
         "framework": {
@@ -53,7 +51,7 @@
         "apt-repo",
         "boilerplate::apt_fast",
         "netcommons::git",
-        "boilerplate_php::php55",
+        "php::apt_ondrej_ppa",
         "chef-dk",
         "nodejs::nodejs_from_package",
         "phantomjs",

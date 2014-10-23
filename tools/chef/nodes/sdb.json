@@ -1,5 +1,8 @@
 {
     "environment": "development",
+    "boilerplate": {
+        "country": "jp"
+    },
     "mysql": {
         "server_id":               2,
         "bind_address":           "0.0.0.0",
