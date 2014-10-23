@@ -1,22 +1,31 @@
 DEPENDENCIES
+  apt
+    git: https://github.com/topaz2/apt
+    revision: b3c030d604b56d400159950aa4296d30b7fdd96d
+    branch: firewall_workaround
   apt-repo
     git: https://github.com/topaz2/chef-apt-repo
     revision: e1a4cf84e8701138f85bad139cf351c38b0586c5
     branch: firewall_workaround
   boilerplate
     git: https://github.com/topaz2/chef_boilerplate.git
-    revision: 79715425f33df40e7c2f0d60bb491c6347bdf69a
+    revision: ec6ea3f4b23c6070e01338fe701905d9990d09be
+  boilerplate_jenkins
+    git: https://github.com/topaz2/chef_boilerplate_jenkins.git
+    revision: dfea181ba1f8ccc36e62385f42128050f9942c0c
   boilerplate_php
     git: https://github.com/topaz2/chef_boilerplate_php.git
-    revision: d6ba8908b7c64a26db8a4b337340f5cad171a239
+    revision: 91d9976020a04222f148467b00445f63ede67fee
   chef-dk
   composer
     git: https://github.com/Morphodo/chef-composer.git
     revision: 27cb886029fc28e08ca80ab0b15408b412bb09b7
+  docker
+  jenkins
   mroonga
   netcommons
     git: https://github.com/NetCommons3/chef_netcommons.git
-    revision: 5660caf1bdc9b759f4c114f63289bf80aaef363d
+    revision: 64541ae663a90bdb572e51c7798e0d0ef48149f8
   php
     git: https://github.com/trinitronx/php.git
     revision: 6fc40c007d7c4b73a1859283459ca4f7fa1c1513
@@ -36,22 +45,26 @@ GRAPH
   ark (0.9.0)
     7-zip (>= 0.0.0)
     windows (>= 0.0.0)
-  aws (2.4.0)
-  bluepill (2.3.1)
-    rsyslog (>= 0.0.0)
-  boilerplate (0.4.12)
+  aufs (0.1.1)
+    apt (>= 0.0.0)
+    modules (>= 0.0.0)
+  aws (2.5.0)
+  boilerplate (0.4.13)
     apache2 (>= 0.0.0)
     apt-repo (>= 0.0.0)
+    chef-dk (>= 0.0.0)
     chef-server (>= 0.0.0)
     database (>= 0.0.0)
-    gitlab (>= 0.0.0)
-    jenkins (>= 0.0.0)
     mysql (>= 0.0.0)
     nodejs (>= 0.0.0)
     phantomjs (>= 0.0.0)
     python (>= 0.0.0)
     ruby (>= 0.0.0)
-  boilerplate_php (0.4.6)
+  boilerplate_jenkins (0.0.1)
+    apt (>= 0.0.0)
+    apt-repo (>= 0.0.0)
+    jenkins (>= 0.0.0)
+  boilerplate_php (0.4.7)
     apache2 (>= 0.0.0)
     application (>= 0.0.0)
     boilerplate (>= 0.0.0)
@@ -61,8 +74,7 @@ GRAPH
     jenkins (>= 0.0.0)
     php (>= 0.0.0)
     python (>= 0.0.0)
-  build-essential (2.1.0)
-  certificate (0.6.3)
+  build-essential (2.1.2)
   chef-dk (2.0.1)
     dmg (~> 2.2)
   chef-server (2.1.6)
@@ -77,9 +89,26 @@ GRAPH
     mysql-chef_gem (>= 0.0.0)
     postgresql (>= 1.0.0)
     xfs (>= 0.0.0)
+  device-mapper (0.1.0)
+    apt (>= 0.0.0)
+    modules (>= 0.0.0)
   dmg (2.2.0)
+  docker (0.35.2)
+    apt (>= 0.0.0)
+    aufs (>= 0.1.1)
+    device-mapper (>= 0.1.0)
+    git (>= 0.0.0)
+    golang (>= 0.0.0)
+    homebrew (>= 0.0.0)
+    iptables (>= 0.0.0)
+    lxc (>= 1.1.6)
+    modules (>= 0.0.0)
+    runit (>= 0.0.0)
+    sysctl (>= 0.0.0)
+    yum-epel (>= 0.0.0)
   dotdeb_repo (1.1.0)
     apt (>= 0.0.0)
+  dpkg_autostart (0.1.12)
   git (4.0.2)
     build-essential (>= 0.0.0)
     dmg (>= 0.0.0)
@@ -87,35 +116,25 @@ GRAPH
     windows (>= 0.0.0)
     yum (~> 3.0)
     yum-epel (>= 0.0.0)
-  gitlab (6.9.0)
-    apt (>= 0.0.0)
-    build-essential (>= 0.0.0)
-    certificate (>= 0.0.0)
-    database (>= 0.0.0)
-    git (>= 0.0.0)
-    logrotate (>= 0.0.0)
-    mysql (>= 0.0.0)
-    ncurses (>= 0.0.0)
-    nginx (>= 0.0.0)
-    openssh (>= 0.0.0)
-    postgresql (>= 0.0.0)
-    readline (>= 0.0.0)
-    redisio (>= 0.0.0)
-    ruby_build (>= 0.0.0)
-    xml (>= 0.0.0)
-    yum-epel (>= 0.0.0)
-    zlib (>= 0.0.0)
+  golang (1.4.0)
   hhvm (0.4.0)
     apt (>= 0.0.0)
     yum (>= 0.0.0)
+  homebrew (1.9.2)
   iis (2.1.5)
     windows (>= 1.2.6)
   iptables (0.14.0)
+  iptables-ng (2.2.0)
   jenkins (2.1.2)
     apt (~> 2.0)
     runit (~> 1.5)
     yum (~> 3.0)
   logrotate (1.7.0)
+  lxc (2.0.0)
+    dpkg_autostart (>= 0.1.10)
+    iptables-ng (>= 0.0.0)
+    polipo (>= 0.0.0)
+  modules (0.2.0)
   mroonga (0.0.1)
     apt (>= 0.0.0)
     apt-repo (>= 0.0.0)
@@ -124,24 +143,14 @@ GRAPH
   mysql-chef_gem (0.0.5)
     build-essential (>= 0.0.0)
     mysql (>= 0.0.0)
-  ncurses (0.0.3)
   netcommons (0.1.0)
-    boilerplate_php (>= 0.0.0)
-  nginx (2.7.4)
-    apt (~> 2.2)
-    bluepill (~> 2.3)
-    build-essential (~> 2.0)
-    ohai (~> 2.0)
-    runit (~> 1.2)
-    yum-epel (~> 0.3)
+    apache2 (>= 0.0.0)
   nodejs (2.1.0)
     apt (>= 0.0.0)
     ark (>= 0.0.0)
     build-essential (>= 0.0.0)
     yum-epel (>= 0.0.0)
   ohai (2.0.1)
-  openssh (1.3.4)
-    iptables (>= 0.0.0)
   openssl (2.0.0)
     chef-sugar (>= 0.0.0)
   pacman (1.1.1)
@@ -156,6 +165,7 @@ GRAPH
     windows (>= 0.0.0)
     xml (>= 0.0.0)
     yum-epel (>= 0.0.0)
+  polipo (0.1.0)
   postgresql (3.4.10)
     apt (>= 1.9.0)
     build-essential (>= 0.0.0)
@@ -163,18 +173,13 @@ GRAPH
   python (1.4.6)
     build-essential (>= 0.0.0)
     yum-epel (>= 0.0.0)
-  readline (0.0.4)
-  redisio (2.2.4)
-    build-essential (>= 0.0.0)
-    ulimit (>= 0.1.2)
-  rsyslog (1.12.2)
   ruby (0.9.2)
-  ruby_build (0.8.0)
   runit (1.5.10)
     build-essential (>= 0.0.0)
     yum (~> 3.0)
     yum-epel (>= 0.0.0)
-  ulimit (0.3.2)
+  sysctl (0.6.0)
+    ohai (>= 0.0.0)
   virtualbox (1.0.3)
     apache2 (>= 0.0.0)
     apt (>= 0.0.0)
@@ -192,4 +197,3 @@ GRAPH
     yum (~> 3.0)
   yum-mysql-community (0.1.10)
     yum (>= 3.0)
-  zlib (2.0.0)
