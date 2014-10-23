@@ -5,6 +5,7 @@
             <directory suffix=".php">app/Config</directory>
             <directory suffix=".php">app/Test</directory>
             <directory suffix=".php">app/Plugin/DebugKit</directory>
+            <directory suffix=".ctp">app/Plugin/DebugKit</directory>
             <directory suffix=".php">app/Plugin/Migration</directory>
             <directory suffix=".php">app/Plugin/MobileDetect</directory>
             <directory suffix=".php">app/Plugin/HtmlPurifier</directory>
