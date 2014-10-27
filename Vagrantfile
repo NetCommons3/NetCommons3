@@ -16,6 +16,8 @@ Vagrant.configure('2') do |config|
       mount_options: ['rw', 'vers=3', 'tcp', 'nolock']
     }
   end
+  config.vm.synced_folder '.', '/var/www/app',
+  :create => true, :owner=> 'www-data', :group => 'www-data'
 
   CHEF_ROOT = 'tools/chef'.freeze
 
@@ -43,9 +45,9 @@ Vagrant.configure('2') do |config|
       vb.gui = false
       vb.memory = 2048
     end
-    node.vm.synced_folder '.', '/var/www/app',
-    :create => true, :owner=> 'www-data', :group => 'www-data'
-  end
+    # node.vm.synced_folder '.', '/var/www/app',
+    # :create => true, :owner=> 'www-data', :group => 'www-data'
+end
 
   # Setup mysql slave
   config.vm.define 'sdb' do |node|
