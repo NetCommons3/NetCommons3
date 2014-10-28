@@ -10,6 +10,13 @@ Vagrant.configure('2') do |config|
   config.hostmanager.ignore_private_ip = true
 
   if Vagrant.has_plugin?('vagrant-cachier')
+    config.cache.enable :bower
+    config.cache.enable :chef
+    config.cache.enable :composer
+    config.cache.enable :gem
+    config.cache.enable :generic
+    config.cache.enable :npm
+    config.cache.enable :rvm
     config.cache.scope = :machine
     config.cache.synced_folder_opts = {
       type: :nfs,
