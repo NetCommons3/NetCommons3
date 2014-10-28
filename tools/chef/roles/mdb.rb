@@ -1,7 +1,7 @@
 name 'mdb'
 description 'mysql master'
 
-run_list 'recipe[boilerplate::apt_fast]', 'recipe[build-essential]', 'recipe[mysql::server]',
+run_list 'recipe[apt]', 'recipe[apt-repo]', 'recipe[boilerplate::apt_fast]', 'recipe[build-essential]', 'recipe[mysql::server]',
 'recipe[boilerplate::mysql]'
 
 override_attributes(

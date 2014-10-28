@@ -16,8 +16,6 @@ Vagrant.configure('2') do |config|
       mount_options: ['rw', 'vers=3', 'tcp', 'nolock']
     }
   end
-  config.vm.synced_folder '.', '/var/www/app',
-  :create => true, :owner=> 'www-data', :group => 'www-data'
 
   CHEF_ROOT = 'tools/chef'.freeze
 
@@ -45,8 +43,8 @@ Vagrant.configure('2') do |config|
       vb.gui = false
       vb.memory = 2048
     end
-    # node.vm.synced_folder '.', '/var/www/app',
-    # :create => true, :owner=> 'www-data', :group => 'www-data'
+    node.vm.synced_folder '.', '/var/www/app',
+    :create => true, :owner=> 'www-data', :group => 'www-data'
 end
 
   # Setup mysql slave
@@ -78,6 +76,7 @@ end
       vb.cpus = 1
       vb.memory = 512
     end
+    node.vm.synced_folder '.', '/vagrant'
   end
 
   # Setup chef server
@@ -101,6 +100,7 @@ end
       vb.cpus = 1
       vb.memory = 1024
     end
+    node.vm.synced_folder '.', '/vagrant'
   end
 
   config.vm.provision :hostmanager
