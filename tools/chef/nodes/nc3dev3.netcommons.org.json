@@ -76,7 +76,6 @@
     },
     "run_list": [
         "apt",
-        "apt-repo",
         "boilerplate::apt_fast",
         "netcommons::git",
         "chef-dk",
