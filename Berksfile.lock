@@ -3,14 +3,10 @@ DEPENDENCIES
     git: https://github.com/topaz2/apt
     revision: b3c030d604b56d400159950aa4296d30b7fdd96d
     branch: firewall_workaround
-  apt-repo
-    git: https://github.com/topaz2/chef-apt-repo
-    revision: e1a4cf84e8701138f85bad139cf351c38b0586c5
-    branch: firewall_workaround
   boilerplate
   boilerplate_jenkins
     git: https://github.com/topaz2/chef_boilerplate_jenkins.git
-    revision: bff9f2147c3f3fabf30c723598a4270679fb43f0
+    revision: 1518fe4465e71dd0dbd92372cb3074088be3b770
   boilerplate_php
   chef-dk
   composer
@@ -21,7 +17,7 @@ DEPENDENCIES
   mroonga
   netcommons
     git: https://github.com/NetCommons3/chef_netcommons.git
-    revision: 64541ae663a90bdb572e51c7798e0d0ef48149f8
+    revision: 8ae7c71b2d9a2d78be052ded6efa032b0ba5cd22
   php
     git: https://github.com/trinitronx/php.git
     revision: 6fc40c007d7c4b73a1859283459ca4f7fa1c1513
@@ -38,7 +34,6 @@ GRAPH
     pacman (>= 0.0.0)
   application (4.1.4)
   apt (2.6.0)
-  apt-repo (0.1.1)
   ark (0.9.0)
     7-zip (>= 0.0.0)
     windows (>= 0.0.0)
@@ -46,9 +41,8 @@ GRAPH
     apt (>= 0.0.0)
     modules (>= 0.0.0)
   aws (2.5.0)
-  boilerplate (0.5.1)
+  boilerplate (0.5.3)
     apache2 (>= 0.0.0)
-    apt-repo (>= 0.0.0)
     chef-dk (>= 0.0.0)
     chef-server (>= 0.0.0)
     database (>= 0.0.0)
@@ -59,9 +53,8 @@ GRAPH
     ruby (>= 0.0.0)
   boilerplate_jenkins (0.0.1)
     apt (>= 0.0.0)
-    apt-repo (>= 0.0.0)
     jenkins (>= 0.0.0)
-  boilerplate_php (0.5.1)
+  boilerplate_php (0.5.2)
     apache2 (>= 0.0.0)
     application (>= 0.0.0)
     boilerplate (>= 0.0.0)
@@ -132,9 +125,9 @@ GRAPH
     iptables-ng (>= 0.0.0)
     polipo (>= 0.0.0)
   modules (0.2.0)
-  mroonga (0.0.1)
+  mroonga (0.0.2)
     apt (>= 0.0.0)
-    apt-repo (>= 0.0.0)
+    mysql (>= 0.0.0)
   mysql (5.6.1)
     yum-mysql-community (>= 0.0.0)
   mysql-chef_gem (0.0.5)
