@@ -12,6 +12,7 @@ cookbook 'jenkins'
 cookbook 'mroonga'
 cookbook 'netcommons', git: 'https://github.com/NetCommons3/chef_netcommons.git'
 cookbook 'php', git: 'https://github.com/trinitronx/php.git', branch: 'COOK-4439-add-php-5.5.9-support-on-ubuntu-12.04'
+cookbook 'vagrant'
 cookbook 'virtualbox'
 
 group :development do
