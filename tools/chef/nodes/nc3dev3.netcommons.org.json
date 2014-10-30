@@ -1,0 +1,99 @@
+{
+    "ssl": {
+        "verify": false
+    },
+    "apache": {
+        "version": "2.4"
+    },
+    "apt": {
+        "keyserver_port": 80
+    },
+    "mysql": {
+        "bind_address":           "0.0.0.0",
+        "server_root_password":   "root",
+        "server_repl_password":   "repl",
+        "server_debian_password": ""
+    },
+    "postgresql": {
+        "password": {
+            "postgres": "postgres"
+        }
+    },
+    "jenkins": {
+        "executor": {
+            "timeout": 240
+        },
+        "master": {
+            "endpoint": "http://nc3dev3.netcommons.org/"
+        }
+    },
+    "boilerplate": {
+        "country": "jp",
+        "app": {
+            "repo": {
+                "type": "git",
+                "uri": "https://github.com/NetCommons3/NetCommons3.git"
+            }
+        },
+        "docs": {
+            "repo": {
+                "type": "git",
+                "uri": "https://github.com/NetCommons3/NetCommons3Docs.git"
+            }
+        },
+        "cookbook": {
+            "repo": {
+                "type": "git",
+                "uri": "https://github.com/NetCommons3/chef_netcommons.git"
+            }
+        }
+    },
+    "boilerplate_jenkins": {
+        "executors": 12,
+        "host": "nc3dev3.netcommons.org",
+        "mail": {
+            "recipients": "netcommons3@googlegroups.com"
+        }
+    },
+    "boilerplate_php": {
+        "framework": {
+            "type": "cakephp"
+        },
+        "cakephp": {
+            "version": "2.x"
+        }
+    },
+    "use_git_protocol": false,
+    "vagrant": {
+        "url": "https://dl.bintray.com/mitchellh/vagrant/vagrant_1.6.5_x86_64.deb",
+        "plugins": [
+            "vagrant-berkshelf",
+            "vagrant-hostmanager",
+            "vagrant-omnibus",
+            "vagrant-cachier",
+            "vagrant-vbguest"
+        ]
+    },
+    "run_list": [
+        "apt",
+        "apt-repo",
+        "boilerplate::apt_fast",
+        "netcommons::git",
+        "chef-dk",
+        "vagrant",
+        "virtualbox",
+        "php::apt_ondrej_ppa",
+        "nodejs::nodejs_from_package",
+        "phantomjs",
+        "python",
+        "apache2",
+        "database::mysql",
+        "mysql::server",
+        "jenkins::master",
+        "boilerplate",
+        "boilerplate_jenkins",
+        "boilerplate_php",
+        "netcommons",
+        "mroonga"
+    ]
+}
