@@ -1,29 +1,11 @@
 {
-    "environment": "development",
     "apache": {
         "version": "2.4"
     },
     "apt": {
         "keyserver_port": 80
     },
-    "mysql": {
-        "role":                   "master",
-        "server_id":               1,
-        "bind_address":           "0.0.0.0",
-        "server_root_password":   "root",
-        "server_repl_password":   "repl",
-        "server_debian_password": ""
-    },
-    "jenkins": {
-        "executor": {
-            "timeout": 240
-        }
-    },
     "boilerplate": {
-        "country": "jp",
-        "git": {
-            "use_git_protocol": false
-        },
         "app": {
             "repo": {
                 "type": "git",
@@ -36,6 +18,7 @@
                 "uri": "https://github.com/NetCommons3/NetCommons3Docs.git"
             }
         },
+        "country": "jp",
         "redmine": false
     },
     "boilerplate_php": {
@@ -46,6 +29,21 @@
             "version": "2.x"
         }
     },
+    "environment": "development",
+    "jenkins": {
+        "executor": {
+            "timeout": 240
+        }
+    },
+    "mysql": {
+        "role":                   "master",
+        "server_id":               1,
+        "bind_address":           "0.0.0.0",
+        "server_root_password":   "root",
+        "server_repl_password":   "repl",
+        "server_debian_password": ""
+    },
+    "use_git_protocol": false,
     "run_list": [
         "apt",
         "apt-repo",
