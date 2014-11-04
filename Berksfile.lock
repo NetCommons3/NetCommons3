@@ -9,6 +9,7 @@ DEPENDENCIES
     revision: 22865e0431f23fe442dc58948b15a8bca398991f
   boilerplate_php
   chef-dk
+  chef-server
   composer
     git: https://github.com/Morphodo/chef-composer.git
     revision: 27cb886029fc28e08ca80ab0b15408b412bb09b7
@@ -17,7 +18,7 @@ DEPENDENCIES
   mroonga
   netcommons
     git: https://github.com/NetCommons3/chef_netcommons.git
-    revision: 9bd3c03a5adc4b8ddbb77faf9d3fa66dbf4ace04
+    revision: 2c42c983c8f24e4cfefea6b17a044dbaa1246075
   php
     git: https://github.com/trinitronx/php.git
     revision: 6fc40c007d7c4b73a1859283459ca4f7fa1c1513
@@ -41,10 +42,9 @@ GRAPH
     apt (>= 0.0.0)
     modules (>= 0.0.0)
   aws (2.5.0)
-  boilerplate (0.5.4)
+  boilerplate (0.5.10)
     apache2 (>= 0.0.0)
     chef-dk (>= 0.0.0)
-    chef-server (>= 0.0.0)
     database (>= 0.0.0)
     mysql (>= 0.0.0)
     nodejs (>= 0.0.0)
@@ -179,7 +179,7 @@ GRAPH
     dmg (>= 0.0.0)
     windows (>= 0.0.0)
     yum (~> 3.1)
-  windows (1.34.6)
+  windows (1.34.8)
     chef_handler (>= 0.0.0)
   xfs (1.1.0)
   xml (1.2.6)
