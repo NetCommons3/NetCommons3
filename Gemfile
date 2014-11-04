@@ -1,8 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'activesupport'
-#gem 'berkshelf', '>= 3.1' # vagrant-berkshelf depends on 3.1+
-#gem 'chef'
 gem 'gemrat'
 gem 'i18n'
 gem 'knife-backup'
