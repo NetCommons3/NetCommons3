@@ -63,6 +63,14 @@
             "version": "2.x"
         }
     },
+    "chef-server": {
+        "api_fqdn": "chef.nc3dev3.netcommons.org",
+        "configuration": {
+            "nginx": {
+                "non_ssl_port": "8081"
+            }
+        }
+    },
     "use_git_protocol": false,
     "vagrant": {
         "url": "https://dl.bintray.com/mitchellh/vagrant/vagrant_1.6.5_x86_64.deb",
@@ -79,6 +87,7 @@
         "boilerplate::apt_fast",
         "netcommons::git",
         "chef-dk",
+        "chef-server",
         "vagrant",
         "virtualbox",
         "php::apt_ondrej_ppa",
