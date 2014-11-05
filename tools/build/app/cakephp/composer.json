@@ -47,7 +47,8 @@
         "netcommons/menus":             "@dev",
         "netcommons/rooms":             "@dev",
         "netcommons/roles":             "@dev",
-        "netcommons/blocks":            "@dev"
+        "netcommons/blocks":            "@dev",
+        "netcommons/iframes":             "@dev"
     },
     "bin": [
         "lib/Cake/Console/cake"
