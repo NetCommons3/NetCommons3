@@ -6,6 +6,10 @@
  * @link     http://www.netcommons.org NetCommons Project
  * @license  http://www.netcommons.org/license.txt NetCommons License
  */
+
+/**
+ * Summary for AssetComponent Component
+ */
 class AssetComponent extends Component {
 
 /**
