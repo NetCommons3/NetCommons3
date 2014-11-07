@@ -24,6 +24,7 @@
         "chronon/mobile_detect":        "*",
         "components/jquery":            "~2.1",
         "components/jqueryui":          "~1.10",
+        "dompdf/dompdf":                "~0.6",
         "mustangostang/spyc":           "@dev",
         "satooshi/php-coveralls":       "@dev",
         "twbs/bootstrap":               "~3.1"
