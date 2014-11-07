@@ -28,17 +28,13 @@
         }
     },
     "boilerplate": {
-        "country": "jp",
+        "admin": {
+            "mail": "netcommons3@googlegroups.com"
+        },
         "app": {
             "repo": {
                 "type": "git",
                 "uri": "https://github.com/NetCommons3/NetCommons3.git"
-            }
-        },
-        "docs": {
-            "repo": {
-                "type": "git",
-                "uri": "https://github.com/NetCommons3/NetCommons3Docs.git"
             }
         },
         "cookbook": {
@@ -46,13 +42,21 @@
                 "type": "git",
                 "uri": "https://github.com/NetCommons3/chef_netcommons.git"
             }
+        },
+        "country": "jp",
+        "docs": {
+            "repo": {
+                "type": "git",
+                "uri": "https://github.com/NetCommons3/NetCommons3Docs.git"
+            }
         }
     },
     "boilerplate_jenkins": {
         "executors": 12,
         "host": "nc3dev3.netcommons.org",
         "mail": {
-            "recipients": "netcommons3@googlegroups.com"
+            "recipients": "netcommons3@googlegroups.com",
+            "smtp_host": "mail.netcommons.org"
         }
     },
     "boilerplate_php": {
