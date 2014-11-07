@@ -41,7 +41,6 @@
         "netcommons/net-commons":       "@dev",
         "netcommons/pages":             "@dev",
         "netcommons/public-space":      "@dev",
-        "netcommons/sandbox":           "@dev",
         "netcommons/theme-settings":    "@dev",
         "netcommons/users":             "@dev",
         "netcommons/access-counters":   "@dev",
