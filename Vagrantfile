@@ -17,7 +17,6 @@ Vagrant.configure('2') do |config|
     config.cache.enable :generic
     config.cache.enable :npm
     config.cache.enable :rvm
-    config.cache.scope = :machine
     config.cache.synced_folder_opts = {
       type: :nfs,
       mount_options: ['rw', 'vers=3', 'tcp', 'nolock']
