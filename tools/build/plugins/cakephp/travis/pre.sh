@@ -20,7 +20,7 @@ pear channel-discover pear.phpunit.de
 pear channel-discover pear.cakephp.org
 pear channel-discover pear.phpmd.org
 pear channel-discover pear.pdepend.org
-pear install --alldeps phpunit/PHPUnit-3.7.32
+pear install --alldeps phpunit/PHPUnit-3.7.35
 pear install --alldeps cakephp/CakePHP_CodeSniffer
 pear install phpmd/PHP_PMD
 pear install phpunit/phpcpd
