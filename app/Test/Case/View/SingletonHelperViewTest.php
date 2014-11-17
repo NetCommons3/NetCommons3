@@ -83,17 +83,33 @@ class SingletonHelperViewTest extends CakeTestCase {
 	}
 
 /**
- * Test use static helpers that except InterceptContentHelper.
+ * Test no use static helpers default View.
  *
  * @return void
  */
-	public function testNotStaticHelpers() {
+	public function testNotUseStaticHelpers() {
+		$Request = new CakeRequest();
+		$Response = new CakeResponse();
+
+		$Controller = new Controller($Request, $Response);
+		$View = new View($Controller);
+
+		$this->assertNotEquals(self::$__Html, $View->Html);
+	}
+
+/**
+ * Test no use static helpers called with InterceptContentHelper.
+ *
+ * @return void
+ */
+	public function testNotUseStaticHelpersWithInterceptContentHelper() {
 		$Request = new CakeRequest();
 		$Response = new CakeResponse();
 
 		$Request->params['requested'] = true;
 		$Controller = new Controller($Request, $Response);
-		$View = new View($Controller);
+		$Controller->helpers = array('Html', 'InterceptContent');
+		$View = new SingletonHelperView($Controller);
 
 		$this->assertNotEquals(self::$__Html, $View->Html);
 	}

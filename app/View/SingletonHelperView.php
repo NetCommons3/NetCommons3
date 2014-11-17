@@ -36,7 +36,8 @@ class SingletonHelperView extends View {
 			$helpers->unload('InterceptContent');
 		}
 
-		if (!empty($this->request->params['requested'])) {
+		if (!empty($this->request->params['requested']) &&
+				!isset($this->InterceptContent)) {
 			$this->Helpers = $helpers;
 		}
 	}
