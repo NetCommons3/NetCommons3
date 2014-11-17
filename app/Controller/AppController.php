@@ -79,6 +79,13 @@ class AppController extends Controller {
 	public $uses = array("SiteSetting");
 
 /**
+ * View class name that is used for singleton helper
+ *
+ * @var string
+ */
+	public $viewClass = 'SingletonHelper';
+
+/**
  * アクションの前に実行
  *
  * @return void
