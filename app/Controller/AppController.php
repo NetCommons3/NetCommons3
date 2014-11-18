@@ -83,7 +83,7 @@ class AppController extends Controller {
  *
  * @var string
  */
-	public $viewClass = 'SingletonHelper';
+	public $viewClass = 'NetCommons.SingletonHelper';
 
 /**
  * アクションの前に実行
