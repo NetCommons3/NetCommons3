@@ -18,7 +18,8 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-App::uses('Controller', 'Controller');
+//App::uses('Controller', 'Controller');
+App::uses('NetCommonsAppController', 'NetCommons.Controller');
 
 /**
  * Application Controller
@@ -30,7 +31,7 @@ App::uses('Controller', 'Controller');
  * @link http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  * @SuppressWarnings(PHPMD.NumberOfChildren)
  */
-class AppController extends Controller {
+class AppController extends NetCommonsAppController {
 
 /**
  * layoutファイルの指定
@@ -119,6 +120,36 @@ class AppController extends Controller {
 	}
 
 /**
+ * The beforeRedirect method is invoked when the controller's redirect method is called but before any
+ * further action.
+ *
+ * If this method returns false the controller will not continue on to redirect the request.
+ * The $url, $status and $exit variables have same meaning as for the controller's method. You can also
+ * return a string which will be interpreted as the URL to redirect to or return associative array with
+ * key 'url' and optionally 'status' and 'exit'.
+ *
+ * @param string|array $url A string or array-based URL pointing to another location within the app,
+ *     or an absolute URL
+ * @param integer $status Optional HTTP status code (eg: 404)
+ * @param bool $exit If true, exit() will be called after the redirect
+ * @return mixed
+ *   false to stop redirection event,
+ *   string controllers a new redirection URL or
+ *   array with the keys url, status and exit to be used by the redirect method.
+ * @throws Exception
+ * @link http://book.cakephp.org/2.0/en/controllers.html#request-life-cycle-callbacks
+ * @SuppressWarnings(PHPMD.BooleanArgumentFlag)
+ */
+	public function beforeRedirect($url, $status = null, $exit = true) {
+		if ($url === null && $status >= 400) {
+			//Auth->allowによるエラーにメッセージが含まれない
+			$error = $this->response->httpCodes($status);
+			throw new Exception(__d('net_commons', $error[$status]), $status);
+		}
+		return parent::beforeRedirect($url, $status, $exit);
+	}
+
+/**
  * Keep connection alive
  *
  * @author Jun Nishikawa <topaz2@m0n0m0n0.com>
@@ -127,5 +158,26 @@ class AppController extends Controller {
 	public function ping() {
 		$this->set('result', array('message' => 'OK'));
 		$this->set('_serialize', array('result'));
+	}
+
+/**
+ * render json
+ *
+ * @param array $results results data
+ * @param string $name message
+ * @param int $status status code
+ * @return void
+ */
+	public function renderJson($results, $name = 'OK', $status = 200) {
+		$this->viewClass = 'Json';
+		$this->layout = false;
+		$this->response->statusCode($status);
+		$result = array(
+			'code' => $status,
+			'name' => $name,
+			'results' => $results,
+		);
+		$this->set(compact('result'));
+		$this->set('_serialize', 'result');
 	}
 }
