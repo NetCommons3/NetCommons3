@@ -50,7 +50,7 @@
         "netcommons/blocks":            "@dev",
         "netcommons/iframes":           "@dev",
         "netcommons/rss-readers":       "@dev",
-        "netcommons/comments":          "@dev"
+        "netcommons/comments":          "@dev",
         "netcommons/faqs":              "@dev"
     },
     "bin": [
