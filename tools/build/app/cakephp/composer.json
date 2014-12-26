@@ -30,28 +30,28 @@
         "twbs/bootstrap":               "~3.1"
     },
     "require-dev": {
+        "netcommons/access-counters":   "@dev",
+        "netcommons/announcements":     "@dev",
         "netcommons/auth":              "@dev",
         "netcommons/auth-general":      "@dev",
-        "netcommons/announcements":     "@dev",
+        "netcommons/blocks":            "@dev",
         "netcommons/boxes":             "@dev",
+        "netcommons/comments":          "@dev",
         "netcommons/containers":        "@dev",
+        "netcommons/faqs":              "@dev",
         "netcommons/frames":            "@dev",
+        "netcommons/iframes":           "@dev",
         "netcommons/install":           "@dev",
         "netcommons/m17n":              "@dev",
+        "netcommons/menus":             "@dev",
         "netcommons/net-commons":       "@dev",
         "netcommons/pages":             "@dev",
         "netcommons/public-space":      "@dev",
-        "netcommons/theme-settings":    "@dev",
-        "netcommons/users":             "@dev",
-        "netcommons/access-counters":   "@dev",
-        "netcommons/menus":             "@dev",
-        "netcommons/rooms":             "@dev",
         "netcommons/roles":             "@dev",
-        "netcommons/blocks":            "@dev",
-        "netcommons/iframes":           "@dev",
+        "netcommons/rooms":             "@dev",
         "netcommons/rss-readers":       "@dev",
-        "netcommons/comments":          "@dev",
-        "netcommons/faqs":              "@dev"
+        "netcommons/theme-settings":    "@dev",
+        "netcommons/users":             "@dev"
     },
     "bin": [
         "lib/Cake/Console/cake"
