@@ -39,7 +39,7 @@ class SiteSetting extends AppModel {
  */
 	public function getSiteTheme() {
 		$row = $this->find('first', array(
-			'conditions' => array('key' => 'theme'),
+			'conditions' => array('SiteSetting.key' => 'theme'),
 		));
 		if ($row && isset($row['SiteSetting'])
 			&& isset($row['SiteSetting']['value'])) {

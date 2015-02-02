@@ -74,9 +74,10 @@
  *
  * @see ErrorHandler for more information on exception handling and configuration.
  */
+	App::uses('YAExceptionRenderer', 'NetCommons.Lib');
 	Configure::write('Exception', array(
 		'handler' => 'ErrorHandler::handleException',
-		'renderer' => 'ExceptionRenderer',
+		'renderer' => 'NetCommons.YAExceptionRenderer',
 		'log' => true
 	));
 

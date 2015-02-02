@@ -34,6 +34,22 @@ App::uses('Model', 'Model');
 class AppModel extends Model {
 
 /**
+ * use behaviors
+ *
+ * @var array
+ */
+	public $actsAs = array(
+		'NetCommons.Trackable',
+	);
+
+/**
+ * Validation rules
+ *
+ * @var array
+ */
+	public $validate = array();
+
+/**
  * Constructor. Binds the model's database table to the object.
  *
  * @param bool|int|string|array $id Set this ID for this model on startup,
