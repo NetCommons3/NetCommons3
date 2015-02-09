@@ -26,6 +26,7 @@
         "components/jqueryui":          "~1.10",
         "dompdf/dompdf":                "~0.6",
         "mustangostang/spyc":           "@dev",
+        "phpunit/phpunit":              "~3.7.38",
         "satooshi/php-coveralls":       "@dev",
         "twbs/bootstrap":               "~3.1"
     },
