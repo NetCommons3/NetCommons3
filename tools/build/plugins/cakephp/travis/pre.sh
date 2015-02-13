@@ -28,7 +28,11 @@ set +H
 if [ "$PLUGIN_NAME" != "Install" ]; then
   cp app/Config/database.php.travis app/Config/database.php
 fi
-cp tools/build/app/cakephp/phpunit.xml.dist .
+if [ -f "app/Plugin/$PLUGIN_NAME/phpunit.xml.dist" ]; then
+  cp app/Plugin/$PLUGIN_NAME/phpunit.xml.dist .
+else
+  cp tools/build/app/cakephp/phpunit.xml.dist .
+fi
 sudo wget https://raw.githubusercontent.com/topaz2/chef_boilerplate_php/master/files/default/build/cakephp/phpmd/rules.xml -O /etc/phpmd/rules.xml
 
 for p in `cat app/Config/vendors.txt`
