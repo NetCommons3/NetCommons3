@@ -100,4 +100,19 @@ class AppModel extends Model {
 	public function setDataSource($dataSource = null) {
 		$this->useDbConfig !== 'test' && parent::setDataSource($dataSource);
 	}
+
+/**
+ * Load models
+ *
+ * @param array $models models to load
+ * @return void
+ */
+	public function loadModels($models = []) {
+		foreach ($models as $model => $class) {
+			$this->$model = ClassRegistry::init($class);
+			if ($this->$model->useDbConfig !== 'test') {
+				$this->$model->setDataSource('master');
+			}
+		}
+	}
 }
