@@ -21,7 +21,6 @@ pear channel-discover pear.phpmd.org
 pear channel-discover pear.pdepend.org
 pear install --alldeps cakephp/CakePHP_CodeSniffer
 pear install phpmd/PHP_PMD
-pear install phpunit/phpcpd
 sudo pip install http://closure-linter.googlecode.com/files/closure_linter-latest.tar.gz
 
 phpenv rehash
