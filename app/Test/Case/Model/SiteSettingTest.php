@@ -21,7 +21,7 @@ class SiteSettingTest extends CakeTestCase {
  */
 	public $fixtures = array(
 		'app.site_setting',
-		'users.user',
+		'plugin.users.user',
 	);
 
 /**
