@@ -108,7 +108,7 @@ class AppModel extends Model {
  * @return void
  */
 	public function loadModels(array $models = []) {
-		ClassRegistry::flush();
+		/* ClassRegistry::flush(); */
 		foreach ($models as $model => $class) {
 			$this->$model = ClassRegistry::init($class, true);
 			if ($this->$model->useDbConfig !== 'test') {
