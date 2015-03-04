@@ -105,14 +105,15 @@ class AppModel extends Model {
  * Load models
  *
  * @param array $models models to load
+ * @param string $source data source
  * @return void
  */
-	public function loadModels(array $models = []) {
+	public function loadModels(array $models = [], $source = 'master') {
 		/* ClassRegistry::flush(); */
 		foreach ($models as $model => $class) {
 			$this->$model = ClassRegistry::init($class, true);
 			if ($this->$model->useDbConfig !== 'test') {
-				$this->$model->setDataSource('master');
+				$this->$model->setDataSource($source);
 			}
 		}
 	}
