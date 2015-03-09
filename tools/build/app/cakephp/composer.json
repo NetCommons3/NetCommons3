@@ -37,6 +37,7 @@
         "netcommons/auth-general":      "@dev",
         "netcommons/blocks":            "@dev",
         "netcommons/boxes":             "@dev",
+        "netcommons/categories":        "@dev",
         "netcommons/comments":          "@dev",
         "netcommons/containers":        "@dev",
         "netcommons/faqs":              "@dev",
