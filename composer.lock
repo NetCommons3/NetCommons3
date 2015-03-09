@@ -1611,12 +1611,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/NetCommons.git",
-                "reference": "9fece74f829c57c0060cacd2a584e58aa25c1632"
+                "reference": "31605c1a66727a777876c3c1c3246e925da40dde"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/NetCommons/zipball/9fece74f829c57c0060cacd2a584e58aa25c1632",
-                "reference": "9fece74f829c57c0060cacd2a584e58aa25c1632",
+                "url": "https://api.github.com/repos/NetCommons3/NetCommons/zipball/31605c1a66727a777876c3c1c3246e925da40dde",
+                "reference": "31605c1a66727a777876c3c1c3246e925da40dde",
                 "shasum": ""
             },
             "require": {
@@ -1633,6 +1633,7 @@
                 "netcommons/blocks": "dev-master",
                 "netcommons/boxes": "dev-master",
                 "netcommons/frames": "dev-master",
+                "netcommons/pages": "dev-master",
                 "netcommons/roles": "dev-master",
                 "netcommons/rooms": "dev-master",
                 "netcommons/users": "dev-master",
@@ -1662,7 +1663,7 @@
                 "cakephp",
                 "netcommons"
             ],
-            "time": "2015-02-27 06:51:13"
+            "time": "2015-03-09 07:13:55"
         },
         {
             "name": "netcommons/users",
@@ -1670,12 +1671,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Users.git",
-                "reference": "04dddef228654d7671383728fc570a0444549c63"
+                "reference": "a099047b83111cee0ca7d509fa72733cf16ecac9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Users/zipball/04dddef228654d7671383728fc570a0444549c63",
-                "reference": "04dddef228654d7671383728fc570a0444549c63",
+                "url": "https://api.github.com/repos/NetCommons3/Users/zipball/a099047b83111cee0ca7d509fa72733cf16ecac9",
+                "reference": "a099047b83111cee0ca7d509fa72733cf16ecac9",
                 "shasum": ""
             },
             "require": {
@@ -1715,7 +1716,7 @@
                 "cakephp",
                 "user"
             ],
-            "time": "2014-12-16 04:54:58"
+            "time": "2015-03-06 09:23:59"
         }
     ],
     "aliases": [],
