@@ -35,6 +35,7 @@
         "netcommons/announcements":     "@dev",
         "netcommons/auth":              "@dev",
         "netcommons/auth-general":      "@dev",
+        "netcommons/bbses":             "@dev",
         "netcommons/blocks":            "@dev",
         "netcommons/boxes":             "@dev",
         "netcommons/categories":        "@dev",
