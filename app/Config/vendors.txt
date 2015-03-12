@@ -1,5 +1,7 @@
 DebugKit
+HtmlPurifier
+Localized
 Migrations
 MobileDetect
-HtmlPurifier
 TinyMCE
+Upload
