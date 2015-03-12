@@ -1,6 +1,5 @@
 DebugKit
 HtmlPurifier
-Localized
 Migrations
 MobileDetect
 TinyMCE
