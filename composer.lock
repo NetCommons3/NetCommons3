@@ -1612,12 +1612,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/NetCommons.git",
-                "reference": "9dbf86674c4865b0d59bac4ffc6e441706e887a3"
+                "reference": "e4ec8820bebc7d7b62040fa5a9718c36eeaf6b9e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/NetCommons/zipball/9dbf86674c4865b0d59bac4ffc6e441706e887a3",
-                "reference": "9dbf86674c4865b0d59bac4ffc6e441706e887a3",
+                "url": "https://api.github.com/repos/NetCommons3/NetCommons/zipball/e4ec8820bebc7d7b62040fa5a9718c36eeaf6b9e",
+                "reference": "e4ec8820bebc7d7b62040fa5a9718c36eeaf6b9e",
                 "shasum": ""
             },
             "require": {
@@ -1664,7 +1664,7 @@
                 "cakephp",
                 "netcommons"
             ],
-            "time": "2015-03-13 09:09:59"
+            "time": "2015-03-13 09:34:38"
         },
         {
             "name": "netcommons/users",
