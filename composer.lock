@@ -536,22 +536,23 @@
         },
         {
             "name": "mobiledetect/mobiledetectlib",
-            "version": "2.8.11",
+            "version": "2.8.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/serbanghita/Mobile-Detect.git",
-                "reference": "c68901fb09227dcf04872f0d6a27b9f6e75ecf1f"
+                "reference": "af30b5b7bd683f575b1c56f74e0e0632f5dd9fc9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/serbanghita/Mobile-Detect/zipball/c68901fb09227dcf04872f0d6a27b9f6e75ecf1f",
-                "reference": "c68901fb09227dcf04872f0d6a27b9f6e75ecf1f",
+                "url": "https://api.github.com/repos/serbanghita/Mobile-Detect/zipball/af30b5b7bd683f575b1c56f74e0e0632f5dd9fc9",
+                "reference": "af30b5b7bd683f575b1c56f74e0e0632f5dd9fc9",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.0.0"
             },
             "require-dev": {
+                "codeclimate/php-test-reporter": "dev-master",
                 "johnkary/phpunit-speedtrap": "~1.0@dev",
                 "phpunit/phpunit": "*"
             },
@@ -585,7 +586,7 @@
                 "mobile detector",
                 "php mobile detect"
             ],
-            "time": "2014-11-23 13:08:17"
+            "time": "2015-03-11 10:02:22"
         },
         {
             "name": "mustangostang/spyc",
@@ -1611,12 +1612,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/NetCommons.git",
-                "reference": "d37cbaebe461933ccb619fb0e9b54f1effb0f17f"
+                "reference": "9dbf86674c4865b0d59bac4ffc6e441706e887a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/NetCommons/zipball/d37cbaebe461933ccb619fb0e9b54f1effb0f17f",
-                "reference": "d37cbaebe461933ccb619fb0e9b54f1effb0f17f",
+                "url": "https://api.github.com/repos/NetCommons3/NetCommons/zipball/9dbf86674c4865b0d59bac4ffc6e441706e887a3",
+                "reference": "9dbf86674c4865b0d59bac4ffc6e441706e887a3",
                 "shasum": ""
             },
             "require": {
@@ -1663,7 +1664,7 @@
                 "cakephp",
                 "netcommons"
             ],
-            "time": "2015-03-10 08:18:04"
+            "time": "2015-03-13 09:09:59"
         },
         {
             "name": "netcommons/users",
