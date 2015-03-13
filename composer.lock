@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "cakedc/migrations",
-            "version": "2.3.5",
+            "version": "2.3.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CakeDC/migrations.git",
-                "reference": "0d62dda64f4386fb29e68e3ba4d022aa90252aee"
+                "reference": "b8550a4d37e306c8aabaf3d22c20ba89226ae1c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CakeDC/migrations/zipball/0d62dda64f4386fb29e68e3ba4d022aa90252aee",
-                "reference": "0d62dda64f4386fb29e68e3ba4d022aa90252aee",
+                "url": "https://api.github.com/repos/CakeDC/migrations/zipball/b8550a4d37e306c8aabaf3d22c20ba89226ae1c9",
+                "reference": "b8550a4d37e306c8aabaf3d22c20ba89226ae1c9",
                 "shasum": ""
             },
             "require": {
@@ -42,7 +42,7 @@
                 "cakephp",
                 "migrations"
             ],
-            "time": "2014-10-18 08:52:31"
+            "time": "2015-03-09 18:16:53"
         },
         {
             "name": "cakephp/cakephp",
@@ -1611,12 +1611,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/NetCommons.git",
-                "reference": "31605c1a66727a777876c3c1c3246e925da40dde"
+                "reference": "d37cbaebe461933ccb619fb0e9b54f1effb0f17f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/NetCommons/zipball/31605c1a66727a777876c3c1c3246e925da40dde",
-                "reference": "31605c1a66727a777876c3c1c3246e925da40dde",
+                "url": "https://api.github.com/repos/NetCommons3/NetCommons/zipball/d37cbaebe461933ccb619fb0e9b54f1effb0f17f",
+                "reference": "d37cbaebe461933ccb619fb0e9b54f1effb0f17f",
                 "shasum": ""
             },
             "require": {
@@ -1663,7 +1663,7 @@
                 "cakephp",
                 "netcommons"
             ],
-            "time": "2015-03-09 07:13:55"
+            "time": "2015-03-10 08:18:04"
         },
         {
             "name": "netcommons/users",
