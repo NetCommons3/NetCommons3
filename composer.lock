@@ -1689,12 +1689,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Users.git",
-                "reference": "e405672364e987c921ee347da8b74e6807648db6"
+                "reference": "38167b3f26723003b76774da8ce241619531749a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Users/zipball/e405672364e987c921ee347da8b74e6807648db6",
-                "reference": "e405672364e987c921ee347da8b74e6807648db6",
+                "url": "https://api.github.com/repos/NetCommons3/Users/zipball/38167b3f26723003b76774da8ce241619531749a",
+                "reference": "38167b3f26723003b76774da8ce241619531749a",
                 "shasum": ""
             },
             "require": {
@@ -1734,7 +1734,7 @@
                 "cakephp",
                 "user"
             ],
-            "time": "2015-03-19 07:40:12"
+            "time": "2015-03-19 08:07:24"
         }
     ],
     "aliases": [],
