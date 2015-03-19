@@ -46,16 +46,16 @@
         },
         {
             "name": "cakephp/cakephp",
-            "version": "2.6.2",
+            "version": "2.6.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/cakephp.git",
-                "reference": "3fee5b9eaafdcca986f776129aef7c2c04c427df"
+                "reference": "02c40d5ca5f5b839c056f250fd9036b2e09de571"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/cakephp/zipball/3fee5b9eaafdcca986f776129aef7c2c04c427df",
-                "reference": "3fee5b9eaafdcca986f776129aef7c2c04c427df",
+                "url": "https://api.github.com/repos/cakephp/cakephp/zipball/02c40d5ca5f5b839c056f250fd9036b2e09de571",
+                "reference": "02c40d5ca5f5b839c056f250fd9036b2e09de571",
                 "shasum": ""
             },
             "require": {
@@ -85,7 +85,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2015-02-19 12:34:27"
+            "time": "2015-03-16 02:06:30"
         },
         {
             "name": "cakephp/debug_kit",
@@ -223,16 +223,16 @@
         },
         {
             "name": "components/jqueryui",
-            "version": "1.11.3",
+            "version": "1.11.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/components/jqueryui.git",
-                "reference": "7e2d6bec1c729925d9ad7c0c9ab4b561174efa99"
+                "reference": "c34f8dbf3ba57b3784b93f26119f436c0e8288e1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/components/jqueryui/zipball/7e2d6bec1c729925d9ad7c0c9ab4b561174efa99",
-                "reference": "7e2d6bec1c729925d9ad7c0c9ab4b561174efa99",
+                "url": "https://api.github.com/repos/components/jqueryui/zipball/c34f8dbf3ba57b3784b93f26119f436c0e8288e1",
+                "reference": "c34f8dbf3ba57b3784b93f26119f436c0e8288e1",
                 "shasum": ""
             },
             "require": {
@@ -304,7 +304,7 @@
                 }
             ],
             "description": "jQuery UI is a curated set of user interface interactions, effects, widgets, and themes built on top of the jQuery JavaScript Library. Whether you're building highly interactive web applications or you just need to add a date picker to a form control, jQuery UI is the perfect choice.",
-            "time": "2015-02-13 15:14:58"
+            "time": "2015-03-13 14:48:12"
         },
         {
             "name": "composer/installers",
@@ -444,16 +444,16 @@
         },
         {
             "name": "guzzle/guzzle",
-            "version": "v3.9.2",
+            "version": "v3.9.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle3.git",
-                "reference": "54991459675c1a2924122afbb0e5609ade581155"
+                "reference": "0645b70d953bc1c067bbc8d5bc53194706b628d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/54991459675c1a2924122afbb0e5609ade581155",
-                "reference": "54991459675c1a2924122afbb0e5609ade581155",
+                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/0645b70d953bc1c067bbc8d5bc53194706b628d9",
+                "reference": "0645b70d953bc1c067bbc8d5bc53194706b628d9",
                 "shasum": ""
             },
             "require": {
@@ -494,6 +494,9 @@
                 "zendframework/zend-cache": "2.*,<2.3",
                 "zendframework/zend-log": "2.*,<2.3"
             },
+            "suggest": {
+                "guzzlehttp/guzzle": "Guzzle 5 has moved to a new package name. The package you have installed, Guzzle 3, is deprecated."
+            },
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -521,7 +524,7 @@
                     "homepage": "https://github.com/guzzle/guzzle/contributors"
                 }
             ],
-            "description": "Guzzle is a PHP HTTP client library and framework for building RESTful web service clients",
+            "description": "PHP HTTP client. This library is deprecated in favor of https://packagist.org/packages/guzzlehttp/guzzle",
             "homepage": "http://guzzlephp.org/",
             "keywords": [
                 "client",
@@ -532,7 +535,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2014-08-11 04:32:36"
+            "time": "2015-03-18 18:23:50"
         },
         {
             "name": "mobiledetect/mobiledetectlib",
@@ -1150,22 +1153,25 @@
         },
         {
             "name": "symfony/config",
-            "version": "v2.6.4",
+            "version": "v2.6.5",
             "target-dir": "Symfony/Component/Config",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Config.git",
-                "reference": "a9f781ba1221067d1f07c8cec0bc50f81b8d7408"
+                "reference": "7a47189c7667ca69bcaafd19ef8a8941db449a2c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Config/zipball/a9f781ba1221067d1f07c8cec0bc50f81b8d7408",
-                "reference": "a9f781ba1221067d1f07c8cec0bc50f81b8d7408",
+                "url": "https://api.github.com/repos/symfony/Config/zipball/7a47189c7667ca69bcaafd19ef8a8941db449a2c",
+                "reference": "7a47189c7667ca69bcaafd19ef8a8941db449a2c",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3",
                 "symfony/filesystem": "~2.3"
+            },
+            "require-dev": {
+                "symfony/phpunit-bridge": "~2.7"
             },
             "type": "library",
             "extra": {
@@ -1194,21 +1200,21 @@
             ],
             "description": "Symfony Config Component",
             "homepage": "http://symfony.com",
-            "time": "2015-01-21 20:57:55"
+            "time": "2015-03-12 10:28:44"
         },
         {
             "name": "symfony/console",
-            "version": "v2.6.4",
+            "version": "v2.6.5",
             "target-dir": "Symfony/Component/Console",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "e44154bfe3e41e8267d7a3794cd9da9a51cfac34"
+                "reference": "53f86497ccd01677e22435cfb7262599450a90d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/e44154bfe3e41e8267d7a3794cd9da9a51cfac34",
-                "reference": "e44154bfe3e41e8267d7a3794cd9da9a51cfac34",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/53f86497ccd01677e22435cfb7262599450a90d1",
+                "reference": "53f86497ccd01677e22435cfb7262599450a90d1",
                 "shasum": ""
             },
             "require": {
@@ -1217,6 +1223,7 @@
             "require-dev": {
                 "psr/log": "~1.0",
                 "symfony/event-dispatcher": "~2.1",
+                "symfony/phpunit-bridge": "~2.7",
                 "symfony/process": "~2.1"
             },
             "suggest": {
@@ -1251,21 +1258,21 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "http://symfony.com",
-            "time": "2015-01-25 04:39:26"
+            "time": "2015-03-13 17:37:22"
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v2.6.4",
+            "version": "v2.6.5",
             "target-dir": "Symfony/Component/EventDispatcher",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/EventDispatcher.git",
-                "reference": "f75989f3ab2743a82fe0b03ded2598a2b1546813"
+                "reference": "70f7c8478739ad21e3deef0d977b38c77f1fb284"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/f75989f3ab2743a82fe0b03ded2598a2b1546813",
-                "reference": "f75989f3ab2743a82fe0b03ded2598a2b1546813",
+                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/70f7c8478739ad21e3deef0d977b38c77f1fb284",
+                "reference": "70f7c8478739ad21e3deef0d977b38c77f1fb284",
                 "shasum": ""
             },
             "require": {
@@ -1276,6 +1283,7 @@
                 "symfony/config": "~2.0,>=2.0.5",
                 "symfony/dependency-injection": "~2.6",
                 "symfony/expression-language": "~2.6",
+                "symfony/phpunit-bridge": "~2.7",
                 "symfony/stopwatch": "~2.3"
             },
             "suggest": {
@@ -1309,25 +1317,28 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "http://symfony.com",
-            "time": "2015-02-01 16:10:57"
+            "time": "2015-03-13 17:37:22"
         },
         {
             "name": "symfony/filesystem",
-            "version": "v2.6.4",
+            "version": "v2.6.5",
             "target-dir": "Symfony/Component/Filesystem",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Filesystem.git",
-                "reference": "a1f566d1f92e142fa1593f4555d6d89e3044a9b7"
+                "reference": "fdc5f151bc2db066b51870d5bea3773d915ced0b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/a1f566d1f92e142fa1593f4555d6d89e3044a9b7",
-                "reference": "a1f566d1f92e142fa1593f4555d6d89e3044a9b7",
+                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/fdc5f151bc2db066b51870d5bea3773d915ced0b",
+                "reference": "fdc5f151bc2db066b51870d5bea3773d915ced0b",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "symfony/phpunit-bridge": "~2.7"
             },
             "type": "library",
             "extra": {
@@ -1356,25 +1367,28 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "http://symfony.com",
-            "time": "2015-01-03 21:13:09"
+            "time": "2015-03-12 10:28:44"
         },
         {
             "name": "symfony/stopwatch",
-            "version": "v2.6.4",
+            "version": "v2.6.5",
             "target-dir": "Symfony/Component/Stopwatch",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Stopwatch.git",
-                "reference": "e8da5286132ba75ce4b4275fbf0f4cd369bfd71c"
+                "reference": "ba4e774f71e2ce3e3f65cabac4031b9029972af5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Stopwatch/zipball/e8da5286132ba75ce4b4275fbf0f4cd369bfd71c",
-                "reference": "e8da5286132ba75ce4b4275fbf0f4cd369bfd71c",
+                "url": "https://api.github.com/repos/symfony/Stopwatch/zipball/ba4e774f71e2ce3e3f65cabac4031b9029972af5",
+                "reference": "ba4e774f71e2ce3e3f65cabac4031b9029972af5",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "symfony/phpunit-bridge": "~2.7"
             },
             "type": "library",
             "extra": {
@@ -1403,25 +1417,28 @@
             ],
             "description": "Symfony Stopwatch Component",
             "homepage": "http://symfony.com",
-            "time": "2015-01-03 08:01:59"
+            "time": "2015-02-24 11:52:21"
         },
         {
             "name": "symfony/yaml",
-            "version": "v2.6.4",
+            "version": "v2.6.5",
             "target-dir": "Symfony/Component/Yaml",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "60ed7751671113cf1ee7d7778e691642c2e9acd8"
+                "reference": "0cd8e72071e46e15fc072270ae39ea1b66b10a9d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/60ed7751671113cf1ee7d7778e691642c2e9acd8",
-                "reference": "60ed7751671113cf1ee7d7778e691642c2e9acd8",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/0cd8e72071e46e15fc072270ae39ea1b66b10a9d",
+                "reference": "0cd8e72071e46e15fc072270ae39ea1b66b10a9d",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "symfony/phpunit-bridge": "~2.7"
             },
             "type": "library",
             "extra": {
@@ -1450,20 +1467,20 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "http://symfony.com",
-            "time": "2015-01-25 04:39:26"
+            "time": "2015-03-12 10:28:44"
         },
         {
             "name": "twbs/bootstrap",
-            "version": "v3.3.2",
+            "version": "v3.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "bcf7dd38b5ab180256e2e4fb5da0369551b3f082"
+                "reference": "a10eb60bc0b07b747fa0c4ebd8821eb7307bd07f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/bcf7dd38b5ab180256e2e4fb5da0369551b3f082",
-                "reference": "bcf7dd38b5ab180256e2e4fb5da0369551b3f082",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/a10eb60bc0b07b747fa0c4ebd8821eb7307bd07f",
+                "reference": "a10eb60bc0b07b747fa0c4ebd8821eb7307bd07f",
                 "shasum": ""
             },
             "replace": {
@@ -1501,7 +1518,7 @@
                 "responsive",
                 "web"
             ],
-            "time": "2015-01-19 17:03:09"
+            "time": "2015-03-16 15:44:41"
         }
     ],
     "packages-dev": [
@@ -1511,12 +1528,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Install.git",
-                "reference": "b31f43ce1d15b67c8f7ada27a54ca4452d3d41a8"
+                "reference": "40ff58db745efa40f10867efd0e02f7d9cc788b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Install/zipball/b31f43ce1d15b67c8f7ada27a54ca4452d3d41a8",
-                "reference": "b31f43ce1d15b67c8f7ada27a54ca4452d3d41a8",
+                "url": "https://api.github.com/repos/NetCommons3/Install/zipball/40ff58db745efa40f10867efd0e02f7d9cc788b9",
+                "reference": "40ff58db745efa40f10867efd0e02f7d9cc788b9",
                 "shasum": ""
             },
             "require": {
@@ -1552,7 +1569,7 @@
                 "cakephp",
                 "install"
             ],
-            "time": "2014-10-16 03:26:22"
+            "time": "2015-03-19 07:51:31"
         },
         {
             "name": "netcommons/m17n",
@@ -1672,12 +1689,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Users.git",
-                "reference": "a099047b83111cee0ca7d509fa72733cf16ecac9"
+                "reference": "e405672364e987c921ee347da8b74e6807648db6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Users/zipball/a099047b83111cee0ca7d509fa72733cf16ecac9",
-                "reference": "a099047b83111cee0ca7d509fa72733cf16ecac9",
+                "url": "https://api.github.com/repos/NetCommons3/Users/zipball/e405672364e987c921ee347da8b74e6807648db6",
+                "reference": "e405672364e987c921ee347da8b74e6807648db6",
                 "shasum": ""
             },
             "require": {
@@ -1717,7 +1734,7 @@
                 "cakephp",
                 "user"
             ],
-            "time": "2015-03-06 09:23:59"
+            "time": "2015-03-19 07:40:12"
         }
     ],
     "aliases": [],
