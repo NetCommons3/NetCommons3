@@ -1524,16 +1524,16 @@
     "packages-dev": [
         {
             "name": "netcommons/install",
-            "version": "0.0.13",
+            "version": "0.0.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Install.git",
-                "reference": "2253fa648fadff6098f154722a595fbdf6dde452"
+                "reference": "43445a823186c423806da7cfe0e8cb81fc287759"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Install/zipball/2253fa648fadff6098f154722a595fbdf6dde452",
-                "reference": "2253fa648fadff6098f154722a595fbdf6dde452",
+                "url": "https://api.github.com/repos/NetCommons3/Install/zipball/43445a823186c423806da7cfe0e8cb81fc287759",
+                "reference": "43445a823186c423806da7cfe0e8cb81fc287759",
                 "shasum": ""
             },
             "require": {
