@@ -1524,16 +1524,16 @@
     "packages-dev": [
         {
             "name": "netcommons/install",
-            "version": "dev-master",
+            "version": "0.0.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Install.git",
-                "reference": "40ff58db745efa40f10867efd0e02f7d9cc788b9"
+                "reference": "2253fa648fadff6098f154722a595fbdf6dde452"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Install/zipball/40ff58db745efa40f10867efd0e02f7d9cc788b9",
-                "reference": "40ff58db745efa40f10867efd0e02f7d9cc788b9",
+                "url": "https://api.github.com/repos/NetCommons3/Install/zipball/2253fa648fadff6098f154722a595fbdf6dde452",
+                "reference": "2253fa648fadff6098f154722a595fbdf6dde452",
                 "shasum": ""
             },
             "require": {
@@ -1542,9 +1542,7 @@
                 "cakephp/debug_kit": "~2.2",
                 "chronon/mobile_detect": "*",
                 "components/jquery": "~2.1",
-                "netcommons/m17n": "@dev",
-                "netcommons/net-commons": "@dev",
-                "netcommons/users": "@dev",
+                "netcommons/users": "~0.0",
                 "twbs/bootstrap": "~3.1"
             },
             "require-dev": {
@@ -1569,7 +1567,7 @@
                 "cakephp",
                 "install"
             ],
-            "time": "2015-03-19 07:51:31"
+            "time": "2014-06-04 04:29:03"
         },
         {
             "name": "netcommons/m17n",
@@ -1629,12 +1627,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/NetCommons.git",
-                "reference": "e4ec8820bebc7d7b62040fa5a9718c36eeaf6b9e"
+                "reference": "ec11d5faa3d396cf76f1ad5f02dd293fd4a04ba3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/NetCommons/zipball/e4ec8820bebc7d7b62040fa5a9718c36eeaf6b9e",
-                "reference": "e4ec8820bebc7d7b62040fa5a9718c36eeaf6b9e",
+                "url": "https://api.github.com/repos/NetCommons3/NetCommons/zipball/ec11d5faa3d396cf76f1ad5f02dd293fd4a04ba3",
+                "reference": "ec11d5faa3d396cf76f1ad5f02dd293fd4a04ba3",
                 "shasum": ""
             },
             "require": {
@@ -1681,20 +1679,20 @@
                 "cakephp",
                 "netcommons"
             ],
-            "time": "2015-03-13 09:34:38"
+            "time": "2015-03-24 07:43:52"
         },
         {
             "name": "netcommons/users",
-            "version": "dev-master",
+            "version": "0.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Users.git",
-                "reference": "38167b3f26723003b76774da8ce241619531749a"
+                "reference": "bb95891a4c0285d8776f116dd23ab82c15203ba1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Users/zipball/38167b3f26723003b76774da8ce241619531749a",
-                "reference": "38167b3f26723003b76774da8ce241619531749a",
+                "url": "https://api.github.com/repos/NetCommons3/Users/zipball/bb95891a4c0285d8776f116dd23ab82c15203ba1",
+                "reference": "bb95891a4c0285d8776f116dd23ab82c15203ba1",
                 "shasum": ""
             },
             "require": {
@@ -1707,7 +1705,6 @@
             "require-dev": {
                 "mustangostang/spyc": "dev-master",
                 "netcommons/auth": "dev-master",
-                "netcommons/roles": "dev-master",
                 "satooshi/php-coveralls": "dev-master"
             },
             "type": "cakephp-plugin",
@@ -1734,7 +1731,7 @@
                 "cakephp",
                 "user"
             ],
-            "time": "2015-03-19 08:07:24"
+            "time": "2014-09-29 02:08:51"
         }
     ],
     "aliases": [],
