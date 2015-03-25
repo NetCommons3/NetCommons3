@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "69d99cfba4f070498b5a95890bfadb00",
+    "hash": "7c05fa54893ab063258030ae700aa020",
     "packages": [
         {
             "name": "cakedc/migrations",
@@ -1524,7 +1524,7 @@
     "packages-dev": [
         {
             "name": "netcommons/install",
-            "version": "0.0.14",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Install.git",
@@ -1542,7 +1542,11 @@
                 "cakephp/debug_kit": "~2.2",
                 "chronon/mobile_detect": "*",
                 "components/jquery": "~2.1",
-                "netcommons/users": "~0.0",
+                "netcommons/m17n": "@dev",
+                "netcommons/net-commons": "@dev",
+                "netcommons/roles": "@dev",
+                "netcommons/rooms": "@dev",
+                "netcommons/users": "@dev",
                 "twbs/bootstrap": "~3.1"
             },
             "require-dev": {
@@ -1567,7 +1571,7 @@
                 "cakephp",
                 "install"
             ],
-            "time": "2014-06-04 04:29:03"
+            "time": "2015-03-20 01:23:39"
         },
         {
             "name": "netcommons/m17n",
@@ -1682,17 +1686,17 @@
             "time": "2015-03-24 07:43:52"
         },
         {
-            "name": "netcommons/users",
-            "version": "0.0.11",
+            "name": "netcommons/roles",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/NetCommons3/Users.git",
-                "reference": "bb95891a4c0285d8776f116dd23ab82c15203ba1"
+                "url": "https://github.com/NetCommons3/Roles.git",
+                "reference": "12fc08d4559b7c9da60ae400698789e39cdc99dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Users/zipball/bb95891a4c0285d8776f116dd23ab82c15203ba1",
-                "reference": "bb95891a4c0285d8776f116dd23ab82c15203ba1",
+                "url": "https://api.github.com/repos/NetCommons3/Roles/zipball/12fc08d4559b7c9da60ae400698789e39cdc99dc",
+                "reference": "12fc08d4559b7c9da60ae400698789e39cdc99dc",
                 "shasum": ""
             },
             "require": {
@@ -1704,8 +1708,116 @@
             },
             "require-dev": {
                 "mustangostang/spyc": "dev-master",
-                "netcommons/auth": "dev-master",
+                "netcommons/users": "dev-master",
                 "satooshi/php-coveralls": "dev-master"
+            },
+            "type": "cakephp-plugin",
+            "extra": {
+                "installer-paths": {
+                    "app/Plugin/{$name}": [
+                        "type:cakephp-plugin"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "NetCommons License"
+            ],
+            "authors": [
+                {
+                    "name": "NetCommons Community",
+                    "homepage": "https://github.com/NetCommons3/Roles/graphs/contributors"
+                }
+            ],
+            "description": "Roles Plugin for NetCommons3",
+            "homepage": "http://www.netcommons.org/",
+            "keywords": [
+                "cakephp2",
+                "netcommons",
+                "roles"
+            ],
+            "time": "2015-03-09 07:18:05"
+        },
+        {
+            "name": "netcommons/rooms",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/NetCommons3/Rooms.git",
+                "reference": "3a79cf413b37e03fed568e378e1dc07a8df9763a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/NetCommons3/Rooms/zipball/3a79cf413b37e03fed568e378e1dc07a8df9763a",
+                "reference": "3a79cf413b37e03fed568e378e1dc07a8df9763a",
+                "shasum": ""
+            },
+            "require": {
+                "cakedc/migrations": "~2.2",
+                "cakephp/cakephp": "~2.4",
+                "cakephp/debug_kit": "~2.2",
+                "components/jquery": "~2.1",
+                "twbs/bootstrap": "~3.1"
+            },
+            "require-dev": {
+                "mustangostang/spyc": "dev-master",
+                "netcommons/users": "dev-master",
+                "satooshi/php-coveralls": "dev-master"
+            },
+            "type": "cakephp-plugin",
+            "extra": {
+                "installer-paths": {
+                    "app/Plugin/{$name}": [
+                        "type:cakephp-plugin"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "NetCommons License"
+            ],
+            "authors": [
+                {
+                    "name": "NetCommons Community",
+                    "homepage": "https://github.com/NetCommons3/Rooms/graphs/contributors"
+                }
+            ],
+            "description": "Rooms Plugin for NetCommons3",
+            "homepage": "http://www.netcommons.org/",
+            "keywords": [
+                "cakephp2",
+                "netcommons",
+                "rooms"
+            ],
+            "time": "2014-12-16 10:37:23"
+        },
+        {
+            "name": "netcommons/users",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/NetCommons3/Users.git",
+                "reference": "c5e66a99e7f73262ec5fcae01d58a021318d5ec3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/NetCommons3/Users/zipball/c5e66a99e7f73262ec5fcae01d58a021318d5ec3",
+                "reference": "c5e66a99e7f73262ec5fcae01d58a021318d5ec3",
+                "shasum": ""
+            },
+            "require": {
+                "cakedc/migrations": "~2.2",
+                "cakephp/cakephp": "~2.4",
+                "cakephp/debug_kit": "~2.2",
+                "components/jquery": "~2.1",
+                "twbs/bootstrap": "~3.1"
+            },
+            "require-dev": {
+                "mustangostang/spyc": "@dev",
+                "netcommons/auth": "@dev",
+                "netcommons/roles": "@dev",
+                "netcommons/rooms": "@dev",
+                "satooshi/php-coveralls": "@dev"
             },
             "type": "cakephp-plugin",
             "extra": {
@@ -1731,7 +1843,7 @@
                 "cakephp",
                 "user"
             ],
-            "time": "2014-09-29 02:08:51"
+            "time": "2015-03-24 07:30:59"
         }
     ],
     "aliases": [],
@@ -1742,6 +1854,8 @@
         "netcommons/install": 20,
         "netcommons/m17n": 20,
         "netcommons/net-commons": 20,
+        "netcommons/roles": 20,
+        "netcommons/rooms": 20,
         "netcommons/users": 20
     },
     "prefer-stable": false,
