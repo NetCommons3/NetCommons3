@@ -20,7 +20,7 @@ class SiteSettingTest extends CakeTestCase {
  * @var array
  */
 	public $fixtures = array(
-		'app.site_setting',
+		'plugin.net_commons.site_setting',
 		'plugin.users.user',
 	);
 
