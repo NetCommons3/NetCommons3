@@ -9,7 +9,7 @@
 App::uses('Controller', 'Controller');
 App::uses('ComponentCollection', 'Controller');
 App::uses('AssetComponent', 'Controller/Component');
-App::uses('SiteSetting', 'Model');
+App::uses('SiteSetting', 'NetCommons.Model');
 
 /**
  * Class TestAssetComponentTestController
@@ -29,7 +29,7 @@ class TestAssetComponentTestControllerGetSiteTheme extends Controller {
  *
  * @var array
  */
-	public $uses = array("SiteSetting");
+	public $uses = array("NetCommons.SiteSetting");
 }
 
 /**

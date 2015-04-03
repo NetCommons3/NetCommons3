@@ -31,7 +31,7 @@ class SiteSettingTest extends CakeTestCase {
  */
 	public function setUp() {
 		parent::setUp();
-		$this->SiteSetting = ClassRegistry::init('SiteSetting');
+		$this->SiteSetting = ClassRegistry::init('NetCommons.SiteSetting');
 	}
 
 /**
