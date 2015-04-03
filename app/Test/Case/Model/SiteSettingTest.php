@@ -7,7 +7,7 @@
  * @license  http://www.netcommons.org/license.txt NetCommons License
  */
 
-App::uses('SiteSetting', 'Model');
+App::uses('SiteSetting', 'NetCommons.Model');
 
 /**
  * Summary for SiteSetting Test Case
