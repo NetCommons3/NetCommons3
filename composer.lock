@@ -1631,12 +1631,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/NetCommons.git",
-                "reference": "ec11d5faa3d396cf76f1ad5f02dd293fd4a04ba3"
+                "reference": "299eaf852c0654f650184d34f3ebd63cc73a74af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/NetCommons/zipball/ec11d5faa3d396cf76f1ad5f02dd293fd4a04ba3",
-                "reference": "ec11d5faa3d396cf76f1ad5f02dd293fd4a04ba3",
+                "url": "https://api.github.com/repos/NetCommons3/NetCommons/zipball/299eaf852c0654f650184d34f3ebd63cc73a74af",
+                "reference": "299eaf852c0654f650184d34f3ebd63cc73a74af",
                 "shasum": ""
             },
             "require": {
