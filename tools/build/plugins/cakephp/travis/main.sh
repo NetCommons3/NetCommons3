@@ -9,7 +9,7 @@ phpmd app/Plugin/$PLUGIN_NAME text /etc/phpmd/rules.xml --exclude $NETCOMMONS_BU
 phpcpd --exclude Test --exclude Config $IGNORE_PLUGINS_OPTS app/Plugin/$PLUGIN_NAME
 
 # js
-gjslint --strict -x jquery.js,jquery.cookie.js,js_debug_toolbar.js,travis.karma.conf.js,my.karma.conf.js -e jasmine_examples,HtmlPurifier -r app || exit $?
+gjslint --strict -x jquery.js,jquery.cookie.js,js_debug_toolbar.js,travis.karma.conf.js,my.karma.conf.js -e jasmine_examples,HtmlPurifier,webroot/components -r app || exit $?
 if [ -d ./app/Plugin/$PLUGIN_NAME/JavascriptTest/ ]; then
   ./node_modules/karma/bin/karma start app/Plugin/$PLUGIN_NAME/JavascriptTest/travis.karma.conf.js --single-run --browsers PhantomJS || exit $?
 fi
