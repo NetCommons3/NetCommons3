@@ -15,12 +15,7 @@ mkdir -p build/logs
 mkdir -p build/cov
 sudo mkdir -p /etc/phpmd
 
-pear config-set auto_discover 1
-pear channel-discover pear.cakephp.org
-pear channel-discover pear.phpmd.org
-pear channel-discover pear.pdepend.org
-pear install --alldeps cakephp/CakePHP_CodeSniffer
-pear install phpmd/PHP_PMD
+composer require sebastian/phpcpd:* cakephp/cakephp-codesniffer:~1.0 phpmd/phpmd:@stable phpunit/phpunit:~3.7.38 satooshi/php-coveralls:@dev
 sudo pip install http://closure-linter.googlecode.com/files/closure_linter-latest.tar.gz
 
 phpenv rehash
@@ -48,4 +43,5 @@ echo "Configure::write('Security.cipherSeed', '999');" >> ./app/Config/core.php
 sudo apt-get install nodejs npm
 npm install -g bower
 bower install
+bower install `cat app/Plugin/$PLUGIN_NAME/bower.json | jq -c '.dependencies' | sed "s/[{\"\'}]//g" | sed "s/,/ /g" | sed "s/:/#/g"` --save
 npm install jasmine-node karma karma-coverage karma-jasmine karma-firefox-launcher karma-phantomjs-launcher

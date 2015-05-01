@@ -22,13 +22,16 @@
         "cakephp/cakephp":              "~2.4",
         "cakephp/debug_kit":            "~2.2",
         "chronon/mobile_detect":        "*",
-        "components/jquery":            "~2.1",
-        "components/jqueryui":          "~1.10",
         "dompdf/dompdf":                "~0.6",
         "mustangostang/spyc":           "@dev",
+        "sebastian/phpcpd":             "*",
+        "cakephp/cakephp-codesniffer":  "~1.0",
+        "phpmd/phpmd" :                 "@stable",
         "phpunit/phpunit":              "~3.7.38",
+        "mayflower/php-codebrowser":    "~1.1",
+        "phploc/phploc":                "*",
         "satooshi/php-coveralls":       "@dev",
-        "twbs/bootstrap":               "~3.1"
+        "phpdocumentor/phpdocumentor":  "2.*"
     },
     "require-dev": {
         "netcommons/install":           "@dev",
