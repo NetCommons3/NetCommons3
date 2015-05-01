@@ -13,12 +13,6 @@ chmod -R 777 ./app/tmp
 mkdir -p build/logs
 sudo mkdir -p /etc/phpmd
 
-pear config-set auto_discover 1
-pear channel-discover pear.cakephp.org
-pear channel-discover pear.phpmd.org
-pear channel-discover pear.pdepend.org
-pear install --alldeps cakephp/CakePHP_CodeSniffer
-pear install phpmd/PHP_PMD
 sudo pip install http://closure-linter.googlecode.com/files/closure_linter-latest.tar.gz
 
 phpenv rehash
