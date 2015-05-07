@@ -39,7 +39,7 @@ NetCommons
   * [http://www.vagrantup.com/downloads.html](http://www.vagrantup.com/downloads.html)
 * chef-dk
   * [https://downloads.getchef.com/chef-dk](https://downloads.getchef.com/chef-dk)
- 
+
 ### 依存ライブラリをインストール
 #### ubuntu 12.10
 <pre>
@@ -178,28 +178,14 @@ guest には下記 vhosts が作成され、動作の確認ができます。
 
 <pre>
 sudo -s
-cd /var/www
-rm -rf /var/www/app
-git clone https://github.com/NetCommons3/NetCommons3.git app
 chown -R www-data:www-data /var/www/app
-chmod -R 775 /var/www/app
-cd /var/www
-git clone https://github.com/NetCommons3/NetCommons3Docs.git docs
 chown -R www-data:www-data /var/www/docs
-chmod -R 775 /var/www/docs
 </pre>
 
 その後、ホスト側で下記コマンド実行
 
 <pre>
 vagrant provision default
-</pre>
-
-再度vagrant に ssh 接続した後、下記のコマンドを実行してください。
-
-<pre>
-sudo -s
-chown -R www-data:www-data /var/www/app
 </pre>
 
 
