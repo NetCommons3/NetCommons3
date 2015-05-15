@@ -3,7 +3,7 @@
  * Bake Template for Controller action generation.
  *
 <?php echo Configure::read('PhpDocumentor.classHeader') . "\n" ?>
- * @package       Cake.Console.Templates.NetCommons.actions
+ * @package Cake.Console.Templates.NetCommons.actions
  */
 ?>
 
@@ -20,8 +20,8 @@
 /**
  * <?php echo $admin ?>view method
  *
+ * @param string $id id
  * @throws NotFoundException
- * @param string $id
  * @return void
  */
 	public function <?php echo $admin ?>view($id = null) {
@@ -73,8 +73,8 @@
 /**
  * <?php echo $admin ?>edit method
  *
+ * @param string $id id
  * @throws NotFoundException
- * @param string $id
  * @return void
  */
 	public function <?php echo $admin; ?>edit($id = null) {
@@ -116,8 +116,8 @@
 /**
  * <?php echo $admin ?>delete method
  *
+ * @param string $id id
  * @throws NotFoundException
- * @param string $id
  * @return void
  */
 	public function <?php echo $admin; ?>delete($id = null) {
