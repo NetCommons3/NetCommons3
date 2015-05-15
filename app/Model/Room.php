@@ -61,13 +61,6 @@ class Room extends AppModel {
 			'fields' => '',
 			'order' => ''
 		),
-		'TopPage' => array(
-			'className' => 'TopPage',
-			'foreignKey' => 'top_page_id',
-			'conditions' => '',
-			'fields' => '',
-			'order' => ''
-		)
 	);
 
 /**
