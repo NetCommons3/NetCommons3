@@ -447,7 +447,7 @@ class AppSchema extends CakeSchema {
 		'id' => array('type' => 'integer', 'null' => false, 'default' => null, 'key' => 'primary'),
 		'group_id' => array('type' => 'integer', 'null' => false, 'default' => null),
 		'space_id' => array('type' => 'integer', 'null' => true, 'default' => null),
-		'top_page_id' => array('type' => 'integer', 'null' => true, 'default' => null),
+		'page_id_top' => array('type' => 'integer', 'null' => true, 'default' => null),
 		'need_approval' => array('type' => 'boolean', 'null' => true, 'default' => null, 'comment' => 'è‡ªåˆ†ãŒãƒ«ãƒ¼ãƒ ç®¡ç†è€…ã¨ã—ã¦ãƒ‘ãƒ¼ãƒˆã‚’å‰²ã‚Šå½“ã¦ã‚‰ã‚ŒãŸæ™‚ã€è‡ªåˆ†ã‚ˆã‚Šä¸‹ä½ã®ãƒ‘ãƒ¼ãƒˆã«å…¬é–‹æ¨©é™ã‚’å‰²ã‚Šå½“ã¦ã‚‹ã“ã¨ãŒã§ãã‚‹ã‹å¦ã‹ã€‚'),
 		'created_user' => array('type' => 'integer', 'null' => true, 'default' => null),
 		'created' => array('type' => 'datetime', 'null' => true, 'default' => null),
