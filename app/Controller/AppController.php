@@ -18,9 +18,6 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-//App::uses('Controller', 'Controller');
-App::uses('NetCommonsAppController', 'NetCommons.Controller');
-
 /**
  * Application Controller
  *
@@ -31,5 +28,12 @@ App::uses('NetCommonsAppController', 'NetCommons.Controller');
  * @link http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  * @SuppressWarnings(PHPMD.NumberOfChildren)
  */
-class AppController extends NetCommonsAppController {
+if (CakePlugin::loaded('NetCommons')) {
+	App::uses('NetCommonsAppController', 'NetCommons.Controller');
+	class AppController extends NetCommonsAppController {
+	}
+} else {
+	App::uses('Controller', 'Controller');
+	class AppController extends Controller {
+	}
 }
