@@ -30,10 +30,18 @@
  */
 if (CakePlugin::loaded('NetCommons')) {
 	App::uses('NetCommonsAppController', 'NetCommons.Controller');
+
+/**
+ * Application Controller for NetCommons
+ */
 	class AppController extends NetCommonsAppController {
 	}
 } else {
 	App::uses('Controller', 'Controller');
+
+/**
+ * Default Application Controller
+ */
 	class AppController extends Controller {
 	}
 }
