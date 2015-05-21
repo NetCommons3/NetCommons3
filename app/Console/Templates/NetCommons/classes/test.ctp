@@ -2,10 +2,10 @@
 /**
  * Test Case bake template
  *
- * @copyright     NetCommons Project
- * @link          http://www.netcommons.org
- * @package       Cake.Console.Templates.NetCommons.classes
- * @license       http://www.netcommons.org/license.txt NetCommons License
+ * @copyright NetCommons Project
+ * @link http://www.netcommons.org
+ * @package Cake.Console.Templates.NetCommons.classes
+ * @license http://www.netcommons.org/license.txt NetCommons License
  */
 
 echo "<?php\n";

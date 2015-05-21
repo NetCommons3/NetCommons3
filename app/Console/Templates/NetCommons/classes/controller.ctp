@@ -69,6 +69,7 @@ class <?php echo $controllerName; ?>Controller extends <?php echo $plugin; ?>App
 	endif;
 
 	echo trim($actions);
+	echo "\n";
 
 endif; ?>
 }
