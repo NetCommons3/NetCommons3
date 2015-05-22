@@ -54,7 +54,7 @@ GRAPH
   boilerplate_jenkins (0.0.1)
     apt (>= 0.0.0)
     jenkins (>= 0.0.0)
-  boilerplate_php (0.5.3)
+  boilerplate_php (0.5.4)
     apache2 (>= 0.0.0)
     application (>= 0.0.0)
     boilerplate (>= 0.0.0)
