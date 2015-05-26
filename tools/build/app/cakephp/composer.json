@@ -55,10 +55,14 @@
         "netcommons/net-commons":       "@dev",
         "netcommons/pages":             "@dev",
         "netcommons/public-space":      "@dev",
+        "netcommons/plugin-manager":    "@dev",
         "netcommons/roles":             "@dev",
         "netcommons/rooms":             "@dev",
         "netcommons/rss-readers":       "@dev",
+        "netcommons/search":            "@dev",
+        "netcommons/search-boxes":      "@dev",
         "netcommons/theme-settings":    "@dev",
+        "netcommons/topics":            "@dev",
         "netcommons/users":             "@dev"
     },
     "bin": [
