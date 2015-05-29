@@ -60,6 +60,7 @@
         "netcommons/pages":             "@dev",
         "netcommons/plugin-manager":    "@dev",
         "netcommons/public-space":      "@dev",
+        "netcommons/questionnaires":    "@dev",
         "netcommons/roles":             "@dev",
         "netcommons/rooms":             "@dev",
         "netcommons/rss-readers":       "@dev",
