@@ -41,7 +41,7 @@ if (CakePlugin::loaded('NetCommons')) {
 
 /**
  * Default Application Controller
- * @SuppressWarnings(PHPMD.NumberOfChildren)
+ * @SuppressWarnings(PHPMD)
  */
 	class AppController extends Controller {
 	}
