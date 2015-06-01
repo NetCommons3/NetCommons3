@@ -19,7 +19,7 @@
     },
     "require": {
         "cakedc/migrations":            "~2.2",
-        "cakephp/cakephp":              "2.6.5",
+        "cakephp/cakephp":              "2.6.4",
         "cakephp/debug_kit":            "~2.2",
         "chronon/mobile_detect":        "*",
         "dompdf/dompdf":                "~0.6",
