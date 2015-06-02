@@ -43,6 +43,7 @@
         "netcommons/blogs":             "@dev",
         "netcommons/boxes":             "@dev",
         "netcommons/categories":        "@dev",
+        "netcommons/circular-notices":  "@dev",
         "netcommons/comments":          "@dev",
         "netcommons/content-comments":  "@dev",
         "netcommons/containers":        "@dev",
