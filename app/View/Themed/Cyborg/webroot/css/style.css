@@ -1,1 +1,66 @@
+/* style.css */
 
+body{
+	padding-top: 50px;
+}
+main.container {
+	margin-top: 10px;
+}
+
+.frame .nc-content-list article  h1,
+.frame .nc-content-list article  .h1,
+.frame .nc-content-list article  h2,
+.frame .nc-content-list article  .h2,
+.frame .nc-content-list article  h3,
+.frame .nc-content-list article  .h3 {
+  margin-top: 16px;
+  margin-bottom: 10px;
+}
+.frame .nc-content-list article  h4,
+.frame .nc-content-list article  .h4,
+.frame .nc-content-list article  h5,
+.frame .nc-content-list article  .h5,
+.frame .nc-content-list article  h6,
+.frame .nc-content-list article  .h6 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.frame .nc-content-list article  h1 small,
+.frame .nc-content-list article  .h1 small,
+.frame .nc-content-list article  h2 small,
+.frame .nc-content-list article  .h2 small,
+.frame .nc-content-list article  h3 small,
+.frame .nc-content-list article  .h3 small,
+.frame .nc-content-list article  h1 .small,
+.frame .nc-content-list article  .h1 .small,
+.frame .nc-content-list article  h2 .small,
+.frame .nc-content-list article  .h2 .small,
+.frame .nc-content-list article  h3 .small,
+.frame .nc-content-list article  .h3 .small {
+  font-size: 75%;
+}
+
+.frame .nc-content-list article  h1,
+.frame .nc-content-list article  .h1 {
+  font-size: 27px;
+}
+.frame .nc-content-list article  h2,
+.frame .nc-content-list article  .h2 {
+  font-size: 18px;
+}
+.frame .nc-content-list article  h3,
+.frame .nc-content-list article  .h3 {
+  font-size: 16px;
+}
+.frame .nc-content-list article  h4,
+.frame .nc-content-list article  .h4 {
+  font-size: 13.5px;
+}
+.frame .nc-content-list article  h5,
+.frame .nc-content-list article  .h5 {
+  font-size: 10.5px;
+}
+.frame .nc-content-list article  h6,
+.frame .nc-content-list article  .h6 {
+  font-size: 9px;
+}

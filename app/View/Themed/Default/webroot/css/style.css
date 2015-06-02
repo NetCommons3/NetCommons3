@@ -1,5 +1,12 @@
 /* style.css */
 
+body{
+	padding-top: 50px;
+}
+main.container {
+	margin-top: 10px;
+}
+
 .frame .nc-content-list article  h1,
 .frame .nc-content-list article  .h1,
 .frame .nc-content-list article  h2,
