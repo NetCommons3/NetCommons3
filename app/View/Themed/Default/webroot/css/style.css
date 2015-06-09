@@ -3,7 +3,7 @@
 body{
 	padding-top: 50px;
 }
-main.container {
+main.container, main.container-fluid {
 	margin-top: 10px;
 }
 
