@@ -20,8 +20,9 @@ NetCommons
 
 | OS           | matrix |
 | ------------ | ------ |
-| Windows 8.1  | virtualbox 4.3.10, vagrant 1.4.3 |
+| Windows 8.1  | virtualbox 4.3.26, vagrant 1.7.2 [#40](https://github.com/NetCommons3/NetCommons3/issues/40)|
 | Windows 8.1  | virtualbox 4.3.12, vagrant 1.6.3 |
+| Windows 8.1  | virtualbox 4.3.10, vagrant 1.4.3 |
 | Windows 7    | virtualbox 4.3.12, vagrant 1.4.3 |
 | Windows 7    | virtualbox 4.3.12, vagrant 1.6.3 |
 | OSX Mavericks | virtualbox 4.3.8, vagrant 1.4.3 |
@@ -82,7 +83,7 @@ vagrant plugin install vagrant-omnibus
 vagrant plugin install vagrant-berkshelf --plugin-version 1.3.7
 </pre>
 
-#### vagrant plugin (vagrant 1.5+)
+#### vagrant plugin (vagrant 1.5.x 1.6.x)
 <pre>
 vagrant plugin install vagrant-berkshelf --plugin-version 2.0.1
 </pre>
