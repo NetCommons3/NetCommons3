@@ -26,13 +26,14 @@
  *
  * @package app.Controller
  * @link http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
- * @SuppressWarnings(PHPMD.NumberOfChildren)
  */
 if (CakePlugin::loaded('NetCommons')) {
 	App::uses('NetCommonsAppController', 'NetCommons.Controller');
 
 /**
  * Application Controller for NetCommons
+ *
+ * @SuppressWarnings(PHPMD.NumberOfChildren)
  */
 	class AppController extends NetCommonsAppController {
 	}
@@ -41,6 +42,8 @@ if (CakePlugin::loaded('NetCommons')) {
 
 /**
  * Default Application Controller
+ *
+ * @SuppressWarnings(PHPMD.NumberOfChildren)
  */
 	class AppController extends Controller {
 	}
