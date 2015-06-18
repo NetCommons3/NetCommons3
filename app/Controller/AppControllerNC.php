@@ -18,17 +18,19 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
+if (CakePlugin::loaded('NetCommons')) {
+	App::uses('NetCommonsAppController', 'NetCommons.Controller');
+
 /**
- * Application Controller
+ * Application Controller for NetCommons
  *
  * Add your application-wide methods in the class below, your controllers
  * will inherit them.
  *
  * @package app.Controller
  * @link http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
+ * @SuppressWarnings(PHPMD.NumberOfChildren)
  */
-if (CakePlugin::loaded('NetCommons')) {
-	include ROOT . DS . APP_DIR . DS . 'Controller' . DS . 'AppControllerNC.php';
-} else {
-	include ROOT . DS . APP_DIR . DS . 'Controller' . DS . 'AppControllerOrig.php';
+	class AppController extends NetCommonsAppController {
+	}
 }
