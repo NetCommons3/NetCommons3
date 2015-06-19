@@ -34,7 +34,7 @@
         "sebastian/phpcpd":             "*"
     },
     "require-dev": {
-        "netcommons/install":           "@dev"
+        "s-nakajima/install":           "@dev"
     },
     "bin": [
         "lib/Cake/Console/cake"
