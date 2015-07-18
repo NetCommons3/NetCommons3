@@ -19,19 +19,21 @@
     },
     "require": {
         "cakedc/migrations":            "~2.2",
-        "cakephp/cakephp":              "2.6.5",
+        "cakephp/cakephp":              "~2.6.9",
+        "cakephp/cakephp-codesniffer":  "~1.0",
         "cakephp/debug_kit":            "~2.2",
         "chronon/mobile_detect":        "*",
         "dompdf/dompdf":                "~0.6",
+        "mayflower/php-codebrowser":    "~1.1",
         "mustangostang/spyc":           "@dev",
-        "sebastian/phpcpd":             "*",
-        "cakephp/cakephp-codesniffer":  "~1.0",
+        "phpdocumentor/phpdocumentor":  "2.*",
+        "phploc/phploc":                "*",
         "phpmd/phpmd" :                 "@stable",
         "phpunit/phpunit":              "~3.7.38",
-        "mayflower/php-codebrowser":    "~1.1",
-        "phploc/phploc":                "*",
         "satooshi/php-coveralls":       "@dev",
-        "phpdocumentor/phpdocumentor":  "2.*"
+        "sebastian/phpcpd":             "*",
+        "zendframework/zend-cache":     "2.5.1",
+        "zendframework/zend-eventmanager":   "2.5.1"
     },
     "require-dev": {
         "netcommons/access-counters":   "@dev",
