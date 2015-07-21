@@ -39,6 +39,7 @@
         "netcommons/install":           "@dev",
         "netcommons/m17n":              "@dev",
         "netcommons/net-commons":       "@dev",
+        "netcommons/public-space":      "@dev",
         "netcommons/roles":             "@dev",
         "netcommons/rooms":             "@dev",
         "netcommons/users":             "@dev"
