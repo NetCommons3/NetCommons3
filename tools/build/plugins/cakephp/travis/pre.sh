@@ -5,11 +5,14 @@ if [ $DB = 'pgsql' ]; then psql -c 'CREATE DATABASE cakephp_test;' -U postgres; 
 
 export PLUGIN_NAME=`basename $TRAVIS_BUILD_DIR`
 
-cp $TRAVIS_BUILD_DIR/composer.json .
+rm composer.json
 rm composer.lock
-cp -r ../$PLUGIN_NAME app/Plugin
-composer require netcommons/net-commons:"@dev"
+sudo wget https://raw.githubusercontent.com/NetCommons3/NetCommons/master/composer.json
 composer install
+
+cp $TRAVIS_BUILD_DIR/composer.json .
+cp -r ../$PLUGIN_NAME app/Plugin
+composer update
 chmod -R 777 app/tmp
 mkdir -p build/logs
 mkdir -p build/cov
