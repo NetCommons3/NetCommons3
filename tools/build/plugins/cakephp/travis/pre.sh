@@ -11,12 +11,14 @@ wget https://raw.githubusercontent.com/NetCommons3/NetCommons/master/composer.js
 php -q << _EOF_
 <?php
 \$composer = json_decode(file_get_contents('composer.json'), true);
+\$ret = '';
 foreach (\$composer['require-dev'] as \$namespace => \$version) {
-	echo ' ' . \$namespace . ':' . \$version;
+	\$ret .= ' ' . \$namespace . ':' . \$version;
 }
+echo \$ret;
 _EOF_
 CMPOSER_REQURES=`echo $? | cut -c 2-`
-CMPOSER_REQURES="netcommons/net-commons:@dev $CMPOSER_REQURES"
+CMPOSER_REQURES="netcommons/net-commons:@dev$CMPOSER_REQURES"
 
 echo $CMPOSER_REQURES
 
