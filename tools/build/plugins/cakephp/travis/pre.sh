@@ -8,7 +8,7 @@ export PLUGIN_NAME=`basename $TRAVIS_BUILD_DIR`
 rm composer.json
 wget https://raw.githubusercontent.com/NetCommons3/NetCommons/master/composer.json
 
-php -q << _EOF_
+php -q << _EOF_ > packages.txt
 <?php
 \$composer = json_decode(file_get_contents('composer.json'), true);
 \$ret = '';
@@ -17,15 +17,12 @@ foreach (\$composer['require-dev'] as \$namespace => \$version) {
 }
 echo \$ret;
 _EOF_
-CMPOSER_REQURES=`echo $? | cut -c 2-`
-CMPOSER_REQURES="netcommons/net-commons:@dev$CMPOSER_REQURES"
-
-echo $CMPOSER_REQURES
+CMPOSER_REQURES=`cat packages.txt`
 
 cp $TRAVIS_BUILD_DIR/composer.json .
 rm composer.lock
 cp -r ../$PLUGIN_NAME app/Plugin
-composer require $CMPOSER_REQURES
+composer require "netcommons/net-commons:@dev $CMPOSER_REQURES"
 composer install
 chmod -R 777 app/tmp
 mkdir -p build/logs
