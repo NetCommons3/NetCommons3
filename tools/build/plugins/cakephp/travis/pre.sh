@@ -6,18 +6,22 @@ if [ $DB = 'pgsql' ]; then psql -c 'CREATE DATABASE cakephp_test;' -U postgres; 
 export PLUGIN_NAME=`basename $TRAVIS_BUILD_DIR`
 
 rm composer.json
-rm composer.lock
 wget https://raw.githubusercontent.com/NetCommons3/NetCommons/master/composer.json
-#sudo chmod a+w composer.json
-#composer require netcommons/net-commons:"@dev"
-composer install
+
+php -q << _EOF_
+<?php
+\$composer = json_decode(file_get_contents('composer.json'), true);
+foreach (\$composer['require-dev'] as \$namespace => \$version) {
+	echo ' ' . \$namespace . '@' . \$version;
+}
+_EOF_
+CMPOSER_REQURES=`echo $? | cut -c 2-`
 
 cp $TRAVIS_BUILD_DIR/composer.json .
 rm composer.lock
 cp -r ../$PLUGIN_NAME app/Plugin
-composer update --dev
-#composer require netcommons/net-commons:"@dev"
-#composer install
+composer require "netcommons/net-commons:@dev${CMPOSER_REQURES}"
+composer install
 chmod -R 777 app/tmp
 mkdir -p build/logs
 mkdir -p build/cov
