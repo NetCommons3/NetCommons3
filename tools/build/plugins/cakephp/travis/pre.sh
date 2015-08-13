@@ -9,7 +9,7 @@ rm composer.json
 rm composer.lock
 wget https://raw.githubusercontent.com/NetCommons3/NetCommons/master/composer.json
 #sudo chmod a+w composer.json
-#composer require netcommons/net-commons:"@dev"
+composer require --dev netcommons/net-commons:"@dev"
 composer install
 
 cp $TRAVIS_BUILD_DIR/composer.json .
