@@ -16,11 +16,14 @@ foreach (\$composer['require-dev'] as \$namespace => \$version) {
 }
 _EOF_
 CMPOSER_REQURES=`echo $? | cut -c 2-`
+CMPOSER_REQURES="netcommons/net-commons:@dev $CMPOSER_REQURES"
+
+echo $CMPOSER_REQURES
 
 cp $TRAVIS_BUILD_DIR/composer.json .
 rm composer.lock
 cp -r ../$PLUGIN_NAME app/Plugin
-composer require "netcommons/net-commons:@dev${CMPOSER_REQURES}"
+composer require $CMPOSER_REQURES
 composer install
 chmod -R 777 app/tmp
 mkdir -p build/logs
