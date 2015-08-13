@@ -17,7 +17,7 @@ foreach (\$composer['require-dev'] as \$namespace => \$version) {
 }
 echo \$ret;
 _EOF_
-CMPOSER_REQURES=`cat packages.txt`
+CMPOSER_REQURES=`cat packages.txt | cut -c 2-`
 echo $CMPOSER_REQURES
 
 cp $TRAVIS_BUILD_DIR/composer.json .
