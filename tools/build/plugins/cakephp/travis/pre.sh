@@ -12,10 +12,10 @@ php -q << _EOF_
 <?php
 \$composer = json_decode(file_get_contents('composer.json'), true);
 foreach (\$composer['require-dev'] as \$namespace => \$version) {
-	echo ' ' . \$namespace . '@' . \$version;
+	echo ' ' . \$namespace . ':@' . \$version;
 }
 _EOF_
-CMPOSER_REQURES=$?
+CMPOSER_REQURES=`echo $? | cut -c 2-`
 
 cp $TRAVIS_BUILD_DIR/composer.json .
 rm composer.lock
