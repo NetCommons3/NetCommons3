@@ -15,7 +15,7 @@ foreach (\$composer['require-dev'] as \$namespace => \$version) {
 	echo ' ' . \$namespace . '@' . \$version;
 }
 _EOF_
-CMPOSER_REQURES=`echo $? | cut -c 2-`
+CMPOSER_REQURES=$?
 
 cp $TRAVIS_BUILD_DIR/composer.json .
 rm composer.lock
