@@ -42,7 +42,8 @@
         "netcommons/public-space":      "@dev",
         "netcommons/roles":             "@dev",
         "netcommons/rooms":             "@dev",
-        "netcommons/users":             "@dev"
+        "netcommons/users":             "@dev",
+        "netcommons/workflow":          "@dev"
     },
     "bin": [
         "lib/Cake/Console/cake"
