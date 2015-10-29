@@ -28,8 +28,8 @@ class DatabaseConfiguration extends AppModel {
  */
 	public $validate = array(
 		'datasource' => array(
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
+			'notBlank' => array(
+				'rule' => array('notBlank'),
 				'message' => 'Invalid value',
 				//'allowEmpty' => false,
 				'required' => true,
