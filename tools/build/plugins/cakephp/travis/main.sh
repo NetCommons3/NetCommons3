@@ -4,7 +4,7 @@ export PATH=$PATH:./vendors/bin
 
 # php
 app/Console/cake test $PLUGIN_NAME All$PLUGIN_NAME --stderr || exit $?
-phpcs -p --extensions=php --standard=./vendors/cakephp/cakephp-codesniffer/CakePHP --ignore=app/Config/Migration/,app/Config/database.php,app/Plugin/$PLUGIN_NAME/Config/Migration,app/Plugin/$PLUGIN_NAME/Config/Schema,$IGNORE_PLUGINS app/Plugin/$PLUGIN_NAME || exit $?
+phpcs -p --extensions=php,ctp --standard=./vendors/cakephp/cakephp-codesniffer/CakePHP --ignore=app/Config/Migration/,app/Config/database.php,app/Plugin/$PLUGIN_NAME/Config/Migration,app/Plugin/$PLUGIN_NAME/Config/Schema,$IGNORE_PLUGINS app/Plugin/$PLUGIN_NAME || exit $?
 phpmd app/Plugin/$PLUGIN_NAME text /etc/phpmd/rules.xml --exclude $NETCOMMONS_BUILD_DIR/app/Config/Migration,$NETCOMMONS_BUILD_DIR/app/Plugin/$PLUGIN_NAME/Config/Migration,$NETCOMMONS_BUILD_DIR/app/Plugin/$PLUGIN_NAME/Config/Schema,$IGNORE_PLUGINS || exit $?
 phpcpd --exclude Test --exclude Config $IGNORE_PLUGINS_OPTS app/Plugin/$PLUGIN_NAME
 
