@@ -1,6 +1,6 @@
 source 'https://api.berkshelf.com'
 
-cookbook 'netcommons', git: 'https://github.com/NetCommons3/chef_netcommons.git'
+cookbook 'netcommons', git: 'https://github.com/akagane99/chef_netcommons.git'
 # cookbook 'apt', git: 'https://github.com/topaz2/apt', branch: 'firewall_workaround'
 # cookbook 'boilerplate', git: 'https://github.com/NetCommons3/chef_boilerplate.git'
 cookbook 'boilerplate_jenkins', git: 'https://github.com/topaz2/chef_boilerplate_jenkins.git'
