@@ -57,8 +57,8 @@
         "database::mysql",
         "mysql::server",
         "jenkins::master",
-        "boilerplate::git",
-        "boilerplate_php::git",
+        "boilerplate",
+        "boilerplate_php",
         "netcommons",
         "mroonga"
     ]
