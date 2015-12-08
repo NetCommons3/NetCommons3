@@ -5,13 +5,11 @@ DEPENDENCIES
     branch: firewall_workaround
   boilerplate
     git: https://github.com/NetCommons3/chef_boilerplate.git
-    revision: 7c24a2ddea901fd8ae75af2f4d72c3faa9e99903
   boilerplate_jenkins
     git: https://github.com/topaz2/chef_boilerplate_jenkins.git
     revision: 22865e0431f23fe442dc58948b15a8bca398991f
   boilerplate_php
     git: https://github.com/NetCommons3/chef_boilerplate_php.git
-    revision: 9e7a8068d6f2b9d2acad9d7778d9834913d7ffb5
   chef-dk
   chef-server
   composer
