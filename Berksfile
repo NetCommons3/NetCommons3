@@ -1,9 +1,9 @@
 source 'https://api.berkshelf.com'
 
 cookbook 'apt', git: 'https://github.com/topaz2/apt', branch: 'firewall_workaround'
-cookbook 'boilerplate'
+cookbook 'boilerplate', git: 'https://github.com/NetCommons3/chef_boilerplate.git'
 cookbook 'boilerplate_jenkins', git: 'https://github.com/topaz2/chef_boilerplate_jenkins.git'
-cookbook 'boilerplate_php'
+cookbook 'boilerplate_php', git: 'https://github.com/NetCommons3/chef_boilerplate_php.git'
 cookbook 'chef-dk'
 cookbook 'chef-server'
 cookbook 'composer', git: 'https://github.com/Morphodo/chef-composer.git'
