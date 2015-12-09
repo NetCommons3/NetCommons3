@@ -20,6 +20,7 @@ NetCommons
 
 | OS           | matrix |
 | ------------ | ------ |
+| Windows 10  | virtualbox 5.0.10, vagrant 1.7.4 |
 | Windows 8.1  | virtualbox 4.3.26, vagrant 1.7.2 [#40](https://github.com/NetCommons3/NetCommons3/issues/40)|
 | Windows 8.1  | virtualbox 4.3.12, vagrant 1.6.3 |
 | Windows 8.1  | virtualbox 4.3.10, vagrant 1.4.3 |
