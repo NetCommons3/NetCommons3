@@ -1,3 +1,3 @@
 #!/bin/bash -ex
 
-php vendors/bin/coveralls --root-dir . -vvv || exit $?
+php vendors/bin/coveralls --root_dir . -vvv || exit $?
