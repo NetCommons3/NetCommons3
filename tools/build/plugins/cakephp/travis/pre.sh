@@ -10,10 +10,13 @@ wget https://raw.githubusercontent.com/NetCommons3/NetCommons/master/composer.js
 
 php -q << _EOF_ > packages.txt
 <?php
+\$currentComposer = json_decode(file_get_contents(getenv('TRAVIS_BUILD_DIR') . '/composer.json'), true);
 \$composer = json_decode(file_get_contents('composer.json'), true);
 \$ret = '';
 foreach (\$composer['require-dev'] as \$namespace => \$version) {
-	\$ret .= ' ' . \$namespace . ':' . \$version;
+	if (\$currentComposer['name'] !== \$namespace) {
+		\$ret .= ' ' . \$namespace . ':' . \$version;
+	}
 }
 echo \$ret;
 _EOF_
