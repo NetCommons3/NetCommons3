@@ -26,7 +26,11 @@ echo $CMPOSER_REQURES
 cp $TRAVIS_BUILD_DIR/composer.json .
 rm composer.lock
 cp -r ../$PLUGIN_NAME app/Plugin
-composer require --dev netcommons/net-commons:@dev $CMPOSER_REQURES
+if [ "$PLUGIN_NAME" = "NetCommons" ] ; then
+	composer require --dev $CMPOSER_REQURES
+else
+	composer require --dev netcommons/net-commons:@dev $CMPOSER_REQURES
+fi
 composer install
 chmod -R 777 app/tmp
 mkdir -p build/logs
