@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b1053c5f8ac1bdf8badc07a5780eb596",
-    "content-hash": "11923db27fdc9fef025688a795c1a7d1",
+    "hash": "4c17e206c59589f3d2992a9dac0360a2",
+    "content-hash": "c34e2185969d07622fb781e6dc58d561",
     "packages": [
         {
             "name": "cakedc/migrations",
@@ -614,7 +614,7 @@
             ],
             "authors": [
                 {
-                    "name": "Fabien M辿nager",
+                    "name": "Fabien Ménager",
                     "email": "fabien.menager@gmail.com"
                 },
                 {
@@ -1164,7 +1164,7 @@
                     "email": "igor@wiedler.ch"
                 },
                 {
-                    "name": "Robert Sch旦nthal",
+                    "name": "Robert Schönthal",
                     "email": "seroscho@googlemail.com"
                 }
             ],
@@ -1561,7 +1561,7 @@
             ],
             "authors": [
                 {
-                    "name": "Fabien M辿nager",
+                    "name": "Fabien Ménager",
                     "email": "fabien.menager@gmail.com"
                 }
             ],
@@ -1996,7 +1996,7 @@
                     "role": "Contributors"
                 },
                 {
-                    "name": "Marc W端rth",
+                    "name": "Marc Würth",
                     "email": "ravage@bluewin.ch",
                     "homepage": "https://github.com/ravage84",
                     "role": "Project Maintainer"
@@ -4788,6 +4788,58 @@
             "time": "2016-02-29 01:46:55"
         },
         {
+            "name": "netcommons/site-manager",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/NetCommons3/SiteManager.git",
+                "reference": "d3032c93065c76bb48491bfccd99b6bcda2363dc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/NetCommons3/SiteManager/zipball/d3032c93065c76bb48491bfccd99b6bcda2363dc",
+                "reference": "d3032c93065c76bb48491bfccd99b6bcda2363dc",
+                "shasum": ""
+            },
+            "require": {
+                "cakedc/migrations": "~2.2",
+                "cakephp/cakephp": "~2.6",
+                "cakephp/debug_kit": "~2.2",
+                "phpunit/phpunit": "~3.7.38",
+                "sebastian/phpcpd": "~2.0"
+            },
+            "require-dev": {
+                "mustangostang/spyc": "dev-master",
+                "netcommons/net-commons": "dev-master",
+                "satooshi/php-coveralls": "dev-master"
+            },
+            "type": "cakephp-plugin",
+            "extra": {
+                "installer-paths": {
+                    "app/Plugin/{$name}": [
+                        "type:cakephp-plugin"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "NetCommons License"
+            ],
+            "authors": [
+                {
+                    "name": "NetCommons Community",
+                    "homepage": "https://github.com/NetCommons3/SiteManager/graphs/contributors"
+                }
+            ],
+            "description": "SiteManager for NetCommons Plugin",
+            "homepage": "http://www.netcommons.org/",
+            "keywords": [
+                "cakephp",
+                "site_manager"
+            ],
+            "time": "2016-02-25 02:31:46"
+        },
+        {
             "name": "netcommons/users",
             "version": "dev-master",
             "source": {
@@ -4957,6 +5009,7 @@
         "netcommons/roles": 20,
         "netcommons/rooms": 20,
         "netcommons/users": 20,
+        "netcommons/site-manager": 20,
         "netcommons/workflow": 20
     },
     "prefer-stable": false,

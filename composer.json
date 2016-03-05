@@ -43,6 +43,7 @@
         "netcommons/roles":             "@dev",
         "netcommons/rooms":             "@dev",
         "netcommons/users":             "@dev",
+        "netcommons/site-manager":      "@dev",
         "netcommons/workflow":          "@dev"
     },
     "bin": [
