@@ -50,7 +50,6 @@ class AssetComponentTest extends CakeTestCase {
  */
 	public $fixtures = array(
 		'plugin.site_manager.site_setting',
-		'plugin.users.user',
 	);
 
 /**
@@ -80,6 +79,11 @@ class AssetComponentTest extends CakeTestCase {
 		//登録されている場合
 		$ck = $AssetComponent->getSiteTheme($App);
 		$this->assertTextEquals('UnitTestTheme', $ck);
+
+		//Tracableビヘイビアの削除
+		$App->SiteSetting->Behaviors->unload('NetCommons.Trackable');
+		$App->SiteSetting->unbindModel(array('belongsTo' => array('TrackableCreator', 'TrackableUpdater')), false);
+
 		$App->SiteSetting->delete(2);
 		$this->assertEquals(array(), $App->SiteSetting->find('first', array('conditions' => array('SiteSetting.id' => 2))));
 		//登録されていなかった場合
