@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4c17e206c59589f3d2992a9dac0360a2",
-    "content-hash": "c34e2185969d07622fb781e6dc58d561",
+    "hash": "edbaadfbe06ede8567908adbecb10b97",
+    "content-hash": "da7059a3e819e62b1a488aeb685815be",
     "packages": [
         {
             "name": "cakedc/migrations",
@@ -4450,6 +4450,58 @@
             "time": "2016-02-24 08:16:25"
         },
         {
+            "name": "netcommons/data-types",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/NetCommons3/DataTypes.git",
+                "reference": "09cfc45247ec91e9543498857a62b15975b57be5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/NetCommons3/DataTypes/zipball/09cfc45247ec91e9543498857a62b15975b57be5",
+                "reference": "09cfc45247ec91e9543498857a62b15975b57be5",
+                "shasum": ""
+            },
+            "require": {
+                "cakedc/migrations": "~2.2",
+                "cakephp/cakephp": "~2.6",
+                "cakephp/debug_kit": "~2.2",
+                "phpunit/phpunit": "~3.7.38",
+                "sebastian/phpcpd": "~2.0"
+            },
+            "require-dev": {
+                "mustangostang/spyc": "dev-master",
+                "netcommons/net-commons": "dev-master",
+                "satooshi/php-coveralls": "dev-master"
+            },
+            "type": "cakephp-plugin",
+            "extra": {
+                "installer-paths": {
+                    "app/Plugin/{$name}": [
+                        "type:cakephp-plugin"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "NetCommons License"
+            ],
+            "authors": [
+                {
+                    "name": "NetCommons Community",
+                    "homepage": "https://github.com/NetCommons3/DataTypes/graphs/contributors"
+                }
+            ],
+            "description": "DataTypes for NetCommons Plugin",
+            "homepage": "http://www.netcommons.org/",
+            "keywords": [
+                "cakephp",
+                "data_types"
+            ],
+            "time": "2016-02-11 02:57:35"
+        },
+        {
             "name": "netcommons/install",
             "version": "dev-master",
             "source": {
@@ -5002,6 +5054,7 @@
         "mustangostang/spyc": 20,
         "phpmd/phpmd": 0,
         "satooshi/php-coveralls": 20,
+        "netcommons/data-types": 20,
         "netcommons/install": 20,
         "netcommons/m17n": 20,
         "netcommons/net-commons": 20,

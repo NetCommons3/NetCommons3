@@ -36,6 +36,7 @@
         "zendframework/zend-eventmanager":   "2.5.1"
     },
     "require-dev": {
+        "netcommons/data-types":        "@dev",
         "netcommons/install":           "@dev",
         "netcommons/m17n":              "@dev",
         "netcommons/net-commons":       "@dev",
