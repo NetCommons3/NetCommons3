@@ -30,7 +30,7 @@
         "phploc/phploc":                "*",
         "phpmd/phpmd" :                 "@stable",
         "phpunit/phpunit":              "~3.7.38",
-        "satooshi/php-coveralls":       "@dev",
+        "satooshi/php-coveralls":       "~1.0",
         "sebastian/phpcpd":             "*",
         "zendframework/zend-cache":     "2.5.1",
         "zendframework/zend-eventmanager":   "2.5.1"
