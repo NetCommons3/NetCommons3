@@ -12,8 +12,12 @@ phpcpd --exclude Test --exclude Config $IGNORE_PLUGINS_OPTS app/Plugin/$PLUGIN_N
 LOG=/var/log/phpdoc.log
 sudo touch $LOG
 sudo chmod a+w $LOG
+
+echo "phpdoc app/Plugin/$PLUGIN_NAME"
 phpdoc parse -d app/Plugin/$PLUGIN_NAME -t $TRAVIS_BUILD_DIR/phpdoc --force --ansi | tee $LOG
 [ `grep -c '\[37;41m' $LOG` -ne 0 ] && cat $LOG && exit 1
+echo "phpdoc no error."
+echo ""
 
 # js
 gjslint --strict -x jquery.js,jquery.cookie.js,js_debug_toolbar.js,travis.karma.conf.js,my.karma.conf.js -e jasmine_examples,HtmlPurifier,webroot/components,webroot/js/langs -r app || exit $?
