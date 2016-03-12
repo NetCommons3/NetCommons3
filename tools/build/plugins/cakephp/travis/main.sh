@@ -13,3 +13,13 @@ gjslint --strict -x jquery.js,jquery.cookie.js,js_debug_toolbar.js,travis.karma.
 if [ -d ./app/Plugin/$PLUGIN_NAME/JavascriptTest/ ]; then
   ./node_modules/karma/bin/karma start app/Plugin/$PLUGIN_NAME/JavascriptTest/travis.karma.conf.js --single-run --browsers PhantomJS || exit $?
 fi
+
+# phpdoc
+LOG=/var/log/phpdoc.log
+sudo touch $LOG
+sudo chmod a+w $LOG
+
+echo "phpdoc app/Plugin/$PLUGIN_NAME"
+phpdoc parse -d app/Plugin/$PLUGIN_NAME -t $TRAVIS_BUILD_DIR/phpdoc --force --ansi | tee $LOG
+[ `grep -c '\[37;41m' $LOG` -ne 0 ] && cat $LOG && exit 1
+echo "phpdoc no error."
