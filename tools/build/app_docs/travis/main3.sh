@@ -6,10 +6,9 @@ APP_ROOT=$CLASS_DOC_SOURCE_ROOT/app
 LOG=/var/log/phpdoc.log
 export PATH=$PATH:./vendors/bin
 
-sudo touch $LOG
-sudo chmod a+w $LOG
-
 cd $CLASS_DOC_SOURCE_ROOT
+
+[ `grep -c '\[37;41m' $LOG` -ne 0 ] && cat $LOG && exit 1
 
 # Init phpdoc options
 for p in `cat app/Config/vendors.txt`
@@ -18,6 +17,5 @@ do
 done
 IGNORE_PLUGINS=`echo $IGNORE_PLUGINS | cut -c 2-`
 
-# Exit on parse error
-phpdoc parse -d $APP_ROOT -t $WORKSPACE/phpdoc -i $IGNORE_PLUGINS,*/Config/* --force --ansi | tee $LOG
-[ `grep -c '\[37;41m' $LOG` -ne 0 ] && cat $LOG && exit 1
+# Generate class docs
+phpdoc -d $APP_ROOT -t $WORKSPACE/phpdoc -i $IGNORE_PLUGINS,*/Config/*
