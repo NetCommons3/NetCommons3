@@ -8,6 +8,13 @@ phpcs -p --extensions=php,ctp --standard=./vendors/cakephp/cakephp-codesniffer/C
 phpmd app/Plugin/$PLUGIN_NAME text /etc/phpmd/rules.xml --exclude $NETCOMMONS_BUILD_DIR/app/Config/Migration,$NETCOMMONS_BUILD_DIR/app/Plugin/$PLUGIN_NAME/Config/Migration,$NETCOMMONS_BUILD_DIR/app/Plugin/$PLUGIN_NAME/Config/Schema,$IGNORE_PLUGINS || exit $?
 phpcpd --exclude Test --exclude Config $IGNORE_PLUGINS_OPTS app/Plugin/$PLUGIN_NAME
 
+# phpdoc
+LOG=/var/log/phpdoc.log
+sudo touch $LOG
+sudo chmod a+w $LOG
+phpdoc parse -d app/Plugin/$PLUGIN_NAME -t $TRAVIS_BUILD_DIR/phpdoc --force --ansi | tee $LOG
+[ `grep -c '\[37;41m' $LOG` -ne 0 ] && cat $LOG && exit 1
+
 # js
 gjslint --strict -x jquery.js,jquery.cookie.js,js_debug_toolbar.js,travis.karma.conf.js,my.karma.conf.js -e jasmine_examples,HtmlPurifier,webroot/components,webroot/js/langs -r app || exit $?
 if [ -d ./app/Plugin/$PLUGIN_NAME/JavascriptTest/ ]; then
