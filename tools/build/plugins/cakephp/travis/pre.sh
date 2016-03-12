@@ -37,7 +37,7 @@ mkdir -p build/logs
 mkdir -p build/cov
 sudo mkdir -p /etc/phpmd
 
-composer require sebastian/phpcpd:* cakephp/cakephp-codesniffer:~1.0 phpmd/phpmd:@stable phpunit/phpunit:~3.7.38 satooshi/php-coveralls:@dev
+composer require sebastian/phpcpd:* cakephp/cakephp-codesniffer:~1.0 phpmd/phpmd:@stable phpunit/phpunit:~3.7.38 satooshi/php-coveralls:@dev phpdocumentor/phpdocumentor:2.*
 sudo pip install http://closure-linter.googlecode.com/files/closure_linter-latest.tar.gz
 
 phpenv rehash
