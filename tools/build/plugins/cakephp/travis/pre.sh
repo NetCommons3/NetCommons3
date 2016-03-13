@@ -5,6 +5,8 @@ if [ $DB = 'pgsql' ]; then psql -c 'CREATE DATABASE cakephp_test;' -U postgres; 
 
 export PLUGIN_NAME=`basename $TRAVIS_BUILD_DIR`
 
+composer update
+
 rm composer.json
 wget https://raw.githubusercontent.com/NetCommons3/NetCommons/master/composer.json
 
@@ -31,13 +33,13 @@ if [ "$PLUGIN_NAME" = "NetCommons" ] ; then
 else
 	composer require --dev netcommons/net-commons:@dev $CMPOSER_REQURES
 fi
-composer install
+#composer install
 chmod -R 777 app/tmp
 mkdir -p build/logs
 mkdir -p build/cov
 sudo mkdir -p /etc/phpmd
 
-composer require sebastian/phpcpd:* cakephp/cakephp-codesniffer:~1.0 phpmd/phpmd:@stable phpunit/phpunit:~3.7.38 satooshi/php-coveralls:@dev phpdocumentor/phpdocumentor:2.*
+#composer require sebastian/phpcpd:* cakephp/cakephp-codesniffer:~1.0 phpmd/phpmd:@stable phpunit/phpunit:~3.7.38 satooshi/php-coveralls:@dev
 sudo pip install http://closure-linter.googlecode.com/files/closure_linter-latest.tar.gz
 
 phpenv rehash
