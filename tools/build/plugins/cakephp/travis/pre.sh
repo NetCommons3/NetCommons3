@@ -52,7 +52,7 @@ if [ -f "app/Plugin/$PLUGIN_NAME/phpunit.xml.dist" ]; then
 else
   cp tools/build/app/cakephp/phpunit.xml.dist .
 fi
-sudo wget https://raw.githubusercontent.com/topaz2/chef_boilerplate_php/master/files/default/build/cakephp/phpmd/rules.xml -O /etc/phpmd/rules.xml
+sudo wget https://raw.githubusercontent.com/NetCommons3/chef_boilerplate_php/master/files/default/build/cakephp/phpmd/rules.xml -O /etc/phpmd/rules.xml
 
 for p in `cat app/Config/vendors.txt`
 do
