@@ -5,7 +5,19 @@ if [ $DB = 'pgsql' ]; then psql -c 'CREATE DATABASE cakephp_test;' -U postgres; 
 
 export PLUGIN_NAME=`basename $TRAVIS_BUILD_DIR`
 
-composer update
+php -q << _EOF_ > packages.txt
+<?php
+\$currentComposer = json_decode(file_get_contents(getenv('TRAVIS_BUILD_DIR') . '/composer.json'), true);
+\$composer = json_decode(file_get_contents('composer.json'), true);
+\$ret = '';
+foreach (\$composer['require'] as \$namespace => \$version) {
+	if (\$currentComposer['name'] !== \$namespace) {
+		\$ret .= ' ' . \$namespace . ':' . \$version;
+	}
+}
+echo \$ret;
+_EOF_
+NC3_CMPOSER_REQURES=`cat packages.txt | cut -c 2-`
 
 rm composer.json
 wget https://raw.githubusercontent.com/NetCommons3/NetCommons/master/composer.json
@@ -23,23 +35,27 @@ foreach (\$composer['require-dev'] as \$namespace => \$version) {
 echo \$ret;
 _EOF_
 CMPOSER_REQURES=`cat packages.txt | cut -c 2-`
-echo $CMPOSER_REQURES
 
 cp $TRAVIS_BUILD_DIR/composer.json .
 rm composer.lock
 cp -r ../$PLUGIN_NAME app/Plugin
+
+echo $NC3_CMPOSER_REQURES
+composer require $NC3_CMPOSER_REQURES
+
+echo $CMPOSER_REQURES
 if [ "$PLUGIN_NAME" = "NetCommons" ] ; then
 	composer require --dev $CMPOSER_REQURES
 else
 	composer require --dev netcommons/net-commons:@dev $CMPOSER_REQURES
 fi
-#composer install
+composer install
+
 chmod -R 777 app/tmp
 mkdir -p build/logs
 mkdir -p build/cov
 sudo mkdir -p /etc/phpmd
 
-#composer require sebastian/phpcpd:* cakephp/cakephp-codesniffer:~1.0 phpmd/phpmd:@stable phpunit/phpunit:~3.7.38 satooshi/php-coveralls:@dev
 sudo pip install http://closure-linter.googlecode.com/files/closure_linter-latest.tar.gz
 
 phpenv rehash
