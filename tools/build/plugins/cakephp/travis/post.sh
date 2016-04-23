@@ -1,9 +1,5 @@
 #!/bin/bash -ex
 
-# coveralls
-cd $TRAVIS_BUILD_DIR
-php vendors/bin/coveralls --root_dir . -vvv
-
 ## phpdoc
 if [ "$TRAVIS_BRANCH" == "master" ]; then
   LOG=/var/log/phpdoc.log
@@ -17,9 +13,8 @@ if [ "$TRAVIS_BRANCH" == "master" ]; then
 
   echo $GH_TOKEN
   if [ $GH_TOKEN ]; then
-    echo "`echo \"`php --version`\""
-    echo "`echo \"`php --version`\" | grep \"^PHP 5.5\"`"
-  
+    echo "`php --version`"
+
     if [ `echo "`php --version`" | grep "^PHP 5.5"` ]; then
       git clone -b gh-pages git://github.com/NetCommons3/NetCommons3Docs $NETCOMMONS_BUILD_DIR/NetCommons3Docs
       cd $NETCOMMONS_BUILD_DIR/NetCommons3Docs
@@ -41,3 +36,7 @@ if [ "$TRAVIS_BRANCH" == "master" ]; then
     fi
   fi
 fi
+
+# coveralls
+cd $TRAVIS_BUILD_DIR
+php vendors/bin/coveralls --root_dir . -vvv || exit $?
