@@ -1,6 +1,6 @@
 #!/bin/bash -ex
 
-export PATH=$PATH:./vendors/bin
+export PATH=$PATH:$NETCOMMONS_BUILD_DIR/vendors/bin
 
 # php
 app/Console/cake test $PLUGIN_NAME All$PLUGIN_NAME --stderr || exit $?
