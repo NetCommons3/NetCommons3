@@ -1,7 +1,7 @@
 #!/bin/bash -ex
 
 # coveralls
-cd $TRAVIS_BUILD_DIR
+cd $NETCOMMONS_BUILD_DIR
 php vendors/bin/coveralls --root_dir . -vvv
 
 # phpdoc
