@@ -22,7 +22,7 @@ if [ "$TRAVIS_BRANCH" == "master" ]; then
       rm -r phpdoc/$PLUGIN_NAME
     fi
     echo "phpdoc $NETCOMMONS_BUILD_DIR/app/Plugin/$PLUGIN_NAME"
-    phpdoc run -d "$PHPDOC_OPTIONS,$NETCOMMONS_BUILD_DIR/app/Plugin/$PLUGIN_NAME" -t phpdoc/$PLUGIN_NAME -i "$NETCOMMONS_BUILD_DIR/app/Plugin/$PLUGIN_NAME/Test/*" --cache-folder phpdoc/$PLUGIN_NAME/cache --force --ansi --log $LOG2 > $LOG
+    phpdoc run -d "$PHPDOC_OPTIONS,$NETCOMMONS_BUILD_DIR/app/Plugin/$PLUGIN_NAME" -t phpdoc/$PLUGIN_NAME -i "*/Test/*" --cache-folder phpdoc/$PLUGIN_NAME/cache --force --ansi --log $LOG2 > $LOG
 	
     rm -r phpdoc/$PLUGIN_NAME/cache
 	
