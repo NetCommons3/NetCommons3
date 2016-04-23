@@ -1,20 +1,18 @@
 #!/bin/bash -ex
 
 ## phpdoc
-LOG=/var/log/phpdoc.log
-LOG2=/var/log/phpdoc2.log
-
-sudo touch $LOG
-sudo chmod a+w $LOG
-
-sudo touch $LOG
-sudo chmod a+w $LOG
-
-echo $TRAVIS_BRANCH
-echo $GH_TOKEN
-
 if [ "$TRAVIS_BRANCH" == "master" ]; then
-  if [ $GH_TOKEN ]; then
+  LOG=/var/log/phpdoc.log
+  LOG2=/var/log/phpdoc2.log
+
+  sudo touch $LOG
+  sudo chmod a+w $LOG
+
+  sudo touch $LOG
+  sudo chmod a+w $LOG
+
+  PHP_VERSION=`php --version`
+  if [ $GH_TOKEN -a `echo $PHP_VERSION | grep "^PHP 5.6"` ]; then
     git clone -b gh-pages git://github.com/NetCommons3/NetCommons3Docs $NETCOMMONS_BUILD_DIR/NetCommons3Docs
     cd $NETCOMMONS_BUILD_DIR/NetCommons3Docs
 	
@@ -36,4 +34,5 @@ if [ "$TRAVIS_BRANCH" == "master" ]; then
 fi
 
 # coveralls
+cd $TRAVIS_BUILD_DIR
 php vendors/bin/coveralls --root_dir . -vvv || exit $?
