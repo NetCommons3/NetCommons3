@@ -1,7 +1,5 @@
 #!/bin/bash -ex
 
-php vendors/bin/coveralls --root_dir . -vvv || exit $?
-
 ## phpdoc
 LOG=/var/log/phpdoc.log
 LOG2=/var/log/phpdoc2.log
@@ -38,3 +36,6 @@ if [ "$TRAVIS_BRANCH" == "master" ]; then
 	  git push --quiet https://$GH_TOKEN@github.com/NetCommons3/NetCommons3Docs.git 2> /dev/null
   fi
 fi
+
+#coveralls
+php vendors/bin/coveralls --root_dir . -vvv || exit $?
