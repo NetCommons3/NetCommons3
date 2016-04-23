@@ -1,6 +1,10 @@
 #!/bin/bash -ex
 
-## phpdoc
+# coveralls
+cd $TRAVIS_BUILD_DIR
+php vendors/bin/coveralls --root_dir . -vvv
+
+# phpdoc
 if [ "$TRAVIS_BRANCH" == "master" ]; then
   LOG=/var/log/phpdoc.log
   LOG2=/var/log/phpdoc2.log
@@ -36,7 +40,3 @@ if [ "$TRAVIS_BRANCH" == "master" ]; then
     fi
   fi
 fi
-
-# coveralls
-cd $TRAVIS_BUILD_DIR
-php vendors/bin/coveralls --root_dir . -vvv || exit $?
