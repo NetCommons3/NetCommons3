@@ -10,11 +10,6 @@ sudo chmod a+w $LOG
 sudo touch $LOG
 sudo chmod a+w $LOG
 
-export GIT_COMMITTER_NAME=s-nakajima
-export GIT_COMMITTER_EMAIL=nakajimashouhei@gmail.com
-export GIT_AUTHOR_NAME=s-nakajima
-export GIT_AUTHOR_EMAIL=nakajimashouhei@gmail.com
-
 echo $TRAVIS_BRANCH
 echo $GH_TOKEN
 
