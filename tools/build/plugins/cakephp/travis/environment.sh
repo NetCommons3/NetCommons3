@@ -5,10 +5,10 @@ set +H
 
 export PLUGIN_NAME=`basename $TRAVIS_BUILD_DIR`
 
-export GIT_COMMITTER_NAME=s-nakajima
-export GIT_COMMITTER_EMAIL=nakajimashouhei@gmail.com
-export GIT_AUTHOR_NAME=s-nakajima
-export GIT_AUTHOR_EMAIL=nakajimashouhei@gmail.com
+#export GIT_COMMITTER_NAME=s-nakajima
+#export GIT_COMMITTER_EMAIL=nakajimashouhei@gmail.com
+#export GIT_AUTHOR_NAME=s-nakajima
+#export GIT_AUTHOR_EMAIL=nakajimashouhei@gmail.com
 
 for p in `cat app/Config/vendors.txt`
 do
