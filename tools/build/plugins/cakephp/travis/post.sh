@@ -1,9 +1,5 @@
 #!/bin/bash -ex
 
-# coveralls
-cd $NETCOMMONS_BUILD_DIR
-php vendors/bin/coveralls --root_dir . -vvv
-
 # phpdoc
 if [ "$TRAVIS_BRANCH" == "master" ]; then
   LOG=/var/log/phpdoc.log
@@ -40,3 +36,7 @@ if [ "$TRAVIS_BRANCH" == "master" ]; then
     fi
   fi
 fi
+
+# coveralls
+cd $NETCOMMONS_BUILD_DIR
+php vendors/bin/coveralls --root_dir . -vvv || exit $?
