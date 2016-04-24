@@ -13,7 +13,7 @@ if [ "$TRAVIS_BRANCH" == "master" ]; then
 
   if [ $GH_TOKEN ]; then
     PHP_VERSION="`php --version`"
-    check=`echo $PHP_VERSION | grep "^PHP 5.5"`
+    check=`echo $PHP_VERSION | grep "^PHP 5.6"`
 
     if [ ! "$check" = "" ]; then
       git clone -b gh-pages git://github.com/NetCommons3/NetCommons3Docs $NETCOMMONS_BUILD_DIR/NetCommons3Docs
