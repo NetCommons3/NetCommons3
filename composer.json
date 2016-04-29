@@ -24,6 +24,7 @@
         "cakephp/debug_kit":            "~2.2",
         "chronon/mobile_detect":        "*",
         "dompdf/dompdf":                "~0.6",
+        "josegonzalez/cakephp-upload":  "2.x@dev",
         "mayflower/php-codebrowser":    "~1.1",
         "mustangostang/spyc":           "@dev",
         "phpdocumentor/phpdocumentor":  "2.*",
