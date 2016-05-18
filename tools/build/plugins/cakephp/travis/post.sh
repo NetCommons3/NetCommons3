@@ -1,6 +1,6 @@
 #!/bin/bash -ex
 
-export PATH=$PATH:./vendors/bin:$NETCOMMONS_BUILD_DIR/vendors/bin
+export PATH=$PATH:./vendors/bin:$NETCOMMONS_BUILD_DIR/vendors/bin:./vendor/bin:$NETCOMMONS_BUILD_DIR/vendor/bin
 
 # phpdoc
 if [ "$TRAVIS_BRANCH" == "master" ]; then

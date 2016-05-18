@@ -17,4 +17,4 @@ do
 done
 export IGNORE_PLUGINS=`echo $IGNORE_PLUGINS | cut -c 2-`
 
-export PATH=$PATH:./vendors/bin
+export PATH=$PATH:./vendors/bin:./vendor/bin
