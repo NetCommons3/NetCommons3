@@ -8,14 +8,14 @@ export PLUGIN_NAME=`basename $TRAVIS_BUILD_DIR`
 # NetCommons3 project install
 rm composer.lock
 composer config minimum-stability dev
-composer config minimum-stability true
+composer config prefer-stable true
 composer install
 
 # Plugin install
 cp $TRAVIS_BUILD_DIR/composer.json .
 rm composer.lock
 composer config minimum-stability dev
-composer config minimum-stability true
+composer config prefer-stable true
 composer update
 cp -r ../$PLUGIN_NAME app/Plugin
 
