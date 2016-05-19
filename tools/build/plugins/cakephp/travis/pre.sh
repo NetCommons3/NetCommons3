@@ -21,8 +21,7 @@ composer config minimum-stability dev
 composer config prefer-stable true
 composer install
 cp -r . $NETCOMMONS_BUILD_DIR/
-cd ..
-cp -r ../$PLUGIN_NAME $NETCOMMONS_BUILD_DIR/app/Plugin
+cp -r $TRAVIS_BUILD_DIR $NETCOMMONS_BUILD_DIR/app/Plugin
 
 # Other setup
 cd $NETCOMMONS_BUILD_DIR
