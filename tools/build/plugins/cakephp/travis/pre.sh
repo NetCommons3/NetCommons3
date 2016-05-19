@@ -5,52 +5,26 @@ if [ $DB = 'pgsql' ]; then psql -c 'CREATE DATABASE cakephp_test;' -U postgres; 
 
 export PLUGIN_NAME=`basename $TRAVIS_BUILD_DIR`
 
-php -q << _EOF_ > packages.txt
-<?php
-\$currentComposer = json_decode(file_get_contents(getenv('TRAVIS_BUILD_DIR') . '/composer.json'), true);
-\$composer = json_decode(file_get_contents('composer.json'), true);
-\$ret = '';
-foreach (\$composer['require'] as \$namespace => \$version) {
-	if (\$currentComposer['name'] !== \$namespace) {
-		\$ret .= ' ' . \$namespace . ':' . \$version;
-	}
-}
-echo \$ret;
-_EOF_
-NC3_CMPOSER_REQURES=`cat packages.txt | cut -c 2-`
-
-rm composer.json
-wget https://raw.githubusercontent.com/NetCommons3/NetCommons/master/composer.json
-
-php -q << _EOF_ > packages.txt
-<?php
-\$currentComposer = json_decode(file_get_contents(getenv('TRAVIS_BUILD_DIR') . '/composer.json'), true);
-\$composer = json_decode(file_get_contents('composer.json'), true);
-\$ret = '';
-foreach (\$composer['require-dev'] as \$namespace => \$version) {
-	if (\$currentComposer['name'] !== \$namespace) {
-		\$ret .= ' ' . \$namespace . ':' . \$version;
-	}
-}
-echo \$ret;
-_EOF_
-CMPOSER_REQURES=`cat packages.txt | cut -c 2-`
-
-cp $TRAVIS_BUILD_DIR/composer.json .
+# NetCommons3 project install
+cd $NETCOMMONS_BUILD_DIR
 rm composer.lock
-cp -r ../$PLUGIN_NAME app/Plugin
-
-echo $NC3_CMPOSER_REQURES
-composer require $NC3_CMPOSER_REQURES
-
-echo $CMPOSER_REQURES
-if [ "$PLUGIN_NAME" = "NetCommons" ] ; then
-	composer require --dev $CMPOSER_REQURES
-else
-	composer require --dev netcommons/net-commons:@dev $CMPOSER_REQURES
-fi
+composer config minimum-stability dev
+composer config prefer-stable true
 composer install
 
+# Plugin install
+cd $TRAVIS_BUILD_DIR
+mkdir ../build
+cd ../build
+cp $TRAVIS_BUILD_DIR/composer.json .
+composer config minimum-stability dev
+composer config prefer-stable true
+composer install
+cp -r . $NETCOMMONS_BUILD_DIR/
+cp -r $TRAVIS_BUILD_DIR $NETCOMMONS_BUILD_DIR/app/Plugin
+
+# Other setup
+cd $NETCOMMONS_BUILD_DIR
 chmod -R 777 app/tmp
 mkdir -p build/logs
 mkdir -p build/cov

@@ -2,6 +2,8 @@
 
 export PATH=$PATH:./vendors/bin:$NETCOMMONS_BUILD_DIR/vendors/bin
 
+cd $NETCOMMONS_BUILD_DIR
+
 # phpdoc
 if [ "$TRAVIS_BRANCH" == "master" ]; then
   LOG=/var/log/phpdoc.log

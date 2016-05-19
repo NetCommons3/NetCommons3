@@ -18,13 +18,13 @@
         }
     },
     "require": {
-        "cakedc/migrations":            "~2.2",
         "cakephp/cakephp":              "~2.6",
-        "cakephp/cakephp-codesniffer":  "~1.0",
-        "cakephp/debug_kit":            "~2.2",
-        "chronon/mobile_detect":        "*",
-        "dompdf/dompdf":                "~0.6",
         "josegonzalez/cakephp-upload":  "2.x@dev",
+        "netcommons/install":           "@dev"
+    },
+    "require-dev": {
+        "cakephp/cakephp-codesniffer":  "~1.0",
+        "dompdf/dompdf":                "~0.6",
         "mayflower/php-codebrowser":    "~1.1",
         "mustangostang/spyc":           "@dev",
         "phpdocumentor/phpdocumentor":  "2.*",
@@ -37,7 +37,6 @@
         "symfony/filesystem":           "2.*",
         "symfony/translation":          "2.*",
         "zendframework/zend-cache":     "2.5.1",
-        "zendframework/zend-cache":     "2.5.1",
         "zendframework/zend-eventmanager": "2.5.1",
         "zendframework/zend-i18n":      "2.5.1",
         "zendframework/zend-json":      "2.5.1",
@@ -45,18 +44,6 @@
         "zendframework/zend-serializer": "2.5.1",
         "zendframework/zend-servicemanager": "2.5.1",
         "zendframework/zend-stdlib":    "2.5.1"
-    },
-    "require-dev": {
-        "netcommons/data-types":        "@dev",
-        "netcommons/install":           "@dev",
-        "netcommons/m17n":              "@dev",
-        "netcommons/net-commons":       "@dev",
-        "netcommons/public-space":      "@dev",
-        "netcommons/roles":             "@dev",
-        "netcommons/rooms":             "@dev",
-        "netcommons/users":             "@dev",
-        "netcommons/site-manager":      "@dev",
-        "netcommons/workflow":          "@dev"
     },
     "bin": [
         "lib/Cake/Console/cake"

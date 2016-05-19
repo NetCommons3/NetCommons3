@@ -2,6 +2,8 @@
 
 export PATH=$PATH:./vendors/bin:$NETCOMMONS_BUILD_DIR/vendors/bin
 
+cd $NETCOMMONS_BUILD_DIR
+
 # php
 app/Console/cake test $PLUGIN_NAME All$PLUGIN_NAME --stderr || exit $?
 phpcs -p --extensions=php,ctp --standard=./vendors/cakephp/cakephp-codesniffer/CakePHP,tools/build/app/phpcs/NetCommons --ignore=app/Config/Migration/,app/Config/database.php,app/Plugin/$PLUGIN_NAME/Config/Migration,app/Plugin/$PLUGIN_NAME/Config/Schema,$IGNORE_PLUGINS app/Plugin/$PLUGIN_NAME || exit $?
