@@ -14,8 +14,8 @@ composer install
 # Plugin install
 cp $TRAVIS_BUILD_DIR/composer.json .
 #rm composer.lock
-#composer config minimum-stability dev
-#composer config prefer-stable true
+composer config minimum-stability dev
+composer config prefer-stable true
 composer update
 cp -r ../$PLUGIN_NAME app/Plugin
 
