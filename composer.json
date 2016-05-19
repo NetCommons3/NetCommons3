@@ -20,7 +20,7 @@
     "require": {
         "cakephp/cakephp":              "~2.6",
         "josegonzalez/cakephp-upload":  "2.x@dev",
-        "netcommons/install":           "*@dev"
+        "netcommons/install":           "@dev"
     },
     "require-dev": {
         "cakephp/cakephp-codesniffer":  "~1.0",
