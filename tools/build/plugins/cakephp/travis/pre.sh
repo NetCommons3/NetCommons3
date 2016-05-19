@@ -6,20 +6,26 @@ if [ $DB = 'pgsql' ]; then psql -c 'CREATE DATABASE cakephp_test;' -U postgres; 
 export PLUGIN_NAME=`basename $TRAVIS_BUILD_DIR`
 
 # NetCommons3 project install
+cd $NETCOMMONS_BUILD_DIR
 rm composer.lock
 composer config minimum-stability dev
 composer config prefer-stable true
 composer install
 
 # Plugin install
-cp $TRAVIS_BUILD_DIR/composer.json .
-#rm composer.lock
+mkdir $TRAVIS_BUILD_DIR/build
+cd $TRAVIS_BUILD_DIR/build
+cp $TRAVIS_BUILD_DIR/composer.json ./
 composer config minimum-stability dev
 composer config prefer-stable true
-composer update
-cp -r ../$PLUGIN_NAME app/Plugin
+composer install
+cp -r . $NETCOMMONS_BUILD_DIR/
+cd ..
+rm -rf build
+cp -r ../$PLUGIN_NAME $NETCOMMONS_BUILD_DIR/app/Plugin
 
 # Other setup
+cd $NETCOMMONS_BUILD_DIR
 chmod -R 777 app/tmp
 mkdir -p build/logs
 mkdir -p build/cov
