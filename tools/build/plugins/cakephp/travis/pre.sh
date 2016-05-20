@@ -8,7 +8,7 @@ export PLUGIN_NAME=`basename $TRAVIS_BUILD_DIR`
 # NetCommons3 project install
 cd $NETCOMMONS_BUILD_DIR
 rm composer.lock
-composer clear-cache
+#composer clear-cache
 composer config minimum-stability dev
 composer config prefer-stable true
 composer install
