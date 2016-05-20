@@ -19,7 +19,7 @@ cd ../build
 cp $TRAVIS_BUILD_DIR/composer.json ./
 composer config minimum-stability dev
 composer config prefer-stable true
-composer update
+composer global update
 ls -l
 cp -r . $NETCOMMONS_BUILD_DIR/
 if [ -d $NETCOMMONS_BUILD_DIR/app/Plugin/$PLUGIN_NAME ] ; then
