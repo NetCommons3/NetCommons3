@@ -10,6 +10,7 @@ cd $NETCOMMONS_BUILD_DIR
 rm composer.lock
 composer config minimum-stability dev
 composer config prefer-stable true
+composer clear-cache
 composer install
 
 # Plugin install
@@ -19,6 +20,7 @@ cd ../build
 cp $TRAVIS_BUILD_DIR/composer.json ./
 composer config minimum-stability dev
 composer config prefer-stable true
+composer clear-cache
 composer update
 ls -l
 cp -r . $NETCOMMONS_BUILD_DIR/
