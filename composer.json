@@ -20,13 +20,13 @@
     "require": {
         "cakephp/cakephp":              "~2.6",
         "josegonzalez/cakephp-upload":  "2.x@dev",
-        "netcommons/install":           "@dev"
+        "netcommons/install":           "dev-master"
     },
     "require-dev": {
         "cakephp/cakephp-codesniffer":  "~1.0",
         "dompdf/dompdf":                "~0.6",
         "mayflower/php-codebrowser":    "~1.1",
-        "mustangostang/spyc":           "@dev",
+        "mustangostang/spyc":           "dev-master",
         "phpdocumentor/phpdocumentor":  "2.*",
         "phploc/phploc":                "*",
         "phpmd/phpmd" :                 "@stable",
