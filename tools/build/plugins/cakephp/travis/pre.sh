@@ -9,55 +9,21 @@ export PLUGIN_NAME=`basename $TRAVIS_BUILD_DIR`
 cd $NETCOMMONS_BUILD_DIR
 rm composer.lock
 #composer clear-cache
+composer remove --no-update netcommons/install
 composer config minimum-stability dev
 composer config prefer-stable true
 composer install
 
 # Plugin install
-php -q << _EOF_ > packages.txt
-<?php
-\$composer = json_decode(file_get_contents(getenv('TRAVIS_BUILD_DIR') . '/composer.json'), true);
-\$ret = '';
-if (isset(\$composer['require'])) {
-	foreach (\$composer['require'] as \$namespace => \$version) {
-		\$ret .= ' ' . \$namespace . ':' . \$version;
-	}
-}
-echo \$ret;
-_EOF_
-CMPOSER_REQURE=`cat packages.txt | cut -c 2-`
-if [ ! "$CMPOSER_REQURE" = "" ] ; then
-	echo $CMPOSER_REQURE
-	composer require $CMPOSER_REQURE
-fi
-
-
-php -q << _EOF_ > packages.txt
-<?php
-\$composer = json_decode(file_get_contents(getenv('TRAVIS_BUILD_DIR') . '/composer.json'), true);
-\$ret = '';
-if (isset(\$composer['require-dev'])) {
-	foreach (\$composer['require-dev'] as \$namespace => \$version) {
-		\$ret .= ' ' . \$namespace . ':' . \$version;
-	}
-}
-echo \$ret;
-_EOF_
-CMPOSER_REQURE_DEV=`cat packages.txt | cut -c 2-`
-if [ ! "$CMPOSER_REQURE_DEV" = "" ] ; then
-	echo $CMPOSER_REQURE_DEV
-	composer require --dev $CMPOSER_REQURE_DEV
-fi
-
-#cd $TRAVIS_BUILD_DIR
-#mkdir ../build
-#cd ../build
-#cp $TRAVIS_BUILD_DIR/composer.json ./
-#composer config minimum-stability dev
-#composer config prefer-stable true
-#composer update
-#ls -l
-#cp -rf ./* $NETCOMMONS_BUILD_DIR/
+cd $TRAVIS_BUILD_DIR
+mkdir ../build
+cd ../build
+cp $TRAVIS_BUILD_DIR/composer.json ./
+composer config minimum-stability dev
+composer config prefer-stable true
+composer update
+ls -l
+cp -rf ./* $NETCOMMONS_BUILD_DIR/
 
 if [ -d $NETCOMMONS_BUILD_DIR/app/Plugin/$PLUGIN_NAME ] ; then
   rm -rf $NETCOMMONS_BUILD_DIR/app/Plugin/$PLUGIN_NAME
