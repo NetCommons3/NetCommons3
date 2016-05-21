@@ -23,7 +23,7 @@ composer config minimum-stability dev
 composer config prefer-stable true
 composer update
 ls -l
-cp -rf ./* $NETCOMMONS_BUILD_DIR/
+cp -rpf ./app/* $NETCOMMONS_BUILD_DIR/app/
 
 if [ -d $NETCOMMONS_BUILD_DIR/app/Plugin/$PLUGIN_NAME ] ; then
   rm -rf $NETCOMMONS_BUILD_DIR/app/Plugin/$PLUGIN_NAME
