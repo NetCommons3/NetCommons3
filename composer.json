@@ -19,7 +19,6 @@
     },
     "require": {
         "cakephp/cakephp":              "~2.6",
-        "josegonzalez/cakephp-upload":  "2.x@dev",
         "netcommons/install":           "dev-master"
     },
     "require-dev": {
