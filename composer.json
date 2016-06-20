@@ -50,5 +50,9 @@
     "config": {
         "vendor-dir": "vendors",
         "process-timeout": 3000
+    },
+    "scripts": {
+        "post-install-cmd": ["app/Console/cake install.install install_bower"],
+        "post-update-cmd": ["app/Console/cake install.install install_bower"]
     }
 }
