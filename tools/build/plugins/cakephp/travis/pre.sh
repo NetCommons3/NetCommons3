@@ -12,7 +12,7 @@ rm composer.lock
 composer remove --no-update netcommons/install
 composer config minimum-stability dev
 composer config prefer-stable true
-composer install
+composer install --no-scripts
 
 # Plugin install
 php -q << _EOF_ > packages.txt
