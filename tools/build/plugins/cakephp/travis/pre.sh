@@ -12,7 +12,6 @@ rm composer.lock
 composer remove --no-update netcommons/install
 composer config minimum-stability dev
 composer config prefer-stable true
-composer install --no-scripts
 
 # Plugin install
 php -q << _EOF_ > packages.txt
@@ -29,7 +28,7 @@ _EOF_
 CMPOSER_REQURE=`cat packages.txt | cut -c 2-`
 if [ ! "$CMPOSER_REQURE" = "" ] ; then
 	echo $CMPOSER_REQURE
-	composer require $CMPOSER_REQURE
+	composer require --no-update $CMPOSER_REQURE
 fi
 
 
@@ -47,8 +46,9 @@ _EOF_
 CMPOSER_REQURE_DEV=`cat packages.txt | cut -c 2-`
 if [ ! "$CMPOSER_REQURE_DEV" = "" ] ; then
 	echo $CMPOSER_REQURE_DEV
-	composer require --dev $CMPOSER_REQURE_DEV
+	composer require --dev --no-update $CMPOSER_REQURE_DEV
 fi
+composer install --no-scripts
 
 #cd $TRAVIS_BUILD_DIR
 #mkdir ../build
