@@ -22,14 +22,19 @@
 
 if (!Configure::read('NetCommons.installed')) {
 	Router::connect('/', array('controller' => 'install', 'action' => 'index', 'plugin' => 'install'));
+
+	/**
+	 * Load all plugin routes. See the CakePlugin documentation on
+	 * how to customize the loading of plugin routes.
+	 */
+	CakePlugin::routes();
 } else {
 	Router::connect('/', array('controller' => 'pages', 'action' => 'index', 'plugin' => 'pages'));
-}
 
-/**
- * Load all plugin routes. See the CakePlugin documentation on
- * how to customize the loading of plugin routes.
- */
+	/**
+	 * Load all plugin routes. See the CakePlugin documentation on
+	 * how to customize the loading of plugin routes.
+	 */
 	$plugins = CakePlugin::loaded();
 	foreach ($plugins as $value) {
 		if (! in_array($value, ['NetCommons'], true)) {
@@ -37,6 +42,7 @@ if (!Configure::read('NetCommons.installed')) {
 		}
 	}
 	CakePlugin::routes('NetCommons');
+}
 
 /**
  * Load the CakePHP default routes. Only remove this if you do not want to use
