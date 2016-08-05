@@ -1,6 +1,5 @@
 {
-    "name":        "netcommons/netcommons",
-    "version":     "3.0.0",
+    "name":        "netcommons/netcommons3",
     "description": "NetCommons3",
     "type":        "CMS",
     "keywords":    ["CMS"],
