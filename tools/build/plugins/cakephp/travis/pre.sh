@@ -19,8 +19,9 @@ php -q << _EOF_ > packages.txt
 \$composer = json_decode(file_get_contents(getenv('TRAVIS_BUILD_DIR') . '/composer.json'), true);
 \$ret = '';
 if (isset(\$composer['require'])) {
-	foreach (\$composer['require'] as \$namespace => \$version) {
-		\$ret .= ' ' . \$namespace . ':' . \$version;
+	\$composer['require']['netcommons/net-commons'] = 'dev-master';
+	foreach (\$composer['require'] as \$package => \$version) {
+		\$ret .= ' ' . \$package . ':' . \$version;
 	}
 }
 echo \$ret;
@@ -37,8 +38,8 @@ php -q << _EOF_ > packages.txt
 \$composer = json_decode(file_get_contents(getenv('TRAVIS_BUILD_DIR') . '/composer.json'), true);
 \$ret = '';
 if (isset(\$composer['require-dev'])) {
-	foreach (\$composer['require-dev'] as \$namespace => \$version) {
-		\$ret .= ' ' . \$namespace . ':' . \$version;
+	foreach (\$composer['require-dev'] as \$package => \$version) {
+		\$ret .= ' ' . \$package . ':' . \$version;
 	}
 }
 echo \$ret;
