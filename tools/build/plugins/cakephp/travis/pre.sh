@@ -19,8 +19,15 @@ php -q << _EOF_ > packages.txt
 \$composer = json_decode(file_get_contents(getenv('TRAVIS_BUILD_DIR') . '/composer.json'), true);
 \$ret = '';
 if (isset(\$composer['require'])) {
-	\$composer['require']['netcommons/net-commons'] = 'dev-master';
 	foreach (\$composer['require'] as \$package => \$version) {
+		switch (\$package) {
+			case 'netcommons/net-commons':
+			case 'netcommons/blocks':
+			case 'netcommons/frames':
+			case 'netcommons/workflow':
+				\$version = 'dev-master';
+		}
+
 		\$ret .= ' ' . \$package . ':' . \$version;
 	}
 }
