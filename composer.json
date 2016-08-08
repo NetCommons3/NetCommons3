@@ -18,7 +18,7 @@
     },
     "require": {
         "cakephp/cakephp":              "~2.6",
-        "netcommons/install":           "~0.0"
+        "netcommons/install":           "@stable"
     },
     "require-dev": {
         "cakephp/cakephp-codesniffer":  "~1.0",
