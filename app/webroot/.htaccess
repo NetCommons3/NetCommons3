@@ -4,4 +4,6 @@
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
 </IfModule>
-php_value max_input_vars 21000
+<IfModule mod_php5.c>
+	php_value max_input_vars 21000
+</IfModule>
