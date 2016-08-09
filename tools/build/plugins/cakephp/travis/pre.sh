@@ -20,7 +20,7 @@ php -q << _EOF_ > packages.txt
 \$ret = '';
 if (isset(\$composer['require'])) {
 	foreach (\$composer['require'] as \$package => \$version) {
-		\$ret .= ' ' . \$package . ':' . \$version;
+		\$ret .= ' ' . \$package . ':dev-master';
 	}
 }
 echo \$ret;
