@@ -20,15 +20,6 @@ php -q << _EOF_ > packages.txt
 \$ret = '';
 if (isset(\$composer['require'])) {
 	foreach (\$composer['require'] as \$package => \$version) {
-		switch (\$package) {
-			case 'netcommons/net-commons':
-			case 'netcommons/auth-general':
-			case 'netcommons/blocks':
-			case 'netcommons/frames':
-			case 'netcommons/workflow':
-				\$version = 'dev-master';
-		}
-
 		\$ret .= ' ' . \$package . ':' . \$version;
 	}
 }
