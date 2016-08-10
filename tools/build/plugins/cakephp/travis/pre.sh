@@ -19,9 +19,6 @@ php -q << _EOF_ > packages.txt
 \$ret = '';
 if (isset(\$composer['require'])) {
 	foreach (\$composer['require'] as \$package => \$version) {
-		if (substr(\$package, 0, 10) == 'netcommons') {
-			\$version = 'dev-master';
-		}
 		\$ret .= ' ' . \$package . ':' . \$version;
 	}
 }
