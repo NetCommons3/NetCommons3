@@ -16,9 +16,10 @@
  * @link          http://cakephp.org CakePHP(tm) Project
  * @since         CakePHP(tm) v 0.2.9
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
+ * @author Shohei Nakajima <nakajimashouhei@gmail.com>
  */
 
-App::uses('Helper', 'View');
+App::uses('NetCommonsAppHelper', 'NetCommons.View/Helper');
 
 /**
  * Application helper
@@ -26,5 +27,5 @@ App::uses('Helper', 'View');
  * Add your application-wide methods in the class below, your helpers
  * will inherit them.
  */
-class AppHelper extends Helper {
+class AppHelper extends NetCommonsAppHelper {
 }

@@ -13,9 +13,10 @@
  * @link          http://cakephp.org CakePHP(tm) Project
  * @since         CakePHP(tm) v 2.0
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
+ * @author Shohei Nakajima <nakajimashouhei@gmail.com>
  */
 
-App::uses('Shell', 'Console');
+App::uses('NetCommonsAppShell', 'NetCommons.Console/Command');
 
 /**
  * Application Shell
@@ -25,6 +26,6 @@ App::uses('Shell', 'Console');
  *
  * @package       app.Console.Command
  */
-class AppShell extends Shell {
+class AppShell extends NetCommonsAppShell {
 
 }
