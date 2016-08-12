@@ -1,0 +1,19 @@
+{
+    "name": "Classic Green",
+    "description": "NetCommons3 Themed Classic Green",
+    "homepage" : "http://www.netcommons.org/",
+    "authors": [
+        {
+            "name": "catchball21",
+            "homepage": "https://www.cb21.co.jp"
+        }
+    ],
+    "license": "NetCommons License",
+    "keywords": ["classic"],
+    "dependencies": {
+        "bootstrap": "~3.1",
+        "jquery": "~2.1",
+        "NetCommons3": "~1.0"
+    }
+}
+
