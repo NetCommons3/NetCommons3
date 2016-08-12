@@ -1,27 +1,18 @@
 {
-    "name": "Default",
-    "description": "NetCommons3 Defaultテーマです",
-    "homepage" : "http://www.netcommons.org",
+    "name": "Classic Default",
+    "description": "NetCommons3 Themed Classic Blue",
+    "homepage" : "http://bootswatch.com",
     "authors": [
         {
-            "name":     "NetCommons Community",
-            "homepage": "https://github.com/NetCommons3/Auth/graphs/contributors"
+            "name": "NetCommons Community",
+            "homepage": "http://www.netcommons.org"
         }
     ],
-    "keywords" : [
-
-    ],
+    "license": "NetCommons License",
+    "keywords": ["classic"],
     "dependencies": {
-        "bootstrap":         "~3.1",
-        "jquery":      "~2.1",
-        "NetCommons" : "3.0"
-    },
-    "version": "0.1",
-    "licenses" : [
-        {
-          "type" : "NetCommons3 LICENSE",
-          "url" : "https://github.com/NetCommons3/NetCommons3/blob/master/license.txt"
-        }
-    ]
-
+        "bootstrap": "~3.1",
+        "jquery": "~2.1",
+        "NetCommons3": "~1.0"
+    }
 }
