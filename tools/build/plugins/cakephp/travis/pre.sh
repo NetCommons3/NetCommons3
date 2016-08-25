@@ -71,7 +71,8 @@ mkdir -p build/logs
 mkdir -p build/cov
 sudo mkdir -p /etc/phpmd
 
-sudo pip install http://closure-linter.googlecode.com/files/closure_linter-latest.tar.gz
+#sudo pip install http://closure-linter.googlecode.com/files/closure_linter-latest.tar.gz
+sudo pip install https://github.com/google/closure-linter/archive/v2.3.19.tar.gz
 
 phpenv rehash
 set +H
