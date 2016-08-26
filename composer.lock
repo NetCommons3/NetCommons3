@@ -2352,16 +2352,16 @@
         },
         {
             "name": "netcommons/links",
-            "version": "0.0.5",
+            "version": "0.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Links.git",
-                "reference": "627315b7a82bedb94105cc24859d3acada0829c9"
+                "reference": "a8f4fbdb6c8bf2f3e07f7f62e2bfbf52cb16bbb1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Links/zipball/627315b7a82bedb94105cc24859d3acada0829c9",
-                "reference": "627315b7a82bedb94105cc24859d3acada0829c9",
+                "url": "https://api.github.com/repos/NetCommons3/Links/zipball/a8f4fbdb6c8bf2f3e07f7f62e2bfbf52cb16bbb1",
+                "reference": "a8f4fbdb6c8bf2f3e07f7f62e2bfbf52cb16bbb1",
                 "shasum": ""
             },
             "require": {
@@ -2402,7 +2402,7 @@
                 "cakephp",
                 "links"
             ],
-            "time": "2016-08-18 06:49:54"
+            "time": "2016-08-26 22:17:46"
         },
         {
             "name": "netcommons/m17n",
