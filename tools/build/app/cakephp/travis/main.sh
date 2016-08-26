@@ -9,4 +9,4 @@ phpmd app text /etc/phpmd/rules.xml --exclude $TRAVIS_BUILD_DIR/app/Plugin,$TRAV
 phpcpd --exclude Test --exclude TestSuite --exclude Config --exclude Vendor $IGNORE_PLUGINS_OPTS app
 
 # js
-gjslint --strict --max_line_length 100 -x jquery.js,jquery.cookie.js,js_debug_toolbar.js,travis.karma.conf.js,my.karma.conf.js -e jasmine_examples,HtmlPurifier -r app || exit $?
+gjslint --strict --max_line_length 100 -x jquery.js,jquery.cookie.js,js_debug_toolbar.js,travis.karma.conf.js,my.karma.conf.js -e jasmine_examples,HtmlPurifier,webroot/js/langs -r app || exit $?
