@@ -19,7 +19,7 @@ sudo pip install https://github.com/google/closure-linter/archive/v2.3.19.tar.gz
 phpenv rehash
 set +H
 cp app/Config/database.php.travis app/Config/database.php
-sudo wget https://raw.githubusercontent.com/NetCommons3/chef_boilerplate_php/master/files/default/build/cakephp/phpmd/rules.xml -O /etmd/rules.xml
+sudo wget https://raw.githubusercontent.com/NetCommons3/chef_boilerplate_php/master/files/default/build/cakephp/phpmd/rules.xml -O /etc/phpmd/rules.xml
 
 for p in `cat app/Config/vendors.txt`
 do
