@@ -856,7 +856,7 @@
                     "role": "Maintainer"
                 },
                 {
-                    "name": "Marc Würth",
+                    "name": "Marc W端rth",
                     "homepage": "https://github.com/ravage84",
                     "role": "Contributor"
                 }
@@ -4427,7 +4427,7 @@
             ],
             "authors": [
                 {
-                    "name": "Fabien Ménager",
+                    "name": "Fabien M辿nager",
                     "email": "fabien.menager@gmail.com"
                 },
                 {
@@ -4745,7 +4745,7 @@
                     "email": "igor@wiedler.ch"
                 },
                 {
-                    "name": "Robert Schönthal",
+                    "name": "Robert Sch旦nthal",
                     "email": "seroscho@googlemail.com"
                 }
             ],
@@ -5038,7 +5038,7 @@
             ],
             "authors": [
                 {
-                    "name": "Fabien Ménager",
+                    "name": "Fabien M辿nager",
                     "email": "fabien.menager@gmail.com"
                 }
             ],
@@ -5423,7 +5423,7 @@
                     "role": "Contributors"
                 },
                 {
-                    "name": "Marc Würth",
+                    "name": "Marc W端rth",
                     "email": "ravage@bluewin.ch",
                     "homepage": "https://github.com/ravage84",
                     "role": "Project Maintainer"
