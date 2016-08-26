@@ -2990,7 +2990,6 @@
         },
         {
             "name": "netcommons/quizzes",
-<<<<<<< HEAD
             "version": "0.0.13",
             "source": {
                 "type": "git",
@@ -3001,18 +3000,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/NetCommons3/Quizzes/zipball/42aa75c7f7559c961632bd55144a4749c53c4b01",
                 "reference": "42aa75c7f7559c961632bd55144a4749c53c4b01",
-=======
-            "version": "0.0.12",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/NetCommons3/Quizzes.git",
-                "reference": "6977e24fe59c746e1b0f50c16719ae7abb806fb2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Quizzes/zipball/6977e24fe59c746e1b0f50c16719ae7abb806fb2",
-                "reference": "6977e24fe59c746e1b0f50c16719ae7abb806fb2",
->>>>>>> ff12d6d2effd540c6ff0732e24ca62b5786655d4
                 "shasum": ""
             },
             "require": {
@@ -3074,11 +3061,7 @@
                 "cakephp",
                 "quizzes"
             ],
-<<<<<<< HEAD
             "time": "2016-08-26 20:56:56"
-=======
-            "time": "2016-08-26 20:35:55"
->>>>>>> ff12d6d2effd540c6ff0732e24ca62b5786655d4
         },
         {
             "name": "netcommons/registrations",
