@@ -1168,16 +1168,16 @@
         },
         {
             "name": "netcommons/authorization-keys",
-            "version": "0.0.7",
+            "version": "0.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/AuthorizationKeys.git",
-                "reference": "0ab41e2c776e312dde1983d0f92dd78a831c16ed"
+                "reference": "bfedae91b157c908e80f3f3c6a4cf0b0e22ea77e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/AuthorizationKeys/zipball/0ab41e2c776e312dde1983d0f92dd78a831c16ed",
-                "reference": "0ab41e2c776e312dde1983d0f92dd78a831c16ed",
+                "url": "https://api.github.com/repos/NetCommons3/AuthorizationKeys/zipball/bfedae91b157c908e80f3f3c6a4cf0b0e22ea77e",
+                "reference": "bfedae91b157c908e80f3f3c6a4cf0b0e22ea77e",
                 "shasum": ""
             },
             "require": {
@@ -1226,7 +1226,7 @@
                 "authorization-keys",
                 "cakephp"
             ],
-            "time": "2016-08-25 05:37:06"
+            "time": "2016-08-26 12:57:24"
         },
         {
             "name": "netcommons/bbses",
@@ -2990,16 +2990,16 @@
         },
         {
             "name": "netcommons/quizzes",
-            "version": "0.0.11",
+            "version": "0.0.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Quizzes.git",
-                "reference": "230a08efb639e5fa99e10cfc1d8240acb9c6c2f0"
+                "reference": "6977e24fe59c746e1b0f50c16719ae7abb806fb2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Quizzes/zipball/230a08efb639e5fa99e10cfc1d8240acb9c6c2f0",
-                "reference": "230a08efb639e5fa99e10cfc1d8240acb9c6c2f0",
+                "url": "https://api.github.com/repos/NetCommons3/Quizzes/zipball/6977e24fe59c746e1b0f50c16719ae7abb806fb2",
+                "reference": "6977e24fe59c746e1b0f50c16719ae7abb806fb2",
                 "shasum": ""
             },
             "require": {
@@ -3061,7 +3061,7 @@
                 "cakephp",
                 "quizzes"
             ],
-            "time": "2016-08-26 11:03:26"
+            "time": "2016-08-26 20:35:55"
         },
         {
             "name": "netcommons/registrations",
