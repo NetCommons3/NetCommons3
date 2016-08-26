@@ -856,7 +856,7 @@
                     "role": "Maintainer"
                 },
                 {
-                    "name": "Marc W端rth",
+                    "name": "Marc Würth",
                     "homepage": "https://github.com/ravage84",
                     "role": "Contributor"
                 }
@@ -2077,16 +2077,16 @@
         },
         {
             "name": "netcommons/groups",
-            "version": "0.0.6",
+            "version": "0.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Groups.git",
-                "reference": "ddbb4ebd13d0137a18c344f7b383c8992a09c16d"
+                "reference": "5ee079ca379c9479d08e0202813410325d1bbee7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Groups/zipball/ddbb4ebd13d0137a18c344f7b383c8992a09c16d",
-                "reference": "ddbb4ebd13d0137a18c344f7b383c8992a09c16d",
+                "url": "https://api.github.com/repos/NetCommons3/Groups/zipball/5ee079ca379c9479d08e0202813410325d1bbee7",
+                "reference": "5ee079ca379c9479d08e0202813410325d1bbee7",
                 "shasum": ""
             },
             "require": {
@@ -2122,7 +2122,7 @@
                 "cakephp",
                 "groups"
             ],
-            "time": "2016-08-25 11:08:15"
+            "time": "2016-08-26 20:51:59"
         },
         {
             "name": "netcommons/holidays",
@@ -2242,16 +2242,16 @@
         },
         {
             "name": "netcommons/install",
-            "version": "0.0.3",
+            "version": "0.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Install.git",
-                "reference": "a26b272f6a3809f7211e7650fbe5dd68b30bfe22"
+                "reference": "0039653843a8da3bf0f7751e5e0384b41d5d9cfb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Install/zipball/a26b272f6a3809f7211e7650fbe5dd68b30bfe22",
-                "reference": "a26b272f6a3809f7211e7650fbe5dd68b30bfe22",
+                "url": "https://api.github.com/repos/NetCommons3/Install/zipball/0039653843a8da3bf0f7751e5e0384b41d5d9cfb",
+                "reference": "0039653843a8da3bf0f7751e5e0384b41d5d9cfb",
                 "shasum": ""
             },
             "require": {
@@ -2304,20 +2304,20 @@
                 "cakephp",
                 "install"
             ],
-            "time": "2016-08-09 04:31:02"
+            "time": "2016-08-26 20:53:44"
         },
         {
             "name": "netcommons/likes",
-            "version": "0.0.5",
+            "version": "0.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Likes.git",
-                "reference": "06d7560803a93c6cea6a3a7407bce511e33c0ed6"
+                "reference": "c016279f367a2de8ef76e8e0f20f6b95140389dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Likes/zipball/06d7560803a93c6cea6a3a7407bce511e33c0ed6",
-                "reference": "06d7560803a93c6cea6a3a7407bce511e33c0ed6",
+                "url": "https://api.github.com/repos/NetCommons3/Likes/zipball/c016279f367a2de8ef76e8e0f20f6b95140389dc",
+                "reference": "c016279f367a2de8ef76e8e0f20f6b95140389dc",
                 "shasum": ""
             },
             "require": {
@@ -2348,7 +2348,7 @@
                 "cakephp",
                 "likes"
             ],
-            "time": "2016-08-16 02:41:44"
+            "time": "2016-08-26 20:55:15"
         },
         {
             "name": "netcommons/links",
@@ -2990,6 +2990,18 @@
         },
         {
             "name": "netcommons/quizzes",
+<<<<<<< HEAD
+            "version": "0.0.13",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/NetCommons3/Quizzes.git",
+                "reference": "42aa75c7f7559c961632bd55144a4749c53c4b01"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/NetCommons3/Quizzes/zipball/42aa75c7f7559c961632bd55144a4749c53c4b01",
+                "reference": "42aa75c7f7559c961632bd55144a4749c53c4b01",
+=======
             "version": "0.0.12",
             "source": {
                 "type": "git",
@@ -3000,6 +3012,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/NetCommons3/Quizzes/zipball/6977e24fe59c746e1b0f50c16719ae7abb806fb2",
                 "reference": "6977e24fe59c746e1b0f50c16719ae7abb806fb2",
+>>>>>>> ff12d6d2effd540c6ff0732e24ca62b5786655d4
                 "shasum": ""
             },
             "require": {
@@ -3061,7 +3074,11 @@
                 "cakephp",
                 "quizzes"
             ],
+<<<<<<< HEAD
+            "time": "2016-08-26 20:56:56"
+=======
             "time": "2016-08-26 20:35:55"
+>>>>>>> ff12d6d2effd540c6ff0732e24ca62b5786655d4
         },
         {
             "name": "netcommons/registrations",
@@ -3256,16 +3273,16 @@
         },
         {
             "name": "netcommons/rss-readers",
-            "version": "0.0.2",
+            "version": "0.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/RssReaders.git",
-                "reference": "73597304e7c3e5db0a49db4476af6874df9d28e7"
+                "reference": "5ca9ab51159e06e2865d59732a1a397add217d6c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/RssReaders/zipball/73597304e7c3e5db0a49db4476af6874df9d28e7",
-                "reference": "73597304e7c3e5db0a49db4476af6874df9d28e7",
+                "url": "https://api.github.com/repos/NetCommons3/RssReaders/zipball/5ca9ab51159e06e2865d59732a1a397add217d6c",
+                "reference": "5ca9ab51159e06e2865d59732a1a397add217d6c",
                 "shasum": ""
             },
             "require": {
@@ -3306,7 +3323,7 @@
                 "cakephp",
                 "rss-readers"
             ],
-            "time": "2016-08-09 07:08:29"
+            "time": "2016-08-26 20:57:39"
         },
         {
             "name": "netcommons/searches",
@@ -3741,16 +3758,16 @@
         },
         {
             "name": "netcommons/user-manager",
-            "version": "0.0.8",
+            "version": "0.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/UserManager.git",
-                "reference": "beffe6e62f2fb72267cfcd42eba6849f44c69670"
+                "reference": "fa78c0d09fe2178a098bd5d5235ff5e1c70a5ec4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/UserManager/zipball/beffe6e62f2fb72267cfcd42eba6849f44c69670",
-                "reference": "beffe6e62f2fb72267cfcd42eba6849f44c69670",
+                "url": "https://api.github.com/repos/NetCommons3/UserManager/zipball/fa78c0d09fe2178a098bd5d5235ff5e1c70a5ec4",
+                "reference": "fa78c0d09fe2178a098bd5d5235ff5e1c70a5ec4",
                 "shasum": ""
             },
             "require": {
@@ -3793,7 +3810,7 @@
                 "cakephp",
                 "user_manager"
             ],
-            "time": "2016-08-20 15:51:38"
+            "time": "2016-08-26 20:59:36"
         },
         {
             "name": "netcommons/user-roles",
@@ -4410,7 +4427,7 @@
             ],
             "authors": [
                 {
-                    "name": "Fabien M辿nager",
+                    "name": "Fabien Ménager",
                     "email": "fabien.menager@gmail.com"
                 },
                 {
@@ -4728,7 +4745,7 @@
                     "email": "igor@wiedler.ch"
                 },
                 {
-                    "name": "Robert Sch旦nthal",
+                    "name": "Robert Schönthal",
                     "email": "seroscho@googlemail.com"
                 }
             ],
@@ -5021,7 +5038,7 @@
             ],
             "authors": [
                 {
-                    "name": "Fabien M辿nager",
+                    "name": "Fabien Ménager",
                     "email": "fabien.menager@gmail.com"
                 }
             ],
@@ -5406,7 +5423,7 @@
                     "role": "Contributors"
                 },
                 {
-                    "name": "Marc W端rth",
+                    "name": "Marc Würth",
                     "email": "ravage@bluewin.ch",
                     "homepage": "https://github.com/ravage84",
                     "role": "Project Maintainer"
