@@ -19,7 +19,7 @@
     "require": {
         "cakephp/cakephp":              "~2.6@stable",
         "netcommons/install":           "@stable",
-        "jms/serializer":               "1.2.0@stable"
+        "jms/serializer":               "1.1.0@stable"
     },
     "require-dev": {
         "cakephp/cakephp-codesniffer":  "~1.0@stable",
