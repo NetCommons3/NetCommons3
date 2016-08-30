@@ -54,7 +54,6 @@
     "scripts": {
         "post-install-cmd": ["app/Console/cake install.install install_bower"],
         "post-update-cmd": [
-            "cp -f bower.json.dist bower.json",
             "app/Console/cake install.install install_bower"
          ]
     }
