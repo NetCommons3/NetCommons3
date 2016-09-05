@@ -78,6 +78,8 @@ phpenv rehash
 set +H
 if [ "$PLUGIN_NAME" != "Install" ]; then
   cp app/Config/database.php.travis app/Config/database.php
+else
+  cp -f app/Config/database.php.travis app/Config/database.php.install
 fi
 if [ -f "app/Plugin/$PLUGIN_NAME/phpunit.xml.dist" ]; then
   cp app/Plugin/$PLUGIN_NAME/phpunit.xml.dist .
