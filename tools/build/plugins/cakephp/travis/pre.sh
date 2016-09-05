@@ -76,11 +76,11 @@ sudo pip install https://github.com/google/closure-linter/archive/v2.3.19.tar.gz
 
 phpenv rehash
 set +H
-if [ "$PLUGIN_NAME" != "Install" ]; then
+#if [ "$PLUGIN_NAME" != "Install" ]; then
   cp app/Config/database.php.travis app/Config/database.php
-else
-  cp -f app/Config/database.php.travis app/Config/database.php.install
-fi
+#else
+#  cp -f app/Config/database.php.travis app/Config/database.php.install
+#fi
 if [ -f "app/Plugin/$PLUGIN_NAME/phpunit.xml.dist" ]; then
   cp app/Plugin/$PLUGIN_NAME/phpunit.xml.dist .
 else
