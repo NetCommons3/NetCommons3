@@ -69,10 +69,10 @@ cd $NETCOMMONS_BUILD_DIR
 chmod -R 777 app/tmp
 mkdir -p build/logs
 mkdir -p build/cov
-sudo mkdir -p /etc/phpmd
+mkdir -p tools/phpmd
 
 #sudo pip install http://closure-linter.googlecode.com/files/closure_linter-latest.tar.gz
-sudo pip install https://github.com/google/closure-linter/archive/v2.3.19.tar.gz
+pip install --user https://github.com/google/closure-linter/archive/v2.3.19.tar.gz
 
 phpenv rehash
 set +H
@@ -86,7 +86,7 @@ if [ -f "app/Plugin/$PLUGIN_NAME/phpunit.xml.dist" ]; then
 else
   cp tools/build/app/cakephp/phpunit.xml.dist .
 fi
-sudo wget https://raw.githubusercontent.com/NetCommons3/chef_boilerplate_php/master/files/default/build/cakephp/phpmd/rules.xml -O /etc/phpmd/rules.xml
+wget https://raw.githubusercontent.com/NetCommons3/chef_boilerplate_php/master/files/default/build/cakephp/phpmd/rules.xml -O tools/phpmd/rules.xml
 
 for p in `cat app/Config/vendors.txt`
 do
@@ -98,11 +98,11 @@ export IGNORE_PLUGINS=`echo $IGNORE_PLUGINS | cut -c 2-`
 echo "Configure::write('Security.salt', 'ForTravis');" >> ./app/Config/core.php
 echo "Configure::write('Security.cipherSeed', '999');" >> ./app/Config/core.php
 
-sudo add-apt-repository -y universe
-sudo add-apt-repository "deb http://security.ubuntu.com/ubuntu $(lsb_release --short --codename)-security main restricted"
-sudo add-apt-repository -y ppa:groonga/ppa
-sudo apt-get update
-sudo apt-get install nodejs npm software-properties-common lsb-release mysql-server-mroonga groonga-tokenizer-mecab
+#sudo add-apt-repository -y universe
+#sudo add-apt-repository "deb http://security.ubuntu.com/ubuntu $(lsb_release --short --codename)-security main restricted"
+#sudo add-apt-repository -y ppa:groonga/ppa
+#sudo apt-get update
+#sudo apt-get install nodejs npm software-properties-common lsb-release mysql-server-mroonga groonga-tokenizer-mecab
 npm install -g bower
 bower install
 bower install `cat app/Plugin/$PLUGIN_NAME/bower.json | jq -c '.dependencies' | sed "s/[{\"\'}]//g" | sed "s/,/ /g" | sed "s/:/#/g"` --save
