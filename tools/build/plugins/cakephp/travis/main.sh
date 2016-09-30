@@ -17,9 +17,10 @@ if [ -d ./app/Plugin/$PLUGIN_NAME/JavascriptTest/ ]; then
 fi
 
 # phpdoc
-LOG=/var/log/phpdoc.log
-sudo touch $LOG
-sudo chmod a+w $LOG
+#LOG=/var/log/phpdoc.log
+LOG=./app/tmp/logs/phpdoc.log
+touch $LOG
+chmod a+w $LOG
 
 echo "phpdoc app/Plugin/$PLUGIN_NAME"
 phpdoc parse -d app/Plugin/$PLUGIN_NAME -t $TRAVIS_BUILD_DIR/phpdoc --force --ansi | tee $LOG
