@@ -81,7 +81,7 @@
   <exec executable="phpmd">
    <arg path="${basedir}/app" />
    <arg value="text" />
-   <arg value="${basedir}/tools/phpmd/rules.xml" />
+   <arg value="/etc/phpmd/rules.xml" />
    <arg value="--exclude" />
    <arg value="${basedir}/lib/Cake/Test" />
    <arg value="--exclude" />
@@ -94,7 +94,7 @@
   <exec executable="phpmd">
    <arg path="${basedir}/app" />
    <arg value="xml" />
-   <arg value="${basedir}/tools/phpmd/rules.xml" />
+   <arg value="/etc/phpmd/rules.xml" />
    <arg value="--reportfile" />
    <arg value="${basedir}/build/logs/pmd.xml" />
    <arg value="--exclude" />

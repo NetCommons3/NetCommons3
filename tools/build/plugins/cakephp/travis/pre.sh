@@ -69,7 +69,6 @@ cd $NETCOMMONS_BUILD_DIR
 chmod -R 777 app/tmp
 mkdir -p build/logs
 mkdir -p build/cov
-#sudo mkdir -p /etc/phpmd
 mkdir -p tools/phpmd
 
 #sudo pip install http://closure-linter.googlecode.com/files/closure_linter-latest.tar.gz
@@ -88,7 +87,6 @@ if [ -f "app/Plugin/$PLUGIN_NAME/phpunit.xml.dist" ]; then
 else
   cp tools/build/app/cakephp/phpunit.xml.dist .
 fi
-#sudo wget https://raw.githubusercontent.com/NetCommons3/chef_boilerplate_php/master/files/default/build/cakephp/phpmd/rules.xml -O /etc/phpmd/rules.xml
 wget https://raw.githubusercontent.com/NetCommons3/chef_boilerplate_php/master/files/default/build/cakephp/phpmd/rules.xml -O tools/phpmd/rules.xml
 
 for p in `cat app/Config/vendors.txt`
