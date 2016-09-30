@@ -6,8 +6,6 @@ cd $NETCOMMONS_BUILD_DIR
 
 # phpdoc
 if [ "$TRAVIS_BRANCH" == "master" ]; then
-  #LOG=/var/log/phpdoc.log
-  #LOG2=/var/log/phpdoc2.log
   LOG=./app/tmp/logs/phpdoc.log
   LOG2=./app/tmp/logs/phpdoc2.log
 
