@@ -9,11 +9,14 @@ if [ "$TRAVIS_BRANCH" == "master" ]; then
   LOG=./app/tmp/logs/phpdoc.log
   LOG2=./app/tmp/logs/phpdoc2.log
 
+  cd $NETCOMMONS_BUILD_DIR/NetCommons3Docs
   touch $LOG
   chmod a+w $LOG
 
   touch $LOG
   chmod a+w $LOG
+
+  cd $NETCOMMONS_BUILD_DIR
 
   if [ $GH_TOKEN ]; then
     PHP_VERSION="`php --version`"
