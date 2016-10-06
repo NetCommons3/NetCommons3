@@ -11,17 +11,17 @@ if [ "$TRAVIS_BRANCH" == "master" ]; then
     check=`echo $PHP_VERSION | grep "^PHP 5.6"`
 
     if [ ! "$check" = "" ]; then
+      LOG=$NETCOMMONS_BUILD_DIR/app/tmp/logs/phpdoc.log
+      LOG2=$NETCOMMONS_BUILD_DIR/app/tmp/logs/phpdoc2.log
+
+      touch $LOG
+      chmod a+w $LOG
+
+      touch $LOG2
+      chmod a+w $LOG2
+
       git clone -b gh-pages git://github.com/NetCommons3/NetCommons3Docs $NETCOMMONS_BUILD_DIR/NetCommons3Docs
       cd $NETCOMMONS_BUILD_DIR/NetCommons3Docs
-
-      LOG=./app/tmp/logs/phpdoc.log
-      LOG2=./app/tmp/logs/phpdoc2.log
-
-      touch $LOG
-      chmod a+w $LOG
-
-      touch $LOG
-      chmod a+w $LOG
 
       PHPDOC_OPTIONS="$NETCOMMONS_BUILD_DIR/app/Controller/,$NETCOMMONS_BUILD_DIR/app/Lib/,$NETCOMMONS_BUILD_DIR/app/Locale/,$NETCOMMONS_BUILD_DIR/app/Model/,$NETCOMMONS_BUILD_DIR/app/Test/,$NETCOMMONS_BUILD_DIR/app/Vendor/,$NETCOMMONS_BUILD_DIR/app/View/,$NETCOMMONS_BUILD_DIR/app/Plugin/NetCommons/"
 
