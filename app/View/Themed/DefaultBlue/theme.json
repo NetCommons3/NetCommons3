@@ -1,6 +1,7 @@
 {
     "name": "Classic Blue",
     "description": "NetCommons3 Themed Classic Blue",
+    "version": "3.0.0",
     "homepage" : "http://bootswatch.com",
     "authors": [
         {

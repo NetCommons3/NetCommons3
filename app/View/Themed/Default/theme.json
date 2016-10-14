@@ -1,6 +1,7 @@
 {
     "name": "Classic Default",
     "description": "NetCommons3 Themed Classic Default",
+    "version": "3.0.0",
     "homepage" : "http://bootswatch.com",
     "authors": [
         {
