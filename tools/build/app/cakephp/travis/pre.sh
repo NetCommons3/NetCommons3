@@ -20,7 +20,7 @@ easy_install six
 phpenv rehash
 set +H
 cp app/Config/database.php.travis app/Config/database.php
-sudo wget https://raw.githubusercontent.com/NetCommons3/chef_boilerplate_php/master/files/default/build/cakephp/phpmd/rules.xml -O /etc/phpmd/rules.xml
+wget https://raw.githubusercontent.com/NetCommons3/chef_boilerplate_php/master/files/default/build/cakephp/phpmd/rules.xml -O tools/phpmd/rules.xml
 
 for p in `cat app/Config/vendors.txt`
 do
