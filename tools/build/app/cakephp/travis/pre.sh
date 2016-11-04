@@ -11,10 +11,11 @@ sh -c "if [ '$DB' = 'pgsql' ]; then psql -c 'CREATE SCHEMA test3;' -U postgres -
 
 chmod -R 777 ./app/tmp
 mkdir -p build/logs
-sudo mkdir -p /etc/phpmd
+mkdir -p tools/phpmd
 
 #sudo pip install http://closure-linter.googlecode.com/files/closure_linter-latest.tar.gz
-sudo pip install https://github.com/google/closure-linter/archive/v2.3.19.tar.gz
+pip install https://github.com/google/closure-linter/archive/v2.3.19.tar.gz
+easy_install six
 
 phpenv rehash
 set +H
