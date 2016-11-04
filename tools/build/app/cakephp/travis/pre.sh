@@ -11,15 +11,16 @@ sh -c "if [ '$DB' = 'pgsql' ]; then psql -c 'CREATE SCHEMA test3;' -U postgres -
 
 chmod -R 777 ./app/tmp
 mkdir -p build/logs
-sudo mkdir -p /etc/phpmd
+mkdir -p tools/phpmd
 
 #sudo pip install http://closure-linter.googlecode.com/files/closure_linter-latest.tar.gz
-sudo pip install https://github.com/google/closure-linter/archive/v2.3.19.tar.gz
+pip install --user six
+pip install --user https://github.com/google/closure-linter/archive/v2.3.19.tar.gz
 
 phpenv rehash
 set +H
 cp app/Config/database.php.travis app/Config/database.php
-sudo wget https://raw.githubusercontent.com/NetCommons3/chef_boilerplate_php/master/files/default/build/cakephp/phpmd/rules.xml -O /etc/phpmd/rules.xml
+wget https://raw.githubusercontent.com/NetCommons3/chef_boilerplate_php/master/files/default/build/cakephp/phpmd/rules.xml -O tools/phpmd/rules.xml
 
 for p in `cat app/Config/vendors.txt`
 do
