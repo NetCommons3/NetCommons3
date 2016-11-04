@@ -14,7 +14,7 @@ mkdir -p build/logs
 mkdir -p tools/phpmd
 
 #sudo pip install http://closure-linter.googlecode.com/files/closure_linter-latest.tar.gz
-pip install https://github.com/google/closure-linter/archive/v2.3.19.tar.gz
+pip install --user https://github.com/google/closure-linter/archive/v2.3.19.tar.gz
 easy_install six
 
 phpenv rehash
