@@ -55,9 +55,9 @@ class NetCommons_Sniffs_Files_LineLengthSniff extends Generic_Sniffs_Files_LineL
 	 */
 	protected function checkLineLength(PHP_CodeSniffer_File $phpcsFile, $tokens, $stackPtr)
 	{
-		//コメントは除外する
+		//コメント、I18nは除外する
 		$str = substr(trim($stackPtr), 0, 2);
-		if (in_array($str, ['/*', '*', '*' . chr(9), '* ', '//', '*/'], true)) {
+		if (in_array($str, ['/*', '*', '*' . chr(9), '* ', '//', '*/', '__'], true)) {
 			return;
 		}
 
