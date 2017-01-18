@@ -28,7 +28,7 @@
         "mayflower/php-codebrowser":    "~1.1@stable",
         "mustangostang/spyc":           "dev-master",
         "phpdocumentor/phpdocumentor":  "2.*@stable",
-        "phploc/phploc":                "*@stable",
+        "phploc/phploc":                "2.*@stable",
         "phpmd/phpmd" :                 "@stable",
         "phpunit/phpunit":              "~3.7.38@stable",
         "satooshi/php-coveralls":       "~1.0@stable",
