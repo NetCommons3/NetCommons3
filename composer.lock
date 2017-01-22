@@ -1404,12 +1404,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Boxes.git",
-                "reference": "62f999a61151b9ed774b60958707eaebf951f531"
+                "reference": "08b8b3186989de35782ca6b2c4ada48aea326a50"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Boxes/zipball/62f999a61151b9ed774b60958707eaebf951f531",
-                "reference": "62f999a61151b9ed774b60958707eaebf951f531",
+                "url": "https://api.github.com/repos/NetCommons3/Boxes/zipball/08b8b3186989de35782ca6b2c4ada48aea326a50",
+                "reference": "08b8b3186989de35782ca6b2c4ada48aea326a50",
                 "shasum": ""
             },
             "require": {
@@ -1444,7 +1444,7 @@
                 "boxes",
                 "cakephp"
             ],
-            "time": "2017-01-19T06:19:47+00:00"
+            "time": "2017-01-21T14:02:28+00:00"
         },
         {
             "name": "netcommons/cabinets",
@@ -2569,12 +2569,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/NetCommons.git",
-                "reference": "1e868c492825161bdcb0fca8b18acc0e5d1b805c"
+                "reference": "51125ca7a7d438b02499e357433b6d9ce6a4b695"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/NetCommons/zipball/1e868c492825161bdcb0fca8b18acc0e5d1b805c",
-                "reference": "1e868c492825161bdcb0fca8b18acc0e5d1b805c",
+                "url": "https://api.github.com/repos/NetCommons3/NetCommons/zipball/51125ca7a7d438b02499e357433b6d9ce6a4b695",
+                "reference": "51125ca7a7d438b02499e357433b6d9ce6a4b695",
                 "shasum": ""
             },
             "require": {
@@ -2629,7 +2629,7 @@
                 "cakephp",
                 "netcommons"
             ],
-            "time": "2017-01-21T08:12:25+00:00"
+            "time": "2017-01-21T22:01:01+00:00"
         },
         {
             "name": "netcommons/notifications",
@@ -3539,12 +3539,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Tasks.git",
-                "reference": "5722f7dccdf485559ca2fac5d040fa2552ed6911"
+                "reference": "622076e40c7ad2f3290c00230ed364ba67e04035"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Tasks/zipball/5722f7dccdf485559ca2fac5d040fa2552ed6911",
-                "reference": "5722f7dccdf485559ca2fac5d040fa2552ed6911",
+                "url": "https://api.github.com/repos/NetCommons3/Tasks/zipball/622076e40c7ad2f3290c00230ed364ba67e04035",
+                "reference": "622076e40c7ad2f3290c00230ed364ba67e04035",
                 "shasum": ""
             },
             "require": {
@@ -3591,7 +3591,7 @@
                 "Tasks",
                 "cakephp"
             ],
-            "time": "2017-01-16T21:32:05+00:00"
+            "time": "2017-01-21T23:52:56+00:00"
         },
         {
             "name": "netcommons/theme-settings",
