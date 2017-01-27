@@ -2569,12 +2569,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/NetCommons.git",
-                "reference": "51125ca7a7d438b02499e357433b6d9ce6a4b695"
+                "reference": "3b3ab6f820e44ae485397ea29e53dfea84f32712"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/NetCommons/zipball/51125ca7a7d438b02499e357433b6d9ce6a4b695",
-                "reference": "51125ca7a7d438b02499e357433b6d9ce6a4b695",
+                "url": "https://api.github.com/repos/NetCommons3/NetCommons/zipball/3b3ab6f820e44ae485397ea29e53dfea84f32712",
+                "reference": "3b3ab6f820e44ae485397ea29e53dfea84f32712",
                 "shasum": ""
             },
             "require": {
@@ -2629,7 +2629,7 @@
                 "cakephp",
                 "netcommons"
             ],
-            "time": "2017-01-21T22:01:01+00:00"
+            "time": "2017-01-27T00:16:04+00:00"
         },
         {
             "name": "netcommons/notifications",
@@ -2783,12 +2783,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/PluginManager.git",
-                "reference": "6f7bcb9c2b766a8eaa7d1757e8ffea79aec1b338"
+                "reference": "314a083d270ade896494021c9563f71e97a2466c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/PluginManager/zipball/6f7bcb9c2b766a8eaa7d1757e8ffea79aec1b338",
-                "reference": "6f7bcb9c2b766a8eaa7d1757e8ffea79aec1b338",
+                "url": "https://api.github.com/repos/NetCommons3/PluginManager/zipball/314a083d270ade896494021c9563f71e97a2466c",
+                "reference": "314a083d270ade896494021c9563f71e97a2466c",
                 "shasum": ""
             },
             "require": {
@@ -2828,7 +2828,7 @@
                 "cakephp",
                 "plugin-manager"
             ],
-            "time": "2017-01-25T05:41:38+00:00"
+            "time": "2017-01-27T00:15:57+00:00"
         },
         {
             "name": "netcommons/private-space",
@@ -4392,30 +4392,46 @@
         },
         {
             "name": "dompdf/dompdf",
-            "version": "v0.6.2",
+            "version": "v0.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dompdf/dompdf.git",
-                "reference": "cc06008f75262510ee135b8cbb14e333a309f651"
+                "reference": "5c98652b1a5beb7e3cc8ec35419b2828dd63ab14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dompdf/dompdf/zipball/cc06008f75262510ee135b8cbb14e333a309f651",
-                "reference": "cc06008f75262510ee135b8cbb14e333a309f651",
+                "url": "https://api.github.com/repos/dompdf/dompdf/zipball/5c98652b1a5beb7e3cc8ec35419b2828dd63ab14",
+                "reference": "5c98652b1a5beb7e3cc8ec35419b2828dd63ab14",
                 "shasum": ""
             },
             "require": {
-                "phenx/php-font-lib": "0.2.*"
+                "ext-dom": "*",
+                "ext-gd": "*",
+                "ext-mbstring": "*",
+                "phenx/php-font-lib": "0.4.*",
+                "phenx/php-svg-lib": "0.1.*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "0.7-dev"
+                }
+            },
             "autoload": {
+                "psr-4": {
+                    "Dompdf\\": "src/"
+                },
                 "classmap": [
-                    "include/"
+                    "lib/"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "LGPL"
+                "LGPL-2.1"
             ],
             "authors": [
                 {
@@ -4425,11 +4441,15 @@
                 {
                     "name": "Brian Sweeney",
                     "email": "eclecticgeek@gmail.com"
+                },
+                {
+                    "name": "Gabriel Bull",
+                    "email": "me@gabrielbull.com"
                 }
             ],
             "description": "DOMPDF is a CSS 2.1 compliant HTML to PDF converter",
             "homepage": "https://github.com/dompdf/dompdf",
-            "time": "2015-12-07T04:07:13+00:00"
+            "time": "2016-05-11T00:36:29+00:00"
         },
         {
             "name": "erusev/parsedown",
@@ -5012,27 +5032,27 @@
         },
         {
             "name": "phenx/php-font-lib",
-            "version": "0.2.2",
+            "version": "0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PhenX/php-font-lib.git",
-                "reference": "c30c7fc00a6b0d863e9bb4c5d5dd015298b2dc82"
+                "reference": "b8af0cacdc3cbf1e41a586fcb78f506f4121a088"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PhenX/php-font-lib/zipball/c30c7fc00a6b0d863e9bb4c5d5dd015298b2dc82",
-                "reference": "c30c7fc00a6b0d863e9bb4c5d5dd015298b2dc82",
+                "url": "https://api.github.com/repos/PhenX/php-font-lib/zipball/b8af0cacdc3cbf1e41a586fcb78f506f4121a088",
+                "reference": "b8af0cacdc3cbf1e41a586fcb78f506f4121a088",
                 "shasum": ""
             },
             "type": "library",
             "autoload": {
-                "classmap": [
-                    "classes/"
-                ]
+                "psr-0": {
+                    "FontLib\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "LGPL"
+                "LGPL-3.0"
             ],
             "authors": [
                 {
@@ -5042,7 +5062,41 @@
             ],
             "description": "A library to read, parse, export and make subsets of different types of font files.",
             "homepage": "https://github.com/PhenX/php-font-lib",
-            "time": "2014-02-01T15:22:28+00:00"
+            "time": "2015-05-06T20:02:39+00:00"
+        },
+        {
+            "name": "phenx/php-svg-lib",
+            "version": "0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PhenX/php-svg-lib.git",
+                "reference": "b419766515b3426c6da74b0e29e93d71c4f17099"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PhenX/php-svg-lib/zipball/b419766515b3426c6da74b0e29e93d71c4f17099",
+                "reference": "b419766515b3426c6da74b0e29e93d71c4f17099",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Svg\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Ménager",
+                    "email": "fabien.menager@gmail.com"
+                }
+            ],
+            "description": "A library to read, parse and export to PDF SVG files.",
+            "homepage": "https://github.com/PhenX/php-svg-lib",
+            "time": "2015-05-06T18:49:49+00:00"
         },
         {
             "name": "phpdocumentor/fileset",
