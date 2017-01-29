@@ -510,23 +510,20 @@
         },
         {
             "name": "ezyang/htmlpurifier",
-            "version": "v4.9.0",
+            "version": "v4.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezyang/htmlpurifier.git",
-                "reference": "a1c09b09e398687deeb8e309a6305def4b43439b"
+                "reference": "d0c392f77d2f2a3dcf7fcb79e2a1e2b8804e75b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/a1c09b09e398687deeb8e309a6305def4b43439b",
-                "reference": "a1c09b09e398687deeb8e309a6305def4b43439b",
+                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/d0c392f77d2f2a3dcf7fcb79e2a1e2b8804e75b2",
+                "reference": "d0c392f77d2f2a3dcf7fcb79e2a1e2b8804e75b2",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.2"
-            },
-            "require-dev": {
-                "simpletest/simpletest": "^1.1"
             },
             "type": "library",
             "autoload": {
@@ -553,7 +550,7 @@
             "keywords": [
                 "html"
             ],
-            "time": "2017-01-13T12:31:37+00:00"
+            "time": "2016-07-16T12:58:58+00:00"
         },
         {
             "name": "jms/metadata",
@@ -1293,12 +1290,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Blocks.git",
-                "reference": "3e620f958654cb8b8ce43a9e3967fc85b581f884"
+                "reference": "ef606ca6c15aac91134db0c61286453563b7593b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Blocks/zipball/3e620f958654cb8b8ce43a9e3967fc85b581f884",
-                "reference": "3e620f958654cb8b8ce43a9e3967fc85b581f884",
+                "url": "https://api.github.com/repos/NetCommons3/Blocks/zipball/ef606ca6c15aac91134db0c61286453563b7593b",
+                "reference": "ef606ca6c15aac91134db0c61286453563b7593b",
                 "shasum": ""
             },
             "require": {
@@ -1336,7 +1333,7 @@
                 "blocks",
                 "cakephp"
             ],
-            "time": "2017-01-24T08:07:12+00:00"
+            "time": "2017-01-28T03:42:03+00:00"
         },
         {
             "name": "netcommons/blogs",
@@ -2416,17 +2413,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/M17n.git",
-                "reference": "3a28ab6840bdc742d36be698df8574de65bee6ad"
+                "reference": "cb9fffd6a598322b7e08ddbe00fb3cfa65bf28a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/M17n/zipball/3a28ab6840bdc742d36be698df8574de65bee6ad",
-                "reference": "3a28ab6840bdc742d36be698df8574de65bee6ad",
+                "url": "https://api.github.com/repos/NetCommons3/M17n/zipball/cb9fffd6a598322b7e08ddbe00fb3cfa65bf28a9",
+                "reference": "cb9fffd6a598322b7e08ddbe00fb3cfa65bf28a9",
                 "shasum": ""
             },
             "require": {
                 "cakedc/migrations": "~2.2",
-                "netcommons/net-commons": "@dev"
+                "netcommons/files": "@dev",
+                "netcommons/net-commons": "@dev",
+                "netcommons/tags": "@dev"
             },
             "type": "cakephp-plugin",
             "extra": {
@@ -2452,7 +2451,7 @@
                 "cakephp",
                 "m17n"
             ],
-            "time": "2017-01-25T13:49:37+00:00"
+            "time": "2017-01-29T01:42:37+00:00"
         },
         {
             "name": "netcommons/mails",
@@ -2738,12 +2737,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/PhotoAlbums.git",
-                "reference": "cde48c873ab679b9f10309ecae5d7ab914f0a545"
+                "reference": "11dab88eaffc96df5ff0b09bdb24a4713640455b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/PhotoAlbums/zipball/cde48c873ab679b9f10309ecae5d7ab914f0a545",
-                "reference": "cde48c873ab679b9f10309ecae5d7ab914f0a545",
+                "url": "https://api.github.com/repos/NetCommons3/PhotoAlbums/zipball/11dab88eaffc96df5ff0b09bdb24a4713640455b",
+                "reference": "11dab88eaffc96df5ff0b09bdb24a4713640455b",
                 "shasum": ""
             },
             "require": {
@@ -2775,7 +2774,7 @@
                 "netcommons",
                 "photoAlbums"
             ],
-            "time": "2017-01-16T15:00:46+00:00"
+            "time": "2017-01-28T04:13:23+00:00"
         },
         {
             "name": "netcommons/plugin-manager",
@@ -4046,12 +4045,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Workflow.git",
-                "reference": "cfc6699f913341acc090888a4a1e9c6f11f420ea"
+                "reference": "372147f95152e7ab76cfd327367c62c14b7f235d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Workflow/zipball/cfc6699f913341acc090888a4a1e9c6f11f420ea",
-                "reference": "cfc6699f913341acc090888a4a1e9c6f11f420ea",
+                "url": "https://api.github.com/repos/NetCommons3/Workflow/zipball/372147f95152e7ab76cfd327367c62c14b7f235d",
+                "reference": "372147f95152e7ab76cfd327367c62c14b7f235d",
                 "shasum": ""
             },
             "require": {
@@ -4086,7 +4085,7 @@
                 "cakephp",
                 "workflow"
             ],
-            "time": "2017-01-23T07:10:45+00:00"
+            "time": "2017-01-28T03:41:12+00:00"
         },
         {
             "name": "netcommons/wysiwyg",
