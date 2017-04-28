@@ -50,6 +50,11 @@ a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.acti
     background-color: #37538C;
     border-color: #37538C;
 }
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color: #37538C;
+    border-color: #37538C;
+}
 /* heading */
 .panel-default {
     border-color: #97C1E5;
