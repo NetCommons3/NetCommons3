@@ -85,3 +85,15 @@ a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.acti
     background-color: #6CAE6B;
     border-color: #6CAE6B;
 }
+
+/**
+ * フッターメニュー
+ */
+.menu-footer-tabs.nav-pills.nav-justified > li {
+	border: 1px solid #B0DB67;
+}
+.menu-footer-tabs.nav-justified > li.active,
+.menu-footer-tabs.nav-justified > li.active:focus,
+.menu-footer-tabs.nav-justified > li.active:hover {
+	background-color: #327177;
+}
