@@ -992,12 +992,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/AccessCounters.git",
-                "reference": "d93581aad8eb654c29651878a783f78a830ba621"
+                "reference": "09c408b9e95446bc59581235ee5c53ea0e0390ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/AccessCounters/zipball/d93581aad8eb654c29651878a783f78a830ba621",
-                "reference": "d93581aad8eb654c29651878a783f78a830ba621",
+                "url": "https://api.github.com/repos/NetCommons3/AccessCounters/zipball/09c408b9e95446bc59581235ee5c53ea0e0390ec",
+                "reference": "09c408b9e95446bc59581235ee5c53ea0e0390ec",
                 "shasum": ""
             },
             "require": {
@@ -1031,7 +1031,7 @@
                 "access_counters",
                 "cakephp"
             ],
-            "time": "2017-05-21T12:03:48+00:00"
+            "time": "2017-05-26T10:18:53+00:00"
         },
         {
             "name": "netcommons/announcements",
@@ -1039,12 +1039,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Announcements.git",
-                "reference": "18c205bf65227824b5c965e986b87c71fa107732"
+                "reference": "886632975242d9e5bc3a3ac34f030bfc38c3703e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Announcements/zipball/18c205bf65227824b5c965e986b87c71fa107732",
-                "reference": "18c205bf65227824b5c965e986b87c71fa107732",
+                "url": "https://api.github.com/repos/NetCommons3/Announcements/zipball/886632975242d9e5bc3a3ac34f030bfc38c3703e",
+                "reference": "886632975242d9e5bc3a3ac34f030bfc38c3703e",
                 "shasum": ""
             },
             "require": {
@@ -1082,7 +1082,7 @@
                 "announcements",
                 "cakephp"
             ],
-            "time": "2017-05-21T12:04:12+00:00"
+            "time": "2017-05-26T10:19:08+00:00"
         },
         {
             "name": "netcommons/auth",
@@ -1245,12 +1245,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Bbses.git",
-                "reference": "a6ec04a08ef14d1e1d83b313453c44e26dded38d"
+                "reference": "ff822a44b418f9c443b77894d6c33018bcd6211d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Bbses/zipball/a6ec04a08ef14d1e1d83b313453c44e26dded38d",
-                "reference": "a6ec04a08ef14d1e1d83b313453c44e26dded38d",
+                "url": "https://api.github.com/repos/NetCommons3/Bbses/zipball/ff822a44b418f9c443b77894d6c33018bcd6211d",
+                "reference": "ff822a44b418f9c443b77894d6c33018bcd6211d",
                 "shasum": ""
             },
             "require": {
@@ -1290,7 +1290,7 @@
                 "bbses",
                 "cakephp"
             ],
-            "time": "2017-05-26T03:52:58+00:00"
+            "time": "2017-05-26T10:19:22+00:00"
         },
         {
             "name": "netcommons/blocks",
@@ -1349,12 +1349,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Blogs.git",
-                "reference": "605ba511d212b6fc4fcd843187ba908945973e30"
+                "reference": "a18144b9b5fbe8ddd199bef11f7ab985c823324a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Blogs/zipball/605ba511d212b6fc4fcd843187ba908945973e30",
-                "reference": "605ba511d212b6fc4fcd843187ba908945973e30",
+                "url": "https://api.github.com/repos/NetCommons3/Blogs/zipball/a18144b9b5fbe8ddd199bef11f7ab985c823324a",
+                "reference": "a18144b9b5fbe8ddd199bef11f7ab985c823324a",
                 "shasum": ""
             },
             "require": {
@@ -1401,7 +1401,7 @@
                 "blogs",
                 "cakephp"
             ],
-            "time": "2017-05-21T12:04:50+00:00"
+            "time": "2017-05-26T10:19:38+00:00"
         },
         {
             "name": "netcommons/boxes",
@@ -1457,12 +1457,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Cabinets.git",
-                "reference": "1aa4283a71e1210c13bf7e4851da62a993af6e64"
+                "reference": "9e1369abd9074de5e8c646391e0e8fe00a98985c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Cabinets/zipball/1aa4283a71e1210c13bf7e4851da62a993af6e64",
-                "reference": "1aa4283a71e1210c13bf7e4851da62a993af6e64",
+                "url": "https://api.github.com/repos/NetCommons3/Cabinets/zipball/9e1369abd9074de5e8c646391e0e8fe00a98985c",
+                "reference": "9e1369abd9074de5e8c646391e0e8fe00a98985c",
                 "shasum": ""
             },
             "require": {
@@ -1507,7 +1507,7 @@
                 "cabinets",
                 "cakephp"
             ],
-            "time": "2017-05-21T13:59:04+00:00"
+            "time": "2017-05-26T10:19:55+00:00"
         },
         {
             "name": "netcommons/calendars",
@@ -1515,12 +1515,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Calendars.git",
-                "reference": "fbde69fbb95594a5d704fd1e10451e2370894c59"
+                "reference": "ff9fc89c5461dbe54338fb3a09f42207b41e1e9d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Calendars/zipball/fbde69fbb95594a5d704fd1e10451e2370894c59",
-                "reference": "fbde69fbb95594a5d704fd1e10451e2370894c59",
+                "url": "https://api.github.com/repos/NetCommons3/Calendars/zipball/ff9fc89c5461dbe54338fb3a09f42207b41e1e9d",
+                "reference": "ff9fc89c5461dbe54338fb3a09f42207b41e1e9d",
                 "shasum": ""
             },
             "require": {
@@ -1581,7 +1581,7 @@
                 "cakephp",
                 "calendars"
             ],
-            "time": "2017-05-21T14:14:30+00:00"
+            "time": "2017-05-26T10:20:36+00:00"
         },
         {
             "name": "netcommons/categories",
@@ -1634,12 +1634,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/CircularNotices.git",
-                "reference": "62ed846e44ac552e7d0808ee2b352ad44582a86b"
+                "reference": "05316c19a9ea635213e9d30f95c3fa952e21178c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/CircularNotices/zipball/62ed846e44ac552e7d0808ee2b352ad44582a86b",
-                "reference": "62ed846e44ac552e7d0808ee2b352ad44582a86b",
+                "url": "https://api.github.com/repos/NetCommons3/CircularNotices/zipball/05316c19a9ea635213e9d30f95c3fa952e21178c",
+                "reference": "05316c19a9ea635213e9d30f95c3fa952e21178c",
                 "shasum": ""
             },
             "require": {
@@ -1693,7 +1693,7 @@
                 "cakephp",
                 "circular-notices"
             ],
-            "time": "2017-05-21T14:15:14+00:00"
+            "time": "2017-05-26T10:21:06+00:00"
         },
         {
             "name": "netcommons/community-space",
@@ -1938,12 +1938,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Faqs.git",
-                "reference": "05be12637bccf19cf877f273845c0d2195120ed9"
+                "reference": "abdfe636c02f814a281df124cefeaf6a2f801690"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Faqs/zipball/05be12637bccf19cf877f273845c0d2195120ed9",
-                "reference": "05be12637bccf19cf877f273845c0d2195120ed9",
+                "url": "https://api.github.com/repos/NetCommons3/Faqs/zipball/abdfe636c02f814a281df124cefeaf6a2f801690",
+                "reference": "abdfe636c02f814a281df124cefeaf6a2f801690",
                 "shasum": ""
             },
             "require": {
@@ -1987,7 +1987,7 @@
                 "cakephp",
                 "faqs"
             ],
-            "time": "2017-05-21T14:20:29+00:00"
+            "time": "2017-05-26T10:21:22+00:00"
         },
         {
             "name": "netcommons/files",
@@ -2367,12 +2367,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Links.git",
-                "reference": "6e569c9b6c1b10bb06b123c13c015ec8358f184e"
+                "reference": "c899d3a46ca4b605e4fa64bde0901f0841b7f46c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Links/zipball/6e569c9b6c1b10bb06b123c13c015ec8358f184e",
-                "reference": "6e569c9b6c1b10bb06b123c13c015ec8358f184e",
+                "url": "https://api.github.com/repos/NetCommons3/Links/zipball/c899d3a46ca4b605e4fa64bde0901f0841b7f46c",
+                "reference": "c899d3a46ca4b605e4fa64bde0901f0841b7f46c",
                 "shasum": ""
             },
             "require": {
@@ -2413,7 +2413,7 @@
                 "cakephp",
                 "links"
             ],
-            "time": "2017-05-21T21:43:18+00:00"
+            "time": "2017-05-26T10:21:38+00:00"
         },
         {
             "name": "netcommons/m17n",
@@ -2576,12 +2576,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/NetCommons.git",
-                "reference": "9e456d71a163bc38ae2cec6dfac44d305f717b0e"
+                "reference": "4631fa02b59d419b9e56eae83a6543fe09e3afae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/NetCommons/zipball/9e456d71a163bc38ae2cec6dfac44d305f717b0e",
-                "reference": "9e456d71a163bc38ae2cec6dfac44d305f717b0e",
+                "url": "https://api.github.com/repos/NetCommons3/NetCommons/zipball/4631fa02b59d419b9e56eae83a6543fe09e3afae",
+                "reference": "4631fa02b59d419b9e56eae83a6543fe09e3afae",
                 "shasum": ""
             },
             "require": {
@@ -2636,7 +2636,7 @@
                 "cakephp",
                 "netcommons"
             ],
-            "time": "2017-05-23T06:01:01+00:00"
+            "time": "2017-05-26T10:18:16+00:00"
         },
         {
             "name": "netcommons/notifications",
@@ -3085,12 +3085,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Registrations.git",
-                "reference": "5785f74374edc31a656488d7e5ed5fb44095b0c8"
+                "reference": "5e482dc241bbcc9c5dae3783b5fc58d3beb7c97b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Registrations/zipball/5785f74374edc31a656488d7e5ed5fb44095b0c8",
-                "reference": "5785f74374edc31a656488d7e5ed5fb44095b0c8",
+                "url": "https://api.github.com/repos/NetCommons3/Registrations/zipball/5e482dc241bbcc9c5dae3783b5fc58d3beb7c97b",
+                "reference": "5e482dc241bbcc9c5dae3783b5fc58d3beb7c97b",
                 "shasum": ""
             },
             "require": {
@@ -3158,7 +3158,7 @@
                 "cakephp",
                 "registrations"
             ],
-            "time": "2017-05-21T14:37:09+00:00"
+            "time": "2017-05-26T10:22:32+00:00"
         },
         {
             "name": "netcommons/roles",
@@ -3276,12 +3276,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/RssReaders.git",
-                "reference": "2f583f965486c2856a200911d51b43c985b9805b"
+                "reference": "eb23e99fea7570c861ce9c5f4c29dfd404489698"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/RssReaders/zipball/2f583f965486c2856a200911d51b43c985b9805b",
-                "reference": "2f583f965486c2856a200911d51b43c985b9805b",
+                "url": "https://api.github.com/repos/NetCommons3/RssReaders/zipball/eb23e99fea7570c861ce9c5f4c29dfd404489698",
+                "reference": "eb23e99fea7570c861ce9c5f4c29dfd404489698",
                 "shasum": ""
             },
             "require": {
@@ -3322,7 +3322,7 @@
                 "cakephp",
                 "rss-readers"
             ],
-            "time": "2017-05-21T14:40:30+00:00"
+            "time": "2017-05-26T10:24:24+00:00"
         },
         {
             "name": "netcommons/searches",
@@ -3330,12 +3330,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Searches.git",
-                "reference": "a524ccb76dfb6da5b974d8f55d06e3c5d51a05b8"
+                "reference": "b643b44ba5906e506f1a18fac389979ac729fff0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Searches/zipball/a524ccb76dfb6da5b974d8f55d06e3c5d51a05b8",
-                "reference": "a524ccb76dfb6da5b974d8f55d06e3c5d51a05b8",
+                "url": "https://api.github.com/repos/NetCommons3/Searches/zipball/b643b44ba5906e506f1a18fac389979ac729fff0",
+                "reference": "b643b44ba5906e506f1a18fac389979ac729fff0",
                 "shasum": ""
             },
             "require": {
@@ -3376,7 +3376,7 @@
                 "cakephp",
                 "searches"
             ],
-            "time": "2017-05-21T14:41:00+00:00"
+            "time": "2017-05-26T10:25:16+00:00"
         },
         {
             "name": "netcommons/site-manager",
@@ -3546,12 +3546,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Tasks.git",
-                "reference": "f8c30fe446d5783a52b1be70a17ecbd6c9d10634"
+                "reference": "fac2f9912fe4af10dbece9b27a4de37df6b7f691"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Tasks/zipball/f8c30fe446d5783a52b1be70a17ecbd6c9d10634",
-                "reference": "f8c30fe446d5783a52b1be70a17ecbd6c9d10634",
+                "url": "https://api.github.com/repos/NetCommons3/Tasks/zipball/fac2f9912fe4af10dbece9b27a4de37df6b7f691",
+                "reference": "fac2f9912fe4af10dbece9b27a4de37df6b7f691",
                 "shasum": ""
             },
             "require": {
@@ -3598,7 +3598,7 @@
                 "Tasks",
                 "cakephp"
             ],
-            "time": "2017-05-21T14:45:54+00:00"
+            "time": "2017-05-26T10:25:37+00:00"
         },
         {
             "name": "netcommons/theme-settings",
@@ -3649,12 +3649,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Topics.git",
-                "reference": "8f14412fa9836ac9149b95aa690260520215f829"
+                "reference": "29d168bfc10b3c1abb87c563eaca969b06fa610a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Topics/zipball/8f14412fa9836ac9149b95aa690260520215f829",
-                "reference": "8f14412fa9836ac9149b95aa690260520215f829",
+                "url": "https://api.github.com/repos/NetCommons3/Topics/zipball/29d168bfc10b3c1abb87c563eaca969b06fa610a",
+                "reference": "29d168bfc10b3c1abb87c563eaca969b06fa610a",
                 "shasum": ""
             },
             "require": {
@@ -3700,7 +3700,7 @@
                 "cakephp",
                 "topics"
             ],
-            "time": "2017-05-21T14:46:23+00:00"
+            "time": "2017-05-26T10:26:03+00:00"
         },
         {
             "name": "netcommons/user-attributes",
@@ -3929,12 +3929,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Videos.git",
-                "reference": "7c67f7572d0b70110adb41666bbe9ff1eeeef03e"
+                "reference": "5010cbf6b84ed2ab2b57159ee529020eba1b9737"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Videos/zipball/7c67f7572d0b70110adb41666bbe9ff1eeeef03e",
-                "reference": "7c67f7572d0b70110adb41666bbe9ff1eeeef03e",
+                "url": "https://api.github.com/repos/NetCommons3/Videos/zipball/5010cbf6b84ed2ab2b57159ee529020eba1b9737",
+                "reference": "5010cbf6b84ed2ab2b57159ee529020eba1b9737",
                 "shasum": ""
             },
             "require": {
@@ -3982,7 +3982,7 @@
                 "cakephp",
                 "videos"
             ],
-            "time": "2017-05-25T09:34:20+00:00"
+            "time": "2017-05-26T10:26:23+00:00"
         },
         {
             "name": "netcommons/visual-captcha",
