@@ -3546,12 +3546,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Tasks.git",
-                "reference": "fac2f9912fe4af10dbece9b27a4de37df6b7f691"
+                "reference": "65340c8cb4c6b7f87b38f0775114f401ed910adf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Tasks/zipball/fac2f9912fe4af10dbece9b27a4de37df6b7f691",
-                "reference": "fac2f9912fe4af10dbece9b27a4de37df6b7f691",
+                "url": "https://api.github.com/repos/NetCommons3/Tasks/zipball/65340c8cb4c6b7f87b38f0775114f401ed910adf",
+                "reference": "65340c8cb4c6b7f87b38f0775114f401ed910adf",
                 "shasum": ""
             },
             "require": {
@@ -3598,7 +3598,7 @@
                 "Tasks",
                 "cakephp"
             ],
-            "time": "2017-05-26T10:25:37+00:00"
+            "time": "2017-05-26T14:01:01+00:00"
         },
         {
             "name": "netcommons/theme-settings",
