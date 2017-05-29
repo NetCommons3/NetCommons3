@@ -26,7 +26,7 @@
         "doctrine/annotations":         "1.2.*@stable",
         "dompdf/dompdf":                "~0.6@stable",
         "mayflower/php-codebrowser":    "~1.1@stable",
-        "mustangostang/spyc":           "dev-master",
+        "mustangostang/spyc":           "~0.6@stable",
         "phpdocumentor/phpdocumentor":  "2.*@stable",
         "phploc/phploc":                "2.*@stable",
         "phpmd/phpmd" :                 "@stable",
