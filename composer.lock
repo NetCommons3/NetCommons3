@@ -2141,12 +2141,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Holidays.git",
-                "reference": "546e0392d7bd53ad1b49752772292c2f2fa6bb5c"
+                "reference": "8f8216aad77f808f52e5b73d6b2dc35ab86d28c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Holidays/zipball/546e0392d7bd53ad1b49752772292c2f2fa6bb5c",
-                "reference": "546e0392d7bd53ad1b49752772292c2f2fa6bb5c",
+                "url": "https://api.github.com/repos/NetCommons3/Holidays/zipball/8f8216aad77f808f52e5b73d6b2dc35ab86d28c5",
+                "reference": "8f8216aad77f808f52e5b73d6b2dc35ab86d28c5",
                 "shasum": ""
             },
             "require": {
@@ -2198,7 +2198,7 @@
                 "cakephp",
                 "holidays"
             ],
-            "time": "2017-03-14T09:47:33+00:00"
+            "time": "2017-05-29T00:57:35+00:00"
         },
         {
             "name": "netcommons/iframes",
@@ -2253,16 +2253,16 @@
         },
         {
             "name": "netcommons/install",
-            "version": "3.1.0",
+            "version": "3.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Install.git",
-                "reference": "112b354e968c6cd793c9fa94ace2481db368e62d"
+                "reference": "535a31069b772521623b4a9b8281447c183fcf14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Install/zipball/112b354e968c6cd793c9fa94ace2481db368e62d",
-                "reference": "112b354e968c6cd793c9fa94ace2481db368e62d",
+                "url": "https://api.github.com/repos/NetCommons3/Install/zipball/535a31069b772521623b4a9b8281447c183fcf14",
+                "reference": "535a31069b772521623b4a9b8281447c183fcf14",
                 "shasum": ""
             },
             "require": {
@@ -2279,12 +2279,14 @@
                 "netcommons/iframes": "@dev",
                 "netcommons/links": "@dev",
                 "netcommons/menus": "@dev",
+                "netcommons/multidatabases": "@dev",
                 "netcommons/net-commons": "@dev",
                 "netcommons/photo-albums": "@dev",
                 "netcommons/plugin-manager": "@dev",
                 "netcommons/questionnaires": "@dev",
                 "netcommons/quizzes": "@dev",
                 "netcommons/registrations": "@dev",
+                "netcommons/reservations": "@dev",
                 "netcommons/rooms": "@dev",
                 "netcommons/rss-readers": "@dev",
                 "netcommons/searches": "@dev",
@@ -2315,7 +2317,7 @@
                 "cakephp",
                 "install"
             ],
-            "time": "2017-01-23T00:42:46+00:00"
+            "time": "2017-05-21T21:44:11+00:00"
         },
         {
             "name": "netcommons/likes",
@@ -2569,6 +2571,57 @@
                 "menu"
             ],
             "time": "2017-05-22T02:59:18+00:00"
+        },
+        {
+            "name": "netcommons/multidatabases",
+            "version": "3.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/NetCommons3/Multidatabases.git",
+                "reference": "c5c4500fc5b6ed04789340db26e8bce9b20fea2b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/NetCommons3/Multidatabases/zipball/c5c4500fc5b6ed04789340db26e8bce9b20fea2b",
+                "reference": "c5c4500fc5b6ed04789340db26e8bce9b20fea2b",
+                "shasum": ""
+            },
+            "require": {
+                "cakedc/migrations": "~2.2",
+                "netcommons/blocks": "@dev",
+                "netcommons/net-commons": "@dev",
+                "netcommons/pages": "@dev",
+                "netcommons/plugin-manager": "@dev"
+            },
+            "type": "cakephp-plugin",
+            "extra": {
+                "installer-paths": {
+                    "app/Plugin/{$name}": [
+                        "type:cakephp-plugin"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "NetCommons License"
+            ],
+            "authors": [
+                {
+                    "name": "NetCommons Community",
+                    "homepage": "http://www.netcommons.org"
+                },
+                {
+                    "name": "Ricksoft",
+                    "homepage": "https://www.ricksoft.jp/"
+                }
+            ],
+            "description": "Multidatabases for NetCommons3 Plugin",
+            "homepage": "http://www.netcommons.org/",
+            "keywords": [
+                "cakephp",
+                "multidatabases"
+            ],
+            "time": "2017-05-26T10:21:52+00:00"
         },
         {
             "name": "netcommons/net-commons",
@@ -3159,6 +3212,80 @@
                 "registrations"
             ],
             "time": "2017-05-26T10:22:32+00:00"
+        },
+        {
+            "name": "netcommons/reservations",
+            "version": "3.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/NetCommons3/Reservations.git",
+                "reference": "31e8303fe5ddbb1041bd7a424227bae114896b8c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/NetCommons3/Reservations/zipball/31e8303fe5ddbb1041bd7a424227bae114896b8c",
+                "reference": "31e8303fe5ddbb1041bd7a424227bae114896b8c",
+                "shasum": ""
+            },
+            "require": {
+                "cakedc/migrations": "~2.2",
+                "netcommons/blocks": "@dev",
+                "netcommons/frames": "@dev",
+                "netcommons/groups": "@dev",
+                "netcommons/holidays": "@dev",
+                "netcommons/mails": "@dev",
+                "netcommons/net-commons": "@dev",
+                "netcommons/pages": "@dev",
+                "netcommons/plugin-manager": "@dev",
+                "netcommons/rooms": "@dev",
+                "netcommons/topics": "@dev",
+                "netcommons/users": "@dev",
+                "netcommons/workflow": "@dev",
+                "netcommons/wysiwyg": "@dev"
+            },
+            "type": "cakephp-plugin",
+            "extra": {
+                "installer-paths": {
+                    "app/Plugin/{$name}": [
+                        "type:cakephp-plugin"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "NetCommons License"
+            ],
+            "authors": [
+                {
+                    "name": "Toshihide Hashimoto(AllCreator Co., Ltd.)",
+                    "email": "info@allcreator.net",
+                    "homepage": "http://allcreator.net",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Minori Kikuchihara(AllCreator Co., Ltd.)",
+                    "email": "info@allcreator.net",
+                    "homepage": "http://allcreator.net",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Rika Fujiwara(AllCreator Co., Ltd.)",
+                    "email": "info@allcreator.net",
+                    "homepage": "http://allcreator.net",
+                    "role": "Developer"
+                },
+                {
+                    "name": "NetCommons Community",
+                    "homepage": "http://www.netcommons.org"
+                }
+            ],
+            "description": "Reservations for NetCommons Plugin",
+            "homepage": "http://www.netcommons.org/",
+            "keywords": [
+                "cakephp",
+                "reservations"
+            ],
+            "time": "2017-05-28T16:32:06+00:00"
         },
         {
             "name": "netcommons/roles",
