@@ -3219,12 +3219,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Reservations.git",
-                "reference": "31e8303fe5ddbb1041bd7a424227bae114896b8c"
+                "reference": "1ccc0c9965d66bee60574eec072a158512b8b766"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Reservations/zipball/31e8303fe5ddbb1041bd7a424227bae114896b8c",
-                "reference": "31e8303fe5ddbb1041bd7a424227bae114896b8c",
+                "url": "https://api.github.com/repos/NetCommons3/Reservations/zipball/1ccc0c9965d66bee60574eec072a158512b8b766",
+                "reference": "1ccc0c9965d66bee60574eec072a158512b8b766",
                 "shasum": ""
             },
             "require": {
@@ -3285,7 +3285,7 @@
                 "cakephp",
                 "reservations"
             ],
-            "time": "2017-05-28T16:32:06+00:00"
+            "time": "2017-05-29T03:11:14+00:00"
         },
         {
             "name": "netcommons/roles",
