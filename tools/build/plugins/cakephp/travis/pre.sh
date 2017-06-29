@@ -108,7 +108,9 @@ echo "Configure::write('Security.cipherSeed', '999');" >> ./app/Config/core.php
 #sudo add-apt-repository -y ppa:groonga/ppa
 #sudo apt-get update
 #sudo apt-get install nodejs npm software-properties-common lsb-release mysql-server-mroonga groonga-tokenizer-mecab
-npm install -g bower
-bower install
-bower install `cat app/Plugin/$PLUGIN_NAME/bower.json | jq -c '.dependencies' | sed "s/[{\"\'}]//g" | sed "s/,/ /g" | sed "s/:/#/g"` --save
-npm install jasmine-node karma karma-coverage karma-jasmine karma-firefox-launcher karma-phantomjs-launcher
+if [ -d app/Plugin/$PLUGIN_NAME/JavascriptTest/ ]; then
+	npm install -g bower
+	bower install
+	bower install `cat app/Plugin/$PLUGIN_NAME/bower.json | jq -c '.dependencies' | sed "s/[{\"\'}]//g" | sed "s/,/ /g" | sed "s/:/#/g"` --save
+	npm install jasmine-node karma karma-coverage karma-jasmine karma-firefox-launcher karma-phantomjs-launcher
+fi
