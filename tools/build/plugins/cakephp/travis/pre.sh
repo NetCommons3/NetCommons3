@@ -6,6 +6,7 @@ if [ $DB = 'pgsql' ]; then psql -c 'CREATE DATABASE cakephp_test;' -U postgres; 
 export PLUGIN_NAME=`basename $TRAVIS_BUILD_DIR`
 
 composer self-update
+composer global require hirak/prestissimo
 
 # NetCommons3 project install
 cd $NETCOMMONS_BUILD_DIR
