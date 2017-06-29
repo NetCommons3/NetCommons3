@@ -5,6 +5,8 @@ if [ $DB = 'pgsql' ]; then psql -c 'CREATE DATABASE cakephp_test;' -U postgres; 
 
 export PLUGIN_NAME=`basename $TRAVIS_BUILD_DIR`
 
+phpenv config-rm xdebug.ini
+
 composer self-update
 composer global require hirak/prestissimo
 
