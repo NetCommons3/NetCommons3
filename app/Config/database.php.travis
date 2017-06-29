@@ -87,6 +87,9 @@ class DATABASE_CONFIG {
 		if (!empty($_SERVER['DB'])) {
 			$db = $_SERVER['DB'];
 		}
+		if (in_array($db, ['mariadb-10.0', 'mariadb-10.1', 'mariadb-10.2'], true)) {
+			$db = 'mariadb';
+		}
 		foreach (array('master', 'slave1', 'test', 'test2', 'test_database_three') as $source) {
 			$config = array_merge($this->{$source}, $this->identities[$db]);
 			if (is_array($config['database'])) {
