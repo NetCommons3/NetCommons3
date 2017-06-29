@@ -1,5 +1,6 @@
 #!/bin/bash -ex
 
+echo $DB
 if [ $DB = 'mysql' -o $DB = 'mariadb' ]; then 
 	mysql -e 'DROP DATABASE IF EXISTS cakephp_test;'
 	mysql -e 'CREATE DATABASE cakephp_test;'
