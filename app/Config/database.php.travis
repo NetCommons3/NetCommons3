@@ -17,6 +17,11 @@ class DATABASE_CONFIG {
 			'host' => '0.0.0.0',
 			'login' => 'travis'
 		),
+		'mariadb' => array(
+			'datasource' => 'Database/Mysql',
+			'host' => '0.0.0.0',
+			'login' => 'travis'
+		),
 		'pgsql' => array(
 			'datasource' => 'Database/Postgres',
 			'host' => '127.0.0.1',
