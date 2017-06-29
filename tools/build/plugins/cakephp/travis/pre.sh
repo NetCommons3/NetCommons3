@@ -3,6 +3,7 @@
 if [ $DB = 'mysql' -o $DB = 'mariadb' ]; then 
 	mysql -e 'DROP DATABASE IF EXISTS cakephp_test;'
 	mysql -e 'CREATE DATABASE cakephp_test;'
+	mysql --version
 fi
 if [ $DB = 'pgsql' ]; then psql -c 'DROP DATABASE cakephp_test; CREATE DATABASE cakephp_test;' -U postgres; fi
 
