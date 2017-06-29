@@ -5,7 +5,7 @@ export PATH=$PATH:./vendors/bin:$NETCOMMONS_BUILD_DIR/vendors/bin
 cd $NETCOMMONS_BUILD_DIR
 
 # phpdoc
-if [ "$TRAVIS_BRANCH" == "master" ]; then
+if [ "$TRAVIS_BRANCH" = "master" -a "$DB" = "mysql" ]; then
   if [ $GH_TOKEN ]; then
     PHP_VERSION="`php --version`"
     check=`echo $PHP_VERSION | grep "^PHP 5.6"`
