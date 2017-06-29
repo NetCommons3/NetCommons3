@@ -2,7 +2,7 @@
 
 echo $DB
 
-if [ $DB = 'mysql' -o $DB = 'mariadb-10.0' ]; then 
+if [ $DB = 'mysql' -o $DB = 'mariadb' -o $DB = 'mariadb-10.0' ]; then 
 	mysql -e 'DROP DATABASE IF EXISTS cakephp_test;'
 	mysql -e 'CREATE DATABASE cakephp_test;'
 	mysql --version
