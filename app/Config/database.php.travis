@@ -14,8 +14,8 @@ class DATABASE_CONFIG {
 	private $identities = array(
 		'mysql' => array(
 			'datasource' => 'Database/Mysql',
-			'host' => '0.0.0.0',
-			'login' => 'travis'
+			'host' => '127.0.0.1',
+			'login' => 'root'
 		),
 		'mariadb' => array(
 			'datasource' => 'Database/Mysql',
