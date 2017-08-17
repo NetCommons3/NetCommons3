@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "30f78ec3b6e98b9afd0e130b9a7cab13",
+    "content-hash": "a92db68967e13fb93feecb59a7f0fd76",
     "packages": [
         {
             "name": "cakedc/migrations",
@@ -46,16 +46,16 @@
         },
         {
             "name": "cakephp/cakephp",
-            "version": "2.9.9",
+            "version": "2.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/cakephp.git",
-                "reference": "bfd2d21d782a69626bcf1ae2d22aad6e565fb29c"
+                "reference": "95e0a2143934abed3baf33885032eefcf9081605"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/cakephp/zipball/bfd2d21d782a69626bcf1ae2d22aad6e565fb29c",
-                "reference": "bfd2d21d782a69626bcf1ae2d22aad6e565fb29c",
+                "url": "https://api.github.com/repos/cakephp/cakephp/zipball/95e0a2143934abed3baf33885032eefcf9081605",
+                "reference": "95e0a2143934abed3baf33885032eefcf9081605",
                 "shasum": ""
             },
             "require": {
@@ -64,7 +64,7 @@
             },
             "require-dev": {
                 "cakephp/cakephp-codesniffer": "^1.0.0",
-                "phpunit/phpunit": "3.7.*"
+                "phpunit/phpunit": "<6.0.0"
             },
             "bin": [
                 "lib/Cake/Console/cake"
@@ -85,7 +85,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2017-05-26T01:15:23+00:00"
+            "time": "2017-08-08T01:21:35+00:00"
         },
         {
             "name": "cakephp/debug_kit",
@@ -181,16 +181,16 @@
         },
         {
             "name": "composer/installers",
-            "version": "v1.3.0",
+            "version": "v1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "79ad876c7498c0bbfe7eed065b8651c93bfd6045"
+                "reference": "9ce17fb70e9a38dd8acff0636a29f5cf4d575c1b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/79ad876c7498c0bbfe7eed065b8651c93bfd6045",
-                "reference": "79ad876c7498c0bbfe7eed065b8651c93bfd6045",
+                "url": "https://api.github.com/repos/composer/installers/zipball/9ce17fb70e9a38dd8acff0636a29f5cf4d575c1b",
+                "reference": "9ce17fb70e9a38dd8acff0636a29f5cf4d575c1b",
                 "shasum": ""
             },
             "require": {
@@ -236,6 +236,7 @@
                 "Hurad",
                 "ImageCMS",
                 "Kanboard",
+                "Lan Management System",
                 "MODX Evo",
                 "Mautic",
                 "Maya",
@@ -259,6 +260,7 @@
                 "croogo",
                 "dokuwiki",
                 "drupal",
+                "eZ Platform",
                 "elgg",
                 "expressionengine",
                 "fuelphp",
@@ -275,6 +277,7 @@
                 "mediawiki",
                 "modulework",
                 "moodle",
+                "osclass",
                 "phpbb",
                 "piwik",
                 "ppi",
@@ -291,7 +294,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2017-04-24T06:37:16+00:00"
+            "time": "2017-08-09T07:53:48+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -1086,16 +1089,16 @@
         },
         {
             "name": "netcommons/auth",
-            "version": "3.1.3",
+            "version": "3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Auth.git",
-                "reference": "b3a151356b80e3e026116864a7a1618ae38a908a"
+                "reference": "9db128f32c6aa80e0c3994246b32b594486f8f44"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Auth/zipball/b3a151356b80e3e026116864a7a1618ae38a908a",
-                "reference": "b3a151356b80e3e026116864a7a1618ae38a908a",
+                "url": "https://api.github.com/repos/NetCommons3/Auth/zipball/9db128f32c6aa80e0c3994246b32b594486f8f44",
+                "reference": "9db128f32c6aa80e0c3994246b32b594486f8f44",
                 "shasum": ""
             },
             "require": {
@@ -1129,7 +1132,7 @@
                 "auth",
                 "cakephp"
             ],
-            "time": "2017-06-28T08:31:45+00:00"
+            "time": "2017-08-04T05:02:59+00:00"
         },
         {
             "name": "netcommons/auth-general",
@@ -1241,16 +1244,16 @@
         },
         {
             "name": "netcommons/bbses",
-            "version": "3.1.3",
+            "version": "3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Bbses.git",
-                "reference": "e86276c5c86282647bccccc56481196268023373"
+                "reference": "b8958f339d1717f3ee8276344a5866f0a9b4821d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Bbses/zipball/e86276c5c86282647bccccc56481196268023373",
-                "reference": "e86276c5c86282647bccccc56481196268023373",
+                "url": "https://api.github.com/repos/NetCommons3/Bbses/zipball/b8958f339d1717f3ee8276344a5866f0a9b4821d",
+                "reference": "b8958f339d1717f3ee8276344a5866f0a9b4821d",
                 "shasum": ""
             },
             "require": {
@@ -1290,7 +1293,7 @@
                 "bbses",
                 "cakephp"
             ],
-            "time": "2017-06-28T13:24:43+00:00"
+            "time": "2017-08-16T12:45:58+00:00"
         },
         {
             "name": "netcommons/blocks",
@@ -1405,16 +1408,16 @@
         },
         {
             "name": "netcommons/boxes",
-            "version": "3.1.3",
+            "version": "3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Boxes.git",
-                "reference": "d4be4e5bacf1330a1b16f8133c64a78d945293db"
+                "reference": "aa8f8aa7db9cf679977f4e3169df0af94daff88b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Boxes/zipball/d4be4e5bacf1330a1b16f8133c64a78d945293db",
-                "reference": "d4be4e5bacf1330a1b16f8133c64a78d945293db",
+                "url": "https://api.github.com/repos/NetCommons3/Boxes/zipball/aa8f8aa7db9cf679977f4e3169df0af94daff88b",
+                "reference": "aa8f8aa7db9cf679977f4e3169df0af94daff88b",
                 "shasum": ""
             },
             "require": {
@@ -1449,7 +1452,7 @@
                 "boxes",
                 "cakephp"
             ],
-            "time": "2017-06-28T13:30:47+00:00"
+            "time": "2017-08-09T07:10:45+00:00"
         },
         {
             "name": "netcommons/cabinets",
@@ -1511,16 +1514,16 @@
         },
         {
             "name": "netcommons/calendars",
-            "version": "3.1.3",
+            "version": "3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Calendars.git",
-                "reference": "b3464d9de03aca4db41df4bb3623e819c19f021f"
+                "reference": "ff202bb6eea0890ca9383d358388bb2e5c14bd4c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Calendars/zipball/b3464d9de03aca4db41df4bb3623e819c19f021f",
-                "reference": "b3464d9de03aca4db41df4bb3623e819c19f021f",
+                "url": "https://api.github.com/repos/NetCommons3/Calendars/zipball/ff202bb6eea0890ca9383d358388bb2e5c14bd4c",
+                "reference": "ff202bb6eea0890ca9383d358388bb2e5c14bd4c",
                 "shasum": ""
             },
             "require": {
@@ -1581,7 +1584,7 @@
                 "cakephp",
                 "calendars"
             ],
-            "time": "2017-07-18T04:22:01+00:00"
+            "time": "2017-08-10T10:13:54+00:00"
         },
         {
             "name": "netcommons/categories",
@@ -1991,16 +1994,16 @@
         },
         {
             "name": "netcommons/files",
-            "version": "3.1.3",
+            "version": "3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Files.git",
-                "reference": "7901d0b7721445f4539a61fb9d424d4383376a8d"
+                "reference": "cdee1e0bf298f7071449fd734480fbb73fcac673"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Files/zipball/7901d0b7721445f4539a61fb9d424d4383376a8d",
-                "reference": "7901d0b7721445f4539a61fb9d424d4383376a8d",
+                "url": "https://api.github.com/repos/NetCommons3/Files/zipball/cdee1e0bf298f7071449fd734480fbb73fcac673",
+                "reference": "cdee1e0bf298f7071449fd734480fbb73fcac673",
                 "shasum": ""
             },
             "require": {
@@ -2035,7 +2038,7 @@
                 "cakephp",
                 "files"
             ],
-            "time": "2017-07-01T01:50:57+00:00"
+            "time": "2017-08-11T01:43:56+00:00"
         },
         {
             "name": "netcommons/frames",
@@ -2419,16 +2422,16 @@
         },
         {
             "name": "netcommons/m17n",
-            "version": "3.1.3",
+            "version": "3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/M17n.git",
-                "reference": "091a3026cafe9a21092dc59a8b9dc499247344a0"
+                "reference": "b08838150dbb7a1301a5519d915871ef3c6e0e83"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/M17n/zipball/091a3026cafe9a21092dc59a8b9dc499247344a0",
-                "reference": "091a3026cafe9a21092dc59a8b9dc499247344a0",
+                "url": "https://api.github.com/repos/NetCommons3/M17n/zipball/b08838150dbb7a1301a5519d915871ef3c6e0e83",
+                "reference": "b08838150dbb7a1301a5519d915871ef3c6e0e83",
                 "shasum": ""
             },
             "require": {
@@ -2461,7 +2464,7 @@
                 "cakephp",
                 "m17n"
             ],
-            "time": "2017-06-28T13:50:27+00:00"
+            "time": "2017-08-01T09:51:32+00:00"
         },
         {
             "name": "netcommons/mails",
@@ -2574,16 +2577,16 @@
         },
         {
             "name": "netcommons/multidatabases",
-            "version": "3.1.3",
+            "version": "3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Multidatabases.git",
-                "reference": "70c94f8384eef7266030a6db19478b9b0a5fca8e"
+                "reference": "e91b790a5e9887ccfe86b188f5860cb3e9495aed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Multidatabases/zipball/70c94f8384eef7266030a6db19478b9b0a5fca8e",
-                "reference": "70c94f8384eef7266030a6db19478b9b0a5fca8e",
+                "url": "https://api.github.com/repos/NetCommons3/Multidatabases/zipball/e91b790a5e9887ccfe86b188f5860cb3e9495aed",
+                "reference": "e91b790a5e9887ccfe86b188f5860cb3e9495aed",
                 "shasum": ""
             },
             "require": {
@@ -2621,20 +2624,20 @@
                 "cakephp",
                 "multidatabases"
             ],
-            "time": "2017-06-28T13:52:47+00:00"
+            "time": "2017-08-17T09:14:07+00:00"
         },
         {
             "name": "netcommons/net-commons",
-            "version": "3.1.3",
+            "version": "3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/NetCommons.git",
-                "reference": "5cbc1eb3576a265e30d4e432a73432140d651bf8"
+                "reference": "2231795a54db173a21a94ae0759ed971f923efcb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/NetCommons/zipball/5cbc1eb3576a265e30d4e432a73432140d651bf8",
-                "reference": "5cbc1eb3576a265e30d4e432a73432140d651bf8",
+                "url": "https://api.github.com/repos/NetCommons3/NetCommons/zipball/2231795a54db173a21a94ae0759ed971f923efcb",
+                "reference": "2231795a54db173a21a94ae0759ed971f923efcb",
                 "shasum": ""
             },
             "require": {
@@ -2689,20 +2692,20 @@
                 "cakephp",
                 "netcommons"
             ],
-            "time": "2017-07-17T09:02:26+00:00"
+            "time": "2017-08-14T21:37:23+00:00"
         },
         {
             "name": "netcommons/notifications",
-            "version": "3.1.3",
+            "version": "3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Notifications.git",
-                "reference": "f95f22631776f7560c390e99e18a5b9f061f8b53"
+                "reference": "dbe6d320842d9dd46f5186b45fbed1de280b70bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Notifications/zipball/f95f22631776f7560c390e99e18a5b9f061f8b53",
-                "reference": "f95f22631776f7560c390e99e18a5b9f061f8b53",
+                "url": "https://api.github.com/repos/NetCommons3/Notifications/zipball/dbe6d320842d9dd46f5186b45fbed1de280b70bd",
+                "reference": "dbe6d320842d9dd46f5186b45fbed1de280b70bd",
                 "shasum": ""
             },
             "require": {
@@ -2733,20 +2736,20 @@
                 "cakephp",
                 "notifications"
             ],
-            "time": "2017-06-28T13:53:24+00:00"
+            "time": "2017-08-09T22:18:16+00:00"
         },
         {
             "name": "netcommons/pages",
-            "version": "3.1.3",
+            "version": "3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Pages.git",
-                "reference": "334e51421862400237d298e4732ebb249dcf0880"
+                "reference": "725d3ca893652c56a40d08be8b0843f613560c04"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Pages/zipball/334e51421862400237d298e4732ebb249dcf0880",
-                "reference": "334e51421862400237d298e4732ebb249dcf0880",
+                "url": "https://api.github.com/repos/NetCommons3/Pages/zipball/725d3ca893652c56a40d08be8b0843f613560c04",
+                "reference": "725d3ca893652c56a40d08be8b0843f613560c04",
                 "shasum": ""
             },
             "require": {
@@ -2790,7 +2793,7 @@
                 "cakephp",
                 "pages"
             ],
-            "time": "2017-07-18T12:09:42+00:00"
+            "time": "2017-08-13T04:30:23+00:00"
         },
         {
             "name": "netcommons/photo-albums",
@@ -2839,16 +2842,16 @@
         },
         {
             "name": "netcommons/plugin-manager",
-            "version": "3.1.3",
+            "version": "3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/PluginManager.git",
-                "reference": "10e79e213cb156c7c69250544984cba8dde1f164"
+                "reference": "9cb446771fb4586f83eefe8a622487973acebd72"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/PluginManager/zipball/10e79e213cb156c7c69250544984cba8dde1f164",
-                "reference": "10e79e213cb156c7c69250544984cba8dde1f164",
+                "url": "https://api.github.com/repos/NetCommons3/PluginManager/zipball/9cb446771fb4586f83eefe8a622487973acebd72",
+                "reference": "9cb446771fb4586f83eefe8a622487973acebd72",
                 "shasum": ""
             },
             "require": {
@@ -2888,7 +2891,7 @@
                 "cakephp",
                 "plugin-manager"
             ],
-            "time": "2017-06-28T14:03:19+00:00"
+            "time": "2017-07-25T10:39:16+00:00"
         },
         {
             "name": "netcommons/private-space",
@@ -3134,16 +3137,16 @@
         },
         {
             "name": "netcommons/registrations",
-            "version": "3.1.3",
+            "version": "3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Registrations.git",
-                "reference": "9426290099819c4254e24f8fdafe5d4ee8b44e9a"
+                "reference": "227e9a8701bda059825e3d6dffc5dfc196442590"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Registrations/zipball/9426290099819c4254e24f8fdafe5d4ee8b44e9a",
-                "reference": "9426290099819c4254e24f8fdafe5d4ee8b44e9a",
+                "url": "https://api.github.com/repos/NetCommons3/Registrations/zipball/227e9a8701bda059825e3d6dffc5dfc196442590",
+                "reference": "227e9a8701bda059825e3d6dffc5dfc196442590",
                 "shasum": ""
             },
             "require": {
@@ -3211,20 +3214,20 @@
                 "cakephp",
                 "registrations"
             ],
-            "time": "2017-06-28T08:29:34+00:00"
+            "time": "2017-07-19T00:39:07+00:00"
         },
         {
             "name": "netcommons/reservations",
-            "version": "3.1.3",
+            "version": "3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Reservations.git",
-                "reference": "81ba4bbc2dad8377144d24b88c3651bb785fbd99"
+                "reference": "88581d8e7159dee15566496ee35d799621aa3fa6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Reservations/zipball/81ba4bbc2dad8377144d24b88c3651bb785fbd99",
-                "reference": "81ba4bbc2dad8377144d24b88c3651bb785fbd99",
+                "url": "https://api.github.com/repos/NetCommons3/Reservations/zipball/88581d8e7159dee15566496ee35d799621aa3fa6",
+                "reference": "88581d8e7159dee15566496ee35d799621aa3fa6",
                 "shasum": ""
             },
             "require": {
@@ -3286,7 +3289,7 @@
                 "cakephp",
                 "reservations"
             ],
-            "time": "2017-06-30T01:04:27+00:00"
+            "time": "2017-08-02T23:03:45+00:00"
         },
         {
             "name": "netcommons/roles",
@@ -3335,16 +3338,16 @@
         },
         {
             "name": "netcommons/rooms",
-            "version": "3.1.3",
+            "version": "3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Rooms.git",
-                "reference": "b003c2dfa9871d2849c4faa16845db25098e800b"
+                "reference": "f9d52c277a2704d902fd80fbe2502d0db9b6a85b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Rooms/zipball/b003c2dfa9871d2849c4faa16845db25098e800b",
-                "reference": "b003c2dfa9871d2849c4faa16845db25098e800b",
+                "url": "https://api.github.com/repos/NetCommons3/Rooms/zipball/f9d52c277a2704d902fd80fbe2502d0db9b6a85b",
+                "reference": "f9d52c277a2704d902fd80fbe2502d0db9b6a85b",
                 "shasum": ""
             },
             "require": {
@@ -3396,7 +3399,7 @@
                 "netcommons",
                 "rooms"
             ],
-            "time": "2017-07-11T10:15:12+00:00"
+            "time": "2017-08-09T09:44:59+00:00"
         },
         {
             "name": "netcommons/rss-readers",
@@ -3454,16 +3457,16 @@
         },
         {
             "name": "netcommons/searches",
-            "version": "3.1.3",
+            "version": "3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Searches.git",
-                "reference": "10d48515391f1ba0eac10ca66df732318dcb53e8"
+                "reference": "3df6a8cf640d7f1dd51fc8e10777ab408e0d1479"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Searches/zipball/10d48515391f1ba0eac10ca66df732318dcb53e8",
-                "reference": "10d48515391f1ba0eac10ca66df732318dcb53e8",
+                "url": "https://api.github.com/repos/NetCommons3/Searches/zipball/3df6a8cf640d7f1dd51fc8e10777ab408e0d1479",
+                "reference": "3df6a8cf640d7f1dd51fc8e10777ab408e0d1479",
                 "shasum": ""
             },
             "require": {
@@ -3504,20 +3507,20 @@
                 "cakephp",
                 "searches"
             ],
-            "time": "2017-06-28T14:12:23+00:00"
+            "time": "2017-08-10T02:46:30+00:00"
         },
         {
             "name": "netcommons/site-manager",
-            "version": "3.1.3",
+            "version": "3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/SiteManager.git",
-                "reference": "535397f698b888aeb0d7f33fa3dbdc8080ccff79"
+                "reference": "6e6fe5445c08ed6a2154bd4b083fd326bdf98e5b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/SiteManager/zipball/535397f698b888aeb0d7f33fa3dbdc8080ccff79",
-                "reference": "535397f698b888aeb0d7f33fa3dbdc8080ccff79",
+                "url": "https://api.github.com/repos/NetCommons3/SiteManager/zipball/6e6fe5445c08ed6a2154bd4b083fd326bdf98e5b",
+                "reference": "6e6fe5445c08ed6a2154bd4b083fd326bdf98e5b",
                 "shasum": ""
             },
             "require": {
@@ -3563,7 +3566,7 @@
                 "cakephp",
                 "site_manager"
             ],
-            "time": "2017-06-28T14:13:06+00:00"
+            "time": "2017-08-14T22:39:29+00:00"
         },
         {
             "name": "netcommons/system-manager",
@@ -3670,21 +3673,22 @@
         },
         {
             "name": "netcommons/tasks",
-            "version": "3.1.3",
+            "version": "3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Tasks.git",
-                "reference": "0623eb4a4d27be16e172321ea37f32698286aa3b"
+                "reference": "5cc7224437039ca7530def7c6b7d49ee77425387"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Tasks/zipball/0623eb4a4d27be16e172321ea37f32698286aa3b",
-                "reference": "0623eb4a4d27be16e172321ea37f32698286aa3b",
+                "url": "https://api.github.com/repos/NetCommons3/Tasks/zipball/5cc7224437039ca7530def7c6b7d49ee77425387",
+                "reference": "5cc7224437039ca7530def7c6b7d49ee77425387",
                 "shasum": ""
             },
             "require": {
                 "cakedc/migrations": "~2.2",
                 "netcommons/blocks": "@dev",
+                "netcommons/calendars": "@dev",
                 "netcommons/categories": "@dev",
                 "netcommons/content-comments": "@dev",
                 "netcommons/groups": "@dev",
@@ -3726,7 +3730,7 @@
                 "Tasks",
                 "cakephp"
             ],
-            "time": "2017-06-28T14:14:10+00:00"
+            "time": "2017-08-01T08:43:06+00:00"
         },
         {
             "name": "netcommons/theme-settings",
@@ -3773,16 +3777,16 @@
         },
         {
             "name": "netcommons/topics",
-            "version": "3.1.3",
+            "version": "3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Topics.git",
-                "reference": "751f57430daf3c929bda31e0dc602686c9f5c095"
+                "reference": "b6870d05426494e09cff7fb6672adea5b3c87f56"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Topics/zipball/751f57430daf3c929bda31e0dc602686c9f5c095",
-                "reference": "751f57430daf3c929bda31e0dc602686c9f5c095",
+                "url": "https://api.github.com/repos/NetCommons3/Topics/zipball/b6870d05426494e09cff7fb6672adea5b3c87f56",
+                "reference": "b6870d05426494e09cff7fb6672adea5b3c87f56",
                 "shasum": ""
             },
             "require": {
@@ -3828,7 +3832,7 @@
                 "cakephp",
                 "topics"
             ],
-            "time": "2017-06-28T14:15:49+00:00"
+            "time": "2017-08-09T13:21:29+00:00"
         },
         {
             "name": "netcommons/user-attributes",
@@ -3941,16 +3945,16 @@
         },
         {
             "name": "netcommons/user-roles",
-            "version": "3.1.3",
+            "version": "3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/UserRoles.git",
-                "reference": "fa127674fa304b99a3daa16b5d008f89973daf06"
+                "reference": "a55f4905a6bd04c93fe9be23d9a17a64a8c1328b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/UserRoles/zipball/fa127674fa304b99a3daa16b5d008f89973daf06",
-                "reference": "fa127674fa304b99a3daa16b5d008f89973daf06",
+                "url": "https://api.github.com/repos/NetCommons3/UserRoles/zipball/a55f4905a6bd04c93fe9be23d9a17a64a8c1328b",
+                "reference": "a55f4905a6bd04c93fe9be23d9a17a64a8c1328b",
                 "shasum": ""
             },
             "require": {
@@ -3991,20 +3995,20 @@
                 "cakephp",
                 "user_roles"
             ],
-            "time": "2017-06-28T14:17:10+00:00"
+            "time": "2017-08-12T07:40:25+00:00"
         },
         {
             "name": "netcommons/users",
-            "version": "3.1.3",
+            "version": "3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Users.git",
-                "reference": "859978db1a0ed04f69d87a4b0382c34296ab6487"
+                "reference": "1c71ccb5bacfb87da4f6bbc0fc03020671498366"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Users/zipball/859978db1a0ed04f69d87a4b0382c34296ab6487",
-                "reference": "859978db1a0ed04f69d87a4b0382c34296ab6487",
+                "url": "https://api.github.com/repos/NetCommons3/Users/zipball/1c71ccb5bacfb87da4f6bbc0fc03020671498366",
+                "reference": "1c71ccb5bacfb87da4f6bbc0fc03020671498366",
                 "shasum": ""
             },
             "require": {
@@ -4049,20 +4053,20 @@
                 "cakephp",
                 "user"
             ],
-            "time": "2017-06-28T14:27:25+00:00"
+            "time": "2017-08-13T09:50:39+00:00"
         },
         {
             "name": "netcommons/videos",
-            "version": "3.1.3",
+            "version": "3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Videos.git",
-                "reference": "a67df3dc260a58bb860ee7ae6466bfbda08bf9a5"
+                "reference": "f11fe5eb9fc65d047466c788775af0aa4496dbbc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Videos/zipball/a67df3dc260a58bb860ee7ae6466bfbda08bf9a5",
-                "reference": "a67df3dc260a58bb860ee7ae6466bfbda08bf9a5",
+                "url": "https://api.github.com/repos/NetCommons3/Videos/zipball/f11fe5eb9fc65d047466c788775af0aa4496dbbc",
+                "reference": "f11fe5eb9fc65d047466c788775af0aa4496dbbc",
                 "shasum": ""
             },
             "require": {
@@ -4110,7 +4114,7 @@
                 "cakephp",
                 "videos"
             ],
-            "time": "2017-06-28T14:27:49+00:00"
+            "time": "2017-08-16T03:14:27+00:00"
         },
         {
             "name": "netcommons/visual-captcha",
@@ -4225,16 +4229,16 @@
         },
         {
             "name": "netcommons/wysiwyg",
-            "version": "3.1.3",
+            "version": "3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Wysiwyg.git",
-                "reference": "da8f1c85b8de9ce36c70384c80f6d135eb816a2e"
+                "reference": "4febf2bd8c82dc1875951f1bb148ac620b35a791"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Wysiwyg/zipball/da8f1c85b8de9ce36c70384c80f6d135eb816a2e",
-                "reference": "da8f1c85b8de9ce36c70384c80f6d135eb816a2e",
+                "url": "https://api.github.com/repos/NetCommons3/Wysiwyg/zipball/4febf2bd8c82dc1875951f1bb148ac620b35a791",
+                "reference": "4febf2bd8c82dc1875951f1bb148ac620b35a791",
                 "shasum": ""
             },
             "require": {
@@ -4266,7 +4270,7 @@
                 "cakephp",
                 "wysiwyg"
             ],
-            "time": "2017-06-28T14:31:21+00:00"
+            "time": "2017-08-16T09:35:20+00:00"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -6494,7 +6498,7 @@
         },
         {
             "name": "symfony/config",
-            "version": "v2.8.25",
+            "version": "v2.8.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/config.git",
@@ -6550,16 +6554,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v2.8.25",
+            "version": "v2.8.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "46e65f8d98c9ab629bbfcc16a4ff023f61c37fb2"
+                "reference": "32a3c6b3398de5db8ed381f4ef92970c59c2fcdd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/46e65f8d98c9ab629bbfcc16a4ff023f61c37fb2",
-                "reference": "46e65f8d98c9ab629bbfcc16a4ff023f61c37fb2",
+                "url": "https://api.github.com/repos/symfony/console/zipball/32a3c6b3398de5db8ed381f4ef92970c59c2fcdd",
+                "reference": "32a3c6b3398de5db8ed381f4ef92970c59c2fcdd",
                 "shasum": ""
             },
             "require": {
@@ -6607,20 +6611,20 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2017-07-03T08:04:30+00:00"
+            "time": "2017-07-29T21:26:04+00:00"
         },
         {
             "name": "symfony/debug",
-            "version": "v2.8.25",
+            "version": "v2.8.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
-                "reference": "8470d7701177a88edeb0cec59b44d50ef4477e9b"
+                "reference": "236ca98a425758cc8c2ff2db423bfe4d1a736b8c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/debug/zipball/8470d7701177a88edeb0cec59b44d50ef4477e9b",
-                "reference": "8470d7701177a88edeb0cec59b44d50ef4477e9b",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/236ca98a425758cc8c2ff2db423bfe4d1a736b8c",
+                "reference": "236ca98a425758cc8c2ff2db423bfe4d1a736b8c",
                 "shasum": ""
             },
             "require": {
@@ -6664,20 +6668,20 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2017-06-01T20:52:29+00:00"
+            "time": "2017-07-28T15:21:22+00:00"
         },
         {
             "name": "symfony/dependency-injection",
-            "version": "v2.8.25",
+            "version": "v2.8.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dependency-injection.git",
-                "reference": "db8bdcfc6f54c6968756f31c8a9ea77ac10d08d7"
+                "reference": "e70f025ae0b100600de58fadbd97efe3044e6bfb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/db8bdcfc6f54c6968756f31c8a9ea77ac10d08d7",
-                "reference": "db8bdcfc6f54c6968756f31c8a9ea77ac10d08d7",
+                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/e70f025ae0b100600de58fadbd97efe3044e6bfb",
+                "reference": "e70f025ae0b100600de58fadbd97efe3044e6bfb",
                 "shasum": ""
             },
             "require": {
@@ -6727,11 +6731,11 @@
             ],
             "description": "Symfony DependencyInjection Component",
             "homepage": "https://symfony.com",
-            "time": "2017-07-17T14:02:19+00:00"
+            "time": "2017-07-28T15:21:22+00:00"
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v2.8.25",
+            "version": "v2.8.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
@@ -6791,7 +6795,7 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v2.8.25",
+            "version": "v2.8.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
@@ -6840,7 +6844,7 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v2.8.25",
+            "version": "v2.8.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
@@ -6889,16 +6893,16 @@
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.4.0",
+            "version": "v1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "f29dca382a6485c3cbe6379f0c61230167681937"
+                "reference": "7c8fae0ac1d216eb54349e6a8baa57d515fe8803"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/f29dca382a6485c3cbe6379f0c61230167681937",
-                "reference": "f29dca382a6485c3cbe6379f0c61230167681937",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/7c8fae0ac1d216eb54349e6a8baa57d515fe8803",
+                "reference": "7c8fae0ac1d216eb54349e6a8baa57d515fe8803",
                 "shasum": ""
             },
             "require": {
@@ -6910,7 +6914,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.4-dev"
+                    "dev-master": "1.5-dev"
                 }
             },
             "autoload": {
@@ -6944,11 +6948,11 @@
                 "portable",
                 "shim"
             ],
-            "time": "2017-06-09T14:24:12+00:00"
+            "time": "2017-06-14T15:44:48+00:00"
         },
         {
             "name": "symfony/process",
-            "version": "v2.8.25",
+            "version": "v2.8.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
@@ -6997,7 +7001,7 @@
         },
         {
             "name": "symfony/stopwatch",
-            "version": "v2.8.25",
+            "version": "v2.8.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/stopwatch.git",
@@ -7046,7 +7050,7 @@
         },
         {
             "name": "symfony/translation",
-            "version": "v2.8.25",
+            "version": "v2.8.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation.git",
@@ -7110,16 +7114,16 @@
         },
         {
             "name": "symfony/validator",
-            "version": "v2.8.25",
+            "version": "v2.8.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/validator.git",
-                "reference": "6c019627f2a69b9ab2ac41fd53102148a55af564"
+                "reference": "83fb5d927f481c98573fc110c38b7fe69f9189f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/validator/zipball/6c019627f2a69b9ab2ac41fd53102148a55af564",
-                "reference": "6c019627f2a69b9ab2ac41fd53102148a55af564",
+                "url": "https://api.github.com/repos/symfony/validator/zipball/83fb5d927f481c98573fc110c38b7fe69f9189f5",
+                "reference": "83fb5d927f481c98573fc110c38b7fe69f9189f5",
                 "shasum": ""
             },
             "require": {
@@ -7179,11 +7183,11 @@
             ],
             "description": "Symfony Validator Component",
             "homepage": "https://symfony.com",
-            "time": "2017-07-03T08:04:30+00:00"
+            "time": "2017-07-26T06:29:15+00:00"
         },
         {
             "name": "symfony/yaml",
-            "version": "v2.8.25",
+            "version": "v2.8.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
