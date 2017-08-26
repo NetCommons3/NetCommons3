@@ -30,7 +30,7 @@
         "phpdocumentor/phpdocumentor":  "2.*@stable",
         "phploc/phploc":                "2.*@stable",
         "phpmd/phpmd" :                 "@stable",
-        "phpunit/phpunit":              "~3.7.38@stable",
+        "phpunit/phpunit":              "*@stable",
         "satooshi/php-coveralls":       "~1.0@stable",
         "sebastian/phpcpd":             "*@stable",
         "symfony/debug":                "2.8.*@stable",
