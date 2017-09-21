@@ -1,0 +1,434 @@
+/*
+ * style.css for Michael the 4th
+ * Akazawa Studio LLC
+ */
+html, body {
+    height:100%;
+}
+body{
+    padding-top: 30px;
+    color:#000000;
+}
+main.container, main.container-fluid {
+    margin-top: 10px;
+    margin-bottom:50px;
+}
+/* header
+--------------------*/
+.navbar {
+    min-height:30px;
+    margin-bottom:0px;
+    border:none;
+}
+.frame.nc-content-list header, .frame.nc-content header {
+    margin-bottom:0px;
+}
+.navbar-brand { /* ミカエル研究所 */
+    height:30px;
+    padding:3px 15px 0px 15px;
+    font-size:1.2em;
+    line-height:normal;
+}
+.navbar-nav > li > a {  /* ログイン */
+    padding-top:4px !important;
+    padding-bottom:5px !important;
+    line-height:normal;
+}
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-brand:visited {
+    color:#F05A82;
+    font-weight:normal;
+}
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
+    color:#E11950;
+    font-weight:bold;
+}
+.navbar-inverse {
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+    opacity:0.7;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color:#787878;
+}
+.navbar-inverse .navbar-nav>li>a:hover {
+    color:#000000;
+}
+/* link
+--------------------*/
+a {
+    color: #468CF0;
+    text-decoration: none;
+}
+a:hover, a:focus {
+    color: #266CD0;
+    text-decoration: underline;
+}
+/* Button
+--------------------*/
+.btn-default {
+    color: #fff;
+    background-color: #787878;
+    border-color: #787878;
+}
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
+    color: #fff;
+    background-color: #5A5A5A;
+    border-color: #5A5A5A;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #F05A82;
+    border-color: #F05A82;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #E11950;
+    border-color: #E11950;
+}
+.btn-info {
+    color: #000;
+    background-color: #FF8CB4;
+    border-color: #FF8CB4;;
+}
+.btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .open .dropdown-toggle.btn-info {
+    color: #000;
+    background-color: #FF5AA0;
+    border-color: #FF5AA0;
+}
+.btn-success {
+    color: #fff;
+    background-color: #6EAA3C;
+    border-color: #6EAA3C;
+}
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open .dropdown-toggle.btn-success {
+    color: #fff;
+    background-color: #4E881C;
+    border-color: #4E881C;
+}
+.btn-warning {
+    color: #000;
+    background-color: #AAD228;
+    border-color: #AAD228
+}
+.btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active, .open .dropdown-toggle.btn-warning {
+    color: #000;
+    background-color: #8AAF14;
+    border-color: #8AAF14;
+}
+.btn-danger {
+    color: #000;
+    background-color: #F5A000;
+    border-color: #F5A000;
+}
+.btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active, .open .dropdown-toggle.btn-danger {
+    color: #000;
+    background-color: #D58000;
+    border-color: #D58000;
+}
+.btn-link:hover, .btn-link:focus, .btn-link:active, .btn-link.active, .open .dropdown-toggle.btn-link {
+    background-color:#F0F0F0;
+    border-color:#F0F0F0;
+    border-radius:4px;
+    text-decoration:none;
+}
+/* For forgetting password */
+.wizard-steps .btn-primary{
+    background-color:transparent;
+}
+/* Large button , Button block*/
+.btn-lg, .btn-block {
+    border-radius:0px;
+}
+/* heading
+--------------------*/
+.panel-default {
+    border-color: #787878;
+}
+.panel-default>.panel-heading {
+    color: #fff;
+    background-color: #787878;
+    border-color: #787878;
+}
+.panel-primary {
+    border-color: #F05A82;
+}
+.panel-primary>.panel-heading {
+    color: #fff;
+    background-color: #F05A82;
+    border-color: #F05A82;
+}
+.panel-info {
+    border-color: #FF8CB4;
+}
+.panel-info>.panel-heading {
+    color: #000000;
+    background-color: #FF8CB4;
+    border-color: #FF8CB4;
+}
+.panel-success {
+    border-color: #6EAA3C;
+}
+.panel-success>.panel-heading {
+    color: #fff;
+    background-color: #6EAA3C;
+    border-color: #6EAA3C;
+}
+.panel-warning {
+    border-color: #AAD228;
+}
+.panel-warning>.panel-heading {
+    color: #000000;
+    background-color: #AAD228;
+    border-color: #AAD228;
+}
+.panel-danger {
+    border-color: #F5A000;
+}
+.panel-danger>.panel-heading {
+    color: #000000;
+    background-color: #F5A000;
+    border-color: #F5A000;
+}
+/* List menu
+--------------------*/
+a.list-group-item {
+    color:#000;
+    background-color:#F0F0F0;
+    padding:6px 6px 4px 10px;
+}
+a.list-group-item:hover {
+    color:#000;
+    background-color:#DCDCDC;
+}
+.list-group-item:first-child, .list-group-item:last-child {
+    border-radius:0;
+}
+.list-group-item.menu-tree-0 {
+    border:solid 2px #ffffff;
+    border-radius:8px !important;
+}
+.list-group-item.menu-tree-0 .pull-left:before {
+    content: '';
+    display:inline-block;
+    width:30px;
+    height:30px;
+    background-image:url(../images/nikukyu_gray50.png);
+    background-size:contain;
+    vertical-align:middle;
+    margin-right:0.5em;
+}
+.list-group-item.menu-tree-0.active .pull-left:before {
+    background-image:url(../images/nikukyu_white50.png);
+}
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+    color: #fff;
+    background-color: #FF8CB4;
+    border-color: #ffffff;
+    border-radius:6px;
+}
+.list-group-item.menu-tree-1 {
+    border:none;
+    border-radius:0;
+    margin-top:2px;
+    margin-bottom:2px;
+    padding:8px 15px;
+}
+.list-group-item.menu-tree-1.active {
+    border-radius:0;
+}
+.list-group-item.menu-tree-1:not(.active) {
+    color:#000;
+    background-color: #ffffff;
+    border-bottom:solid 1px #787878;
+}
+.list-group-item.menu-tree-1:not(.active):hover {
+    background-color:#DCDCDC;
+}
+.list-group-item > .pull-right > .glyphicon {
+    top:0.4em;
+}
+/* nav-tabs
+--------------------*/
+ul.nav-tabs {
+    margin-bottom:0;
+}
+.nav-tabs > li {
+    border-radius: 8px;
+}
+.nav-tabs > li:hover {
+    background-color:#F0F0F0;
+}
+.nav-tabs > li > a{
+    padding:6px 15px;
+    line-height:1em;
+}
+.nav-tabs > li.active, .nav-tabs > li:not(.active) {
+    border:none;
+}
+.nav-tabs > li:not(.active) > a {
+    color:#000;
+}
+.nav-tabs > li:not(.active) > a span:first-child:before {
+    content: url(../images/nikukyu_gray30.png) "\A";
+    white-space: pre;
+}
+.nav-tabs > li.active > a , .nav-tabs > li.active > a:hover {
+    color:#F05A82;
+    cursor: pointer !important;
+    font-weight:bold;
+}
+.nav-tabs > li.active > a span:first-child:before {
+    content: url(../images/nikukyu_pink30.png) "\A";
+    white-space: pre;
+}
+.nav-tabs > li:not(.active):hover, .nav-tabs > li:not(.active):focus {
+    border-radius:8px;
+    background-color:#F0F0F0;
+}
+/* footer-menu (nav-pills)
+--------------------------*/
+ul.nav-pills {
+    margin-bottom:0;
+}
+.nav-pills > li  {
+    border-radius:0;
+    border:none;
+    background-color:#FFFFFF !important;
+    padding:0px 3px;
+}
+.nav-pills > li:first-child {
+    padding-left:0px;
+}
+.nav-pills > li:last-child {
+    padding-right:0px;
+}
+.nav-pills > li > a {
+    padding:6px 0px;
+    line-height:1em;
+}
+.nav-pills > li.active > a {
+    border:2px solid #FF8CB4;
+    border-radius:8px;
+}
+.nav-pills > li:not(.active) > a {
+    color:#000;
+    border:2px solid #DCDCDC;    
+    border-radius:8px;
+}
+.nav-pills > li:not(.active) > a span:first-child:before {
+    content: url(../images/nikukyu_gray30.png) "\A";
+    white-space: pre;
+}
+.nav-pills > li.active > a , .nav-pills > li.active > a:hover {
+    color:#F05A82;
+    cursor: pointer !important;
+    font-weight:bold;
+}
+.nav-pills > li.active > a span:first-child:before {
+    content: url(../images/nikukyu_pink30.png) "\A";
+    white-space: pre;
+}
+/* bread crumb
+--------------------*/
+.breadcrumb {
+    padding:4px 15px;
+    border-radius:0;
+    margin-bottom:0;
+    background-color:transparent;
+}
+.breadcrumb a {
+    color:#FF8CB4;
+}
+/* nc-system-footer
+--------------------*/
+#nc-system-footer{
+    position:fixed;
+    bottom:0px;
+    width:100%;
+    min-height:30px;
+    padding-top:4px;
+    margin-top:0px;
+    background-color:#ffffff;
+    border-top:1px solid #787878;
+    opacity:0.8;
+}
+#nc-system-footer .copyright{
+    color:#787878;
+}
+/* others
+--------------------*/
+/* To align positions of Left Menu and Center Contents */
+.panel-none .panel-body {
+    padding-top:0;
+}
+.jumbotron {
+    margin-bottom:0;
+}
+/* Site Manager
+-------------------*/
+.plugin-site-manager .nav {
+    margin-bottom:1.2em;
+}
+/* .nav-tabs */
+.plugin-site-manager .nav-tabs {
+    border:none;
+}
+.plugin-site-manager .nav-tabs > li {
+    border-radius:8px;
+    text-align:center;
+}
+.plugin-site-manager .nav-tabs li > a {
+    border-radius:8px !important;
+    border:none;
+}
+.plugin-site-manager .nav-tabs > li.active > a:before {
+    content: url(../images/nikukyu_pink30.png) "\A";
+    white-space: pre;
+}
+.plugin-site-manager .nav-tabs > li:not(.active) > a:before {
+    content: url(../images/nikukyu_gray30.png) "\A";
+    white-space: pre;
+}
+.plugin-site-manager .nav-tabs>li.active>a, .plugin-site-manager .nav-tabs>li.active>a:hover {
+    border:none;
+    background-color:transparent;
+}
+/* .nav-pills */
+.plugin-site-manager .nav-pills > li {
+    text-align:center;
+}
+.plugin-site-manager .nav-pills > li > a, .plugin-site-manager .nav-pills > li > a:hover {
+    background-color:#FFFFFF;
+    padding:6px;
+}
+.plugin-site-manager .nav-pills > li.active > a:before {
+    content: url(../images/nikukyu_pink30.png) "\A";
+    white-space: pre;
+}
+.plugin-site-manager .nav-pills > li:not(.active) > a:before {
+    content: url(../images/nikukyu_gray30.png) "\A";
+    white-space: pre;
+}
+.plugin-site-manager .nav-pills > li:not(.active) > a:hover, .plugin-site-manager .nav-pills > li:not(.active) > a:focus {
+    border-radius:8px;
+    background-color:#F0F0F0;
+}
+/* List menu */
+.control-panel-nav .list-group-item {
+    border:solid 2px #ffffff;
+    border-radius:8px;
+    padding:4px 0px 2px 4px;
+}
+.control-panel-nav .list-group-item:before{
+    content: '';
+    display:inline-block;
+    width:30px;
+    height:30px;
+    background-image:url(../images/nikukyu_gray50.png);
+    background-size:contain;
+    vertical-align:middle;
+    margin-right:0.2em;
+}
+.control-panel-nav .list-group-item.active:before {
+    background-image:url(../images/nikukyu_white50.png);
+}

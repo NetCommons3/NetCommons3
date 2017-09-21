@@ -1,0 +1,20 @@
+{
+    "name": "Michael the 2nd",
+    "description": "NetCommons3 Theme Michael the 2nd",
+    "version": "3.0.0",
+    "homepage" : "https://github.com/NetCommons3/NetCommons3",
+    "authors": [
+        {
+            "name": "Akazawa Studio LLC & Faneg factory",
+            "homepage": "https://www.akazawa.org"
+        }
+    ],
+    "license": "NetCommons License",
+    "keywords": ["michael"],
+    "dependencies": {
+        "bootstrap": "~3.1",
+        "jquery": "~2.1",
+        "NetCommons3": "3.1.3"
+    }
+}
+

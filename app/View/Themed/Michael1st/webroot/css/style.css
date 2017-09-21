@@ -1,0 +1,317 @@
+/*
+ * style.css for Michael the 1st
+ * Akazawa Studio LLC
+ */
+html, body {
+    height:100%;
+}
+body{
+    padding-top: 50px;
+    color:#000000;
+}
+main.container, main.container-fluid {
+    margin-top: 10px;
+    margin-bottom:50px;
+}
+/* header
+--------------------*/
+.navbar-inverse .navbar-brand {
+    color:#AAD228;
+}
+.navbar-inverse {
+    background-color: #646464;
+    border-color: #646464;
+}
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
+    color: #fff;
+}
+/* link
+--------------------*/
+a {
+    color: #E61E23;
+    text-decoration: none;
+}
+a:hover, a:focus {
+    color: #C60000;
+    text-decoration: underline;
+}
+/* Button
+--------------------*/
+.btn-default {
+    color: #ffffff;
+    background-color: #646464;
+    border-color: #646464;
+}
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
+    color: #ffffff;
+    background-color: #444444;
+    border-color: #444444;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #6EAA3C;
+    border-color: #6EAA3C;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #4E881C;
+    border-color: #4E881C;
+}
+.btn-info {
+    color: #000;
+    background-color: #AAD228;
+    border-color: #AAD228;;
+}
+.btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .open .dropdown-toggle.btn-info {
+    color: #000;
+    background-color: #8AAF14;
+    border-color: #8AAF14;
+}
+.btn-success {
+    color: #fff;
+    background-color: #B46E28;
+    border-color: #B46E28;
+}
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open .dropdown-toggle.btn-success {
+    color: #fff;
+    background-color: #944E01;
+    border-color: #944E01;
+}
+.btn-warning {
+    color: #000;
+    background-color: #F5A000;
+    border-color: #F5A000
+}
+.btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active, .open .dropdown-toggle.btn-warning {
+    color: #000;
+    background-color: #D58000;
+    border-color: #D58000;
+}
+.btn-danger {
+    color: #000;
+    background-color: #FAB4AA;
+    border-color: #FAB4AA;
+}
+.btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active, .open .dropdown-toggle.btn-danger {
+    color: #000;
+    background-color: #EB8796;
+    border-color: #EB8796;
+}
+.btn-link:hover, .btn-link:focus, .btn-link:active, .btn-link.active, .open .dropdown-toggle.btn-link {
+    background-color:#dddddd;
+    border-color:#dddddd;
+    border-radius:4px;
+    text-decoration:none;
+}
+/* For forgetting password */
+.wizard-steps .btn-primary{
+    background-color:transparent;
+}
+/* Large button , Button block*/
+.btn-lg, .btn-block {
+    border-radius:0px;
+}
+/* frame headings
+--------------------*/
+.panel-default {
+    border-color: #646464;
+}
+.panel-default>.panel-heading {
+    color: #ffffff;
+    background-color: #646464;
+    border-color: #646464;
+}
+.panel-primary {
+    border-color: #6EAA3C;
+}
+.panel-primary>.panel-heading {
+    color: #ffffff;
+    background-color: #6EAA3C;
+    border-color: #6EAA3C;
+}
+.panel-info {
+    border-color: #AAD228;
+}
+.panel-info>.panel-heading {
+    color: #000000;
+    background-color: #AAD228;
+    border-color: #AAD228;
+}
+.panel-success {
+    border-color: #B46E28;
+}
+.panel-success>.panel-heading {
+    color: #ffffff;
+    background-color: #B46E28;
+    border-color: #B46E28;
+}
+.panel-warning {
+    border-color: #F5A000;
+}
+.panel-warning>.panel-heading {
+    color: #000000;
+    background-color: #F5A000;
+    border-color: #F5A000;
+}
+.panel-danger {
+    border-color: #FAB4AA;
+}
+.panel-danger>.panel-heading {
+    color: #000000;
+    background-color: #FAB4AA;
+    border-color: #FAB4AA;
+}
+/* List menu
+--------------------*/
+a.list-group-item, a.list-group-item:hover {
+    color:#000;
+}
+.list-group-item {
+    background-color: #ffffff;
+    border: 1px solid #646464;
+}
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+    color: #fff;
+    background-color: #6EAA3C;
+    border-color: #6EAA3C;
+}
+/* nav-tabs
+--------------------*/
+ul.nav-tabs {
+    margin-bottom:0;
+}
+.nav-tabs.nav-justified{
+    border-bottom:solid 3px #AAD228;
+}
+.nav-tabs > li {
+    border-radius:0;
+    border:none !important;
+    background-color: #646464;
+}
+.nav.nav-tabs > li > a{
+    padding:8px 15px;
+}
+.menu-header-tabs > li.active {
+    background-color:#AAD228;
+}
+.menu-header-tabs > li.active > a {
+    color:#000000;
+    cursor: pointer !important;
+}
+.menu-header-tabs > li:not(.active) > a {
+    color:#c8c8c8;
+}
+.menu-header-tabs > li:not(.active):hover {
+    background-color:#848484;
+    border-radius:0;
+}
+/* footer-menu (nav-pills)
+--------------------------*/
+ul.nav-pills {
+    margin-bottom:0;
+}
+.nav.menu-footer-tabs > li {
+    border:none;    /* 消し込み */
+    border-radius:0; /* 消し込み */
+    padding:0px 0px;
+}
+.nav.menu-footer-tabs > li.active {
+    background-color:transparent; /* 消し込み */
+}
+.nav.nav-pills > li > a {
+    border-radius:0;    /* 消し込み */
+    padding:8px 3px;
+    background-color:#646464;
+    margin-left:3px;
+    border-bottom:4px solid #AAD228;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.nav.nav-pills > li:first-child > a {
+    margin-left:0px;
+}
+.nav.nav-pills > li.active > a {
+    color:#000;
+    background-color: #AAD228;
+    border-bottom:4px solid #646464;
+}
+.menu-footer-tabs > li:not(.active) > a {
+    color:#c8c8c8;
+}
+.menu-footer-tabs > li:not(.active) > a:hover {
+    color:#fff;
+    background-color: #848484;
+}
+/* bread crumb
+--------------------*/
+.breadcrumb {
+    padding:4px 15px;
+    border-radius:0;
+    margin-bottom:0;
+    background-color:transparent;
+}
+.breadcrumb a {
+    color:#6EAA3C;
+}
+/* nc-system-footer
+--------------------*/
+#nc-system-footer{
+    position:fixed;
+    bottom:0px;
+    width:100%;
+    min-height:50px;
+    padding-top:15px;
+    margin-top:0px;
+    background-color:#ffffff;
+    opacity:0.8;
+}
+#nc-system-footer .copyright{
+    color:#646464;
+}
+/* others
+--------------------*/
+.panel-none .panel-body {
+    padding-top:0;
+}
+.jumbotron {
+    margin-bottom:0;
+}
+/* Site Manager
+-------------------*/
+.plugin-site-manager .nav {
+    margin-bottom:1.2em;
+}
+/* .nav-tabs */
+.plugin-site-manager .nav-tabs > li > a {
+    border:none; /* 消し込み */
+}
+.plugin-site-manager .nav-tabs {
+    border-radius:0;
+    background-color: #646464;
+    border-bottom:solid 3px #AAD228;
+}
+.plugin-site-manager .nav-tabs li.active > a {
+    color:#000000;
+    background-color:#AAD228;
+    cursor: pointer !important;
+    border:1px solid #AAD228;
+    border-radius:0;
+}
+.plugin-site-manager .nav-tabs li:not(.active) > a {
+    color:#c8c8c8;
+}
+.plugin-site-manager .nav-tabs li:not(.active) > a:hover {
+    background-color:#848484;
+    border-radius:0;
+}
+/* .nav-pills */
+.plugin-site-manager .nav-pills > li > a {
+    padding:8px 15px;
+    color:#C8C8C8;
+}
+.plugin-site-manager .nav-pills li.active > a {
+    color:#000000;
+}
+.plugin-site-manager .nav-pills li:not(.active) > a:hover {
+    background-color:#848484;
+}

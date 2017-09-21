@@ -1,0 +1,309 @@
+/*
+ * style.css for Michael the 3rd
+ * Akazawa Studio LLC
+ */
+html, body {
+    height:100%;
+}
+body{
+    padding-top: 50px;
+    color:#000000;
+}
+main.container, main.container-fluid {
+    margin-top: 10px;
+    margin-bottom:50px;
+}
+/* header
+--------------------*/
+.navbar-inverse .navbar-brand {
+    color:#FF8CB4;
+}
+.navbar-inverse {
+    background-color: #646464;
+    border-color: #646464;
+}
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
+    color: #fff;
+}
+/* link
+--------------------*/
+a {
+    color: #468CF0;
+    text-decoration: none;
+}
+a:hover, a:focus {
+    color: #266CD0;
+    text-decoration: underline;
+}
+/* Button
+--------------------*/
+.btn-default {
+    color: #fff;
+    background-color: #646464;
+    border-color: #646464;
+}
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
+    color: #fff;
+    background-color: #444444;
+    border-color: #444444;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #F05A82;
+    border-color: #F05A82;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #E11950;
+    border-color: #E11950;
+}
+.btn-info {
+    color: #000;
+    background-color: #FF8CB4;
+    border-color: #FF8CB4;;
+}
+.btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .open .dropdown-toggle.btn-info {
+    color: #000;
+    background-color: #FF5AA0;
+    border-color: #FF5AA0;
+}
+.btn-success {
+    color: #fff;
+    background-color: #6EAA3C;
+    border-color: #6EAA3C;
+}
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open .dropdown-toggle.btn-success {
+    color: #fff;
+    background-color: #4E881C;
+    border-color: #4E881C;
+}
+.btn-warning {
+    color: #000;
+    background-color: #AAD228;
+    border-color: #AAD228
+}
+.btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active, .open .dropdown-toggle.btn-warning {
+    color: #000;
+    background-color: #8AAF14;
+    border-color: #8AAF14;
+}
+.btn-danger {
+    color: #000;
+    background-color: #F5A000;
+    border-color: #F5A000;
+}
+.btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active, .open .dropdown-toggle.btn-danger {
+    color: #000;
+    background-color: #D58000;
+    border-color: #D58000;
+}
+.btn-link:hover, .btn-link:focus, .btn-link:active, .btn-link.active, .open .dropdown-toggle.btn-link {
+    background-color:#dddddd;
+    border-color:#dddddd;
+    border-radius:4px;
+    text-decoration:none;
+}
+/* For forgetting password */
+.wizard-steps .btn-primary{
+    background-color:transparent;
+}
+/* Large button , Button block*/
+.btn-lg, .btn-block {
+    border-radius:0px;
+}
+/* frame heading
+--------------------*/
+.panel-default {
+    border-color: #646464;
+}
+.panel-default>.panel-heading {
+    color: #fff;
+    background-color: #646464;
+    border-color: #646464;
+}
+.panel-primary {
+    border-color: #F05A82;
+}
+.panel-primary>.panel-heading {
+    color: #fff;
+    background-color: #F05A82;
+    border-color: #F05A82;
+}
+.panel-info {
+    border-color: #FF8CB4;
+}
+.panel-info>.panel-heading {
+    color: #000000;
+    background-color: #FF8CB4;
+    border-color: #FF8CB4;
+}
+.panel-success {
+    border-color: #6EAA3C;
+}
+.panel-success>.panel-heading {
+    color: #fff;
+    background-color: #6EAA3C;
+    border-color: #6EAA3C;
+}
+.panel-warning {
+    border-color: #AAD228;
+}
+.panel-warning>.panel-heading {
+    color: #000000;
+    background-color: #AAD228;
+    border-color: #AAD228;
+}
+.panel-danger {
+    border-color: #F5A000;
+}
+.panel-danger>.panel-heading {
+    color: #000000;
+    background-color: #F5A000;
+    border-color: #F5A000;
+}
+/* List menu
+--------------------*/
+a.list-group-item {
+    color:#000;
+    background-color:#eeeeee;
+}
+a.list-group-item:hover {
+    color:#000;
+    background-color:#BABABA;
+}
+.list-group-item:first-child, .list-group-item:last-child {
+    border-radius:0;
+}
+.list-group-item.menu-tree-0 {
+    color:#000;
+    background-color: #dcdcdc;
+    border:solid 2px #ffffff;
+}
+.list-group-item.menu-tree-1:not(.active) {
+    color:#000;
+    background-color: #ffffff;
+    border-top:none;
+    border-bottom:solid 1px #646464;
+    border-left:none;
+    border-right:none;
+    margin-bottom:2px;
+}
+.list-group-item.menu-tree-1:not(.active):hover {
+    background-color:#eeeeee;
+}
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+    color: #fff;
+    background-color: #F05A82;
+    border-color: #ffffff;
+}
+/* nav-tabs
+--------------------*/
+ul.nav-tabs {
+    margin-bottom:0;
+}
+.nav-tabs > li {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.nav-tabs > li > a{
+    padding:8px 15px;
+}
+.nav-tabs > li:not(.active) {
+    border:solid 1px #646464;
+    border-bottom:solid 8px #646464;
+}
+.nav-tabs > li:not(.active) > a {
+    color:#000;
+}
+.nav-tabs > li.active {
+    border:solid 2px #FF8CB4;
+    border-bottom:solid 8px #FF8CB4;
+}
+.nav-tabs > li.active > a {
+    color:#FF8CB4;
+    cursor: pointer !important;
+    font-weight:bold;
+}
+.nav-tabs > li.active > a:hover {
+    color:#FF8CB4;
+}
+.nav-tabs > li:not(.active):hover {
+    background-color:#eeeeee;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+/* footer-menu (nav-pills)
+--------------------------*/
+ul.nav-pills {
+    margin-bottom:0;
+}
+.nav.nav-pills > li {
+    border-radius:0;
+    border: solid 2px #ffffff;
+}
+.nav.nav-pills > li > a {
+    padding:8px 15px;
+    border:solid 1px #646464;
+    border-radius:0;
+    color:#000000;
+}
+.nav.nav-pills > li:not(.active) > a:hover {
+    background-color: #eeeeee;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+    color: #F05A82;
+    background-color:#ffffff;
+    border:solid 1px #F05A82;
+    font-weight:bold;
+}
+/* bread crumb
+--------------------*/
+.breadcrumb {
+    padding:4px 15px;
+    border-radius:0;
+    margin-bottom:0;
+    background-color:transparent;
+}
+.breadcrumb a {
+    color:#FF8CB4;
+}
+/* nc-system-footer
+--------------------*/
+#nc-system-footer{
+    position:fixed;
+    bottom:0px;
+    width:100%;
+    min-height:50px;
+    padding-top:15px;
+    margin-top:0px;
+    background-color:#ffffff;
+    opacity:0.8;
+}
+#nc-system-footer .copyright{
+    color:#646464;
+}
+/* others
+--------------------*/
+/* To align positions of Left Menu and Center Contents */
+.panel-none .panel-body {
+    padding-top:0;
+}
+.jumbotron {
+    margin-bottom:0;
+}
+/* Site Manager
+-------------------*/
+.plugin-site-manager .nav {
+    margin-bottom:1.2em;
+}
+/* .nav-tabs */
+.plugin-site-manager .nav-tabs {
+    border:none;
+}
+.plugin-site-manager .nav-tabs>li>a {
+    border-radius:8px 8px 0 0;
+}
+.plugin-site-manager .nav-tabs>li.active>a {
+    /*background-color:transparent;*/
+    border:none;
+}
