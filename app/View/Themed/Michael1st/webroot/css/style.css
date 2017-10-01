@@ -27,75 +27,89 @@ main.container, main.container-fluid {
 }
 /* link
 --------------------*/
-a {
+.plugin-announcements a {
     color: #E61E23;
     text-decoration: none;
 }
-a:hover, a:focus {
+.plugin-announcements a:hover, .plugin-announcements a:focus {
     color: #C60000;
     text-decoration: underline;
 }
 /* Button
 --------------------*/
-.btn-default {
-    color: #ffffff;
+a.btn-link, a.btn-link:hover { /* none */
+    color:#337ab7; /* default link color */
+}
+.btn-default{
+    color:#fff; /* on setting mode */
     background-color: #646464;
     border-color: #646464;
 }
 .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
-    color: #ffffff;
+    color:#fff; /* on setting mode */
     background-color: #444444;
     border-color: #444444;
 }
+a.btn-default, a.btn-default:hover {
+    color:#fff;
+}
+.btn-default.frame-header-type-btn {
+    color:#646464;  /* without this, button 'none' will disapear on setting mode */
+}
 .btn-primary {
-    color: #fff;
     background-color: #6EAA3C;
     border-color: #6EAA3C;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
-    color: #fff;
     background-color: #4E881C;
     border-color: #4E881C;
 }
+a.btn-primary, a.btn-primary:hover  {
+    color:#fff;
+}
 .btn-info {
-    color: #000;
     background-color: #AAD228;
     border-color: #AAD228;;
 }
 .btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .open .dropdown-toggle.btn-info {
-    color: #000;
     background-color: #8AAF14;
     border-color: #8AAF14;
 }
+a.btn-info, a.btn-info:hover  {
+    color:#000;
+}
 .btn-success {
-    color: #fff;
     background-color: #B46E28;
     border-color: #B46E28;
 }
 .btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open .dropdown-toggle.btn-success {
-    color: #fff;
     background-color: #944E01;
     border-color: #944E01;
 }
+a.btn-success, a.btn-success:hover  {
+    color:#fff;
+}
 .btn-warning {
-    color: #000;
     background-color: #F5A000;
     border-color: #F5A000
 }
 .btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active, .open .dropdown-toggle.btn-warning {
-    color: #000;
     background-color: #D58000;
     border-color: #D58000;
 }
+a.btn-warning, a.btn-warning:hover  {
+    color:#000;
+}
 .btn-danger {
-    color: #000;
     background-color: #FAB4AA;
     border-color: #FAB4AA;
 }
 .btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active, .open .dropdown-toggle.btn-danger {
-    color: #000;
     background-color: #EB8796;
     border-color: #EB8796;
+}
+a.btn-danger, a.btn-danger:hover  {
+    color:#000;
 }
 .btn-link:hover, .btn-link:focus, .btn-link:active, .btn-link.active, .open .dropdown-toggle.btn-link {
     background-color:#dddddd;
@@ -177,31 +191,31 @@ a.list-group-item, a.list-group-item:hover {
 }
 /* nav-tabs
 --------------------*/
-ul.nav-tabs {
+ul.nav-tabs.menu-header-tabs {
     margin-bottom:0;
 }
-.nav-tabs.nav-justified{
+.nav-tabs.menu-header-tabs {
     border-bottom:solid 3px #AAD228;
 }
-.nav-tabs > li {
+.nav-tabs.menu-header-tabs > li {
     border-radius:0;
     border:none !important;
     background-color: #646464;
 }
-.nav.nav-tabs > li > a{
+.nav-tabs.menu-header-tabs > li > a{
     padding:8px 15px;
 }
-.menu-header-tabs > li.active {
+.nav-tabs.menu-header-tabs > li.active {
     background-color:#AAD228;
 }
-.menu-header-tabs > li.active > a {
+.nav-tabs.menu-header-tabs > li.active > a {
     color:#000000;
     cursor: pointer !important;
 }
-.menu-header-tabs > li:not(.active) > a {
+.nav-tabs.menu-header-tabs > li:not(.active) > a {
     color:#c8c8c8;
 }
-.menu-header-tabs > li:not(.active):hover {
+.nav-tabs.menu-header-tabs > li:not(.active):hover {
     background-color:#848484;
     border-radius:0;
 }
@@ -210,15 +224,15 @@ ul.nav-tabs {
 ul.nav-pills {
     margin-bottom:0;
 }
-.nav.menu-footer-tabs > li {
+.nav-pills.menu-footer-tabs > li {
     border:none;    /* 消し込み */
     border-radius:0; /* 消し込み */
     padding:0px 0px;
 }
-.nav.menu-footer-tabs > li.active {
+.nav-pills.menu-footer-tabs > li.active {
     background-color:transparent; /* 消し込み */
 }
-.nav.nav-pills > li > a {
+.nav-pills.menu-footer-tabs > li > a {
     border-radius:0;    /* 消し込み */
     padding:8px 3px;
     background-color:#646464;
@@ -227,18 +241,18 @@ ul.nav-pills {
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
 }
-.nav.nav-pills > li:first-child > a {
+.nav-pills.menu-footer-tabs > li:first-child > a {
     margin-left:0px;
 }
-.nav.nav-pills > li.active > a {
+.nav-pills.menu-footer-tabs > li.active > a {
     color:#000;
     background-color: #AAD228;
     border-bottom:4px solid #646464;
 }
-.menu-footer-tabs > li:not(.active) > a {
+.nav-pills.menu-footer-tabs > li:not(.active) > a {
     color:#c8c8c8;
 }
-.menu-footer-tabs > li:not(.active) > a:hover {
+.nav-pills.menu-footer-tabs > li:not(.active) > a:hover {
     color:#fff;
     background-color: #848484;
 }
@@ -277,7 +291,7 @@ ul.nav-pills {
     margin-bottom:0;
 }
 /* Site Manager
--------------------*/
+-----------------------------------------------------*/
 .plugin-site-manager .nav {
     margin-bottom:1.2em;
 }
@@ -306,12 +320,31 @@ ul.nav-pills {
 }
 /* .nav-pills */
 .plugin-site-manager .nav-pills > li > a {
+    border-radius:0;    /* 消し込み */
     padding:8px 15px;
     color:#C8C8C8;
+    background-color:#646464;
+    margin-left:3px;
+    border-bottom:4px solid #AAD228;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
 }
-.plugin-site-manager .nav-pills li.active > a {
-    color:#000000;
+.plugin-site-manager .nav-pills > li.active > a {
+    color:#000;
+    background-color: #AAD228;
+    border-bottom:4px solid #646464;
 }
 .plugin-site-manager .nav-pills li:not(.active) > a:hover {
     background-color:#848484;
+}
+/* Calendar
+-----------------------------*/
+.calendar-room-legend.panel-default {
+    border-color:#ddd;    /* default value */
+}
+.calendar-room-legend.panel-default .panel-body {
+    padding:15px;   /* devault value */
+}
+.calendar-room-legend.panel-default .panel-body ul {
+    margin-bottom: 0px; /* 消し込み */
 }

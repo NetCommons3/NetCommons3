@@ -45,13 +45,23 @@ main.container, main.container-fluid {
 .navbar-inverse {
     background-color: #FFFFFF;
     border-color: #FFFFFF;
-    opacity:0.7;
+    opacity:0.9;
 }
 .navbar-inverse .navbar-nav>li>a {
     color:#787878;
 }
 .navbar-inverse .navbar-nav>li>a:hover {
     color:#000000;
+}
+/* Login button for smartphone fo prevent from white out */
+.navbar-inverse .navbar-toggle {
+    border-color:#969696;
+}
+.navbar-toggle {
+    background-color:#969696;
+}
+a.nc-page-refresh {
+    padding-top:3px;
 }
 /* link
 --------------------*/
@@ -74,6 +84,9 @@ a:hover, a:focus {
     color: #fff;
     background-color: #5A5A5A;
     border-color: #5A5A5A;
+}
+.btn-default.dropdown-toggle {
+    color:#646464;  /* without this, button 'none' will disapear on setting mode */
 }
 .btn-primary {
     color: #fff;
@@ -347,7 +360,7 @@ ul.nav-pills {
     margin-top:0px;
     background-color:#ffffff;
     border-top:1px solid #787878;
-    opacity:0.8;
+    opacity:0.9;
 }
 #nc-system-footer .copyright{
     color:#787878;
@@ -362,7 +375,7 @@ ul.nav-pills {
     margin-bottom:0;
 }
 /* Site Manager
--------------------*/
+-------------------------------------------------------*/
 .plugin-site-manager .nav {
     margin-bottom:1.2em;
 }
@@ -428,4 +441,15 @@ ul.nav-pills {
 }
 .control-panel-nav .list-group-item.active:before {
     background-image:url(../images/kaeru_green50.png);
+}
+/* Calendar
+-----------------------------*/
+.calendar-room-legend.panel-default {
+    border-color:#ddd;    /* default value */
+}
+.calendar-room-legend.panel-default .panel-body {
+    padding:15px;   /* devault value */
+}
+.calendar-room-legend.panel-default .panel-body ul {
+    margin-bottom: 0px; /* 消し込み */
 }
