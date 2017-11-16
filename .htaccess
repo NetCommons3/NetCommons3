@@ -1,5 +1,9 @@
 <IfModule mod_rewrite.c>
    RewriteEngine on
+   # /.well-known/ is Let's Encrypt
+   # Let's Encrypt need http(80) and DocumentRoot/.well-known/
+   RewriteCond    %{REQUEST_URI} !(^/.well-known/)
    RewriteRule    ^$ app/webroot/    [L]
+   RewriteCond    %{REQUEST_URI} !(^/.well-known/)
    RewriteRule    (.*) app/webroot/$1 [L]
 </IfModule>
