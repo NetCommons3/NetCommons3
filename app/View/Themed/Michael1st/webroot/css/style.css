@@ -25,14 +25,23 @@ main.container, main.container-fluid {
 .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
     color: #fff;
 }
+/* Make the system-header disapear when you don't login.
+  To do this, two lines (below) commented out should be enable.
+---------------------------------------------------------------------*/
+header.nc-system-header-nologgedin {
+	/* display: none; */
+}
+body.body-nologgedin {
+	/* padding-top: 0; */
+}
 /* link
 --------------------*/
-.plugin-announcements a {
-    color: #E61E23;
+a {
+    color: #468CF0;
     text-decoration: none;
 }
-.plugin-announcements a:hover, .plugin-announcements a:focus {
-    color: #C60000;
+a:hover, a:focus {
+    color: #266CD0;
     text-decoration: underline;
 }
 /* Button

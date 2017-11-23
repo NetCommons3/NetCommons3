@@ -6,7 +6,7 @@ html, body {
     height:100%;
 }
 body{
-    padding-top: 30px;
+    padding-top: 50px;
     color:#000000;
 }
 main.container, main.container-fluid {
@@ -15,32 +15,11 @@ main.container, main.container-fluid {
 }
 /* header
 --------------------*/
-.navbar {
-    min-height:30px;
-    margin-bottom:0px;
-    border:none;
-}
-.frame.nc-content-list header, .frame.nc-content header {
-    margin-bottom:0px;
-}
-.navbar-brand { /* ミカエル研究所 */
-    height:30px;
-    padding:3px 15px 0px 15px;
-    font-size:1.2em;
-    line-height:normal;
-}
-.navbar-nav > li > a {  /* ログイン */
-    padding-top:4px !important;
-    padding-bottom:5px !important;
-    line-height:normal;
-}
 .navbar-inverse .navbar-brand, .navbar-inverse .navbar-brand:visited {
     color:#F05A82;
-    font-weight:normal;
 }
 .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
     color:#E11950;
-    font-weight:bold;
 }
 .navbar-inverse {
     background-color: #FFFFFF;
@@ -53,15 +32,21 @@ main.container, main.container-fluid {
 .navbar-inverse .navbar-nav>li>a:hover {
     color:#000000;
 }
-/* Login button for smartphone fo prevent from white out */
+/* Login button for smartphone to prevent from white out */
 .navbar-inverse .navbar-toggle {
     border-color:#969696;
 }
 .navbar-toggle {
     background-color:#969696;
 }
-a.nc-page-refresh {
-    padding-top:3px;
+/* Make the system-header disapear when you don't login.
+  To do this, two lines (below) commented out should be enable.
+---------------------------------------------------------------------*/
+header.nc-system-header-nologgedin {
+	/* display: none; */
+}
+body.body-nologgedin {
+	/* padding-top: 0; */
 }
 /* link
 --------------------*/
@@ -358,8 +343,8 @@ ul.nav-pills {
     position:fixed;
     bottom:0px;
     width:100%;
-    min-height:30px;
-    padding-top:4px;
+    min-height:50px;
+    padding-top:15px;
     margin-top:0px;
     background-color:#ffffff;
     border-top:1px solid #787878;
