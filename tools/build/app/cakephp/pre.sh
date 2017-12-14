@@ -23,7 +23,7 @@ chmod -R 777 app/tmp
 mkdir -p build/logs
 
 sudo composer self-update
-composer update
+composer update --ignore-platform-reqs
 
 cp app/Config/database.php.$DB app/Config/database.php
 
