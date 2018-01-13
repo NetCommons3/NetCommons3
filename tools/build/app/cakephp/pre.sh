@@ -1,15 +1,18 @@
 #!/bin/bash -ex
 
-if [ -w "Berksfile.lock" -a "$UPGRADE_DEPENDENCIES" = "true" ]
-then
-  bundle update
-  berks update
-else
-  bundle install --full-index --jobs=`ohai cpu/total` --without development
-  berks install -e development
-fi
+#if [ -w "Berksfile.lock" -a "$UPGRADE_DEPENDENCIES" = "true" ]
+#then
+#  bundle update
+#  berks update
+#else
+#  bundle install --full-index --jobs=`ohai cpu/total` --without development
+#  berks install -e development
+#fi
 
-if [ "$DB" = 'mysql' ]; then mysql -utest -ptest -e 'DROP DATABASE IF EXISTS test_nc3; CREATE DATABASE test_nc3;'; fi
+if [ "$DB" = 'mysql' ]; then 
+	mysql -utest -ptest -e 'DROP DATABASE IF EXISTS test_nc3;
+	CREATE DATABASE test_nc3;'; 
+fi
 if [ "$DB" = 'postgresql' ]; then
   psql -c 'DROP DATABASE IF EXISTS test_nc3;' -U postgres
   psql -c 'CREATE DATABASE test_nc3;' -U postgres
@@ -17,12 +20,14 @@ fi
 if [ "$DB" = 'postgresql' ]; then psql -c 'CREATE SCHEMA test2;' -U postgres -d test_nc3; fi
 if [ "$DB" = 'postgresql' ]; then psql -c 'CREATE SCHEMA test3;' -U postgres -d test_nc3; fi
 
-sudo rm -rf plugins/*
-sudo rm -rf vendors/*
+rm -rf plugins/*
+rm -rf vendors/*
 chmod -R 777 app/tmp
 mkdir -p build/logs
+rm composer.lock
 
-sudo composer self-update
+composer self-update
+composer config minimum-stability dev
 composer update
 
 cp app/Config/database.php.$DB app/Config/database.php
