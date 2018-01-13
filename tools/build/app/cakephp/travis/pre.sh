@@ -1,5 +1,19 @@
 #!/bin/bash -ex
 
+# Fixing composer error
+# @link https://travis-ci.org/NetCommons3/NetCommons3/jobs/309361898#L466-L504
+# @link https://travis-ci.org/NetCommons3/NetCommons3/jobs/309361900#L510-L518
+PHP_VERSION="`php --version`"
+check54=`echo $PHP_VERSION | grep "^PHP 5.4"`
+check55=`echo $PHP_VERSION | grep "^PHP 5.5"`
+check56=`echo $PHP_VERSION | grep "^PHP 5.6"`
+if [ ! "$check54" = "" -o  ! "$check55" = "" ]; then
+	composer require --dev --no-update phpunit/phpunit:~4.0@stable
+elif [ ! "$check56" = "" ]; then
+	composer require --dev --no-update phpunit/phpunit:~5.0@stable
+fi
+
+rm composer.lock
 composer install
 
 sh -c "if [ '$DB' = 'mysql' ]; then mysql -e 'CREATE DATABASE cakephp_test;'; fi"
