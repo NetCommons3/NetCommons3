@@ -34,6 +34,8 @@ PHP_VERSION="`php --version`"
 check54=`echo $PHP_VERSION | grep "^PHP 5.4"`
 check55=`echo $PHP_VERSION | grep "^PHP 5.5"`
 check56=`echo $PHP_VERSION | grep "^PHP 5.6"`
+echo "$check54 && $check55"
+echo "$check56"
 if [ ! "$check54" = "" -o  ! "$check55" = "" ]; then
 	echo "$check54 && $check55"
 	composer require --dev --no-update phpunit/phpunit:~4.7.0@stable
