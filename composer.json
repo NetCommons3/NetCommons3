@@ -4,7 +4,8 @@
     "type":        "CMS",
     "keywords":    ["CMS"],
     "homepage":    "http://www.netcommons.org/",
-    "license":     "NetCommons License",
+    "license": "LicenseRef-NetCommons",
+    "license-ref-net-commons": "https://raw.githubusercontent.com/NetCommons3/NetCommons3/master/license.txt",
     "authors": [
         {
             "name":     "NetCommons Community",
