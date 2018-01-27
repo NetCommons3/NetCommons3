@@ -994,16 +994,16 @@
         },
         {
             "name": "netcommons/access-counters",
-            "version": "3.1.3",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/AccessCounters.git",
-                "reference": "d636f0e0cd3239c598580457da1300f84ee129cd"
+                "reference": "fa3cad40a72cdc5242f9d48fb5344c1edaee0e77"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/AccessCounters/zipball/d636f0e0cd3239c598580457da1300f84ee129cd",
-                "reference": "d636f0e0cd3239c598580457da1300f84ee129cd",
+                "url": "https://api.github.com/repos/NetCommons3/AccessCounters/zipball/fa3cad40a72cdc5242f9d48fb5344c1edaee0e77",
+                "reference": "fa3cad40a72cdc5242f9d48fb5344c1edaee0e77",
                 "shasum": ""
             },
             "require": {
@@ -1023,7 +1023,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -1037,20 +1037,20 @@
                 "access_counters",
                 "cakephp"
             ],
-            "time": "2017-06-28T08:31:08+00:00"
+            "time": "2018-01-26T07:36:06+00:00"
         },
         {
             "name": "netcommons/announcements",
-            "version": "3.1.3",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Announcements.git",
-                "reference": "0b63fa57d953cf8fc2b8e16dcb242a71edd15d4d"
+                "reference": "0c4a1b5fa07db90ed7c2a47334f4a6bde794d042"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Announcements/zipball/0b63fa57d953cf8fc2b8e16dcb242a71edd15d4d",
-                "reference": "0b63fa57d953cf8fc2b8e16dcb242a71edd15d4d",
+                "url": "https://api.github.com/repos/NetCommons3/Announcements/zipball/0c4a1b5fa07db90ed7c2a47334f4a6bde794d042",
+                "reference": "0c4a1b5fa07db90ed7c2a47334f4a6bde794d042",
                 "shasum": ""
             },
             "require": {
@@ -1074,7 +1074,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -1088,20 +1088,20 @@
                 "announcements",
                 "cakephp"
             ],
-            "time": "2017-07-11T10:14:46+00:00"
+            "time": "2018-01-26T07:39:07+00:00"
         },
         {
             "name": "netcommons/auth",
-            "version": "3.1.6",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Auth.git",
-                "reference": "00cd87d753a7c869b90edceb339ceec0421054c3"
+                "reference": "ff86dd7a0f28dc943463e158a6253ea59ff42b29"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Auth/zipball/00cd87d753a7c869b90edceb339ceec0421054c3",
-                "reference": "00cd87d753a7c869b90edceb339ceec0421054c3",
+                "url": "https://api.github.com/repos/NetCommons3/Auth/zipball/ff86dd7a0f28dc943463e158a6253ea59ff42b29",
+                "reference": "ff86dd7a0f28dc943463e158a6253ea59ff42b29",
                 "shasum": ""
             },
             "require": {
@@ -1121,7 +1121,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -1135,20 +1135,20 @@
                 "auth",
                 "cakephp"
             ],
-            "time": "2017-11-16T09:08:53+00:00"
+            "time": "2018-01-26T07:40:52+00:00"
         },
         {
             "name": "netcommons/auth-general",
-            "version": "3.1.5",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/AuthGeneral.git",
-                "reference": "a70bcf486f98e1d12b216e732e8988b3278a6f6b"
+                "reference": "4997eceeeb66263e0eae2476d42e65cb3f2e6357"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/AuthGeneral/zipball/a70bcf486f98e1d12b216e732e8988b3278a6f6b",
-                "reference": "a70bcf486f98e1d12b216e732e8988b3278a6f6b",
+                "url": "https://api.github.com/repos/NetCommons3/AuthGeneral/zipball/4997eceeeb66263e0eae2476d42e65cb3f2e6357",
+                "reference": "4997eceeeb66263e0eae2476d42e65cb3f2e6357",
                 "shasum": ""
             },
             "require": {
@@ -1167,7 +1167,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -1181,20 +1181,20 @@
                 "auth",
                 "cakephp"
             ],
-            "time": "2017-09-10T10:41:27+00:00"
+            "time": "2018-01-26T07:43:41+00:00"
         },
         {
             "name": "netcommons/authorization-keys",
-            "version": "3.1.3",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/AuthorizationKeys.git",
-                "reference": "3032f91ee26378bc7260e403acd59c8420646f48"
+                "reference": "c2072ecda68a2f99b1cdafb014e00a4468e83d76"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/AuthorizationKeys/zipball/3032f91ee26378bc7260e403acd59c8420646f48",
-                "reference": "3032f91ee26378bc7260e403acd59c8420646f48",
+                "url": "https://api.github.com/repos/NetCommons3/AuthorizationKeys/zipball/c2072ecda68a2f99b1cdafb014e00a4468e83d76",
+                "reference": "c2072ecda68a2f99b1cdafb014e00a4468e83d76",
                 "shasum": ""
             },
             "require": {
@@ -1211,7 +1211,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -1243,20 +1243,20 @@
                 "authorization-keys",
                 "cakephp"
             ],
-            "time": "2017-06-28T08:32:56+00:00"
+            "time": "2018-01-26T07:45:40+00:00"
         },
         {
             "name": "netcommons/bbses",
-            "version": "3.1.4",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Bbses.git",
-                "reference": "b8958f339d1717f3ee8276344a5866f0a9b4821d"
+                "reference": "e3cfbe14379bdcbb1a5e0e96bbd4fe2ec1f0732e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Bbses/zipball/b8958f339d1717f3ee8276344a5866f0a9b4821d",
-                "reference": "b8958f339d1717f3ee8276344a5866f0a9b4821d",
+                "url": "https://api.github.com/repos/NetCommons3/Bbses/zipball/e3cfbe14379bdcbb1a5e0e96bbd4fe2ec1f0732e",
+                "reference": "e3cfbe14379bdcbb1a5e0e96bbd4fe2ec1f0732e",
                 "shasum": ""
             },
             "require": {
@@ -1282,7 +1282,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -1296,20 +1296,20 @@
                 "bbses",
                 "cakephp"
             ],
-            "time": "2017-08-16T12:45:58+00:00"
+            "time": "2018-01-26T07:47:52+00:00"
         },
         {
             "name": "netcommons/blocks",
-            "version": "3.1.5",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Blocks.git",
-                "reference": "cbe5f6d873d3b0d34363a8163a1c123fbbb15c59"
+                "reference": "a690775012ffe1d5155594f5f6c620f39b5406b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Blocks/zipball/cbe5f6d873d3b0d34363a8163a1c123fbbb15c59",
-                "reference": "cbe5f6d873d3b0d34363a8163a1c123fbbb15c59",
+                "url": "https://api.github.com/repos/NetCommons3/Blocks/zipball/a690775012ffe1d5155594f5f6c620f39b5406b5",
+                "reference": "a690775012ffe1d5155594f5f6c620f39b5406b5",
                 "shasum": ""
             },
             "require": {
@@ -1333,7 +1333,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -1347,20 +1347,20 @@
                 "blocks",
                 "cakephp"
             ],
-            "time": "2017-08-26T07:20:45+00:00"
+            "time": "2018-01-26T07:57:56+00:00"
         },
         {
             "name": "netcommons/blogs",
-            "version": "3.1.5",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Blogs.git",
-                "reference": "9ad62a6d306212b6e5745f44740cd2324b116a23"
+                "reference": "59d783f6166dcae8d2b41bfbf755a3991d65dfc2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Blogs/zipball/9ad62a6d306212b6e5745f44740cd2324b116a23",
-                "reference": "9ad62a6d306212b6e5745f44740cd2324b116a23",
+                "url": "https://api.github.com/repos/NetCommons3/Blogs/zipball/59d783f6166dcae8d2b41bfbf755a3991d65dfc2",
+                "reference": "59d783f6166dcae8d2b41bfbf755a3991d65dfc2",
                 "shasum": ""
             },
             "require": {
@@ -1387,7 +1387,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -1407,20 +1407,20 @@
                 "blogs",
                 "cakephp"
             ],
-            "time": "2017-09-10T15:23:42+00:00"
+            "time": "2018-01-26T07:59:56+00:00"
         },
         {
             "name": "netcommons/boxes",
-            "version": "3.1.5",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Boxes.git",
-                "reference": "2a91ddb67586c9e6787d88812bf5cb22636950fc"
+                "reference": "ed51948dcc9c20dc5e80974a3499d3bdaee4eb5f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Boxes/zipball/2a91ddb67586c9e6787d88812bf5cb22636950fc",
-                "reference": "2a91ddb67586c9e6787d88812bf5cb22636950fc",
+                "url": "https://api.github.com/repos/NetCommons3/Boxes/zipball/ed51948dcc9c20dc5e80974a3499d3bdaee4eb5f",
+                "reference": "ed51948dcc9c20dc5e80974a3499d3bdaee4eb5f",
                 "shasum": ""
             },
             "require": {
@@ -1441,7 +1441,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -1455,20 +1455,20 @@
                 "boxes",
                 "cakephp"
             ],
-            "time": "2017-08-27T05:44:41+00:00"
+            "time": "2018-01-26T08:01:19+00:00"
         },
         {
             "name": "netcommons/cabinets",
-            "version": "3.1.6",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Cabinets.git",
-                "reference": "3fc544c304a98d44df7afd218e4d58825662e121"
+                "reference": "fc90f6a48f663acd6f0c0e01642e247c96d35eac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Cabinets/zipball/3fc544c304a98d44df7afd218e4d58825662e121",
-                "reference": "3fc544c304a98d44df7afd218e4d58825662e121",
+                "url": "https://api.github.com/repos/NetCommons3/Cabinets/zipball/fc90f6a48f663acd6f0c0e01642e247c96d35eac",
+                "reference": "fc90f6a48f663acd6f0c0e01642e247c96d35eac",
                 "shasum": ""
             },
             "require": {
@@ -1493,7 +1493,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -1513,20 +1513,20 @@
                 "cabinets",
                 "cakephp"
             ],
-            "time": "2017-11-02T08:28:30+00:00"
+            "time": "2018-01-26T08:02:28+00:00"
         },
         {
             "name": "netcommons/calendars",
-            "version": "3.1.6",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Calendars.git",
-                "reference": "391b73dc09cb0bd54e2279c350fc4b35c4ef26a0"
+                "reference": "064d639ba0c731ee9442a430bdf7bba9c8ae5777"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Calendars/zipball/391b73dc09cb0bd54e2279c350fc4b35c4ef26a0",
-                "reference": "391b73dc09cb0bd54e2279c350fc4b35c4ef26a0",
+                "url": "https://api.github.com/repos/NetCommons3/Calendars/zipball/064d639ba0c731ee9442a430bdf7bba9c8ae5777",
+                "reference": "064d639ba0c731ee9442a430bdf7bba9c8ae5777",
                 "shasum": ""
             },
             "require": {
@@ -1555,7 +1555,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -1587,20 +1587,20 @@
                 "cakephp",
                 "calendars"
             ],
-            "time": "2017-11-08T05:36:54+00:00"
+            "time": "2018-01-26T08:03:53+00:00"
         },
         {
             "name": "netcommons/categories",
-            "version": "3.1.6",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Categories.git",
-                "reference": "1269b5ef334b6dfa1533f8f52914a63097ae0cb0"
+                "reference": "df07532ab1607e09930b981ad06aec8004fe31a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Categories/zipball/1269b5ef334b6dfa1533f8f52914a63097ae0cb0",
-                "reference": "1269b5ef334b6dfa1533f8f52914a63097ae0cb0",
+                "url": "https://api.github.com/repos/NetCommons3/Categories/zipball/df07532ab1607e09930b981ad06aec8004fe31a6",
+                "reference": "df07532ab1607e09930b981ad06aec8004fe31a6",
                 "shasum": ""
             },
             "require": {
@@ -1618,7 +1618,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -1632,20 +1632,20 @@
                 "cakephp",
                 "categories"
             ],
-            "time": "2017-10-27T07:36:21+00:00"
+            "time": "2018-01-26T08:05:47+00:00"
         },
         {
             "name": "netcommons/circular-notices",
-            "version": "3.1.3",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/CircularNotices.git",
-                "reference": "5c80f775bd3bb49dea1476c8467aff066ad017e8"
+                "reference": "531b94091449ae726d1a5b811c7ec9950d10f0f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/CircularNotices/zipball/5c80f775bd3bb49dea1476c8467aff066ad017e8",
-                "reference": "5c80f775bd3bb49dea1476c8467aff066ad017e8",
+                "url": "https://api.github.com/repos/NetCommons3/CircularNotices/zipball/531b94091449ae726d1a5b811c7ec9950d10f0f1",
+                "reference": "531b94091449ae726d1a5b811c7ec9950d10f0f1",
                 "shasum": ""
             },
             "require": {
@@ -1673,7 +1673,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -1699,20 +1699,20 @@
                 "cakephp",
                 "circular-notices"
             ],
-            "time": "2017-06-28T13:34:20+00:00"
+            "time": "2018-01-26T08:06:55+00:00"
         },
         {
             "name": "netcommons/community-space",
-            "version": "3.1.3",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/CommunitySpace.git",
-                "reference": "636a08058653ba5acba62f5d0da7627e12d8dc14"
+                "reference": "927536d57ad6d3a283777a5c203a48f4a1634f76"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/CommunitySpace/zipball/636a08058653ba5acba62f5d0da7627e12d8dc14",
-                "reference": "636a08058653ba5acba62f5d0da7627e12d8dc14",
+                "url": "https://api.github.com/repos/NetCommons3/CommunitySpace/zipball/927536d57ad6d3a283777a5c203a48f4a1634f76",
+                "reference": "927536d57ad6d3a283777a5c203a48f4a1634f76",
                 "shasum": ""
             },
             "require": {
@@ -1729,7 +1729,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -1743,20 +1743,20 @@
                 "cakephp",
                 "community_space"
             ],
-            "time": "2017-06-28T13:37:42+00:00"
+            "time": "2018-01-26T08:08:05+00:00"
         },
         {
             "name": "netcommons/containers",
-            "version": "3.1.3",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Containers.git",
-                "reference": "81a4fa27642c436a2255c80a29bca2c3ca91fb74"
+                "reference": "696b1ff02cb9c6772b47895708fa855b0dec1c81"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Containers/zipball/81a4fa27642c436a2255c80a29bca2c3ca91fb74",
-                "reference": "81a4fa27642c436a2255c80a29bca2c3ca91fb74",
+                "url": "https://api.github.com/repos/NetCommons3/Containers/zipball/696b1ff02cb9c6772b47895708fa855b0dec1c81",
+                "reference": "696b1ff02cb9c6772b47895708fa855b0dec1c81",
                 "shasum": ""
             },
             "require": {
@@ -1775,7 +1775,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -1789,20 +1789,20 @@
                 "cakephp",
                 "containers"
             ],
-            "time": "2017-06-28T13:38:12+00:00"
+            "time": "2018-01-26T08:09:20+00:00"
         },
         {
             "name": "netcommons/content-comments",
-            "version": "3.1.3",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/ContentComments.git",
-                "reference": "cfb037d3221a9b8aca3be83594c55bfeeef22809"
+                "reference": "5c6b7bfe124bf570a8aebd0fb36b1bac1fefa28c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/ContentComments/zipball/cfb037d3221a9b8aca3be83594c55bfeeef22809",
-                "reference": "cfb037d3221a9b8aca3be83594c55bfeeef22809",
+                "url": "https://api.github.com/repos/NetCommons3/ContentComments/zipball/5c6b7bfe124bf570a8aebd0fb36b1bac1fefa28c",
+                "reference": "5c6b7bfe124bf570a8aebd0fb36b1bac1fefa28c",
                 "shasum": ""
             },
             "require": {
@@ -1823,7 +1823,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -1843,20 +1843,20 @@
                 "cakephp",
                 "content-comments"
             ],
-            "time": "2017-06-28T13:38:41+00:00"
+            "time": "2018-01-26T08:10:53+00:00"
         },
         {
             "name": "netcommons/control-panel",
-            "version": "3.1.5",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/ControlPanel.git",
-                "reference": "351feb01d6e0b59c29b08f615795fe2fdc534019"
+                "reference": "fcf26c3ad8b2704c8ce8517b05a9ea07ffdbd1cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/ControlPanel/zipball/351feb01d6e0b59c29b08f615795fe2fdc534019",
-                "reference": "351feb01d6e0b59c29b08f615795fe2fdc534019",
+                "url": "https://api.github.com/repos/NetCommons3/ControlPanel/zipball/fcf26c3ad8b2704c8ce8517b05a9ea07ffdbd1cb",
+                "reference": "fcf26c3ad8b2704c8ce8517b05a9ea07ffdbd1cb",
                 "shasum": ""
             },
             "require": {
@@ -1874,7 +1874,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -1892,20 +1892,20 @@
                 "cakephp",
                 "control_panel"
             ],
-            "time": "2017-09-01T10:46:18+00:00"
+            "time": "2018-01-26T08:14:14+00:00"
         },
         {
             "name": "netcommons/data-types",
-            "version": "3.1.3",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/DataTypes.git",
-                "reference": "7543ec064b1e9ce18702b72443d669c15851f81c"
+                "reference": "ea4309488fa4afd0e314a2497b2d99370424ec39"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/DataTypes/zipball/7543ec064b1e9ce18702b72443d669c15851f81c",
-                "reference": "7543ec064b1e9ce18702b72443d669c15851f81c",
+                "url": "https://api.github.com/repos/NetCommons3/DataTypes/zipball/ea4309488fa4afd0e314a2497b2d99370424ec39",
+                "reference": "ea4309488fa4afd0e314a2497b2d99370424ec39",
                 "shasum": ""
             },
             "require": {
@@ -1922,7 +1922,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -1936,20 +1936,20 @@
                 "cakephp",
                 "data_types"
             ],
-            "time": "2017-06-28T13:40:58+00:00"
+            "time": "2018-01-26T08:15:30+00:00"
         },
         {
             "name": "netcommons/faqs",
-            "version": "3.1.3",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Faqs.git",
-                "reference": "f2856f9c12c8f19cd5ac87a112dd00cb17b48fab"
+                "reference": "c8263b007b51c02c4a73f922db4ef77ad8f21d10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Faqs/zipball/f2856f9c12c8f19cd5ac87a112dd00cb17b48fab",
-                "reference": "f2856f9c12c8f19cd5ac87a112dd00cb17b48fab",
+                "url": "https://api.github.com/repos/NetCommons3/Faqs/zipball/c8263b007b51c02c4a73f922db4ef77ad8f21d10",
+                "reference": "c8263b007b51c02c4a73f922db4ef77ad8f21d10",
                 "shasum": ""
             },
             "require": {
@@ -1975,7 +1975,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -1993,20 +1993,20 @@
                 "cakephp",
                 "faqs"
             ],
-            "time": "2017-06-28T13:41:55+00:00"
+            "time": "2018-01-26T10:07:19+00:00"
         },
         {
             "name": "netcommons/files",
-            "version": "3.1.6",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Files.git",
-                "reference": "b70c6764e52b5fe736b8726055a00ab045a10f3d"
+                "reference": "2b95887b21100e0463e625503dfdf8c17f55cfa6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Files/zipball/b70c6764e52b5fe736b8726055a00ab045a10f3d",
-                "reference": "b70c6764e52b5fe736b8726055a00ab045a10f3d",
+                "url": "https://api.github.com/repos/NetCommons3/Files/zipball/2b95887b21100e0463e625503dfdf8c17f55cfa6",
+                "reference": "2b95887b21100e0463e625503dfdf8c17f55cfa6",
                 "shasum": ""
             },
             "require": {
@@ -2027,7 +2027,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -2041,20 +2041,20 @@
                 "cakephp",
                 "files"
             ],
-            "time": "2017-11-02T08:10:15+00:00"
+            "time": "2018-01-26T10:09:32+00:00"
         },
         {
             "name": "netcommons/frames",
-            "version": "3.1.6",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Frames.git",
-                "reference": "4b36e69eef26c5f560b4c955be9f97d5658c61ea"
+                "reference": "4aa630cfb84621e640cdfd716a785d0b55ceebf6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Frames/zipball/4b36e69eef26c5f560b4c955be9f97d5658c61ea",
-                "reference": "4b36e69eef26c5f560b4c955be9f97d5658c61ea",
+                "url": "https://api.github.com/repos/NetCommons3/Frames/zipball/4aa630cfb84621e640cdfd716a785d0b55ceebf6",
+                "reference": "4aa630cfb84621e640cdfd716a785d0b55ceebf6",
                 "shasum": ""
             },
             "require": {
@@ -2076,7 +2076,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -2090,20 +2090,20 @@
                 "cakephp",
                 "frames"
             ],
-            "time": "2017-10-11T21:20:53+00:00"
+            "time": "2018-01-26T10:30:26+00:00"
         },
         {
             "name": "netcommons/groups",
-            "version": "3.1.5",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Groups.git",
-                "reference": "bb8a62ad7f36c9d2992f5b30c9b8dc37d0e5cbd2"
+                "reference": "8e290f57cb719041444aa32f5693c73a203b2b9d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Groups/zipball/bb8a62ad7f36c9d2992f5b30c9b8dc37d0e5cbd2",
-                "reference": "bb8a62ad7f36c9d2992f5b30c9b8dc37d0e5cbd2",
+                "url": "https://api.github.com/repos/NetCommons3/Groups/zipball/8e290f57cb719041444aa32f5693c73a203b2b9d",
+                "reference": "8e290f57cb719041444aa32f5693c73a203b2b9d",
                 "shasum": ""
             },
             "require": {
@@ -2125,7 +2125,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -2139,20 +2139,20 @@
                 "cakephp",
                 "groups"
             ],
-            "time": "2017-08-27T09:19:45+00:00"
+            "time": "2018-01-26T10:31:28+00:00"
         },
         {
             "name": "netcommons/holidays",
-            "version": "3.1.3",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Holidays.git",
-                "reference": "d11d2d640b0d90f7e25441e66f569eadef3e13d9"
+                "reference": "3e0d3eaf1d37c4ce4af3b28fb1199fa405d9782a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Holidays/zipball/d11d2d640b0d90f7e25441e66f569eadef3e13d9",
-                "reference": "d11d2d640b0d90f7e25441e66f569eadef3e13d9",
+                "url": "https://api.github.com/repos/NetCommons3/Holidays/zipball/3e0d3eaf1d37c4ce4af3b28fb1199fa405d9782a",
+                "reference": "3e0d3eaf1d37c4ce4af3b28fb1199fa405d9782a",
                 "shasum": ""
             },
             "require": {
@@ -2172,7 +2172,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -2204,20 +2204,20 @@
                 "cakephp",
                 "holidays"
             ],
-            "time": "2017-06-28T13:46:46+00:00"
+            "time": "2018-01-26T10:39:21+00:00"
         },
         {
             "name": "netcommons/iframes",
-            "version": "3.1.5",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Iframes.git",
-                "reference": "363ccfec506ae1f77f45b849d127da5cdeda5ca3"
+                "reference": "2af7896e233064e621df5a959c854071e8212e7f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Iframes/zipball/363ccfec506ae1f77f45b849d127da5cdeda5ca3",
-                "reference": "363ccfec506ae1f77f45b849d127da5cdeda5ca3",
+                "url": "https://api.github.com/repos/NetCommons3/Iframes/zipball/2af7896e233064e621df5a959c854071e8212e7f",
+                "reference": "2af7896e233064e621df5a959c854071e8212e7f",
                 "shasum": ""
             },
             "require": {
@@ -2237,7 +2237,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -2255,20 +2255,20 @@
                 "cakephp",
                 "iframes"
             ],
-            "time": "2017-08-26T09:04:04+00:00"
+            "time": "2018-01-26T10:43:50+00:00"
         },
         {
             "name": "netcommons/install",
-            "version": "3.1.6",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Install.git",
-                "reference": "0305a058cc9e1c95ff45eedd301a4b149f11ac04"
+                "reference": "aa07261868b9ecbd18cbb1c49881cee26a676a15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Install/zipball/0305a058cc9e1c95ff45eedd301a4b149f11ac04",
-                "reference": "0305a058cc9e1c95ff45eedd301a4b149f11ac04",
+                "url": "https://api.github.com/repos/NetCommons3/Install/zipball/aa07261868b9ecbd18cbb1c49881cee26a676a15",
+                "reference": "aa07261868b9ecbd18cbb1c49881cee26a676a15",
                 "shasum": ""
             },
             "require": {
@@ -2316,7 +2316,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "description": "Install Plugin for NetCommons3",
             "homepage": "http://www.netcommons.org/",
@@ -2324,20 +2324,20 @@
                 "cakephp",
                 "install"
             ],
-            "time": "2017-10-11T08:11:33+00:00"
+            "time": "2018-01-26T10:45:07+00:00"
         },
         {
             "name": "netcommons/likes",
-            "version": "3.1.5",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Likes.git",
-                "reference": "11f3f26a3a2d8153b88ba1b82927b96a4c63d2ba"
+                "reference": "ad6af1c26896e1de16721a92b2ef8c6d1234e4d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Likes/zipball/11f3f26a3a2d8153b88ba1b82927b96a4c63d2ba",
-                "reference": "11f3f26a3a2d8153b88ba1b82927b96a4c63d2ba",
+                "url": "https://api.github.com/repos/NetCommons3/Likes/zipball/ad6af1c26896e1de16721a92b2ef8c6d1234e4d2",
+                "reference": "ad6af1c26896e1de16721a92b2ef8c6d1234e4d2",
                 "shasum": ""
             },
             "require": {
@@ -2354,7 +2354,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -2368,20 +2368,20 @@
                 "cakephp",
                 "likes"
             ],
-            "time": "2017-09-11T01:15:56+00:00"
+            "time": "2018-01-26T10:49:41+00:00"
         },
         {
             "name": "netcommons/links",
-            "version": "3.1.5",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Links.git",
-                "reference": "e54772c0d74d00ed6a030c0781948bd81b5686ae"
+                "reference": "5949a0ed40cca719bc523f706ad5e27c92ba1bd4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Links/zipball/e54772c0d74d00ed6a030c0781948bd81b5686ae",
-                "reference": "e54772c0d74d00ed6a030c0781948bd81b5686ae",
+                "url": "https://api.github.com/repos/NetCommons3/Links/zipball/5949a0ed40cca719bc523f706ad5e27c92ba1bd4",
+                "reference": "5949a0ed40cca719bc523f706ad5e27c92ba1bd4",
                 "shasum": ""
             },
             "require": {
@@ -2404,7 +2404,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -2422,20 +2422,20 @@
                 "cakephp",
                 "links"
             ],
-            "time": "2017-09-11T04:41:59+00:00"
+            "time": "2018-01-26T10:51:09+00:00"
         },
         {
             "name": "netcommons/m17n",
-            "version": "3.1.5",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/M17n.git",
-                "reference": "fe50ecd1b4cb5fb4234338d3153dd2fc6414e875"
+                "reference": "2ab05ccac4c0b02ba9a6014ea77529b2d9b072fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/M17n/zipball/fe50ecd1b4cb5fb4234338d3153dd2fc6414e875",
-                "reference": "fe50ecd1b4cb5fb4234338d3153dd2fc6414e875",
+                "url": "https://api.github.com/repos/NetCommons3/M17n/zipball/2ab05ccac4c0b02ba9a6014ea77529b2d9b072fc",
+                "reference": "2ab05ccac4c0b02ba9a6014ea77529b2d9b072fc",
                 "shasum": ""
             },
             "require": {
@@ -2454,7 +2454,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -2468,20 +2468,20 @@
                 "cakephp",
                 "m17n"
             ],
-            "time": "2017-09-26T05:20:58+00:00"
+            "time": "2018-01-26T11:01:11+00:00"
         },
         {
             "name": "netcommons/mails",
-            "version": "3.1.6",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Mails.git",
-                "reference": "e3eebe9bac9378b60c77c8cdec82e2c1bb5dadfd"
+                "reference": "7c71826777012e36b79fc573c88cf5b4a7bec58a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Mails/zipball/e3eebe9bac9378b60c77c8cdec82e2c1bb5dadfd",
-                "reference": "e3eebe9bac9378b60c77c8cdec82e2c1bb5dadfd",
+                "url": "https://api.github.com/repos/NetCommons3/Mails/zipball/7c71826777012e36b79fc573c88cf5b4a7bec58a",
+                "reference": "7c71826777012e36b79fc573c88cf5b4a7bec58a",
                 "shasum": ""
             },
             "require": {
@@ -2505,7 +2505,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -2525,20 +2525,20 @@
                 "cakephp",
                 "mails"
             ],
-            "time": "2017-10-02T00:30:57+00:00"
+            "time": "2018-01-26T11:03:09+00:00"
         },
         {
             "name": "netcommons/menus",
-            "version": "3.1.6",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Menus.git",
-                "reference": "95caa23f7c8731af1933937580e7a038016e7c25"
+                "reference": "80ff44ac5ab62e2d6af751f93a8af334ac60338b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Menus/zipball/95caa23f7c8731af1933937580e7a038016e7c25",
-                "reference": "95caa23f7c8731af1933937580e7a038016e7c25",
+                "url": "https://api.github.com/repos/NetCommons3/Menus/zipball/80ff44ac5ab62e2d6af751f93a8af334ac60338b",
+                "reference": "80ff44ac5ab62e2d6af751f93a8af334ac60338b",
                 "shasum": ""
             },
             "require": {
@@ -2559,7 +2559,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -2577,20 +2577,20 @@
                 "cakephp",
                 "menu"
             ],
-            "time": "2017-11-10T10:10:33+00:00"
+            "time": "2018-01-26T11:06:21+00:00"
         },
         {
             "name": "netcommons/multidatabases",
-            "version": "3.1.6",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Multidatabases.git",
-                "reference": "80abd5331987667c444ac39b2771a87391e1b136"
+                "reference": "9069860096fb27fae7f14ed3b37e6d3ebee925bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Multidatabases/zipball/80abd5331987667c444ac39b2771a87391e1b136",
-                "reference": "80abd5331987667c444ac39b2771a87391e1b136",
+                "url": "https://api.github.com/repos/NetCommons3/Multidatabases/zipball/9069860096fb27fae7f14ed3b37e6d3ebee925bc",
+                "reference": "9069860096fb27fae7f14ed3b37e6d3ebee925bc",
                 "shasum": ""
             },
             "require": {
@@ -2610,7 +2610,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -2628,20 +2628,20 @@
                 "cakephp",
                 "multidatabases"
             ],
-            "time": "2017-11-24T02:27:41+00:00"
+            "time": "2018-01-26T11:16:12+00:00"
         },
         {
             "name": "netcommons/nc2-to-nc3",
-            "version": "3.1.6",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Nc2ToNc3.git",
-                "reference": "8bfb5555bccb951bb816a85dd8ac30b3324f7fb1"
+                "reference": "9680dbdf9973fb820c9f045aebf56c04fbfa86a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Nc2ToNc3/zipball/8bfb5555bccb951bb816a85dd8ac30b3324f7fb1",
-                "reference": "8bfb5555bccb951bb816a85dd8ac30b3324f7fb1",
+                "url": "https://api.github.com/repos/NetCommons3/Nc2ToNc3/zipball/9680dbdf9973fb820c9f045aebf56c04fbfa86a3",
+                "reference": "9680dbdf9973fb820c9f045aebf56c04fbfa86a3",
                 "shasum": ""
             },
             "require": {
@@ -2692,7 +2692,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -2712,20 +2712,20 @@
                 "cakephp",
                 "nc2-to-nc3"
             ],
-            "time": "2017-11-30T04:38:57+00:00"
+            "time": "2018-01-26T11:40:49+00:00"
         },
         {
             "name": "netcommons/net-commons",
-            "version": "3.1.6",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/NetCommons.git",
-                "reference": "707129b9977b096e24433edb064ded45841b226c"
+                "reference": "17d8411a073d66a611732f60a3d55640a8107ac3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/NetCommons/zipball/707129b9977b096e24433edb064ded45841b226c",
-                "reference": "707129b9977b096e24433edb064ded45841b226c",
+                "url": "https://api.github.com/repos/NetCommons3/NetCommons/zipball/17d8411a073d66a611732f60a3d55640a8107ac3",
+                "reference": "17d8411a073d66a611732f60a3d55640a8107ac3",
                 "shasum": ""
             },
             "require": {
@@ -2743,6 +2743,7 @@
                 "netcommons/frames": "@dev",
                 "netcommons/m17n": "@dev",
                 "netcommons/mails": "@dev",
+                "netcommons/menus": "@dev",
                 "netcommons/pages": "@dev",
                 "netcommons/plugin-manager": "@dev",
                 "netcommons/private-space": "@dev",
@@ -2766,7 +2767,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -2780,20 +2781,20 @@
                 "cakephp",
                 "netcommons"
             ],
-            "time": "2017-11-29T08:01:25+00:00"
+            "time": "2018-01-26T11:42:07+00:00"
         },
         {
             "name": "netcommons/notifications",
-            "version": "3.1.5",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Notifications.git",
-                "reference": "827cc887ee8bfc7653fcd54bc868be48711b809e"
+                "reference": "8e77b5fb50f82a805e03bf72892b900e9dd42ce7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Notifications/zipball/827cc887ee8bfc7653fcd54bc868be48711b809e",
-                "reference": "827cc887ee8bfc7653fcd54bc868be48711b809e",
+                "url": "https://api.github.com/repos/NetCommons3/Notifications/zipball/8e77b5fb50f82a805e03bf72892b900e9dd42ce7",
+                "reference": "8e77b5fb50f82a805e03bf72892b900e9dd42ce7",
                 "shasum": ""
             },
             "require": {
@@ -2810,7 +2811,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -2824,20 +2825,20 @@
                 "cakephp",
                 "notifications"
             ],
-            "time": "2017-08-27T09:58:44+00:00"
+            "time": "2018-01-26T11:44:29+00:00"
         },
         {
             "name": "netcommons/pages",
-            "version": "3.1.6",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Pages.git",
-                "reference": "3ee20513d9502e3e5816f330e88cd8dc54188aec"
+                "reference": "e803c1b220e55dffcd15fe68111126e0f06e6501"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Pages/zipball/3ee20513d9502e3e5816f330e88cd8dc54188aec",
-                "reference": "3ee20513d9502e3e5816f330e88cd8dc54188aec",
+                "url": "https://api.github.com/repos/NetCommons3/Pages/zipball/e803c1b220e55dffcd15fe68111126e0f06e6501",
+                "reference": "e803c1b220e55dffcd15fe68111126e0f06e6501",
                 "shasum": ""
             },
             "require": {
@@ -2863,7 +2864,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -2881,20 +2882,20 @@
                 "cakephp",
                 "pages"
             ],
-            "time": "2017-10-10T08:24:35+00:00"
+            "time": "2018-01-26T11:45:53+00:00"
         },
         {
             "name": "netcommons/photo-albums",
-            "version": "3.1.5",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/PhotoAlbums.git",
-                "reference": "29dcfab01fbea9acb5064ab9f938ad123a526520"
+                "reference": "2692584f5ea7b24e724f1a653d9671281a3101d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/PhotoAlbums/zipball/29dcfab01fbea9acb5064ab9f938ad123a526520",
-                "reference": "29dcfab01fbea9acb5064ab9f938ad123a526520",
+                "url": "https://api.github.com/repos/NetCommons3/PhotoAlbums/zipball/2692584f5ea7b24e724f1a653d9671281a3101d2",
+                "reference": "2692584f5ea7b24e724f1a653d9671281a3101d2",
                 "shasum": ""
             },
             "require": {
@@ -2912,7 +2913,7 @@
             "type": "cakephp-plugin",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -2926,20 +2927,20 @@
                 "netcommons",
                 "photoAlbums"
             ],
-            "time": "2017-09-25T06:41:08+00:00"
+            "time": "2018-01-26T11:47:06+00:00"
         },
         {
             "name": "netcommons/plugin-manager",
-            "version": "3.1.6",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/PluginManager.git",
-                "reference": "8f34d427d33604d7a39c7c3d7d47a8875ef1cb57"
+                "reference": "5b4b650dda4c9c31d4dcfd9997dab6e8c73ec278"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/PluginManager/zipball/8f34d427d33604d7a39c7c3d7d47a8875ef1cb57",
-                "reference": "8f34d427d33604d7a39c7c3d7d47a8875ef1cb57",
+                "url": "https://api.github.com/repos/NetCommons3/PluginManager/zipball/5b4b650dda4c9c31d4dcfd9997dab6e8c73ec278",
+                "reference": "5b4b650dda4c9c31d4dcfd9997dab6e8c73ec278",
                 "shasum": ""
             },
             "require": {
@@ -2961,7 +2962,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -2979,20 +2980,20 @@
                 "cakephp",
                 "plugin-manager"
             ],
-            "time": "2017-10-13T07:55:40+00:00"
+            "time": "2018-01-26T11:50:29+00:00"
         },
         {
             "name": "netcommons/private-space",
-            "version": "3.1.5",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/PrivateSpace.git",
-                "reference": "ef6a90a5fab7115448756109e310678e6ccfd7db"
+                "reference": "5c54fcbf6a75704398f32fae42794d85769d636f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/PrivateSpace/zipball/ef6a90a5fab7115448756109e310678e6ccfd7db",
-                "reference": "ef6a90a5fab7115448756109e310678e6ccfd7db",
+                "url": "https://api.github.com/repos/NetCommons3/PrivateSpace/zipball/5c54fcbf6a75704398f32fae42794d85769d636f",
+                "reference": "5c54fcbf6a75704398f32fae42794d85769d636f",
                 "shasum": ""
             },
             "require": {
@@ -3012,7 +3013,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -3026,20 +3027,20 @@
                 "cakephp",
                 "private_space"
             ],
-            "time": "2017-08-27T11:54:57+00:00"
+            "time": "2018-01-26T11:51:56+00:00"
         },
         {
             "name": "netcommons/public-space",
-            "version": "3.1.3",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/PublicSpace.git",
-                "reference": "79c70a1c0f8b9c4260290ab249fb59b1967b1a87"
+                "reference": "365f23f98d31c5e7c2a0bfb7e8029f2af0591879"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/PublicSpace/zipball/79c70a1c0f8b9c4260290ab249fb59b1967b1a87",
-                "reference": "79c70a1c0f8b9c4260290ab249fb59b1967b1a87",
+                "url": "https://api.github.com/repos/NetCommons3/PublicSpace/zipball/365f23f98d31c5e7c2a0bfb7e8029f2af0591879",
+                "reference": "365f23f98d31c5e7c2a0bfb7e8029f2af0591879",
                 "shasum": ""
             },
             "require": {
@@ -3056,7 +3057,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -3071,20 +3072,20 @@
                 "public",
                 "space"
             ],
-            "time": "2017-06-28T14:04:11+00:00"
+            "time": "2018-01-26T11:54:02+00:00"
         },
         {
             "name": "netcommons/questionnaires",
-            "version": "3.1.6",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Questionnaires.git",
-                "reference": "3c32a5efe856c9dcca735d8d38d5060f04d031e2"
+                "reference": "11598efb16fd89838013d76f44c4dcf1a0037edc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Questionnaires/zipball/3c32a5efe856c9dcca735d8d38d5060f04d031e2",
-                "reference": "3c32a5efe856c9dcca735d8d38d5060f04d031e2",
+                "url": "https://api.github.com/repos/NetCommons3/Questionnaires/zipball/11598efb16fd89838013d76f44c4dcf1a0037edc",
+                "reference": "11598efb16fd89838013d76f44c4dcf1a0037edc",
                 "shasum": ""
             },
             "require": {
@@ -3114,7 +3115,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -3146,20 +3147,20 @@
                 "cakephp",
                 "questionnaires"
             ],
-            "time": "2017-11-08T04:07:27+00:00"
+            "time": "2018-01-26T11:55:44+00:00"
         },
         {
             "name": "netcommons/quizzes",
-            "version": "3.1.5",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Quizzes.git",
-                "reference": "4cf05e13957ba2027ca1a33c7b8537e63f05abdb"
+                "reference": "b7dddb30cb1223aea24cb58b643e4f7f515dd9c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Quizzes/zipball/4cf05e13957ba2027ca1a33c7b8537e63f05abdb",
-                "reference": "4cf05e13957ba2027ca1a33c7b8537e63f05abdb",
+                "url": "https://api.github.com/repos/NetCommons3/Quizzes/zipball/b7dddb30cb1223aea24cb58b643e4f7f515dd9c0",
+                "reference": "b7dddb30cb1223aea24cb58b643e4f7f515dd9c0",
                 "shasum": ""
             },
             "require": {
@@ -3189,7 +3190,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -3221,20 +3222,20 @@
                 "cakephp",
                 "quizzes"
             ],
-            "time": "2017-09-11T08:48:50+00:00"
+            "time": "2018-01-26T12:09:45+00:00"
         },
         {
             "name": "netcommons/registrations",
-            "version": "3.1.6",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Registrations.git",
-                "reference": "f7204ae30d3a8301dd50ca22afffa84028da3b34"
+                "reference": "2e541c7c9effbc0f79e6155a882e3069f1488cb1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Registrations/zipball/f7204ae30d3a8301dd50ca22afffa84028da3b34",
-                "reference": "f7204ae30d3a8301dd50ca22afffa84028da3b34",
+                "url": "https://api.github.com/repos/NetCommons3/Registrations/zipball/2e541c7c9effbc0f79e6155a882e3069f1488cb1",
+                "reference": "2e541c7c9effbc0f79e6155a882e3069f1488cb1",
                 "shasum": ""
             },
             "require": {
@@ -3264,7 +3265,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -3302,20 +3303,20 @@
                 "cakephp",
                 "registrations"
             ],
-            "time": "2017-11-07T05:03:26+00:00"
+            "time": "2018-01-26T12:13:35+00:00"
         },
         {
             "name": "netcommons/reservations",
-            "version": "3.1.5",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Reservations.git",
-                "reference": "67fd1734d8ecfa5b2043c8d713999baa94dc2ef7"
+                "reference": "92f985868f622bf3d2bc017bf19810a5e236be3e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Reservations/zipball/67fd1734d8ecfa5b2043c8d713999baa94dc2ef7",
-                "reference": "67fd1734d8ecfa5b2043c8d713999baa94dc2ef7",
+                "url": "https://api.github.com/repos/NetCommons3/Reservations/zipball/92f985868f622bf3d2bc017bf19810a5e236be3e",
+                "reference": "92f985868f622bf3d2bc017bf19810a5e236be3e",
                 "shasum": ""
             },
             "require": {
@@ -3345,7 +3346,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -3377,20 +3378,20 @@
                 "cakephp",
                 "reservations"
             ],
-            "time": "2017-08-27T11:55:09+00:00"
+            "time": "2018-01-26T12:41:47+00:00"
         },
         {
             "name": "netcommons/roles",
-            "version": "3.1.3",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Roles.git",
-                "reference": "075db15aa0d3afd5381074bbdc000d1b90f487b1"
+                "reference": "7ee8f49c45b2002a1e49cd31b8efccd9b2872b79"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Roles/zipball/075db15aa0d3afd5381074bbdc000d1b90f487b1",
-                "reference": "075db15aa0d3afd5381074bbdc000d1b90f487b1",
+                "url": "https://api.github.com/repos/NetCommons3/Roles/zipball/7ee8f49c45b2002a1e49cd31b8efccd9b2872b79",
+                "reference": "7ee8f49c45b2002a1e49cd31b8efccd9b2872b79",
                 "shasum": ""
             },
             "require": {
@@ -3407,7 +3408,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -3422,20 +3423,20 @@
                 "netcommons",
                 "roles"
             ],
-            "time": "2017-06-28T14:05:10+00:00"
+            "time": "2018-01-26T12:35:58+00:00"
         },
         {
             "name": "netcommons/rooms",
-            "version": "3.1.6",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Rooms.git",
-                "reference": "0e4451edf2d1f20fd8cdc7b4b7a1228e7b98b4b8"
+                "reference": "16e92e6df1af990dfa30363875677a9bafba2628"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Rooms/zipball/0e4451edf2d1f20fd8cdc7b4b7a1228e7b98b4b8",
-                "reference": "0e4451edf2d1f20fd8cdc7b4b7a1228e7b98b4b8",
+                "url": "https://api.github.com/repos/NetCommons3/Rooms/zipball/16e92e6df1af990dfa30363875677a9bafba2628",
+                "reference": "16e92e6df1af990dfa30363875677a9bafba2628",
                 "shasum": ""
             },
             "require": {
@@ -3468,7 +3469,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -3487,20 +3488,20 @@
                 "netcommons",
                 "rooms"
             ],
-            "time": "2017-11-05T09:58:09+00:00"
+            "time": "2018-01-26T12:49:53+00:00"
         },
         {
             "name": "netcommons/rss-readers",
-            "version": "3.1.3",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/RssReaders.git",
-                "reference": "cab785b8b2225bcb286c4c981c2ee4d7f650c667"
+                "reference": "a8237f5a86820b40c06c5f37147f61d661aebad0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/RssReaders/zipball/cab785b8b2225bcb286c4c981c2ee4d7f650c667",
-                "reference": "cab785b8b2225bcb286c4c981c2ee4d7f650c667",
+                "url": "https://api.github.com/repos/NetCommons3/RssReaders/zipball/a8237f5a86820b40c06c5f37147f61d661aebad0",
+                "reference": "a8237f5a86820b40c06c5f37147f61d661aebad0",
                 "shasum": ""
             },
             "require": {
@@ -3523,7 +3524,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -3541,20 +3542,20 @@
                 "cakephp",
                 "rss-readers"
             ],
-            "time": "2017-07-11T10:15:00+00:00"
+            "time": "2018-01-26T12:51:37+00:00"
         },
         {
             "name": "netcommons/searches",
-            "version": "3.1.4",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Searches.git",
-                "reference": "3df6a8cf640d7f1dd51fc8e10777ab408e0d1479"
+                "reference": "4bc6c3ebbdeaa57a4db087c259b4d12f62031352"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Searches/zipball/3df6a8cf640d7f1dd51fc8e10777ab408e0d1479",
-                "reference": "3df6a8cf640d7f1dd51fc8e10777ab408e0d1479",
+                "url": "https://api.github.com/repos/NetCommons3/Searches/zipball/4bc6c3ebbdeaa57a4db087c259b4d12f62031352",
+                "reference": "4bc6c3ebbdeaa57a4db087c259b4d12f62031352",
                 "shasum": ""
             },
             "require": {
@@ -3577,7 +3578,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -3595,20 +3596,20 @@
                 "cakephp",
                 "searches"
             ],
-            "time": "2017-08-10T02:46:30+00:00"
+            "time": "2018-01-26T12:53:15+00:00"
         },
         {
             "name": "netcommons/site-manager",
-            "version": "3.1.5",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/SiteManager.git",
-                "reference": "af47337dbd5001b279ffef722587d34d9102b405"
+                "reference": "397557dc4f4b804e085a724993e0fdf7f9faa844"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/SiteManager/zipball/af47337dbd5001b279ffef722587d34d9102b405",
-                "reference": "af47337dbd5001b279ffef722587d34d9102b405",
+                "url": "https://api.github.com/repos/NetCommons3/SiteManager/zipball/397557dc4f4b804e085a724993e0fdf7f9faa844",
+                "reference": "397557dc4f4b804e085a724993e0fdf7f9faa844",
                 "shasum": ""
             },
             "require": {
@@ -3636,7 +3637,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -3654,24 +3655,25 @@
                 "cakephp",
                 "site_manager"
             ],
-            "time": "2017-09-11T04:42:06+00:00"
+            "time": "2018-01-26T12:55:12+00:00"
         },
         {
             "name": "netcommons/system-manager",
-            "version": "3.1.3",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/SystemManager.git",
-                "reference": "5f43e86d1b5b33b502cc709e90fdb97743120f98"
+                "reference": "7cb8723d72d8de0fb61484be6f07afe9e166451e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/SystemManager/zipball/5f43e86d1b5b33b502cc709e90fdb97743120f98",
-                "reference": "5f43e86d1b5b33b502cc709e90fdb97743120f98",
+                "url": "https://api.github.com/repos/NetCommons3/SystemManager/zipball/7cb8723d72d8de0fb61484be6f07afe9e166451e",
+                "reference": "7cb8723d72d8de0fb61484be6f07afe9e166451e",
                 "shasum": ""
             },
             "require": {
                 "cakedc/migrations": "~2.2",
+                "netcommons/auth": "@dev",
                 "netcommons/control-panel": "@dev",
                 "netcommons/net-commons": "@dev",
                 "netcommons/plugin-manager": "@dev",
@@ -3689,7 +3691,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -3707,20 +3709,20 @@
                 "cakephp",
                 "system_manager"
             ],
-            "time": "2017-06-28T14:13:29+00:00"
+            "time": "2018-01-26T12:57:06+00:00"
         },
         {
             "name": "netcommons/tags",
-            "version": "3.1.3",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Tags.git",
-                "reference": "fc6f994fa9fbfd1c6fa14eedee14aa60d0dd236e"
+                "reference": "6a49926cc6dd662b2f57c59a7e7838baea1b6de2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Tags/zipball/fc6f994fa9fbfd1c6fa14eedee14aa60d0dd236e",
-                "reference": "fc6f994fa9fbfd1c6fa14eedee14aa60d0dd236e",
+                "url": "https://api.github.com/repos/NetCommons3/Tags/zipball/6a49926cc6dd662b2f57c59a7e7838baea1b6de2",
+                "reference": "6a49926cc6dd662b2f57c59a7e7838baea1b6de2",
                 "shasum": ""
             },
             "require": {
@@ -3737,7 +3739,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -3757,20 +3759,20 @@
                 "cakephp",
                 "tags"
             ],
-            "time": "2017-06-28T14:13:47+00:00"
+            "time": "2018-01-26T13:01:25+00:00"
         },
         {
             "name": "netcommons/tasks",
-            "version": "3.1.5",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Tasks.git",
-                "reference": "2fd2e7b8cd312a58ee43ccb3a1c635c82f7c1120"
+                "reference": "5b5c0ad89e6aca243d675d45f121cd28a077c51c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Tasks/zipball/2fd2e7b8cd312a58ee43ccb3a1c635c82f7c1120",
-                "reference": "2fd2e7b8cd312a58ee43ccb3a1c635c82f7c1120",
+                "url": "https://api.github.com/repos/NetCommons3/Tasks/zipball/5b5c0ad89e6aca243d675d45f121cd28a077c51c",
+                "reference": "5b5c0ad89e6aca243d675d45f121cd28a077c51c",
                 "shasum": ""
             },
             "require": {
@@ -3798,7 +3800,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -3818,20 +3820,20 @@
                 "Tasks",
                 "cakephp"
             ],
-            "time": "2017-09-11T06:12:30+00:00"
+            "time": "2018-01-26T13:09:32+00:00"
         },
         {
             "name": "netcommons/theme-settings",
-            "version": "3.1.3",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/ThemeSettings.git",
-                "reference": "cbe55afff73f749ad82db66293fc9e09c1f2a377"
+                "reference": "fa72f59c56459e1f8be65c743fcb2e94070855b3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/ThemeSettings/zipball/cbe55afff73f749ad82db66293fc9e09c1f2a377",
-                "reference": "cbe55afff73f749ad82db66293fc9e09c1f2a377",
+                "url": "https://api.github.com/repos/NetCommons3/ThemeSettings/zipball/fa72f59c56459e1f8be65c743fcb2e94070855b3",
+                "reference": "fa72f59c56459e1f8be65c743fcb2e94070855b3",
                 "shasum": ""
             },
             "require": {
@@ -3847,7 +3849,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -3861,20 +3863,20 @@
                 "cakephp",
                 "theme"
             ],
-            "time": "2017-06-28T14:14:28+00:00"
+            "time": "2018-01-26T13:10:42+00:00"
         },
         {
             "name": "netcommons/topics",
-            "version": "3.1.5",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Topics.git",
-                "reference": "eebebbf51a62732760f504c2257b9d1f639d8a1c"
+                "reference": "3b99c9fbdd2a08d36c95947ef55156e345633c7d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Topics/zipball/eebebbf51a62732760f504c2257b9d1f639d8a1c",
-                "reference": "eebebbf51a62732760f504c2257b9d1f639d8a1c",
+                "url": "https://api.github.com/repos/NetCommons3/Topics/zipball/3b99c9fbdd2a08d36c95947ef55156e345633c7d",
+                "reference": "3b99c9fbdd2a08d36c95947ef55156e345633c7d",
                 "shasum": ""
             },
             "require": {
@@ -3902,7 +3904,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -3920,20 +3922,20 @@
                 "cakephp",
                 "topics"
             ],
-            "time": "2017-09-28T04:19:37+00:00"
+            "time": "2018-01-26T13:13:16+00:00"
         },
         {
             "name": "netcommons/user-attributes",
-            "version": "3.1.3",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/UserAttributes.git",
-                "reference": "10e659cc8ce26e89fbbf072574f227cb2b35fca9"
+                "reference": "76d83d29bf889d907f1622195e878fca54a6a946"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/UserAttributes/zipball/10e659cc8ce26e89fbbf072574f227cb2b35fca9",
-                "reference": "10e659cc8ce26e89fbbf072574f227cb2b35fca9",
+                "url": "https://api.github.com/repos/NetCommons3/UserAttributes/zipball/76d83d29bf889d907f1622195e878fca54a6a946",
+                "reference": "76d83d29bf889d907f1622195e878fca54a6a946",
                 "shasum": ""
             },
             "require": {
@@ -3955,7 +3957,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -3973,20 +3975,20 @@
                 "cakephp",
                 "user_attributes"
             ],
-            "time": "2017-06-28T14:16:05+00:00"
+            "time": "2018-01-26T13:14:48+00:00"
         },
         {
             "name": "netcommons/user-manager",
-            "version": "3.1.5",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/UserManager.git",
-                "reference": "882078012b90fbf570e0f6c8c0065081770109e5"
+                "reference": "b78f6e7a6ff157aa33d792940efcbdeba35acc7b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/UserManager/zipball/882078012b90fbf570e0f6c8c0065081770109e5",
-                "reference": "882078012b90fbf570e0f6c8c0065081770109e5",
+                "url": "https://api.github.com/repos/NetCommons3/UserManager/zipball/b78f6e7a6ff157aa33d792940efcbdeba35acc7b",
+                "reference": "b78f6e7a6ff157aa33d792940efcbdeba35acc7b",
                 "shasum": ""
             },
             "require": {
@@ -4011,7 +4013,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -4029,20 +4031,20 @@
                 "cakephp",
                 "user_manager"
             ],
-            "time": "2017-09-11T04:42:21+00:00"
+            "time": "2018-01-26T13:16:09+00:00"
         },
         {
             "name": "netcommons/user-roles",
-            "version": "3.1.5",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/UserRoles.git",
-                "reference": "3a9e39e210680103cd7cdc19b0ed4ef2a29c09c2"
+                "reference": "023f1a7089c5ae240fabfd1e093842ef1c860b94"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/UserRoles/zipball/3a9e39e210680103cd7cdc19b0ed4ef2a29c09c2",
-                "reference": "3a9e39e210680103cd7cdc19b0ed4ef2a29c09c2",
+                "url": "https://api.github.com/repos/NetCommons3/UserRoles/zipball/023f1a7089c5ae240fabfd1e093842ef1c860b94",
+                "reference": "023f1a7089c5ae240fabfd1e093842ef1c860b94",
                 "shasum": ""
             },
             "require": {
@@ -4065,7 +4067,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -4083,20 +4085,20 @@
                 "cakephp",
                 "user_roles"
             ],
-            "time": "2017-08-27T11:55:37+00:00"
+            "time": "2018-01-26T13:17:15+00:00"
         },
         {
             "name": "netcommons/users",
-            "version": "3.1.6",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Users.git",
-                "reference": "4a1f13a6c10b426827eb79046ba0da4677f5e6c4"
+                "reference": "817fc3f0d318b9d8e0776b934648d04860947919"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Users/zipball/4a1f13a6c10b426827eb79046ba0da4677f5e6c4",
-                "reference": "4a1f13a6c10b426827eb79046ba0da4677f5e6c4",
+                "url": "https://api.github.com/repos/NetCommons3/Users/zipball/817fc3f0d318b9d8e0776b934648d04860947919",
+                "reference": "817fc3f0d318b9d8e0776b934648d04860947919",
                 "shasum": ""
             },
             "require": {
@@ -4123,7 +4125,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -4141,20 +4143,20 @@
                 "cakephp",
                 "user"
             ],
-            "time": "2017-11-29T09:54:11+00:00"
+            "time": "2018-01-26T13:20:45+00:00"
         },
         {
             "name": "netcommons/videos",
-            "version": "3.1.5",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Videos.git",
-                "reference": "b7f351f7f30a2a801531b5e73f88b986c549c712"
+                "reference": "c5ca928a6bd1c3a53aa6ce411e615d27cab16788"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Videos/zipball/b7f351f7f30a2a801531b5e73f88b986c549c712",
-                "reference": "b7f351f7f30a2a801531b5e73f88b986c549c712",
+                "url": "https://api.github.com/repos/NetCommons3/Videos/zipball/c5ca928a6bd1c3a53aa6ce411e615d27cab16788",
+                "reference": "c5ca928a6bd1c3a53aa6ce411e615d27cab16788",
                 "shasum": ""
             },
             "require": {
@@ -4182,7 +4184,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -4202,20 +4204,20 @@
                 "cakephp",
                 "videos"
             ],
-            "time": "2017-09-29T06:40:53+00:00"
+            "time": "2018-01-25T10:44:16+00:00"
         },
         {
             "name": "netcommons/visual-captcha",
-            "version": "3.1.3",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/VisualCaptcha.git",
-                "reference": "2b1b09b9ced47af37c37cd3fac233a8337d264f4"
+                "reference": "f2b4b59ce3e93c051d44d7632d5c2c59ca4142ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/VisualCaptcha/zipball/2b1b09b9ced47af37c37cd3fac233a8337d264f4",
-                "reference": "2b1b09b9ced47af37c37cd3fac233a8337d264f4",
+                "url": "https://api.github.com/repos/NetCommons3/VisualCaptcha/zipball/f2b4b59ce3e93c051d44d7632d5c2c59ca4142ce",
+                "reference": "f2b4b59ce3e93c051d44d7632d5c2c59ca4142ce",
                 "shasum": ""
             },
             "require": {
@@ -4233,7 +4235,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -4265,20 +4267,20 @@
                 "cakephp",
                 "visual_captcha"
             ],
-            "time": "2017-06-28T14:28:43+00:00"
+            "time": "2018-01-26T13:28:21+00:00"
         },
         {
             "name": "netcommons/workflow",
-            "version": "3.1.6",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Workflow.git",
-                "reference": "3ecf0c3b9c4fd5206e30a053b76ef2a36562a089"
+                "reference": "8ea9f8a36a4bbb3975be7719a56151ab06797581"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Workflow/zipball/3ecf0c3b9c4fd5206e30a053b76ef2a36562a089",
-                "reference": "3ecf0c3b9c4fd5206e30a053b76ef2a36562a089",
+                "url": "https://api.github.com/repos/NetCommons3/Workflow/zipball/8ea9f8a36a4bbb3975be7719a56151ab06797581",
+                "reference": "8ea9f8a36a4bbb3975be7719a56151ab06797581",
                 "shasum": ""
             },
             "require": {
@@ -4299,7 +4301,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -4313,20 +4315,20 @@
                 "cakephp",
                 "workflow"
             ],
-            "time": "2017-11-07T08:34:34+00:00"
+            "time": "2018-01-26T13:34:31+00:00"
         },
         {
             "name": "netcommons/wysiwyg",
-            "version": "3.1.6",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Wysiwyg.git",
-                "reference": "076bb5dbbb546fef2d5c0c33aad0068e8c3fafbb"
+                "reference": "6d11f3a7a67f36363e4daf8dafa3f69f9b3f7043"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Wysiwyg/zipball/076bb5dbbb546fef2d5c0c33aad0068e8c3fafbb",
-                "reference": "076bb5dbbb546fef2d5c0c33aad0068e8c3fafbb",
+                "url": "https://api.github.com/repos/NetCommons3/Wysiwyg/zipball/6d11f3a7a67f36363e4daf8dafa3f69f9b3f7043",
+                "reference": "6d11f3a7a67f36363e4daf8dafa3f69f9b3f7043",
                 "shasum": ""
             },
             "require": {
@@ -4344,7 +4346,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "NetCommons License"
+                "LicenseRef-NetCommons"
             ],
             "authors": [
                 {
@@ -4358,7 +4360,7 @@
                 "cakephp",
                 "wysiwyg"
             ],
-            "time": "2017-10-01T22:44:14+00:00"
+            "time": "2018-01-26T13:36:20+00:00"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -6963,16 +6965,16 @@
         },
         {
             "name": "seld/jsonlint",
-            "version": "1.7.0",
+            "version": "1.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/jsonlint.git",
-                "reference": "9b355654ea99460397b89c132b5c1087b6bf4473"
+                "reference": "d15f59a67ff805a44c50ea0516d2341740f81a38"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/jsonlint/zipball/9b355654ea99460397b89c132b5c1087b6bf4473",
-                "reference": "9b355654ea99460397b89c132b5c1087b6bf4473",
+                "url": "https://api.github.com/repos/Seldaek/jsonlint/zipball/d15f59a67ff805a44c50ea0516d2341740f81a38",
+                "reference": "d15f59a67ff805a44c50ea0516d2341740f81a38",
                 "shasum": ""
             },
             "require": {
@@ -7008,7 +7010,7 @@
                 "parser",
                 "validator"
             ],
-            "time": "2018-01-03T12:13:57+00:00"
+            "time": "2018-01-24T12:46:19+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
