@@ -2585,12 +2585,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Multidatabases.git",
-                "reference": "9069860096fb27fae7f14ed3b37e6d3ebee925bc"
+                "reference": "af2ee6a2160e3b0563aba280fcf116950b69ef7a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Multidatabases/zipball/9069860096fb27fae7f14ed3b37e6d3ebee925bc",
-                "reference": "9069860096fb27fae7f14ed3b37e6d3ebee925bc",
+                "url": "https://api.github.com/repos/NetCommons3/Multidatabases/zipball/af2ee6a2160e3b0563aba280fcf116950b69ef7a",
+                "reference": "af2ee6a2160e3b0563aba280fcf116950b69ef7a",
                 "shasum": ""
             },
             "require": {
@@ -2628,7 +2628,7 @@
                 "cakephp",
                 "multidatabases"
             ],
-            "time": "2018-01-26T11:16:12+00:00"
+            "time": "2018-01-27T08:30:05+00:00"
         },
         {
             "name": "netcommons/nc2-to-nc3",
