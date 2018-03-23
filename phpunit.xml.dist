@@ -14,6 +14,10 @@
             <directory suffix=".php">vendors</directory>
             <directory suffix="Test.php">plugins</directory>
         </blacklist>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">app</directory>
+            <directory suffix=".ctp">app</directory>
+        </whitelist>
     </filter>
     <logging>
         <log type="coverage-clover" target="build/logs/clover.xml"/>
