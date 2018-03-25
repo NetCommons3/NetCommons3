@@ -5,7 +5,6 @@
             <directory suffix=".php">app</directory>
             <directory suffix=".ctp">app</directory>
             <exclude>
-                <file>app/Controller/AppControllerOrig.php</file>
                 <directory suffix=".php">app/Config</directory>
                 <directory suffix=".php">app/Test</directory>
                 <directory suffix=".php">app/Plugin/DebugKit</directory>
@@ -17,6 +16,11 @@
                 <directory suffix=".php">app/Plugin/Users</directory>
                 <directory suffix=".php">vendors</directory>
                 <directory suffix="Test.php">plugins</directory>
+                <file phpVersion="5.5" phpVersionOperator="<=">app/Controller/AppControllerOrig.php</file>
+                <directory suffix=".php" phpVersion="5.5" phpVersionOperator="<=">app/Plugin/*/Config/Migration</directory>
+                <directory suffix=".php" phpVersion="5.5" phpVersionOperator="<=">app/Plugin/*/Config/Schema</directory>
+                <directory suffix=".php" phpVersion="5.5" phpVersionOperator="<=">app/Plugin/*/Test/Case</directory>
+                <directory suffix=".php" phpVersion="5.5" phpVersionOperator="<=">app/Plugin/*/Test/Fixture</directory>
             </exclude>
         </whitelist>
     </filter>
