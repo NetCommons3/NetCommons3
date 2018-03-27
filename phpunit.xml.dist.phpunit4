@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="vendors/autoload.php">
+    <filter>
+        <blacklist>
+            <directory suffix=".php">app/Config</directory>
+            <directory suffix=".php">app/Test</directory>
+            <directory suffix=".php">app/Plugin/DebugKit</directory>
+            <directory suffix=".ctp">app/Plugin/DebugKit</directory>
+            <directory suffix=".php">app/Plugin/Migrations</directory>
+            <directory suffix=".php">app/Plugin/MobileDetect</directory>
+            <directory suffix=".php">app/Plugin/HtmlPurifier</directory>
+            <directory suffix=".php">app/Plugin/TinyMCE</directory>
+            <directory suffix=".php">app/Plugin/Users</directory>
+            <directory suffix=".php">vendors</directory>
+            <directory suffix="Test.php">plugins</directory>
+        </blacklist>
+    </filter>
+    <logging>
+        <log type="coverage-clover" target="build/logs/clover.xml"/>
+        <log type="coverage-html" target="build/logs/clover"/>
+    </logging>
+</phpunit>
