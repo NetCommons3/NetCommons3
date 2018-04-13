@@ -6,16 +6,12 @@
             <directory suffix=".ctp">app</directory>
             <exclude>
                 <directory suffix=".php">app/Config</directory>
+                <directory suffix=".php">app/Lib</directory>
+                <directory suffix=".php">app/Plugin</directory>
                 <directory suffix=".php">app/Test</directory>
-                <directory suffix=".php">app/Plugin/DebugKit</directory>
-                <directory suffix=".ctp">app/Plugin/DebugKit</directory>
-                <directory suffix=".php">app/Plugin/Migrations</directory>
-                <directory suffix=".php">app/Plugin/MobileDetect</directory>
-                <directory suffix=".php">app/Plugin/HtmlPurifier</directory>
-                <directory suffix=".php">app/Plugin/TinyMCE</directory>
-                <directory suffix=".php">app/Plugin/Users</directory>
+                <directory suffix=".php">app/Vendor</directory>
+                <directory suffix=".php">app/tmp</directory>
                 <directory suffix=".php">vendors</directory>
-                <directory suffix="Test.php">plugins</directory>
             </exclude>
         </whitelist>
     </filter>
