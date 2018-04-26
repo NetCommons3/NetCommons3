@@ -98,6 +98,23 @@ if (!empty($failed)) {
 	trigger_error("CakePHP core could not be found. Check the value of CAKE_CORE_INCLUDE_PATH in APP/webroot/index.php. It should point to the directory containing your " . DS . "cake core directory and your " . DS . "vendors root directory.", E_USER_ERROR);
 }
 
+
+CakeLog::config('debug-kit', array(
+	'engine' => 'File',
+	'types' => array('debug-kit'),
+	'file' => 'debug-kit-' . date('YmdH'),
+));
+
+CakeLog::config('debug-kit-logs', array(
+	'engine' => 'File',
+	'types' => array('debug-kit-logs'),
+	'file' => 'debug-kit-logs-' . date('YmdH'),
+));
+
+App::uses('DebugTimer', 'DebugKit.Lib');
+DebugTimer::start($_SERVER['REDIRECT_URL']);
+$startTime = microtime(true);
+
 App::uses('Dispatcher', 'Routing');
 
 $Dispatcher = new Dispatcher();
@@ -105,3 +122,37 @@ $Dispatcher->dispatch(
 	new CakeRequest(),
 	new CakeResponse()
 );
+
+//以下、デバッグの出力
+$endTime = microtime(true);
+DebugTimer::stop($_SERVER['REDIRECT_URL']);
+
+$cacheKey = 'toolbar_cache' . CakeSession::read('Config.userAgent');
+$existing = (array)Cache::read($cacheKey, 'debug_kit');
+if ($existing[0]) {
+	$pluginTimer = [];
+	foreach ($existing[0]['timer']['content']['timers'] as $key => $timer) {
+		if (substr($key, 0, strlen('plugin_timer')) === 'plugin_timer') {
+			$pluginTimer[] = $timer;
+		}
+	}
+	$export = var_export([
+		'total' => sprintf('%.10f', ($endTime - $startTime)),
+		'redirect_url' => $_SERVER['REDIRECT_URL'],
+		'plugins' => $pluginTimer,
+		'sql_log' => $existing[0]['sql_log'],
+		'timer' => $existing[0]['timer'],
+	], true);
+	$export = preg_replace('/' . preg_quote('\'actions\' => \'', '/') . '[^\']+' . preg_quote('\'', '/') . '/', '\'actions\' => \'\'', $export);
+	$export = preg_replace('/' . preg_quote('\'query\' => \'', '/') . '([^\']+)' . preg_quote('\'', '/') . '/', '\'query\' => "$1"', $export);
+	$export = preg_replace('/' . preg_quote('&#039;', '/'). '/', '\'', $export);
+	$export = preg_replace('/' . preg_quote('&gt;', '/'). '/', '>', $export);
+	$export = preg_replace('/' . preg_quote('&lt;', '/'). '/', '<', $export);
+
+	CakeLog::write('debug-kit', var_export([
+		'total' => sprintf('%.10f', ($endTime - $startTime)),
+		'redirect_url' => $_SERVER['REDIRECT_URL'],
+		'plugins' => $pluginTimer,
+	], true));
+	CakeLog::write('debug-kit-logs', $export);
+}
