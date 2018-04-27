@@ -20,7 +20,15 @@
     "require": {
         "cakephp/cakephp":              "~2.10@stable",
         "netcommons/install":           "@stable",
-        "jms/serializer":               "1.1.0@stable"
+        "jms/serializer":               "1.1.0@stable",
+        "netcommons/bbses": "dev-speedup",
+        "netcommons/boxes": "dev-speedup",
+        "netcommons/circular-notices": "dev-speedup",
+        "netcommons/plugin-manager": "dev-speedup",
+        "netcommons/roles": "dev-speedup",
+        "netcommons/rooms": "dev-speedup",
+        "netcommons/topics": "dev-speedup",
+        "netcommons/users": "dev-speedup"
     },
     "require-dev": {
         "cakephp/cakephp-codesniffer":  "~1.0@stable",
@@ -59,5 +67,6 @@
         "post-update-cmd": [
             "app/Console/cake install.install install_bower"
          ]
-    }
+    },
+    "minimum-stability": "dev"
 }
