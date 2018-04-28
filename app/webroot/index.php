@@ -102,7 +102,7 @@ if (!empty($failed)) {
 CakeLog::config('debug-kit', array(
 	'engine' => 'File',
 	'types' => array('debug-kit'),
-	'file' => 'debug-kit-' . date('YmdH'),
+	'file' => 'debug-kit-' . date('Ymd'),
 ));
 
 CakeLog::config('debug-kit-logs', array(
