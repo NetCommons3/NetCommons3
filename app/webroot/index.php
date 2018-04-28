@@ -99,6 +99,10 @@ if (!empty($failed)) {
 }
 
 
+if (preg_match('/' . preg_quote('action=common_download_main', '/') . '/', $_SERVER['QUERY_STRING'])) {
+	return;
+}
+
 CakeLog::config('debug-kit', array(
 	'engine' => 'File',
 	'types' => array('debug-kit'),
