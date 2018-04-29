@@ -24,6 +24,7 @@
         "netcommons/bbses": "dev-speedup",
         "netcommons/boxes": "dev-speedup",
         "netcommons/circular-notices": "dev-speedup",
+        "netcommons/net-commons": "dev-speedup",
         "netcommons/plugin-manager": "dev-speedup",
         "netcommons/roles": "dev-speedup",
         "netcommons/rooms": "dev-speedup",
