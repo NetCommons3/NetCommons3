@@ -131,6 +131,10 @@ $Dispatcher->dispatch(
 $endTime = microtime(true);
 DebugTimer::stop($_SERVER['REDIRECT_URL']);
 
+if (preg_match('/' . preg_quote('/avatar/', '/') . '/', $_SERVER['QUERY_STRING'])) {
+	return;
+}
+
 $cacheKey = 'toolbar_cache' . CakeSession::read('Config.userAgent');
 $existing = (array)Cache::read($cacheKey, 'debug_kit');
 if ($existing[0]) {
