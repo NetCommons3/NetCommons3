@@ -135,11 +135,17 @@ $cacheKey = 'toolbar_cache' . CakeSession::read('Config.userAgent');
 $existing = (array)Cache::read($cacheKey, 'debug_kit');
 if ($existing[0]) {
 	$pluginTimer = [];
+	$pluginTotalTime = 0;
 	foreach ($existing[0]['timer']['content']['timers'] as $key => $timer) {
 		if (substr($key, 0, strlen('plugin_timer')) === 'plugin_timer') {
 			$pluginTimer[] = $timer;
+			$pluginTotalTime += $timer['time'];
 		}
 	}
+	$pluginTimer[] = [
+		'message' => 'プラグイン以外(DebugKitなど)',
+		'time' => ($endTime - $startTime) - $pluginTotalTime
+	];
 	$export = var_export([
 		'total' => sprintf('%.10f', ($endTime - $startTime)),
 		'redirect_url' => $_SERVER['REDIRECT_URL'],
