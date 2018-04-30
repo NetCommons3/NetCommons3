@@ -138,15 +138,18 @@ if ($existing[0]) {
 	$pluginTotalTime = 0;
 	foreach ($existing[0]['timer']['content']['timers'] as $key => $timer) {
 		if (substr($key, 0, strlen('plugin_timer')) === 'plugin_timer') {
+			if ($timer['time'] === 0) {
+				$timer['time'] = $timer['end'] - $timer['start'];
+			}
 			$pluginTimer[] = $timer;
 			$pluginTotalTime += $timer['time'];
 		}
 	}
 	$pluginTimer[] = [
-		'start' => $startTime + $pluginTotalTime,
+		'start' => $pluginTotalTime,
 		'message' => 'プラグイン以外(DebugKitも含む)',
 		'named' => true,
-		'end' => $endTime,
+		'end' => ($endTime - $startTime),
 		'time' => ($endTime - $startTime) - $pluginTotalTime
 	];
 	$export = var_export([
