@@ -143,7 +143,10 @@ if ($existing[0]) {
 		}
 	}
 	$pluginTimer[] = [
+		'start' => $startTime + $pluginTotalTime,
 		'message' => 'プラグイン以外(DebugKitなど)',
+		'named' => true,
+		'end' => $endTime,
 		'time' => ($endTime - $startTime) - $pluginTotalTime
 	];
 	$export = var_export([
