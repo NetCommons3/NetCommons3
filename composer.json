@@ -32,6 +32,7 @@
         "netcommons/roles": "dev-speedup",
         "netcommons/rooms": "dev-speedup",
         "netcommons/topics": "dev-speedup",
+        "netcommons/user-manager": "dev-speedup",
         "netcommons/users": "dev-speedup"
     },
     "require-dev": {
