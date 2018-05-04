@@ -166,9 +166,9 @@ class Hash {
 			}
 		}
 
-		if (self::__isSimplePath($path)) {
-			return self::__simpleFormulaExtract($data, $tokens);
-		}
+		//if (self::__isSimplePath($path)) {
+		//	return self::__simpleFormulaExtract($data, $tokens);
+		//}
 
 		$_key = '__set_item__';
 
@@ -218,25 +218,25 @@ class Hash {
  * @param array $tokens The path to work on.
  * @return array data.
  */
-	private static function __simpleFormulaExtract($data, $tokens) {
-		$token = array_shift($tokens);
-		$result = [];
-
-		foreach ($data as $k => $v) {
-			if (! self::__matchToken($k, $token)) {
-				continue;
-			}
-			if (is_array($tokens)) {
-				if (! is_array($v)) {
-					continue;
-				}
-				$v = self::__simpleGet($v, $tokens);
-			}
-			$result[] = $v;
-		}
-
-		return $result;
-	}
+	//private static function __simpleFormulaExtract($data, $tokens) {
+	//	$token = array_shift($tokens);
+	//	$result = [];
+	//
+	//	foreach ($data as $k => $v) {
+	//		if (! self::__matchToken($k, $token)) {
+	//			continue;
+	//		}
+	//		if (is_array($tokens)) {
+	//			if (! is_array($v)) {
+	//				continue;
+	//			}
+	//			$v = self::__simpleGet($v, $tokens);
+	//		}
+	//		$result[] = $v;
+	//	}
+	//
+	//	return $result;
+	//}
 
 /**
  * Split token conditions
@@ -505,39 +505,39 @@ class Hash {
  * @SuppressWarnings(PHPMD.CyclomaticComplexity)
  */
 	private static function __simpleRemove($data, $path) {
-		if (count($path) === 1) {
+		$count = count($path);
+		if ($count === 1) {
 			if (isset($data[$path[0]])) {
 				unset($data[$path[0]]);
 			}
 			return $data;
-		} elseif (count($path) === 2) {
+		} elseif ($count === 2) {
 			if (isset($data[$path[0]][$path[1]])) {
 				unset($data[$path[0]][$path[1]]);
 			}
 			return $data;
-		} elseif (count($path) === 3) {
+		} elseif ($count === 3) {
 			if (isset($data[$path[0]][$path[1]][$path[2]])) {
 				unset($data[$path[0]][$path[1]][$path[2]]);
 			}
 			return $data;
-		} elseif (count($path) === 4) {
+		} elseif ($count === 4) {
 			if (isset($data[$path[0]][$path[1]][$path[2]][$path[3]])) {
 				unset($data[$path[0]][$path[1]][$path[2]][$path[3]]);
 			}
 			return $data;
-		} elseif (count($path) === 5) {
+		} elseif ($count === 5) {
 			if (isset($data[$path[0]][$path[1]][$path[2]][$path[3]][$path[4]])) {
 				unset($data[$path[0]][$path[1]][$path[2]][$path[3]][$path[4]]);
 			}
 			return $data;
-		} elseif (count($path) === 6) {
+		} elseif ($count === 6) {
 			if (isset($data[$path[0]][$path[1]][$path[2]][$path[3]][$path[4]][$path[5]])) {
 				unset($data[$path[0]][$path[1]][$path[2]][$path[3]][$path[4]][$path[5]]);
 			}
 			return $data;
 		} else {
 			$_list =& $data;
-			$count = count($path);
 			$last = $count - 1;
 			foreach ($path as $i => $key) {
 				if ($i === $last) {
