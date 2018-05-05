@@ -507,33 +507,59 @@ class Hash {
 	private static function __simpleRemove($data, $path) {
 		$count = count($path);
 		if ($count === 1) {
-			if (isset($data[$path[0]])) {
+			if (isset($data[$path[0]]) ||
+					array_key_exists($path[0], (array)$data)) {
 				unset($data[$path[0]]);
 			}
 			return $data;
 		} elseif ($count === 2) {
 			if (isset($data[$path[0]][$path[1]])) {
 				unset($data[$path[0]][$path[1]]);
+			} elseif (isset($data[$path[0]])) {
+				$parentData = (array)$data[$path[0]];
+				if (array_key_exists($path[1], $parentData)) {
+					unset($data[$path[0]][$path[1]]);
+				}
 			}
 			return $data;
 		} elseif ($count === 3) {
 			if (isset($data[$path[0]][$path[1]][$path[2]])) {
 				unset($data[$path[0]][$path[1]][$path[2]]);
+			} elseif (isset($data[$path[0]][$path[1]])) {
+				$parentData = (array)$data[$path[0]][$path[1]];
+				if (array_key_exists($path[2], $parentData)) {
+					unset($data[$path[0]][$path[1]][$path[2]]);
+				}
 			}
 			return $data;
 		} elseif ($count === 4) {
 			if (isset($data[$path[0]][$path[1]][$path[2]][$path[3]])) {
 				unset($data[$path[0]][$path[1]][$path[2]][$path[3]]);
+			} elseif (isset($data[$path[0]][$path[1]][$path[2]])) {
+				$parentData = (array)$data[$path[0]][$path[1]][$path[2]];
+				if (array_key_exists($path[3], $parentData)) {
+					unset($data[$path[0]][$path[1]][$path[2]][$path[3]]);
+				}
 			}
 			return $data;
 		} elseif ($count === 5) {
 			if (isset($data[$path[0]][$path[1]][$path[2]][$path[3]][$path[4]])) {
 				unset($data[$path[0]][$path[1]][$path[2]][$path[3]][$path[4]]);
+			} elseif (isset($data[$path[0]][$path[1]][$path[2]][$path[3]])) {
+				$parentData = (array)$data[$path[0]][$path[1]][$path[2]][$path[3]];
+				if (array_key_exists($path[4], $parentData)) {
+					unset($data[$path[0]][$path[1]][$path[2]][$path[3]][$path[4]]);
+				}
 			}
 			return $data;
 		} elseif ($count === 6) {
 			if (isset($data[$path[0]][$path[1]][$path[2]][$path[3]][$path[4]][$path[5]])) {
 				unset($data[$path[0]][$path[1]][$path[2]][$path[3]][$path[4]][$path[5]]);
+			} elseif (isset($data[$path[0]][$path[1]][$path[2]][$path[3]][$path[4]])) {
+				$parentData = (array)$data[$path[0]][$path[1]][$path[2]][$path[3]][$path[4]];
+				if (array_key_exists($path[5], $parentData)) {
+					unset($data[$path[0]][$path[1]][$path[2]][$path[3]][$path[4]][$path[5]]);
+				}
 			}
 			return $data;
 		} else {
@@ -569,16 +595,13 @@ class Hash {
 			if (strpos($key, '{') !== false) {
 				foreach ($_list as $k => $d) {
 					if (self::__matchToken($k, $key)) {
-						if (is_array($d)) {
-							$nextPath = array_slice($path, $i + 1);
-							$d = self::__simpleRemove($d, $nextPath);
-							if (isset($d)) {
-								$_list[$k] = $d;
-							} else {
-								unset($_list[$k]);
-							}
-						} elseif ($i === $last) {
+						if ($i === $last) {
 							unset($_list[$k]);
+						} elseif (!is_array($d)) {
+							continue;
+						} else {
+							$nextPath = array_slice($path, $i + 1);
+							$_list[$k] = self::__simpleRemove($d, $nextPath);
 						}
 					}
 				}
