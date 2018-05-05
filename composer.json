@@ -33,8 +33,10 @@
         "netcommons/plugin-manager": "dev-speedup",
         "netcommons/roles": "dev-speedup",
         "netcommons/rooms": "dev-speedup",
+        "netcommons/tags": "dev-speedup",
         "netcommons/topics": "dev-speedup",
-        "netcommons/user-manager": "dev-speedup",
+        "netcommons/user-attributes": "dev-speedup",
+        "netcommons/user-roles": "dev-speedup",
         "netcommons/users": "dev-speedup"
     },
     "require-dev": {
