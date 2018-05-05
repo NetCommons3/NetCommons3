@@ -517,7 +517,7 @@ class Hash {
 				unset($data[$path[0]][$path[1]]);
 			} elseif (isset($data[$path[0]])) {
 				$parentData = (array)$data[$path[0]];
-				if (array_key_exists($path[0], $parentData)) {
+				if (array_key_exists($path[1], $parentData)) {
 					unset($data[$path[0]][$path[1]]);
 				}
 			}
@@ -527,7 +527,7 @@ class Hash {
 				unset($data[$path[0]][$path[1]][$path[2]]);
 			} elseif (isset($data[$path[0]][$path[1]])) {
 				$parentData = (array)$data[$path[0]][$path[1]];
-				if (array_key_exists($path[1], $parentData)) {
+				if (array_key_exists($path[2], $parentData)) {
 					unset($data[$path[0]][$path[1]][$path[2]]);
 				}
 			}
@@ -537,7 +537,7 @@ class Hash {
 				unset($data[$path[0]][$path[1]][$path[2]][$path[3]]);
 			} elseif (isset($data[$path[0]][$path[1]][$path[2]])) {
 				$parentData = (array)$data[$path[0]][$path[1]][$path[2]];
-				if (array_key_exists($path[2], $parentData)) {
+				if (array_key_exists($path[3], $parentData)) {
 					unset($data[$path[0]][$path[1]][$path[2]][$path[3]]);
 				}
 			}
@@ -547,7 +547,7 @@ class Hash {
 				unset($data[$path[0]][$path[1]][$path[2]][$path[3]][$path[4]]);
 			} elseif (isset($data[$path[0]][$path[1]][$path[2]][$path[3]])) {
 				$parentData = (array)$data[$path[0]][$path[1]][$path[2]][$path[3]];
-				if (array_key_exists($path[3], $parentData)) {
+				if (array_key_exists($path[4], $parentData)) {
 					unset($data[$path[0]][$path[1]][$path[2]][$path[3]][$path[4]]);
 				}
 			}
@@ -557,7 +557,7 @@ class Hash {
 				unset($data[$path[0]][$path[1]][$path[2]][$path[3]][$path[4]][$path[5]]);
 			} elseif (isset($data[$path[0]][$path[1]][$path[2]][$path[3]][$path[4]])) {
 				$parentData = (array)$data[$path[0]][$path[1]][$path[2]][$path[3]][$path[4]];
-				if (array_key_exists($path[4], $parentData)) {
+				if (array_key_exists($path[5], $parentData)) {
 					unset($data[$path[0]][$path[1]][$path[2]][$path[3]][$path[4]][$path[5]]);
 				}
 			}
