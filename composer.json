@@ -25,6 +25,8 @@
         "netcommons/boxes": "dev-speedup",
         "netcommons/circular-notices": "dev-speedup",
         "netcommons/control-panel": "dev-speedup",
+        "netcommons/files": "dev-speedup",
+        "netcommons/m17n": "dev-speedup",
         "netcommons/menus": "dev-speedup",
         "netcommons/net-commons": "dev-speedup",
         "netcommons/pages": "dev-speedup",
