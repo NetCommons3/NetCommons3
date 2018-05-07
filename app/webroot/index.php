@@ -149,13 +149,13 @@ if ($existing[0]) {
 			$pluginTotalTime += $timer['time'];
 		}
 	}
-	$pluginTimer[] = [
-		'start' => $pluginTotalTime,
-		'message' => 'プラグイン以外(DebugKitも含む)',
-		'named' => true,
-		'end' => ($endTime - $startTime),
-		'time' => ($endTime - $startTime) - $pluginTotalTime
-	];
+	//$pluginTimer[] = [
+	//	'start' => $pluginTotalTime,
+	//	'message' => 'プラグイン以外(DebugKitも含む)',
+	//	'named' => true,
+	//	'end' => ($endTime - $startTime),
+	//	'time' => ($endTime - $startTime) - $pluginTotalTime
+	//];
 	$export = var_export([
 		'total' => sprintf('%.10f', ($endTime - $startTime)),
 		'redirect_url' => $_SERVER['REDIRECT_URL'],
