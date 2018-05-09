@@ -23,9 +23,12 @@
         "jms/serializer":               "1.1.0@stable",
         "netcommons/bbses": "dev-speedup",
         "netcommons/boxes": "dev-speedup",
+        "netcommons/blocks": "dev-speedup",
         "netcommons/circular-notices": "dev-speedup",
         "netcommons/control-panel": "dev-speedup",
         "netcommons/files": "dev-speedup",
+        "netcommons/frames": "dev-speedup",
+        "netcommons/likes": "dev-speedup",
         "netcommons/m17n": "dev-speedup",
         "netcommons/menus": "dev-speedup",
         "netcommons/net-commons": "dev-speedup",
@@ -37,7 +40,8 @@
         "netcommons/topics": "dev-speedup",
         "netcommons/user-attributes": "dev-speedup",
         "netcommons/user-roles": "dev-speedup",
-        "netcommons/users": "dev-speedup"
+        "netcommons/users": "dev-speedup",
+        "netcommons/workflow": "dev-speedup"
     },
     "require-dev": {
         "cakephp/cakephp-codesniffer":  "~1.0@stable",
