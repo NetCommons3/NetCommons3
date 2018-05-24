@@ -12,3 +12,4 @@ README.md export-ignore
 Vagrantfile export-ignore
 build.xml export-ignore
 phpunit.xml.dist export-ignore
+phpunit.xml.dist.phpunit4 export-ignore
