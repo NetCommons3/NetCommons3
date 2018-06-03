@@ -19,6 +19,7 @@
  */
 
 App::uses('NetCommonsAppController', 'NetCommons.Controller');
+App::uses('DebugTimer', 'DebugKit.Lib');
 
 /**
  * Application Controller for NetCommons
@@ -31,4 +32,19 @@ App::uses('NetCommonsAppController', 'NetCommons.Controller');
  * @SuppressWarnings(PHPMD.NumberOfChildren)
  */
 class AppController extends NetCommonsAppController {
+
+/**
+ * Constructor.
+ *
+ * @param CakeRequest $request Request object for this controller. Can be null for testing,
+ *  but expect that features that use the request parameters will not work.
+ * @param CakeResponse $response Response object for this controller.
+ */
+	public function __construct($request = null, $response = null) {
+		//TODO: 測定用に追加。最後、削除する
+		if (!empty($request) && empty($request->params['requested'])) {
+			DebugTimer::start('plugin_timer', $request->here);
+		}
+		parent::__construct($request, $response);
+	}
 }
