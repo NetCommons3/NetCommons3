@@ -15,9 +15,9 @@ foreach ($box['Frame'] as $frame) {
 
 	try {
 		$url = $this->PageLayout->frameActionUrl($frame);
-		DebugTimer::start('plugin_timer', $url);
+		DebugTimer::start('plugin_timer_'. $url, $url);
 		$view = $this->requestAction($url, array('return', 'frame_id' => $frame['id']));
-		DebugTimer::stop('plugin_timer');
+		DebugTimer::stop('plugin_timer_'. $url);
 
 		if (! Current::isSettingMode() && strlen($view) === 0) {
 			continue;
