@@ -43,8 +43,23 @@ class AppController extends NetCommonsAppController {
 	public function __construct($request = null, $response = null) {
 		//TODO: 測定用に追加。最後、削除する
 		if (!empty($request) && empty($request->params['requested'])) {
-			DebugTimer::start('plugin_timer', $request->here);
+			DebugTimer::start('plugin_timer_here', $request->here);
 		}
 		parent::__construct($request, $response);
 	}
+
+/**
+ * Called after the controller action is run and rendered.
+ *
+ * @return void
+ * @link http://book.cakephp.org/2.0/ja/controllers.html#request-life-cycle-callbacks
+ */
+	public function afterFilter() {
+		parent::afterFilter();
+		//TODO: 測定用に追加。最後、削除する
+		if (!empty($this->request) && empty($this->request->params['requested'])) {
+			DebugTimer::stop('plugin_timer_here');
+		}
+	}
+
 }
