@@ -154,7 +154,7 @@ if ($existing[0]) {
 	$pluginTimer[0]['time'] -= $pluginTotalTime;
 	$pluginTimer[] = [
 		'start' => $startTime,
-		'message' => 'プラグイン以外(DebugKitも含む)',
+		'message' => 'プラグイン以外',
 		'named' => true,
 		'end' => ($endTime - $startTime),
 		'time' => ($endTime - $startTime) - ($pluginTimer[0]['time'] + $pluginTotalTime)
