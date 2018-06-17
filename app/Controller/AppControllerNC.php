@@ -43,7 +43,14 @@ class AppController extends NetCommonsAppController {
 	public function __construct($request = null, $response = null) {
 		//TODO: 測定用に追加。最後、削除する
 		if (!empty($request) && empty($request->params['requested'])) {
-			DebugTimer::start('plugin_timer_here', $request->here);
+			$url = $request->params['plugin'] . '/' . $request->params['controller'] . '/' . $request->params['action'];
+			if ($request->params['pass']) {
+				$url .= '/' . implode('/', $request->params['pass']);
+			}
+			if ($request->query) {
+				$url .= '?' . implode('&', $request->query);
+			}
+			DebugTimer::start('plugin_timer_here', $url);
 		}
 		parent::__construct($request, $response);
 	}

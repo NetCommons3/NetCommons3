@@ -120,11 +120,6 @@ if (! $result) {
 }
 
 //以下、デバッグの出力
-//  avatarは、測定しない
-if (preg_match('/' . preg_quote('/avatar/', '/') . '/', $_SERVER['REDIRECT_URL'])) {
-	return;
-}
-
 $requestTime = DebugTimer::requestTime();
 $otherEnd = microtime(true) - DebugTimer::requestStartTime();
 $existing = DebugTimer::getAll();
