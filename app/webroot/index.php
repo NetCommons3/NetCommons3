@@ -110,6 +110,7 @@ if (! $result) {
 	$result = include(__DIR__ . DS . 'js.php');
 }
 if (! $result) {
+	App::uses('Dispatcher', 'Routing');
 	$Dispatcher = new Dispatcher();
 	$Dispatcher->dispatch(
 		new CakeRequest(),
