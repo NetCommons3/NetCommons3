@@ -104,8 +104,6 @@ if (preg_match('/' . preg_quote('action=common_download_main', '/') . '/', $_SER
 	return;
 }
 
-App::uses('Dispatcher', 'Routing');
-
 //$result = false;
 $result = include(__DIR__ . DS . 'css.php');
 if (! $result) {
