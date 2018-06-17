@@ -119,6 +119,8 @@ if (! $result) {
 }
 
 //以下、デバッグの出力
+App::uses('DebugTimer', 'DebugKit.Lib');
+
 $requestTime = DebugTimer::requestTime();
 $otherEnd = microtime(true) - DebugTimer::requestStartTime();
 $existing = DebugTimer::getAll();
@@ -128,8 +130,6 @@ CakeLog::config('debug-kit', array(
 	'types' => array('debug-kit'),
 	'file' => 'debug-kit-' . date('Ymd'),
 ));
-
-App::uses('DebugTimer', 'DebugKit.Lib');
 
 $otherStart = 0;
 $pluginTotalTime = 0;
