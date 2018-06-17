@@ -98,10 +98,36 @@ if (!empty($failed)) {
 	trigger_error("CakePHP core could not be found. Check the value of CAKE_CORE_INCLUDE_PATH in APP/webroot/index.php. It should point to the directory containing your " . DS . "cake core directory and your " . DS . "vendors root directory.", E_USER_ERROR);
 }
 
-
-if (preg_match('/' . preg_quote('action=common_download_main', '/') . '/', $_SERVER['QUERY_STRING'])) {
+if (preg_match('/' . preg_quote('action=common_download_main', '/') . '/', $_SERVER['QUERY_STRING']) ||
+		preg_match('/' . preg_quote('action=common_tex_main', '/') . '/', $_SERVER['QUERY_STRING'])) {
+	//基本、移行で変換されているため、処理は入らないはずだが、もし入ってきた時、遅くなるため、処理させずに抜ける。
 	return;
 }
+
+App::uses('Dispatcher', 'Routing');
+
+//$result = false;
+$result = include(__DIR__ . DS . 'css.php');
+if (! $result) {
+	$result = include(__DIR__ . DS . 'js.php');
+}
+if (! $result) {
+	$Dispatcher = new Dispatcher();
+	$Dispatcher->dispatch(
+		new CakeRequest(),
+		new CakeResponse()
+	);
+}
+
+//以下、デバッグの出力
+//  avatarは、測定しない
+if (preg_match('/' . preg_quote('/avatar/', '/') . '/', $_SERVER['REDIRECT_URL'])) {
+	return;
+}
+
+$requestTime = DebugTimer::requestTime();
+$otherEnd = microtime(true) - DebugTimer::requestStartTime();
+$existing = DebugTimer::getAll();
 
 CakeLog::config('debug-kit', array(
 	'engine' => 'File',
@@ -109,73 +135,39 @@ CakeLog::config('debug-kit', array(
 	'file' => 'debug-kit-' . date('Ymd'),
 ));
 
-CakeLog::config('debug-kit-logs', array(
-	'engine' => 'File',
-	'types' => array('debug-kit-logs'),
-	'file' => 'debug-kit-logs-' . date('YmdH'),
-));
-
 App::uses('DebugTimer', 'DebugKit.Lib');
-DebugTimer::start($_SERVER['REDIRECT_URL']);
-$startTime = microtime(true);
 
-App::uses('Dispatcher', 'Routing');
+$otherStart = 0;
+$pluginTotalTime = 0;
+$totalTime = 0;
+$pluginTimer = [];
+foreach ($existing as $key => $timer) {
+	$timer['time'] = $timer['end'] - $timer['start'];
 
-$Dispatcher = new Dispatcher();
-$Dispatcher->dispatch(
-	new CakeRequest(),
-	new CakeResponse()
-);
-
-//以下、デバッグの出力
-$endTime = microtime(true);
-DebugTimer::stop($_SERVER['REDIRECT_URL']);
-
-if (preg_match('/' . preg_quote('/avatar/', '/') . '/', $_SERVER['QUERY_STRING'])) {
-	return;
-}
-
-$cacheKey = 'toolbar_cache' . CakeSession::read('Config.userAgent');
-$existing = (array)Cache::read($cacheKey, 'debug_kit');
-if ($existing[0]) {
-	$pluginTimer = [];
-	$pluginTotalTime = 0;
-	foreach ($existing[0]['timer']['content']['timers'] as $key => $timer) {
-		if (substr($key, 0, strlen('plugin_timer')) === 'plugin_timer') {
-			if ($timer['time'] === 0) {
-				$timer['time'] = $timer['end'] - $timer['start'];
-			}
-			$pluginTimer[] = $timer;
-			if ($key !== 'plugin_timer_here') {
-				$pluginTotalTime += $timer['time'];
-			}
-		}
+	if (substr($key, 0, strlen('plugin_timer')) === 'plugin_timer' &&
+			$key !== 'plugin_timer_here') {
+		$pluginTotalTime += $timer['time'];
 	}
-	$pluginTimer[0]['time'] -= $pluginTotalTime;
-	$pluginTimer[] = [
-		'start' => $startTime,
-		'message' => 'プラグイン以外(DebugKitも含む)',
-		'named' => true,
-		'end' => ($endTime - $startTime),
-		'time' => ($endTime - $startTime) - ($pluginTimer[0]['time'] + $pluginTotalTime)
-	];
-	$export = var_export([
-		'total' => sprintf('%.10f', ($endTime - $startTime)),
-		'redirect_url' => $_SERVER['REDIRECT_URL'],
-		'plugins' => $pluginTimer,
-		'sql_log' => $existing[0]['sql_log'],
-		'timer' => $existing[0]['timer'],
-	], true);
-	$export = preg_replace('/' . preg_quote('\'actions\' => \'', '/') . '[^\']+' . preg_quote('\'', '/') . '/', '\'actions\' => \'\'', $export);
-	$export = preg_replace('/' . preg_quote('\'query\' => \'', '/') . '([^\']+)' . preg_quote('\'', '/') . '/', '\'query\' => "$1"', $export);
-	$export = preg_replace('/' . preg_quote('&#039;', '/'). '/', '\'', $export);
-	$export = preg_replace('/' . preg_quote('&gt;', '/'). '/', '>', $export);
-	$export = preg_replace('/' . preg_quote('&lt;', '/'). '/', '<', $export);
+	$otherStart = $timer['end'];
+	$totalTime += $timer['time'];
 
-	CakeLog::write('debug-kit', var_export([
-		'total' => sprintf('%.10f', ($endTime - $startTime)),
-		'redirect_url' => $_SERVER['REDIRECT_URL'],
-		'plugins' => $pluginTimer,
-	], true));
-	CakeLog::write('debug-kit-logs', $export);
+	$pluginTimer[] = $timer;
 }
+if ($pluginTotalTime > 0) {
+	$pluginTimer[1]['time'] -= $pluginTotalTime;
+	$pluginTimer[] = [
+		'start' => $otherStart,
+		'message' => 'Core Processing (To request end)',
+		'named' => true,
+		'end' => $otherEnd,
+		'time' => ($otherEnd - $otherStart)
+	];
+}
+
+$export = [
+	'total' => sprintf('%.10f', $requestTime),
+	'redirect_url' => $_SERVER['REDIRECT_URL'],
+	'plugins' => $pluginTimer,
+];
+
+CakeLog::write('debug-kit', var_export($export, true));
