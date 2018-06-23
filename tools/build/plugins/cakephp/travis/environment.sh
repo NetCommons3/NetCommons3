@@ -13,3 +13,5 @@ done
 export IGNORE_PLUGINS=`echo $IGNORE_PLUGINS | cut -c 2-`
 
 export PATH=$PATH:./vendors/bin
+
+phpenv config-add $NETCOMMONS_BUILD_DIR/tools/build/plugins/cakephp/travis/travis.php.ini
