@@ -98,10 +98,22 @@ if (!empty($failed)) {
 	trigger_error("CakePHP core could not be found. Check the value of CAKE_CORE_INCLUDE_PATH in APP/webroot/index.php. It should point to the directory containing your " . DS . "cake core directory and your " . DS . "vendors root directory.", E_USER_ERROR);
 }
 
-App::uses('Dispatcher', 'Routing');
+if (preg_match('/' . preg_quote('action=common_download_main', '/') . '/', $_SERVER['QUERY_STRING']) ||
+		preg_match('/' . preg_quote('action=common_tex_main', '/') . '/', $_SERVER['QUERY_STRING'])) {
+	//基本、移行で変換されているため、処理は入らないはずだが、もし入ってきた時、遅くなるため、処理させずに抜ける。
+	return;
+}
 
-$Dispatcher = new Dispatcher();
-$Dispatcher->dispatch(
-	new CakeRequest(),
-	new CakeResponse()
-);
+//$result = false;
+$result = include (__DIR__ . DS . 'css.php');
+if (! $result) {
+	$result = include (__DIR__ . DS . 'js.php');
+}
+if (! $result) {
+	App::uses('Dispatcher', 'Routing');
+	$Dispatcher = new Dispatcher();
+	$Dispatcher->dispatch(
+		new CakeRequest(),
+		new CakeResponse()
+	);
+}
