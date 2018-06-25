@@ -25,7 +25,7 @@ if (!preg_match($pattern, $_SERVER['REDIRECT_URL'], $matches)) {
 
 header("Content-type: text/javascript; charset=UTF-8");
 
-if(extension_loaded('zlib') && !empty($_SERVER['HTTP_ACCEPT_ENCODING']) &&
+if (extension_loaded('zlib') && !empty($_SERVER['HTTP_ACCEPT_ENCODING']) &&
 		preg_match('/gzip/i', $_SERVER['HTTP_ACCEPT_ENCODING'])) {
 	ob_start('ob_gzhandler');
 	header('Content-Encoding: gzip');
