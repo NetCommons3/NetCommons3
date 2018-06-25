@@ -105,9 +105,9 @@ if (preg_match('/' . preg_quote('action=common_download_main', '/') . '/', $_SER
 }
 
 //$result = false;
-$result = include(__DIR__ . DS . 'css.php');
+$result = include (__DIR__ . DS . 'css.php');
 if (! $result) {
-	$result = include(__DIR__ . DS . 'js.php');
+	$result = include (__DIR__ . DS . 'js.php');
 }
 if (! $result) {
 	App::uses('Dispatcher', 'Routing');
