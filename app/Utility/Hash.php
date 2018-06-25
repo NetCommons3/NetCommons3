@@ -710,7 +710,7 @@ class Hash {
 				$out[$group][$key] = $value;
 			} else {
 				$keys[] = $key;
-				if ($value) {
+				if (isset($value)) {
 					$vals[] = $value;
 				}
 				$out[$key] = $value;
