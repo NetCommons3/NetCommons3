@@ -36,7 +36,7 @@ App::uses('Inflector', 'Utility');
 $paths = App::path('plugins');
 $plugin = Inflector::camelize($matches[1]);
 foreach ($paths as $path) {
-	$pluginPath = $path . $plugin . DS . WEBROOT_DIR . DS. 'css' . DS;
+	$pluginPath = $path . $plugin . DS . WEBROOT_DIR . DS . 'css' . DS;
 	if ($matches[2]) {
 		$pluginPath .= $matches[2] . DS;
 	}
