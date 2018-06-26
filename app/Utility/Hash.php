@@ -66,6 +66,28 @@ class Hash {
 	}
 
 /**
+ * {n} or {s}, {*}が含まれていないPathが$dataに含まれているかチェックしながら、simpleGetと同じことをする。
+ *
+ * @param array $data データ
+ * @param array $path Path配列
+ * @param mixed $default デフォルト値
+ * @return array 0番目がデータ、1番目がkeyPathが含まれているか否か
+ */
+	private static function __simpleGetBySimpleCombine($data, $path, $default = null) {
+		if (! $path) {
+			return [$data, true];
+		}
+		foreach ($path as $p) {
+			if (is_array($data) && array_key_exists($p, $data)) {
+				$data = $data[$p];
+			} else {
+				return [$default, false];
+			}
+		}
+		return [$data, true];
+	}
+
+/**
  * {n} or {s}, {*}が含まれていないPathから値を取得する
  *
  * @param array $data データ
@@ -693,29 +715,36 @@ class Hash {
 			if (! self::__matchToken($k, $token)) {
 				continue;
 			}
-			$key = self::__simpleGet($item, $keyTokens);
-			if (! $key && !is_string($key)) {
+			list($key, $including) = self::__simpleGetBySimpleCombine($item, $keyTokens);
+
+			if (is_array($key) || is_object($key)) {
 				throw new CakeException(__d(
 					'cake_dev',
 					'Hash::combine() needs an equal number of keys + values.'
 				));
 			}
+			if ($including) {
+				$keys[] = $key;
+			}
+
 			if (isset($valueTokens)) {
-				$value = self::__simpleGet($item, $valueTokens);
+				list($value, $including) = self::__simpleGetBySimpleCombine($item, $valueTokens);
+				if ($including) {
+					$vals[] = $value;
+				}
 			} else {
 				$value = null;
+				$vals[] = $value;
 			}
+
 			$group = self::__simpleGet($item, $groupTokens);
 			if (isset($groupTokens)) {
 				$out[$group][$key] = $value;
 			} else {
-				$keys[] = $key;
-				if (isset($value)) {
-					$vals[] = $value;
-				}
 				$out[$key] = $value;
 			}
 		}
+
 		if (!empty($vals) && count($keys) !== count($vals)) {
 			throw new CakeException(__d(
 				'cake_dev',
