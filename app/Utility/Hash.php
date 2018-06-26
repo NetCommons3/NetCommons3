@@ -70,6 +70,7 @@ class Hash {
  *
  * @param array $data データ
  * @param array $path Path配列
+ * @param mixed $default デフォルト値
  * @return array 0番目がデータ、1番目がkeyPathが含まれているか否か
  */
 	private static function __simpleGetBySimpleCombine($data, $path, $default = null) {
