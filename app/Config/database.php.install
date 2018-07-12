@@ -75,6 +75,9 @@ class DATABASE_CONFIG {
 		'prefix' => '{master_prefix}',
 		'schema' => '{master_schema}',
 		'encoding' => '{master_encoding}',
+		'settings' => [
+			'@@SESSION.sql_mode' => "''",
+		],
 	);
 
 	public $slave1 = array(
@@ -88,6 +91,9 @@ class DATABASE_CONFIG {
 		'prefix' => '{master_prefix}',
 		'schema' => '{master_schema}',
 		'encoding' => '{master_encoding}',
+		'settings' => [
+			'@@SESSION.sql_mode' => "''",
+		],
 	);
 
 	public $test = array(
@@ -101,5 +107,8 @@ class DATABASE_CONFIG {
 		'prefix' => '{test_prefix}',
 		'schema' => '{test_schema}',
 		'encoding' => '{test_encoding}',
+		'settings' => [
+			'@@SESSION.sql_mode' => "''",
+		],
 	);
 }
