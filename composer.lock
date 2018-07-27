@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "6c41eba21066d2f3ad0ff2068060a30a",
@@ -3985,16 +3985,16 @@
         },
         {
             "name": "netcommons/user-manager",
-            "version": "3.1.9",
+            "version": "3.1.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/UserManager.git",
-                "reference": "095dd017abbd9c37bb74ca181252d0c49e155ac8"
+                "reference": "d5564f85a3f8f1eb01492b0fb00f9dcb04c2936c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/UserManager/zipball/095dd017abbd9c37bb74ca181252d0c49e155ac8",
-                "reference": "095dd017abbd9c37bb74ca181252d0c49e155ac8",
+                "url": "https://api.github.com/repos/NetCommons3/UserManager/zipball/d5564f85a3f8f1eb01492b0fb00f9dcb04c2936c",
+                "reference": "d5564f85a3f8f1eb01492b0fb00f9dcb04c2936c",
                 "shasum": ""
             },
             "require": {
@@ -4037,7 +4037,7 @@
                 "cakephp",
                 "user_manager"
             ],
-            "time": "2018-04-12T10:09:59+00:00"
+            "time": "2018-07-25T03:14:17+00:00"
         },
         {
             "name": "netcommons/user-roles",
@@ -4099,12 +4099,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Users.git",
-                "reference": "ba23d8f6342c02b33dea3135944d164bc7d8fec2"
+                "reference": "346d27b4bf923db2f7228c1deab86c323ac51a49"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Users/zipball/ba23d8f6342c02b33dea3135944d164bc7d8fec2",
-                "reference": "ba23d8f6342c02b33dea3135944d164bc7d8fec2",
+                "url": "https://api.github.com/repos/NetCommons3/Users/zipball/346d27b4bf923db2f7228c1deab86c323ac51a49",
+                "reference": "346d27b4bf923db2f7228c1deab86c323ac51a49",
                 "shasum": ""
             },
             "require": {
@@ -4149,7 +4149,7 @@
                 "cakephp",
                 "user"
             ],
-            "time": "2018-06-25T13:45:57+00:00"
+            "time": "2018-07-25T03:15:40+00:00"
         },
         {
             "name": "netcommons/videos",
@@ -6052,29 +6052,29 @@
         },
         {
             "name": "phpunit/php-token-stream",
-            "version": "2.0.2",
+            "version": "1.4.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-token-stream.git",
-                "reference": "791198a2c6254db10131eecfe8c06670700904db"
+                "reference": "1ce90ba27c42e4e44e6d8458241466380b51fa16"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/791198a2c6254db10131eecfe8c06670700904db",
-                "reference": "791198a2c6254db10131eecfe8c06670700904db",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/1ce90ba27c42e4e44e6d8458241466380b51fa16",
+                "reference": "1ce90ba27c42e4e44e6d8458241466380b51fa16",
                 "shasum": ""
             },
             "require": {
                 "ext-tokenizer": "*",
-                "php": "^7.0"
+                "php": ">=5.3.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "^6.2.4"
+                "phpunit/phpunit": "~4.2"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0-dev"
+                    "dev-master": "1.4-dev"
                 }
             },
             "autoload": {
@@ -6097,7 +6097,7 @@
             "keywords": [
                 "tokenizer"
             ],
-            "time": "2017-11-27T05:48:46+00:00"
+            "time": "2017-12-04T08:55:13+00:00"
         },
         {
             "name": "phpunit/phpunit",
