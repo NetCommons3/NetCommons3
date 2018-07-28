@@ -2007,12 +2007,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Files.git",
-                "reference": "5dec71d4bb3cdc4a6d31146cfe3d6ba4ad088c07"
+                "reference": "828ffd3661699ff752f2b29fd074d40b5cc0acb9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Files/zipball/5dec71d4bb3cdc4a6d31146cfe3d6ba4ad088c07",
-                "reference": "5dec71d4bb3cdc4a6d31146cfe3d6ba4ad088c07",
+                "url": "https://api.github.com/repos/NetCommons3/Files/zipball/828ffd3661699ff752f2b29fd074d40b5cc0acb9",
+                "reference": "828ffd3661699ff752f2b29fd074d40b5cc0acb9",
                 "shasum": ""
             },
             "require": {
@@ -2047,7 +2047,7 @@
                 "cakephp",
                 "files"
             ],
-            "time": "2018-07-20T04:09:32+00:00"
+            "time": "2018-07-28T06:47:06+00:00"
         },
         {
             "name": "netcommons/frames",
@@ -3082,16 +3082,16 @@
         },
         {
             "name": "netcommons/questionnaires",
-            "version": "3.1.9",
+            "version": "3.1.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Questionnaires.git",
-                "reference": "250006894ff6412cc7c2423452bc6da160337e0e"
+                "reference": "7877eaa5a6085220e8e73389d3a2e03c9b7477c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Questionnaires/zipball/250006894ff6412cc7c2423452bc6da160337e0e",
-                "reference": "250006894ff6412cc7c2423452bc6da160337e0e",
+                "url": "https://api.github.com/repos/NetCommons3/Questionnaires/zipball/7877eaa5a6085220e8e73389d3a2e03c9b7477c2",
+                "reference": "7877eaa5a6085220e8e73389d3a2e03c9b7477c2",
                 "shasum": ""
             },
             "require": {
@@ -3153,20 +3153,20 @@
                 "cakephp",
                 "questionnaires"
             ],
-            "time": "2018-04-26T09:23:29+00:00"
+            "time": "2018-07-28T06:47:24+00:00"
         },
         {
             "name": "netcommons/quizzes",
-            "version": "3.1.9",
+            "version": "3.1.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Quizzes.git",
-                "reference": "bd600b3d210e04e59155852b9b1a8fb07c6fdb20"
+                "reference": "029c7dadc9b905b47f06b0cc2e753c481be4da7f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Quizzes/zipball/bd600b3d210e04e59155852b9b1a8fb07c6fdb20",
-                "reference": "bd600b3d210e04e59155852b9b1a8fb07c6fdb20",
+                "url": "https://api.github.com/repos/NetCommons3/Quizzes/zipball/029c7dadc9b905b47f06b0cc2e753c481be4da7f",
+                "reference": "029c7dadc9b905b47f06b0cc2e753c481be4da7f",
                 "shasum": ""
             },
             "require": {
@@ -3228,20 +3228,20 @@
                 "cakephp",
                 "quizzes"
             ],
-            "time": "2018-04-23T07:08:50+00:00"
+            "time": "2018-07-28T06:47:40+00:00"
         },
         {
             "name": "netcommons/registrations",
-            "version": "3.1.9",
+            "version": "3.1.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Registrations.git",
-                "reference": "40303d5aaeb979227fa9fe490358f3e9a8a54e15"
+                "reference": "8f7e96ba41f62b0013fa7796394f728c98df1e38"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Registrations/zipball/40303d5aaeb979227fa9fe490358f3e9a8a54e15",
-                "reference": "40303d5aaeb979227fa9fe490358f3e9a8a54e15",
+                "url": "https://api.github.com/repos/NetCommons3/Registrations/zipball/8f7e96ba41f62b0013fa7796394f728c98df1e38",
+                "reference": "8f7e96ba41f62b0013fa7796394f728c98df1e38",
                 "shasum": ""
             },
             "require": {
@@ -3309,7 +3309,7 @@
                 "cakephp",
                 "registrations"
             ],
-            "time": "2018-04-23T05:30:42+00:00"
+            "time": "2018-07-28T06:46:11+00:00"
         },
         {
             "name": "netcommons/reservations",
