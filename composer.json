@@ -20,6 +20,10 @@
     "require": {
         "cakephp/cakephp":              "~2.10@stable",
         "netcommons/install":           "@stable",
+        "netcommons/announcements":     "dev-speedup",
+        "netcommons/bbses":             "dev-speedup",
+        "netcommons/blogs":             "dev-speedup",
+        "netcommons/tasks":             "dev-speedup",
         "jms/serializer":               "1.1.0@stable"
     },
     "require-dev": {
