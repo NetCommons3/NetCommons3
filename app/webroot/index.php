@@ -73,6 +73,9 @@ if (!defined('WEBROOT_DIR')) {
 if (!defined('WWW_ROOT')) {
 	define('WWW_ROOT', dirname(__FILE__) . DS);
 }
+if (!defined('UPLOADS_ROOT')) {
+	define('UPLOADS_ROOT', dirname(WWW_ROOT) . DS . 'Uploads' . DS);
+}
 
 // for built-in server
 if (php_sapi_name() === 'cli-server') {
