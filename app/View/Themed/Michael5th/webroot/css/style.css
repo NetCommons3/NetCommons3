@@ -2,16 +2,19 @@
  * style.css for Michael the 5th
  * Akazawa Studio LLC
  */
-html, body {
+html {
     height:100%;
 }
 body{
     padding-top: 50px;
     color:#000000;
+    min-height:100%;
+    display:flex;
+    flex-direction:column;
 }
 main.container, main.container-fluid {
     margin-top: 10px;
-    margin-bottom:50px;
+    flex:1;
 }
 /* header
 --------------------*/
@@ -47,6 +50,19 @@ header.nc-system-header-nologgedin {
 }
 body.body-nologgedin {
 	/* padding-top: 0; */
+}
+/* nc-system-footer
+--------------------*/
+#nc-system-footer{
+    bottom:0px;
+    width:100%;
+    height:50px;
+    padding-top:15px;
+    margin-top:20px;
+    border-top:1px solid #787878;
+}
+#nc-system-footer .copyright{
+    color:#787878;
 }
 /* link
 --------------------*/
@@ -333,22 +349,6 @@ ul.nav-pills {
 }
 .breadcrumb a {
     color:#328C46;
-}
-/* nc-system-footer
---------------------*/
-#nc-system-footer{
-    position:fixed;
-    bottom:0px;
-    width:100%;
-    min-height:50px;
-    padding-top:15px;
-    margin-top:0px;
-    background-color:#ffffff;
-    border-top:1px solid #787878;
-    opacity:0.9;
-}
-#nc-system-footer .copyright{
-    color:#787878;
 }
 /* others
 --------------------*/

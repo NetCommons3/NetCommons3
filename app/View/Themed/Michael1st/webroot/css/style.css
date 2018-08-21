@@ -2,16 +2,19 @@
  * style.css for Michael the 1st
  * Akazawa Studio LLC
  */
-html, body {
+html {
     height:100%;
 }
 body{
     padding-top: 50px;
     color:#000000;
+    min-height:100%;
+    display:flex;
+    flex-direction:column;
 }
 main.container, main.container-fluid {
     margin-top: 10px;
-    margin-bottom:50px;
+    flex:1;
 }
 /* header
 --------------------*/
@@ -33,6 +36,18 @@ header.nc-system-header-nologgedin {
 }
 body.body-nologgedin {
 	/* padding-top: 0; */
+}
+/* nc-system-footer
+--------------------*/
+#nc-system-footer{
+    bottom:0px;
+    width:100%;
+    height:50px;
+    padding-top:15px;
+    margin-top:20px;
+}
+#nc-system-footer .copyright{
+    color:#646464;
 }
 /* link
 --------------------*/
@@ -275,21 +290,6 @@ ul.nav-pills {
 }
 .breadcrumb a {
     color:#6EAA3C;
-}
-/* nc-system-footer
---------------------*/
-#nc-system-footer{
-    position:fixed;
-    bottom:0px;
-    width:100%;
-    min-height:50px;
-    padding-top:15px;
-    margin-top:0px;
-    background-color:#ffffff;
-    opacity:0.8;
-}
-#nc-system-footer .copyright{
-    color:#646464;
 }
 /* others
 --------------------*/
