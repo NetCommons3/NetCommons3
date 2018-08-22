@@ -19,7 +19,7 @@
 
 $matches = [];
 $pattern = '/([^\\/]+)\\/css\\/(.+\\/)?([^\\/\\.]+)?\\.css$/';
-if (!preg_match($pattern, $_SERVER['REDIRECT_URL'], $matches)) {
+if (!preg_match($pattern, $_SERVER['REQUEST_URI'], $matches)) {
 	return false;
 }
 
