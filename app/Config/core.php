@@ -238,7 +238,7 @@
  * Set to `true` to apply timestamps when debug > 0. Set to 'force' to always enable
  * timestamping regardless of debug value.
  */
-	//Configure::write('Asset.timestamp', true);
+	Configure::write('Asset.timestamp', 'force');
 
 /**
  * Compress CSS output by removing comments, whitespace, repeating tags, etc.
