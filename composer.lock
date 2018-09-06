@@ -1047,7 +1047,7 @@
         },
         {
             "name": "netcommons/announcements",
-            "version": "3.1.11",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Announcements.git",
@@ -1098,7 +1098,7 @@
         },
         {
             "name": "netcommons/auth",
-            "version": "3.1.11",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Auth.git",
@@ -1253,7 +1253,7 @@
         },
         {
             "name": "netcommons/bbses",
-            "version": "3.1.11",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Bbses.git",
@@ -1306,7 +1306,7 @@
         },
         {
             "name": "netcommons/blocks",
-            "version": "3.1.11",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Blocks.git",
@@ -1357,7 +1357,7 @@
         },
         {
             "name": "netcommons/blogs",
-            "version": "3.1.11",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Blogs.git",
@@ -1417,7 +1417,7 @@
         },
         {
             "name": "netcommons/boxes",
-            "version": "3.1.11",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Boxes.git",
@@ -1523,7 +1523,7 @@
         },
         {
             "name": "netcommons/calendars",
-            "version": "3.1.11",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Calendars.git",
@@ -1642,7 +1642,7 @@
         },
         {
             "name": "netcommons/circular-notices",
-            "version": "3.1.11",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/CircularNotices.git",
@@ -2003,7 +2003,7 @@
         },
         {
             "name": "netcommons/files",
-            "version": "3.1.11",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Files.git",
@@ -2051,7 +2051,7 @@
         },
         {
             "name": "netcommons/frames",
-            "version": "3.1.11",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Frames.git",
@@ -2378,7 +2378,7 @@
         },
         {
             "name": "netcommons/links",
-            "version": "3.1.11",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Links.git",
@@ -2535,7 +2535,7 @@
         },
         {
             "name": "netcommons/menus",
-            "version": "3.1.11",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Menus.git",
@@ -2587,7 +2587,7 @@
         },
         {
             "name": "netcommons/multidatabases",
-            "version": "3.1.11",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Multidatabases.git",
@@ -2722,7 +2722,7 @@
         },
         {
             "name": "netcommons/net-commons",
-            "version": "3.1.11",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/NetCommons.git",
@@ -2835,7 +2835,7 @@
         },
         {
             "name": "netcommons/pages",
-            "version": "3.1.11",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Pages.git",
@@ -2892,7 +2892,7 @@
         },
         {
             "name": "netcommons/photo-albums",
-            "version": "3.1.11",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/PhotoAlbums.git",
@@ -3082,7 +3082,7 @@
         },
         {
             "name": "netcommons/questionnaires",
-            "version": "3.1.11",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Questionnaires.git",
@@ -3313,7 +3313,7 @@
         },
         {
             "name": "netcommons/reservations",
-            "version": "3.1.11",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Reservations.git",
@@ -3433,7 +3433,7 @@
         },
         {
             "name": "netcommons/rooms",
-            "version": "3.1.11",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Rooms.git",
@@ -3606,7 +3606,7 @@
         },
         {
             "name": "netcommons/site-manager",
-            "version": "3.1.11",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/SiteManager.git",
@@ -3769,7 +3769,7 @@
         },
         {
             "name": "netcommons/tasks",
-            "version": "3.1.11",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Tasks.git",
@@ -3873,7 +3873,7 @@
         },
         {
             "name": "netcommons/topics",
-            "version": "3.1.11",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Topics.git",
@@ -3985,7 +3985,7 @@
         },
         {
             "name": "netcommons/user-manager",
-            "version": "3.1.11",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/UserManager.git",
@@ -4095,7 +4095,7 @@
         },
         {
             "name": "netcommons/users",
-            "version": "3.1.11",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Users.git",
