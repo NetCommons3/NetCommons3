@@ -23,7 +23,7 @@
         "jms/serializer":               "1.1.0@stable"
     },
     "require-dev": {
-        "cakephp/cakephp-codesniffer":  "~1.0@stable",
+        "cakephp/cakephp-codesniffer":  "~2.0@stable",
         "doctrine/annotations":         "1.2.*@stable",
         "dompdf/dompdf":                "~0.6@stable",
         "mayflower/php-codebrowser":    "~1.1@stable",
