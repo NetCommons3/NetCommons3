@@ -20,7 +20,7 @@
     "bootstrap": ">=3.3 <4.0",
     "angular-nvd3": ">=0.1.1",
     "visualcaptcha.jquery": ">=0.0.5",
-    "MathJax": ">=2.6",
+    "MathJax": "components/MathJax#>=2.6",
     "simplePagination.js": "jquery.simplePagination#*"
   },
   "devDependencies": {
