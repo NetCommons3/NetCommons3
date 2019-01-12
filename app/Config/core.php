@@ -74,7 +74,7 @@
  *
  * @see ErrorHandler for more information on exception handling and configuration.
  */
-	App::uses('NetCommonsExceptionRenderer', 'NetCommons.Lib');
+	App::uses('NetCommonsExceptionRenderer', 'NetCommons.Error');
 	Configure::write('Exception', array(
 		'handler' => 'ErrorHandler::handleException',
 		'renderer' => 'NetCommons.NetCommonsExceptionRenderer',
