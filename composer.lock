@@ -2157,12 +2157,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Holidays.git",
-                "reference": "661c3d7bc5b7a2bfed6fed54c788c2907324c34a"
+                "reference": "4589c06a1d68f541c71835e5aebcd28199f0aed0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Holidays/zipball/661c3d7bc5b7a2bfed6fed54c788c2907324c34a",
-                "reference": "661c3d7bc5b7a2bfed6fed54c788c2907324c34a",
+                "url": "https://api.github.com/repos/NetCommons3/Holidays/zipball/4589c06a1d68f541c71835e5aebcd28199f0aed0",
+                "reference": "4589c06a1d68f541c71835e5aebcd28199f0aed0",
                 "shasum": ""
             },
             "require": {
@@ -2214,7 +2214,7 @@
                 "cakephp",
                 "holidays"
             ],
-            "time": "2019-01-05T14:42:15+00:00"
+            "time": "2019-01-17T05:15:56+00:00"
         },
         {
             "name": "netcommons/iframes",
@@ -4161,12 +4161,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Videos.git",
-                "reference": "f7483b8482e087cd5fd51918d3b45ed00296e6d0"
+                "reference": "ca237e8c2de9ba41d0af23a95e2ca712556d6ea8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Videos/zipball/f7483b8482e087cd5fd51918d3b45ed00296e6d0",
-                "reference": "f7483b8482e087cd5fd51918d3b45ed00296e6d0",
+                "url": "https://api.github.com/repos/NetCommons3/Videos/zipball/ca237e8c2de9ba41d0af23a95e2ca712556d6ea8",
+                "reference": "ca237e8c2de9ba41d0af23a95e2ca712556d6ea8",
                 "shasum": ""
             },
             "require": {
@@ -4214,7 +4214,7 @@
                 "cakephp",
                 "videos"
             ],
-            "time": "2018-12-09T08:09:29+00:00"
+            "time": "2019-01-09T15:34:05+00:00"
         },
         {
             "name": "netcommons/visual-captcha",
