@@ -14,7 +14,7 @@ body{
 }
 main.container, main.container-fluid {
     margin-top: 10px;
-    flex:1;
+    flex:1 0 auto;
 }
 /* header
 --------------------*/
