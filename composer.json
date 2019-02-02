@@ -17,6 +17,9 @@
             "app/Plugin/{$name}": ["type:cakephp-plugin"]
         }
     },
+    "repositories": [
+        {"type": "vcs", "url": "https://github.com/NetCommons3/migrations.git"}
+    ],
     "require": {
         "cakephp/cakephp":              "~2.10@stable",
         "netcommons/install":           "@stable",
