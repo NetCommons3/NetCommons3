@@ -20,6 +20,7 @@ rm composer.lock
 composer clear-cache
 composer remove --no-update netcommons/install
 composer config minimum-stability dev
+composer config repositories.github.com vcs https://github.com/NetCommons3/migrations
 
 # Plugin install
 php -q << _EOF_ > packages.txt
