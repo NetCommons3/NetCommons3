@@ -2,19 +2,12 @@
  * style.css for Michael the 4th
  * Akazawa Studio LLC
  */
-html {
-    height:100%;
-}
 body{
     padding-top: 50px;
     color:#000000;
-    min-height:100%;
-    display:flex;
-    flex-direction:column;
 }
 main.container, main.container-fluid {
     margin-top: 10px;
-    flex:1 0 auto;
 }
 /* header
 --------------------*/
@@ -54,15 +47,7 @@ body.body-nologgedin {
 /* nc-system-footer
 --------------------*/
 #nc-system-footer{
-    bottom:0px;
-    width:100%;
-    height:50px;
-    padding-top:15px;
-    margin-top:20px;
-    border-top:1px solid #787878;
-}
-#nc-system-footer .copyright{
-    color:#787878;
+    display:none;
 }
 /* link
 --------------------*/
@@ -86,7 +71,7 @@ a:hover, a:focus {
     background-color: #5A5A5A;
     border-color: #5A5A5A;
 }
-.btn-default.dropdown-toggle {
+.btn-default.frame-header-type-btn {
     color:#646464;  /* without this, button 'none' will disapear on setting mode */
 }
 .btn-primary {
@@ -353,15 +338,6 @@ ul.nav-pills {
 .breadcrumb a {
     color:#FF8CB4;
 }
-/* others
---------------------*/
-/* To align positions of Left Menu and Center Contents */
-.panel-none .panel-body {
-    padding-top:0;
-}
-.jumbotron {
-    margin-bottom:0;
-}
 /* Site Manager
 ------------------------------------------------------*/
 .plugin-site-manager .nav {
@@ -434,10 +410,4 @@ ul.nav-pills {
 -----------------------------*/
 .calendar-room-legend.panel-default {
     border-color:#ddd;    /* default value */
-}
-.calendar-room-legend.panel-default .panel-body {
-    padding:15px;   /* devault value */
-}
-.calendar-room-legend.panel-default .panel-body ul {
-    margin-bottom: 0px; /* 消し込み */
 }
