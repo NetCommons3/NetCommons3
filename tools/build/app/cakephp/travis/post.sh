@@ -1,3 +1,3 @@
 #!/bin/bash -ex
 
-php vendors/bin/coveralls -vvv || exit $?
+php vendors/bin/php-coveralls -vvv || exit $?
