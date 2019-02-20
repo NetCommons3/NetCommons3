@@ -43,4 +43,4 @@ fi
 
 # coveralls
 cd $NETCOMMONS_BUILD_DIR
-php vendors/bin/coveralls --root_dir . -vvv || exit $?
+php vendors/bin/php-coveralls --root_dir . -vvv || exit $?
