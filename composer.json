@@ -35,7 +35,7 @@
         "phploc/phploc":                "2.*@stable",
         "phpmd/phpmd" :                 "@stable",
         "phpunit/phpunit":              "*@stable",
-        "php-coveralls/php-coveralls":  "~1.0@stable",
+        "php-coveralls/php-coveralls":  "~2.0@stable",
         "sebastian/phpcpd":             "*@stable",
         "symfony/debug":                "2.8.*@stable",
         "symfony/dependency-injection": "2.8.*@stable",
