@@ -24,7 +24,7 @@
     "require": {
         "cakephp/cakephp":              "~2.10@stable",
         "netcommons/install":           "@stable",
-		"josegonzalez/cakephp-upload": "~2.0",
+        "josegonzalez/cakephp-upload": "~2.0",
         "jms/serializer":               "1.1.0@stable"
     },
     "require-dev": {
