@@ -43,7 +43,10 @@ class DATABASE_CONFIG {
 		'login' => '',
 		'password' => '',
 		'database' => 'cakephp_test',
-		'prefix' => ''
+		'prefix' => '',
+		'settings' => [
+			'@@SESSION.sql_mode' => "''",
+		],
 	);
 
 	public $slave1 = array(
@@ -52,7 +55,10 @@ class DATABASE_CONFIG {
 		'login' => '',
 		'password' => '',
 		'database' => 'cakephp_test',
-		'prefix' => ''
+		'prefix' => '',
+		'settings' => [
+			'@@SESSION.sql_mode' => "''",
+		],
 	);
 
 	public $test = array(
@@ -61,7 +67,10 @@ class DATABASE_CONFIG {
 		'login' => '',
 		'password' => '',
 		'database' => 'cakephp_test',
-		'prefix' => ''
+		'prefix' => '',
+		'settings' => [
+			'@@SESSION.sql_mode' => "''",
+		],
 	);
 
 	public $test2 = array(
@@ -70,7 +79,10 @@ class DATABASE_CONFIG {
 		'login' => '',
 		'password' => '',
 		'database' => 'cakephp_test2',
-		'prefix' => ''
+		'prefix' => '',
+		'settings' => [
+			'@@SESSION.sql_mode' => "''",
+		],
 	);
 
 	public $test_database_three = array(
@@ -79,7 +91,10 @@ class DATABASE_CONFIG {
 		'login' => '',
 		'password' => '',
 		'database' => 'cakephp_test3',
-		'prefix' => ''
+		'prefix' => '',
+		'settings' => [
+			'@@SESSION.sql_mode' => "''",
+		],
 	);
 
 	public function __construct() {
