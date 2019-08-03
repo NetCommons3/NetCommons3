@@ -35,7 +35,7 @@
         "mustangostang/spyc":           "~0.6@stable",
         "phpdocumentor/phpdocumentor":  "2.*@stable",
         "phploc/phploc":                "2.*@stable",
-        "phpmd/phpmd" :                 "@stable",
+        "phpmd/phpmd" :                 "~2.6.0@stable",
         "phpunit/phpunit":              "*@stable",
         "php-coveralls/php-coveralls":  "~1.0@stable",
         "sebastian/phpcpd":             "*@stable",
