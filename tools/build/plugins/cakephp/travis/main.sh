@@ -16,12 +16,20 @@ if [ -d ./app/Plugin/$PLUGIN_NAME/JavascriptTest/ ]; then
   ./node_modules/karma/bin/karma start app/Plugin/$PLUGIN_NAME/JavascriptTest/travis.karma.conf.js --single-run --browsers PhantomJS || exit $?
 fi
 
-# phpdoc
-LOG=./app/tmp/logs/phpdoc.log
-touch $LOG
-chmod a+w $LOG
+#Todo: 下記エラーが発生するためphp7.2では、phpdocのテストは行わない
+#@see https://travis-ci.org/NetCommons3/Announcements/jobs/568424552#L902-L904
 
-echo "phpdoc app/Plugin/$PLUGIN_NAME"
-phpdoc parse -d app/Plugin/$PLUGIN_NAME -t $TRAVIS_BUILD_DIR/phpdoc --force --ansi | tee $LOG
-[ `grep -c '\[37;41m' $LOG` -ne 0 ] && cat $LOG && exit 1
-echo "phpdoc no error."
+PHP_VERSION="`php --version`"
+check72=`echo $PHP_VERSION | grep "^PHP 7.2"`
+
+if [ ! "$check72" = "" ]; then
+	# phpdoc
+	LOG=./app/tmp/logs/phpdoc.log
+	touch $LOG
+	chmod a+w $LOG
+
+	echo "phpdoc app/Plugin/$PLUGIN_NAME"
+	phpdoc parse -d app/Plugin/$PLUGIN_NAME -t $TRAVIS_BUILD_DIR/phpdoc --force --ansi | tee $LOG
+	[ `grep -c '\[37;41m' $LOG` -ne 0 ] && cat $LOG && exit 1
+	echo "phpdoc no error."
+fi
