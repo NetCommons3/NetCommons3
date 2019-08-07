@@ -22,7 +22,7 @@ fi
 PHP_VERSION="`php --version`"
 check72=`echo $PHP_VERSION | grep "^PHP 7.2"`
 
-if [ ! "$check72" = "" ]; then
+if [ "$check72" = "" ]; then
 	# phpdoc
 	LOG=./app/tmp/logs/phpdoc.log
 	touch $LOG
