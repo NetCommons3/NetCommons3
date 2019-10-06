@@ -5,8 +5,11 @@ php:
   - 5.6
   - 7.0
   - 7.1
+  - 7.2
 
-sudo: required
+sudo: false
+dist: trusty
+
 env:
   - DB=mysql
 cache:
@@ -18,9 +21,4 @@ script:
   - . tools/build/app/cakephp/travis/main.sh
 after_script:
   - . tools/build/app/cakephp/travis/post.sh
-notifications:
-  email:
-    recipients:
-      - netcommons3@googlegroups.com
-    on_success: never  # default: change
-    on_failure: always # default: always
+
