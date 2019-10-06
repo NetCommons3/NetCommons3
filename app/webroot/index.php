@@ -17,6 +17,17 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
+$cleansingRequest = function(&$value,$key) {
+	if (is_string($value)) {
+		$value = str_replace(['{{', '}}', "\0"], ['{ { ', ' } }', ''] , $value);
+	}
+};
+array_walk_recursive($_GET, $cleansingRequest);
+array_walk_recursive($_POST, $cleansingRequest);
+array_walk_recursive($_REQUEST, $cleansingRequest);
+array_walk_recursive($_SERVER, $cleansingRequest);
+array_walk_recursive($_FILES, $cleansingRequest);
+
 /**
  * Use the DS to separate the directories in other defines
  */
