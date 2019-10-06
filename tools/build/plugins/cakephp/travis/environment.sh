@@ -16,3 +16,4 @@ export PATH=$PATH:./vendors/bin
 
 phpenv config-add $NETCOMMONS_BUILD_DIR/tools/build/plugins/cakephp/travis/travis.php.ini
 php -ini | grep memory_limit
+phpenv config-rm xdebug.ini
