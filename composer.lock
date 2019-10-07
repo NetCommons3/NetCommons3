@@ -1834,16 +1834,16 @@
         },
         {
             "name": "netcommons/containers",
-            "version": "3.1.7",
+            "version": "3.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Containers.git",
-                "reference": "696b1ff02cb9c6772b47895708fa855b0dec1c81"
+                "reference": "7b152d5071016ece81be8fedd01f4eba9324fd36"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Containers/zipball/696b1ff02cb9c6772b47895708fa855b0dec1c81",
-                "reference": "696b1ff02cb9c6772b47895708fa855b0dec1c81",
+                "url": "https://api.github.com/repos/NetCommons3/Containers/zipball/7b152d5071016ece81be8fedd01f4eba9324fd36",
+                "reference": "7b152d5071016ece81be8fedd01f4eba9324fd36",
                 "shasum": ""
             },
             "require": {
@@ -1876,7 +1876,7 @@
                 "cakephp",
                 "containers"
             ],
-            "time": "2018-01-26T08:09:20+00:00"
+            "time": "2019-10-07T02:15:53+00:00"
         },
         {
             "name": "netcommons/content-comments",
