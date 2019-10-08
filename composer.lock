@@ -1736,12 +1736,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/CleanUp.git",
-                "reference": "d8f604323475f8d9a2b5f502e3a711834d0727ec"
+                "reference": "ac3fa2f04d626e59d137c72e3a3bc26cc3118027"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/CleanUp/zipball/d8f604323475f8d9a2b5f502e3a711834d0727ec",
-                "reference": "d8f604323475f8d9a2b5f502e3a711834d0727ec",
+                "url": "https://api.github.com/repos/NetCommons3/CleanUp/zipball/ac3fa2f04d626e59d137c72e3a3bc26cc3118027",
+                "reference": "ac3fa2f04d626e59d137c72e3a3bc26cc3118027",
                 "shasum": ""
             },
             "require": {
@@ -1786,7 +1786,7 @@
                 "cakephp",
                 "clean-up"
             ],
-            "time": "2019-09-23T12:55:42+00:00"
+            "time": "2019-10-08T05:14:07+00:00"
         },
         {
             "name": "netcommons/community-space",
@@ -2921,12 +2921,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Pages.git",
-                "reference": "2ce88111286c6ced55a4a295a8bfdd5bfac70226"
+                "reference": "c8fc5c04c6f97d6bd18872aa879a2ab70f1d4871"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Pages/zipball/2ce88111286c6ced55a4a295a8bfdd5bfac70226",
-                "reference": "2ce88111286c6ced55a4a295a8bfdd5bfac70226",
+                "url": "https://api.github.com/repos/NetCommons3/Pages/zipball/c8fc5c04c6f97d6bd18872aa879a2ab70f1d4871",
+                "reference": "c8fc5c04c6f97d6bd18872aa879a2ab70f1d4871",
                 "shasum": ""
             },
             "require": {
@@ -2970,7 +2970,7 @@
                 "cakephp",
                 "pages"
             ],
-            "time": "2019-09-20T05:21:36+00:00"
+            "time": "2019-10-08T05:47:37+00:00"
         },
         {
             "name": "netcommons/photo-albums",
