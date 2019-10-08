@@ -3519,12 +3519,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Rooms.git",
-                "reference": "15a1e987b2f566467c6933331e40121c505de22a"
+                "reference": "ffdba8cc0d2b71329894e2d5ed0ade68d6f394be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Rooms/zipball/15a1e987b2f566467c6933331e40121c505de22a",
-                "reference": "15a1e987b2f566467c6933331e40121c505de22a",
+                "url": "https://api.github.com/repos/NetCommons3/Rooms/zipball/ffdba8cc0d2b71329894e2d5ed0ade68d6f394be",
+                "reference": "ffdba8cc0d2b71329894e2d5ed0ade68d6f394be",
                 "shasum": ""
             },
             "require": {
@@ -3576,7 +3576,7 @@
                 "netcommons",
                 "rooms"
             ],
-            "time": "2019-10-06T09:13:57+00:00"
+            "time": "2019-10-08T07:32:55+00:00"
         },
         {
             "name": "netcommons/rss-readers",
