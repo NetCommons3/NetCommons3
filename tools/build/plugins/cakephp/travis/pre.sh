@@ -62,7 +62,7 @@ fi
 PHP_VERSION="`php --version`"
 check=`echo $PHP_VERSION | grep "^PHP 5.6"`
 if [ ! "$check" = "" ]; then
-	composer require --dev --no-update "4.*@stable"
+	composer require --dev --no-update "phpunit/phpunit:4.*@stable"
 fi
 
 composer install --no-scripts
