@@ -58,6 +58,13 @@ if [ ! "$CMPOSER_REQURE_DEV" = "" ] ; then
 	echo $CMPOSER_REQURE_DEV
 	composer require --dev --no-update $CMPOSER_REQURE_DEV
 fi
+
+PHP_VERSION="`php --version`"
+check=`echo $PHP_VERSION | grep "^PHP 5.6"`
+if [ ! "$check" = "" ]; then
+	composer require --dev --no-update "4.*@stable"
+fi
+
 composer install --no-scripts
 
 #cd $TRAVIS_BUILD_DIR
