@@ -1,7 +1,7 @@
 {
     "name":        "netcommons/netcommons3",
     "description": "NetCommons3",
-    "type":        "CMS",
+    "type":        "cms",
     "keywords":    ["CMS"],
     "homepage":    "http://www.netcommons.org/",
     "license": "LicenseRef-NetCommons",
