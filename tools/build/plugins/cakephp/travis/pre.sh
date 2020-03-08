@@ -59,11 +59,11 @@ if [ ! "$CMPOSER_REQURE_DEV" = "" ] ; then
 	composer require --dev --no-update $CMPOSER_REQURE_DEV
 fi
 
-PHP_VERSION="`php --version`"
-check=`echo $PHP_VERSION | grep "^PHP 5.6"`
-if [ ! "$check" = "" ]; then
-	composer require --dev --no-update "phpunit/phpunit:4.*@stable"
-fi
+#PHP_VERSION="`php --version`"
+#check=`echo $PHP_VERSION | grep "^PHP 5.6"`
+#if [ ! "$check" = "" ]; then
+#	composer require --dev --no-update "phpunit/phpunit:4.*@stable"
+#fi
 
 composer install --no-scripts
 
