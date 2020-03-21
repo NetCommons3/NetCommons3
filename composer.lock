@@ -1490,16 +1490,16 @@
         },
         {
             "name": "netcommons/cabinets",
-            "version": "3.3.0.2",
+            "version": "3.3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetCommons3/Cabinets.git",
-                "reference": "a0f0fb7ac8587b6ee4a493162b3c0947d2aab779"
+                "reference": "27823000e59b97d3014e3a4d0fce83b4dbb756ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetCommons3/Cabinets/zipball/a0f0fb7ac8587b6ee4a493162b3c0947d2aab779",
-                "reference": "a0f0fb7ac8587b6ee4a493162b3c0947d2aab779",
+                "url": "https://api.github.com/repos/NetCommons3/Cabinets/zipball/27823000e59b97d3014e3a4d0fce83b4dbb756ce",
+                "reference": "27823000e59b97d3014e3a4d0fce83b4dbb756ce",
                 "shasum": ""
             },
             "require": {
@@ -1544,7 +1544,7 @@
                 "cabinets",
                 "cakephp"
             ],
-            "time": "2019-11-30T00:45:10+00:00"
+            "time": "2020-03-08T23:13:29+00:00"
         },
         {
             "name": "netcommons/calendars",
