@@ -30,6 +30,9 @@ php -q << _EOF_ > packages.txt
 \$ret = '';
 if (isset(\$composer['require'])) {
 	foreach (\$composer['require'] as \$package => \$version) {
+		if (\$package !== 'netcommons/net-commons') {
+			continue;
+		}
 		\$ret .= ' ' . \$package . ':' . \$version;
 	}
 }
