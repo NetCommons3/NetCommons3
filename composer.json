@@ -28,6 +28,7 @@
         "jms/serializer":               "1.1.0@stable"
     },
     "require-dev": {
+        "netcommons/net-commons": "dev-availability",
         "cakephp/cakephp-codesniffer":  "~1.0@stable",
         "doctrine/annotations":         "1.2.*@stable",
         "dompdf/dompdf":                "~0.6@stable",
