@@ -13,6 +13,8 @@
  * @link	  http://pear.php.net/package/PHP_CodeSniffer
  */
 
+ini_set('memory_limit', '512M');
+
 /**
  * Generic_Sniffs_Files_LineLengthSniff.
  *
