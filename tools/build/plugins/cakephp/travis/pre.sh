@@ -12,6 +12,7 @@ if [ $DB = 'pgsql' ]; then psql -c 'DROP DATABASE cakephp_test; CREATE DATABASE 
 export PLUGIN_NAME=`basename $TRAVIS_BUILD_DIR`
 
 composer self-update
+composer self-update --1
 #composer global require hirak/prestissimo
 
 # NetCommons3 project install
