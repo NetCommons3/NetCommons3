@@ -94,9 +94,9 @@ mkdir -p build/cov
 mkdir -p tools/phpmd
 
 #sudo pip install http://closure-linter.googlecode.com/files/closure_linter-latest.tar.gz
-#pip install --upgrade pip
+pip install --upgrade pip
 pip install --user six
-pip install --user https://github.com/google/closure-linter/archive/v2.3.19.tar.gz
+pip install --user https://github.com/NetCommons3/NetCommons3/raw/master/tools/build/plugins/cakephp/travis/v2.3.19.tar.gz
 
 phpenv rehash
 set +H
