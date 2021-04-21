@@ -11,7 +11,9 @@ phpmd app/Plugin/$PLUGIN_NAME text tools/phpmd/rules.xml --exclude $NETCOMMONS_B
 phpcpd --exclude Test --exclude Config $IGNORE_PLUGINS_OPTS app/Plugin/$PLUGIN_NAME
 
 # js
+if type "gjslint" > /dev/null 2>&1; then
 gjslint --strict --max_line_length 100 -x jquery.js,jquery.cookie.js,js_debug_toolbar.js,travis.karma.conf.js,my.karma.conf.js -e jasmine_examples,HtmlPurifier,webroot/components,webroot/js/langs -r app/Plugin/$PLUGIN_NAME || exit $?
+fi
 if [ -d ./app/Plugin/$PLUGIN_NAME/JavascriptTest/ ]; then
   ./node_modules/karma/bin/karma start app/Plugin/$PLUGIN_NAME/JavascriptTest/travis.karma.conf.js --single-run --browsers PhantomJS || exit $?
 fi
