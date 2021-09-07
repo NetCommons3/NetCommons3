@@ -22,6 +22,7 @@
         {"type": "vcs", "url": "https://github.com/NetCommons3/migrations.git"}
     ],
     "require": {
+		"composer/installers": "~1.0@stable",
         "cakephp/cakephp":              "~2.10@stable",
         "netcommons/install":           "@stable",
         "josegonzalez/cakephp-upload": "~2.0@stable",
