@@ -24,34 +24,18 @@
     "require": {
         "composer/installers": "~1.0@stable",
         "cakephp/cakephp":              "~2.10@stable",
+        "mustangostang/spyc":           "~0.6.2@stable",
         "netcommons/install":           "@stable",
         "josegonzalez/cakephp-upload": "~2.0@stable",
         "jms/serializer":               "1.1.0@stable"
     },
     "require-dev": {
         "cakephp/cakephp-codesniffer":  "~1.0@stable",
-        "doctrine/annotations":         "1.2.*@stable",
-        "dompdf/dompdf":                "~0.6@stable",
-        "mayflower/php-codebrowser":    "~1.1@stable",
-        "mustangostang/spyc":           "~0.6@stable",
         "phpdocumentor/phpdocumentor":  "2.*@stable",
-        "phploc/phploc":                "2.*@stable",
         "phpmd/phpmd" :                 "~2.6.0@stable",
         "phpunit/phpunit":              "~5.7@stable",
         "php-coveralls/php-coveralls":  "~2.0@stable",
-        "sebastian/phpcpd":             "*@stable",
-        "symfony/debug":                "2.8.*@stable",
-        "symfony/dependency-injection": "2.8.*@stable",
-        "symfony/filesystem":           "2.8.*@stable",
-        "symfony/translation":          "2.8.*@stable",
-        "zendframework/zend-cache":     "2.5.1",
-        "zendframework/zend-eventmanager": "2.5.1",
-        "zendframework/zend-i18n":      "2.5.1",
-        "zendframework/zend-json":      "2.5.1",
-        "zendframework/zend-math":      "2.5.1",
-        "zendframework/zend-serializer": "2.5.1",
-        "zendframework/zend-servicemanager": "2.5.1",
-        "zendframework/zend-stdlib":    "2.5.1"
+        "sebastian/phpcpd":             "*@stable"
     },
     "bin": [
         "lib/Cake/Console/cake"
