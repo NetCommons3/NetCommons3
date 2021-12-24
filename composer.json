@@ -19,6 +19,7 @@
     },
     "repositories": [
         {"type": "vcs", "url": "https://github.com/NetCommons3/cakephp-upload.git"},
+        {"type": "vcs", "url": "https://github.com/NetCommons3/php-code-coverage.git"},
         {"type": "vcs", "url": "https://github.com/NetCommons3/migrations.git"}
     ],
     "require": {
