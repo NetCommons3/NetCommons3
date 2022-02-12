@@ -24,7 +24,7 @@
     ],
     "require": {
         "composer/installers": "~1.0@stable",
-        "cakephp/cakephp":              "~2.10@stable",
+        "cakephp/cakephp":              "~4.0@stable",
         "cakedc/migrations": "~2.2@stable",
         "mustangostang/spyc":           "~0.6.2@stable",
         "netcommons/install":           "@stable",
