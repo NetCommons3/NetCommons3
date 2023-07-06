@@ -1,8 +1,0 @@
-{
-  "name": "chef-webui",
-  "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1d3475SZFnpNsE4NnK2f\nE2ed+kCXzFaF7b9vsGOJyXKdU3Atmao0MyW+G173FuO3fYbDlQ9+HPLaBlt9yKZR\nFMH96+Dekq4pSFP5tjgxN7SRZ7SOTHi6+cIuNPzO79GWpvkX8B4rJ/FjvltV/sMH\nxtZoNVq1ltlE5LLo8fKZ4L193U0Npug3JANG//3Wbrnw3Nzc4wdX0RnqFGwf0Qkb\na6a33zxa1SophHxzjakwTvSf031aYGqMCamokx0FLeENoV+ZVpgGd9U/nmwICL0o\nkqORQiBU5nxyvsy3FiRwyvALMHImrD1rfh3q4rPDtXpOWdnNqxzSQfk1TlyaQXDf\nSwIDAQAB\n-----END PUBLIC KEY-----\n",
-  "validator": false,
-  "admin": true,
-  "json_class": "Chef::ApiClient",
-  "chef_type": "client"
-}
