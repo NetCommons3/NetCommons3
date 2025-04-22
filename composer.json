@@ -44,7 +44,10 @@
     ],
     "config": {
         "vendor-dir": "vendors",
-        "process-timeout": 3000
+        "process-timeout": 3000,
+        "allow-plugins": {
+            "composer/installers": true
+        }
     },
     "scripts": {
         "post-install-cmd": ["app/Console/cake install.install install_bower"],
