@@ -20,7 +20,8 @@
     "repositories": [
         {"type": "vcs", "url": "https://github.com/NetCommons3/cakephp-upload.git"},
         {"type": "vcs", "url": "https://github.com/NetCommons3/php-code-coverage.git"},
-        {"type": "vcs", "url": "https://github.com/NetCommons3/migrations.git"}
+        {"type": "vcs", "url": "https://github.com/NetCommons3/migrations.git"},
+        {"type": "vcs", "url": "https://github.com/NetCommons3/PHP_CodeSniffer.git"}
     ],
     "require": {
         "composer/installers": "~1.0@stable",
