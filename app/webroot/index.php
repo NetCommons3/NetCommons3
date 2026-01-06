@@ -19,7 +19,7 @@
 
 $cleansingRequest = function (&$value) {
 	if (is_string($value)) {
-		$value = str_replace(['{{', '}}', "\0"], ['{ { ', ' } }', ''], $value);
+		$value = str_replace(["\0", '{{', '}}'], ['', '{ { ', ' } }'], $value);
 	}
 };
 array_walk_recursive($_GET, $cleansingRequest);
