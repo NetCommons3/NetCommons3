@@ -18,7 +18,11 @@
     "angular-ui-tinymce": ">=0.0.9",
     "jquery": ">=3.4.1 <4.0",
     "jqueryui": "NetCommons3/jquery-ui#1.13.1",
-    "bootstrap": ">=3.3 <4.0"
+    "bootstrap": ">=3.3 <4.0",
+    "angular-nvd3": ">=0.1.1",
+    "visualcaptcha.jquery": "NetCommons3/visualcaptcha.jquery#>=0.0.9",
+    "MathJax": ">=3.0 <4.0",
+    "simplePagination.js": "jquery.simplePagination#*"
   },
   "devDependencies": {
     "angular-mocks": ">=1.4"
